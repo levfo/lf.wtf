@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FRMT — Film Simulation App for iPhone</title>
+<meta name="description" content="FRMT is a film simulation app for iPhone that models the film itself, not a colour filter: halation, interimage effects and density-based grain, developed from RAW on device.">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://lf.wtf/frmt/">
+<link rel="icon" href="/frmt/assets/icon.png">
+<link rel="apple-touch-icon" href="/frmt/assets/icon.png">
+
+<meta property="og:title" content="FRMT — Film Simulation App for iPhone">
+<meta property="og:description" content="Every other film app is a colour filter. FRMT simulates the film itself: halation, interimage effects and density-based grain, developed from RAW on your iPhone.">
+<meta property="og:image" content="https://lf.wtf/frmt/assets/hero.jpg">
+<meta property="og:image:alt" content="A castle keep at dusk developed through the FRMT film simulation.">
+<meta property="og:url" content="https://lf.wtf/frmt/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Levi Foster">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@cybermynd">
+<meta name="author" content="Levi Foster">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobileApplication",
+      "@id": "https://lf.wtf/frmt/#app",
+      "name": "FRMT",
+      "alternateName": "FRMT - Film Simulation",
+      "url": "https://lf.wtf/frmt/",
+      "image": "https://lf.wtf/frmt/assets/icon.png",
+      "description": "A film simulation camera for iPhone that models the photographic process itself rather than applying a colour filter: halation, interimage coupler effects and density-based grain, developed from a RAW negative on device.",
+      "applicationCategory": "PhotoApplication",
+      "applicationSubCategory": "Camera",
+      "operatingSystem": "iOS 26.0 or later",
+      "installUrl": "https://apps.apple.com/app/id6800928630",
+      "downloadUrl": "https://apps.apple.com/app/id6800928630",
+      "featureList": [
+        "Halation modelled from the light that scatters through the emulsion",
+        "Interimage coupler effects between dye layers",
+        "Density-based grain that forms where light actually landed",
+        "Four film stocks built from published manufacturer measurements",
+        "ProRAW capture developed on device",
+        "No account, no server, no subscription"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "14.99",
+        "priceCurrency": "USD",
+        "category": "One-time purchase",
+        "availability": "https://schema.org/InStock"
+      },
+      "author": { "@id": "https://lf.wtf/#levifoster" },
+      "publisher": { "@id": "https://lf.wtf/#levifoster" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://lf.wtf/frmt/#webpage",
+      "url": "https://lf.wtf/frmt/",
+      "name": "FRMT — Film Simulation App for iPhone",
+      "isPartOf": { "@id": "https://lf.wtf/#website" },
+      "about": { "@id": "https://lf.wtf/frmt/#app" },
+      "primaryImageOfPage": "https://lf.wtf/frmt/assets/hero.jpg",
+      "inLanguage": "en-US",
+      "breadcrumb": { "@id": "https://lf.wtf/frmt/#breadcrumb" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://lf.wtf/frmt/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Levi Foster", "item": "https://lf.wtf/" },
+        { "@type": "ListItem", "position": 2, "name": "FRMT" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://lf.wtf/frmt/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How is FRMT different from a film filter or a LUT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A filter is a lookup table: somebody decided in advance what every colour becomes, and the same input colour always gives the same output. FRMT simulates the photographic process instead, so what happens to a pixel depends on what surrounds it. Light spreads sideways into neighbouring areas, dye layers hold each other back, and grain forms according to how much light actually landed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which film stocks does FRMT include?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Four stocks, each built from its manufacturer's published characteristic curves and spectral sensitivity data rather than eyeballed from scans."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is FRMT a subscription?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. FRMT is a single 14.99 US dollar purchase. There is no subscription, no account and no advertising."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do my photos leave my iPhone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Every frame is developed on the iPhone's own GPU. The app contains no networking code at all, so there is nothing to upload and no server holding a copy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does developing a photo take so long?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because the simulation runs the chemistry rather than looking up an answer. Light transport through the emulsion, the interaction between dye layers and grain formation are all computed per frame, which takes real time on a phone."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+/*
+  The app's own vocabulary, on purpose: white on black, a tracked monospace for anything that
+  labels rather than speaks, and no colour but the photographs. lf.wtf is paper and serif; this is
+  the inside of a camera bag.
+
+  One file, no webfont, no framework. The only script drives the comparison sliders, because that
+  argument cannot be made in prose.
+*/
+:root {
+  --black: #0a0a0c;
+  --white: #f7f6f3;
+  --dim: rgba(247, 246, 243, 0.55);
+  --faint: rgba(247, 246, 243, 0.34);
+  --rule: rgba(247, 246, 243, 0.12);
+  --warm: #ffb060;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--black);
+  color: var(--white);
+  font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif;
+  overflow-x: hidden;
+}
+img, video { max-width: 100%; display: block; }
+main { max-width: 46rem; margin: 0 auto; padding: 0 clamp(1.4rem, 6vw, 2.5rem); }
+
+.label {
+  font: 500 0.68rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+.back { display: inline-block; padding: 1.8rem 0 0; text-decoration: none; }
+.back:hover { color: var(--dim); }
+
+/* ---------------------------------------------------------------- masthead */
+header { padding: 3.2rem 0 2.6rem; }
+.mark { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.8rem; }
+.mark img { width: 62px; height: 62px; border-radius: 14px; }
+.mark h1 { font-size: 1.35rem; font-weight: 600; margin: 0; letter-spacing: -0.01em; }
+.mark p { margin: 0.15rem 0 0; }
+
+h2.claim {
+  font-size: clamp(2.1rem, 7vw, 3.2rem);
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+  margin: 0 0 1.1rem;
+}
+.lede { font-size: clamp(1.02rem, 2.6vw, 1.15rem); color: var(--dim); margin: 0 0 1.1rem; max-width: 34rem; }
+.lede strong { color: var(--white); font-weight: 600; }
+.lede:last-of-type { margin-bottom: 2rem; }
+
+.buy {
+  display: inline-flex; align-items: baseline; gap: 0.7rem;
+  background: var(--white); color: var(--black);
+  text-decoration: none; font-weight: 600;
+  padding: 0.85rem 1.5rem; border-radius: 100px;
+}
+.buy:hover { background: #fff; }
+.buy .price { font: 400 0.85rem/1 ui-monospace, SFMono-Regular, Menlo, monospace; opacity: 0.6; }
+.terms { margin: 0.9rem 0 0; }
+
+/* ------------------------------------------------------------------ slider */
+figure { margin: 0; }
+.compare {
+  position: relative; overflow: hidden; border-radius: 10px;
+  aspect-ratio: 3 / 2; touch-action: pan-y; cursor: ew-resize; user-select: none;
+  background: #000;
+}
+.compare.square { aspect-ratio: 1 / 1; }
+.compare img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.compare .top { clip-path: inset(0 0 0 var(--split, 50%)); }
+.compare .seam {
+  position: absolute; top: 0; bottom: 0; left: var(--split, 50%);
+  width: 2px; background: var(--white); transform: translateX(-1px);
+}
+.compare .seam::after {
+  content: ""; position: absolute; top: 50%; left: 50%;
+  width: 34px; height: 34px; margin: -17px 0 0 -17px;
+  border-radius: 50%; background: var(--white);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+}
+.compare .tag {
+  position: absolute; top: 12px;
+  padding: 5px 9px; border-radius: 100px; background: rgba(0, 0, 0, 0.5);
+}
+.compare .tag.l { left: 12px; }
+.compare .tag.r { right: 12px; }
+figcaption { margin-top: 0.75rem; color: var(--faint); font-size: 0.88rem; }
+
+/* ----------------------------------------------------------------- sections */
+section { padding: 3.4rem 0; border-top: 1px solid var(--rule); }
+section h3 {
+  font-size: clamp(1.5rem, 4.5vw, 1.95rem);
+  line-height: 1.15; letter-spacing: -0.02em; font-weight: 600;
+  margin: 0.9rem 0 0.9rem;
+}
+section p { color: var(--dim); margin: 0 0 1rem; max-width: 34rem; }
+section p:last-child { margin-bottom: 0; }
+section p strong { color: var(--white); font-weight: 600; }
+
+/* A line that is the argument, not a decoration around it. */
+.pull {
+  font-size: clamp(1.25rem, 3.6vw, 1.6rem);
+  line-height: 1.3; letter-spacing: -0.015em; font-weight: 600;
+  color: var(--white); max-width: 30rem;
+  margin: 1.8rem 0;
+  padding-left: 1.1rem; border-left: 2px solid var(--warm);
+}
+
+/* The three things a lookup table cannot do. */
+.points { display: grid; gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; margin-top: 1.8rem; }
+.point { background: var(--black); padding: 1.4rem 1.3rem; }
+.point .label { display: block; margin-bottom: 0.7rem; }
+.point b { display: block; font-weight: 600; font-size: 1.06rem; margin-bottom: 0.4rem; letter-spacing: -0.01em; }
+.point span { display: block; color: var(--dim); font-size: 0.95rem; line-height: 1.55; }
+.point em { display: block; color: var(--faint); font-size: 0.88rem; font-style: normal; margin-top: 0.6rem; }
+
+.stocks { display: grid; gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; margin-top: 1.6rem; }
+.stock { background: var(--black); padding: 1.1rem 1.2rem; }
+.stock b { display: block; font-weight: 600; margin-bottom: 0.15rem; }
+.stock span { color: var(--dim); font-size: 0.94rem; }
+
+/* Numbered, because the order is the product. */
+.steps { list-style: none; margin: 1.8rem 0 0; padding: 0; counter-reset: step; }
+.steps li { position: relative; padding: 0 0 1.5rem 3rem; counter-increment: step; }
+.steps li:last-child { padding-bottom: 0; }
+.steps li::before {
+  content: counter(step, decimal-leading-zero);
+  position: absolute; left: 0; top: 0.15rem;
+  font: 500 0.72rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: 0.1em; color: var(--warm);
+}
+.steps b { display: block; font-weight: 600; margin-bottom: 0.25rem; }
+.steps span { color: var(--dim); font-size: 0.96rem; }
+
+.shots {
+  display: grid; grid-auto-flow: column; gap: 12px;
+  overflow-x: auto; padding-bottom: 0.6rem; margin-top: 1.6rem;
+  scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+}
+.shots img { width: 210px; border-radius: 12px; scroll-snap-align: start; }
+.shots::-webkit-scrollbar { height: 6px; }
+.shots::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 3px; }
+
+.field { border-radius: 10px; margin-top: 1.4rem; }
+
+/* Closing call, so the page does not end on a caveat. */
+.close { text-align: left; }
+.close h3 { margin-top: 0; }
+
+footer { border-top: 1px solid var(--rule); padding: 2.2rem 0 3.4rem; }
+footer a { color: var(--dim); text-decoration: none; }
+footer a:hover { color: var(--white); }
+footer nav { display: flex; flex-wrap: wrap; gap: 1.2rem; margin-bottom: 1rem; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .buy, .compare .seam { transition: background 0.15s ease; }
+}
+
+/* The questions people actually ask, kept as real headings so they can be found. */
+.faq { margin-top: 1.6rem; }
+.faq h4 {
+  font-size: 1rem; font-weight: 600; letter-spacing: -0.01em;
+  margin: 1.6rem 0 0.4rem; color: var(--white);
+}
+.faq h4:first-child { margin-top: 0; }
+.faq p { font-size: 0.97rem; }
+</style>
+</head>
+<body>
+<main>
+  <a class="back label" href="/">← lf.wtf</a>
+
+  <header>
+    <div class="mark">
+      <img src="/frmt/assets/icon.png" width="62" height="62" alt="FRMT app icon">
+      <div>
+        <h1>FRMT</h1>
+        <p class="label">Film Simulation for iPhone</p>
+      </div>
+    </div>
+
+    <h2 class="claim">Not a filter. <br>A film.</h2>
+    <p class="lede">
+      Every other film app on your phone is a colour filter. A list of what each colour should
+      become, applied to a photo that has already been taken.
+    </p>
+    <p class="lede">
+      <strong>FRMT simulates the film instead.</strong> The light scattering sideways through the
+      emulsion. The dye layers chemically holding each other back. The grain forming only where
+      light actually landed. Your iPhone runs the chemistry, one frame at a time, from a RAW
+      negative.
+    </p>
+
+    <a class="buy" href="https://apps.apple.com/app/id6800928630" data-appstore>Download on the App Store <span class="price">$14.99 once</span></a>
+    <p class="terms label">No subscription · No account · Nothing leaves your phone</p>
+  </header>
+
+  <figure>
+    <div class="compare" style="--split:50%">
+      <img src="/frmt/assets/before.jpg" alt="A lit castle keep above a moat at dusk, as the iPhone renders it.">
+      <img class="top" src="/frmt/assets/after.jpg" alt="The same frame developed through the Cinnabar 50 profile: the lit walls and the towers bloom into the dark around them.">
+      <span class="seam" aria-hidden="true"></span>
+      <span class="tag label l">iPhone</span>
+      <span class="tag label r">Cinnabar 50</span>
+    </div>
+    <figcaption>Same frame, same exposure. Drag it.</figcaption>
+  </figure>
+
+  <section>
+    <p class="label">The difference</p>
+    <h3>A filter is a list. Film is a reaction.</h3>
+    <p>
+      A filter works by lookup. Somebody decided in advance what every colour should turn into, and
+      the app swaps them one pixel at a time. Feed it the same blue twice and you get the same
+      answer twice, whether that blue was an inch of evening sky or the highlight on a chrome
+      bumper.
+    </p>
+    <p>
+      Film has no list to consult. It has chemistry, and chemistry pays attention to its
+      surroundings. Light that hits a bright edge keeps going, bounces off the back of the film and
+      comes back to expose the grains beside it. Dye forming in one layer releases a chemical that
+      stops the layer next to it forming as strongly. Grain appears where enough photons happened to
+      land, which is not the same place in the shadows as in the midtones.
+    </p>
+    <p class="pull">
+      None of that can be written down as a list, because the answer depends on what else is in
+      the frame.
+    </p>
+    <p>
+      That is the whole reason a neon sign on film glows into the dark around it, why reds stay
+      separate from greens instead of turning to mud, and why grain sits heaviest in the midtones
+      and vanishes in deep shadow. It is what people are pointing at when they say a photograph
+      looks like film. A lookup table cannot get there, no matter how carefully it was made.
+    </p>
+  </section>
+
+  <section>
+    <p class="label">The proof</p>
+    <h3>We built the filter, then beat it.</h3>
+    <p>
+      One photograph, developed twice. On the left, the best possible colour filter of this exact
+      film stock, built from the same measurements we built the model from. On the right, the full
+      simulation. This is a 1:1 crop, so you are looking at real pixels rather than a resized
+      version of them.
+    </p>
+    <figure>
+      <div class="compare square" style="--split:50%">
+        <img src="/frmt/assets/crop-filter.jpg" alt="A 1:1 crop of bright sky seen through dark autumn branches, developed through a colour lookup table: clean, smooth, edges cut hard against the sky.">
+        <img class="top" src="/frmt/assets/crop-frmt.jpg" alt="The identical crop through the full FRMT simulation: grain across the sky, and the bright sky blooming into every dark branch and leaf.">
+        <span class="seam" aria-hidden="true"></span>
+        <span class="tag label l">Filter</span>
+        <span class="tag label r">FRMT</span>
+      </div>
+      <figcaption>
+        Drag it. The sky picks up grain, and every dark branch gets eaten into by the light behind
+        it. The filter cuts hard against the sky because a filter has no way to move light sideways.
+        Flint 64.
+      </figcaption>
+    </figure>
+    <p style="margin-top:2rem">
+      Zoom back out and it is everywhere. Here is every place the two versions disagree across the
+      whole frame, amplified and shown on its own. This is the light a filter cannot produce,
+      because producing it means moving light across the frame rather than recolouring it in place.
+    </p>
+    <figure>
+      <img class="field" src="/frmt/assets/difference.jpg" width="1000" alt="A dark field showing only the difference between the two versions: warm light tracing every lit leaf, branch and edge in the frame.">
+      <figcaption>The gap between a filter and a film, isolated. One real frame.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <p class="label">Three things a filter cannot do</p>
+    <h3>What your phone is actually calculating.</h3>
+    <p>
+      Every photograph goes through these in order, the same order a negative goes through them,
+      on the graphics processor in your phone.
+    </p>
+    <div class="points">
+      <div class="point">
+        <span class="label">01 · Halation</span>
+        <b>Light goes in, and comes back out beside itself.</b>
+        <span>
+          Some light passes clean through the emulsion, reflects off the base underneath, and
+          exposes the film a second time next to where it entered. Bright things do not stop at
+          their edges. They bleed into what surrounds them.
+        </span>
+        <em>You notice it in: neon, streetlights, windows, sun through leaves.</em>
+      </div>
+      <div class="point">
+        <span class="label">02 · Interimage effects</span>
+        <b>The colour layers argue with each other.</b>
+        <span>
+          As dye develops in one layer it releases a chemical that drifts sideways and holds back
+          its neighbours. This is most of what gives a stock its colour signature, and it is why a
+          red stays red when it sits against a green instead of both sliding toward brown.
+        </span>
+        <em>You notice it in: foliage, skin against colour, anything saturated.</em>
+      </div>
+      <div class="point">
+        <span class="label">03 · Grain</span>
+        <b>Not a texture laid on top.</b>
+        <span>
+          Grain here is the actual variation in how much dye formed, spot by spot, so it follows
+          the tones instead of sitting over them. Strongest through the midtones, almost gone in
+          deep shadow, and it moves when your exposure moves.
+        </span>
+        <em>You notice it in: skies, skin, flat walls, anywhere a fake grain layer looks pasted on.</em>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="label">Halation, on its own</p>
+    <h3>This is real, and it is in every frame.</h3>
+    <p>
+      The returning light from a single photograph, pulled out and amplified so you can see it.
+      Nothing here was painted on. It is what the model produced from the negative.
+    </p>
+    <img class="field" src="/frmt/assets/halation.jpg" width="900" alt="A false-colour field showing only the returning light in one photograph: warm outlines tracing every bright edge of a castle at night.">
+  </section>
+
+  <section>
+    <p class="label">Four stocks</p>
+    <h3>Measured, not styled.</h3>
+    <p>
+      The numbers behind each one come off its manufacturer's own published datasheet: the response
+      curves, the spectral sensitivity, the grain figures. Nobody sat down and eyeballed a preset
+      until it looked about right.
+    </p>
+    <p>
+      You load one at a time, the way you load a roll. There is no look picker on the capture screen
+      and there are no sliders, and none of the four is a variation on another.
+    </p>
+    <div class="stocks">
+      <div class="stock"><b>Cinnabar 50</b><span>Punchy and saturated. Landscape, foliage, sunsets.</span></div>
+      <div class="stock"><b>Galena 100</b><span>Neutral and even. Travel, streets, mixed light.</span></div>
+      <div class="stock"><b>Baryta 100</b><span>Soft and fine-grained. People, portraits, overcast days.</span></div>
+      <div class="stock"><b>Flint 64</b><span>Grainy and warm with cool shadows. Street, hard light, neon.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="label">How it works</p>
+    <h3>A camera, not a control panel.</h3>
+    <ol class="steps">
+      <li>
+        <b>Press the shutter.</b>
+        <span>A RAW negative is written immediately. The shutter never waits on processing, so the app stays as fast as the stock camera.</span>
+      </li>
+      <li>
+        <b>It goes on the roll.</b>
+        <span>Frames queue up exactly like exposures on a roll of film. Keep shooting. You can also set developing to hold until you are plugged in.</span>
+      </li>
+      <li>
+        <b>It develops.</b>
+        <span>About a minute a frame, on your phone, running the full model from negative to print. You watch the timer, not a progress bar pretending to be one.</span>
+      </li>
+      <li>
+        <b>You get it back.</b>
+        <span>Finished photographs save to your photo library and stay in the app, so you can look through them without leaving. Shot something on another camera? Import the RAW and develop that too.</span>
+      </li>
+    </ol>
+    <div class="shots">
+      <img src="/frmt/assets/shot-1.jpg" width="560" alt="A developed photograph of a bird on a rock above turquoise water.">
+      <img src="/frmt/assets/shot-2.jpg" width="560" alt="A filter and film comparison of backlit leaves, magnified.">
+      <img src="/frmt/assets/shot-3.jpg" width="560" alt="One scene developed through all four film stocks.">
+      <img src="/frmt/assets/shot-4.jpg" width="560" alt="The capture screen: viewfinder, exposure and zoom wheels, shutter.">
+      <img src="/frmt/assets/shot-5.jpg" width="560" alt="The roll: frames waiting to develop above a grid of finished photographs.">
+    </div>
+  </section>
+
+  <section>
+    <p class="label">Honestly</p>
+    <h3>It is slow, and that is the trade.</h3>
+    <p>
+      A minute of your phone's graphics processor per photograph is an absurd amount of computation
+      to spend on one image, and it is the reason nobody else does this. A filter is one lookup per
+      pixel and it is done before you lift your thumb. We think the minute buys something a lookup
+      never will.
+    </p>
+    <p>
+      The viewfinder shows you the scene, not the film. Grading a live preview means guessing at the
+      answer before the work is done, and a preview that guesses wrong is worse than one that is
+      honest. Use the exposure dial to place your highlights.
+    </p>
+    <p>
+      This is slide film. There is not much room above the highlights. That is faithful rather than
+      accidental, and it is the part that will change how you shoot.
+    </p>
+  </section>
+
+  <section class="close">
+    <p class="label">One price, once</p>
+    <h3>$14.99. That is the whole business model.</h3>
+    <p>
+      No subscription, no account, no cloud, no ads, no watermark, no in app purchases, no upsell to
+      unlock the good stocks. Your photographs never leave your phone, because the app has no
+      networking code in it at all.
+    </p>
+    <p style="margin-bottom:1.8rem">
+      Requires an iPhone that can capture Apple ProRAW.
+    </p>
+    <a class="buy" href="https://apps.apple.com/app/id6800928630" data-appstore>Download on the App Store <span class="price">$14.99 once</span></a>
+  </section>
+
+  <section>
+    <p class="label">Questions</p>
+    <h3>The things people ask first.</h3>
+
+    <div class="faq">
+      <h4>How is FRMT different from a film filter or a LUT?</h4>
+      <p>
+        A filter is a lookup table. Somebody decided in advance what every colour becomes, and the
+        same input always gives the same output. FRMT simulates the process instead, so what happens
+        to a pixel depends on what surrounds it: light spreads sideways into neighbouring areas, dye
+        layers hold each other back, and grain forms according to how much light actually landed.
+      </p>
+
+      <h4>Which film stocks are included?</h4>
+      <p>
+        Four, each built from its manufacturer's published characteristic curves and spectral
+        sensitivity data rather than eyeballed from somebody's scans.
+      </p>
+
+      <h4>Is it a subscription?</h4>
+      <p>
+        No. One purchase of $14.99. No subscription, no account, no advertising, no in app purchases.
+      </p>
+
+      <h4>Do my photos leave my iPhone?</h4>
+      <p>
+        No. Every frame is developed on the iPhone's own GPU. The app contains no networking code at
+        all, so there is nothing to upload and no server holding a copy.
+      </p>
+
+      <h4>Why does developing take so long?</h4>
+      <p>
+        Because it runs the chemistry rather than looking up an answer. Light transport through the
+        emulsion, the interaction between dye layers and grain formation are all computed for every
+        frame, and that costs real time on a phone.
+      </p>
+
+      <h4>Which iPhones does it work on?</h4>
+      <p>
+        Any iPhone that can capture Apple ProRAW, running iOS 26 or later.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <a href="/">Levi Foster</a>
+      <a href="/modul8/">MODUL8</a>
+      <a href="/frmt/privacy">Privacy</a>
+      <a href="mailto:hello@redarrowmarketing.com">Support</a>
+    </nav>
+    <p class="label">FRMT is built by Levi Foster in Fort Worth, Texas</p>
+  </footer>
+</main>
+
+<script>
+// The sliders, and nothing else. Pointer events cover mouse, touch and pen in one path.
+(function () {
+  var boxes = document.querySelectorAll('.compare');
+  Array.prototype.forEach.call(boxes, function (box) {
+    function at(event) {
+      var rect = box.getBoundingClientRect();
+      var x = Math.min(Math.max(event.clientX - rect.left, 0), rect.width);
+      box.style.setProperty('--split', (x / rect.width * 100).toFixed(2) + '%');
+    }
+    var down = false;
+    // Tracked on window rather than through pointer capture: hasPointerCapture stopped reporting
+    // true partway through a drag in some browsers, which froze the seam after the first move.
+    box.addEventListener('pointerdown', function (e) { down = true; at(e); e.preventDefault(); });
+    window.addEventListener('pointermove', function (e) { if (down) at(e); }, { passive: true });
+    window.addEventListener('pointerup', function () { down = false; });
+    window.addEventListener('pointercancel', function () { down = false; });
+    box.addEventListener('click', at);
+  });
+})();
+</script>
+</body>
+</html>
