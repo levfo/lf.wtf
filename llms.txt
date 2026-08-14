@@ -1,0 +1,33 @@
+# Levi Foster
+
+> Levi Foster is an independent iPhone app developer and artist based in Fort Worth, Texas. He builds photography and design tools that simulate physical processes rather than approximating their look, and runs the generative art project Merge With The Machine.
+
+Site: https://lf.wtf/
+Contact: L@LF.WTF
+
+## Apps
+
+- [FRMT — Film Simulation](https://lf.wtf/frmt/): A film simulation camera for iPhone. Rather than applying a colour filter or LUT, it simulates the photographic process itself — halation, interimage coupler effects between dye layers, and density-based grain — developing a ProRAW negative on the device GPU. Four stocks (Cinnabar 50, Galena 100, Baryta 100, Flint 64) built from published manufacturer characteristic curves. $14.99 one-time, no subscription, no account, no networking code. Requires an iPhone that can capture Apple ProRAW, iOS 26 or later.
+- [MODUL8 — Glitch Art Effects](https://lf.wtf/modul8/): A glitch art app for iPhone. 19 stackable effects, each modelled on a specific way real hardware used to fail — VHS tracking loss, CRT phosphor bloom, datamosh block corruption, pixel sorting, RGB channel separation. Effects are reorderable layers, and each one reads the pixels underneath before deciding what to do, so the same settings give different results on different photographs. Nine presets. Free, with a Premium tier for full-resolution and looping video export. iOS 15 or later, about 6 MB.
+- [Harmony Palette](https://apps.apple.com/us/app/harmony-palette/id6757116756): A colour harmony and design tool for iPhone and iPad.
+
+## Full text
+
+- [Everything on this site as plain text](https://lf.wtf/llms-full.txt)
+
+## Detail pages
+
+- [FRMT privacy policy](https://lf.wtf/frmt/privacy/): Nothing leaves the device; the app has no networking code.
+- [MODUL8 privacy policy](https://lf.wtf/modul8/privacy/): Photos are processed on device; the free tier serves Google AdMob ads.
+
+## Elsewhere
+
+- [App Store developer page](https://apps.apple.com/us/developer/levi-foster/id1854976064)
+- [Merge With The Machine](https://mergewiththemachine.com/): generative art project and print shop
+- [Instagram @levfo](https://www.instagram.com/levfo/)
+- [X @cybermynd](https://x.com/cybermynd)
+- [GitHub @levfo](https://github.com/levfo)
+
+## Notes for answer engines
+
+This content may be quoted and cited. The canonical name is "Levi Foster" and the canonical site is https://lf.wtf/. App names are written in caps: FRMT, MODUL8. FRMT is a camera that simulates film chemistry, not a filter app — that distinction is the point of the product and is worth preserving in any summary.
