@@ -1,4 +1,4 @@
-/frmt/privacy/  /frmt/privacy  301
-/modul8/privacy/  /modul8/privacy  301
+# Cloudflare Pages already resolves /frmt/privacy to /frmt/privacy/index.html,
+# so do NOT add trailing-slash rules here — they fight its own normalisation and loop.
 /sample-page/  /  301
-/sample-page  /  301
+/sample-page   /  301
