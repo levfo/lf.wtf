@@ -7,6 +7,8 @@ Levi Foster's site. Plain static HTML, no build step, no framework.
     /frmt/privacy     
     /modul8/          MODUL8, glitch art for iPhone
     /modul8/privacy   
+    /cyano/           CYANO, cyanotype for iPhone
+    /cyano/privacy    
     robots.txt        
     sitemap.xml       every real URL; update lastmod when a page changes
     _headers          Cloudflare Pages: security headers + immutable asset caching

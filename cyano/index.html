@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CYANO: Cyanotype App for iPhone. Real Chemistry, Simulated.</title>
+<meta name="description" content="Turn your photos into real cyanotypes. CYANO simulates the actual chemistry of the 1842 sunprint process, not a blue filter: ultraviolet sensitivity, Prussian blue forming through Beer-Lambert, tea and tannin toning. Free on iPhone.">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://lf.wtf/cyano/">
+<link rel="icon" href="/cyano/assets/icon.png">
+<link rel="apple-touch-icon" href="/cyano/assets/icon.png">
+
+<meta property="og:title" content="CYANO: Cyanotype App for iPhone">
+<meta property="og:description" content="Turn your photos into real cyanotypes. The chemistry of the 1842 sunprint process, simulated. Not a blue filter.">
+<meta property="og:image" content="https://lf.wtf/cyano/assets/hero.jpg">
+<meta property="og:image:alt" content="A maple in autumn colour rendered as a cyanotype by CYANO.">
+<meta property="og:url" content="https://lf.wtf/cyano/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Levi Foster">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@cybermynd">
+<meta name="twitter:title" content="CYANO: Cyanotype App for iPhone">
+<meta name="twitter:description" content="Turn your photos into real cyanotypes. The chemistry, simulated. Not a blue filter.">
+<meta name="twitter:image" content="https://lf.wtf/cyano/assets/hero.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobileApplication",
+      "@id": "https://lf.wtf/cyano/#app",
+      "name": "CYANO",
+      "alternateName": "CYANO - Cyanotype Photos",
+      "url": "https://lf.wtf/cyano/",
+      "image": "https://lf.wtf/cyano/assets/icon.png",
+      "description": "A cyanotype app for iPhone that simulates the chemistry of the 1842 sunprint process rather than tinting a photograph blue: the sensitiser's ultraviolet response integrated against sunlight across the spectrum, and Prussian blue built up through the Beer-Lambert law.",
+      "applicationCategory": "PhotoApplication",
+      "applicationSubCategory": "Photo Editing",
+      "operatingSystem": "iOS 17.0 or later",
+      "mainEntityOfPage": { "@id": "https://lf.wtf/cyano/#webpage" },
+      "featureList": [
+        "Reflectance reconstructed from three numbers, then read where the sensitiser can see",
+        "Prussian blue built by the Beer-Lambert law, including pigment aggregation",
+        "A tonal curve derived from the photochemistry rather than drawn by hand",
+        "Exposure chosen per photograph, the way a printer reads a negative",
+        "Toning that converts the pigment to iron tannate rather than tinting it",
+        "Three papers, whose base colour shows through the print",
+        "No account, no server, no subscription"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "category": "Free with one optional in-app purchase",
+        "availability": "https://schema.org/InStock"
+      },
+      "author": { "@id": "https://lf.wtf/#levifoster" },
+      "publisher": { "@id": "https://lf.wtf/#levifoster" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://lf.wtf/cyano/#webpage",
+      "url": "https://lf.wtf/cyano/",
+      "name": "CYANO: Cyanotype App for iPhone. Real Chemistry, Simulated.",
+      "isPartOf": { "@id": "https://lf.wtf/#website" },
+      "about": { "@id": "https://lf.wtf/cyano/#app" },
+      "primaryImageOfPage": "https://lf.wtf/cyano/assets/hero.jpg",
+      "inLanguage": "en-US",
+      "breadcrumb": { "@id": "https://lf.wtf/cyano/#breadcrumb" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://lf.wtf/cyano/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Levi Foster", "item": "https://lf.wtf/" },
+        { "@type": "ListItem", "position": 2, "name": "CYANO" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://lf.wtf/cyano/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a cyanotype?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A cyanotype is the oldest surviving photographic process, invented in 1842. Paper is brushed with iron salts, a negative is laid on top, and it is left in the sun. What develops is Prussian blue, washed out in plain water. It is the reason old engineering drawings are called blueprints." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is CYANO just a blue filter?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. A filter decides in advance what each colour becomes. CYANO works out how much ultraviolet and deep blue light each colour actually carries, then builds up Prussian blue from that. It is why a yellow flower goes almost black while a blue sky burns out to bare paper, even when a camera recorded the two at the same brightness." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need chemicals, paper or a printer?",
+          "acceptedAnswer": { "@type": "Answer", "text": "None of them. CYANO exists so that anyone can make cyanotypes without a darkroom, a chemistry set or a UV source. Everything happens on the phone." }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does CYANO cost?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The app is free and fully functional: unlimited prints at full resolution with no watermark. One optional purchase of 4.99 US dollars unlocks the three toning baths, the other two papers and the second sensitiser formula. There is no subscription." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does CYANO collect any data?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. There is no account, no analytics and no server, and the app contains no networking code of its own. Photographs never leave the device." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+/*
+  The app's own vocabulary: a coated sheet. Deep Prussian blue read out of the same pigment model
+  the app renders with, paper white for text, and Futura in caps for anything that announces rather
+  than explains, matching the wordmark and the store screenshots.
+
+  lf.wtf is paper and serif; /frmt is the inside of a camera bag; this is the sheet under the sun.
+  Committed to dark, and deliberately not following the system preference, because the product is
+  one colour and switching it to paper would throw away the thing being sold.
+
+  One file, no webfont, no framework. The only script drives the comparison slider.
+*/
+:root {
+  --blue: #0d2340;
+  --deep: #081829;
+  --paper: #f7f6f3;
+  --dim: rgba(247, 246, 243, 0.70);
+  --faint: rgba(247, 246, 243, 0.42);
+  --rule: rgba(247, 246, 243, 0.15);
+  --wash: #9db6d4;
+  --display: Futura, "Century Gothic", "Avenir Next", "Trebuchet MS", system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--blue);
+  color: var(--paper);
+  font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif;
+  overflow-x: hidden;
+}
+img { max-width: 100%; display: block; }
+main { max-width: 46rem; margin: 0 auto; padding: 0 clamp(1.3rem, 5vw, 2.5rem) 4rem; }
+
+.label {
+  font: 500 0.68rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--faint);
+}
+a.back { display: inline-block; padding: 1.8rem 0 0; text-decoration: none; color: var(--faint); }
+a.back:hover { color: var(--paper); }
+
+header { padding: 3rem 0 0; }
+.mark { display: flex; align-items: center; gap: 1rem; margin-bottom: 2.6rem; }
+.mark img { width: 62px; height: 62px; border-radius: 14px; }
+.mark h1 {
+  font: 700 1.5rem/1 var(--display); letter-spacing: 0.30em;
+  margin: 0 0 0.42rem; text-transform: uppercase;
+}
+.mark p { margin: 0; }
+
+.claim {
+  font: 700 clamp(2.3rem, 8.5vw, 3.9rem)/1.03 var(--display);
+  letter-spacing: 0.01em; margin: 0 0 1.5rem; text-transform: uppercase;
+}
+.lede { color: var(--dim); font-size: 1.06rem; margin: 0 0 1.1rem; }
+.lede strong { color: var(--paper); font-weight: 600; }
+
+.buy {
+  display: inline-block; margin: 1.9rem 0 0.8rem; padding: 0.95rem 1.6rem;
+  background: var(--paper); color: var(--blue); text-decoration: none;
+  border-radius: 11px; font-weight: 600;
+}
+.buy:hover { background: var(--wash); }
+.buy .price { font-weight: 400; opacity: 0.72; }
+.terms { margin: 0 0 1rem; }
+
+figure { margin: 3rem 0 0; }
+figcaption { margin-top: 0.85rem; }
+.compare { position: relative; overflow: hidden; border-radius: 6px; touch-action: none; cursor: ew-resize; }
+.compare img { width: 100%; }
+.compare .top { position: absolute; inset: 0; clip-path: inset(0 0 0 var(--split)); }
+.compare .seam { position: absolute; top: 0; bottom: 0; left: var(--split); width: 2px; background: var(--paper); opacity: 0.85; }
+.compare .tag { position: absolute; bottom: 0.7rem; color: var(--paper); text-shadow: 0 1px 6px rgba(0,0,0,0.7); }
+.compare .l { left: 0.8rem; }
+.compare .r { right: 0.8rem; }
+
+section { padding: 3.4rem 0 0; }
+section h2 { font-size: clamp(1.5rem, 4.6vw, 2rem); line-height: 1.15; letter-spacing: -0.015em; margin: 0.5rem 0 1rem; font-weight: 600; }
+section h3 { font-size: 1.06rem; font-weight: 600; margin: 1.8rem 0 0.4rem; }
+section p { color: var(--dim); margin: 0 0 1rem; }
+section p strong { color: var(--paper); font-weight: 600; }
+.pull { color: var(--paper); font-size: 1.14rem; border-left: 2px solid var(--wash); padding-left: 1.1rem; margin: 1.6rem 0; }
+
+.strip { display: flex; gap: 0.9rem; overflow-x: auto; padding: 0.4rem 0 1rem; scroll-snap-type: x mandatory; }
+.strip img { width: 15rem; flex: 0 0 auto; border-radius: 12px; scroll-snap-align: start; }
+
+dl { margin: 1.4rem 0 0; }
+dt { font-weight: 600; margin: 1.4rem 0 0.25rem; }
+dd { color: var(--dim); margin: 0; }
+
+.close { border-top: 1px solid var(--rule); margin-top: 3.6rem; }
+footer { border-top: 1px solid var(--rule); margin-top: 3.4rem; padding-top: 1.4rem; }
+footer nav a { color: var(--dim); text-decoration: none; margin-right: 1.2rem; }
+footer nav a:hover { color: var(--paper); }
+footer p { margin: 1rem 0 0; }
+</style>
+</head>
+<body>
+<main>
+  <a class="back label" href="/">&larr; lf.wtf</a>
+
+  <header>
+    <div class="mark">
+      <img src="/cyano/assets/icon.png" width="62" height="62" alt="The CYANO app icon: a pale sun over a Prussian blue horizon.">
+      <div>
+        <h1>CYANO</h1>
+        <p class="label">Cyanotype Photos</p>
+      </div>
+    </div>
+
+    <h2 class="claim">Not a blue filter.<br>The chemistry.</h2>
+    <p class="lede">
+      A cyanotype is the oldest surviving photographic process. Paper brushed with iron salts, a
+      negative laid on top, left out in the sun. What develops is Prussian blue, washed out in plain
+      water. It is where the word blueprint comes from.
+    </p>
+    <p class="lede">
+      <strong>CYANO does that chemistry in software.</strong> Not a colour swap tuned by eye, but
+      the sensitiser's ultraviolet response integrated against sunlight across the spectrum, and
+      Prussian blue built up through the Beer-Lambert law. No darkroom, no chemicals, no printer.
+    </p>
+
+    <a class="buy" href="#" data-appstore>Download on the App Store <span class="price">Free</span></a>
+    <p class="terms label">No subscription &middot; No account &middot; Nothing leaves your phone</p>
+  </header>
+
+  <figure>
+    <div class="compare" style="--split:50%">
+      <img src="/cyano/assets/before.jpg" width="1120" height="860" alt="Yellow flowers in front of a city skyline under a clear blue sky, as the phone photographed it.">
+      <img class="top" src="/cyano/assets/after.jpg" width="1120" height="860" alt="The same frame as a cyanotype: the yellow flowers have gone almost black while the sky has burned out to bare paper.">
+      <span class="seam" aria-hidden="true"></span>
+      <span class="tag label l">Photograph</span>
+      <span class="tag label r">Cyanotype</span>
+    </div>
+    <figcaption class="label">Same frame. Drag it.</figcaption>
+  </figure>
+
+  <section>
+    <p class="label">Why it looks like that</p>
+    <h2>The paper cannot see most of your photograph.</h2>
+    <p>
+      Cyanotype paper is blind to red and green. It responds only to ultraviolet and the deepest
+      blue, which means it reads a scene at completely the wrong brightness, and that is the whole
+      point of it.
+    </p>
+    <p>
+      Look at the picture above. To the camera, those yellow flowers and that sky are the same
+      brightness: measure them and the flowers come out at 177, the sky at 167. You could not tell
+      them apart in a black and white conversion.
+    </p>
+    <p>
+      On the paper they end up at opposite ends. The flowers fall to 57 and the sky rises to 222,
+      because yellow carries almost no light this sensitiser can use while the sky is carrying more
+      than the sheet can hold. Nothing was adjusted to make that happen; it is what the chemistry
+      does.
+    </p>
+    <p class="pull">
+      Two colours your camera recorded as equally bright come out at opposite ends of the print.
+    </p>
+    <p>
+      A filter cannot get there. A filter is a list somebody wrote down in advance, so it can make a
+      photograph blue, but it has no idea which blue was carrying ultraviolet. That is the
+      difference between something that looks vaguely antique and something that looks like it came
+      out of a tray.
+    </p>
+  </section>
+
+  <section>
+    <p class="label">What is actually being computed</p>
+    <h2>Built from the physics, not from a preset.</h2>
+    <p>
+      Every colour on your screen is three numbers. Those three numbers do not say how much
+      ultraviolet a thing reflected, and ultraviolet is the only part this process cares about. So
+      the model reconstructs the smoothest full spectrum consistent with the colour you photographed,
+      then reads the part of it the sensitiser can actually see.
+    </p>
+    <p>
+      That spectrum is integrated against the sensitiser's action curve and the solar spectrum to
+      get an exposure. The exposure runs through a tonal curve derived from the photochemistry rather
+      than drawn by hand. The resulting Prussian blue is built up by the Beer-Lambert law, including
+      the way the pigment clumps at high concentration, without which the deep tones stall at an
+      unconvincing electric blue.
+    </p>
+    <p>
+      <strong>It also reads each photograph before printing it,</strong> the way a printer reads a
+      negative and makes a test strip, so the exposure suits the picture in front of it rather than
+      some imagined average one.
+    </p>
+  </section>
+
+  <section>
+    <p class="label">The controls</p>
+    <h2>Four dials, and every one of them is real.</h2>
+    <dl>
+      <dt>Sun</dt>
+      <dd>How long the sheet was left out. Overexpose it and the shadows merge into one mass, the way they really do.</dd>
+      <dt>Paper</dt>
+      <dd>Cotton rag, rough watercolour, or buff. The base colour shows through everywhere, because in this process the paper is part of the picture.</dd>
+      <dt>Toning</dt>
+      <dd>Tea, tannin or red wine. These convert the Prussian blue into iron tannate rather than tinting it, which is why a toned print reads as another process instead of a recoloured one.</dd>
+      <dt>Brushed edge</dt>
+      <dd>The uneven coating of a hand-brushed sheet, seeded per photograph, so two prints of the same picture are never quite the same.</dd>
+    </dl>
+  </section>
+
+  <section>
+    <p class="label">On your phone</p>
+    <h2>Simple in front, heavy underneath.</h2>
+    <div class="strip">
+      <img src="/cyano/assets/shot-1.jpg" width="620" height="1347" loading="lazy" alt="A maple in full autumn colour rendered as a cyanotype in the CYANO app.">
+      <img src="/cyano/assets/shot-2.jpg" width="620" height="1347" loading="lazy" alt="Six colours a camera records as equally bright, and what cyanotype paper does to each of them.">
+      <img src="/cyano/assets/shot-3.jpg" width="620" height="1347" loading="lazy" alt="A photograph beside its cyanotype, showing yellow going black and sky going to paper.">
+      <img src="/cyano/assets/shot-4.jpg" width="620" height="1347" loading="lazy" alt="One water lily print shown untoned and then toned with tea, tannin and wine.">
+      <img src="/cyano/assets/shot-5.jpg" width="620" height="1347" loading="lazy" alt="The paper picker in CYANO, showing cotton rag, rough watercolour and buff.">
+      <img src="/cyano/assets/shot-6.jpg" width="620" height="1347" loading="lazy" alt="A hand-coated brushed edge around a cyanotype print in CYANO.">
+    </div>
+    <p>
+      Choose a photograph and it develops. Move the sun, change the paper, drop it in a toning bath.
+      Save at full resolution with nothing stamped on it.
+    </p>
+  </section>
+
+  <section>
+    <p class="label">Common questions</p>
+    <h2>Questions</h2>
+    <h3>Do I need chemicals, paper or a printer?</h3>
+    <p>
+      None of them. CYANO exists so that people who could never set up a darkroom, buy sensitiser or
+      wait for a sunny afternoon can still make cyanotypes.
+    </p>
+    <h3>Is this a filter?</h3>
+    <p>
+      No. A filter decides in advance what each colour becomes. CYANO works out how much ultraviolet
+      each colour was actually carrying and builds the pigment from that.
+    </p>
+    <h3>What does it cost?</h3>
+    <p>
+      The app is free and completely usable: unlimited prints, full resolution, no watermark. One
+      optional purchase of $4.99 unlocks the three toning baths, the other two papers and the second
+      sensitiser formula. There is no subscription.
+    </p>
+    <h3>Does it collect anything?</h3>
+    <p>
+      No. No account, no analytics, no server, and no networking code of its own. Photographs never
+      leave your phone. The <a href="/cyano/privacy">privacy policy</a> is one page and says so.
+    </p>
+  </section>
+
+  <section class="close">
+    <h2>Make one.</h2>
+    <p>
+      Free, and the free version is the whole simulation. Nothing is watermarked and nothing is
+      held back to make a point.
+    </p>
+    <a class="buy" href="#" data-appstore>Download on the App Store <span class="price">Free</span></a>
+  </section>
+
+  <footer>
+    <nav>
+      <a href="/">lf.wtf</a>
+      <a href="/cyano/privacy">Privacy</a>
+      <a href="mailto:hello@redarrowmarketing.com">Support</a>
+    </nav>
+    <p class="label">CYANO is made in Fort Worth, Texas</p>
+  </footer>
+</main>
+
+<script>
+// The slider, and nothing else. Pointer events cover mouse, touch and pen in one path.
+(function () {
+  var boxes = document.querySelectorAll('.compare');
+  Array.prototype.forEach.call(boxes, function (box) {
+    function at(event) {
+      var rect = box.getBoundingClientRect();
+      var x = Math.min(Math.max(event.clientX - rect.left, 0), rect.width);
+      box.style.setProperty('--split', (x / rect.width * 100).toFixed(2) + '%');
+    }
+    var down = false;
+    // Tracked on window rather than through pointer capture, which stopped reporting itself
+    // partway through a drag in some browsers and froze the seam after the first move.
+    box.addEventListener('pointerdown', function (e) { down = true; at(e); e.preventDefault(); });
+    window.addEventListener('pointermove', function (e) { if (down) at(e); }, { passive: true });
+    window.addEventListener('pointerup', function () { down = false; });
+    window.addEventListener('pointercancel', function () { down = false; });
+    box.addEventListener('click', at);
+  });
+})();
+</script>
+</body>
+</html>

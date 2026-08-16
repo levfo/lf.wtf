@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Levi Foster — iPhone Apps, Photography Tools and Generative Art</title>
-<meta name="description" content="Levi Foster is an independent app developer and artist in Fort Worth, Texas. He makes FRMT film simulation, MODUL8 glitch art and Harmony Palette for iPhone, and runs Merge With The Machine.">
+<meta name="description" content="Levi Foster is an independent app developer and artist in Fort Worth, Texas. He makes FRMT film simulation, MODUL8 glitch art, CYANO cyanotype and Harmony Palette for iPhone, and runs Merge With The Machine.">
 <meta name="color-scheme" content="dark">
 <meta name="author" content="Levi Foster">
 <link rel="canonical" href="https://lf.wtf/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23000'/%3E%3Ctext x='16' y='23' font-family='monospace' font-size='18' fill='%23fff' text-anchor='middle'%3ELF%3C/text%3E%3C/svg%3E">
 
 <meta property="og:title" content="Levi Foster — iPhone Apps, Photography Tools and Generative Art">
-<meta property="og:description" content="Independent app developer and artist in Fort Worth, Texas. FRMT film simulation, MODUL8 glitch art, Harmony Palette, and Merge With The Machine.">
+<meta property="og:description" content="Independent app developer and artist in Fort Worth, Texas. FRMT film simulation, MODUL8 glitch art, CYANO cyanotype, Harmony Palette, and Merge With The Machine.">
 <meta property="og:url" content="https://lf.wtf/">
 <meta property="og:type" content="profile">
 <meta property="og:site_name" content="Levi Foster">
@@ -34,7 +34,7 @@
    "url": "https://lf.wtf/",
    "email": "mailto:L@LF.WTF",
    "jobTitle": "Independent app developer and artist",
-   "description": "Levi Foster is an independent iPhone app developer and artist based in Fort Worth, Texas. He builds photography and design tools including FRMT, MODUL8 and Harmony Palette, and runs the art project Merge With The Machine.",
+   "description": "Levi Foster is an independent iPhone app developer and artist based in Fort Worth, Texas. He builds photography and design tools including FRMT, MODUL8, CYANO and Harmony Palette, and runs the art project Merge With The Machine.",
    "knowsAbout": ["iOS app development", "Film simulation", "Computational photography", "Glitch art", "Generative art", "Colour theory"],
    "homeLocation": { "@type": "Place", "name": "Fort Worth, Texas" },
    "sameAs": [
@@ -61,7 +61,7 @@
    "@id": "https://lf.wtf/#work",
    "name": "Apps and projects by Levi Foster",
    "itemListOrder": "https://schema.org/ItemListUnordered",
-   "numberOfItems": 3,
+   "numberOfItems": 4,
    "itemListElement": [
     {
      "@type": "ListItem", "position": 1,
@@ -93,6 +93,19 @@
     },
     {
      "@type": "ListItem", "position": 3,
+     "item": {
+      "@type": "MobileApplication",
+      "@id": "https://lf.wtf/cyano/#app",
+      "name": "CYANO",
+      "url": "https://lf.wtf/cyano/",
+      "applicationCategory": "PhotoApplication",
+      "operatingSystem": "iOS",
+      "description": "A cyanotype app for iPhone that simulates the chemistry of the 1842 sunprint process rather than tinting a photograph blue.",
+      "author": { "@id": "https://lf.wtf/#levifoster" }
+     }
+    },
+    {
+     "@type": "ListItem", "position": 4,
      "item": {
       "@type": "MobileApplication",
       "@id": "https://lf.wtf/#harmonypalette",
@@ -283,6 +296,7 @@ footer { border-top: 1px solid var(--rule); padding: 2rem 0 0; color: var(--dim)
     <nav class="top">
       <a href="/frmt/">FRMT</a>
       <a href="/modul8/">MODUL8</a>
+      <a href="/cyano/">CYANO</a>
       <a href="https://mergewiththemachine.com/">MERGE</a>
     </nav>
   </div>
@@ -302,7 +316,8 @@ footer { border-top: 1px solid var(--rule); padding: 2rem 0 0; color: var(--dim)
     <p>
       The apps share a bias. I would rather simulate the thing than approximate the look of it,
       which is slower and more awkward and gets results a preset cannot. That is the whole idea
-      behind <a href="/frmt/">FRMT</a>, and it is why <a href="/modul8/">MODUL8</a> models broken
+      behind <a href="/frmt/">FRMT</a> and <a href="/cyano/">CYANO</a>, and it is why
+      <a href="/modul8/">MODUL8</a> models broken
       hardware instead of drawing coloured lines over your photo.
     </p>
   </section>
@@ -326,6 +341,16 @@ footer { border-top: 1px solid var(--rule); padding: 2rem 0 0; color: var(--dim)
           A glitch art app for iPhone. Nineteen stackable effects, each modelled on a specific way
           real hardware used to fail: VHS tracking loss, CRT phosphor bloom, datamosh block
           corruption, pixel sorting, channel separation. Reorder the layers and the picture changes.
+        </p>
+        <span class="meta">iPhone &middot; Free</span>
+      </div>
+      <div>
+        <h3><a href="/cyano/">CYANO &mdash; Cyanotype Photos</a></h3>
+        <p>
+          A cyanotype app for iPhone. It runs the chemistry of the 1842 sunprint process instead of
+          tinting the picture blue: the paper is blind to red and green, so two colours a camera
+          recorded as equally bright come out at opposite ends of the print. No darkroom, no
+          chemicals, no printer.
         </p>
         <span class="meta">iPhone &middot; Free</span>
       </div>

@@ -200,6 +200,99 @@ Any iPhone running iOS 15 or later. The app is about 6 MB.
 
 ---
 
+# CYANO: Cyanotype App for iPhone. Real Chemistry, Simulated.
+Source: https://lf.wtf/cyano/
+
+## CYANO
+
+Cyanotype Photos
+
+### Not a blue filter.The chemistry.
+
+A cyanotype is the oldest surviving photographic process. Paper brushed with iron salts, a negative laid on top, left out in the sun. What develops is Prussian blue, washed out in plain water. It is where the word blueprint comes from.
+
+CYANO does that chemistry in software. Not a colour swap tuned by eye, but the sensitiser's ultraviolet response integrated against sunlight across the spectrum, and Prussian blue built up through the Beer-Lambert law. No darkroom, no chemicals, no printer.
+
+No subscription · No account · Nothing leaves your phone
+
+Same frame. Drag it.
+
+Why it looks like that
+
+### The paper cannot see most of your photograph.
+
+Cyanotype paper is blind to red and green. It responds only to ultraviolet and the deepest blue, which means it reads a scene at completely the wrong brightness, and that is the whole point of it.
+
+Look at the picture above. To the camera, those yellow flowers and that sky are the same brightness: measure them and the flowers come out at 177, the sky at 167. You could not tell them apart in a black and white conversion.
+
+On the paper they end up at opposite ends. The flowers fall to 57 and the sky rises to 222, because yellow carries almost no light this sensitiser can use while the sky is carrying more than the sheet can hold. Nothing was adjusted to make that happen; it is what the chemistry does.
+
+Two colours your camera recorded as equally bright come out at opposite ends of the print.
+
+A filter cannot get there. A filter is a list somebody wrote down in advance, so it can make a photograph blue, but it has no idea which blue was carrying ultraviolet. That is the difference between something that looks vaguely antique and something that looks like it came out of a tray.
+
+What is actually being computed
+
+### Built from the physics, not from a preset.
+
+Every colour on your screen is three numbers. Those three numbers do not say how much ultraviolet a thing reflected, and ultraviolet is the only part this process cares about. So the model reconstructs the smoothest full spectrum consistent with the colour you photographed, then reads the part of it the sensitiser can actually see.
+
+That spectrum is integrated against the sensitiser's action curve and the solar spectrum to get an exposure. The exposure runs through a tonal curve derived from the photochemistry rather than drawn by hand. The resulting Prussian blue is built up by the Beer-Lambert law, including the way the pigment clumps at high concentration, without which the deep tones stall at an unconvincing electric blue.
+
+It also reads each photograph before printing it, the way a printer reads a negative and makes a test strip, so the exposure suits the picture in front of it rather than some imagined average one.
+
+The controls
+
+### Four dials, and every one of them is real.
+
+**Sun**
+
+How long the sheet was left out. Overexpose it and the shadows merge into one mass, the way they really do.
+
+**Paper**
+
+Cotton rag, rough watercolour, or buff. The base colour shows through everywhere, because in this process the paper is part of the picture.
+
+**Toning**
+
+Tea, tannin or red wine. These convert the Prussian blue into iron tannate rather than tinting it, which is why a toned print reads as another process instead of a recoloured one.
+
+**Brushed edge**
+
+The uneven coating of a hand-brushed sheet, seeded per photograph, so two prints of the same picture are never quite the same.
+
+On your phone
+
+### Simple in front, heavy underneath.
+
+Choose a photograph and it develops. Move the sun, change the paper, drop it in a toning bath. Save at full resolution with nothing stamped on it.
+
+Common questions
+
+### Questions
+
+#### Do I need chemicals, paper or a printer?
+
+None of them. CYANO exists so that people who could never set up a darkroom, buy sensitiser or wait for a sunny afternoon can still make cyanotypes.
+
+#### Is this a filter?
+
+No. A filter decides in advance what each colour becomes. CYANO works out how much ultraviolet each colour was actually carrying and builds the pigment from that.
+
+#### What does it cost?
+
+The app is free and completely usable: unlimited prints, full resolution, no watermark. One optional purchase of $4.99 unlocks the three toning baths, the other two papers and the second sensitiser formula. There is no subscription.
+
+#### Does it collect anything?
+
+No. No account, no analytics, no server, and no networking code of its own. Photographs never leave your phone. The privacy policy is one page and says so.
+
+### Make one.
+
+Free, and the free version is the whole simulation. Nothing is watermarked and nothing is held back to make a point.
+
+---
+
 # Privacy — FRMT
 Source: https://lf.wtf/frmt/privacy/
 
@@ -282,3 +375,54 @@ This policy may be updated from time to time. Any changes are posted on this pag
 
 ### Contact
 Questions about this policy or about the app: L@LF.WTF
+
+---
+
+# Privacy — CYANO
+Source: https://lf.wtf/cyano/privacy/
+
+## Privacy Policy
+
+Last updated: 16 August 2026
+
+### The short version
+
+CYANO does not collect anything about you, and it has no way to. There is no account, no analytics, no advertising and no server. The app contains no networking code of its own.
+
+### What the app stores, and where
+
+Everything stays on your iPhone.
+
+Photographs. You choose a photograph from your library and the app turns it into a cyanotype. That happens entirely on the device, using its graphics hardware. The picture you chose is read, not copied: nothing is uploaded, and nothing is kept after you close the app. When you save or share a finished print, it goes to your photo library or to whichever app you picked in the share sheet, and that is the only copy that persists.
+
+Settings. Whether you have seen the introduction, how many prints you have saved, which version last asked you for a rating, and whether the in-app purchase has been unlocked. These live in the app's own preferences and are read by nothing else.
+
+### Permissions the app asks for
+
+Photo library, to add. So a finished print can be saved. The app asks only for permission to add, not to read your whole library.
+
+Choosing a photograph does not need a permission at all. The picker is run by iOS, and the app receives only the single picture you select. It never sees the rest of your library.
+
+### The in-app purchase
+
+CYANO is free, and one optional purchase unlocks the toning baths, the remaining papers and the second sensitiser formula. That purchase is handled entirely by Apple through the App Store. The app asks the system whether the purchase has been made and receives yes or no. It never sees your Apple Account, your name or any payment detail, and no payment information is stored in the app or sent anywhere by it.
+
+Apple's own handling of that transaction is covered by Apple's privacy policy, not this one.
+
+### What is not here
+
+No analytics. No crash reporting. No advertising identifier. No third-party SDKs of any kind. No tracking across apps or websites. No mailing list. No cookies, because there is no website inside the app.
+
+Because none of this exists, there is also nothing to opt out of and no data to request or delete. Deleting the app removes its preferences with it.
+
+### Children
+
+CYANO is rated 4+ and is safe for any age. It collects nothing from anybody, children included.
+
+### Changes
+
+If this policy ever changes, the date at the top of this page changes with it. Since the app collects nothing, any change would be a matter of wording rather than of practice.
+
+### Contact
+
+Questions about this policy: https://lf.wtf/cyano
