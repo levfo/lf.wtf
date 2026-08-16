@@ -144,7 +144,7 @@ body {
   font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif;
   overflow-x: hidden;
 }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 main { max-width: 46rem; margin: 0 auto; padding: 0 clamp(1.3rem, 5vw, 2.5rem) 4rem; }
 
 .label {
@@ -183,7 +183,8 @@ figure { margin: 3rem 0 0; }
 figcaption { margin-top: 0.85rem; }
 .compare { position: relative; overflow: hidden; border-radius: 6px; touch-action: none; cursor: ew-resize; }
 .compare img { width: 100%; }
-.compare .top { position: absolute; inset: 0; clip-path: inset(0 0 0 var(--split)); }
+.compare .top { position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; clip-path: inset(0 0 0 var(--split)); }
 .compare .seam { position: absolute; top: 0; bottom: 0; left: var(--split); width: 2px; background: var(--paper); opacity: 0.85; }
 .compare .tag { position: absolute; bottom: 0.7rem; color: var(--paper); text-shadow: 0 1px 6px rgba(0,0,0,0.7); }
 .compare .l { left: 0.8rem; }
@@ -241,8 +242,8 @@ footer p { margin: 1rem 0 0; }
 
   <figure>
     <div class="compare" style="--split:50%">
-      <img src="/cyano/assets/before.jpg" width="1120" height="860" alt="Yellow flowers in front of a city skyline under a clear blue sky, as the phone photographed it.">
-      <img class="top" src="/cyano/assets/after.jpg" width="1120" height="860" alt="The same frame as a cyanotype: the yellow flowers have gone almost black while the sky has burned out to bare paper.">
+      <img src="/cyano/assets/before.jpg" width="1120" height="896" alt="Yellow flowers in front of a city skyline under a clear blue sky, as the phone photographed it.">
+      <img class="top" src="/cyano/assets/after.jpg" width="1120" height="896" alt="The same frame as a cyanotype: the yellow flowers have gone almost black while the sky has burned out to bare paper.">
       <span class="seam" aria-hidden="true"></span>
       <span class="tag label l">Photograph</span>
       <span class="tag label r">Cyanotype</span>
@@ -260,11 +261,11 @@ footer p { margin: 1rem 0 0; }
     </p>
     <p>
       Look at the picture above. To the camera, those yellow flowers and that sky are the same
-      brightness: measure them and the flowers come out at 177, the sky at 167. You could not tell
+      brightness: measure them and the flowers come out at 177, the sky at 165. You could not tell
       them apart in a black and white conversion.
     </p>
     <p>
-      On the paper they end up at opposite ends. The flowers fall to 57 and the sky rises to 222,
+      On the paper they end up at opposite ends. The flowers fall to 69 and the sky rises to 225,
       because yellow carries almost no light this sensitiser can use while the sky is carrying more
       than the sheet can hold. Nothing was adjusted to make that happen; it is what the chemistry
       does.
