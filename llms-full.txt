@@ -14,24 +14,31 @@ Source: https://lf.wtf/
 ## Levi Foster
 Independent app developer and artist · Fort Worth, Texas
 I am Levi Foster. I build iPhone apps and make things with code, mostly at the point where photography stops being a picture and starts being a process. Some of it ships on the App Store. The rest ends up as prints.
-The apps share a bias. I would rather simulate the thing than approximate the look of it, which is slower and more awkward and gets results a preset cannot. That is the whole idea behind FRMT, and it is why MODUL8 models broken hardware instead of drawing coloured lines over your photo.
+The apps share a bias. I would rather simulate the thing than approximate the look of it, which is slower and more awkward and gets results a preset cannot. That is the whole idea behind FRMT and CYANO, and it is why MODUL8 models broken hardware instead of drawing coloured lines over your photo.
 
 ### Work
 
 ### FRMT — Film Simulation
 A film simulation camera for iPhone. It models the photographic process itself rather than applying a colour filter: light scattering through the emulsion, dye layers holding each other back, grain forming where the light actually landed. Four stocks, built from published manufacturer measurements, developed from a RAW negative on the device.
+iPhone · $14.99 once · https://apps.apple.com/us/app/frmt-film-simulation/id6800928630
 
 ### MODUL8 — Glitch Art Effects
 A glitch art app for iPhone. Nineteen stackable effects, each modelled on a specific way real hardware used to fail: VHS tracking loss, CRT phosphor bloom, datamosh block corruption, pixel sorting, channel separation. Reorder the layers and the picture changes.
+iPhone · Free · https://apps.apple.com/us/app/modul8-glitch-art-effects/id6755617539
+
+### CYANO — Cyanotype Photos
+A cyanotype app for iPhone. It runs the chemistry of the 1842 sunprint process instead of tinting the picture blue: the paper is blind to red and green, so two colours a camera recorded as equally bright come out at opposite ends of the print. No darkroom, no chemicals, no printer.
+iPhone · Free · Not yet on the App Store; it is awaiting review.
 
 ### Harmony Palette
 A colour harmony and design tool for iPhone and iPad.
+iPhone & iPad · https://apps.apple.com/us/app/harmony-palette/id6757116756
 
 ### Merge With The Machine
 An art project about the line where human imagination meets machine generation. Generated visuals, experimental tools, and a print shop.
 
 ### Elsewhere
-- App Store
+- App Store: https://apps.apple.com/us/developer/levi-foster/id1854976064
 - Instagram
 - X
 - TikTok

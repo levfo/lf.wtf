@@ -53,8 +53,7 @@
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD",
-        "category": "Free with one optional in-app purchase",
-        "availability": "https://schema.org/InStock"
+        "category": "Free with one optional in-app purchase"
       },
       "author": { "@id": "https://lf.wtf/#levifoster" },
       "publisher": { "@id": "https://lf.wtf/#levifoster" }
@@ -177,6 +176,13 @@ header { padding: 3rem 0 0; }
 }
 .buy:hover { background: var(--wash); }
 .buy .price { font-weight: 400; opacity: 0.72; }
+/* Until the app is through review there is nowhere for this button to go. It said "Download on the
+   App Store" and pointed at "#", which looks like a broken page rather than an unreleased app, so
+   it says what is actually true and stops pretending to be a link.
+   To release: swap both <span class="buy pending"> back to <a class="buy"
+   href="https://apps.apple.com/us/app/cyano-cyanotype-photos/id6802050987">, restore the wording,
+   and drop this rule. */
+.buy.pending { background: transparent; color: var(--paper); box-shadow: inset 0 0 0 1px var(--wash); cursor: default; }
 .terms { margin: 0 0 1rem; }
 
 figure { margin: 3rem 0 0; }
@@ -237,7 +243,7 @@ footer p { margin: 1rem 0 0; }
       Prussian blue built up through the Beer-Lambert law. No darkroom, no chemicals, no printer.
     </p>
 
-    <a class="buy" href="#" data-appstore>Download on the App Store <span class="price">Free</span></a>
+    <span class="buy pending" data-appstore>Coming to the App Store <span class="price">Free</span></span>
     <p class="terms label">No subscription &middot; No account &middot; Nothing leaves your phone</p>
   </header>
 
@@ -369,7 +375,7 @@ footer p { margin: 1rem 0 0; }
       Free, and the free version is the whole simulation. Nothing is watermarked and nothing is
       held back to make a point.
     </p>
-    <a class="buy" href="#" data-appstore>Download on the App Store <span class="price">Free</span></a>
+    <span class="buy pending" data-appstore>Coming to the App Store <span class="price">Free</span></span>
   </section>
 
   <section class="close">
