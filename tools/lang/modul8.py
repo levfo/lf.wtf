@@ -67,7 +67,7 @@ EFFECTS = {
 T = dict(EFFECTS)
 
 T.update({
-    "MODUL8 — Glitch Art App for iPhone | Free Glitch Photo Effects": (
+    "MODUL8: Glitch Art App for iPhone | Free Glitch Photo Effects": (
         "MODUL8: Glitch-Art-App für iPhone | Kostenlose Glitch-Fotoeffekte",
         "MODUL8: app de glitch art para iPhone | Efectos glitch gratis",
         "MODUL8: app de glitch art para iPhone | Efectos glitch gratis",
@@ -107,7 +107,7 @@ T.update({
         "Roda no aparelho.",
         "MODUL8 是一款 iPhone 上的免费故障艺术应用。19 种可叠加效果，"
         "每一种都对应真实硬件的故障：VHS、CRT、数据莫氏、像素排序、RGB 分离。全部在设备上运行。"),
-    "MODUL8 — Glitch Art App for iPhone": (
+    "MODUL8: Glitch Art App for iPhone": (
         "MODUL8: Glitch-Art-App für iPhone", "MODUL8: app de glitch art para iPhone",
         "MODUL8: app de glitch art para iPhone", "MODUL8 : app de glitch art pour iPhone",
         "MODUL8: app di glitch art per iPhone", "MODUL8｜iPhone 用グリッチアートアプリ",

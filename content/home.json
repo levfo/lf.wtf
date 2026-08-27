@@ -1,5 +1,5 @@
 {
-  "Levi Foster — iPhone Apps, Photography Tools and Generative Art": {
+  "Levi Foster: iPhone Apps, Photography Tools and Generative Art": {
     "kind": "text:title",
     "de": "Levi Foster: iPhone-Apps, Fotowerkzeuge und generative Kunst",
     "es": "Levi Foster: apps para iPhone, herramientas de fotografía y arte generativo",
@@ -272,7 +272,7 @@
     "pt-BR": "Trabalho",
     "zh-Hans": "作品"
   },
-  "FRMT — Film Simulation": {
+  "FRMT: Film Simulation": {
     "kind": "text:a",
     "de": "FRMT: Filmsimulation",
     "es": "FRMT: simulación de película",
@@ -337,7 +337,7 @@
     "pt-BR": "App Store",
     "zh-Hans": "App Store"
   },
-  "MODUL8 — Glitch Art Effects": {
+  "MODUL8: Glitch Art Effects": {
     "kind": "text:a",
     "de": "MODUL8: Glitch-Art-Effekte",
     "es": "MODUL8: efectos de glitch art",
@@ -376,18 +376,18 @@
     "pt-BR": "Grátis",
     "zh-Hans": "免费"
   },
-  "Cyanotype Photos": {
+  "CYANO: Cyanotype Photos": {
     "kind": "text:a",
-    "de": "Cyanotypie-Fotos",
-    "es": "Fotos en cianotipia",
-    "es-MX": "Fotos en cianotipia",
-    "fr": "Photos au cyanotype",
-    "it": "Foto in cianotipia",
-    "ja": "サイアノタイプ写真",
-    "ko": "사이아노타입 사진",
-    "nl": "Cyanotypiefoto's",
-    "pt-BR": "Fotos em cianotipia",
-    "zh-Hans": "蓝晒照片"
+    "de": "CYANO: Cyanotypie-Fotos",
+    "es": "CYANO: Fotos en cianotipia",
+    "es-MX": "CYANO: Fotos en cianotipia",
+    "fr": "CYANO: Photos au cyanotype",
+    "it": "CYANO: Foto in cianotipia",
+    "ja": "CYANO: サイアノタイプ写真",
+    "ko": "CYANO: 사이아노타입 사진",
+    "nl": "CYANO: Cyanotypiefoto's",
+    "pt-BR": "CYANO: Fotos em cianotipia",
+    "zh-Hans": "CYANO: 蓝晒照片"
   },
   "A cyanotype app for iPhone. It runs the chemistry of the 1842 sunprint process instead of\n          tinting the picture blue: the paper is blind to red and green, so two colours a camera\n          recorded as equally bright come out at opposite ends of the print. No darkroom, no\n          chemicals, no printer.": {
     "kind": "text:p",

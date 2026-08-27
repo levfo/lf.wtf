@@ -7,8 +7,8 @@ they are the two fields that decide whether the page is found at all. Each carri
 someone would actually type: Filmsimulation, simulation argentique, フィルムシミュレーション,
 胶片模拟.
 
-No em-dashes, per house style. The English title uses one and is left alone here, since changing a
-live title is a separate decision, but nothing new introduces them.
+No em-dashes anywhere, per house style. The English pages had them in their titles and cross
+links; those were corrected too, so the separator is a colon on both sides now.
 """
 
 #: Names, handles and marks that are the same in every language.
@@ -19,7 +19,7 @@ KEEP = {
 }
 
 T = {
-    "Levi Foster — iPhone Apps, Photography Tools and Generative Art": (
+    "Levi Foster: iPhone Apps, Photography Tools and Generative Art": (
         "Levi Foster: iPhone-Apps, Fotowerkzeuge und generative Kunst",
         "Levi Foster: apps para iPhone, herramientas de fotografía y arte generativo",
         "Levi Foster: apps para iPhone, herramientas de fotografía y arte generativo",
@@ -201,7 +201,7 @@ T = {
         "也是 MODUL8 去模拟坏掉的硬件、而不是在你的照片上画彩色线条的原因。"),
     "Work": ("Arbeiten", "Trabajo", "Trabajo", "Travaux", "Lavori", "作品", "작업", "Werk",
              "Trabalho", "作品"),
-    "FRMT — Film Simulation": (
+    "FRMT: Film Simulation": (
         "FRMT: Filmsimulation", "FRMT: simulación de película", "FRMT: simulación de película",
         "FRMT : simulation argentique", "FRMT: simulazione di pellicola",
         "FRMT｜フィルムシミュレーション", "FRMT｜필름 시뮬레이션", "FRMT: filmsimulatie",
@@ -260,7 +260,7 @@ T = {
     "$14.99 once": ("14,99 $ einmalig", "14,99 $ una vez", "14,99 $ una vez",
                     "14,99 $ une fois", "14,99 $ una volta", "14.99 ドル買い切り",
                     "14.99달러 한 번", "$14,99 eenmalig", "US$ 14,99 uma vez", "14.99 美元买断"),
-    "MODUL8 — Glitch Art Effects": (
+    "MODUL8: Glitch Art Effects": (
         "MODUL8: Glitch-Art-Effekte", "MODUL8: efectos de glitch art",
         "MODUL8: efectos de glitch art", "MODUL8 : effets de glitch art",
         "MODUL8: effetti glitch art", "MODUL8｜グリッチアートエフェクト",
@@ -513,3 +513,7 @@ T = {
         "Levi Foster의 앱과 프로젝트", "Apps en projecten van Levi Foster",
         "Apps e projetos de Levi Foster", "Levi Foster 的应用与项目"),
 }
+
+# The link label used to be "CYANO &mdash; Cyanotype Photos", which the parser saw as two text
+# nodes either side of the entity. With a colon it is one node, so it needs its own entry.
+T["CYANO: Cyanotype Photos"] = tuple("CYANO: " + v for v in T["Cyanotype Photos"])

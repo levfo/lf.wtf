@@ -1,29 +1,16 @@
 {
-  "Privacy": {
+  "FRMT Privacy Policy": {
     "kind": "text:title",
-    "de": "Datenschutz",
-    "es": "Privacidad",
-    "es-MX": "Privacidad",
-    "fr": "Confidentialité",
-    "it": "Privacy",
-    "ja": "プライバシー",
-    "ko": "개인정보",
-    "nl": "Privacy",
-    "pt-BR": "Privacidade",
-    "zh-Hans": "隐私"
-  },
-  "FRMT": {
-    "kind": "text:title",
-    "de": "FRMT",
-    "es": "FRMT",
-    "es-MX": "FRMT",
-    "fr": "FRMT",
-    "it": "FRMT",
-    "ja": "FRMT",
-    "ko": "FRMT",
-    "nl": "FRMT",
-    "pt-BR": "FRMT",
-    "zh-Hans": "FRMT"
+    "de": "Datenschutzerklärung für FRMT",
+    "es": "Política de privacidad de FRMT",
+    "es-MX": "Política de privacidad de FRMT",
+    "fr": "Politique de confidentialité de FRMT",
+    "it": "Informativa sulla privacy di FRMT",
+    "ja": "FRMT プライバシーポリシー",
+    "ko": "FRMT 개인정보 처리방침",
+    "nl": "Privacybeleid van FRMT",
+    "pt-BR": "Política de privacidade do FRMT",
+    "zh-Hans": "FRMT 隐私政策"
   },
   "FRMT collects nothing and has no way to. There is no account, no analytics and no server.": {
     "kind": "attr:content",
@@ -37,6 +24,19 @@
     "nl": "FRMT verzamelt niets en heeft er ook geen manier toe. Er is geen account, geen analytics en geen server.",
     "pt-BR": "O FRMT não coleta nada e não tem como coletar. Não há conta, não há análises e não há servidor.",
     "zh-Hans": "FRMT 不收集任何东西，也没有办法收集。没有账号、没有分析，也没有服务器。"
+  },
+  "FRMT": {
+    "kind": "text:title",
+    "de": "FRMT",
+    "es": "FRMT",
+    "es-MX": "FRMT",
+    "fr": "FRMT",
+    "it": "FRMT",
+    "ja": "FRMT",
+    "ko": "FRMT",
+    "nl": "FRMT",
+    "pt-BR": "FRMT",
+    "zh-Hans": "FRMT"
   },
   "Privacy Policy": {
     "kind": "text:h1",

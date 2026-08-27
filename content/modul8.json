@@ -1,5 +1,5 @@
 {
-  "MODUL8 — Glitch Art App for iPhone | Free Glitch Photo Effects": {
+  "MODUL8: Glitch Art App for iPhone | Free Glitch Photo Effects": {
     "kind": "text:title",
     "de": "MODUL8: Glitch-Art-App für iPhone | Kostenlose Glitch-Fotoeffekte",
     "es": "MODUL8: app de glitch art para iPhone | Efectos glitch gratis",
@@ -25,7 +25,7 @@
     "pt-BR": "O MODUL8 é um app de glitch art grátis para iPhone. 19 efeitos empilháveis modelados sobre falhas reais de hardware: VHS, CRT, datamosh, ordenação de pixels, separação RGB. Roda no aparelho.",
     "zh-Hans": "MODUL8 是一款 iPhone 上的免费故障艺术应用。19 种可叠加效果，每一种都对应真实硬件的故障：VHS、CRT、数据莫氏、像素排序、RGB 分离。全部在设备上运行。"
   },
-  "MODUL8 — Glitch Art App for iPhone": {
+  "MODUL8: Glitch Art App for iPhone": {
     "kind": "attr:content",
     "de": "MODUL8: Glitch-Art-App für iPhone",
     "es": "MODUL8: app de glitch art para iPhone",
@@ -1663,7 +1663,7 @@
     "pt-BR": "Processamento no aparelho, sem upload",
     "zh-Hans": "在设备上处理，不上传"
   },
-  "Yes. All 19 effects, all 9 presets and unlimited stacking are free, and nothing you export carries a watermark. Premium adds full resolution export, looping video export, saving your own presets, and removes ads.": {
+  "Yes. All 19 effects, all 9 presets and unlimited stacking are free, and nothing you export is watermarked. Premium adds full resolution export, looping video export, saving your own presets, and removes ads.": {
     "kind": "ld",
     "de": "Ja. Alle 19 Effekte, alle 9 Presets und unbegrenztes Stapeln sind kostenlos, und nichts, was du exportierst, trägt ein Wasserzeichen. Premium ergänzt Export in voller Auflösung, Export als Videoschleife, das Sichern eigener Presets, und entfernt die Werbung.",
     "es": "Sí. Los 19 efectos, los 9 preajustes y el apilado ilimitado son gratis, y nada de lo que exportas lleva marca de agua. Premium añade exportación a resolución completa, exportación de vídeo en bucle, guardar tus propios preajustes, y quita los anuncios.",
@@ -1676,33 +1676,20 @@
     "pt-BR": "Sim. Todos os 19 efeitos, todos os 9 presets e o empilhamento ilimitado são grátis, e nada do que você exporta leva marca d'água. O Premium acrescenta exportação em resolução total, exportação de vídeo em loop, salvar seus próprios presets, e remove os anúncios.",
     "zh-Hans": "是的。19 种效果、9 个预设和无限叠加全部免费，你导出的东西也不带水印。Premium 增加完整分辨率导出、循环视频导出、保存自己的预设，并去掉广告。"
   },
-  "Noise, Pixel Shift, RGB Split, Scanlines, Distortion, Corruption, Feedback, VHS, CRT, Chroma, Film Grain, Bit Crush, Interlace, Invert, Datamosh, Dither, Analogue Static, Pixel Sort and Signal Sync. Any number of them can run at once, in any order.": {
+  "Noise, Pixel Shift, RGB Split, Scanlines, Distortion, Corruption, Feedback, VHS, CRT, Chroma, Film Grain, Bit Crush, Interlace, Invert, Datamosh, Dither, Analogue Static, Pixel Sort and Signal Sync. Any number at once, in any order.": {
     "kind": "ld",
-    "de": "RAUSCHEN, VERSATZ, RGB, BILDZEILEN, VERZERRUNG, DEFEKT, RÜCKKOPPLUNG, VHS, CRT, CHROMA, FILM, CRUSH, ZEILEN, INVERTIEREN, DATAMOSH, DITHER, BILDRAUSCHEN, SORTIEREN, SYNC. Beliebig viele davon können gleichzeitig laufen, in beliebiger Reihenfolge.",
-    "es": "RUIDO, CORRIMIENTO, RGB, LÍNEAS, DISTORSIÓN, CORRUPCIÓN, REALIM., VHS, CRT, CROMA, PELÍCULA, CRUSH, ENTRELAZ., INVERTIR, DATAMOSH, TRAMADO, NIEVE, ORDENAR, SINCRONÍA. Pueden ejecutarse todos a la vez, en el orden que quieras.",
-    "es-MX": "RUIDO, CORRIMIENTO, RGB, LÍNEAS, DISTORSIÓN, CORRUPCIÓN, REALIM., VHS, CRT, CROMA, PELÍCULA, CRUSH, ENTRELAZ., INVERTIR, DATAMOSH, TRAMADO, NIEVE, ORDENAR, SINCRONÍA. Pueden ejecutarse todos a la vez, en el orden que quieras.",
-    "fr": "BRUIT, DÉCALAGE, RVB, LIGNES, DISTORSION, CORRUPTION, RETOUR, VHS, CRT, CHROMA, PELLICULE, CRUSH, ENTRELACÉ, INVERSION, DATAMOSH, TRAMAGE, NEIGE, TRI, SYNCHRO. Autant qu'on veut peuvent tourner en même temps, dans n'importe quel ordre.",
-    "it": "RUMORE, SPOSTA, RGB, RIGHE, DISTORSIONE, CORRUZIONE, FEEDBACK, VHS, CRT, CROMA, PELLICOLA, CRUSH, INTERLACCIO, INVERTI, DATAMOSH, DITHER, NEVE, ORDINA, SYNC. Quanti se ne vuole possono girare insieme, in qualsiasi ordine.",
-    "ja": "ノイズ, シフト, RGB分離, 走査線, 歪み, 破損, 反復, VHS, CRT, 色ずれ, フィルム, 劣化, インタレース, 色反転, モッシュ, ディザ, 砂嵐, ソート, 同期ずれ。いくつでも同時に走らせられ、順序も自由です。",
-    "ko": "노이즈, 픽셀 시프트, RGB 분리, 주사선, 왜곡, 손상, 피드백, VHS, CRT, 색 어긋남, 필름, 열화, 인터레이스, 색 반전, 모시, 디더, 지지직, 픽셀 정렬, 동기 오류. 몇 개든 동시에 돌릴 수 있고, 순서도 자유입니다.",
-    "nl": "RUIS, VERSCHUIF, RGB, LIJNEN, VERVORMING, CORRUPTIE, TERUGKOPP., VHS, BEELDBUIS, CHROMA, FILM, CRUSH, INTERLACE, OMKEREN, DATAMOSH, DITHER, SNEEUW, SORTEER, SYNC. Zoveel als je wilt kunnen tegelijk draaien, in welke volgorde dan ook.",
-    "pt-BR": "RUÍDO, DESLOCAR, RGB, LINHAS, DISTORÇÃO, CORRUPÇÃO, REALIM., VHS, CRT, CROMA, FILME, CRUSH, ENTRELAÇ., INVERTER, DATAMOSH, DITHER, CHUVISCO, ORDENAR, SINCRONIA. Quantos quiser podem rodar ao mesmo tempo, em qualquer ordem.",
-    "zh-Hans": "噪点, 像素偏移, RGB 分离, 扫描线, 畸变, 数据损坏, 反馈, VHS, 显像管, 色度偏移, 胶片, 位深压碎, 隔行扫描, 反色, 数据莫氏, 抖动, 雪花, 像素排序, 信号同步。想同时跑几种都可以，顺序也随意。"
+    "de": "RAUSCHEN, VERSATZ, RGB, BILDZEILEN, VERZERRUNG, DEFEKT, RÜCKKOPPLUNG, VHS, CRT, CHROMA, FILM, CRUSH, ZEILEN, INVERTIEREN, DATAMOSH, DITHER, BILDRAUSCHEN, SORTIEREN, SYNC. Beliebig viele auf einmal, in beliebiger Reihenfolge.",
+    "es": "RUIDO, CORRIMIENTO, RGB, LÍNEAS, DISTORSIÓN, CORRUPCIÓN, REALIM., VHS, CRT, CROMA, PELÍCULA, CRUSH, ENTRELAZ., INVERTIR, DATAMOSH, TRAMADO, NIEVE, ORDENAR, SINCRONÍA. Todos los que quieras a la vez, en el orden que quieras.",
+    "es-MX": "RUIDO, CORRIMIENTO, RGB, LÍNEAS, DISTORSIÓN, CORRUPCIÓN, REALIM., VHS, CRT, CROMA, PELÍCULA, CRUSH, ENTRELAZ., INVERTIR, DATAMOSH, TRAMADO, NIEVE, ORDENAR, SINCRONÍA. Todos los que quieras a la vez, en el orden que quieras.",
+    "fr": "BRUIT, DÉCALAGE, RVB, LIGNES, DISTORSION, CORRUPTION, RETOUR, VHS, CRT, CHROMA, PELLICULE, CRUSH, ENTRELACÉ, INVERSION, DATAMOSH, TRAMAGE, NEIGE, TRI, SYNCHRO. Autant que vous voulez à la fois, dans n'importe quel ordre.",
+    "it": "RUMORE, SPOSTA, RGB, RIGHE, DISTORSIONE, CORRUZIONE, FEEDBACK, VHS, CRT, CROMA, PELLICOLA, CRUSH, INTERLACCIO, INVERTI, DATAMOSH, DITHER, NEVE, ORDINA, SYNC. Quanti ne vuoi insieme, in qualsiasi ordine.",
+    "ja": "ノイズ, シフト, RGB分離, 走査線, 歪み, 破損, 反復, VHS, CRT, 色ずれ, フィルム, 劣化, インタレース, 色反転, モッシュ, ディザ, 砂嵐, ソート, 同期ずれ。いくつでも同時に、好きな順序で。",
+    "ko": "노이즈, 픽셀 시프트, RGB 분리, 주사선, 왜곡, 손상, 피드백, VHS, CRT, 색 어긋남, 필름, 열화, 인터레이스, 색 반전, 모시, 디더, 지지직, 픽셀 정렬, 동기 오류. 몇 개든 한꺼번에, 어떤 순서로든.",
+    "nl": "RUIS, VERSCHUIF, RGB, LIJNEN, VERVORMING, CORRUPTIE, TERUGKOPP., VHS, BEELDBUIS, CHROMA, FILM, CRUSH, INTERLACE, OMKEREN, DATAMOSH, DITHER, SNEEUW, SORTEER, SYNC. Zoveel tegelijk als je wilt, in welke volgorde dan ook.",
+    "pt-BR": "RUÍDO, DESLOCAR, RGB, LINHAS, DISTORÇÃO, CORRUPÇÃO, REALIM., VHS, CRT, CROMA, FILME, CRUSH, ENTRELAÇ., INVERTER, DATAMOSH, DITHER, CHUVISCO, ORDENAR, SINCRONIA. Quantos você quiser de uma vez, em qualquer ordem.",
+    "zh-Hans": "噪点, 像素偏移, RGB 分离, 扫描线, 畸变, 数据损坏, 反馈, VHS, 显像管, 色度偏移, 胶片, 位深压碎, 隔行扫描, 反色, 数据莫氏, 抖动, 雪花, 像素排序, 信号同步。想同时用几种就用几种，顺序随你。"
   },
-  "What glitch effects does MODUL8 include?": {
-    "kind": "ld",
-    "de": "Welche Glitch-Effekte enthält MODUL8?",
-    "es": "¿Qué efectos glitch incluye MODUL8?",
-    "es-MX": "¿Qué efectos glitch incluye MODUL8?",
-    "fr": "Quels effets glitch MODUL8 inclut-il ?",
-    "it": "Quali effetti glitch include MODUL8?",
-    "ja": "MODUL8 にはどんなグリッチエフェクトが入っていますか。",
-    "ko": "MODUL8에는 어떤 글리치 효과가 들어 있나요?",
-    "nl": "Welke glitch-effecten bevat MODUL8?",
-    "pt-BR": "Que efeitos glitch o MODUL8 inclui?",
-    "zh-Hans": "MODUL8 包含哪些故障效果？"
-  },
-  "Most glitch apps lay a fixed pattern over whatever you give them, so every photo comes out looking the same. Each MODUL8 effect models one specific hardware failure and reads the pixels underneath before deciding what to do, so the same settings produce different results on different photographs.": {
+  "Most of them lay a fixed pattern over whatever you give them, so every photo comes out wearing the same costume. Each MODUL8 effect models one specific hardware failure and reads the pixels underneath before deciding what to do, so the same settings give different results on different photographs.": {
     "kind": "ld",
     "de": "Die meisten legen ein festes Muster über alles, was du ihnen gibst, und jedes Foto kommt im selben Kostüm heraus. Jeder MODUL8-Effekt bildet einen bestimmten Hardwarefehler nach und liest die Pixel darunter, bevor er entscheidet, was er tut, also liefern dieselben Einstellungen auf verschiedenen Fotos verschiedene Ergebnisse.",
     "es": "La mayoría pone un patrón fijo sobre lo que le des, y cada foto sale con el mismo disfraz. Cada efecto de MODUL8 modela un fallo de hardware concreto y lee los píxeles de debajo antes de decidir qué hacer, así que los mismos ajustes dan resultados distintos en fotos distintas.",
@@ -1715,7 +1702,7 @@
     "pt-BR": "A maioria põe um padrão fixo sobre o que você der, e cada foto sai vestindo a mesma fantasia. Cada efeito do MODUL8 modela uma falha de hardware específica e lê os pixels embaixo antes de decidir o que fazer, então os mesmos ajustes dão resultados diferentes em fotos diferentes.",
     "zh-Hans": "多数应用是你给它什么，它都盖上一套固定的图案，于是每张照片都穿着同一件戏服出来。MODUL8 的每一种效果都模拟某一个具体的硬件故障，并且会先读取底下的像素再决定要做什么，所以同样的设置在不同照片上会给出不同的结果。"
   },
-  "No. Every effect runs locally on your iPhone. There is no account, no render queue and no server holding your images. The free version does serve ads, which is the only part of the app that uses the network.": {
+  "No. Every effect runs locally on your iPhone. There is no account, no render queue and no server holding your images. The free version serves ads, which is the only part of the app that touches the network.": {
     "kind": "ld",
     "de": "Nein. Jeder Effekt läuft lokal auf deinem iPhone. Es gibt kein Konto, keine Renderwarteschlange und keinen Server, der deine Bilder hält. Die kostenlose Fassung zeigt Werbung, und das ist der einzige Teil der App, der das Netz benutzt.",
     "es": "No. Cada efecto se ejecuta localmente en tu iPhone. No hay cuenta, ni cola de render, ni servidor guardando tus imágenes. La versión gratuita muestra anuncios, que son la única parte de la app que usa la red.",
@@ -1728,20 +1715,7 @@
     "pt-BR": "Não. Cada efeito roda localmente no seu iPhone. Não há conta, não há fila de renderização e não há servidor guardando suas imagens. A versão gratuita exibe anúncios, que são a única parte do app que usa a rede.",
     "zh-Hans": "不会。每一种效果都在你的 iPhone 本地运行。没有账号、没有渲染队列，也没有服务器存着你的图像。免费版会显示广告，那是这个应用里唯一用到网络的部分。"
   },
-  "Does MODUL8 upload my photos?": {
-    "kind": "ld",
-    "de": "Lädt MODUL8 meine Fotos hoch?",
-    "es": "¿MODUL8 sube mis fotos?",
-    "es-MX": "¿MODUL8 sube mis fotos?",
-    "fr": "MODUL8 envoie-t-il mes photos ?",
-    "it": "MODUL8 carica le mie foto?",
-    "ja": "MODUL8 は写真をアップロードしますか。",
-    "ko": "MODUL8가 제 사진을 업로드하나요?",
-    "nl": "Uploadt MODUL8 mijn foto's?",
-    "pt-BR": "O MODUL8 envia minhas fotos?",
-    "zh-Hans": "MODUL8 会上传我的照片吗？"
-  },
-  "Yes. Any finished image can be exported as a seamless looping video with the effect parameters animating across the loop, saved straight to your camera roll.": {
+  "Yes. Any finished image can be exported as a seamless looping video with the effect parameters animating across the loop, straight to your camera roll.": {
     "kind": "ld",
     "de": "Ja. Jedes fertige Bild lässt sich als nahtlos geschleiftes Video exportieren, in dem sich die Effektparameter über die Schleife hinweg bewegen, direkt in deine Aufnahmen.",
     "es": "Sí. Cualquier imagen terminada se puede exportar como vídeo en bucle sin costuras con los parámetros de los efectos animándose a lo largo del bucle, directo a tu carrete.",
@@ -1753,31 +1727,5 @@
     "nl": "Ja. Elk afgerond beeld kan worden geëxporteerd als naadloos loopende video waarin de effectparameters over de loop heen animeren, rechtstreeks naar je filmrol.",
     "pt-BR": "Sim. Qualquer imagem pronta pode ser exportada como vídeo em loop sem emenda, com os parâmetros dos efeitos se animando ao longo do loop, direto para o seu rolo da câmera.",
     "zh-Hans": "可以。任何一张完成的图像都能导出为无缝循环视频，效果参数会在整个循环里持续变化，直接存进相机胶卷。"
-  },
-  "Can MODUL8 make glitch videos?": {
-    "kind": "ld",
-    "de": "Kann MODUL8 Glitch-Videos machen?",
-    "es": "¿MODUL8 puede hacer vídeos glitch?",
-    "es-MX": "¿MODUL8 puede hacer videos glitch?",
-    "fr": "MODUL8 peut-il faire des vidéos glitch ?",
-    "it": "MODUL8 può fare video glitch?",
-    "ja": "MODUL8 でグリッチ動画はつくれますか。",
-    "ko": "MODUL8로 글리치 영상을 만들 수 있나요?",
-    "nl": "Kan MODUL8 glitch-video's maken?",
-    "pt-BR": "O MODUL8 consegue fazer vídeos glitch?",
-    "zh-Hans": "MODUL8 能做故障视频吗？"
-  },
-  "Which iPhones does MODUL8 support?": {
-    "kind": "ld",
-    "de": "Welche iPhones unterstützt MODUL8?",
-    "es": "¿Qué iPhones admite MODUL8?",
-    "es-MX": "¿Qué iPhones admite MODUL8?",
-    "fr": "Quels iPhone MODUL8 prend-il en charge ?",
-    "it": "Quali iPhone supporta MODUL8?",
-    "ja": "MODUL8 はどの iPhone に対応していますか。",
-    "ko": "MODUL8는 어떤 iPhone을 지원하나요?",
-    "nl": "Welke iPhones ondersteunt MODUL8?",
-    "pt-BR": "Quais iPhones o MODUL8 suporta?",
-    "zh-Hans": "MODUL8 支持哪些 iPhone？"
   }
 }

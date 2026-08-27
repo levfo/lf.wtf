@@ -1,5 +1,5 @@
 """Fold the per-page translation modules into content/*.json, and say what is still missing."""
-import importlib.util, json, sys
+import importlib.util, json, re, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -32,7 +32,16 @@ def main():
                 for loc, value in zip(LOCALES, values):
                     entry[loc] = value
             else:
-                missing.append(en)
+                # The FAQ schema carries the same answer as the page with its line wrapping
+                # collapsed, so it is a different string for a dictionary and the same sentence for
+                # a reader. Reuse the translation rather than writing every long answer twice.
+                flat = re.sub(r"\s+", " ", en).strip()
+                source = next((k for k in T if re.sub(r"\s+", " ", k).strip() == flat), None)
+                if source:
+                    for loc, value in zip(LOCALES, T[source]):
+                        entry[loc] = re.sub(r"\s+", " ", value).strip()
+                else:
+                    missing.append(en)
         f.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
         total_missing += len(missing)
         state = "complete" if not missing else f"{len(missing)} missing"

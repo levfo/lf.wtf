@@ -1381,3 +1381,17 @@ T.update({
         "CYANO はデータを収集しますか。", "CYANO는 데이터를 수집하나요?",
         "Verzamelt CYANO gegevens?", "O CYANO coleta algum dado?", "CYANO 会收集数据吗？"),
 })
+
+# Same again on the cross-links at the foot of the CYANO page.
+T["FRMT: Film Simulation"] = tuple("FRMT: " + v for v in T["Film Simulation"])
+T["MODUL8: Glitch Art Effects"] = tuple("MODUL8: " + v for v in T["Glitch Art Effects"])
+
+# The visible answer is split around an inline link to the privacy policy; the schema carries it as
+# one sentence. Composed from the three fragments so the two say exactly the same thing.
+T["No. No account, no analytics, no server, and no networking code of its own. Photographs never "
+  "leave your phone. The privacy policy is one page and says so."] = tuple(
+    f"{a} {b} {c}".replace("  ", " ").replace(" .", ".").replace("’ ", "’")
+    for a, b, c in zip(
+        T["No. No account, no analytics, no server, and no networking code of its own. "
+          "Photographs never\n      leave your phone. The"],
+        T["privacy policy"], T["is one page and says so."]))

@@ -62,7 +62,8 @@ PAGES = {
 ATTRS = {"content", "alt", "title", "aria-label", "placeholder"}
 #: Values that are machine-read or are URLs, and must survive untouched.
 SKIP_META = {"og:image", "og:url", "og:type", "og:site_name", "twitter:card", "twitter:creator",
-             "viewport", "color-scheme", "author", "og:locale", "theme-color", "charset"}
+             "viewport", "color-scheme", "author", "og:locale", "og:locale:alternate",
+             "theme-color", "charset"}
 SKIP_TAGS = {"script", "style"}
 #: JSON-LD keys worth translating. Everything else in the graph is an identifier, a URL or a number.
 LD_KEYS = {"name", "description", "alternateName", "featureList", "headline", "abstract",
@@ -151,8 +152,23 @@ def _ld_blocks(source):
         r'(<script[^>]*type="application/ld\+json"[^>]*>)(.*?)(</script>)', source, re.S))
 
 
+def strip_injected(source):
+    """Remove everything a previous run of this script added.
+
+    The English pages are both the input and the output, so without this the language switcher
+    starts being extracted as if it were copy: "English", "Deutsch", "Language" and ten og:locale
+    codes all turned up as translatable segments on the second pass.
+    """
+    source = re.sub(r"\n?/\* i18n:start \*/.*?/\* i18n:end \*/\n?", "", source, flags=re.S)
+    source = re.sub(r'\n?<nav class="i18n".*?</nav>\n?', "", source, flags=re.S)
+    source = re.sub(r'\n?<link rel="alternate" hreflang="[^"]*" href="[^"]*">', "", source)
+    source = re.sub(r'\n?<meta property="og:locale:alternate" content="[^"]*">', "", source)
+    return source
+
+
 def extract(source):
     """Every translatable string in the page, in document order, deduplicated."""
+    source = strip_injected(source)
     walk = _Walk()
     walk.feed(source)
     seen, out = set(), []
@@ -372,7 +388,7 @@ def cmd_build(check_only=False):
     problems, written = [], 0
     for src, page_url in PAGES.items():
         name = src.replace("/index.html", "").replace("index.html", "home").replace("/", "-")
-        source = (ROOT / src).read_text()
+        source = strip_injected((ROOT / src).read_text())
 
         # The English page is rewritten in place with the same reciprocal alternates and the same
         # switcher. hreflang has to point both ways: a set where only the translations declare

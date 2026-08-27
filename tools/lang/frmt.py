@@ -20,7 +20,7 @@ KEEP = {
 }
 
 T = {
-    "FRMT — Film Simulation App for iPhone": (
+    "FRMT: Film Simulation App for iPhone": (
         "FRMT: Filmsimulation-App für iPhone",
         "FRMT: app de simulación de película para iPhone",
         "FRMT: app de simulación de película para iPhone",

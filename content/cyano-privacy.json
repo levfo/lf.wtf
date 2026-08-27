@@ -1,29 +1,16 @@
 {
-  "Privacy": {
+  "CYANO Privacy Policy": {
     "kind": "text:title",
-    "de": "Datenschutz",
-    "es": "Privacidad",
-    "es-MX": "Privacidad",
-    "fr": "Confidentialité",
-    "it": "Privacy",
-    "ja": "プライバシー",
-    "ko": "개인정보",
-    "nl": "Privacy",
-    "pt-BR": "Privacidade",
-    "zh-Hans": "隐私"
-  },
-  "CYANO": {
-    "kind": "text:title",
-    "de": "CYANO",
-    "es": "CYANO",
-    "es-MX": "CYANO",
-    "fr": "CYANO",
-    "it": "CYANO",
-    "ja": "CYANO",
-    "ko": "CYANO",
-    "nl": "CYANO",
-    "pt-BR": "CYANO",
-    "zh-Hans": "CYANO"
+    "de": "Datenschutzerklärung für CYANO",
+    "es": "Política de privacidad de CYANO",
+    "es-MX": "Política de privacidad de CYANO",
+    "fr": "Politique de confidentialité de CYANO",
+    "it": "Informativa sulla privacy di CYANO",
+    "ja": "CYANO プライバシーポリシー",
+    "ko": "CYANO 개인정보 처리방침",
+    "nl": "Privacybeleid van CYANO",
+    "pt-BR": "Política de privacidade do CYANO",
+    "zh-Hans": "CYANO 隐私政策"
   },
   "CYANO collects nothing and has no way to. There is no account, no analytics and no server.": {
     "kind": "attr:content",
@@ -37,6 +24,19 @@
     "nl": "CYANO verzamelt niets en heeft er ook geen manier toe. Er is geen account, geen analytics en geen server.",
     "pt-BR": "O CYANO não coleta nada e não tem como coletar. Não há conta, não há análises e não há servidor.",
     "zh-Hans": "CYANO 不收集任何东西，也没有办法收集。没有账号、没有分析，也没有服务器。"
+  },
+  "CYANO": {
+    "kind": "text:title",
+    "de": "CYANO",
+    "es": "CYANO",
+    "es-MX": "CYANO",
+    "fr": "CYANO",
+    "it": "CYANO",
+    "ja": "CYANO",
+    "ko": "CYANO",
+    "nl": "CYANO",
+    "pt-BR": "CYANO",
+    "zh-Hans": "CYANO"
   },
   "Privacy Policy": {
     "kind": "text:h1",

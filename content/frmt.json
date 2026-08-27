@@ -1,5 +1,5 @@
 {
-  "FRMT — Film Simulation App for iPhone": {
+  "FRMT: Film Simulation App for iPhone": {
     "kind": "text:title",
     "de": "FRMT: Filmsimulation-App für iPhone",
     "es": "FRMT: app de simulación de película para iPhone",
@@ -1559,70 +1559,31 @@
     "pt-BR": "Sem conta, sem servidor, sem assinatura",
     "zh-Hans": "无账号、无服务器、无订阅"
   },
-  "A filter is a lookup table: somebody decided in advance what every colour becomes, and the same input colour always gives the same output. FRMT simulates the photographic process instead, so what happens to a pixel depends on what surrounds it. Light spreads sideways into neighbouring areas, dye layers hold each other back, and grain forms according to how much light actually landed.": {
+  "A filter is a lookup table. Somebody decided in advance what every colour becomes, and the same input always gives the same output. FRMT simulates the process instead, so what happens to a pixel depends on what surrounds it: light spreads sideways into neighbouring areas, dye layers hold each other back, and grain forms according to how much light actually landed.": {
     "kind": "ld",
-    "de": "Ein Filter ist eine Nachschlagetabelle: Jemand hat vorab entschieden, was aus jeder Farbe wird, und dieselbe Eingangsfarbe liefert immer dieselbe Ausgabe. FRMT simuliert stattdessen den fotografischen Prozess, also hängt das, was mit einem Pixel geschieht, davon ab, was es umgibt. Licht breitet sich seitwärts in benachbarte Bereiche aus, Farbschichten halten einander zurück, und Korn entsteht danach, wie viel Licht tatsächlich gelandet ist.",
-    "es": "Un filtro es una tabla de consulta: alguien decidió de antemano en qué se convierte cada color, y el mismo color de entrada da siempre la misma salida. FRMT simula el proceso fotográfico en su lugar, así que lo que le pasa a un píxel depende de lo que lo rodea. La luz se extiende de lado hacia las zonas vecinas, las capas de colorante se frenan entre sí y el grano se forma según cuánta luz llegó de verdad.",
-    "es-MX": "Un filtro es una tabla de consulta: alguien decidió de antemano en qué se convierte cada color, y el mismo color de entrada da siempre la misma salida. FRMT simula el proceso fotográfico en su lugar, así que lo que le pasa a un píxel depende de lo que lo rodea. La luz se extiende de lado hacia las zonas vecinas, las capas de colorante se frenan entre sí y el grano se forma según cuánta luz llegó de verdad.",
-    "fr": "Un filtre est une table de conversion : quelqu'un a décidé à l'avance ce que devient chaque couleur, et la même couleur en entrée donne toujours la même sortie. FRMT simule à la place le procédé photographique, si bien que ce qui arrive à un pixel dépend de ce qui l'entoure. La lumière s'étend latéralement vers les zones voisines, les couches de colorant se retiennent, et le grain se forme selon la quantité de lumière réellement tombée.",
-    "it": "Un filtro è una tabella di consultazione: qualcuno ha deciso in anticipo cosa diventa ogni colore, e lo stesso colore in ingresso dà sempre la stessa uscita. FRMT simula invece il processo fotografico, quindi quello che succede a un pixel dipende da ciò che lo circonda. La luce si allarga di lato verso le zone vicine, gli strati di colorante si trattengono a vicenda, e la grana si forma in base a quanta luce è davvero arrivata.",
-    "ja": "フィルターはルックアップテーブルです。どの色が何になるかを誰かが前もって決めていて、同じ入力色からは必ず同じ出力が出ます。FRMT はその代わりに写真の工程を再現するので、ある画素に何が起きるかは、そのまわりに何があるかで決まります。光は隣接する領域へ横に広がり、色素層は互いを抑え合い、粒子は実際に落ちた光の量に応じて生まれます。",
-    "ko": "필터는 룩업 테이블입니다. 어떤 색이 무엇이 될지 누군가 미리 정해 두었고, 같은 입력 색은 언제나 같은 출력을 냅니다. FRMT는 대신 사진의 공정을 시뮬레이션하므로, 한 픽셀에 무슨 일이 일어날지는 그 주변에 무엇이 있는지에 달려 있습니다. 빛은 이웃한 영역으로 옆으로 퍼지고, 염료층은 서로를 붙잡고, 입자는 실제로 닿은 빛의 양에 따라 생깁니다.",
-    "nl": "Een filter is een opzoektabel: iemand heeft vooraf besloten wat elke kleur wordt, en dezelfde invoerkleur geeft altijd dezelfde uitvoer. FRMT simuleert in plaats daarvan het fotografische proces, dus wat er met een pixel gebeurt hangt af van wat eromheen zit. Licht spreidt zijwaarts naar naburige gebieden, kleurlagen houden elkaar tegen, en korrel ontstaat naar gelang hoeveel licht er werkelijk is geland.",
-    "pt-BR": "Um filtro é uma tabela de consulta: alguém decidiu de antemão no que cada cor vira, e a mesma cor de entrada dá sempre a mesma saída. O FRMT simula o processo fotográfico em vez disso, então o que acontece com um pixel depende do que está em volta dele. A luz se espalha de lado para as áreas vizinhas, as camadas de corante seguram umas às outras, e o grão se forma conforme quanta luz de fato caiu.",
-    "zh-Hans": "滤镜是一张查找表：有人事先决定了每种颜色会变成什么，同一个输入色永远给出同样的输出。FRMT 做的是模拟摄影工序，因此一个像素会发生什么，取决于它周围有什么。光会向侧面扩散到相邻区域，染料层彼此拖住，颗粒则按照实际落下的光量生成。"
+    "de": "Ein Filter ist eine Nachschlagetabelle. Jemand hat vorab entschieden, was aus jeder Farbe wird, und dieselbe Eingabe liefert immer dieselbe Ausgabe. FRMT simuliert stattdessen den Prozess, also hängt das, was mit einem Pixel geschieht, davon ab, was es umgibt: Licht breitet sich seitwärts in benachbarte Bereiche aus, Farbschichten halten einander zurück, und Korn entsteht danach, wie viel Licht tatsächlich gelandet ist.",
+    "es": "Un filtro es una tabla de consulta. Alguien decidió de antemano en qué se convierte cada color, y la misma entrada da siempre la misma salida. FRMT simula el proceso en su lugar, así que lo que le pasa a un píxel depende de lo que lo rodea: la luz se extiende de lado hacia las zonas vecinas, las capas de colorante se frenan entre sí y el grano se forma según cuánta luz llegó de verdad.",
+    "es-MX": "Un filtro es una tabla de consulta. Alguien decidió de antemano en qué se convierte cada color, y la misma entrada da siempre la misma salida. FRMT simula el proceso en su lugar, así que lo que le pasa a un píxel depende de lo que lo rodea: la luz se extiende de lado hacia las zonas vecinas, las capas de colorante se frenan entre sí y el grano se forma según cuánta luz llegó de verdad.",
+    "fr": "Un filtre est une table de conversion. Quelqu'un a décidé à l'avance ce que devient chaque couleur, et la même entrée donne toujours la même sortie. FRMT simule le procédé à la place, si bien que ce qui arrive à un pixel dépend de ce qui l'entoure : la lumière s'étend latéralement vers les zones voisines, les couches de colorant se retiennent, et le grain se forme selon la quantité de lumière réellement tombée.",
+    "it": "Un filtro è una tabella di consultazione. Qualcuno ha deciso in anticipo cosa diventa ogni colore, e lo stesso ingresso dà sempre la stessa uscita. FRMT simula invece il processo, quindi quello che succede a un pixel dipende da ciò che lo circonda: la luce si allarga di lato verso le zone vicine, gli strati di colorante si trattengono a vicenda, e la grana si forma in base a quanta luce è davvero arrivata.",
+    "ja": "フィルターはルックアップテーブルです。どの色が何になるかを誰かが前もって決めていて、同じ入力からは必ず同じ出力が出ます。FRMT はその代わりに工程そのものを再現するので、ある画素に何が起きるかは、そのまわりに何があるかで決まります。光は隣接する領域へ横に広がり、色素層は互いを抑え合い、粒子は実際に落ちた光の量に応じて生まれます。",
+    "ko": "필터는 룩업 테이블입니다. 어떤 색이 무엇이 될지 누군가 미리 정해 두었고, 같은 입력은 언제나 같은 출력을 냅니다. FRMT는 대신 공정 자체를 시뮬레이션하므로, 한 픽셀에 무슨 일이 일어날지는 그 주변에 무엇이 있는지에 달려 있습니다. 빛은 이웃한 영역으로 옆으로 퍼지고, 염료층은 서로를 붙잡고, 입자는 실제로 닿은 빛의 양에 따라 생깁니다.",
+    "nl": "Een filter is een opzoektabel. Iemand heeft vooraf besloten wat elke kleur wordt, en dezelfde invoer geeft altijd dezelfde uitvoer. FRMT simuleert in plaats daarvan het proces, dus wat er met een pixel gebeurt hangt af van wat eromheen zit: licht spreidt zijwaarts naar naburige gebieden, kleurlagen houden elkaar tegen, en korrel ontstaat naar gelang hoeveel licht er werkelijk is geland.",
+    "pt-BR": "Um filtro é uma tabela de consulta. Alguém decidiu de antemão no que cada cor vira, e a mesma entrada dá sempre a mesma saída. O FRMT simula o processo em vez disso, então o que acontece com um pixel depende do que está em volta dele: a luz se espalha de lado para as áreas vizinhas, as camadas de corante seguram umas às outras, e o grão se forma conforme quanta luz de fato caiu.",
+    "zh-Hans": "滤镜是一张查找表。有人事先决定了每种颜色会变成什么，同样的输入永远给出同样的输出。FRMT 做的是模拟这道工序，因此一个像素会发生什么，取决于它周围有什么：光会向侧面扩散到相邻区域，染料层彼此拖住，颗粒则按照实际落下的光量生成。"
   },
-  "Four stocks, each built from its manufacturer's published characteristic curves and spectral sensitivity data rather than eyeballed from scans.": {
+  "Four, each built from its manufacturer's published characteristic curves and spectral sensitivity data rather than eyeballed from somebody's scans.": {
     "kind": "ld",
-    "de": "Vier Filme, jeder gebaut aus den veröffentlichten Kennlinien und spektralen Empfindlichkeiten seines Herstellers statt nach Augenmaß aus Scans.",
-    "es": "Cuatro películas, cada una construida a partir de las curvas características y los datos de sensibilidad espectral publicados por su fabricante, no calculadas a ojo desde escaneos.",
-    "es-MX": "Cuatro películas, cada una construida a partir de las curvas características y los datos de sensibilidad espectral publicados por su fabricante, no calculadas a ojo desde escaneos.",
-    "fr": "Quatre pellicules, chacune construite à partir des courbes caractéristiques et des données de sensibilité spectrale publiées par son fabricant, et non estimées à l'oeil depuis des scans.",
-    "it": "Quattro pellicole, ognuna costruita dalle curve caratteristiche e dai dati di sensibilità spettrale pubblicati dal suo produttore, non ricavate a occhio da scansioni.",
-    "ja": "四種のフィルム。いずれも、そのメーカーが公開した特性曲線と分光感度のデータから組み上げたもので、スキャンを見ながら目分量で合わせたものではありません。",
-    "ko": "네 가지 필름. 각각 그 제조사가 공개한 특성곡선과 분광 감도 데이터로 만들었고, 스캔을 보며 눈대중으로 맞춘 것이 아닙니다.",
-    "nl": "Vier films, elk gebouwd op de gepubliceerde karakteristieke krommen en spectrale gevoeligheidsdata van de fabrikant, en niet op het oog afgekeken van scans.",
-    "pt-BR": "Quatro filmes, cada um construído a partir das curvas características e dos dados de sensibilidade espectral publicados pelo fabricante, e não estimados no olho a partir de scans.",
-    "zh-Hans": "四款胶片，每一款都建立在其厂商公开的特性曲线和光谱感光度数据之上，而不是照着扫描件凭眼睛凑出来的。"
-  },
-  "Which film stocks does FRMT include?": {
-    "kind": "ld",
-    "de": "Welche Filme enthält FRMT?",
-    "es": "¿Qué películas incluye FRMT?",
-    "es-MX": "¿Qué películas incluye FRMT?",
-    "fr": "Quelles pellicules FRMT inclut-il ?",
-    "it": "Quali pellicole include FRMT?",
-    "ja": "FRMT にはどのフィルムが入っていますか。",
-    "ko": "FRMT에는 어떤 필름이 들어 있나요?",
-    "nl": "Welke films bevat FRMT?",
-    "pt-BR": "Quais filmes o FRMT inclui?",
-    "zh-Hans": "FRMT 包含哪几款胶片？"
-  },
-  "No. FRMT is a single 14.99 US dollar purchase. There is no subscription, no account and no advertising.": {
-    "kind": "ld",
-    "de": "Nein. FRMT ist ein einmaliger Kauf für 14,99 US-Dollar. Es gibt kein Abo, kein Konto und keine Werbung.",
-    "es": "No. FRMT es una única compra de 14,99 dólares estadounidenses. No hay suscripción, ni cuenta, ni publicidad.",
-    "es-MX": "No. FRMT es una única compra de 14,99 dólares estadounidenses. No hay suscripción, ni cuenta, ni publicidad.",
-    "fr": "Non. FRMT est un achat unique de 14,99 dollars américains. Il n'y a pas d'abonnement, pas de compte et pas de publicité.",
-    "it": "No. FRMT è un acquisto unico da 14,99 dollari statunitensi. Non c'è abbonamento, non c'è account e non c'è pubblicità.",
-    "ja": "いいえ。FRMT は 14.99 米ドルの一度きりの購入です。定額課金も、アカウントも、広告もありません。",
-    "ko": "아니요. FRMT는 14.99 미국 달러 한 번의 구매입니다. 구독도, 계정도, 광고도 없습니다.",
-    "nl": "Nee. FRMT is een eenmalige aankoop van 14,99 Amerikaanse dollar. Er is geen abonnement, geen account en geen advertenties.",
-    "pt-BR": "Não. O FRMT é uma compra única de 14,99 dólares americanos. Não há assinatura, não há conta e não há publicidade.",
-    "zh-Hans": "不是。FRMT 是一次性购买，14.99 美元。没有订阅、没有账号，也没有广告。"
-  },
-  "Is FRMT a subscription?": {
-    "kind": "ld",
-    "de": "Ist FRMT ein Abo?",
-    "es": "¿FRMT es una suscripción?",
-    "es-MX": "¿FRMT es una suscripción?",
-    "fr": "FRMT est-il un abonnement ?",
-    "it": "FRMT è un abbonamento?",
-    "ja": "FRMT は定額課金ですか。",
-    "ko": "FRMT는 구독인가요?",
-    "nl": "Is FRMT een abonnement?",
-    "pt-BR": "O FRMT é uma assinatura?",
-    "zh-Hans": "FRMT 是订阅制吗？"
+    "de": "Vier, jeder gebaut aus den veröffentlichten Kennlinien und spektralen Empfindlichkeiten seines Herstellers statt nach Augenmaß aus irgendwelchen Scans.",
+    "es": "Cuatro, cada una construida a partir de las curvas características y los datos de sensibilidad espectral publicados por su fabricante, no calculada a ojo desde los escaneos de alguien.",
+    "es-MX": "Cuatro, cada una construida a partir de las curvas características y los datos de sensibilidad espectral publicados por su fabricante, no calculada a ojo desde los escaneos de alguien.",
+    "fr": "Quatre, chacune construite à partir des courbes caractéristiques et des données de sensibilité spectrale publiées par son fabricant, et non estimée à l'oeil depuis les scans de quelqu'un.",
+    "it": "Quattro, ognuna costruita dalle curve caratteristiche e dai dati di sensibilità spettrale pubblicati dal suo produttore, non ricavata a occhio dalle scansioni di qualcuno.",
+    "ja": "四種です。いずれも、そのメーカーが公開した特性曲線と分光感度のデータから組み上げています。誰かのスキャンを見ながら目分量で合わせたものではありません。",
+    "ko": "네 가지입니다. 각각 그 제조사가 공개한 특성곡선과 분광 감도 데이터로 만들었고, 누군가의 스캔을 보며 눈대중으로 맞춘 것이 아닙니다.",
+    "nl": "Vier, elk gebouwd op de gepubliceerde karakteristieke krommen en spectrale gevoeligheidsdata van de fabrikant, en niet op het oog afgekeken van iemands scans.",
+    "pt-BR": "Quatro, cada um construído a partir das curvas características e dos dados de sensibilidade espectral publicados pelo fabricante, e não estimado no olho a partir dos scans de alguém.",
+    "zh-Hans": "四款。每一款都建立在其厂商公开的特性曲线和光谱感光度数据之上，而不是照着谁的扫描件凭眼睛凑出来的。"
   },
   "No. Every frame is developed on the iPhone's own GPU. The app contains no networking code at all, so there is nothing to upload and no server holding a copy.": {
     "kind": "ld",
@@ -1637,30 +1598,17 @@
     "pt-BR": "Não. Cada quadro é revelado na própria GPU do iPhone. O app não contém nenhum código de rede, então não há nada para enviar e nenhum servidor guardando uma cópia.",
     "zh-Hans": "不会。每一张都在 iPhone 自己的 GPU 上完成显影。应用里根本没有联网代码，所以没有东西可上传，也没有服务器留副本。"
   },
-  "Because the simulation runs the chemistry rather than looking up an answer. Light transport through the emulsion, the interaction between dye layers and grain formation are all computed per frame, which takes real time on a phone.": {
+  "Because it runs the chemistry rather than looking up an answer. Light transport through the emulsion, the interaction between dye layers and grain formation are all computed for every frame, and that costs real time on a phone.": {
     "kind": "ld",
-    "de": "Weil die Simulation die Chemie durchrechnet, statt eine Antwort nachzuschlagen. Lichttransport durch die Emulsion, das Zusammenspiel der Farbschichten und die Kornbildung werden pro Bild berechnet, und das braucht auf einem Telefon echte Zeit.",
-    "es": "Porque la simulación ejecuta la química en vez de consultar una respuesta. El transporte de luz por la emulsión, la interacción entre capas de colorante y la formación del grano se calculan por fotograma, y eso lleva tiempo real en un móvil.",
-    "es-MX": "Porque la simulación ejecuta la química en vez de consultar una respuesta. El transporte de luz por la emulsión, la interacción entre capas de colorante y la formación del grano se calculan por cuadro, y eso lleva tiempo real en un celular.",
-    "fr": "Parce que la simulation calcule la chimie au lieu de consulter une réponse. Le transport de la lumière dans l'émulsion, l'interaction entre les couches de colorant et la formation du grain sont calculés image par image, ce qui prend du temps réel sur un téléphone.",
-    "it": "Perché la simulazione esegue la chimica invece di consultare una risposta. Il trasporto della luce nell'emulsione, l'interazione fra strati di colorante e la formazione della grana vengono calcolati per fotogramma, e su un telefono questo richiede tempo vero.",
-    "ja": "シミュレーションが答えを調べるのではなく、化学を計算しているからです。乳剤のなかの光の伝わり方、色素層どうしの相互作用、粒子の生成が一枚ごとに計算され、端末の上ではそれに実際の時間がかかります。",
-    "ko": "시뮬레이션이 답을 찾아보는 대신 화학을 계산하기 때문입니다. 유제 안에서의 빛의 이동, 염료층 사이의 상호작용, 입자의 형성이 프레임마다 계산되고, 휴대폰에서 그것은 실제 시간을 잡아먹습니다.",
-    "nl": "Omdat de simulatie de chemie doorrekent in plaats van een antwoord op te zoeken. Lichttransport door de emulsie, de wisselwerking tussen kleurlagen en korrelvorming worden per beeld berekend, en dat kost op een telefoon echte tijd.",
-    "pt-BR": "Porque a simulação roda a química em vez de consultar uma resposta. O transporte de luz pela emulsão, a interação entre camadas de corante e a formação do grão são calculados por quadro, o que leva tempo real num telefone.",
-    "zh-Hans": "因为这套模拟是在跑化学，而不是查一个答案。光在乳剂中的传输、染料层之间的相互作用、颗粒的生成，都要逐张计算，而这在手机上要花掉实实在在的时间。"
-  },
-  "Why does developing a photo take so long?": {
-    "kind": "ld",
-    "de": "Warum dauert das Entwickeln eines Fotos so lange?",
-    "es": "¿Por qué tarda tanto en revelarse una foto?",
-    "es-MX": "¿Por qué tarda tanto en revelarse una foto?",
-    "fr": "Pourquoi le développement d'une photo prend-il si longtemps ?",
-    "it": "Perché sviluppare una foto ci mette così tanto?",
-    "ja": "写真の現像にどうしてそんなに時間がかかるのですか。",
-    "ko": "사진 한 장 현상이 왜 이렇게 오래 걸리나요?",
-    "nl": "Waarom duurt het ontwikkelen van een foto zo lang?",
-    "pt-BR": "Por que revelar uma foto demora tanto?",
-    "zh-Hans": "显影一张照片为什么要这么久？"
+    "de": "Weil es die Chemie durchrechnet, statt eine Antwort nachzuschlagen. Lichttransport durch die Emulsion, das Zusammenspiel der Farbschichten und die Kornbildung werden für jedes Bild berechnet, und das kostet auf einem Telefon echte Zeit.",
+    "es": "Porque ejecuta la química en vez de consultar una respuesta. El transporte de luz por la emulsión, la interacción entre capas de colorante y la formación del grano se calculan para cada fotograma, y eso cuesta tiempo real en un móvil.",
+    "es-MX": "Porque ejecuta la química en vez de consultar una respuesta. El transporte de luz por la emulsión, la interacción entre capas de colorante y la formación del grano se calculan para cada cuadro, y eso cuesta tiempo real en un celular.",
+    "fr": "Parce qu'il calcule la chimie au lieu de consulter une réponse. Le transport de la lumière dans l'émulsion, l'interaction entre les couches de colorant et la formation du grain sont calculés pour chaque image, et cela coûte du temps réel sur un téléphone.",
+    "it": "Perché esegue la chimica invece di consultare una risposta. Il trasporto della luce nell'emulsione, l'interazione fra strati di colorante e la formazione della grana vengono calcolati per ogni fotogramma, e su un telefono questo costa tempo vero.",
+    "ja": "答えを調べるのではなく、化学を計算しているからです。乳剤のなかの光の伝わり方、色素層どうしの相互作用、粒子の生成が、どの一枚についても計算されます。端末の上でそれをやれば、実際に時間がかかります。",
+    "ko": "답을 찾아보는 대신 화학을 계산하기 때문입니다. 유제 안에서의 빛의 이동, 염료층 사이의 상호작용, 입자의 형성이 모든 프레임마다 계산되고, 휴대폰에서 그것은 실제 시간을 잡아먹습니다.",
+    "nl": "Omdat hij de chemie doorrekent in plaats van een antwoord op te zoeken. Lichttransport door de emulsie, de wisselwerking tussen kleurlagen en korrelvorming worden voor elk beeld berekend, en dat kost op een telefoon echte tijd.",
+    "pt-BR": "Porque ele roda a química em vez de consultar uma resposta. O transporte de luz pela emulsão, a interação entre camadas de corante e a formação do grão são calculados para cada quadro, e isso custa tempo real num telefone.",
+    "zh-Hans": "因为它是在跑化学，而不是查一个答案。光在乳剂中的传输、染料层之间的相互作用、颗粒的生成，都要为每一张单独算过，而这在手机上要花掉实实在在的时间。"
   }
 }

@@ -422,3 +422,10 @@ T = {
         "이 방침에 대한 문의:", "Vragen over dit beleid:", "Dúvidas sobre esta política:",
         "关于这份政策的问题："),
 }
+
+T["CYANO Privacy Policy"] = (
+    "Datenschutzerklärung für CYANO", "Política de privacidad de CYANO",
+    "Política de privacidad de CYANO", "Politique de confidentialité de CYANO",
+    "Informativa sulla privacy di CYANO", "CYANO プライバシーポリシー",
+    "CYANO 개인정보 처리방침", "Privacybeleid van CYANO",
+    "Política de privacidade do CYANO", "CYANO 隐私政策")

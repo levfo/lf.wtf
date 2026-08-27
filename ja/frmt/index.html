@@ -22,7 +22,7 @@
 <link rel="icon" href="/frmt/assets/icon.png">
 <link rel="apple-touch-icon" href="/frmt/assets/icon.png">
 
-<meta property="og:title" content="FRMT — Film Simulation App for iPhone">
+<meta property="og:title" content="FRMT: Film Simulation App for iPhone">
 <meta property="og:description" content="ほかのフィルムアプリはどれもカラーフィルターです。FRMT はフィルムそのものを再現します。ハレーション、インターイメージ効果、濃度に応じた粒子を、あなたの iPhone の上で RAW から現像します。">
 <meta property="og:image" content="https://lf.wtf/frmt/assets/hero.jpg">
 <meta property="og:image:alt" content="夕暮れの天守を FRMT のフィルムシミュレーションで現像した一枚。">
@@ -133,23 +133,23 @@
           "name": "FRMT はフィルム風フィルターや LUT と何が違うのですか。",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "フィルターはルックアップテーブルです。どの色が何になるかを誰かが前もって決めていて、同じ入力色からは必ず同じ出力が出ます。FRMT はその代わりに写真の工程を再現するので、ある画素に何が起きるかは、そのまわりに何があるかで決まります。光は隣接する領域へ横に広がり、色素層は互いを抑え合い、粒子は実際に落ちた光の量に応じて生まれます。"
+            "text": "フィルターはルックアップテーブルです。どの色が何になるかを誰かが前もって決めていて、同じ入力からは必ず同じ出力が出ます。FRMT はその代わりに工程そのものを再現するので、ある画素に何が起きるかは、そのまわりに何があるかで決まります。光は隣接する領域へ横に広がり、色素層は互いを抑え合い、粒子は実際に落ちた光の量に応じて生まれます。"
           }
         },
         {
           "@type": "Question",
-          "name": "FRMT にはどのフィルムが入っていますか。",
+          "name": "どのフィルムが入っていますか。",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "四種のフィルム。いずれも、そのメーカーが公開した特性曲線と分光感度のデータから組み上げたもので、スキャンを見ながら目分量で合わせたものではありません。"
+            "text": "四種です。いずれも、そのメーカーが公開した特性曲線と分光感度のデータから組み上げています。誰かのスキャンを見ながら目分量で合わせたものではありません。"
           }
         },
         {
           "@type": "Question",
-          "name": "FRMT は定額課金ですか。",
+          "name": "定額課金ですか。",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "いいえ。FRMT は 14.99 米ドルの一度きりの購入です。定額課金も、アカウントも、広告もありません。"
+            "text": "いいえ。14.99 ドルの買い切りです。定額課金も、アカウントも、広告も、アプリ内課金もありません。"
           }
         },
         {
@@ -162,10 +162,18 @@
         },
         {
           "@type": "Question",
-          "name": "写真の現像にどうしてそんなに時間がかかるのですか。",
+          "name": "現像にどうしてそんなに時間がかかるのですか。",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "シミュレーションが答えを調べるのではなく、化学を計算しているからです。乳剤のなかの光の伝わり方、色素層どうしの相互作用、粒子の生成が一枚ごとに計算され、端末の上ではそれに実際の時間がかかります。"
+            "text": "答えを調べるのではなく、化学を計算しているからです。乳剤のなかの光の伝わり方、色素層どうしの相互作用、粒子の生成が、どの一枚についても計算されます。端末の上でそれをやれば、実際に時間がかかります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "どの iPhone で使えますか。",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Apple ProRAW で撮影でき、iOS 26 以降が動作している iPhone。"
           }
         }
       ],

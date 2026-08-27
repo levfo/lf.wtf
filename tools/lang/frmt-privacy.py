@@ -399,3 +399,11 @@ T = {
         "Dúvidas sobre esta política ou sobre o app:",
         "关于这份政策或这个应用的问题："),
 }
+
+# Was "Privacy &mdash; FRMT". Rewritten rather than repunctuated: every language puts the words in
+# its own order, and leading with the product is the better title anyway.
+T["FRMT Privacy Policy"] = (
+    "Datenschutzerklärung für FRMT", "Política de privacidad de FRMT",
+    "Política de privacidad de FRMT", "Politique de confidentialité de FRMT",
+    "Informativa sulla privacy di FRMT", "FRMT プライバシーポリシー", "FRMT 개인정보 처리방침",
+    "Privacybeleid van FRMT", "Política de privacidade do FRMT", "FRMT 隐私政策")

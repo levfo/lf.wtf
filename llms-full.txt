@@ -1,4 +1,4 @@
-# lf.wtf — full text
+# lf.wtf: full text
 
 Everything on Levi Foster's site as plain text, for retrieval and citation.
 Canonical site: https://lf.wtf/ · Contact: L@LF.WTF
@@ -11,7 +11,7 @@ those languages, cite that language's URL.
 
 ---
 
-# Levi Foster — iPhone Apps, Photography Tools and Generative Art
+# Levi Foster: iPhone Apps, Photography Tools and Generative Art
 Source: https://lf.wtf/
 
 ### Projects
@@ -23,15 +23,15 @@ The apps share a bias. I would rather simulate the thing than approximate the lo
 
 ### Work
 
-### FRMT — Film Simulation
+### FRMT: Film Simulation
 A film simulation camera for iPhone. It models the photographic process itself rather than applying a colour filter: light scattering through the emulsion, dye layers holding each other back, grain forming where the light actually landed. Four stocks, built from published manufacturer measurements, developed from a RAW negative on the device.
 iPhone · $14.99 once · https://apps.apple.com/us/app/frmt-film-simulation/id6800928630
 
-### MODUL8 — Glitch Art Effects
+### MODUL8: Glitch Art Effects
 A glitch art app for iPhone. Nineteen stackable effects, each modelled on a specific way real hardware used to fail: VHS tracking loss, CRT phosphor bloom, datamosh block corruption, pixel sorting, channel separation. Reorder the layers and the picture changes.
 iPhone · Free · https://apps.apple.com/us/app/modul8-glitch-art-effects/id6755617539
 
-### CYANO — Cyanotype Photos
+### CYANO: Cyanotype Photos
 A cyanotype app for iPhone. It runs the chemistry of the 1842 sunprint process instead of tinting the picture blue: the paper is blind to red and green, so two colours a camera recorded as equally bright come out at opposite ends of the print. No darkroom, no chemicals, no printer.
 iPhone · Free · Not yet on the App Store; it is awaiting review.
 
@@ -55,7 +55,7 @@ Email L@LF.WTF. That reaches me directly.
 
 ---
 
-# FRMT — Film Simulation App for iPhone
+# FRMT: Film Simulation App for iPhone
 Source: https://lf.wtf/frmt/
 
 ## FRMT
@@ -133,7 +133,7 @@ FRMT is built by Levi Foster in Fort Worth, Texas
 
 ---
 
-# MODUL8 — Glitch Art App for iPhone | Free Glitch Photo Effects
+# MODUL8: Glitch Art App for iPhone | Free Glitch Photo Effects
 Source: https://lf.wtf/modul8/
 
 Glitch art app for iPhone
@@ -305,7 +305,7 @@ Free, and the free version is the whole simulation. Nothing is watermarked and n
 
 ---
 
-# Privacy — FRMT
+# FRMT Privacy Policy
 Source: https://lf.wtf/frmt/privacy/
 
 ## Privacy Policy
@@ -341,7 +341,7 @@ Questions about this policy or the app: https://lf.wtf/frmt
 
 ---
 
-# Privacy Policy — MODUL8
+# MODUL8 Privacy Policy
 Source: https://lf.wtf/modul8/privacy/
 
 MODUL8
@@ -360,8 +360,8 @@ Some usage data is collected automatically when you use the app. It may include 
 
 ### Advertising
 We use Google AdMob to show ads in the free version. AdMob may collect and use:
-- Device identifiers — the Advertising Identifier (IDFA) on iOS, only if you allow it at the App Tracking Transparency prompt.
-- Usage data — information about how you interact with the ads.
+- Device identifiers: the Advertising Identifier (IDFA) on iOS, only if you allow it at the App Tracking Transparency prompt.
+- Usage data: information about how you interact with the ads.
 This is used to serve personalised ads and to measure how they perform. You can turn personalised tracking off at any time in Settings › Privacy & Security › Tracking. For details on what Google collects, see the Google Privacy Policy.
 
 ### How the data is used
@@ -390,7 +390,7 @@ Questions about this policy or about the app: L@LF.WTF
 
 ---
 
-# Privacy — CYANO
+# CYANO Privacy Policy
 Source: https://lf.wtf/cyano/privacy/
 
 ## Privacy Policy
