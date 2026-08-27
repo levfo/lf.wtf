@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FRMT｜iPhone 用フィルムシミュレーションアプリ</title>
+<meta name="description" content="FRMT は、カラーフィルターではなくフィルムそのものを再現する iPhone 用フィルムシミュレーションアプリです。ハレーション、インターイメージ効果、濃度に応じた粒子を、端末上で RAW から現像します。">
+<meta name="color-scheme" content="dark">
+<link rel="alternate" hreflang="en" href="https://lf.wtf/frmt/">
+<link rel="alternate" hreflang="de" href="https://lf.wtf/de/frmt/">
+<link rel="alternate" hreflang="es" href="https://lf.wtf/es/frmt/">
+<link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/frmt/">
+<link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/frmt/">
+<link rel="alternate" hreflang="it" href="https://lf.wtf/it/frmt/">
+<link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/frmt/">
+<link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/frmt/">
+<link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/frmt/">
+<link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/frmt/">
+<link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/frmt/">
+<link rel="alternate" hreflang="x-default" href="https://lf.wtf/frmt/">
+<link rel="canonical" href="https://lf.wtf/ja/frmt/">
+<link rel="icon" href="/frmt/assets/icon.png">
+<link rel="apple-touch-icon" href="/frmt/assets/icon.png">
+
+<meta property="og:title" content="FRMT — Film Simulation App for iPhone">
+<meta property="og:description" content="ほかのフィルムアプリはどれもカラーフィルターです。FRMT はフィルムそのものを再現します。ハレーション、インターイメージ効果、濃度に応じた粒子を、あなたの iPhone の上で RAW から現像します。">
+<meta property="og:image" content="https://lf.wtf/frmt/assets/hero.jpg">
+<meta property="og:image:alt" content="夕暮れの天守を FRMT のフィルムシミュレーションで現像した一枚。">
+<meta property="og:url" content="https://lf.wtf/ja/frmt/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Levi Foster">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="es_MX">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@cybermynd">
+<meta name="author" content="Levi Foster">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobileApplication",
+      "@id": "https://lf.wtf/frmt/#app",
+      "name": "FRMT",
+      "alternateName": "FRMT - Film Simulation",
+      "url": "https://lf.wtf/frmt/",
+      "image": "https://lf.wtf/frmt/assets/icon.png",
+      "description": "カラーフィルターをかけるのではなく、写真という工程そのものを再現する iPhone 用フィルムシミュレーションカメラ。ハレーション、インターイメージのカプラー効果、濃度に応じた粒子を、端末上で RAW ネガから現像します。",
+      "applicationCategory": "PhotoApplication",
+      "applicationSubCategory": "Camera",
+      "operatingSystem": "iOS 26.0 or later",
+      "installUrl": "https://apps.apple.com/app/id6800928630",
+      "downloadUrl": "https://apps.apple.com/app/id6800928630",
+      "sameAs": [
+        "https://apps.apple.com/app/id6800928630"
+      ],
+      "mainEntityOfPage": {
+        "@id": "https://lf.wtf/frmt/#webpage"
+      },
+      "featureList": [
+        "乳剤のなかを散乱する光から再現したハレーション",
+        "色素層のあいだのインターイメージ・カプラー効果",
+        "光が実際に落ちた場所に生まれる、濃度に応じた粒子",
+        "メーカー公開の実測値から組み上げた四種のフィルム",
+        "端末上で現像される ProRAW 撮影",
+        "アカウントなし、サーバーなし、定額課金なし"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "14.99",
+        "priceCurrency": "USD",
+        "category": "One-time purchase",
+        "availability": "https://schema.org/InStock"
+      },
+      "author": {
+        "@id": "https://lf.wtf/#levifoster"
+      },
+      "publisher": {
+        "@id": "https://lf.wtf/#levifoster"
+      },
+      "inLanguage": "ja"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://lf.wtf/frmt/#webpage",
+      "url": "https://lf.wtf/frmt/",
+      "name": "FRMT｜iPhone 用フィルムシミュレーションアプリ",
+      "isPartOf": {
+        "@id": "https://lf.wtf/#website"
+      },
+      "about": {
+        "@id": "https://lf.wtf/frmt/#app"
+      },
+      "primaryImageOfPage": "https://lf.wtf/frmt/assets/hero.jpg",
+      "inLanguage": "ja",
+      "breadcrumb": {
+        "@id": "https://lf.wtf/frmt/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://lf.wtf/frmt/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Levi Foster",
+          "item": "https://lf.wtf/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "FRMT"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://lf.wtf/frmt/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "FRMT はフィルム風フィルターや LUT と何が違うのですか。",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "フィルターはルックアップテーブルです。どの色が何になるかを誰かが前もって決めていて、同じ入力色からは必ず同じ出力が出ます。FRMT はその代わりに写真の工程を再現するので、ある画素に何が起きるかは、そのまわりに何があるかで決まります。光は隣接する領域へ横に広がり、色素層は互いを抑え合い、粒子は実際に落ちた光の量に応じて生まれます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "FRMT にはどのフィルムが入っていますか。",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "四種のフィルム。いずれも、そのメーカーが公開した特性曲線と分光感度のデータから組み上げたもので、スキャンを見ながら目分量で合わせたものではありません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "FRMT は定額課金ですか。",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "いいえ。FRMT は 14.99 米ドルの一度きりの購入です。定額課金も、アカウントも、広告もありません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "写真が iPhone の外に出ることはありますか。",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "いいえ。どの一枚も iPhone 自身の GPU で現像されます。アプリには通信のコードそのものが入っていないので、送るものも、控えを持つサーバーもありません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "写真の現像にどうしてそんなに時間がかかるのですか。",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "シミュレーションが答えを調べるのではなく、化学を計算しているからです。乳剤のなかの光の伝わり方、色素層どうしの相互作用、粒子の生成が一枚ごとに計算され、端末の上ではそれに実際の時間がかかります。"
+          }
+        }
+      ],
+      "inLanguage": "ja"
+    }
+  ]
+}
+</script>
+
+<style>
+/*
+  The app's own vocabulary, on purpose: white on black, a tracked monospace for anything that
+  labels rather than speaks, and no colour but the photographs. lf.wtf is paper and serif; this is
+  the inside of a camera bag.
+
+  One file, no webfont, no framework. The only script drives the comparison sliders, because that
+  argument cannot be made in prose.
+*/
+:root {
+  --black: #0a0a0c;
+  --white: #f7f6f3;
+  --dim: rgba(247, 246, 243, 0.55);
+  --faint: rgba(247, 246, 243, 0.34);
+  --rule: rgba(247, 246, 243, 0.12);
+  --warm: #ffb060;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--black);
+  color: var(--white);
+  font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif;
+  overflow-x: hidden;
+}
+img, video { max-width: 100%; display: block; }
+main { max-width: 46rem; margin: 0 auto; padding: 0 clamp(1.4rem, 6vw, 2.5rem); }
+
+.label {
+  font: 500 0.68rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+.back { display: inline-block; padding: 1.8rem 0 0; text-decoration: none; }
+.back:hover { color: var(--dim); }
+
+/* ---------------------------------------------------------------- masthead */
+header { padding: 3.2rem 0 2.6rem; }
+.mark { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.8rem; }
+.mark img { width: 62px; height: 62px; border-radius: 14px; }
+.mark h1 { font-size: 1.35rem; font-weight: 600; margin: 0; letter-spacing: -0.01em; }
+.mark p { margin: 0.15rem 0 0; }
+
+h2.claim {
+  font-size: clamp(2.1rem, 7vw, 3.2rem);
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+  margin: 0 0 1.1rem;
+}
+.lede { font-size: clamp(1.02rem, 2.6vw, 1.15rem); color: var(--dim); margin: 0 0 1.1rem; max-width: 34rem; }
+.lede strong { color: var(--white); font-weight: 600; }
+.lede:last-of-type { margin-bottom: 2rem; }
+
+.buy {
+  display: inline-flex; align-items: baseline; gap: 0.7rem;
+  background: var(--white); color: var(--black);
+  text-decoration: none; font-weight: 600;
+  padding: 0.85rem 1.5rem; border-radius: 100px;
+}
+.buy:hover { background: #fff; }
+.buy .price { font: 400 0.85rem/1 ui-monospace, SFMono-Regular, Menlo, monospace; opacity: 0.6; }
+.terms { margin: 0.9rem 0 0; }
+
+/* ------------------------------------------------------------------ slider */
+figure { margin: 0; }
+.compare {
+  position: relative; overflow: hidden; border-radius: 10px;
+  aspect-ratio: 3 / 2; touch-action: pan-y; cursor: ew-resize; user-select: none;
+  background: #000;
+}
+.compare.square { aspect-ratio: 1 / 1; }
+.compare img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.compare .top { clip-path: inset(0 0 0 var(--split, 50%)); }
+.compare .seam {
+  position: absolute; top: 0; bottom: 0; left: var(--split, 50%);
+  width: 2px; background: var(--white); transform: translateX(-1px);
+}
+.compare .seam::after {
+  content: ""; position: absolute; top: 50%; left: 50%;
+  width: 34px; height: 34px; margin: -17px 0 0 -17px;
+  border-radius: 50%; background: var(--white);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+}
+.compare .tag {
+  position: absolute; top: 12px;
+  padding: 5px 9px; border-radius: 100px; background: rgba(0, 0, 0, 0.5);
+}
+.compare .tag.l { left: 12px; }
+.compare .tag.r { right: 12px; }
+figcaption { margin-top: 0.75rem; color: var(--faint); font-size: 0.88rem; }
+
+/* ----------------------------------------------------------------- sections */
+section { padding: 3.4rem 0; border-top: 1px solid var(--rule); }
+section h3 {
+  font-size: clamp(1.5rem, 4.5vw, 1.95rem);
+  line-height: 1.15; letter-spacing: -0.02em; font-weight: 600;
+  margin: 0.9rem 0 0.9rem;
+}
+section p { color: var(--dim); margin: 0 0 1rem; max-width: 34rem; }
+section p:last-child { margin-bottom: 0; }
+section p strong { color: var(--white); font-weight: 600; }
+
+/* A line that is the argument, not a decoration around it. */
+.pull {
+  font-size: clamp(1.25rem, 3.6vw, 1.6rem);
+  line-height: 1.3; letter-spacing: -0.015em; font-weight: 600;
+  color: var(--white); max-width: 30rem;
+  margin: 1.8rem 0;
+  padding-left: 1.1rem; border-left: 2px solid var(--warm);
+}
+
+/* The three things a lookup table cannot do. */
+.points { display: grid; gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; margin-top: 1.8rem; }
+.point { background: var(--black); padding: 1.4rem 1.3rem; }
+.point .label { display: block; margin-bottom: 0.7rem; }
+.point b { display: block; font-weight: 600; font-size: 1.06rem; margin-bottom: 0.4rem; letter-spacing: -0.01em; }
+.point span { display: block; color: var(--dim); font-size: 0.95rem; line-height: 1.55; }
+.point em { display: block; color: var(--faint); font-size: 0.88rem; font-style: normal; margin-top: 0.6rem; }
+
+.stocks { display: grid; gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; margin-top: 1.6rem; }
+.stock { background: var(--black); padding: 1.1rem 1.2rem; }
+.stock b { display: block; font-weight: 600; margin-bottom: 0.15rem; }
+.stock span { color: var(--dim); font-size: 0.94rem; }
+
+/* Numbered, because the order is the product. */
+.steps { list-style: none; margin: 1.8rem 0 0; padding: 0; counter-reset: step; }
+.steps li { position: relative; padding: 0 0 1.5rem 3rem; counter-increment: step; }
+.steps li:last-child { padding-bottom: 0; }
+.steps li::before {
+  content: counter(step, decimal-leading-zero);
+  position: absolute; left: 0; top: 0.15rem;
+  font: 500 0.72rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: 0.1em; color: var(--warm);
+}
+.steps b { display: block; font-weight: 600; margin-bottom: 0.25rem; }
+.steps span { color: var(--dim); font-size: 0.96rem; }
+
+.shots {
+  display: grid; grid-auto-flow: column; gap: 12px;
+  overflow-x: auto; padding-bottom: 0.6rem; margin-top: 1.6rem;
+  scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+}
+.shots img { width: 210px; border-radius: 12px; scroll-snap-align: start; }
+.shots::-webkit-scrollbar { height: 6px; }
+.shots::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 3px; }
+
+.field { border-radius: 10px; margin-top: 1.4rem; }
+
+/* Closing call, so the page does not end on a caveat. */
+.close { text-align: left; }
+.close h3 { margin-top: 0; }
+
+footer { border-top: 1px solid var(--rule); padding: 2.2rem 0 3.4rem; }
+footer a { color: var(--dim); text-decoration: none; }
+footer a:hover { color: var(--white); }
+footer nav { display: flex; flex-wrap: wrap; gap: 1.2rem; margin-bottom: 1rem; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .buy, .compare .seam { transition: background 0.15s ease; }
+}
+
+/* The questions people actually ask, kept as real headings so they can be found. */
+.faq { margin-top: 1.6rem; }
+.faq h4 {
+  font-size: 1rem; font-weight: 600; letter-spacing: -0.01em;
+  margin: 1.6rem 0 0.4rem; color: var(--white);
+}
+.faq h4:first-child { margin-top: 0; }
+.faq p { font-size: 0.97rem; }
+
+/* i18n:start */
+.i18n{max-width:var(--w,initial);margin:0 auto;padding:26px 22px 40px;display:flex;flex-wrap:wrap;
+gap:6px 14px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.55;
+justify-content:center}
+.i18n a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+.i18n a:hover{border-bottom-color:currentColor}
+.i18n span[aria-current]{opacity:.5;cursor:default}
+/* i18n:end */
+
+html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: normal !important; }
+</style>
+</head>
+<body>
+<main>
+  <a class="back label" href="/">← lf.wtf</a>
+
+  <header>
+    <div class="mark">
+      <img src="/frmt/assets/icon.png" width="62" height="62" alt="FRMT のアプリアイコン">
+      <div>
+        <h1>FRMT</h1>
+        <p class="label">iPhone のためのフィルムシミュレーション</p>
+      </div>
+    </div>
+
+    <h2 class="claim">フィルターではない。 <br>フィルムだ。</h2>
+    <p class="lede">
+      スマートフォンに入っているほかのフィルムアプリは、どれもカラーフィルターです。どの色を何に変えるかを並べた一覧を、撮り終わった写真にあてているだけです。
+    </p>
+    <p class="lede">
+      <strong>FRMT はその代わりにフィルムを再現します。</strong> 乳剤の中を横へ散乱していく光。互いを化学的に抑え合う色素層。光が実際に落ちた場所にだけ生まれる粒子。あなたの iPhone が、RAW ネガから一枚ずつ、この化学を計算します。
+    </p>
+
+    <a class="buy" href="https://apps.apple.com/app/id6800928630" data-appstore>App Store でダウンロード <span class="price">14.99 ドル買い切り</span></a>
+    <p class="terms label">定額課金なし · アカウント不要 · 端末の外には出ない</p>
+  </header>
+
+  <figure>
+    <div class="compare" style="--split:50%">
+      <img src="/frmt/assets/before.jpg" alt="夕暮れの堀の上に浮かぶ、ライトアップされた天守。iPhone が描いたそのまま。">
+      <img class="top" src="/frmt/assets/after.jpg" alt="同じ一枚を Cinnabar 50 のプロファイルで現像したもの。光が当たった壁と櫓が、まわりの闇へにじんでいく。">
+      <span class="seam" aria-hidden="true"></span>
+      <span class="tag label l">iPhone</span>
+      <span class="tag label r">Cinnabar 50</span>
+    </div>
+    <figcaption>同じ一枚、同じ露出。ドラッグしてみてください。</figcaption>
+  </figure>
+
+  <section>
+    <p class="label">違い</p>
+    <h3>フィルターは一覧表。フィルムは反応。</h3>
+    <p>
+      フィルターは参照表で動きます。どの色が何になるかを誰かが前もって決めていて、アプリはそれを一画素ずつ置き換えるだけ。同じ青を二度入れれば、答えも二度とも同じです。その青が夕空の一片であっても、クロームのバンパーのハイライトであっても。
+    </p>
+    <p>
+      フィルムには参照する表がありません。あるのは化学で、化学はまわりの様子に反応します。明るい輪郭に当たった光はそのまま進み、フィルムの裏面で跳ね返って、隣の粒子を感光させに戻ってきます。ある層で色素ができると化学物質が放たれ、隣の層が同じだけ濃くなるのを妨げます。粒子は十分な光子が落ちた場所に現れますが、その場所は影と中間調とでは同じではありません。
+    </p>
+    <p class="pull">
+      こうしたことはどれも一覧表には書き下せません。答えが、その画面のほかに何が写っているかに左右されるからです。
+    </p>
+    <p>
+      フィルムのネオンサインがまわりの闇へにじんで光るのも、赤が緑と混ざって濁らずに別々のままでいるのも、粒子が中間調で最も重く、深い影ではほとんど消えるのも、理由はすべてここにあります。「フィルムっぽい写真」と言うとき、人が指しているのはこれです。参照表がどれほど丁寧につくられていても、そこには届きません。
+    </p>
+  </section>
+
+  <section>
+    <p class="label">証拠</p>
+    <h3>そのフィルターを自分たちでつくり、そのうえで超えました。</h3>
+    <p>
+      一枚の写真を、二通りに現像しました。左は、この同じフィルムから作れる最良のカラーフィルター。モデルを組んだのと同じ実測値から作っています。右は完全なシミュレーション。これは 1:1 の切り出しなので、縮小された画像ではなく実際の画素を見ていることになります。
+    </p>
+    <figure>
+      <div class="compare square" style="--split:50%">
+        <img src="/frmt/assets/crop-filter.jpg" alt="暗い秋の枝越しに見える明るい空の 1:1 切り出し。カラー参照表で現像したもので、清潔で、滑らかで、輪郭は空に対してくっきり切れている。">
+        <img class="top" src="/frmt/assets/crop-frmt.jpg" alt="同じ切り出しを FRMT の完全なシミュレーションで現像したもの。空一面に粒子が乗り、明るい空が暗い枝と葉のひとつひとつへにじんでいく。">
+        <span class="seam" aria-hidden="true"></span>
+        <span class="tag label l">フィルター</span>
+        <span class="tag label r">FRMT</span>
+      </div>
+      <figcaption>
+        ドラッグしてみてください。空に粒子が乗り、暗い枝は背後の光に食い込まれていきます。フィルターが空に対してくっきり切れてしまうのは、光を横へ動かす手段を持たないからです。Flint 64。
+      </figcaption>
+    </figure>
+    <p style="margin-top:2rem">
+      引きで見ると、それは画面じゅうにあります。ここに出しているのは、二つの版が食い違っている場所を一枚ぶんすべて拾い、強調して単独で示したものです。これは、フィルターにはつくれない光です。つくるには、その場で色を塗り替えるのではなく、光を画面の上で動かさなければならないからです。
+    </p>
+    <figure>
+      <img class="field" src="/frmt/assets/difference.jpg" width="1000" alt="二つの版の差だけを示した暗い画面。画面のなかで光を受けた葉、枝、輪郭のひとつひとつを、暖かい光がなぞっている。">
+      <figcaption>フィルターとフィルムのあいだの隔たりだけを取り出したもの。実際の一枚から。</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <p class="label">フィルターにできない三つのこと</p>
+    <h3>あなたの端末が実際に計算していること。</h3>
+    <p>
+      どの写真も、ネガがたどるのと同じ順番でこれらを通っていきます。あなたの端末のグラフィックスプロセッサの上で。
+    </p>
+    <div class="points">
+      <div class="point">
+        <span class="label">01 · ハレーション</span>
+        <b>光は入っていき、自分のすぐ隣から出てくる。</b>
+        <span>
+          光の一部は乳剤をまっすぐ通り抜け、その下のベースで反射して、入ってきた場所のすぐ隣でフィルムをもう一度感光させます。明るいものは自分の輪郭で止まりません。まわりのものへにじみ出します。
+        </span>
+        <em>気づきやすいのは、ネオン、街灯、窓、木漏れ日。</em>
+      </div>
+      <div class="point">
+        <span class="label">02 · インターイメージ効果</span>
+        <b>色の層どうしが言い合いをする。</b>
+        <span>
+          ある層で色素が現像されるとき、化学物質が放たれ、それが横へ拡がって隣の層を抑えます。フィルムの色の個性の大半はここで決まり、赤が緑と隣り合っても両方が茶色へ寄っていかず、赤のままでいられるのもこのためです。
+        </span>
+        <em>気づきやすいのは、木々、色と隣り合う肌、彩度の高いものすべて。</em>
+      </div>
+      <div class="point">
+        <span class="label">03 · 粒子</span>
+        <b>上に乗せたテクスチャではない。</b>
+        <span>
+          ここでの粒子は、色素が実際にどれだけできたかの場所ごとのばらつきそのものです。だから階調の上に乗るのではなく、階調に従います。中間調で最も強く、深い影ではほとんど消え、露出を動かせば粒子も動きます。
+        </span>
+        <em>気づきやすいのは、空、肌、平らな壁。偽の粒子レイヤーが貼りつけたように見える場所すべて。</em>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="label">ハレーションだけを取り出して</p>
+    <h3>これは実在していて、どの一枚にも入っています。</h3>
+    <p>
+      一枚の写真から戻ってきた光だけを取り出し、見えるように強調したものです。描き足したものは何もありません。モデルがネガから生み出したそのままです。
+    </p>
+    <img class="field" src="/frmt/assets/halation.jpg" width="900" alt="一枚の写真のなかの戻ってきた光だけを疑似カラーで示した画面。夜の城の明るい輪郭を、暖かい線がひとつひとつなぞっている。">
+  </section>
+
+  <section>
+    <p class="label">フィルム四種</p>
+    <h3>演出ではなく、実測。</h3>
+    <p>
+      それぞれの背後にある数値は、そのメーカー自身が公開したデータシートから取っています。応答曲線、分光感度、粒状性の数値。誰かが座って、それらしく見えるまで目分量でプリセットをいじった、ということはありません。
+    </p>
+    <p>
+      ロールと同じで、一度に一本だけ装填します。撮影画面にはルックの一覧もスライダーもなく、四種のどれかがほかの派生ということもありません。
+    </p>
+    <div class="stocks">
+      <div class="stock"><b>Cinnabar 50</b><span>力強く彩度が高い。風景、木々、夕景。</span></div>
+      <div class="stock"><b>Galena 100</b><span>ニュートラルで素直。旅、街、混合光。</span></div>
+      <div class="stock"><b>Baryta 100</b><span>軟らかく粒子が細かい。人、ポートレート、曇りの日。</span></div>
+      <div class="stock"><b>Flint 64</b><span>粒子が粗く暖かい、影は冷たい。街、硬い光、ネオン。</span></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="label">使い方</p>
+    <h3>カメラであって、操作パネルではない。</h3>
+    <ol class="steps">
+      <li>
+        <b>シャッターを押す。</b>
+        <span>RAW ネガがその場で書き込まれます。シャッターが処理を待つことはないので、標準カメラと同じ速さのまま使えます。</span>
+      </li>
+      <li>
+        <b>フィルムの上に並ぶ。</b>
+        <span>一枚ずつが、フィルムのコマとまったく同じように並んで待ちます。そのまま撮り続けてください。電源につないでいるときだけ現像するように設定することもできます。</span>
+      </li>
+      <li>
+        <b>現像される。</b>
+        <span>一枚におよそ一分。あなたの端末の上で、ネガからプリントまでモデルを丸ごと走らせます。表示されるのは本物の時計で、それらしく見せかけた進捗バーではありません。</span>
+      </li>
+      <li>
+        <b>受け取る。</b>
+        <span>仕上がった写真は写真ライブラリに保存され、アプリのなかにも残るので、外に出ずに見返せます。ほかのカメラで撮ったものがありますか。その RAW を読み込めば、同じように現像できます。</span>
+      </li>
+    </ol>
+    <div class="shots">
+      <img src="/frmt/assets/shot-1.jpg" width="560" alt="ターコイズ色の水の上、岩にとまる鳥を現像した写真。">
+      <img src="/frmt/assets/shot-2.jpg" width="560" alt="逆光の葉における、フィルターとフィルムの比較を拡大したもの。">
+      <img src="/frmt/assets/shot-3.jpg" width="560" alt="ひとつの場面を四種すべてのフィルムで現像したもの。">
+      <img src="/frmt/assets/shot-4.jpg" width="560" alt="撮影画面。ファインダー、露出とズームのダイヤル、シャッター。">
+      <img src="/frmt/assets/shot-5.jpg" width="560" alt="フィルムロール。現像を待つ一枚たちと、その下に仕上がった写真のグリッド。">
+    </div>
+  </section>
+
+  <section>
+    <p class="label">正直なところ</p>
+    <h3>遅い。それが引き換えです。</h3>
+    <p>
+      写真一枚につき端末のグラフィックスプロセッサを一分使うというのは、一枚の画像に費やす計算量としてはばかげています。ほかの誰もやらないのはそのためです。フィルターなら一画素あたり一回の参照で、あなたが親指を離す前に終わっています。それでもこの一分は、参照では決して買えないものを買っていると考えています。
+    </p>
+    <p>
+      ファインダーに映るのは被写体であって、フィルムではありません。ライブプレビューに色を当てることは、作業が終わる前に答えを推測することであり、外れる推測をするプレビューは、正直なプレビューより質が悪い。露出ダイヤルでハイライトを置いてください。
+    </p>
+    <p>
+      これはリバーサルフィルムです。ハイライトの上に残された余裕は多くありません。それは偶然ではなく忠実さであり、あなたの撮り方を変えることになる部分です。
+    </p>
+  </section>
+
+  <section class="close">
+    <p class="label">価格はひとつ、一度きり</p>
+    <h3>14.99 ドル。ビジネスモデルはこれだけです。</h3>
+    <p>
+      定額課金なし、アカウントなし、クラウドなし、広告なし、透かしなし、アプリ内課金なし、「良いフィルム」を解放するための追加料金もなし。あなたの写真が端末の外に出ることはありません。アプリには通信のコードそのものが入っていないからです。
+    </p>
+    <p style="margin-bottom:1.8rem">
+      Apple ProRAW で撮影できる iPhone が必要です。
+    </p>
+    <a class="buy" href="https://apps.apple.com/app/id6800928630" data-appstore>Download on the App Store <span class="price">$14.99 once</span></a>
+  </section>
+
+  <section>
+    <p class="label">よくある質問</p>
+    <h3>最初に聞かれること。</h3>
+
+    <div class="faq">
+      <h4>FRMT はフィルム風フィルターや LUT と何が違うのですか。</h4>
+      <p>
+        フィルターはルックアップテーブルです。どの色が何になるかを誰かが前もって決めていて、同じ入力からは必ず同じ出力が出ます。FRMT はその代わりに工程そのものを再現するので、ある画素に何が起きるかは、そのまわりに何があるかで決まります。光は隣接する領域へ横に広がり、色素層は互いを抑え合い、粒子は実際に落ちた光の量に応じて生まれます。
+      </p>
+
+      <h4>どのフィルムが入っていますか。</h4>
+      <p>
+        四種です。いずれも、そのメーカーが公開した特性曲線と分光感度のデータから組み上げています。誰かのスキャンを見ながら目分量で合わせたものではありません。
+      </p>
+
+      <h4>定額課金ですか。</h4>
+      <p>
+        いいえ。14.99 ドルの買い切りです。定額課金も、アカウントも、広告も、アプリ内課金もありません。
+      </p>
+
+      <h4>写真が iPhone の外に出ることはありますか。</h4>
+      <p>
+        いいえ。どの一枚も iPhone 自身の GPU で現像されます。アプリには通信のコードそのものが入っていないので、送るものも、控えを持つサーバーもありません。
+      </p>
+
+      <h4>現像にどうしてそんなに時間がかかるのですか。</h4>
+      <p>
+        答えを調べるのではなく、化学を計算しているからです。乳剤のなかの光の伝わり方、色素層どうしの相互作用、粒子の生成が、どの一枚についても計算されます。端末の上でそれをやれば、実際に時間がかかります。
+      </p>
+
+      <h4>どの iPhone で使えますか。</h4>
+      <p>
+        Apple ProRAW で撮影でき、iOS 26 以降が動作している iPhone。
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <a href="/">Levi Foster</a>
+      <a href="https://apps.apple.com/us/app/frmt-film-simulation/id6800928630">App Store</a>
+      <a href="/modul8/">MODUL8</a>
+      <a href="/cyano/">CYANO</a>
+      <a href="/frmt/privacy/">プライバシー</a>
+      <a href="mailto:hello@redarrowmarketing.com">サポート</a>
+    </nav>
+    <p class="label">FRMT はテキサス州フォートワースの Levi Foster がつくっています</p>
+  </footer>
+</main>
+
+<script>
+// The sliders, and nothing else. Pointer events cover mouse, touch and pen in one path.
+(function () {
+  var boxes = document.querySelectorAll('.compare');
+  Array.prototype.forEach.call(boxes, function (box) {
+    function at(event) {
+      var rect = box.getBoundingClientRect();
+      var x = Math.min(Math.max(event.clientX - rect.left, 0), rect.width);
+      box.style.setProperty('--split', (x / rect.width * 100).toFixed(2) + '%');
+    }
+    var down = false;
+    // Tracked on window rather than through pointer capture: hasPointerCapture stopped reporting
+    // true partway through a drag in some browsers, which froze the seam after the first move.
+    box.addEventListener('pointerdown', function (e) { down = true; at(e); e.preventDefault(); });
+    window.addEventListener('pointermove', function (e) { if (down) at(e); }, { passive: true });
+    window.addEventListener('pointerup', function () { down = false; });
+    window.addEventListener('pointercancel', function () { down = false; });
+    box.addEventListener('click', at);
+  });
+})();
+</script>
+
+<nav class="i18n" aria-label="Language">
+  <a href="/frmt/" hreflang="en" lang="en">English</a>
+  <a href="/de/frmt/" hreflang="de" lang="de">Deutsch</a>
+  <a href="/es/frmt/" hreflang="es" lang="es">Español</a>
+  <a href="/es-mx/frmt/" hreflang="es-MX" lang="es-MX">Español (MX)</a>
+  <a href="/fr/frmt/" hreflang="fr" lang="fr">Français</a>
+  <a href="/it/frmt/" hreflang="it" lang="it">Italiano</a>
+  <span aria-current="true" lang="ja">日本語</span>
+  <a href="/ko/frmt/" hreflang="ko" lang="ko">한국어</a>
+  <a href="/nl/frmt/" hreflang="nl" lang="nl">Nederlands</a>
+  <a href="/pt-br/frmt/" hreflang="pt-BR" lang="pt-BR">Português (BR)</a>
+  <a href="/zh-hans/frmt/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+</nav>
+</body>
+</html>

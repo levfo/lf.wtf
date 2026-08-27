@@ -3,6 +3,11 @@
 Everything on Levi Foster's site as plain text, for retrieval and citation.
 Canonical site: https://lf.wtf/ · Contact: L@LF.WTF
 Generated 2026-08-14
+This file is the English text. The site itself is published in eleven languages under a locale
+prefix: /de/, /es/, /es-mx/, /fr/, /it/, /ja/, /ko/, /nl/, /pt-br/ and /zh-hans/. The same path
+works under each, so https://lf.wtf/ja/frmt/ is the Japanese FRMT page. When answering in one of
+those languages, cite that language's URL.
+
 
 ---
 

@@ -1,0 +1,137 @@
+{
+  "Privacy Policy — MODUL8": {
+    "kind": "text:title"
+  },
+  "How MODUL8 handles your photos and your data. Short version: photos are processed on your device and never uploaded.": {
+    "kind": "attr:content"
+  },
+  "MODUL8 app icon": {
+    "kind": "attr:alt"
+  },
+  "MODUL8": {
+    "kind": "text:span"
+  },
+  "Back to MODUL8": {
+    "kind": "text:a"
+  },
+  "Privacy Policy": {
+    "kind": "text:h1"
+  },
+  "Last updated 22 November 2025": {
+    "kind": "text:p"
+  },
+  "The short version.": {
+    "kind": "text:strong"
+  },
+  "Your photos and videos are processed on your iPhone and\n      are never uploaded anywhere. There is no account and no image server.": {
+    "kind": "text:p"
+  },
+  "The free version shows ads through Google AdMob, and that is the one part of the app that\n      involves a third party. Premium removes ads.": {
+    "kind": "text:p"
+  },
+  "What the app does with your media": {
+    "kind": "text:h2"
+  },
+  "MODUL8 needs access to your photo library for two things: loading the images or videos you\n      choose, and saving the finished versions back. That is the whole of it.": {
+    "kind": "text:p"
+  },
+  "All image and video processing happens locally on your device. Your originals and your edits\n      are never uploaded to our servers or to any third-party server, and we have no access to the\n      contents of your library.": {
+    "kind": "text:p"
+  },
+  "Usage data": {
+    "kind": "text:h2"
+  },
+  "Some usage data is collected automatically when you use the app. It may include your device\n      type, mobile operating system, IP address, unique device identifiers and other diagnostic\n      data, along with information about how and when the app is used.": {
+    "kind": "text:p"
+  },
+  "Advertising": {
+    "kind": "text:h2"
+  },
+  "We use Google AdMob to show ads in the free version. AdMob may collect and use:": {
+    "kind": "text:p"
+  },
+  "Device identifiers": {
+    "kind": "text:strong"
+  },
+  "— the Advertising Identifier (IDFA) on iOS, only if you\n      allow it at the App Tracking Transparency prompt.": {
+    "kind": "text:li"
+  },
+  "— information about how you interact with the ads.": {
+    "kind": "text:li"
+  },
+  "This is used to serve personalised ads and to measure how they perform. You can turn\n      personalised tracking off at any time in Settings": {
+    "kind": "text:p"
+  },
+  "Privacy": {
+    "kind": "text:p"
+  },
+  "Security": {
+    "kind": "text:p"
+  },
+  "Tracking. For details on what Google collects, see the": {
+    "kind": "text:p"
+  },
+  "Google Privacy Policy": {
+    "kind": "text:a"
+  },
+  "How the data is used": {
+    "kind": "text:h2"
+  },
+  "To provide and maintain the app, including monitoring how it is used.": {
+    "kind": "text:li"
+  },
+  "To respond to requests you send us.": {
+    "kind": "text:li"
+  },
+  "To show advertisements through Google AdMob, which is what funds the free version.": {
+    "kind": "text:li"
+  },
+  "In the event of a merger, sale or other transfer of assets, information may be part of\n      what transfers.": {
+    "kind": "text:li"
+  },
+  "Retention": {
+    "kind": "text:h2"
+  },
+  "Personal data is retained only as long as it is needed for the purposes described here, or as\n      long as required to meet legal obligations, resolve disputes and enforce our agreements.": {
+    "kind": "text:p"
+  },
+  "Disclosure": {
+    "kind": "text:h2"
+  },
+  "We may have to disclose personal data if required to by law or in response to a valid request\n      from a public authority such as a court or government agency. We may also disclose it in good\n      faith where it is necessary to comply with a legal obligation, protect our rights or property,\n      investigate possible wrongdoing connected to the app, protect the personal safety of users or\n      the public, or defend against legal liability.": {
+    "kind": "text:p"
+  },
+  "Children": {
+    "kind": "text:h2"
+  },
+  "MODUL8 is not directed at anyone under 13, and we do not knowingly collect personally\n      identifiable information from anyone under 13. If you are a parent or guardian and believe\n      your child has given us personal data, please get in touch and we will remove it.": {
+    "kind": "text:p"
+  },
+  "Links to other sites": {
+    "kind": "text:h2"
+  },
+  "The app may link to sites we do not operate. We have no control over their content or their\n      privacy practices, and we would suggest reading the policy of any site you visit.": {
+    "kind": "text:p"
+  },
+  "Changes to this policy": {
+    "kind": "text:h2"
+  },
+  "This policy may be updated from time to time. Any changes are posted on this page and take\n      effect once posted, and the date at the top changes with them.": {
+    "kind": "text:p"
+  },
+  "Contact": {
+    "kind": "text:h2"
+  },
+  "Questions about this policy or about the app:": {
+    "kind": "text:p"
+  },
+  "L@LF.WTF": {
+    "kind": "text:a"
+  },
+  "MODUL8 · Levi Foster ·": {
+    "kind": "text:div"
+  },
+  "App Store": {
+    "kind": "text:a"
+  }
+}

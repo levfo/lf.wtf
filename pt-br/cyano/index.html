@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CYANO: app de cianotipia para iPhone. Química de verdade, simulada.</title>
+<meta name="description" content="Transforme suas fotos em cianotipias de verdade. O CYANO simula a química real do processo de impressão ao sol de 1842, não um filtro azul: sensibilidade ultravioleta, azul da Prússia se formando por Beer-Lambert, viragem com chá e tanino. Grátis no iPhone.">
+<meta name="color-scheme" content="dark">
+<link rel="alternate" hreflang="en" href="https://lf.wtf/cyano/">
+<link rel="alternate" hreflang="de" href="https://lf.wtf/de/cyano/">
+<link rel="alternate" hreflang="es" href="https://lf.wtf/es/cyano/">
+<link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/cyano/">
+<link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/cyano/">
+<link rel="alternate" hreflang="it" href="https://lf.wtf/it/cyano/">
+<link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/cyano/">
+<link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/cyano/">
+<link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/cyano/">
+<link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/cyano/">
+<link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/cyano/">
+<link rel="alternate" hreflang="x-default" href="https://lf.wtf/cyano/">
+<link rel="canonical" href="https://lf.wtf/pt-br/cyano/">
+<link rel="icon" href="/cyano/assets/icon.png">
+<link rel="apple-touch-icon" href="/cyano/assets/icon.png">
+
+<meta property="og:title" content="CYANO: app de cianotipia para iPhone">
+<meta property="og:description" content="Transforme suas fotos em cianotipias de verdade. A química do processo de impressão ao sol de 1842, simulada. Não é um filtro azul.">
+<meta property="og:image" content="https://lf.wtf/cyano/assets/hero.jpg">
+<meta property="og:image:alt" content="Um bordo em cor de outono representado como cianotipia pelo CYANO.">
+<meta property="og:url" content="https://lf.wtf/pt-br/cyano/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Levi Foster">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="es_MX">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@cybermynd">
+<meta name="twitter:title" content="CYANO: Cyanotype App for iPhone">
+<meta name="twitter:description" content="Transforme suas fotos em cianotipias de verdade. A química, simulada. Não é um filtro azul.">
+<meta name="twitter:image" content="https://lf.wtf/cyano/assets/hero.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobileApplication",
+      "@id": "https://lf.wtf/cyano/#app",
+      "name": "CYANO",
+      "alternateName": "CYANO - Fotos em cianotipia",
+      "url": "https://lf.wtf/cyano/",
+      "image": "https://lf.wtf/cyano/assets/icon.png",
+      "description": "Um app de cianotipia para iPhone que simula a química do processo de impressão ao sol de 1842 em vez de tingir uma foto de azul: a resposta ultravioleta do sensibilizador integrada contra a luz do sol ao longo do espectro, e azul da Prússia construído pela lei de Beer-Lambert.",
+      "applicationCategory": "PhotoApplication",
+      "applicationSubCategory": "Photo Editing",
+      "operatingSystem": "iOS 17.0 or later",
+      "mainEntityOfPage": {
+        "@id": "https://lf.wtf/cyano/#webpage"
+      },
+      "featureList": [
+        "Refletância reconstruída a partir de três números e lida onde o sensibilizador enxerga",
+        "Azul da Prússia construído pela lei de Beer-Lambert, incluindo a agregação do pigmento",
+        "Uma curva tonal derivada da fotoquímica em vez de desenhada à mão",
+        "Exposição escolhida por fotografia, do jeito que um copista lê um negativo",
+        "Viragem que converte o pigmento em tanato de ferro em vez de tingi-lo",
+        "Três papéis, cuja cor de base aparece através da cópia",
+        "Sem conta, sem servidor, sem assinatura"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "category": "Free with one optional in-app purchase"
+      },
+      "author": {
+        "@id": "https://lf.wtf/#levifoster"
+      },
+      "publisher": {
+        "@id": "https://lf.wtf/#levifoster"
+      },
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://lf.wtf/cyano/#webpage",
+      "url": "https://lf.wtf/cyano/",
+      "name": "CYANO: app de cianotipia para iPhone. Química de verdade, simulada.",
+      "isPartOf": {
+        "@id": "https://lf.wtf/#website"
+      },
+      "about": {
+        "@id": "https://lf.wtf/cyano/#app"
+      },
+      "primaryImageOfPage": "https://lf.wtf/cyano/assets/hero.jpg",
+      "inLanguage": "pt-BR",
+      "breadcrumb": {
+        "@id": "https://lf.wtf/cyano/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://lf.wtf/cyano/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Levi Foster",
+          "item": "https://lf.wtf/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "CYANO"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://lf.wtf/cyano/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O que é uma cianotipia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A cianotipia é o processo fotográfico mais antigo que sobreviveu, inventado em 1842. Pincela-se papel com sais de ferro, põe-se um negativo por cima e deixa-se ao sol. O que se revela é azul da Prússia, lavado em água limpa. É a razão de os desenhos técnicos antigos serem chamados de blueprints."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O CYANO é só um filtro azul?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. Um filtro decide de antemão no que cada cor vira. O CYANO calcula quanta luz ultravioleta e azul profunda cada cor de fato carrega, e a partir daí constrói o azul da Prússia. É por isso que uma flor amarela fica quase preta enquanto um céu azul estoura até o papel nu, mesmo quando uma câmera registrou os dois com o mesmo brilho."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Preciso de produtos químicos, papel ou impressora?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nenhum deles. O CYANO existe para que qualquer um consiga fazer cianotipias sem câmara escura, kit de química ou fonte de UV. Tudo acontece no telefone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto custa o CYANO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O app é grátis e totalmente funcional: cópias ilimitadas em resolução total sem marca d'água. Uma compra opcional de 4,99 dólares americanos libera os três banhos de viragem, os outros dois papéis e a segunda fórmula de sensibilizador. Não há assinatura."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O CYANO coleta algum dado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. Não há conta, não há análises e não há servidor, e o app não contém código de rede próprio. As fotografias nunca saem do aparelho."
+          }
+        }
+      ],
+      "inLanguage": "pt-BR"
+    }
+  ]
+}
+</script>
+
+<style>
+/*
+  The app's own vocabulary: a coated sheet. Deep Prussian blue read out of the same pigment model
+  the app renders with, paper white for text, and Futura in caps for anything that announces rather
+  than explains, matching the wordmark and the store screenshots.
+
+  lf.wtf is paper and serif; /frmt is the inside of a camera bag; this is the sheet under the sun.
+  Committed to dark, and deliberately not following the system preference, because the product is
+  one colour and switching it to paper would throw away the thing being sold.
+
+  One file, no webfont, no framework. The only script drives the comparison slider.
+*/
+:root {
+  --blue: #0d2340;
+  --deep: #081829;
+  --paper: #f7f6f3;
+  --dim: rgba(247, 246, 243, 0.70);
+  --faint: rgba(247, 246, 243, 0.42);
+  --rule: rgba(247, 246, 243, 0.15);
+  --wash: #9db6d4;
+  --display: Futura, "Century Gothic", "Avenir Next", "Trebuchet MS", system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--blue);
+  color: var(--paper);
+  font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif;
+  overflow-x: hidden;
+}
+img { max-width: 100%; height: auto; display: block; }
+main { max-width: 46rem; margin: 0 auto; padding: 0 clamp(1.3rem, 5vw, 2.5rem) 4rem; }
+
+.label {
+  font: 500 0.68rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--faint);
+}
+a.back { display: inline-block; padding: 1.8rem 0 0; text-decoration: none; color: var(--faint); }
+a.back:hover { color: var(--paper); }
+
+header { padding: 3rem 0 0; }
+.mark { display: flex; align-items: center; gap: 1rem; margin-bottom: 2.6rem; }
+.mark img { width: 62px; height: 62px; border-radius: 14px; }
+.mark h1 {
+  font: 700 1.5rem/1 var(--display); letter-spacing: 0.30em;
+  margin: 0 0 0.42rem; text-transform: uppercase;
+}
+.mark p { margin: 0; }
+
+.claim {
+  font: 700 clamp(2.3rem, 8.5vw, 3.9rem)/1.03 var(--display);
+  letter-spacing: 0.01em; margin: 0 0 1.5rem; text-transform: uppercase;
+}
+.lede { color: var(--dim); font-size: 1.06rem; margin: 0 0 1.1rem; }
+.lede strong { color: var(--paper); font-weight: 600; }
+
+.buy {
+  display: inline-block; margin: 1.9rem 0 0.8rem; padding: 0.95rem 1.6rem;
+  background: var(--paper); color: var(--blue); text-decoration: none;
+  border-radius: 11px; font-weight: 600;
+}
+.buy:hover { background: var(--wash); }
+.buy .price { font-weight: 400; opacity: 0.72; }
+/* Until the app is through review there is nowhere for this button to go. It said "Download on the
+   App Store" and pointed at "#", which looks like a broken page rather than an unreleased app, so
+   it says what is actually true and stops pretending to be a link.
+   To release: swap both <span class="buy pending"> back to <a class="buy"
+   href="https://apps.apple.com/us/app/cyano-cyanotype-photos/id6802050987">, restore the wording,
+   and drop this rule. */
+.buy.pending { background: transparent; color: var(--paper); box-shadow: inset 0 0 0 1px var(--wash); cursor: default; }
+.terms { margin: 0 0 1rem; }
+
+figure { margin: 3rem 0 0; }
+figcaption { margin-top: 0.85rem; }
+.compare { position: relative; overflow: hidden; border-radius: 6px; touch-action: none; cursor: ew-resize; }
+.compare img { width: 100%; }
+.compare .top { position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; clip-path: inset(0 0 0 var(--split)); }
+.compare .seam { position: absolute; top: 0; bottom: 0; left: var(--split); width: 2px; background: var(--paper); opacity: 0.85; }
+.compare .tag { position: absolute; bottom: 0.7rem; color: var(--paper); text-shadow: 0 1px 6px rgba(0,0,0,0.7); }
+.compare .l { left: 0.8rem; }
+.compare .r { right: 0.8rem; }
+
+section { padding: 3.4rem 0 0; }
+section h2 { font-size: clamp(1.5rem, 4.6vw, 2rem); line-height: 1.15; letter-spacing: -0.015em; margin: 0.5rem 0 1rem; font-weight: 600; }
+section dt a { color: var(--paper); }
+section h3 { font-size: 1.06rem; font-weight: 600; margin: 1.8rem 0 0.4rem; }
+section p { color: var(--dim); margin: 0 0 1rem; }
+section p strong { color: var(--paper); font-weight: 600; }
+.pull { color: var(--paper); font-size: 1.14rem; border-left: 2px solid var(--wash); padding-left: 1.1rem; margin: 1.6rem 0; }
+
+.strip { display: flex; gap: 0.9rem; overflow-x: auto; padding: 0.4rem 0 1rem; scroll-snap-type: x mandatory; }
+.strip img { width: 15rem; flex: 0 0 auto; border-radius: 12px; scroll-snap-align: start; }
+
+dl { margin: 1.4rem 0 0; }
+dt { font-weight: 600; margin: 1.4rem 0 0.25rem; }
+dd { color: var(--dim); margin: 0; }
+
+.close { border-top: 1px solid var(--rule); margin-top: 3.6rem; }
+footer { border-top: 1px solid var(--rule); margin-top: 3.4rem; padding-top: 1.4rem; }
+footer nav a { color: var(--dim); text-decoration: none; margin-right: 1.2rem; }
+footer nav a:hover { color: var(--paper); }
+footer p { margin: 1rem 0 0; }
+
+/* i18n:start */
+.i18n{max-width:var(--w,initial);margin:0 auto;padding:26px 22px 40px;display:flex;flex-wrap:wrap;
+gap:6px 14px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.55;
+justify-content:center}
+.i18n a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+.i18n a:hover{border-bottom-color:currentColor}
+.i18n span[aria-current]{opacity:.5;cursor:default}
+/* i18n:end */
+</style>
+</head>
+<body>
+<main>
+  <a class="back label" href="/">&larr; lf.wtf</a>
+
+  <header>
+    <div class="mark">
+      <img src="/cyano/assets/icon.png" width="62" height="62" alt="O ícone do app CYANO: um sol pálido sobre um horizonte azul da Prússia.">
+      <div>
+        <h1>CYANO</h1>
+        <p class="label">Fotos em cianotipia</p>
+      </div>
+    </div>
+
+    <h2 class="claim">Não é um filtro azul.<br>A química.</h2>
+    <p class="lede">
+      A cianotipia é o processo fotográfico mais antigo que sobreviveu. Papel pincelado com sais de ferro, um negativo posto por cima, deixado ao sol. O que se revela é azul da Prússia, lavado em água limpa. É daí que vem a palavra blueprint.
+    </p>
+    <p class="lede">
+      <strong>O CYANO faz essa química em software.</strong> Não uma troca de cor ajustada no olho, mas a resposta ultravioleta do sensibilizador integrada contra a luz do sol ao longo do espectro, e azul da Prússia construído pela lei de Beer-Lambert. Sem câmara escura, sem produtos químicos, sem impressora.
+    </p>
+
+    <span class="buy pending" data-appstore>Em breve na App Store <span class="price">Grátis</span></span>
+    <p class="terms label">Sem assinatura &middot; Sem conta &middot; Nada sai do seu telefone</p>
+  </header>
+
+  <figure>
+    <div class="compare" style="--split:50%">
+      <img src="/cyano/assets/before.jpg" width="1120" height="896" alt="Flores amarelas diante do horizonte de uma cidade sob um céu azul limpo, como o telefone fotografou.">
+      <img class="top" src="/cyano/assets/after.jpg" width="1120" height="896" alt="O mesmo quadro como cianotipia: as flores amarelas ficaram quase pretas enquanto o céu estourou até o papel nu.">
+      <span class="seam" aria-hidden="true"></span>
+      <span class="tag label l">Fotografia</span>
+      <span class="tag label r">Cianotipia</span>
+    </div>
+    <figcaption class="label">Mesmo quadro. Arraste.</figcaption>
+  </figure>
+
+  <section>
+    <p class="label">Por que fica assim</p>
+    <h2>O papel não consegue ver a maior parte da sua fotografia.</h2>
+    <p>
+      O papel de cianotipia é cego ao vermelho e ao verde. Ele responde só ao ultravioleta e ao azul mais profundo, o que significa que lê uma cena com um brilho completamente errado, e é justamente esse o ponto.
+    </p>
+    <p>
+      Olhe a imagem acima. Para a câmera, aquelas flores amarelas e aquele céu têm o mesmo brilho: meça e as flores dão 177, o céu 165. Você não conseguiria distingui-los numa conversão para preto e branco.
+    </p>
+    <p>
+      No papel eles acabam em extremos opostos. As flores caem para 69 e o céu sobe para 225, porque o amarelo quase não carrega luz que este sensibilizador consiga usar enquanto o céu carrega mais do que a folha aguenta. Nada foi ajustado para isso acontecer; é o que a química faz.
+    </p>
+    <p class="pull">
+      Duas cores que a sua câmera registrou igualmente claras saem em extremos opostos da cópia.
+    </p>
+    <p>
+      Um filtro não chega lá. Um filtro é uma lista que alguém escreveu de antemão, então ele pode deixar uma fotografia azul, mas não faz ideia de qual azul carregava ultravioleta. Essa é a diferença entre algo que parece vagamente antigo e algo que parece ter saído de uma bandeja.
+    </p>
+  </section>
+
+  <section>
+    <p class="label">O que está de fato sendo calculado</p>
+    <h2>Construído a partir da física, não de uma predefinição.</h2>
+    <p>
+      Cada cor na sua tela são três números. Esses três números não dizem quanto ultravioleta uma coisa refletiu, e o ultravioleta é a única parte com que este processo se importa. Então o modelo reconstrói o espectro completo mais suave compatível com a cor que você fotografou, e depois lê a parte que o sensibilizador realmente enxerga.
+    </p>
+    <p>
+      Esse espectro é integrado contra a curva de ação do sensibilizador e o espectro solar para obter uma exposição. A exposição passa por uma curva tonal derivada da fotoquímica em vez de desenhada à mão. O azul da Prússia resultante é construído pela lei de Beer-Lambert, incluindo o jeito como o pigmento se agrega em alta concentração, sem o qual os tons profundos empacam num azul elétrico pouco convincente.
+    </p>
+    <p>
+      <strong>Ele também lê cada fotografia antes de imprimi-la,</strong> do jeito que um copista lê um negativo e faz uma tira de teste, para que a exposição sirva à imagem que está na frente dele e não a uma média imaginada.
+    </p>
+  </section>
+
+  <section>
+    <p class="label">Os controles</p>
+    <h2>Quatro discos, e todos eles são reais.</h2>
+    <dl>
+      <dt>Sol</dt>
+      <dd>Quanto tempo a folha ficou exposta. Superexponha e as sombras se fundem numa massa só, do jeito que acontece de verdade.</dd>
+      <dt>Papel</dt>
+      <dd>Trapo de algodão, aquarela rugosa ou creme. A cor do suporte aparece por toda parte, porque neste processo o papel faz parte da imagem.</dd>
+      <dt>Viragem</dt>
+      <dd>Chá, tanino ou vinho tinto. Eles convertem o azul da Prússia em tanato de ferro em vez de tingi-lo, e é por isso que uma cópia virada se lê como outro processo e não como uma recolorida.</dd>
+      <dt>Borda pincelada</dt>
+      <dd>A camada irregular de uma folha pincelada à mão, com semente por fotografia, para que duas cópias da mesma imagem nunca sejam exatamente iguais.</dd>
+    </dl>
+  </section>
+
+  <section>
+    <p class="label">No seu telefone</p>
+    <h2>Simples na frente, pesado por baixo.</h2>
+    <div class="strip">
+      <img src="/cyano/assets/shot-1.jpg" width="620" height="1347" loading="lazy" alt="Um bordo em plena cor de outono representado como cianotipia no app CYANO.">
+      <img src="/cyano/assets/shot-2.jpg" width="620" height="1347" loading="lazy" alt="Seis cores que uma câmera registra igualmente claras, e o que o papel de cianotipia faz com cada uma.">
+      <img src="/cyano/assets/shot-3.jpg" width="620" height="1347" loading="lazy" alt="Uma fotografia ao lado da sua cianotipia, mostrando o amarelo indo para preto e o céu indo para o papel.">
+      <img src="/cyano/assets/shot-4.jpg" width="620" height="1347" loading="lazy" alt="Uma cópia de nenúfar mostrada sem viragem e depois virada com chá, tanino e vinho.">
+      <img src="/cyano/assets/shot-5.jpg" width="620" height="1347" loading="lazy" alt="O seletor de papel no CYANO, com trapo de algodão, aquarela rugosa e creme.">
+      <img src="/cyano/assets/shot-6.jpg" width="620" height="1347" loading="lazy" alt="Uma borda pincelada à mão em volta de uma cópia em cianotipia no CYANO.">
+    </div>
+    <p>
+      Escolha uma fotografia e ela revela. Mova o sol, troque o papel, mergulhe num banho de viragem. Salve em resolução total sem nada carimbado em cima.
+    </p>
+  </section>
+
+  <section>
+    <p class="label">Perguntas frequentes</p>
+    <h2>Perguntas</h2>
+    <h3>Preciso de produtos químicos, papel ou impressora?</h3>
+    <p>
+      Nenhum deles. O CYANO existe para que quem nunca poderia montar uma câmara escura, comprar sensibilizador ou esperar uma tarde de sol consiga fazer cianotipias mesmo assim.
+    </p>
+    <h3>Isto é um filtro?</h3>
+    <p>
+      Não. Um filtro decide de antemão no que cada cor vira. O CYANO calcula quanto ultravioleta cada cor realmente carregava e constrói o pigmento a partir disso.
+    </p>
+    <h3>Quanto custa?</h3>
+    <p>
+      O app é grátis e totalmente utilizável: cópias ilimitadas, resolução total, sem marca d'água. Uma compra opcional de US$ 4,99 libera os três banhos de viragem, os outros dois papéis e a segunda fórmula de sensibilizador. Não há assinatura.
+    </p>
+    <h3>Ele coleta alguma coisa?</h3>
+    <p>
+      Não. Sem conta, sem análises, sem servidor e sem código de rede próprio. As fotografias nunca saem do seu telefone. A <a href="/cyano/privacy">política de privacidade</a> tem uma página e diz isso.
+    </p>
+  </section>
+
+  <section class="close">
+    <h2>Faça uma.</h2>
+    <p>
+      Grátis, e a versão gratuita é a simulação inteira. Nada leva marca d'água e nada é segurado para provar algum ponto.
+    </p>
+    <span class="buy pending" data-appstore>Coming to the App Store <span class="price">Free</span></span>
+  </section>
+
+  <section class="close">
+    <p class="label">Também de Levi Foster</p>
+    <h2>Mais dois que funcionam do mesmo jeito.</h2>
+    <dl>
+      <dt><a href="/frmt/">FRMT &mdash; Simulação de filme</a></dt>
+      <dd>Uma câmera que modela o filme em si: a luz se espalhando pela emulsão, as camadas de corante segurando umas às outras, o grão se formando onde a luz caiu.</dd>
+      <dt><a href="/modul8/">MODUL8 &mdash; Efeitos de glitch art</a></dt>
+      <dd>Dezenove efeitos empilháveis, cada um modelado sobre um jeito específico pelo qual o hardware de verdade falhava. Grátis.</dd>
+    </dl>
+  </section>
+
+  <footer>
+    <nav>
+      <a href="/">Levi Foster</a>
+      <a href="/frmt/">FRMT</a>
+      <a href="/modul8/">MODUL8</a>
+      <a href="/cyano/privacy/">Privacidade</a>
+      <a href="mailto:hello@redarrowmarketing.com">Suporte</a>
+    </nav>
+    <p class="label">O CYANO é feito por Levi Foster em Fort Worth, Texas</p>
+  </footer>
+</main>
+
+<script>
+// The slider, and nothing else. Pointer events cover mouse, touch and pen in one path.
+(function () {
+  var boxes = document.querySelectorAll('.compare');
+  Array.prototype.forEach.call(boxes, function (box) {
+    function at(event) {
+      var rect = box.getBoundingClientRect();
+      var x = Math.min(Math.max(event.clientX - rect.left, 0), rect.width);
+      box.style.setProperty('--split', (x / rect.width * 100).toFixed(2) + '%');
+    }
+    var down = false;
+    // Tracked on window rather than through pointer capture, which stopped reporting itself
+    // partway through a drag in some browsers and froze the seam after the first move.
+    box.addEventListener('pointerdown', function (e) { down = true; at(e); e.preventDefault(); });
+    window.addEventListener('pointermove', function (e) { if (down) at(e); }, { passive: true });
+    window.addEventListener('pointerup', function () { down = false; });
+    window.addEventListener('pointercancel', function () { down = false; });
+    box.addEventListener('click', at);
+  });
+})();
+</script>
+
+<nav class="i18n" aria-label="Language">
+  <a href="/cyano/" hreflang="en" lang="en">English</a>
+  <a href="/de/cyano/" hreflang="de" lang="de">Deutsch</a>
+  <a href="/es/cyano/" hreflang="es" lang="es">Español</a>
+  <a href="/es-mx/cyano/" hreflang="es-MX" lang="es-MX">Español (MX)</a>
+  <a href="/fr/cyano/" hreflang="fr" lang="fr">Français</a>
+  <a href="/it/cyano/" hreflang="it" lang="it">Italiano</a>
+  <a href="/ja/cyano/" hreflang="ja" lang="ja">日本語</a>
+  <a href="/ko/cyano/" hreflang="ko" lang="ko">한국어</a>
+  <a href="/nl/cyano/" hreflang="nl" lang="nl">Nederlands</a>
+  <span aria-current="true" lang="pt-BR">Português (BR)</span>
+  <a href="/zh-hans/cyano/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+</nav>
+</body>
+</html>

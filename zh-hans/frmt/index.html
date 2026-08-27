@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FRMT｜iPhone 胶片模拟应用</title>
+<meta name="description" content="FRMT 是一款 iPhone 胶片模拟应用，它模拟的是胶片本身，而不是颜色滤镜：光晕、层间效应、随密度变化的颗粒，全部在设备上从 RAW 完成显影。">
+<meta name="color-scheme" content="dark">
+<link rel="alternate" hreflang="en" href="https://lf.wtf/frmt/">
+<link rel="alternate" hreflang="de" href="https://lf.wtf/de/frmt/">
+<link rel="alternate" hreflang="es" href="https://lf.wtf/es/frmt/">
+<link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/frmt/">
+<link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/frmt/">
+<link rel="alternate" hreflang="it" href="https://lf.wtf/it/frmt/">
+<link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/frmt/">
+<link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/frmt/">
+<link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/frmt/">
+<link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/frmt/">
+<link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/frmt/">
+<link rel="alternate" hreflang="x-default" href="https://lf.wtf/frmt/">
+<link rel="canonical" href="https://lf.wtf/zh-hans/frmt/">
+<link rel="icon" href="/frmt/assets/icon.png">
+<link rel="apple-touch-icon" href="/frmt/assets/icon.png">
+
+<meta property="og:title" content="FRMT — Film Simulation App for iPhone">
+<meta property="og:description" content="其他所有胶片应用都是颜色滤镜。FRMT 模拟的是胶片本身：光晕、层间效应、随密度变化的颗粒，在你的 iPhone 上从 RAW 完成显影。">
+<meta property="og:image" content="https://lf.wtf/frmt/assets/hero.jpg">
+<meta property="og:image:alt" content="黄昏时分的城堡主楼，用 FRMT 胶片模拟显影而成。">
+<meta property="og:url" content="https://lf.wtf/zh-hans/frmt/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Levi Foster">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="es_MX">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@cybermynd">
+<meta name="author" content="Levi Foster">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobileApplication",
+      "@id": "https://lf.wtf/frmt/#app",
+      "name": "FRMT",
+      "alternateName": "FRMT - Film Simulation",
+      "url": "https://lf.wtf/frmt/",
+      "image": "https://lf.wtf/frmt/assets/icon.png",
+      "description": "一款 iPhone 胶片模拟相机，模拟的是摄影工序本身，而不是套一层颜色滤镜：光晕、层间成色剂效应、随密度变化的颗粒，在设备上从 RAW 底片完成显影。",
+      "applicationCategory": "PhotoApplication",
+      "applicationSubCategory": "Camera",
+      "operatingSystem": "iOS 26.0 or later",
+      "installUrl": "https://apps.apple.com/app/id6800928630",
+      "downloadUrl": "https://apps.apple.com/app/id6800928630",
+      "sameAs": [
+        "https://apps.apple.com/app/id6800928630"
+      ],
+      "mainEntityOfPage": {
+        "@id": "https://lf.wtf/frmt/#webpage"
+      },
+      "featureList": [
+        "根据在乳剂中散射的光建模的光晕",
+        "染料层之间的层间成色剂效应",
+        "随密度变化、生成在光真正落下之处的颗粒",
+        "依据厂商公开实测数据构建的四款胶片",
+        "在设备上完成显影的 ProRAW 拍摄",
+        "无账号、无服务器、无订阅"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "14.99",
+        "priceCurrency": "USD",
+        "category": "One-time purchase",
+        "availability": "https://schema.org/InStock"
+      },
+      "author": {
+        "@id": "https://lf.wtf/#levifoster"
+      },
+      "publisher": {
+        "@id": "https://lf.wtf/#levifoster"
+      },
+      "inLanguage": "zh-Hans"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://lf.wtf/frmt/#webpage",
+      "url": "https://lf.wtf/frmt/",
+      "name": "FRMT｜iPhone 胶片模拟应用",
+      "isPartOf": {
+        "@id": "https://lf.wtf/#website"
+      },
+      "about": {
+        "@id": "https://lf.wtf/frmt/#app"
+      },
+      "primaryImageOfPage": "https://lf.wtf/frmt/assets/hero.jpg",
+      "inLanguage": "zh-Hans",
+      "breadcrumb": {
+        "@id": "https://lf.wtf/frmt/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://lf.wtf/frmt/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Levi Foster",
+          "item": "https://lf.wtf/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "FRMT"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://lf.wtf/frmt/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "FRMT 和胶片滤镜或 LUT 有什么不同？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "滤镜是一张查找表：有人事先决定了每种颜色会变成什么，同一个输入色永远给出同样的输出。FRMT 做的是模拟摄影工序，因此一个像素会发生什么，取决于它周围有什么。光会向侧面扩散到相邻区域，染料层彼此拖住，颗粒则按照实际落下的光量生成。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "FRMT 包含哪几款胶片？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "四款胶片，每一款都建立在其厂商公开的特性曲线和光谱感光度数据之上，而不是照着扫描件凭眼睛凑出来的。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "FRMT 是订阅制吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不是。FRMT 是一次性购买，14.99 美元。没有订阅、没有账号，也没有广告。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "我的照片会离开 iPhone 吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不会。每一张都在 iPhone 自己的 GPU 上完成显影。应用里根本没有联网代码，所以没有东西可上传，也没有服务器留副本。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "显影一张照片为什么要这么久？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "因为这套模拟是在跑化学，而不是查一个答案。光在乳剂中的传输、染料层之间的相互作用、颗粒的生成，都要逐张计算，而这在手机上要花掉实实在在的时间。"
+          }
+        }
+      ],
+      "inLanguage": "zh-Hans"
+    }
+  ]
+}
+</script>
+
+<style>
+/*
+  The app's own vocabulary, on purpose: white on black, a tracked monospace for anything that
+  labels rather than speaks, and no colour but the photographs. lf.wtf is paper and serif; this is
+  the inside of a camera bag.
+
+  One file, no webfont, no framework. The only script drives the comparison sliders, because that
+  argument cannot be made in prose.
+*/
+:root {
+  --black: #0a0a0c;
+  --white: #f7f6f3;
+  --dim: rgba(247, 246, 243, 0.55);
+  --faint: rgba(247, 246, 243, 0.34);
+  --rule: rgba(247, 246, 243, 0.12);
+  --warm: #ffb060;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--black);
+  color: var(--white);
+  font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif;
+  overflow-x: hidden;
+}
+img, video { max-width: 100%; display: block; }
+main { max-width: 46rem; margin: 0 auto; padding: 0 clamp(1.4rem, 6vw, 2.5rem); }
+
+.label {
+  font: 500 0.68rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+.back { display: inline-block; padding: 1.8rem 0 0; text-decoration: none; }
+.back:hover { color: var(--dim); }
+
+/* ---------------------------------------------------------------- masthead */
+header { padding: 3.2rem 0 2.6rem; }
+.mark { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.8rem; }
+.mark img { width: 62px; height: 62px; border-radius: 14px; }
+.mark h1 { font-size: 1.35rem; font-weight: 600; margin: 0; letter-spacing: -0.01em; }
+.mark p { margin: 0.15rem 0 0; }
+
+h2.claim {
+  font-size: clamp(2.1rem, 7vw, 3.2rem);
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+  margin: 0 0 1.1rem;
+}
+.lede { font-size: clamp(1.02rem, 2.6vw, 1.15rem); color: var(--dim); margin: 0 0 1.1rem; max-width: 34rem; }
+.lede strong { color: var(--white); font-weight: 600; }
+.lede:last-of-type { margin-bottom: 2rem; }
+
+.buy {
+  display: inline-flex; align-items: baseline; gap: 0.7rem;
+  background: var(--white); color: var(--black);
+  text-decoration: none; font-weight: 600;
+  padding: 0.85rem 1.5rem; border-radius: 100px;
+}
+.buy:hover { background: #fff; }
+.buy .price { font: 400 0.85rem/1 ui-monospace, SFMono-Regular, Menlo, monospace; opacity: 0.6; }
+.terms { margin: 0.9rem 0 0; }
+
+/* ------------------------------------------------------------------ slider */
+figure { margin: 0; }
+.compare {
+  position: relative; overflow: hidden; border-radius: 10px;
+  aspect-ratio: 3 / 2; touch-action: pan-y; cursor: ew-resize; user-select: none;
+  background: #000;
+}
+.compare.square { aspect-ratio: 1 / 1; }
+.compare img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.compare .top { clip-path: inset(0 0 0 var(--split, 50%)); }
+.compare .seam {
+  position: absolute; top: 0; bottom: 0; left: var(--split, 50%);
+  width: 2px; background: var(--white); transform: translateX(-1px);
+}
+.compare .seam::after {
+  content: ""; position: absolute; top: 50%; left: 50%;
+  width: 34px; height: 34px; margin: -17px 0 0 -17px;
+  border-radius: 50%; background: var(--white);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+}
+.compare .tag {
+  position: absolute; top: 12px;
+  padding: 5px 9px; border-radius: 100px; background: rgba(0, 0, 0, 0.5);
+}
+.compare .tag.l { left: 12px; }
+.compare .tag.r { right: 12px; }
+figcaption { margin-top: 0.75rem; color: var(--faint); font-size: 0.88rem; }
+
+/* ----------------------------------------------------------------- sections */
+section { padding: 3.4rem 0; border-top: 1px solid var(--rule); }
+section h3 {
+  font-size: clamp(1.5rem, 4.5vw, 1.95rem);
+  line-height: 1.15; letter-spacing: -0.02em; font-weight: 600;
+  margin: 0.9rem 0 0.9rem;
+}
+section p { color: var(--dim); margin: 0 0 1rem; max-width: 34rem; }
+section p:last-child { margin-bottom: 0; }
+section p strong { color: var(--white); font-weight: 600; }
+
+/* A line that is the argument, not a decoration around it. */
+.pull {
+  font-size: clamp(1.25rem, 3.6vw, 1.6rem);
+  line-height: 1.3; letter-spacing: -0.015em; font-weight: 600;
+  color: var(--white); max-width: 30rem;
+  margin: 1.8rem 0;
+  padding-left: 1.1rem; border-left: 2px solid var(--warm);
+}
+
+/* The three things a lookup table cannot do. */
+.points { display: grid; gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; margin-top: 1.8rem; }
+.point { background: var(--black); padding: 1.4rem 1.3rem; }
+.point .label { display: block; margin-bottom: 0.7rem; }
+.point b { display: block; font-weight: 600; font-size: 1.06rem; margin-bottom: 0.4rem; letter-spacing: -0.01em; }
+.point span { display: block; color: var(--dim); font-size: 0.95rem; line-height: 1.55; }
+.point em { display: block; color: var(--faint); font-size: 0.88rem; font-style: normal; margin-top: 0.6rem; }
+
+.stocks { display: grid; gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; margin-top: 1.6rem; }
+.stock { background: var(--black); padding: 1.1rem 1.2rem; }
+.stock b { display: block; font-weight: 600; margin-bottom: 0.15rem; }
+.stock span { color: var(--dim); font-size: 0.94rem; }
+
+/* Numbered, because the order is the product. */
+.steps { list-style: none; margin: 1.8rem 0 0; padding: 0; counter-reset: step; }
+.steps li { position: relative; padding: 0 0 1.5rem 3rem; counter-increment: step; }
+.steps li:last-child { padding-bottom: 0; }
+.steps li::before {
+  content: counter(step, decimal-leading-zero);
+  position: absolute; left: 0; top: 0.15rem;
+  font: 500 0.72rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: 0.1em; color: var(--warm);
+}
+.steps b { display: block; font-weight: 600; margin-bottom: 0.25rem; }
+.steps span { color: var(--dim); font-size: 0.96rem; }
+
+.shots {
+  display: grid; grid-auto-flow: column; gap: 12px;
+  overflow-x: auto; padding-bottom: 0.6rem; margin-top: 1.6rem;
+  scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+}
+.shots img { width: 210px; border-radius: 12px; scroll-snap-align: start; }
+.shots::-webkit-scrollbar { height: 6px; }
+.shots::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 3px; }
+
+.field { border-radius: 10px; margin-top: 1.4rem; }
+
+/* Closing call, so the page does not end on a caveat. */
+.close { text-align: left; }
+.close h3 { margin-top: 0; }
+
+footer { border-top: 1px solid var(--rule); padding: 2.2rem 0 3.4rem; }
+footer a { color: var(--dim); text-decoration: none; }
+footer a:hover { color: var(--white); }
+footer nav { display: flex; flex-wrap: wrap; gap: 1.2rem; margin-bottom: 1rem; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .buy, .compare .seam { transition: background 0.15s ease; }
+}
+
+/* The questions people actually ask, kept as real headings so they can be found. */
+.faq { margin-top: 1.6rem; }
+.faq h4 {
+  font-size: 1rem; font-weight: 600; letter-spacing: -0.01em;
+  margin: 1.6rem 0 0.4rem; color: var(--white);
+}
+.faq h4:first-child { margin-top: 0; }
+.faq p { font-size: 0.97rem; }
+
+/* i18n:start */
+.i18n{max-width:var(--w,initial);margin:0 auto;padding:26px 22px 40px;display:flex;flex-wrap:wrap;
+gap:6px 14px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.55;
+justify-content:center}
+.i18n a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+.i18n a:hover{border-bottom-color:currentColor}
+.i18n span[aria-current]{opacity:.5;cursor:default}
+/* i18n:end */
+
+html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: normal !important; }
+</style>
+</head>
+<body>
+<main>
+  <a class="back label" href="/">← lf.wtf</a>
+
+  <header>
+    <div class="mark">
+      <img src="/frmt/assets/icon.png" width="62" height="62" alt="FRMT 应用图标">
+      <div>
+        <h1>FRMT</h1>
+        <p class="label">为 iPhone 打造的胶片模拟</p>
+      </div>
+    </div>
+
+    <h2 class="claim">不是滤镜。 <br>是胶片。</h2>
+    <p class="lede">
+      你手机上其他所有胶片应用都是颜色滤镜：一张写明每种颜色该变成什么的清单，套在一张已经拍好的照片上。
+    </p>
+    <p class="lede">
+      <strong>FRMT 做的是模拟胶片本身。</strong> 光在乳剂中向侧面散射。染料层在化学上彼此拖住。颗粒只生成在光真正落下的地方。你的 iPhone 从一张 RAW 底片出发，一次一张地把这套化学跑完。
+    </p>
+
+    <a class="buy" href="https://apps.apple.com/app/id6800928630" data-appstore>在 App Store 下载 <span class="price">14.99 美元买断</span></a>
+    <p class="terms label">无订阅 · 无账号 · 什么都不会离开你的手机</p>
+  </header>
+
+  <figure>
+    <div class="compare" style="--split:50%">
+      <img src="/frmt/assets/before.jpg" alt="黄昏中护城河上灯火通明的城堡主楼，iPhone 直出的样子。">
+      <img class="top" src="/frmt/assets/after.jpg" alt="同一张画面用 Cinnabar 50 描述文件显影：被照亮的城墙和塔楼向四周的黑暗晕开。">
+      <span class="seam" aria-hidden="true"></span>
+      <span class="tag label l">iPhone</span>
+      <span class="tag label r">Cinnabar 50</span>
+    </div>
+    <figcaption>同一张画面，同样的曝光。拖动看看。</figcaption>
+  </figure>
+
+  <section>
+    <p class="label">差别</p>
+    <h3>滤镜是一张清单。胶片是一场反应。</h3>
+    <p>
+      滤镜靠查表工作。有人事先决定了每种颜色该变成什么，应用再一个像素一个像素地替换。同一种蓝色喂进去两次，得到的答案也是两次一样，无论那片蓝是一小块傍晚的天空，还是镀铬保险杠上的高光。
+    </p>
+    <p>
+      胶片没有清单可查。它有的是化学，而化学会理会周围发生了什么。打在明亮边缘上的光会继续前行，在片基背面反弹，再回来曝光旁边的颗粒。某一层生成染料时会释放一种化学物质，阻止相邻的层生成得同样浓。颗粒出现在落下了足够多光子的地方，而在暗部和中间调里，那并不是同一个地方。
+    </p>
+    <p class="pull">
+      这些都没法写成一张清单，因为答案取决于画面里还有什么。
+    </p>
+    <p>
+      胶片上的霓虹招牌之所以会向周围的黑暗里发光，红色之所以不会和绿色混成一团烂泥，颗粒之所以在中间调最重、在深暗部几乎消失，原因全在这里。人们说一张照片"有胶片味"时，指的就是这个。查找表再怎么用心去做，也到不了这里。
+    </p>
+  </section>
+
+  <section>
+    <p class="label">证据</p>
+    <h3>我们先把这个滤镜做出来，然后超过它。</h3>
+    <p>
+      同一张照片，显影两次。左边是用这款胶片能做出的最好的颜色滤镜，它和我们的模型来自同一批实测数据。右边是完整的模拟。这是 1:1 裁切，所以你看到的是真实像素，而不是缩放过的版本。
+    </p>
+    <figure>
+      <div class="compare square" style="--split:50%">
+        <img src="/frmt/assets/crop-filter.jpg" alt="透过深色秋枝看到的明亮天空，1:1 裁切，用颜色查找表显影：干净、平滑，边缘对着天空硬生生切断。">
+        <img class="top" src="/frmt/assets/crop-frmt.jpg" alt="同一处裁切经过 FRMT 完整模拟：整片天空带上颗粒，明亮的天空向每一根深色枝条和叶片里晕开。">
+        <span class="seam" aria-hidden="true"></span>
+        <span class="tag label l">滤镜</span>
+        <span class="tag label r">FRMT</span>
+      </div>
+      <figcaption>
+        拖动看看。天空带上颗粒，每一根深色枝条都被它背后的光啃进去。滤镜之所以对着天空硬生生切断，是因为滤镜没有任何办法让光向侧面移动。Flint 64。
+      </figcaption>
+    </figure>
+    <p style="margin-top:2rem">
+      把画面拉回来看，它到处都是。这里呈现的是整张画面上两个版本不一致的每一处，放大后单独显示。这就是滤镜做不出的光，因为要做出它，就得让光在画面上移动，而不是就地重新上色。
+    </p>
+    <figure>
+      <img class="field" src="/frmt/assets/difference.jpg" width="1000" alt="一片黑色画面，只显示两个版本之间的差异：暖色的光勾勒出画面中每一片受光的叶子、枝条和边缘。">
+      <figcaption>把滤镜与胶片之间的落差单独提取出来。取自真实的一张。</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <p class="label">滤镜做不到的三件事</p>
+    <h3>你的手机实际上在算什么。</h3>
+    <p>
+      每一张照片都会按顺序走完这些步骤，和一张底片经历的顺序一样，就在你手机的图形处理器上。
+    </p>
+    <div class="points">
+      <div class="point">
+        <span class="label">01 · 光晕</span>
+        <b>光进去，又从紧挨着自己的地方回来。</b>
+        <span>
+          一部分光会干净利落地穿过乳剂，在下面的片基上反射，再在它进入处的旁边把胶片第二次曝光。明亮的东西不会停在自己的边缘上。它们会渗进周围。
+        </span>
+        <em>在这些地方最容易看到：霓虹、路灯、窗户、穿过树叶的阳光。</em>
+      </div>
+      <div class="point">
+        <span class="label">02 · 层间效应</span>
+        <b>各个色层彼此争执。</b>
+        <span>
+          当某一层显出染料时，它会释放一种化学物质，向侧面扩散，拖住相邻的层。一款胶片的色彩个性大半由此而来，也正因为如此，红色挨着绿色时仍然是红色，而不是两者一起滑向褐色。
+        </span>
+        <em>在这些地方最容易看到：树叶、与色彩相邻的肤色、任何高饱和的东西。</em>
+      </div>
+      <div class="point">
+        <span class="label">03 · 颗粒</span>
+        <b>不是盖在上面的一层纹理。</b>
+        <span>
+          这里的颗粒就是染料实际生成量在一处处之间的起伏本身，所以它跟着影调走，而不是压在影调上。在中间调最强，在深暗部几乎消失，你的曝光一动，它也跟着动。
+        </span>
+        <em>在这些地方最容易看到：天空、皮肤、平整的墙面，以及任何假颗粒图层看起来像贴上去的地方。</em>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="label">单看光晕</p>
+    <h3>这是真实存在的，而且每一张里都有。</h3>
+    <p>
+      从一张照片里提取出来、并加以放大的回返光，好让你看得见。这里没有任何东西是画上去的。这是模型从底片算出来的结果。
+    </p>
+    <img class="field" src="/frmt/assets/halation.jpg" width="900" alt="一张伪彩色画面，只显示一张照片中回返的光：暖色的轮廓线勾出夜色中城堡每一道明亮的边缘。">
+  </section>
+
+  <section>
+    <p class="label">四款胶片</p>
+    <h3>是测出来的，不是调出来的。</h3>
+    <p>
+      每一款背后的数值都来自其厂商自己公开的数据表：响应曲线、光谱感光度、颗粒数据。没有谁坐下来凭眼睛去调一个预设，调到看着差不多为止。
+    </p>
+    <p>
+      像装胶卷一样，一次只装一款。拍摄界面上没有风格列表，也没有滑块，而且四款之中没有哪一款是另一款的变体。
+    </p>
+    <div class="stocks">
+      <div class="stock"><b>Cinnabar 50</b><span>浓郁饱和。风景、树叶、日落。</span></div>
+      <div class="stock"><b>Galena 100</b><span>中性均衡。旅行、街道、混合光。</span></div>
+      <div class="stock"><b>Baryta 100</b><span>柔和、颗粒细。人、人像、阴天。</span></div>
+      <div class="stock"><b>Flint 64</b><span>颗粒粗、色调暖，暗部偏冷。街头、硬光、霓虹。</span></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="label">怎么用</p>
+    <h3>是相机，不是控制面板。</h3>
+    <ol class="steps">
+      <li>
+        <b>按下快门。</b>
+        <span>一张 RAW 底片立刻写入。快门永远不会等处理，所以这个应用和系统相机一样快。</span>
+      </li>
+      <li>
+        <b>它进入胶卷。</b>
+        <span>画面会像胶卷上的一格格底片那样排队等待。继续拍就好。你也可以设置成接上电源后再显影。</span>
+      </li>
+      <li>
+        <b>开始显影。</b>
+        <span>每张大约一分钟，就在你的手机上，把从底片到成片的完整模型跑完。你看到的是真正的计时，而不是一根假装在走的进度条。</span>
+      </li>
+      <li>
+        <b>你把它取回来。</b>
+        <span>完成的照片会保存到你的照片图库，并留在应用里，不用离开就能翻看。用别的相机拍了东西？把 RAW 导进来，一样可以显影。</span>
+      </li>
+    </ol>
+    <div class="shots">
+      <img src="/frmt/assets/shot-1.jpg" width="560" alt="一张显影完成的照片：绿松石色水面上方，一只鸟停在岩石上。">
+      <img src="/frmt/assets/shot-2.jpg" width="560" alt="逆光树叶上滤镜与胶片的对比，放大显示。">
+      <img src="/frmt/assets/shot-3.jpg" width="560" alt="同一个场景，用四款胶片分别显影。">
+      <img src="/frmt/assets/shot-4.jpg" width="560" alt="拍摄界面：取景器、曝光与变焦拨盘、快门。">
+      <img src="/frmt/assets/shot-5.jpg" width="560" alt="胶卷：等待显影的画面，下面是已完成照片的网格。">
+    </div>
+  </section>
+
+  <section>
+    <p class="label">说实话</p>
+    <h3>它很慢，这就是代价。</h3>
+    <p>
+      每张照片占用你手机图形处理器一分钟，对一张图像来说是荒谬的计算量，这也正是别人都不这么做的原因。滤镜只是每个像素查一次表，在你抬起拇指之前就结束了。我们认为这一分钟买到的，是查表永远买不到的东西。
+    </p>
+    <p>
+      取景器给你看的是场景，不是胶片。给实时预览调色，等于在工作完成之前就去猜结果，而猜错的预览比诚实的预览更糟。请用曝光拨盘来安排你的高光。
+    </p>
+    <p>
+      这是反转片。高光之上留的余地并不多。这是忠实，而不是意外，而且正是这一点会改变你拍摄的方式。
+    </p>
+  </section>
+
+  <section class="close">
+    <p class="label">一个价格，只付一次</p>
+    <h3>14.99 美元。整个商业模式就这一句。</h3>
+    <p>
+      无订阅、无账号、无云端、无广告、无水印、无应用内购买，也不会让你再花钱去解锁"好胶片"。你的照片永远不会离开你的手机，因为这个应用里根本没有联网代码。
+    </p>
+    <p style="margin-bottom:1.8rem">
+      需要一台能够拍摄 Apple ProRAW 的 iPhone。
+    </p>
+    <a class="buy" href="https://apps.apple.com/app/id6800928630" data-appstore>Download on the App Store <span class="price">$14.99 once</span></a>
+  </section>
+
+  <section>
+    <p class="label">常见问题</p>
+    <h3>大家最先问的问题。</h3>
+
+    <div class="faq">
+      <h4>FRMT 和胶片滤镜或 LUT 有什么不同？</h4>
+      <p>
+        滤镜是一张查找表。有人事先决定了每种颜色会变成什么，同样的输入永远给出同样的输出。FRMT 做的是模拟这道工序，因此一个像素会发生什么，取决于它周围有什么：光会向侧面扩散到相邻区域，染料层彼此拖住，颗粒则按照实际落下的光量生成。
+      </p>
+
+      <h4>包含哪几款胶片？</h4>
+      <p>
+        四款。每一款都建立在其厂商公开的特性曲线和光谱感光度数据之上，而不是照着谁的扫描件凭眼睛凑出来的。
+      </p>
+
+      <h4>这是订阅制吗？</h4>
+      <p>
+        不是。一次性购买 14.99 美元。没有订阅、没有账号、没有广告、没有应用内购买。
+      </p>
+
+      <h4>我的照片会离开 iPhone 吗？</h4>
+      <p>
+        不会。每一张都在 iPhone 自己的 GPU 上完成显影。应用里根本没有联网代码，所以没有东西可上传，也没有服务器留副本。
+      </p>
+
+      <h4>为什么显影要这么久？</h4>
+      <p>
+        因为它是在跑化学，而不是查一个答案。光在乳剂中的传输、染料层之间的相互作用、颗粒的生成，都要为每一张单独算过，而这在手机上要花掉实实在在的时间。
+      </p>
+
+      <h4>支持哪些 iPhone？</h4>
+      <p>
+        任何能够拍摄 Apple ProRAW 且运行 iOS 26 或更高版本的 iPhone。
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <a href="/">Levi Foster</a>
+      <a href="https://apps.apple.com/us/app/frmt-film-simulation/id6800928630">App Store</a>
+      <a href="/modul8/">MODUL8</a>
+      <a href="/cyano/">CYANO</a>
+      <a href="/frmt/privacy/">隐私</a>
+      <a href="mailto:hello@redarrowmarketing.com">支持</a>
+    </nav>
+    <p class="label">FRMT 由 Levi Foster 在美国得州沃斯堡打造</p>
+  </footer>
+</main>
+
+<script>
+// The sliders, and nothing else. Pointer events cover mouse, touch and pen in one path.
+(function () {
+  var boxes = document.querySelectorAll('.compare');
+  Array.prototype.forEach.call(boxes, function (box) {
+    function at(event) {
+      var rect = box.getBoundingClientRect();
+      var x = Math.min(Math.max(event.clientX - rect.left, 0), rect.width);
+      box.style.setProperty('--split', (x / rect.width * 100).toFixed(2) + '%');
+    }
+    var down = false;
+    // Tracked on window rather than through pointer capture: hasPointerCapture stopped reporting
+    // true partway through a drag in some browsers, which froze the seam after the first move.
+    box.addEventListener('pointerdown', function (e) { down = true; at(e); e.preventDefault(); });
+    window.addEventListener('pointermove', function (e) { if (down) at(e); }, { passive: true });
+    window.addEventListener('pointerup', function () { down = false; });
+    window.addEventListener('pointercancel', function () { down = false; });
+    box.addEventListener('click', at);
+  });
+})();
+</script>
+
+<nav class="i18n" aria-label="Language">
+  <a href="/frmt/" hreflang="en" lang="en">English</a>
+  <a href="/de/frmt/" hreflang="de" lang="de">Deutsch</a>
+  <a href="/es/frmt/" hreflang="es" lang="es">Español</a>
+  <a href="/es-mx/frmt/" hreflang="es-MX" lang="es-MX">Español (MX)</a>
+  <a href="/fr/frmt/" hreflang="fr" lang="fr">Français</a>
+  <a href="/it/frmt/" hreflang="it" lang="it">Italiano</a>
+  <a href="/ja/frmt/" hreflang="ja" lang="ja">日本語</a>
+  <a href="/ko/frmt/" hreflang="ko" lang="ko">한국어</a>
+  <a href="/nl/frmt/" hreflang="nl" lang="nl">Nederlands</a>
+  <a href="/pt-br/frmt/" hreflang="pt-BR" lang="pt-BR">Português (BR)</a>
+  <span aria-current="true" lang="zh-Hans">简体中文</span>
+</nav>
+</body>
+</html>

@@ -1,44 +1,1198 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://lf.wtf/</loc>
-    <lastmod>2026-08-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/es-mx/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/it/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/ko/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/nl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/pt-br/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/zh-hans/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/"/>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://lf.wtf/frmt/</loc>
-    <lastmod>2026-08-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/frmt/"/>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://lf.wtf/modul8/</loc>
-    <lastmod>2026-08-13</lastmod>
+    <loc>https://lf.wtf/de/frmt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/frmt/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/es/frmt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/frmt/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/es-mx/frmt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/frmt/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/fr/frmt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/frmt/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/it/frmt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/frmt/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/ja/frmt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/frmt/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/ko/frmt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/frmt/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/nl/frmt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/frmt/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/pt-br/frmt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/frmt/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/zh-hans/frmt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/frmt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/frmt/"/>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://lf.wtf/cyano/</loc>
-    <lastmod>2026-08-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/cyano/"/>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://lf.wtf/cyano/privacy/</loc>
-    <lastmod>2026-08-16</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <loc>https://lf.wtf/de/cyano/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/cyano/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/es/cyano/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/cyano/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/es-mx/cyano/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/cyano/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/fr/cyano/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/cyano/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/it/cyano/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/cyano/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/ja/cyano/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/cyano/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/ko/cyano/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/cyano/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/nl/cyano/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/cyano/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/pt-br/cyano/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/cyano/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/zh-hans/cyano/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/cyano/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/cyano/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/modul8/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/modul8/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/de/modul8/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/modul8/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/es/modul8/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/modul8/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/es-mx/modul8/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/modul8/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/fr/modul8/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/modul8/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/it/modul8/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/modul8/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/ja/modul8/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/modul8/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/ko/modul8/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/modul8/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/nl/modul8/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/modul8/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/pt-br/modul8/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/modul8/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/zh-hans/modul8/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/modul8/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/modul8/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://lf.wtf/frmt/privacy/</loc>
-    <lastmod>2026-08-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/frmt/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
+    <loc>https://lf.wtf/de/frmt/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/frmt/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/es/frmt/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/frmt/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/es-mx/frmt/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/frmt/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/fr/frmt/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/frmt/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/it/frmt/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/frmt/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/ja/frmt/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/frmt/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/ko/frmt/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/frmt/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/nl/frmt/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/frmt/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/pt-br/frmt/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/frmt/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/zh-hans/frmt/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/frmt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/frmt/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/cyano/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/cyano/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/de/cyano/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/cyano/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/es/cyano/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/cyano/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/es-mx/cyano/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/cyano/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/fr/cyano/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/cyano/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/it/cyano/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/cyano/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/ja/cyano/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/cyano/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/ko/cyano/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/cyano/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/nl/cyano/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/cyano/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/pt-br/cyano/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/cyano/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/zh-hans/cyano/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/cyano/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/cyano/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <!-- English only: policy pending an update for the removal of advertising -->
+  <url>
     <loc>https://lf.wtf/modul8/privacy/</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
