@@ -128,7 +128,7 @@ No. Every frame is developed on the iPhone's own GPU. The app contains no networ
 Because it runs the chemistry rather than looking up an answer. Light transport through the emulsion, the interaction between dye layers and grain formation are all computed for every frame, and that costs real time on a phone.
 
 **Which iPhones does it work on?**
-Any iPhone that can capture Apple ProRAW, running iOS 26 or later.
+Any iPhone that can capture Apple ProRAW, running iOS 17.2 or later.
 FRMT is built by Levi Foster in Fort Worth, Texas
 
 ---

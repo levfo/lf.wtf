@@ -1577,17 +1577,17 @@ T.update({
         "Sur quels iPhone fonctionne-t-il ?", "Su quali iPhone funziona?",
         "どの iPhone で使えますか。", "어떤 iPhone에서 쓸 수 있나요?",
         "Op welke iPhones werkt het?", "Em quais iPhones funciona?", "支持哪些 iPhone？"),
-    "Any iPhone that can capture Apple ProRAW, running iOS 26 or later.": (
-        "Jedes iPhone, das Apple ProRAW aufnehmen kann, mit iOS 26 oder neuer.",
-        "Cualquier iPhone capaz de capturar Apple ProRAW, con iOS 26 o posterior.",
-        "Cualquier iPhone capaz de capturar Apple ProRAW, con iOS 26 o posterior.",
-        "Tout iPhone capable de photographier en Apple ProRAW, sous iOS 26 ou version ultérieure.",
-        "Qualsiasi iPhone in grado di scattare in Apple ProRAW, con iOS 26 o successivo.",
-        "Apple ProRAW で撮影でき、iOS 26 以降が動作している iPhone。",
-        "Apple ProRAW로 촬영할 수 있고 iOS 26 이상이 설치된 iPhone.",
-        "Elke iPhone die Apple ProRAW kan vastleggen, met iOS 26 of nieuwer.",
-        "Qualquer iPhone capaz de capturar Apple ProRAW, com iOS 26 ou posterior.",
-        "任何能够拍摄 Apple ProRAW 且运行 iOS 26 或更高版本的 iPhone。"),
+    "Any iPhone that can capture Apple ProRAW, running iOS 17.2 or later.": (
+        "Jedes iPhone, das Apple ProRAW aufnehmen kann, mit iOS 17.2 oder neuer.",
+        "Cualquier iPhone capaz de capturar Apple ProRAW, con iOS 17.2 o posterior.",
+        "Cualquier iPhone capaz de capturar Apple ProRAW, con iOS 17.2 o posterior.",
+        "Tout iPhone capable de photographier en Apple ProRAW, sous iOS 17.2 ou version ultérieure.",
+        "Qualsiasi iPhone in grado di scattare in Apple ProRAW, con iOS 17.2 o successivo.",
+        "Apple ProRAW で撮影でき、iOS 17.2 以降が動作している iPhone。",
+        "Apple ProRAW로 촬영할 수 있고 iOS 17.2 이상이 설치된 iPhone.",
+        "Elke iPhone die Apple ProRAW kan vastleggen, met iOS 17.2 of nieuwer.",
+        "Qualquer iPhone capaz de capturar Apple ProRAW, com iOS 17.2 ou posterior.",
+        "任何能够拍摄 Apple ProRAW 且运行 iOS 17.2 或更高版本的 iPhone。"),
 
     # --- JSON-LD. Same claims, phrased for a machine reading the graph rather than a visitor.
     "A film simulation camera for iPhone that models the photographic process itself rather than "

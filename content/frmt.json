@@ -1351,18 +1351,18 @@
     "pt-BR": "Em quais iPhones funciona?",
     "zh-Hans": "支持哪些 iPhone？"
   },
-  "Any iPhone that can capture Apple ProRAW, running iOS 26 or later.": {
+  "Any iPhone that can capture Apple ProRAW, running iOS 17.2 or later.": {
     "kind": "text:p",
-    "de": "Jedes iPhone, das Apple ProRAW aufnehmen kann, mit iOS 26 oder neuer.",
-    "es": "Cualquier iPhone capaz de capturar Apple ProRAW, con iOS 26 o posterior.",
-    "es-MX": "Cualquier iPhone capaz de capturar Apple ProRAW, con iOS 26 o posterior.",
-    "fr": "Tout iPhone capable de photographier en Apple ProRAW, sous iOS 26 ou version ultérieure.",
-    "it": "Qualsiasi iPhone in grado di scattare in Apple ProRAW, con iOS 26 o successivo.",
-    "ja": "Apple ProRAW で撮影でき、iOS 26 以降が動作している iPhone。",
-    "ko": "Apple ProRAW로 촬영할 수 있고 iOS 26 이상이 설치된 iPhone.",
-    "nl": "Elke iPhone die Apple ProRAW kan vastleggen, met iOS 26 of nieuwer.",
-    "pt-BR": "Qualquer iPhone capaz de capturar Apple ProRAW, com iOS 26 ou posterior.",
-    "zh-Hans": "任何能够拍摄 Apple ProRAW 且运行 iOS 26 或更高版本的 iPhone。"
+    "de": "Jedes iPhone, das Apple ProRAW aufnehmen kann, mit iOS 17.2 oder neuer.",
+    "es": "Cualquier iPhone capaz de capturar Apple ProRAW, con iOS 17.2 o posterior.",
+    "es-MX": "Cualquier iPhone capaz de capturar Apple ProRAW, con iOS 17.2 o posterior.",
+    "fr": "Tout iPhone capable de photographier en Apple ProRAW, sous iOS 17.2 ou version ultérieure.",
+    "it": "Qualsiasi iPhone in grado di scattare in Apple ProRAW, con iOS 17.2 o successivo.",
+    "ja": "Apple ProRAW で撮影でき、iOS 17.2 以降が動作している iPhone。",
+    "ko": "Apple ProRAW로 촬영할 수 있고 iOS 17.2 이상이 설치된 iPhone.",
+    "nl": "Elke iPhone die Apple ProRAW kan vastleggen, met iOS 17.2 of nieuwer.",
+    "pt-BR": "Qualquer iPhone capaz de capturar Apple ProRAW, com iOS 17.2 ou posterior.",
+    "zh-Hans": "任何能够拍摄 Apple ProRAW 且运行 iOS 17.2 或更高版本的 iPhone。"
   },
   "Levi Foster": {
     "kind": "text:a",
