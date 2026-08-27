@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MODUL8 개인정보 처리방침</title>
+<link rel="alternate" hreflang="en" href="https://lf.wtf/modul8/privacy/">
+<link rel="alternate" hreflang="de" href="https://lf.wtf/de/modul8/privacy/">
+<link rel="alternate" hreflang="es" href="https://lf.wtf/es/modul8/privacy/">
+<link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/modul8/privacy/">
+<link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/modul8/privacy/">
+<link rel="alternate" hreflang="it" href="https://lf.wtf/it/modul8/privacy/">
+<link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/modul8/privacy/">
+<link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/modul8/privacy/">
+<link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/modul8/privacy/">
+<link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/modul8/privacy/">
+<link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/modul8/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://lf.wtf/modul8/privacy/">
+<link rel="canonical" href="https://lf.wtf/ko/modul8/privacy/">
+<meta name="description" content="MODUL8가 사진과 데이터를 어떻게 다루는지. 사진은 기기 안에서 처리되고 절대 업로드되지 않습니다. 1.3 버전부터는 광고도, 네트워크 코드도 전혀 없습니다.">
+<link rel="icon" href="/modul8/assets/icon.png">
+<style>
+:root{
+  --bg:#0d0d0d;--panel:#151515;--line:#2e2e2e;--line-hot:#4a4a4a;
+  --ink:#f4f4f4;--dim:#8f8f8f;--dimmer:#6a6a6a;--acid:#c8ff2e;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:ui-monospace,"SFMono-Regular",Menlo,Consolas,"Liberation Mono",monospace;
+  font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--acid)}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:0;z-index:50;background:rgba(13,13,13,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:14px;padding:14px 24px;max-width:940px}
+header img{width:30px;height:30px;border:1px solid var(--line)}
+.mark{font-weight:700;letter-spacing:.14em;font-size:1rem}
+header .spacer{flex:1}
+.getbtn{
+  display:inline-block;border:1px solid var(--ink);background:transparent;color:var(--ink);
+  padding:.55rem 1.1rem;font-size:.78rem;font-weight:700;letter-spacing:.12em;
+  text-transform:uppercase;text-decoration:none;white-space:nowrap;
+}
+.getbtn:hover{background:var(--ink);color:#0d0d0d}
+h1{font-size:clamp(2rem,6vw,3rem);line-height:1.05;letter-spacing:-.04em;margin:0 0 1.6rem}
+h2{font-size:1.25rem;letter-spacing:-.01em;margin:2.8rem 0 .9rem}
+h3{font-size:.98rem;margin:1.8rem 0 .5rem;color:#d8d8d8}
+p,li{color:#c9c9c9}
+p{margin:0 0 1.1rem}
+ul{padding-left:1.2rem;margin:0 0 1.1rem}
+li{margin-bottom:.45rem}
+.label{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dimmer);margin:0 0 1.5rem;font-weight:700}
+main{padding:64px 0 40px}
+.short{border-left:2px solid var(--acid);padding:.2rem 0 .2rem 1.4rem;margin:0 0 3rem}
+.short p{color:var(--ink);font-size:1.05rem;margin-bottom:.8rem}
+.updated{font-size:.78rem;color:var(--dimmer);letter-spacing:.08em;text-transform:uppercase}
+footer{border-top:1px solid var(--line);padding:36px 0 70px;font-size:.8rem;color:var(--dimmer);margin-top:60px}
+footer a{color:var(--dim)}
+
+/* i18n:start */
+.i18n{max-width:var(--w,initial);margin:0 auto;padding:26px 22px 40px;display:flex;flex-wrap:wrap;
+gap:6px 14px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.55;
+justify-content:center}
+.i18n a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+.i18n a:hover{border-bottom-color:currentColor}
+.i18n span[aria-current]{opacity:.5;cursor:default}
+/* i18n:end */
+
+html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: normal !important; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="/modul8/" style="display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit">
+      <img src="/modul8/assets/icon.png" alt="MODUL8 앱 아이콘">
+      <span class="mark">MODUL8</span>
+    </a>
+    <span class="spacer"></span>
+    <a class="getbtn" href="/modul8/">MODUL8로 돌아가기</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <p class="label">MODUL8</p>
+    <h1>개인정보 처리방침</h1>
+    <p class="updated">최종 업데이트: 2026년 8월 27일</p>
+
+    <div class="short" style="margin-top:2.4rem">
+      <p><strong>짧게 말하면.</strong> 사진과 영상은 당신의 iPhone 안에서 처리되고, 어디로도 업로드되지 않습니다. 계정도, 이미지 서버도 없습니다.</p>
+      <p><strong>1.3 버전부터는 광고가 없고</strong>, 앱에는 네트워크 코드 자체가 들어 있지 않습니다. 1.2 버전과 그 이전은 무료 등급에서 Google AdMob을 통해 광고를 표시합니다. 1.3이 심사 중인 동안 App Store에 올라와 있는 것은 1.2이므로, 아래에서 둘 다 설명합니다.</p>
+    </div>
+
+    <h2>이 문서가 설명하는 버전</h2>
+    <p>
+      MODUL8 1.3은 광고를 완전히 없앱니다. Google AdMob도, 그것이 유럽에서 요구하던 동의 양식도, Apple의 App Tracking Transparency 안내도 모두 앱에서 사라졌고, 그와 함께 지금까지 네트워크와 이야기하던 유일한 코드도 사라졌습니다. 1.3이 심사를 통과할 때까지 App Store가 제공하는 것은 1.2이므로, 아래 광고에 관한 절은 당신이 가지고 있을 가능성이 높은 쪽에 여전히 해당합니다.
+    </p>
+
+    <h2>앱이 당신의 미디어로 하는 일</h2>
+    <p>
+      MODUL8가 사진 보관함 접근을 필요로 하는 것은 두 가지 때문입니다. 당신이 고른 이미지나 영상을 불러오는 것과, 완성된 것을 다시 저장하는 것. 그게 전부입니다.
+    </p>
+    <p>
+      이미지와 영상의 모든 처리는 당신의 기기 안에서 이루어집니다. 원본도 편집 결과도 우리 서버나 제3자의 서버로 업로드되지 않으며, 우리는 당신 보관함의 내용에 접근할 수 없습니다. 이것은 모든 버전에서 그러했습니다.
+    </p>
+
+    <h2>1.3 버전부터: 아무것도 수집하지 않습니다</h2>
+    <p>
+      분석 없음. 크래시 리포트 없음. 광고 식별자 없음. 어떤 종류의 서드파티 SDK도 없음. 앱이나 웹사이트를 넘나드는 추적 없음. 앱에는 네트워크 코드가 없어서, 올릴 것도 없고 무언가의 사본을 가진 서버도 없습니다.
+    </p>
+    <p>
+      이런 것들이 애초에 존재하지 않으므로, 수신을 거부할 것도, 열람이나 삭제를 요청할 데이터도 없습니다. 앱을 삭제하면 그 설정도 함께 사라집니다.
+    </p>
+
+    <h2>1.2 버전과 그 이전: 광고</h2>
+    <p>
+      무료 버전은 Google AdMob을 통해 광고를 표시했고, 제3자가 관여하는 부분은 앱에서 그것뿐이 었습니다. Premium은 광고를 없앴습니다. AdMob이 수집하고 사용할 수 있었던 것은 다음과 같습니다.
+    </p>
+    <ul>
+      <li><strong>기기 식별자</strong>: iOS의 광고 식별자(IDFA), 그리고 App Tracking Transparency 안내에서 허용한 경우에만.</li>
+      <li><strong>사용 데이터</strong>: 광고와 어떻게 상호작용했는지에 대한 정보, 그리고 기기 종류, 운영체제, IP 주소.</li>
+    </ul>
+    <p>
+      이것은 맞춤형 광고를 보여 주고 그 성과를 측정하는 데 쓰였습니다. 맞춤형 추적은 언제든지 끌 수 있습니다. 설정 &rsaquo; 개인정보 보호 &amp; 보안 &rsaquo;
+      추적. Google이 무엇을 수집하고 얼마나 보관하는지는
+      <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을 참고하세요. 그 데이터는 우리가 아니라 Google이 가지고 있으므로, 열람이나 삭제 요청은 Google에 하시면 됩니다.
+    </p>
+
+    <h2>Premium</h2>
+    <p>
+      Premium은 전부 App Store를 통해 Apple이 처리합니다. 앱은 시스템에 구매가 활성 상태인지를 묻고 예 또는 아니요를 받을 뿐입니다. 당신의 Apple 계정도, 이름도, 결제 정보도 결코 보지 못하며, 결제 정보가 앱에 저장되거나 앱이 그것을 어딘가로 보내는 일도 없습니다. 그 거래를 Apple이 어떻게 다루는지는 이 방침이 아니라 Apple의 개인정보 처리방침이 정합니다.
+    </p>
+
+    <h2>어린이</h2>
+    <p>
+      MODUL8는 13세 미만을 대상으로 하지 않으며, 13세 미만으로부터 개인 식별 정보를 알면서 수집하지 않습니다. 1.3 버전부터 앱은 나이에 관계없이 누구에게서도 아무것도 수집하지 않습니다. 보호자이시고 자녀가 이전 버전을 통해 개인 정보를 제공했다고 생각되시면, 연락 주시면 삭제하겠습니다.
+    </p>
+
+    <h2>이 방침의 변경</h2>
+    <p>
+      이 방침은 수시로 갱신될 수 있습니다. 변경 사항은 이 페이지에 게시되며 게시와 동시에 효력이 생기고, 맨 위의 날짜도 함께 바뀝니다.
+    </p>
+
+    <h2>연락처</h2>
+    <p>
+      이 방침이나 앱에 대한 문의: <a href="mailto:L@LF.WTF">L@LF.WTF</a>
+    </p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    MODUL8 · Levi Foster ·
+    <a href="/modul8/">MODUL8</a> ·
+    <a href="https://apps.apple.com/us/app/modul8-glitch-art-effects/id6755617539">App Store</a>
+  </div>
+</footer>
+
+
+<nav class="i18n" aria-label="Language">
+  <a href="/modul8/privacy/" hreflang="en" lang="en">English</a>
+  <a href="/de/modul8/privacy/" hreflang="de" lang="de">Deutsch</a>
+  <a href="/es/modul8/privacy/" hreflang="es" lang="es">Español</a>
+  <a href="/es-mx/modul8/privacy/" hreflang="es-MX" lang="es-MX">Español (MX)</a>
+  <a href="/fr/modul8/privacy/" hreflang="fr" lang="fr">Français</a>
+  <a href="/it/modul8/privacy/" hreflang="it" lang="it">Italiano</a>
+  <a href="/ja/modul8/privacy/" hreflang="ja" lang="ja">日本語</a>
+  <span aria-current="true" lang="ko">한국어</span>
+  <a href="/nl/modul8/privacy/" hreflang="nl" lang="nl">Nederlands</a>
+  <a href="/pt-br/modul8/privacy/" hreflang="pt-BR" lang="pt-BR">Português (BR)</a>
+  <a href="/zh-hans/modul8/privacy/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+</nav>
+</body>
+</html>

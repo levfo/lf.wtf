@@ -11,7 +11,7 @@ unambiguously as written.
 """
 
 KEEP = {"FRMT", "iPhone", "lf.wtf", "App Store", "https://lf.wtf/frmt",
-        "Last updated: 4 August 2026"}
+        }
 
 T = {
     "Privacy": ("Datenschutz", "Privacidad", "Privacidad", "Confidentialité", "Privacy",
@@ -407,3 +407,6 @@ T["FRMT Privacy Policy"] = (
     "Política de privacidad de FRMT", "Politique de confidentialité de FRMT",
     "Informativa sulla privacy di FRMT", "FRMT プライバシーポリシー", "FRMT 개인정보 처리방침",
     "Privacybeleid van FRMT", "Política de privacidade do FRMT", "FRMT 隐私政策")
+
+
+T['Last updated: 4 August 2026'] = ('Zuletzt aktualisiert am 4. August 2026', 'Última actualización: 4 de agosto de 2026', 'Última actualización: 4 de agosto de 2026', 'Dernière mise à jour : 4 août 2026', 'Ultimo aggiornamento: 4 agosto 2026', '最終更新：2026年8月4日', '최종 업데이트: 2026년 8월 4일', 'Laatst bijgewerkt: 4 augustus 2026', 'Última atualização: 4 de agosto de 2026', '最后更新：2026年8月4日')

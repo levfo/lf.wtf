@@ -52,11 +52,10 @@ PAGES = {
     "modul8/index.html": "modul8/",
     "frmt/privacy/index.html": "frmt/privacy/",
     "cyano/privacy/index.html": "cyano/privacy/",
-    #: MODUL8's privacy policy is deliberately NOT here. It still describes Google AdMob, the
-    #: advertising identifier and the App Tracking Transparency prompt, all of which 1.3 removed.
-    #: Translating a policy that is about to stop being true would put the same wrong statement in
-    #: front of ten more audiences. Update the English one first, then add the line back.
-    # "modul8/privacy/index.html": "modul8/privacy/",
+    #: Back in the set. It was held out while it still described Google AdMob as current, which
+    #: 1.3 removes. It now states both positions with the version boundary explicit, because 1.2 is
+    #: what the App Store is serving until 1.3 clears review.
+    "modul8/privacy/index.html": "modul8/privacy/",
 }
 
 ATTRS = {"content", "alt", "title", "aria-label", "placeholder"}

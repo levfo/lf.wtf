@@ -1189,9 +1189,200 @@
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
-  <!-- English only: policy pending an update for the removal of advertising -->
   <url>
     <loc>https://lf.wtf/modul8/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/modul8/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/de/modul8/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/modul8/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/es/modul8/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/modul8/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/es-mx/modul8/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/modul8/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/fr/modul8/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/modul8/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/it/modul8/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/modul8/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/ja/modul8/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/modul8/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/ko/modul8/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/modul8/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/nl/modul8/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/modul8/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/pt-br/modul8/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/modul8/privacy/"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://lf.wtf/zh-hans/modul8/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lf.wtf/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lf.wtf/de/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lf.wtf/es/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lf.wtf/it/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/modul8/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lf.wtf/modul8/privacy/"/>
     <lastmod>2026-08-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>

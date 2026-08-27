@@ -15,7 +15,8 @@ from i18n import LOCALES, PAGES, _canonical
 ROOT = Path(__file__).resolve().parent.parent
 
 #: Pages that exist only in English, with why. Kept in the sitemap so they are still indexed.
-ENGLISH_ONLY = {"modul8/privacy/": "policy pending an update for the removal of advertising"}
+#: Empty now that MODUL8's privacy policy has been rewritten and translated.
+ENGLISH_ONLY = {}
 
 WEIGHT = {"": ("weekly", "1.0"), "frmt/": ("monthly", "0.9"), "modul8/": ("monthly", "0.9"),
           "cyano/": ("monthly", "0.9")}
