@@ -517,3 +517,78 @@ T = {
 # The link label used to be "CYANO &mdash; Cyanotype Photos", which the parser saw as two text
 # nodes either side of the entity. With a colon it is one node, so it needs its own entry.
 T["CYANO: Cyanotype Photos"] = tuple("CYANO: " + v for v in T["Cyanotype Photos"])
+
+# The Harmony Palette card grew from one line into a real entry when the app got its own page. The
+# card, its meta line and the JSON-LD description are three separate segments.
+T["A colour tool for iPhone and iPad. An interactive wheel in both the RGB model a screen\n          actually uses and the RYB model a painter was taught, eight harmony types, 160 curated\n          palettes, a contrast checker that tells you which pairs are legible, and export straight\n          to SwiftUI, CSS, Tailwind, SVG or PDF."] = (
+    "Ein Farbwerkzeug für iPhone und iPad. Ein interaktiver Kreis, sowohl im RGB-Modell, das ein "
+    "Bildschirm tatsächlich benutzt, als auch im RYB-Modell, das eine Malerin gelernt hat, acht "
+    "Harmonietypen, 160 kuratierte Paletten, ein Kontrastprüfer, der sagt, welche Paare lesbar "
+    "sind, und Export direkt nach SwiftUI, CSS, Tailwind, SVG oder PDF.",
+    "Una herramienta de color para iPhone y iPad. Una rueda interactiva tanto en el modelo RGB que "
+    "usa de verdad una pantalla como en el modelo RYB que le enseñaron a un pintor, ocho tipos de "
+    "armonía, 160 paletas seleccionadas, un comprobador de contraste que te dice qué pares se leen "
+    "bien, y exportación directa a SwiftUI, CSS, Tailwind, SVG o PDF.",
+    "Una herramienta de color para iPhone y iPad. Una rueda interactiva tanto en el modelo RGB que "
+    "usa de verdad una pantalla como en el modelo RYB que le enseñaron a un pintor, ocho tipos de "
+    "armonía, 160 paletas seleccionadas, un verificador de contraste que te dice qué pares se leen "
+    "bien, y exportación directa a SwiftUI, CSS, Tailwind, SVG o PDF.",
+    "Un outil de couleur pour iPhone et iPad. Une roue interactive à la fois dans le modèle RVB "
+    "qu'un écran utilise vraiment et dans le modèle RJB qu'on a enseigné à un peintre, huit types "
+    "d'harmonie, 160 palettes sélectionnées, un vérificateur de contraste qui vous dit quelles "
+    "paires sont lisibles, et l'export direct vers SwiftUI, CSS, Tailwind, SVG ou PDF.",
+    "Uno strumento di colore per iPhone e iPad. Una ruota interattiva sia nel modello RGB che uno "
+    "schermo usa davvero sia nel modello RYB che hanno insegnato a un pittore, otto tipi di "
+    "armonia, 160 palette selezionate, un controllo del contrasto che ti dice quali coppie si "
+    "leggono, e l'esportazione diretta in SwiftUI, CSS, Tailwind, SVG o PDF.",
+    "iPhone と iPad のための色の道具。画面が実際に使う RGB のモデルと、画家が教わった RYB の"
+    "モデルの両方による対話的なホイール、8 種類の調和、厳選された 160 のパレット、"
+    "どの組み合わせが読めるかを教えてくれるコントラストチェッカー、そして SwiftUI、CSS、"
+    "Tailwind、SVG、PDF への直接の書き出し。",
+    "iPhone과 iPad를 위한 색 도구. 화면이 실제로 쓰는 RGB 모델과 화가가 배운 RYB 모델을 모두 "
+    "지원하는 대화형 색상환, 8가지 조화, 엄선된 160개의 팔레트, 어떤 조합이 읽히는지 알려주는 "
+    "명도 대비 검사기, 그리고 SwiftUI, CSS, Tailwind, SVG, PDF로의 바로 내보내기.",
+    "Een kleurgereedschap voor iPhone en iPad. Een interactief wiel in zowel het RGB-model dat een "
+    "scherm echt gebruikt als het RYB-model dat een schilder is geleerd, acht harmonietypes, 160 "
+    "samengestelde paletten, een contrastchecker die je vertelt welke paren leesbaar zijn, en "
+    "export rechtstreeks naar SwiftUI, CSS, Tailwind, SVG of PDF.",
+    "Uma ferramenta de cor para iPhone e iPad. Uma roda interativa tanto no modelo RGB que uma "
+    "tela de fato usa quanto no modelo RYB que ensinaram a um pintor, oito tipos de harmonia, 160 "
+    "paletas selecionadas, um verificador de contraste que diz quais pares são legíveis, e "
+    "exportação direta para SwiftUI, CSS, Tailwind, SVG ou PDF.",
+    "一件为 iPhone 和 iPad 打造的颜色工具。可交互的色轮，既有屏幕真正使用的 RGB 模型，"
+    "也有画家学过的 RYB 模型；8 种配色关系、精选的 160 套调色板、"
+    "会告诉你哪些搭配读得清楚的对比度检查器，"
+    "以及直接导出为 SwiftUI、CSS、Tailwind、SVG 或 PDF。")
+
+T["Free, Pro from $2.99"] = (
+    "Kostenlos, Pro ab $2.99", "Gratis, Pro desde $2.99", "Gratis, Pro desde $2.99",
+    "Gratuit, Pro à partir de $2.99", "Gratis, Pro da $2.99", "無料、Pro は $2.99 から",
+    "무료, Pro는 $2.99부터", "Gratis, Pro vanaf $2.99", "Grátis, Pro a partir de $2.99",
+    "免费，Pro $2.99 起")
+
+T["A colour harmony and palette app for iPhone and iPad, with an interactive wheel in both the RGB and RYB models, eight harmony types, a WCAG contrast checker and export to code."] = (
+    "Eine App für Farbharmonie und Paletten für iPhone und iPad, mit einem interaktiven Kreis im "
+    "RGB- und im RYB-Modell, acht Harmonietypen, einem WCAG-Kontrastprüfer und Export als Code.",
+    "Una app de armonía de color y paletas para iPhone y iPad, con una rueda interactiva en los "
+    "modelos RGB y RYB, ocho tipos de armonía, un comprobador de contraste WCAG y exportación a "
+    "código.",
+    "Una app de armonía de color y paletas para iPhone y iPad, con una rueda interactiva en los "
+    "modelos RGB y RYB, ocho tipos de armonía, un verificador de contraste WCAG y exportación a "
+    "código.",
+    "Une application d'harmonie des couleurs et de palettes pour iPhone et iPad, avec une roue "
+    "interactive dans les modèles RVB et RJB, huit types d'harmonie, un vérificateur de contraste "
+    "WCAG et l'export vers du code.",
+    "Un'app di armonia cromatica e palette per iPhone e iPad, con una ruota interattiva nei "
+    "modelli RGB e RYB, otto tipi di armonia, un controllo del contrasto WCAG e l'esportazione in "
+    "codice.",
+    "iPhone と iPad のための配色とパレットのアプリ。RGB と RYB の両モデルによる対話的なホイール、"
+    "8 種類の調和、WCAG コントラストチェッカー、コードへの書き出し。",
+    "iPhone과 iPad를 위한 색 조화와 팔레트 앱. RGB와 RYB 두 모델을 지원하는 대화형 색상환, 8가지 "
+    "조화, WCAG 명도 대비 검사기, 코드로의 내보내기.",
+    "Een app voor kleurharmonie en paletten voor iPhone en iPad, met een interactief wiel in zowel "
+    "het RGB- als het RYB-model, acht harmonietypes, een WCAG-contrastchecker en export naar code.",
+    "Um app de harmonia de cores e paletas para iPhone e iPad, com uma roda interativa nos modelos "
+    "RGB e RYB, oito tipos de harmonia, um verificador de contraste WCAG e exportação para código.",
+    "一款为 iPhone 和 iPad 打造的配色与调色板应用，"
+    "带有支持 RGB 与 RYB 两种模型的交互式色轮、8 种配色关系、WCAG 对比度检查器，以及导出为代码。")

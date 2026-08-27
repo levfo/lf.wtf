@@ -2,7 +2,7 @@
 
 Everything on Levi Foster's site as plain text, for retrieval and citation.
 Canonical site: https://lf.wtf/ · Contact: L@LF.WTF
-Generated 2026-08-14
+Generated 2026-08-27
 This file is the English text. The site itself is published in eleven languages under a locale
 prefix: /de/, /es/, /es-mx/, /fr/, /it/, /ja/, /ko/, /nl/, /pt-br/ and /zh-hans/. The same path
 works under each, so https://lf.wtf/ja/frmt/ is the Japanese FRMT page. When answering in one of
@@ -36,8 +36,8 @@ A cyanotype app for iPhone. It runs the chemistry of the 1842 sunprint process i
 iPhone · Free · Not yet on the App Store; it is awaiting review.
 
 ### Harmony Palette
-A colour harmony and design tool for iPhone and iPad.
-iPhone & iPad · https://apps.apple.com/us/app/harmony-palette/id6757116756
+A colour tool for iPhone and iPad. An interactive wheel in both the RGB model a screen actually uses and the RYB model a painter was taught, eight harmony types, 160 curated palettes, a contrast checker that tells you which pairs are legible, and export straight to SwiftUI, CSS, Tailwind, SVG or PDF.
+iPhone & iPad · Free, Pro from $2.99 · https://apps.apple.com/us/app/harmony-palette/id6757116756
 
 ### Merge With The Machine
 An art project about the line where human imagination meets machine generation. Generated visuals, experimental tools, and a print shop.
@@ -303,6 +303,231 @@ No. No account, no analytics, no server, and no networking code of its own. Phot
 
 Free, and the free version is the whole simulation. Nothing is watermarked and nothing is held back to make a point.
 
+# Harmony Palette: Color Wheel & Palette App for iPhone and iPad
+Source: https://lf.wtf/harmony/
+
+## harmony palette
+
+where color gets along.
+
+A color wheel you can actually work on, 160 palettes worth stealing from, and the accessibility tools you were going to skip. Built for people who pick colors for a living, and for anyone who just likes them.
+
+Get it on the App Store
+
+Free to use. Pro from $2.99/month or $29.99 once.
+
+color wheel · palettes · contrast · extraction · eleven languages
+
+### Color is the subject here, not the decoration.
+
+Most design tools treat color as a setting: a small square you click, buried in an inspector, on the way to doing something else. Harmony Palette is the opposite kind of program. Color is the whole screen, the interface is loud on purpose, and the point is to spend time with it rather than get past it.
+
+That is a design decision, not an accident. The thick outlines and flat blocks are there because a color needs a hard edge to be judged against. Put a swatch on a soft gradient and you cannot tell what you are looking at. Put it in a black box next to another black box and you can.
+
+### two wheels, because they disagree
+
+Ask a screen what the opposite of red is and it says cyan. Ask a painter and they say green. Both are right, and they are answering different questions: one is how light mixes, the other is the wheel taught in art schools and refined by Johannes Itten at the Bauhaus.
+
+This matters more than it sounds. A triad that looks evenly weighted on the RGB wheel can come out lopsided in RYB, and a palette built for print behaves differently from one built for a screen. Harmony Palette gives you both models and lets you flip between them on the same color, so you can see the disagreement instead of picking a side by accident.
+
+#### Complementary
+
+Two colors facing each other. The strongest contrast available, and the easiest to overdo.
+
+#### Analogous
+
+Three neighbours. Quiet and cohesive, which is why so much brand work lives here.
+
+#### Monochromatic
+
+One hue, worked through its shades and tints. Hard to get wrong.
+
+#### Triadic
+
+Three evenly spaced. Vivid and balanced at the same time, which is a rare combination.
+
+#### Split-complementary
+
+A base plus the two neighbours of its opposite. Nearly the same punch, far less tension.
+
+#### Square & rectangular
+
+Four colors, evenly or in pairs. Enough range for a whole system.
+
+#### Compound
+
+Complementary and analogous relationships braided together. Complex, and worth the trouble.
+
+#### Eight in total
+
+Four in the free version. The other four, and the curated library, come with Pro.
+
+### the accessibility part you were going to skip
+
+Contrast checking usually lives in a separate browser tab, gets done at the end, and gets skipped when the deadline moves. It is in here, next to the colors, while you are still choosing them.
+
+Harmony Palette reports the WCAG 2.1 contrast ratio for any foreground and background pair and grades it AA and AAA, separately for normal and large text, because the thresholds are different: 4.5:1 and 3:1. When a pair falls short it can adjust the last color you touched until it clears the bar, so the fix takes a tap instead of a spreadsheet.
+
+It also shows you the palette as someone else sees it. Protanopia, deuteranopia, tritanopia and achromatopsia, applied to a single color or to a whole saved palette, so you find out that your success green and your error red are the same swatch to a large number of people before you ship it rather than after.
+
+### a library you didn't have to build
+
+160 palettes, hand-picked across ten categories: nature, classic art, architecture, fashion, food and drink, geography, decades, abstract, holidays and branding. Starry Night is in there, and Bauhaus, and 70s Earth Tones, and the azure and sand of a Mediterranean coast. Each one carries tags, so you can look for a mood or a season rather than scrolling.
+
+There are also 279 named colors, from the ordinary ones through to Papaya Whip and Gainsboro, so a color you land on has a name you can say out loud in a meeting.
+
+The wheel, in RGB or RYB
+
+Your own library, in folders
+
+160 curated palettes
+
+The tools, all four of them
+
+### it leaves as code, not as a screenshot
+
+A palette that stays in the app is a mood board. A palette you can paste is work.
+
+Pro exports SwiftUI and UIKit color extensions, CSS custom properties and a Tailwind config, ready to paste into a project without retyping a single hex value. For the other side of the job there is multi-page PDF for client presentations and SVG for print, plus social images sized for a square post, a portrait post or a story.
+
+Free gets you HEX, RGB, HSL and HSV to copy by hand, which for a lot of people is all they ever need. CMYK sits with Pro, alongside the print exports it belongs to.
+
+Free
+
+Pro
+
+The full color wheel, both models
+
+Everything in Free
+
+4 harmony types
+
+All 8 harmony types
+
+15 saved palettes, 3 folders
+
+Unlimited palettes and folders
+
+Color extraction from photos
+
+160 curated palettes
+
+HEX, RGB, HSL and HSV values
+
+CMYK, the contrast checker and vision simulation
+
+Sharing with a watermark
+
+PDF, SVG and code export, no watermark
+
+Pro is $2.99 a month or $14.99 a year, both with a seven day trial, or $29.99 once for good, which includes everything added later.
+
+### eleven languages, colors included
+
+Most apps translate their buttons. This one translates the colors.
+
+All 279 color names and all 160 curated palettes, with their descriptions and their search tags, exist in every language the app ships in. A German user gets Mitternachtsblau, not Midnight Blue sitting inside an otherwise German interface. So does the palette called Sternennacht, described as van Gogh's swirling night piece, and the tags you would search it by.
+
+Search understands both at once, which matters more than it sounds: if you first met a palette as Ocean Sunrise, in a tutorial or a screenshot, it is still there under that name no matter which language you now run the app in. Translation adds a way to find something. It never takes one away.
+
+English
+
+Deutsch
+
+Español
+
+Español (LatAm)
+
+Français
+
+Italiano
+
+日本語
+
+한국어
+
+Nederlands
+
+Português (BR)
+
+简体中文
+
+### quietly, it respects you
+
+#### No account
+
+Nothing to sign up for. Open it and it works.
+
+#### Works offline
+
+Every part of it, including extracting colors from a photo.
+
+#### Photos stay put
+
+Color extraction runs on the device. Your pictures are never uploaded anywhere.
+
+#### No tracking, no ads
+
+No advertising, no analytics, no data collection of any kind.
+
+#### iCloud sync
+
+Palettes and folders follow you between your own devices, through your private database.
+
+#### iPhone and iPad
+
+iOS 17.2 or later. One purchase covers both.
+
+### questions
+
+What is the difference between the RGB and RYB color wheels?
+
+RGB is how a screen mixes light, so the complement of red is cyan. RYB is the wheel taught in art schools and refined by Johannes Itten at the Bauhaus, where the complement of red is green. Neither is wrong; they answer different questions. A palette that looks balanced on one can look lopsided on the other, so you get both and can switch between them on the same color.
+
+Does Harmony Palette check color contrast for accessibility?
+
+Yes. It reports the WCAG 2.1 contrast ratio for any foreground and background pair and grades it AA and AAA for normal and large text. If a pair falls short it can adjust the last color you touched until it reaches 4.5:1. It also shows how a palette reads under protanopia, deuteranopia, tritanopia and achromatopsia.
+
+Can I export a palette as code?
+
+Yes. Pro exports ready-to-paste snippets for SwiftUI, UIKit, CSS custom properties and Tailwind, plus multi-page PDF and SVG. The free tier gives you HEX, RGB, HSL and HSV values to copy by hand.
+
+Is Harmony Palette free?
+
+The free tier is a real tool rather than a demo: the full wheel, four harmony types, up to fifteen saved palettes and color extraction from photos. Pro adds the other four harmonies, unlimited palettes, the curated library, the accessibility suite and the export formats, at $2.99 a month or $14.99 a year with a seven day trial, or $29.99 once.
+
+Does it work offline, and does it collect any data?
+
+It works entirely offline and there is no account. Photo analysis happens on the device and your pictures are never uploaded. Nothing is tracked, there is no advertising, and no data is collected. If you are signed in to iCloud, palettes and folders sync between your own devices through your private database.
+
+What languages does Harmony Palette support?
+
+Eleven: English, German, Spanish, Latin American Spanish, French, Italian, Japanese, Korean, Dutch, Brazilian Portuguese and Simplified Chinese. All 279 color names and all 160 curated palettes are translated too, and search matches both the translated name and the English one.
+
+### go pick some colors
+
+Free to start, no account, and the wheel is the first thing you see.
+
+Get it on the App Store
+
+More from Levi Foster
+
+FRMT
+
+A camera that develops a negative instead of filtering the photo.
+
+CYANO
+
+Cyanotype prints, worked out from the chemistry of the 1842 process.
+
+MODUL8
+
+Nineteen stackable glitch effects, layered and reordered. Free.
+
+Privacy · Terms · Support · lf.wtf
+
+Built in Fort Worth, Texas.
+
 ---
 
 # FRMT Privacy Policy
@@ -438,3 +663,46 @@ If this policy ever changes, the date at the top of this page changes with it. S
 ### Contact
 
 Questions about this policy: https://lf.wtf/cyano
+
+---
+
+# Harmony Palette Privacy Policy
+Source: https://lf.wtf/harmony/privacy/
+
+## privacy policy
+
+Last updated 27 August 2026
+
+Harmony Palette does not collect any data.
+
+There is no account to create, no analytics, no advertising, no tracking, and no third-party code of any kind in the app. This is not a policy about how carefully we handle your information. There is no information to handle.
+
+### Your photographs
+
+When you extract colors from a photo, the analysis runs entirely on your device. The image is read, clustered into its dominant colors, and discarded. It is never uploaded, never stored by us, and never sent anywhere. The app asks for photo library access solely so you can choose a picture to pull colors from, and for camera access solely so you can take one for the same purpose.
+
+### Your palettes
+
+Palettes, folders, tags and favourites are stored on your device. If you are signed in to iCloud and have Harmony Palette enabled there, they also sync between your own devices through your private iCloud database. That database belongs to your Apple Account. Apple holds it; we cannot see it, query it, or recover it. If you are not signed in to iCloud, everything simply stays on the device.
+
+### Purchases
+
+Pro is sold through Apple's In-App Purchase system. Apple processes the payment and tells the app whether the purchase is active. We never see your payment details, your name, or your email address. Restoring a purchase asks Apple, not us.
+
+### What leaves the device
+
+Nothing to us. There is no server on our side and the app has no code that talks to one. The two connections it does make are Apple's own and go to Apple: iCloud, to sync your palettes to your other devices, and the App Store, to check whether Pro is active. When you export a palette or share an image, it goes wherever you send it, through the standard iOS share sheet, at the moment you choose to send it.
+
+### Children
+
+The app is rated 4+ and is safe for any age, for the simple reason that it collects nothing from anyone, regardless of how old they are.
+
+### Changes
+
+If this ever changes, the change will appear here with a new date, and any version of the app that collects something will say so on its App Store page before you install it.
+
+### Getting in touch
+
+Questions go to support. An email sent there is an email, and is handled like one: read, replied to, and not fed into anything.
+
+Harmony Palette · lf.wtf · Built in Fort Worth, Texas

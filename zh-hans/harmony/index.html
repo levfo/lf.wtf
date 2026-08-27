@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harmony Palette：色轮 &amp; 为 iPhone 和 iPad 打造的调色板应用</title>
+<meta name="description" content="为设计师打造的配色应用。可交互的 RGB 与 RYB 色轮上有 8 种配色关系、精选的 160 套调色板、WCAG 对比度检查器、色觉模拟，以及导出为 PDF、SVG、SwiftUI、UIKit、CSS 和 Tailwind。支持 11 种语言，连色名一起。">
+<meta name="color-scheme" content="light">
+<link rel="alternate" hreflang="en" href="https://lf.wtf/harmony/">
+<link rel="alternate" hreflang="de" href="https://lf.wtf/de/harmony/">
+<link rel="alternate" hreflang="es" href="https://lf.wtf/es/harmony/">
+<link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/harmony/">
+<link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/harmony/">
+<link rel="alternate" hreflang="it" href="https://lf.wtf/it/harmony/">
+<link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/harmony/">
+<link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/harmony/">
+<link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/harmony/">
+<link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/harmony/">
+<link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/harmony/">
+<link rel="alternate" hreflang="x-default" href="https://lf.wtf/harmony/">
+<link rel="canonical" href="https://lf.wtf/zh-hans/harmony/">
+<link rel="icon" href="/harmony/assets/icon.png">
+<link rel="apple-touch-icon" href="/harmony/assets/icon.png">
+
+<meta property="og:title" content="Harmony Palette：iPhone 上的色轮与调色板应用">
+<meta property="og:description" content="让颜色相处得来的地方。8 种配色关系、精选的 160 套调色板、WCAG 对比度检查器，以及导出为代码。支持 11 种语言。">
+<meta property="og:image" content="https://lf.wtf/harmony/assets/social.jpg">
+<meta property="og:image:alt" content="Harmony Palette 的标题和「让颜色相处得来」这行字，压在一排色块之上，旁边是剪纸般的平面图形和一个长着活动眼珠的绿色团块。">
+<meta property="og:url" content="https://lf.wtf/zh-hans/harmony/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Levi Foster">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="es_MX">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@cybermynd">
+<meta name="twitter:title" content="Harmony Palette: Color Wheel &amp; Palette App for iPhone">
+<meta name="twitter:description" content="让颜色相处得来的地方。8 种配色关系、精选的 160 套调色板、对比度检查器，以及导出为代码。">
+<meta name="twitter:image" content="https://lf.wtf/harmony/assets/social.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobileApplication",
+      "@id": "https://lf.wtf/harmony/#app",
+      "name": "Harmony Palette",
+      "alternateName": "Harmony Palette - 配色与设计工具",
+      "url": "https://lf.wtf/harmony/",
+      "image": "https://lf.wtf/harmony/assets/icon.png",
+      "description": "一款为 iPhone 和 iPad 打造的配色与调色板应用。可在 RGB 与传统 RYB 两种模型之间切换的交互式色轮、8 种配色关系、精选的 160 套调色板、WCAG 对比度检查器、色觉模拟、在设备上完成的照片取色，以及导出为 PDF、SVG、SwiftUI、UIKit、CSS 和 Tailwind。",
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "Color Tools",
+      "operatingSystem": "iOS 17.2 or later",
+      "inLanguage": "zh-Hans",
+      "mainEntityOfPage": {
+        "@id": "https://lf.wtf/harmony/#webpage"
+      },
+      "featureList": [
+        "支持 RGB 与传统 RYB (Itten) 两种模型的交互式色轮",
+        "8 种配色关系：互补、邻近、单色、三等分、分裂互补、正方、矩形和复合",
+        "分布在十个类别中的 160 套精选调色板，每套都带搜索标签",
+        "279 个有名字的颜色，已翻译成这款应用发布的每一种语言",
+        "按正文和大字评定 AA 与 AAA 的 WCAG 2.1 对比度检查器",
+        "针对红色盲、绿色盲、蓝色盲和全色盲的色觉模拟",
+        "使用 K-means 聚类从照片提取颜色，全程在设备上完成",
+        "导出为 PDF 和 SVG，以及 SwiftUI、UIKit、CSS 和 Tailwind 代码",
+        "调色板和文件夹通过 iCloud 在你自己的设备之间同步",
+        "离线可用，无账号、无广告、不收集数据"
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "name": "免费"
+        },
+        {
+          "@type": "Offer",
+          "price": "2.99",
+          "priceCurrency": "USD",
+          "name": "Pro 月度"
+        },
+        {
+          "@type": "Offer",
+          "price": "14.99",
+          "priceCurrency": "USD",
+          "name": "Pro 年度"
+        },
+        {
+          "@type": "Offer",
+          "price": "29.99",
+          "priceCurrency": "USD",
+          "name": "Pro 永久"
+        }
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Levi Foster",
+        "url": "https://lf.wtf/"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Levi Foster",
+        "url": "https://lf.wtf/"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://lf.wtf/harmony/#webpage",
+      "url": "https://lf.wtf/harmony/",
+      "name": "Harmony Palette：为 iPhone 和 iPad 打造的色轮与调色板应用",
+      "inLanguage": "zh-Hans",
+      "about": {
+        "@id": "https://lf.wtf/harmony/#app"
+      },
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Levi Foster",
+        "url": "https://lf.wtf/",
+        "inLanguage": "zh-Hans"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Levi Foster",
+          "item": "https://lf.wtf/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Harmony Palette",
+          "item": "https://lf.wtf/harmony/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://lf.wtf/harmony/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "RGB 色轮和 RYB 色轮有什么区别？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "RGB 是屏幕相加混合光的方式，所以红色的补色是青色。RYB 是美术院校教授、由 Johannes Itten 在 Bauhaus 精炼过的色轮，其中红色的补色是绿色。两者都不算错，它们回答的是不同的问题。在其中一个上看着平衡的调色板，在另一个上可能就偏了，所以两个都给你，并且可以在同一个颜色上来回切换。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Harmony Palette 会为无障碍检查颜色对比度吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "会。对任意一组前景色与背景色，它都会给出 WCAG 2.1 的对比度，并按正文和大字评定 AA 与 AAA。若某一组不达标，它可以把你最后碰过的那个颜色调到 4.5:1 为止。它还会显示这套调色板在红色盲、绿色盲、蓝色盲和全色盲下是什么样子。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "我可以把调色板导出为代码吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。Pro 会导出可直接粘贴的 SwiftUI、UIKit、CSS 自定义属性和 Tailwind 代码片段，还有多页 PDF 和 SVG。免费版给你 HEX、RGB、HSL 和 HSV 数值，可以手抄。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Harmony Palette 免费吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "免费版是真正的工具，不是演示：完整色轮、4 种配色关系、最多十五套已存调色板，以及从照片提取颜色。Pro 增加另外 4 种配色关系、不限量的调色板、精选库、无障碍工具和各种导出格式，每月 $2.99 或每年 $14.99，带七天试用，也可以 $29.99 一次买断。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "它能离线用吗？会收集数据吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "它完全可以离线使用，也没有账号。照片分析在设备上完成，你的图片不会被上传。不追踪任何东西，没有广告，也不收集数据。如果你登录了 iCloud，调色板和文件夹会通过你的私有数据库在你自己的设备之间同步。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Harmony Palette 支持哪些语言？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "11 种：英语、德语、西班牙语、拉丁美洲西班牙语、法语、意大利语、日语、韩语、荷兰语、巴西葡萄牙语和简体中文。279 个色名和 160 套精选调色板同样有翻译，搜索对译名和英文名都能匹配。"
+          }
+        }
+      ],
+      "inLanguage": "zh-Hans"
+    }
+  ]
+}
+</script>
+
+<style>
+/* ---------------------------------------------------------------------------
+   Harmony Palette's own visual language, taken from its App Store slides.
+
+   Neo-brutalism, and specifically the version Levi drew by hand: thick uniform
+   outlines, solid offset shadows with no blur at all, flat saturated shapes that
+   run off the edges, and a lowercase headline that talks like a person.
+
+   Two rules carry it. The shadow is never blurred, because a blur turns this into
+   ordinary soft-shadow web design. And every outlined thing takes the same ink at
+   the same weight, because that outline is what holds a magenta blob and a
+   photograph of a phone on the same page.
+
+   Deliberately not the other three product pages. FRMT and CYANO are dark and
+   quiet because their subject is a photograph; this one is paper-white and loud
+   because its subject is color itself.
+   --------------------------------------------------------------------------- */
+:root{
+  --ink:#0c0a0e; --paper:#fcfaf6;
+  --yellow:#ffe900; --magenta:#d800f0; --pink:#f03090; --cyan:#78f0f0;
+  --purple:#7860d8; --coral:#f06060; --green:#18a818; --mint:#a8e6cf; --lilac:#cdb4db;
+  --stroke:4px; --drop:8px;
+  --sans:"SF Pro Rounded",ui-rounded,"Nunito","Quicksand",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--sans); font-size:19px; line-height:1.62;
+  overflow-x:hidden;
+}
+.wrap{max-width:1040px; margin:0 auto; padding:0 24px}
+a{color:var(--ink); text-underline-offset:3px; text-decoration-thickness:2px}
+h1,h2,h3{line-height:1.04; letter-spacing:-.02em; margin:0}
+h1{font-size:clamp(3.2rem,11vw,6.4rem); font-weight:900; text-transform:lowercase}
+h2{font-size:clamp(2rem,5.4vw,3.2rem); font-weight:900; text-transform:lowercase; margin:0 0 .5em}
+h3{font-size:1.24rem; font-weight:800; margin:0 0 .35em}
+p{margin:0 0 1.1em; max-width:66ch}
+.lede{font-size:clamp(1.16rem,2.6vw,1.42rem); font-weight:600}
+.small{font-size:.94rem}
+.mono{font-family:var(--mono); font-size:.8rem; letter-spacing:.13em; text-transform:uppercase; font-weight:600}
+
+/* The one rule everything else leans on: a solid offset shadow, never blurred. */
+.hard{border:var(--stroke) solid var(--ink); box-shadow:var(--drop) var(--drop) 0 var(--ink)}
+
+/* --- decoration ------------------------------------------------------------ */
+.shape{position:absolute; border:var(--stroke) solid var(--ink); box-shadow:var(--drop) var(--drop) 0 var(--ink); z-index:0; pointer-events:none}
+.blob{border-radius:52% 48% 44% 56% / 50% 54% 46% 50%}
+.hex{clip-path:polygon(25% 2%,75% 2%,100% 50%,75% 98%,25% 98%,0 50%); border:0; box-shadow:none}
+.hex-i{position:absolute; z-index:0; pointer-events:none}
+.eye{position:absolute; background:#fff; border:var(--stroke) solid var(--ink); border-radius:50%; z-index:1; display:grid; place-items:center}
+.eye::after{content:""; width:46%; height:46%; background:var(--ink); border-radius:50%; transform:translate(-14%,10%)}
+
+/* --- hero ------------------------------------------------------------------ */
+.hero{position:relative; padding:76px 0 56px; overflow:hidden}
+.hero .wrap{position:relative; z-index:2}
+.badge{display:inline-block; padding:7px 15px; background:var(--yellow); font-weight:800; font-size:.84rem; letter-spacing:.05em; text-transform:uppercase; margin-bottom:22px}
+.sub{font-size:clamp(1.3rem,3.4vw,2rem); font-weight:800; text-transform:lowercase; margin:.25em 0 .8em}
+.swatches{display:flex; gap:10px; margin:30px 0 26px; max-width:620px}
+.swatches i{flex:1; height:64px; border:var(--stroke) solid var(--ink); border-radius:10px; box-shadow:6px 6px 0 var(--ink)}
+.cta{display:inline-block; padding:16px 30px; background:var(--ink); color:var(--paper); font-weight:900; font-size:1.06rem; text-decoration:none; border:var(--stroke) solid var(--ink); box-shadow:var(--drop) var(--drop) 0 var(--magenta); transition:transform .08s, box-shadow .08s}
+.cta:hover{transform:translate(3px,3px); box-shadow:5px 5px 0 var(--magenta)}
+.cta-row{display:flex; gap:18px; align-items:center; flex-wrap:wrap; margin-top:8px}
+.price{font-weight:700}
+
+/* --- structure ------------------------------------------------------------- */
+section{padding:64px 0; position:relative}
+.band{background:var(--mint); border-top:var(--stroke) solid var(--ink); border-bottom:var(--stroke) solid var(--ink)}
+.band-lilac{background:var(--lilac)}
+.band-cyan{background:var(--cyan)}
+.claim{font-size:clamp(2.2rem,6.6vw,4rem)}
+
+.grid{display:grid; gap:22px; grid-template-columns:repeat(auto-fit,minmax(268px,1fr)); margin-top:36px}
+.card{background:var(--paper); padding:26px; border:var(--stroke) solid var(--ink); box-shadow:var(--drop) var(--drop) 0 var(--ink)}
+.card p{margin:0; font-size:.98rem}
+.card .chip{display:inline-block; width:34px; height:34px; border:var(--stroke) solid var(--ink); border-radius:9px; margin-bottom:14px}
+
+.shots{display:grid; gap:26px; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); margin-top:38px}
+.shots figure{margin:0}
+.shots img{width:100%; height:auto; display:block; border:var(--stroke) solid var(--ink); border-radius:16px; box-shadow:var(--drop) var(--drop) 0 var(--ink)}
+.shots figcaption{margin-top:12px; font-size:.9rem; font-weight:600}
+
+.scroller{overflow-x:auto; -webkit-overflow-scrolling:touch; margin-top:26px}
+.scroller table{min-width:460px; margin-top:0}
+table{border-collapse:collapse; width:100%; margin-top:26px; background:var(--paper); border:var(--stroke) solid var(--ink); box-shadow:var(--drop) var(--drop) 0 var(--ink)}
+th,td{padding:13px 16px; text-align:left; border-bottom:2px solid var(--ink); font-size:.97rem}
+th{font-weight:800; background:var(--yellow)}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:700}
+
+details{border:var(--stroke) solid var(--ink); background:var(--paper); margin-bottom:14px; box-shadow:6px 6px 0 var(--ink)}
+summary{padding:17px 20px; font-weight:800; cursor:pointer; font-size:1.04rem; list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+"; float:right; font-weight:900}
+details[open] summary::after{content:"\2212"}  /* minus sign, not an en-dash */
+details p{padding:0 20px 18px; margin:0; font-size:.98rem}
+
+.langs{display:flex; flex-wrap:wrap; gap:9px; margin-top:22px}
+.langs span{padding:7px 13px; background:var(--paper); border:3px solid var(--ink); font-weight:700; font-size:.87rem}
+
+footer{border-top:var(--stroke) solid var(--ink); padding:52px 0; background:var(--paper)}
+.also{display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(232px,1fr)); margin-top:26px}
+.also a{display:block; padding:22px; text-decoration:none; border:var(--stroke) solid var(--ink); box-shadow:6px 6px 0 var(--ink); background:var(--paper)}
+.also strong{display:block; font-size:1.1rem; margin-bottom:5px}
+.also span{font-size:.92rem; display:block}
+
+@media (max-width:640px){
+  :root{--stroke:3px; --drop:6px}
+  body{font-size:17px}
+  section{padding:48px 0}
+  .swatches i{height:46px}
+  .shape{display:none}
+}
+@media (prefers-reduced-motion:reduce){.cta{transition:none}}
+
+/* i18n:start */
+.i18n{max-width:var(--w,initial);margin:0 auto;padding:26px 22px 40px;display:flex;flex-wrap:wrap;
+gap:6px 14px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.55;
+justify-content:center}
+.i18n a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+.i18n a:hover{border-bottom-color:currentColor}
+.i18n span[aria-current]{opacity:.5;cursor:default}
+/* i18n:end */
+
+html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: normal !important; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <!-- Shapes bleed off the edges and sit behind the words, the way they do on the slides. -->
+  <div class="shape hex" style="width:300px;height:300px;background:var(--magenta);top:-70px;left:-90px"></div>
+  <div class="shape blob" style="width:210px;height:196px;background:var(--cyan);top:34px;right:-72px"></div>
+  <div class="shape blob" style="width:168px;height:158px;background:var(--green);bottom:-58px;right:16%"></div>
+  <div class="eye" style="width:38px;height:38px;bottom:6px;right:23.4%"></div>
+  <div class="eye" style="width:38px;height:38px;bottom:14px;right:19.8%"></div>
+
+  <div class="wrap">
+    <span class="badge hard">iPhone &amp; iPad</span>
+    <h1>harmony<br>palette</h1>
+    <p class="sub">让颜色相处得来的地方。</p>
+    <p class="lede">一个真的能在上面动手的色轮、160 套值得偷师的调色板，以及你本来打算跳过的无障碍工具。为靠选色吃饭的人而做，也为只是喜欢颜色的人而做。</p>
+
+    <div class="swatches" aria-hidden="true">
+      <i style="background:var(--magenta)"></i>
+      <i style="background:var(--coral)"></i>
+      <i style="background:var(--yellow)"></i>
+      <i style="background:var(--mint)"></i>
+      <i style="background:var(--cyan)"></i>
+      <i style="background:var(--purple)"></i>
+    </div>
+
+    <div class="cta-row">
+      <a class="cta" href="https://apps.apple.com/app/id6757116756">在 App Store 下载</a>
+      <span class="price small">免费使用。Pro 每月 $2.99 起，或 $29.99 一次买断。</span>
+    </div>
+    <p class="mono" style="margin-top:26px">色轮 · 调色板 · 对比度 · 提取 · 11 种语言</p>
+  </div>
+</header>
+
+<section class="band">
+  <div class="wrap">
+    <h2 class="claim">在这里，颜色是主角，<br>不是装饰。</h2>
+    <p class="lede">多数设计工具把颜色当作一项设置：埋在检查器深处、你在去做别的事的路上顺手点一下的小方块。Harmony Palette 是相反的那类程序。颜色就是整个屏幕，界面是故意吵闹的，重点是与颜色相处，而不是快点绕过它。</p>
+    <p>这是设计决定，不是意外。粗轮廓和平涂色块之所以在这里，是因为要判断一个颜色，它需要一条硬边。把色块放在柔和的渐变上，你说不清自己在看什么；把它放进黑框里、挨着另一个黑框，你就说得清了。</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>两个色轮，因为<br>它们意见不合</h2>
+    <p>问屏幕红色的对面是什么，它说青色；问画家，画家说绿色。两者都对，只是在回答不同的问题：一个说的是光如何相加，另一个是美术院校教授、由 Johannes Itten 在 Bauhaus 精炼过的色轮。</p>
+    <p>这比听上去更要紧。在 RGB 色轮上看着分量均等的三色配色，到了 RYB 可能就偏了；为印刷配的色和为屏幕配的色表现并不一样。Harmony Palette 把两个模型都给你，并允许在同一个颜色上来回切换，这样你看到的是二者的分歧，而不是稀里糊涂站了队。</p>
+
+    <div class="grid">
+      <div class="card"><span class="chip" style="background:var(--coral)"></span>
+        <h3>互补</h3><p>彼此正对的两个颜色。可用的最强对比，也是最容易用过头的一种。</p></div>
+      <div class="card"><span class="chip" style="background:var(--mint)"></span>
+        <h3>邻近</h3><p>相邻的三个颜色。安静而整体，所以许多品牌工作都住在这里。</p></div>
+      <div class="card"><span class="chip" style="background:var(--purple)"></span>
+        <h3>单色</h3><p>一个色相，贯穿它的深浅明暗。很难做错。</p></div>
+      <div class="card"><span class="chip" style="background:var(--yellow)"></span>
+        <h3>三等分</h3><p>等距的三个颜色。既鲜明又平衡，这是难得的组合。</p></div>
+      <div class="card"><span class="chip" style="background:var(--cyan)"></span>
+        <h3>分裂互补</h3><p>一个基色，加上它对面颜色的两个邻居。冲击力几乎不变，张力小得多。</p></div>
+      <div class="card"><span class="chip" style="background:var(--pink)"></span>
+        <h3>正方 &amp; 矩形</h3><p>四个颜色，等距或成对。够撑起一整套系统。</p></div>
+      <div class="card"><span class="chip" style="background:var(--green)"></span>
+        <h3>复合</h3><p>把互补关系与邻近关系编织在一起。复杂，但值得这份麻烦。</p></div>
+      <div class="card" style="background:var(--yellow)"><span class="chip" style="background:var(--paper)"></span>
+        <h3>共 8 种</h3><p>免费版里有 4 种。另外 4 种和精选库随 Pro 提供。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band band-lilac">
+  <div class="wrap">
+    <h2>你本打算跳过的<br>无障碍部分</h2>
+    <p class="lede">对比度检查通常住在浏览器的另一个标签页里，留到最后才做，一旦排期变动就被跳过。在这里它就在里面，紧挨着颜色，就在你还在挑色的时候。</p>
+    <p>对任意一组前景色与背景色，Harmony Palette 都会给出 WCAG 2.1 的对比度，并按正文和大字分别评定 AA 与 AAA，因为两者的门槛不同：4.5:1 和 3:1。若某一组不达标，它可以把你最后碰过的那个颜色调到过线为止，于是修正只需点一下，而不是打开一张表格。</p>
+    <p>它还会让你看到别人眼中的这套调色板。红色盲、绿色盲、蓝色盲和全色盲，可以作用于单个颜色，也可以作用于整套已保存的调色板。于是你会在发布之前、而不是之后，发现你用来表示成功的绿和表示错误的红，对相当多的人来说是同一个颜色。</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>一座你不必自己<br>搭建的库</h2>
+    <p>从十个类别里手工挑出的 160 套调色板：自然、古典艺术、建筑、时尚、饮食、地理、年代、抽象、节日和品牌。《星月夜》在里面，Bauhaus 在里面，70 年代大地色在里面，地中海海岸的天青与沙色也在里面。每一套都带标签，于是你可以按一种情绪或一个季节去找，而不是一直往下滑。</p>
+    <p>另外还有 279 个有名字的颜色，从最平常的到木瓜奶油色和庚斯博罗灰。这样你落到的那个颜色，就有了一个能在会上说出口的名字。</p>
+
+    <div class="shots">
+      <figure><img src="/harmony/assets/shot-wheel.jpg" width="552" height="1200" loading="lazy" decoding="async" alt="选中互补配色时的 Harmony Palette 色轮，可以看到红色与青色的色块和一条亮度滑杆。"><figcaption>色轮，RGB 或 RYB</figcaption></figure>
+      <figure><img src="/harmony/assets/shot-library.jpg" width="552" height="1200" loading="lazy" decoding="async" alt="Harmony Palette 库中已保存调色板的网格，每一套都显示自己的颜色和名字。"><figcaption>你自己的库，分在文件夹里</figcaption></figure>
+      <figure><img src="/harmony/assets/shot-explore.jpg" width="552" height="1200" loading="lazy" decoding="async" alt="「探索」标签页，展示精选调色板和自然、古典艺术的分类方块。"><figcaption>精选的 160 套调色板</figcaption></figure>
+      <figure><img src="/harmony/assets/shot-tools.jpg" width="552" height="1200" loading="lazy" decoding="async" alt="「工具」标签页，列出对比度检查器、色觉模拟器、随机调色板生成器和图像取色器。"><figcaption>四件工具，一件不落</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="band band-cyan">
+  <div class="wrap">
+    <h2>它以代码的形式离开，<br>而不是截图</h2>
+    <p class="lede">留在应用里的调色板是情绪板。能粘贴出去的调色板才是活儿。</p>
+    <p>Pro 可以导出 SwiftUI 和 UIKit 的颜色扩展、CSS 自定义属性和一份 Tailwind 配置，可以直接粘进项目，一个十六进制值都不用重打。工作的另一头则有给客户演示用的多页 PDF 和给印刷用的 SVG，还有按方形帖、竖版帖或快拍尺寸做好的社交图片。</p>
+    <p>免费版给你 HEX、RGB、HSL 和 HSV，可以手抄下来，对很多人来说这辈子够用了。CMYK 跟 Pro 在一起，挨着它本来就该在的那些印刷导出项。</p>
+
+    <div class="scroller">
+    <table>
+      <thead><tr><th>免费</th><th>Pro</th></tr></thead>
+      <tbody>
+        <tr><td>完整色轮，两种模型</td><td>免费版的全部</td></tr>
+        <tr><td>4 种配色关系</td><td>全部 8 种配色关系</td></tr>
+        <tr><td>15 套已存调色板，3 个文件夹</td><td>调色板与文件夹不限量</td></tr>
+        <tr><td>从照片提取颜色</td><td>160 curated palettes</td></tr>
+        <tr><td>HEX、RGB、HSL 和 HSV 数值</td><td>CMYK、对比度检查器和色觉模拟</td></tr>
+        <tr><td>分享时带水印</td><td>导出 PDF、SVG 和代码，不带水印</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="small" style="margin-top:20px">Pro 每月 $2.99 或每年 $14.99，两者都有七天试用；也可以 $29.99 一次买断，此后新增的一切都包含在内。</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>11 种语言，<br>连颜色一起</h2>
+    <p class="lede">多数应用翻译的是按钮。这一款翻译的是颜色。</p>
+    <p>279 个色名和 160 套精选调色板，连同它们的说明和搜索标签，在这款应用发布的每一种语言里都存在。用简体中文的人得到的是午夜蓝，而不是一片中文界面中间夹着的 Midnight Blue。那套叫星月夜、说明为凡·高旋转的夜色的调色板是这样，你用来搜它的标签也是这样。</p>
+    <p>搜索同时认得两者，这比听上去更要紧：如果你最初是在教程或截图里以 Ocean Sunrise 认识某套调色板的，那么无论你现在用哪种语言，它都还在那个名字下面。翻译是多给了一条找到东西的路，从不拿走任何一条。</p>
+    <div class="langs">
+      <span>English</span><span>Deutsch</span><span>Español</span><span>Español (LatAm)</span>
+      <span>Français</span><span>Italiano</span><span>日本語</span><span>한국어</span>
+      <span>Nederlands</span><span>Português (BR)</span><span>简体中文</span>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>它安静地尊重你</h2>
+    <div class="grid">
+      <div class="card"><h3>无需账号</h3><p>没有什么要注册的。打开就能用。</p></div>
+      <div class="card"><h3>离线可用</h3><p>每一处都能，包括从照片里提取颜色。</p></div>
+      <div class="card"><h3>照片留在原处</h3><p>取色在设备上完成。你的图片不会被上传到任何地方。</p></div>
+      <div class="card"><h3>不追踪，不投广告</h3><p>没有广告，没有分析统计，没有任何形式的数据收集。</p></div>
+      <div class="card"><h3>iCloud 同步</h3><p>调色板和文件夹会通过你自己的私有数据库，在你的设备之间跟着你走。</p></div>
+      <div class="card"><h3>iPhone 和 iPad</h3><p>iOS 17.2 或更新版本。买一次，两边都能用。</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>常见问题</h2>
+    <details><summary>RGB 色轮和 RYB 色轮有什么区别？</summary>
+      <p>RGB 是屏幕相加混合光的方式，所以红色的补色是青色。RYB 是美术院校教授、由 Johannes Itten 在 Bauhaus 精炼过的色轮，其中红色的补色是绿色。两者都不算错，它们回答的是不同的问题。在其中一个上看着平衡的调色板，在另一个上可能就偏了，所以两个都给你，并且可以在同一个颜色上来回切换。</p></details>
+    <details><summary>Harmony Palette 会为无障碍检查颜色对比度吗？</summary>
+      <p>会。对任意一组前景色与背景色，它都会给出 WCAG 2.1 的对比度，并按正文和大字评定 AA 与 AAA。若某一组不达标，它可以把你最后碰过的那个颜色调到 4.5:1 为止。它还会显示这套调色板在红色盲、绿色盲、蓝色盲和全色盲下是什么样子。</p></details>
+    <details><summary>我可以把调色板导出为代码吗？</summary>
+      <p>可以。Pro 会导出可直接粘贴的 SwiftUI、UIKit、CSS 自定义属性和 Tailwind 代码片段，还有多页 PDF 和 SVG。免费版给你 HEX、RGB、HSL 和 HSV 数值，可以手抄。</p></details>
+    <details><summary>Harmony Palette 免费吗？</summary>
+      <p>免费版是真正的工具，不是演示：完整色轮、4 种配色关系、最多十五套已存调色板，以及从照片提取颜色。Pro 增加另外 4 种配色关系、不限量的调色板、精选库、无障碍工具和各种导出格式，每月 $2.99 或每年 $14.99，带七天试用，也可以 $29.99 一次买断。</p></details>
+    <details><summary>它能离线用吗？会收集数据吗？</summary>
+      <p>它完全可以离线使用，也没有账号。照片分析在设备上完成，你的图片不会被上传。不追踪任何东西，没有广告，也不收集数据。如果你登录了 iCloud，调色板和文件夹会通过你的私有数据库在你自己的设备之间同步。</p></details>
+    <details><summary>Harmony Palette 支持哪些语言？</summary>
+      <p>11 种：英语、德语、西班牙语、拉丁美洲西班牙语、法语、意大利语、日语、韩语、荷兰语、巴西葡萄牙语和简体中文。279 个色名和 160 套精选调色板同样有翻译，搜索对译名和英文名都能匹配。</p></details>
+  </div>
+</section>
+
+<section style="position:relative;overflow:hidden">
+  <div class="shape blob" style="width:190px;height:178px;background:var(--yellow);top:22px;left:-78px"></div>
+  <div class="shape hex" style="width:216px;height:216px;background:var(--pink);bottom:-64px;right:-72px"></div>
+  <div class="wrap" style="position:relative;z-index:2">
+    <h2>去挑颜色吧</h2>
+    <p class="lede">免费上手，无需账号，而且你看到的第一样东西就是色轮。</p>
+    <a class="cta" href="https://apps.apple.com/app/id6757116756">Get it on the App Store</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="mono">Levi Foster 的其他作品</p>
+    <div class="also">
+      <a href="/frmt/"><strong>FRMT</strong><span>一台冲洗底片、而不是给照片加滤镜的相机。</span></a>
+      <a href="/cyano/"><strong>CYANO</strong><span>蓝晒印相，从 1842 年那套工艺的化学一步步算出来。</span></a>
+      <a href="/modul8/"><strong>MODUL8</strong><span>十九种可叠加的故障效果，分层并可重新排序。免费。</span></a>
+    </div>
+    <p class="small" style="margin-top:34px">
+      <a href="/harmony/privacy/">隐私</a> ·
+      <a href="https://mergewiththemachine.com/harmony-terms">条款</a> ·
+      <a href="https://mergewiththemachine.com/harmony-support">支持</a> ·
+      <a href="/">lf.wtf</a>
+    </p>
+    <p class="small">在 Texas 的 Fort Worth 制作。</p>
+  </div>
+</footer>
+
+
+<nav class="i18n" aria-label="Language">
+  <a href="/harmony/" hreflang="en" lang="en">English</a>
+  <a href="/de/harmony/" hreflang="de" lang="de">Deutsch</a>
+  <a href="/es/harmony/" hreflang="es" lang="es">Español</a>
+  <a href="/es-mx/harmony/" hreflang="es-MX" lang="es-MX">Español (MX)</a>
+  <a href="/fr/harmony/" hreflang="fr" lang="fr">Français</a>
+  <a href="/it/harmony/" hreflang="it" lang="it">Italiano</a>
+  <a href="/ja/harmony/" hreflang="ja" lang="ja">日本語</a>
+  <a href="/ko/harmony/" hreflang="ko" lang="ko">한국어</a>
+  <a href="/nl/harmony/" hreflang="nl" lang="nl">Nederlands</a>
+  <a href="/pt-br/harmony/" hreflang="pt-BR" lang="pt-BR">Português (BR)</a>
+  <span aria-current="true" lang="zh-Hans">简体中文</span>
+</nav>
+</body>
+</html>

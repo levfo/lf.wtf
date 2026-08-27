@@ -56,6 +56,8 @@ PAGES = {
     #: 1.3 removes. It now states both positions with the version boundary explicit, because 1.2 is
     #: what the App Store is serving until 1.3 clears review.
     "modul8/privacy/index.html": "modul8/privacy/",
+    "harmony/index.html": "harmony/",
+    "harmony/privacy/index.html": "harmony/privacy/",
 }
 
 ATTRS = {"content", "alt", "title", "aria-label", "placeholder"}
@@ -199,19 +201,31 @@ def _inside(spans, i):
 
 
 def _apply_text(source, pairs):
-    """Replace each English string with its translation, scanning forward and never backtracking."""
+    """Replace each English string with its translation, scanning forward and never backtracking.
+
+    A segment is looked for twice: as extracted, and with `&` written back as `&amp;`. HTMLParser
+    unescapes attribute values whatever `convert_charrefs` says, so a title like "Color Wheel &
+    Palette App" comes out of extraction with a bare ampersand while the source still spells it
+    `&amp;` and a literal search finds nothing. When the escaped form is the one that matched, the
+    translation is escaped the same way so the markup it replaces stays valid.
+    """
     spans = _protected_spans(source)
     out, cursor, misses = [], 0, []
     for english, translated in pairs:
-        i = source.find(english, cursor)
-        while i != -1 and _inside(spans, i):
-            i = source.find(english, i + 1)
+        for needle, replacement in ((english, translated),
+                                    (english.replace("&", "&amp;"),
+                                     translated.replace("&", "&amp;"))):
+            i = source.find(needle, cursor)
+            while i != -1 and _inside(spans, i):
+                i = source.find(needle, i + 1)
+            if i != -1:
+                break
         if i == -1:
             misses.append(english)
             continue
         out.append(source[cursor:i])
-        out.append(translated)
-        cursor = i + len(english)
+        out.append(replacement)
+        cursor = i + len(needle)
     out.append(source[cursor:])
     return "".join(out), misses
 
@@ -296,6 +310,18 @@ CJK_CSS = """
 html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: normal !important; }
 """
 
+#: All-lowercase headings are a styling choice in English, where the source text is already typed
+#: that way and the CSS transform only enforces it. In German it is not a style, it is a spelling
+#: mistake: it decapitalises every noun, and it turns the polite "Sie" into "sie", which is a
+#: different word. Found by looking at the rendered German page, where a heading read "eine
+#: bibliothek, die sie nicht bauen mussten".
+#:
+#: Only German needs this. The other Latin locales capitalise the way English does, so lowercase
+#: headings read there as they read here, and CJK has no case for the rule to act on.
+GERMAN_CSS = """
+html[lang="de"] h1, html[lang="de"] h2, html[lang="de"] .sub { text-transform: none !important; }
+"""
+
 SWITCHER_CSS = """
 /* i18n:start */
 .i18n{max-width:var(--w,initial);margin:0 auto;padding:26px 22px 40px;display:flex;flex-wrap:wrap;
@@ -351,7 +377,8 @@ def build_page(source, locale, page_url, table):
     # Strip whatever a previous run of this script left behind, then add exactly one of each.
     out = re.sub(r"\n?/\* i18n:start \*/.*?/\* i18n:end \*/\n?", "", out, flags=re.S)
     out = re.sub(r'\n?<nav class="i18n".*?</nav>\n?', "", out, flags=re.S)
-    css = SWITCHER_CSS + (CJK_CSS if not Face(locale).latin else "")
+    css = (SWITCHER_CSS + (CJK_CSS if not Face(locale).latin else "")
+           + (GERMAN_CSS if locale == "de" else ""))
     out = out.replace("</style>", css + "</style>", 1)
     out = out.replace("</body>", _switcher(locale, page_url) + "</body>", 1)
     return out, misses

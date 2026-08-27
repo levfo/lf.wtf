@@ -15,11 +15,12 @@ from i18n import LOCALES, PAGES, _canonical
 ROOT = Path(__file__).resolve().parent.parent
 
 #: Pages that exist only in English, with why. Kept in the sitemap so they are still indexed.
-#: Empty now that MODUL8's privacy policy has been rewritten and translated.
+#: Empty again: Harmony Palette's two pages moved into `PAGES` once their copy was signed off and
+#: translated, so they carry eleven entries each like everything else.
 ENGLISH_ONLY = {}
 
 WEIGHT = {"": ("weekly", "1.0"), "frmt/": ("monthly", "0.9"), "modul8/": ("monthly", "0.9"),
-          "cyano/": ("monthly", "0.9")}
+          "cyano/": ("monthly", "0.9"), "harmony/": ("monthly", "0.9")}
 
 
 def main(lastmod):

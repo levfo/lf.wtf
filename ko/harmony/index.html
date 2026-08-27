@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harmony Palette: 색상환 &amp; iPhone과 iPad를 위한 팔레트 앱</title>
+<meta name="description" content="디자이너를 위한 색 조화 앱. RGB와 RYB 색상환에서 고를 수 있는 8가지 조화, 엄선된 160개의 팔레트, WCAG 명도 대비 검사기, 색각 이상 시뮬레이션, 그리고 PDF, SVG, SwiftUI, UIKit, CSS, Tailwind로의 내보내기. 11개 언어로, 색 이름까지.">
+<meta name="color-scheme" content="light">
+<link rel="alternate" hreflang="en" href="https://lf.wtf/harmony/">
+<link rel="alternate" hreflang="de" href="https://lf.wtf/de/harmony/">
+<link rel="alternate" hreflang="es" href="https://lf.wtf/es/harmony/">
+<link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/harmony/">
+<link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/harmony/">
+<link rel="alternate" hreflang="it" href="https://lf.wtf/it/harmony/">
+<link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/harmony/">
+<link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/harmony/">
+<link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/harmony/">
+<link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/harmony/">
+<link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/harmony/">
+<link rel="alternate" hreflang="x-default" href="https://lf.wtf/harmony/">
+<link rel="canonical" href="https://lf.wtf/ko/harmony/">
+<link rel="icon" href="/harmony/assets/icon.png">
+<link rel="apple-touch-icon" href="/harmony/assets/icon.png">
+
+<meta property="og:title" content="Harmony Palette: iPhone용 색상환과 팔레트 앱">
+<meta property="og:description" content="색끼리 잘 어울리는 곳. 8가지 조화, 엄선된 160개의 팔레트, WCAG 명도 대비 검사기, 그리고 코드로의 내보내기. 11개 언어로.">
+<meta property="og:image" content="https://lf.wtf/harmony/assets/social.jpg">
+<meta property="og:image:alt" content="Harmony Palette라는 제목과 색끼리 잘 어울린다는 문구가 색상 견본 줄 위에 놓여 있고, 평평한 종이 오림 도형과 눈알이 달린 초록색 덩어리가 함께 있다.">
+<meta property="og:url" content="https://lf.wtf/ko/harmony/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Levi Foster">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="es_MX">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@cybermynd">
+<meta name="twitter:title" content="Harmony Palette: Color Wheel &amp; Palette App for iPhone">
+<meta name="twitter:description" content="색끼리 잘 어울리는 곳. 8가지 조화, 엄선된 160개의 팔레트, 명도 대비 검사기, 그리고 코드로의 내보내기.">
+<meta name="twitter:image" content="https://lf.wtf/harmony/assets/social.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobileApplication",
+      "@id": "https://lf.wtf/harmony/#app",
+      "name": "Harmony Palette",
+      "alternateName": "Harmony Palette - 색 조화와 디자인 도구",
+      "url": "https://lf.wtf/harmony/",
+      "image": "https://lf.wtf/harmony/assets/icon.png",
+      "description": "iPhone과 iPad를 위한 색 조화와 팔레트 앱. RGB와 전통적인 RYB 두 모델을 오가는 색상환, 8가지 조화, 엄선된 160개의 팔레트, WCAG 명도 대비 검사기, 색각 이상 시뮬레이션, 기기 안에서 이뤄지는 사진 색 추출, 그리고 PDF, SVG, SwiftUI, UIKit, CSS, Tailwind로의 내보내기.",
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "Color Tools",
+      "operatingSystem": "iOS 17.2 or later",
+      "inLanguage": "ko",
+      "mainEntityOfPage": {
+        "@id": "https://lf.wtf/harmony/#webpage"
+      },
+      "featureList": [
+        "RGB와 전통적인 RYB (Itten) 두 모델을 지원하는 대화형 색상환",
+        "8가지 조화: 보색, 유사색, 단색, 삼색, 분할 보색, 사각, 직사각, 복합",
+        "열 개 분류에 걸친 엄선된 160개의 팔레트, 각각 검색 태그 포함",
+        "이름이 붙은 279개의 색, 앱이 나오는 모든 언어로 번역",
+        "일반 텍스트와 큰 텍스트에 대해 AA와 AAA를 매기는 WCAG 2.1 명도 대비 검사기",
+        "적색맹, 녹색맹, 청색맹, 전색맹에 대한 색각 이상 시뮬레이션",
+        "K-means 군집화를 이용한 사진 색 추출, 전부 기기 안에서",
+        "PDF와 SVG로 내보내기, 그리고 SwiftUI, UIKit, CSS, Tailwind용 코드",
+        "팔레트와 폴더가 iCloud를 통해 당신의 기기 사이에서 동기화됩니다",
+        "오프라인에서 작동하며 계정도, 광고도, 데이터 수집도 없음"
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "name": "무료"
+        },
+        {
+          "@type": "Offer",
+          "price": "2.99",
+          "priceCurrency": "USD",
+          "name": "Pro 월간"
+        },
+        {
+          "@type": "Offer",
+          "price": "14.99",
+          "priceCurrency": "USD",
+          "name": "Pro 연간"
+        },
+        {
+          "@type": "Offer",
+          "price": "29.99",
+          "priceCurrency": "USD",
+          "name": "Pro 평생"
+        }
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Levi Foster",
+        "url": "https://lf.wtf/"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Levi Foster",
+        "url": "https://lf.wtf/"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://lf.wtf/harmony/#webpage",
+      "url": "https://lf.wtf/harmony/",
+      "name": "Harmony Palette: iPhone과 iPad를 위한 색상환과 팔레트 앱",
+      "inLanguage": "ko",
+      "about": {
+        "@id": "https://lf.wtf/harmony/#app"
+      },
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Levi Foster",
+        "url": "https://lf.wtf/",
+        "inLanguage": "ko"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Levi Foster",
+          "item": "https://lf.wtf/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Harmony Palette",
+          "item": "https://lf.wtf/harmony/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://lf.wtf/harmony/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "RGB 색상환과 RYB 색상환은 무엇이 다른가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "RGB는 화면이 빛을 섞는 방식이라 빨강의 보색이 사이언입니다. RYB는 미술학교에서 가르치고 Johannes Itten이 Bauhaus에서 다듬은 색상환이라 빨강의 보색이 초록입니다. 어느 쪽도 틀리지 않았고, 서로 다른 질문에 답할 뿐입니다. 한쪽에서 균형 있어 보이는 팔레트가 다른 쪽에서는 쏠려 보일 수 있어서, 둘 다 제공하고 같은 색에서 서로 오갈 수 있게 했습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Harmony Palette가 접근성을 위한 색 대비를 검사하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네. 전경과 배경의 어떤 조합에 대해서도 WCAG 2.1 명도 대비를 알려주고, 일반 텍스트와 큰 텍스트에 대해 AA와 AAA로 매깁니다. 기준에 못 미치면 마지막에 만진 색을 4.5:1에 닿을 때까지 조정할 수 있습니다. 적색맹, 녹색맹, 청색맹, 전색맹에서 팔레트가 어떻게 보이는지도 보여줍니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "팔레트를 코드로 내보낼 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네. Pro는 SwiftUI, UIKit, CSS 커스텀 프로퍼티, Tailwind용으로 바로 붙여 넣을 수 있는 조각을 내보내고, 여러 쪽짜리 PDF와 SVG도 냅니다. 무료 등급에서는 HEX, RGB, HSL, HSV 값을 손으로 옮겨 적을 수 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Harmony Palette는 무료인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "무료 등급은 데모가 아니라 진짜 도구입니다. 색상환 전부, 4가지 조화, 저장 팔레트 열다섯 개까지, 그리고 사진에서 색 추출. Pro는 나머지 4가지 조화, 무제한 팔레트, 엄선된 라이브러리, 접근성 도구, 내보내기 형식을 더합니다. 월 $2.99 또는 연 $14.99에 7일 시험 사용이 딸려 있고, $29.99 한 번도 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "오프라인에서 작동하나요? 데이터를 수집하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "완전히 오프라인에서 작동하고 계정도 없습니다. 사진 분석은 기기 안에서 이뤄지고 당신의 사진은 절대 올라가지 않습니다. 아무것도 추적하지 않고, 광고가 없으며, 데이터를 수집하지 않습니다. iCloud에 로그인해 두었다면 팔레트와 폴더가 당신의 비공개 데이터베이스를 통해 당신의 기기 사이에서 동기화됩니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Harmony Palette는 어떤 언어를 지원하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "11개입니다. 영어, 독일어, 스페인어, 라틴아메리카 스페인어, 프랑스어, 이탈리아어, 일본어, 한국어, 네덜란드어, 브라질 포르투갈어, 간체 중국어. 279개의 색 이름과 160개의 엄선 팔레트도 함께 번역되어 있고, 검색은 번역된 이름과 영어 이름 양쪽에 모두 걸립니다."
+          }
+        }
+      ],
+      "inLanguage": "ko"
+    }
+  ]
+}
+</script>
+
+<style>
+/* ---------------------------------------------------------------------------
+   Harmony Palette's own visual language, taken from its App Store slides.
+
+   Neo-brutalism, and specifically the version Levi drew by hand: thick uniform
+   outlines, solid offset shadows with no blur at all, flat saturated shapes that
+   run off the edges, and a lowercase headline that talks like a person.
+
+   Two rules carry it. The shadow is never blurred, because a blur turns this into
+   ordinary soft-shadow web design. And every outlined thing takes the same ink at
+   the same weight, because that outline is what holds a magenta blob and a
+   photograph of a phone on the same page.
+
+   Deliberately not the other three product pages. FRMT and CYANO are dark and
+   quiet because their subject is a photograph; this one is paper-white and loud
+   because its subject is color itself.
+   --------------------------------------------------------------------------- */
+:root{
+  --ink:#0c0a0e; --paper:#fcfaf6;
+  --yellow:#ffe900; --magenta:#d800f0; --pink:#f03090; --cyan:#78f0f0;
+  --purple:#7860d8; --coral:#f06060; --green:#18a818; --mint:#a8e6cf; --lilac:#cdb4db;
+  --stroke:4px; --drop:8px;
+  --sans:"SF Pro Rounded",ui-rounded,"Nunito","Quicksand",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--sans); font-size:19px; line-height:1.62;
+  overflow-x:hidden;
+}
+.wrap{max-width:1040px; margin:0 auto; padding:0 24px}
+a{color:var(--ink); text-underline-offset:3px; text-decoration-thickness:2px}
+h1,h2,h3{line-height:1.04; letter-spacing:-.02em; margin:0}
+h1{font-size:clamp(3.2rem,11vw,6.4rem); font-weight:900; text-transform:lowercase}
+h2{font-size:clamp(2rem,5.4vw,3.2rem); font-weight:900; text-transform:lowercase; margin:0 0 .5em}
+h3{font-size:1.24rem; font-weight:800; margin:0 0 .35em}
+p{margin:0 0 1.1em; max-width:66ch}
+.lede{font-size:clamp(1.16rem,2.6vw,1.42rem); font-weight:600}
+.small{font-size:.94rem}
+.mono{font-family:var(--mono); font-size:.8rem; letter-spacing:.13em; text-transform:uppercase; font-weight:600}
+
+/* The one rule everything else leans on: a solid offset shadow, never blurred. */
+.hard{border:var(--stroke) solid var(--ink); box-shadow:var(--drop) var(--drop) 0 var(--ink)}
+
+/* --- decoration ------------------------------------------------------------ */
+.shape{position:absolute; border:var(--stroke) solid var(--ink); box-shadow:var(--drop) var(--drop) 0 var(--ink); z-index:0; pointer-events:none}
+.blob{border-radius:52% 48% 44% 56% / 50% 54% 46% 50%}
+.hex{clip-path:polygon(25% 2%,75% 2%,100% 50%,75% 98%,25% 98%,0 50%); border:0; box-shadow:none}
+.hex-i{position:absolute; z-index:0; pointer-events:none}
+.eye{position:absolute; background:#fff; border:var(--stroke) solid var(--ink); border-radius:50%; z-index:1; display:grid; place-items:center}
+.eye::after{content:""; width:46%; height:46%; background:var(--ink); border-radius:50%; transform:translate(-14%,10%)}
+
+/* --- hero ------------------------------------------------------------------ */
+.hero{position:relative; padding:76px 0 56px; overflow:hidden}
+.hero .wrap{position:relative; z-index:2}
+.badge{display:inline-block; padding:7px 15px; background:var(--yellow); font-weight:800; font-size:.84rem; letter-spacing:.05em; text-transform:uppercase; margin-bottom:22px}
+.sub{font-size:clamp(1.3rem,3.4vw,2rem); font-weight:800; text-transform:lowercase; margin:.25em 0 .8em}
+.swatches{display:flex; gap:10px; margin:30px 0 26px; max-width:620px}
+.swatches i{flex:1; height:64px; border:var(--stroke) solid var(--ink); border-radius:10px; box-shadow:6px 6px 0 var(--ink)}
+.cta{display:inline-block; padding:16px 30px; background:var(--ink); color:var(--paper); font-weight:900; font-size:1.06rem; text-decoration:none; border:var(--stroke) solid var(--ink); box-shadow:var(--drop) var(--drop) 0 var(--magenta); transition:transform .08s, box-shadow .08s}
+.cta:hover{transform:translate(3px,3px); box-shadow:5px 5px 0 var(--magenta)}
+.cta-row{display:flex; gap:18px; align-items:center; flex-wrap:wrap; margin-top:8px}
+.price{font-weight:700}
+
+/* --- structure ------------------------------------------------------------- */
+section{padding:64px 0; position:relative}
+.band{background:var(--mint); border-top:var(--stroke) solid var(--ink); border-bottom:var(--stroke) solid var(--ink)}
+.band-lilac{background:var(--lilac)}
+.band-cyan{background:var(--cyan)}
+.claim{font-size:clamp(2.2rem,6.6vw,4rem)}
+
+.grid{display:grid; gap:22px; grid-template-columns:repeat(auto-fit,minmax(268px,1fr)); margin-top:36px}
+.card{background:var(--paper); padding:26px; border:var(--stroke) solid var(--ink); box-shadow:var(--drop) var(--drop) 0 var(--ink)}
+.card p{margin:0; font-size:.98rem}
+.card .chip{display:inline-block; width:34px; height:34px; border:var(--stroke) solid var(--ink); border-radius:9px; margin-bottom:14px}
+
+.shots{display:grid; gap:26px; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); margin-top:38px}
+.shots figure{margin:0}
+.shots img{width:100%; height:auto; display:block; border:var(--stroke) solid var(--ink); border-radius:16px; box-shadow:var(--drop) var(--drop) 0 var(--ink)}
+.shots figcaption{margin-top:12px; font-size:.9rem; font-weight:600}
+
+.scroller{overflow-x:auto; -webkit-overflow-scrolling:touch; margin-top:26px}
+.scroller table{min-width:460px; margin-top:0}
+table{border-collapse:collapse; width:100%; margin-top:26px; background:var(--paper); border:var(--stroke) solid var(--ink); box-shadow:var(--drop) var(--drop) 0 var(--ink)}
+th,td{padding:13px 16px; text-align:left; border-bottom:2px solid var(--ink); font-size:.97rem}
+th{font-weight:800; background:var(--yellow)}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:700}
+
+details{border:var(--stroke) solid var(--ink); background:var(--paper); margin-bottom:14px; box-shadow:6px 6px 0 var(--ink)}
+summary{padding:17px 20px; font-weight:800; cursor:pointer; font-size:1.04rem; list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+"; float:right; font-weight:900}
+details[open] summary::after{content:"\2212"}  /* minus sign, not an en-dash */
+details p{padding:0 20px 18px; margin:0; font-size:.98rem}
+
+.langs{display:flex; flex-wrap:wrap; gap:9px; margin-top:22px}
+.langs span{padding:7px 13px; background:var(--paper); border:3px solid var(--ink); font-weight:700; font-size:.87rem}
+
+footer{border-top:var(--stroke) solid var(--ink); padding:52px 0; background:var(--paper)}
+.also{display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(232px,1fr)); margin-top:26px}
+.also a{display:block; padding:22px; text-decoration:none; border:var(--stroke) solid var(--ink); box-shadow:6px 6px 0 var(--ink); background:var(--paper)}
+.also strong{display:block; font-size:1.1rem; margin-bottom:5px}
+.also span{font-size:.92rem; display:block}
+
+@media (max-width:640px){
+  :root{--stroke:3px; --drop:6px}
+  body{font-size:17px}
+  section{padding:48px 0}
+  .swatches i{height:46px}
+  .shape{display:none}
+}
+@media (prefers-reduced-motion:reduce){.cta{transition:none}}
+
+/* i18n:start */
+.i18n{max-width:var(--w,initial);margin:0 auto;padding:26px 22px 40px;display:flex;flex-wrap:wrap;
+gap:6px 14px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.55;
+justify-content:center}
+.i18n a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+.i18n a:hover{border-bottom-color:currentColor}
+.i18n span[aria-current]{opacity:.5;cursor:default}
+/* i18n:end */
+
+html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: normal !important; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <!-- Shapes bleed off the edges and sit behind the words, the way they do on the slides. -->
+  <div class="shape hex" style="width:300px;height:300px;background:var(--magenta);top:-70px;left:-90px"></div>
+  <div class="shape blob" style="width:210px;height:196px;background:var(--cyan);top:34px;right:-72px"></div>
+  <div class="shape blob" style="width:168px;height:158px;background:var(--green);bottom:-58px;right:16%"></div>
+  <div class="eye" style="width:38px;height:38px;bottom:6px;right:23.4%"></div>
+  <div class="eye" style="width:38px;height:38px;bottom:14px;right:19.8%"></div>
+
+  <div class="wrap">
+    <span class="badge hard">iPhone &amp; iPad</span>
+    <h1>harmony<br>palette</h1>
+    <p class="sub">색끼리 잘 어울리는 곳.</p>
+    <p class="lede">실제로 작업할 수 있는 색상환, 훔쳐 올 만한 160개의 팔레트, 그리고 그냥 건너뛰려던 접근성 도구. 색을 고르는 일로 먹고사는 사람을 위해, 그리고 그저 색을 좋아하는 사람을 위해 만들었습니다.</p>
+
+    <div class="swatches" aria-hidden="true">
+      <i style="background:var(--magenta)"></i>
+      <i style="background:var(--coral)"></i>
+      <i style="background:var(--yellow)"></i>
+      <i style="background:var(--mint)"></i>
+      <i style="background:var(--cyan)"></i>
+      <i style="background:var(--purple)"></i>
+    </div>
+
+    <div class="cta-row">
+      <a class="cta" href="https://apps.apple.com/app/id6757116756">App Store에서 받기</a>
+      <span class="price small">무료로 씁니다. Pro는 월 $2.99부터, 또는 $29.99 한 번.</span>
+    </div>
+    <p class="mono" style="margin-top:26px">색상환 · 팔레트 · 명도 대비 · 추출 · 11개 언어</p>
+  </div>
+</header>
+
+<section class="band">
+  <div class="wrap">
+    <h2 class="claim">여기서 주인공은 색이지,<br>장식이 아닙니다.</h2>
+    <p class="lede">대부분의 디자인 도구는 색을 설정으로 다룹니다. 다른 일을 하러 가는 길에 인스펙터 깊숙한 곳에서 클릭하는 작은 네모 하나. Harmony Palette는 그 반대편의 프로그램입니다. 색이 화면 전부이고, 인터페이스는 일부러 시끄러우며, 핵심은 색을 지나쳐 가는 것이 아니라 색과 시간을 보내는 데 있습니다.</p>
+    <p>이것은 사고가 아니라 설계상의 결정입니다. 두꺼운 윤곽선과 평평한 면이 있는 이유는 색을 판단하려면 단단한 가장자리가 필요하기 때문입니다. 부드러운 그러데이션 위에 견본을 올려두면 무엇을 보고 있는지 알 수 없습니다. 검은 상자에 넣어 다른 검은 상자 옆에 두면 알 수 있습니다.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>색상환이 둘인 이유는<br>서로 답이 다르기 때문</h2>
+    <p>화면에 빨강의 반대가 무엇이냐고 물으면 사이언이라 답하고, 화가에게 물으면 초록이라 답합니다. 둘 다 맞고, 서로 다른 질문에 답하고 있을 뿐입니다. 하나는 빛이 섞이는 방식이고, 다른 하나는 미술학교에서 가르치고 Johannes Itten이 Bauhaus에서 다듬은 색상환입니다.</p>
+    <p>이는 들리는 것보다 중요합니다. RGB 색상환에서 고르게 보이던 3색 배색이 RYB에서는 한쪽으로 쏠려 나올 수 있고, 인쇄를 염두에 두고 짠 팔레트는 화면용과 다르게 움직입니다. Harmony Palette는 두 모델을 모두 주고 같은 색에서 서로 오갈 수 있게 합니다. 얼떨결에 한쪽 편을 드는 대신 그 불일치를 직접 볼 수 있습니다.</p>
+
+    <div class="grid">
+      <div class="card"><span class="chip" style="background:var(--coral)"></span>
+        <h3>보색</h3><p>서로 마주 보는 두 색. 쓸 수 있는 가장 강한 대비이자, 가장 과해지기 쉬운 대비입니다.</p></div>
+      <div class="card"><span class="chip" style="background:var(--mint)"></span>
+        <h3>유사색</h3><p>이웃한 세 색. 조용하고 짜임새가 있어서, 그토록 많은 브랜드 작업이 여기에 삽니다.</p></div>
+      <div class="card"><span class="chip" style="background:var(--purple)"></span>
+        <h3>단색</h3><p>하나의 색상을 그 음영과 밝기로 끝까지 밀고 갑니다. 틀리기 어렵습니다.</p></div>
+      <div class="card"><span class="chip" style="background:var(--yellow)"></span>
+        <h3>삼색</h3><p>같은 간격의 세 색. 선명하면서 동시에 균형이 잡히는, 드문 조합입니다.</p></div>
+      <div class="card"><span class="chip" style="background:var(--cyan)"></span>
+        <h3>분할 보색</h3><p>기준색에 그 보색의 양옆 두 색을 더한 것. 힘은 거의 같고 긴장은 훨씬 덜합니다.</p></div>
+      <div class="card"><span class="chip" style="background:var(--pink)"></span>
+        <h3>사각 &amp; 직사각</h3><p>네 가지 색을, 같은 간격으로 또는 두 쌍으로. 체계 하나를 짜기에 충분한 폭입니다.</p></div>
+      <div class="card"><span class="chip" style="background:var(--green)"></span>
+        <h3>복합</h3><p>보색 관계와 유사색 관계를 함께 엮은 것. 복잡하지만 그만한 값을 합니다.</p></div>
+      <div class="card" style="background:var(--yellow)"><span class="chip" style="background:var(--paper)"></span>
+        <h3>모두 8가지</h3><p>무료 버전에 4가지. 나머지 4가지와 엄선된 라이브러리는 Pro와 함께 옵니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band band-lilac">
+  <div class="wrap">
+    <h2>그냥 건너뛰려던<br>접근성 이야기</h2>
+    <p class="lede">명도 대비 확인은 보통 브라우저의 다른 탭에 살면서 맨 마지막에 하고, 마감이 밀리면 생략됩니다. 이건 안에 있습니다. 색 바로 옆에, 아직 색을 고르는 동안에.</p>
+    <p>Harmony Palette는 전경과 배경의 어떤 조합에 대해서도 WCAG 2.1 명도 대비를 알려주고, 일반 텍스트와 큰 텍스트를 나눠 AA와 AAA로 매깁니다. 기준이 4.5:1과 3:1로 다르기 때문입니다. 기준에 못 미치는 조합이 있으면 마지막에 만진 색을 기준을 넘을 때까지 조정할 수 있습니다. 고치는 데 스프레드시트가 아니라 한 번의 탭이면 됩니다.</p>
+    <p>그 팔레트가 다른 사람에게 어떻게 보이는지도 보여줍니다. 적색맹, 녹색맹, 청색맹, 전색맹을 색 하나에도, 저장한 팔레트 전체에도 적용할 수 있습니다. 성공을 뜻하는 초록과 오류를 뜻하는 빨강이 아주 많은 사람에게 같은 색이라는 사실을, 내보낸 뒤가 아니라 내보내기 전에 알게 됩니다.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>직접 만들지 않아도 되는<br>라이브러리</h2>
+    <p>열 개의 분류에서 손으로 고른 160개의 팔레트. 자연, 고전 미술, 건축, 패션, 음식과 음료, 지리, 시대, 추상, 기념일, 브랜딩. 별이 빛나는 밤도, Bauhaus도, 70년대 어스 톤도, 지중해 해안의 쪽빛과 모래색도 들어 있습니다. 하나하나에 태그가 붙어 있어서, 하염없이 스크롤하는 대신 분위기나 계절로 찾을 수 있습니다.</p>
+    <p>이름이 붙은 색도 279가지 있습니다. 흔한 색부터 파파야 휩과 게인즈버러까지. 그래서 다다른 색에는 회의에서 소리 내어 말할 수 있는 이름이 있습니다.</p>
+
+    <div class="shots">
+      <figure><img src="/harmony/assets/shot-wheel.jpg" width="552" height="1200" loading="lazy" decoding="async" alt="보색 배색을 고른 상태의 Harmony Palette 색상환. 빨강과 사이언 견본, 그리고 밝기 슬라이더가 보인다."><figcaption>색상환, RGB로도 RYB로도</figcaption></figure>
+      <figure><img src="/harmony/assets/shot-library.jpg" width="552" height="1200" loading="lazy" decoding="async" alt="Harmony Palette 라이브러리에 저장된 팔레트들의 격자. 각각 색과 이름이 함께 보인다."><figcaption>내 라이브러리, 폴더로</figcaption></figure>
+      <figure><img src="/harmony/assets/shot-explore.jpg" width="552" height="1200" loading="lazy" decoding="async" alt="추천 엄선 팔레트와 자연, 고전 미술 분류 타일이 놓인 둘러보기 탭."><figcaption>엄선된 160개의 팔레트</figcaption></figure>
+      <figure><img src="/harmony/assets/shot-tools.jpg" width="552" height="1200" loading="lazy" decoding="async" alt="명도 대비 검사기, 색각 이상 시뮬레이터, 무작위 팔레트 생성기, 이미지 추출기가 나열된 도구 탭."><figcaption>도구, 네 가지 모두</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="band band-cyan">
+  <div class="wrap">
+    <h2>코드로 나가지,<br>스크린샷으로가 아니라</h2>
+    <p class="lede">앱 안에 머무는 팔레트는 무드보드입니다. 붙여 넣을 수 있는 팔레트는 작업입니다.</p>
+    <p>Pro는 SwiftUI와 UIKit의 색상 익스텐션, CSS 커스텀 프로퍼티, Tailwind 설정을 내보냅니다. 16진수 값을 하나도 다시 치지 않고 프로젝트에 붙여 넣을 수 있습니다. 일의 반대편을 위해서는 고객 발표용 여러 쪽짜리 PDF와 인쇄용 SVG가 있고, 정사각형 게시물, 세로 게시물, 스토리 크기에 맞춘 소셜 이미지도 있습니다.</p>
+    <p>무료로는 HEX, RGB, HSL, HSV를 손으로 옮겨 적을 수 있고, 많은 사람에게는 그것으로 평생 충분합니다. CMYK는 Pro 쪽에, 원래 속한 자리인 인쇄용 내보내기 옆에 있습니다.</p>
+
+    <div class="scroller">
+    <table>
+      <thead><tr><th>무료</th><th>Pro</th></tr></thead>
+      <tbody>
+        <tr><td>색상환 전부, 두 모델 다</td><td>무료의 모든 것</td></tr>
+        <tr><td>4가지 조화</td><td>8가지 조화 전부</td></tr>
+        <tr><td>저장 팔레트 15개, 폴더 3개</td><td>팔레트와 폴더 무제한</td></tr>
+        <tr><td>사진에서 색 추출</td><td>160 curated palettes</td></tr>
+        <tr><td>HEX, RGB, HSL, HSV 값</td><td>CMYK, 명도 대비 검사기, 색각 시뮬레이션</td></tr>
+        <tr><td>워터마크가 있는 공유</td><td>PDF, SVG, 코드 내보내기, 워터마크 없음</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="small" style="margin-top:20px">Pro는 월 $2.99 또는 연 $14.99이고 둘 다 7일 동안 시험해 볼 수 있습니다. 아니면 $29.99 한 번으로 영영, 여기에는 나중에 추가되는 것도 모두 포함됩니다.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>11개 언어,<br>색 이름까지</h2>
+    <p class="lede">대부분의 앱은 버튼을 번역합니다. 이 앱은 색을 번역합니다.</p>
+    <p>279개의 색 이름과 160개의 엄선 팔레트는 설명과 검색 태그까지, 앱이 나오는 모든 언어에 존재합니다. 한국어로 쓰면 온통 한국어인 화면 한가운데에 Midnight Blue가 남는 대신 한밤의 파랑이 됩니다. 반 고흐의 소용돌이치는 밤 그림이라고 설명된 별이 빛나는 밤이라는 팔레트도, 그것을 찾을 때 쓰는 태그도 마찬가지입니다.</p>
+    <p>검색은 둘을 동시에 이해합니다. 이는 들리는 것보다 중요합니다. 어떤 팔레트를 튜토리얼이나 스크린샷에서 Ocean Sunrise라는 이름으로 처음 만났다면, 지금 앱을 어떤 언어로 쓰고 있든 그 이름으로 그대로 거기 있습니다. 번역은 무언가를 찾는 길을 하나 더합니다. 결코 하나를 빼앗지 않습니다.</p>
+    <div class="langs">
+      <span>English</span><span>Deutsch</span><span>Español</span><span>Español (LatAm)</span>
+      <span>Français</span><span>Italiano</span><span>日本語</span><span>한국어</span>
+      <span>Nederlands</span><span>Português (BR)</span><span>简体中文</span>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>조용히, 당신을 존중합니다</h2>
+    <div class="grid">
+      <div class="card"><h3>계정 없음</h3><p>가입할 것이 없습니다. 열면 작동합니다.</p></div>
+      <div class="card"><h3>오프라인에서 작동</h3><p>사진에서 색을 뽑아내는 부분까지, 전부.</p></div>
+      <div class="card"><h3>사진은 그대로</h3><p>색 추출은 기기 안에서 이뤄집니다. 당신의 사진은 어디로도 올라가지 않습니다.</p></div>
+      <div class="card"><h3>추적 없음, 광고 없음</h3><p>광고도, 분석도, 어떤 종류의 데이터 수집도 없습니다.</p></div>
+      <div class="card"><h3>iCloud 동기화</h3><p>팔레트와 폴더는 당신의 비공개 데이터베이스를 통해 당신의 기기 사이를 따라다닙니다.</p></div>
+      <div class="card"><h3>iPhone과 iPad</h3><p>iOS 17.2 이상. 한 번의 구매로 둘 다 씁니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>질문</h2>
+    <details><summary>RGB 색상환과 RYB 색상환은 무엇이 다른가요?</summary>
+      <p>RGB는 화면이 빛을 섞는 방식이라 빨강의 보색이 사이언입니다. RYB는 미술학교에서 가르치고 Johannes Itten이 Bauhaus에서 다듬은 색상환이라 빨강의 보색이 초록입니다. 어느 쪽도 틀리지 않았고, 서로 다른 질문에 답할 뿐입니다. 한쪽에서 균형 있어 보이는 팔레트가 다른 쪽에서는 쏠려 보일 수 있어서, 둘 다 제공하고 같은 색에서 서로 오갈 수 있게 했습니다.</p></details>
+    <details><summary>Harmony Palette가 접근성을 위한 색 대비를 검사하나요?</summary>
+      <p>네. 전경과 배경의 어떤 조합에 대해서도 WCAG 2.1 명도 대비를 알려주고, 일반 텍스트와 큰 텍스트에 대해 AA와 AAA로 매깁니다. 기준에 못 미치면 마지막에 만진 색을 4.5:1에 닿을 때까지 조정할 수 있습니다. 적색맹, 녹색맹, 청색맹, 전색맹에서 팔레트가 어떻게 보이는지도 보여줍니다.</p></details>
+    <details><summary>팔레트를 코드로 내보낼 수 있나요?</summary>
+      <p>네. Pro는 SwiftUI, UIKit, CSS 커스텀 프로퍼티, Tailwind용으로 바로 붙여 넣을 수 있는 조각을 내보내고, 여러 쪽짜리 PDF와 SVG도 냅니다. 무료 등급에서는 HEX, RGB, HSL, HSV 값을 손으로 옮겨 적을 수 있습니다.</p></details>
+    <details><summary>Harmony Palette는 무료인가요?</summary>
+      <p>무료 등급은 데모가 아니라 진짜 도구입니다. 색상환 전부, 4가지 조화, 저장 팔레트 열다섯 개까지, 그리고 사진에서 색 추출. Pro는 나머지 4가지 조화, 무제한 팔레트, 엄선된 라이브러리, 접근성 도구, 내보내기 형식을 더합니다. 월 $2.99 또는 연 $14.99에 7일 시험 사용이 딸려 있고, $29.99 한 번도 있습니다.</p></details>
+    <details><summary>오프라인에서 작동하나요? 데이터를 수집하나요?</summary>
+      <p>완전히 오프라인에서 작동하고 계정도 없습니다. 사진 분석은 기기 안에서 이뤄지고 당신의 사진은 절대 올라가지 않습니다. 아무것도 추적하지 않고, 광고가 없으며, 데이터를 수집하지 않습니다. iCloud에 로그인해 두었다면 팔레트와 폴더가 당신의 비공개 데이터베이스를 통해 당신의 기기 사이에서 동기화됩니다.</p></details>
+    <details><summary>Harmony Palette는 어떤 언어를 지원하나요?</summary>
+      <p>11개입니다. 영어, 독일어, 스페인어, 라틴아메리카 스페인어, 프랑스어, 이탈리아어, 일본어, 한국어, 네덜란드어, 브라질 포르투갈어, 간체 중국어. 279개의 색 이름과 160개의 엄선 팔레트도 함께 번역되어 있고, 검색은 번역된 이름과 영어 이름 양쪽에 모두 걸립니다.</p></details>
+  </div>
+</section>
+
+<section style="position:relative;overflow:hidden">
+  <div class="shape blob" style="width:190px;height:178px;background:var(--yellow);top:22px;left:-78px"></div>
+  <div class="shape hex" style="width:216px;height:216px;background:var(--pink);bottom:-64px;right:-72px"></div>
+  <div class="wrap" style="position:relative;z-index:2">
+    <h2>이제 색을 고르러</h2>
+    <p class="lede">시작은 무료, 계정은 없고, 가장 먼저 보이는 것은 색상환입니다.</p>
+    <a class="cta" href="https://apps.apple.com/app/id6757116756">Get it on the App Store</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="mono">Levi Foster의 다른 작업</p>
+    <div class="also">
+      <a href="/frmt/"><strong>FRMT</strong><span>사진에 필터를 씌우는 대신 네거티브를 현상하는 카메라.</span></a>
+      <a href="/cyano/"><strong>CYANO</strong><span>1842년 공정의 화학에서 계산해 낸 사이아노타입 인화.</span></a>
+      <a href="/modul8/"><strong>MODUL8</strong><span>쌓을 수 있는 글리치 효과 열아홉 가지. 층으로 겹치고 순서를 바꿉니다. 무료.</span></a>
+    </div>
+    <p class="small" style="margin-top:34px">
+      <a href="/harmony/privacy/">개인정보</a> ·
+      <a href="https://mergewiththemachine.com/harmony-terms">이용약관</a> ·
+      <a href="https://mergewiththemachine.com/harmony-support">지원</a> ·
+      <a href="/">lf.wtf</a>
+    </p>
+    <p class="small">Texas의 Fort Worth에서 만듭니다.</p>
+  </div>
+</footer>
+
+
+<nav class="i18n" aria-label="Language">
+  <a href="/harmony/" hreflang="en" lang="en">English</a>
+  <a href="/de/harmony/" hreflang="de" lang="de">Deutsch</a>
+  <a href="/es/harmony/" hreflang="es" lang="es">Español</a>
+  <a href="/es-mx/harmony/" hreflang="es-MX" lang="es-MX">Español (MX)</a>
+  <a href="/fr/harmony/" hreflang="fr" lang="fr">Français</a>
+  <a href="/it/harmony/" hreflang="it" lang="it">Italiano</a>
+  <a href="/ja/harmony/" hreflang="ja" lang="ja">日本語</a>
+  <span aria-current="true" lang="ko">한국어</span>
+  <a href="/nl/harmony/" hreflang="nl" lang="nl">Nederlands</a>
+  <a href="/pt-br/harmony/" hreflang="pt-BR" lang="pt-BR">Português (BR)</a>
+  <a href="/zh-hans/harmony/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harmony Palette: roda de cores &amp; app de paletas para iPhone e iPad</title>
+<meta name="description" content="Um app de harmonia de cores para designers. Oito tipos de harmonia numa roda de cores RGB e RYB interativa, 160 paletas selecionadas, um verificador de contraste WCAG, simulação de daltonismo e exportação para PDF, SVG, SwiftUI, UIKit, CSS e Tailwind. Em onze idiomas, nomes de cores inclusos.">
+<meta name="color-scheme" content="light">
+<link rel="alternate" hreflang="en" href="https://lf.wtf/harmony/">
+<link rel="alternate" hreflang="de" href="https://lf.wtf/de/harmony/">
+<link rel="alternate" hreflang="es" href="https://lf.wtf/es/harmony/">
+<link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/harmony/">
+<link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/harmony/">
+<link rel="alternate" hreflang="it" href="https://lf.wtf/it/harmony/">
+<link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/harmony/">
+<link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/harmony/">
+<link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/harmony/">
+<link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/harmony/">
+<link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/harmony/">
+<link rel="alternate" hreflang="x-default" href="https://lf.wtf/harmony/">
+<link rel="canonical" href="https://lf.wtf/pt-br/harmony/">
+<link rel="icon" href="/harmony/assets/icon.png">
+<link rel="apple-touch-icon" href="/harmony/assets/icon.png">
+
+<meta property="og:title" content="Harmony Palette: roda de cores e paletas para iPhone">
+<meta property="og:description" content="Onde as cores se entendem. Oito tipos de harmonia, 160 paletas selecionadas, um verificador de contraste WCAG e exportação para código. Em onze idiomas.">
+<meta property="og:image" content="https://lf.wtf/harmony/assets/social.jpg">
+<meta property="og:image:alt" content="O título Harmony Palette e a frase onde as cores se entendem, sobre uma fileira de amostras de cor, com formas planas de papel recortado e uma mancha verde de olhos esbugalhados.">
+<meta property="og:url" content="https://lf.wtf/pt-br/harmony/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Levi Foster">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="es_MX">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@cybermynd">
+<meta name="twitter:title" content="Harmony Palette: Color Wheel &amp; Palette App for iPhone">
+<meta name="twitter:description" content="Onde as cores se entendem. Oito tipos de harmonia, 160 paletas selecionadas, um verificador de contraste e exportação para código.">
+<meta name="twitter:image" content="https://lf.wtf/harmony/assets/social.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobileApplication",
+      "@id": "https://lf.wtf/harmony/#app",
+      "name": "Harmony Palette",
+      "alternateName": "Harmony Palette - Harmonia de cores e ferramenta de design",
+      "url": "https://lf.wtf/harmony/",
+      "image": "https://lf.wtf/harmony/assets/icon.png",
+      "description": "Um app de harmonia de cores e paletas para iPhone e iPad. Uma roda de cores interativa no modelo RGB e no RYB tradicional, oito tipos de harmonia, 160 paletas selecionadas, um verificador de contraste WCAG, simulação de daltonismo, extração de cores de fotos no dispositivo, e exportação para PDF, SVG, SwiftUI, UIKit, CSS e Tailwind.",
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "Color Tools",
+      "operatingSystem": "iOS 17.2 or later",
+      "inLanguage": "pt-BR",
+      "mainEntityOfPage": {
+        "@id": "https://lf.wtf/harmony/#webpage"
+      },
+      "featureList": [
+        "Roda de cores interativa no modelo RGB e no RYB tradicional (Itten)",
+        "Oito tipos de harmonia: complementar, análogo, monocromático, triádico, complementar dividido, quadrado, retangular e composto",
+        "160 paletas selecionadas em dez categorias, cada uma com etiquetas de busca",
+        "279 cores com nome, traduzidas para todos os idiomas em que o app sai",
+        "Verificador de contraste WCAG 2.1 com notas AA e AAA para texto normal e grande",
+        "Simulação de daltonismo para protanopia, deuteranopia, tritanopia e acromatopsia",
+        "Extração de cores de fotos com agrupamento K-means, inteiramente no dispositivo",
+        "Exportação para PDF e SVG, e código para SwiftUI, UIKit, CSS e Tailwind",
+        "Paletas e pastas sincronizam entre os seus próprios dispositivos pelo iCloud",
+        "Funciona off-line, sem conta, sem publicidade e sem coleta de dados"
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "name": "Grátis"
+        },
+        {
+          "@type": "Offer",
+          "price": "2.99",
+          "priceCurrency": "USD",
+          "name": "Pro mensal"
+        },
+        {
+          "@type": "Offer",
+          "price": "14.99",
+          "priceCurrency": "USD",
+          "name": "Pro anual"
+        },
+        {
+          "@type": "Offer",
+          "price": "29.99",
+          "priceCurrency": "USD",
+          "name": "Pro para sempre"
+        }
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Levi Foster",
+        "url": "https://lf.wtf/"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Levi Foster",
+        "url": "https://lf.wtf/"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://lf.wtf/harmony/#webpage",
+      "url": "https://lf.wtf/harmony/",
+      "name": "Harmony Palette: roda de cores e app de paletas para iPhone e iPad",
+      "inLanguage": "pt-BR",
+      "about": {
+        "@id": "https://lf.wtf/harmony/#app"
+      },
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Levi Foster",
+        "url": "https://lf.wtf/",
+        "inLanguage": "pt-BR"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Levi Foster",
+          "item": "https://lf.wtf/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Harmony Palette",
+          "item": "https://lf.wtf/harmony/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://lf.wtf/harmony/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qual é a diferença entre as rodas de cores RGB e RYB?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "RGB é como uma tela mistura luz, então o complementar do vermelho é o ciano. RYB é a roda ensinada nas escolas de arte e refinada por Johannes Itten na Bauhaus, onde o complementar do vermelho é o verde. Nenhuma está errada; elas respondem a perguntas diferentes. Uma paleta que parece equilibrada numa pode parecer torta na outra, então você tem as duas e pode alternar entre elas na mesma cor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O Harmony Palette verifica o contraste de cor para acessibilidade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Ele informa a relação de contraste WCAG 2.1 de qualquer par de primeiro plano e fundo e a classifica em AA e AAA para texto normal e grande. Se um par não alcançar, ele pode ajustar a última cor que você tocou até chegar a 4.5:1. Ele também mostra como uma paleta se lê sob protanopia, deuteranopia, tritanopia e acromatopsia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso exportar uma paleta como código?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. O Pro exporta trechos prontos para colar para SwiftUI, UIKit, propriedades personalizadas de CSS e Tailwind, além de PDF de várias páginas e SVG. O nível gratuito te dá valores HEX, RGB, HSL e HSV para copiar à mão."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O Harmony Palette é grátis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O nível gratuito é uma ferramenta de verdade e não uma demo: a roda inteira, quatro tipos de harmonia, até quinze paletas salvas e extração de cores de fotos. O Pro acrescenta as outras quatro harmonias, paletas sem limite, a biblioteca selecionada, as ferramentas de acessibilidade e os formatos de exportação, por $2.99 por mês ou $14.99 por ano com sete dias de teste, ou $29.99 uma vez só."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Funciona off-line, e coleta algum dado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Funciona inteiramente off-line e não há conta. A análise das fotos acontece no dispositivo e suas imagens nunca são enviadas. Nada é rastreado, não há publicidade e nenhum dado é coletado. Se você estiver conectado ao iCloud, paletas e pastas sincronizam entre os seus próprios dispositivos pelo seu banco de dados privado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quais idiomas o Harmony Palette suporta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Onze: inglês, alemão, espanhol, espanhol da América Latina, francês, italiano, japonês, coreano, neerlandês, português do Brasil e chinês simplificado. Os 279 nomes de cor e as 160 paletas selecionadas também estão traduzidos, e a busca encontra tanto o nome traduzido quanto o inglês."
+          }
+        }
+      ],
+      "inLanguage": "pt-BR"
+    }
+  ]
+}
+</script>
+
+<style>
+/* ---------------------------------------------------------------------------
+   Harmony Palette's own visual language, taken from its App Store slides.
+
+   Neo-brutalism, and specifically the version Levi drew by hand: thick uniform
+   outlines, solid offset shadows with no blur at all, flat saturated shapes that
+   run off the edges, and a lowercase headline that talks like a person.
+
+   Two rules carry it. The shadow is never blurred, because a blur turns this into
+   ordinary soft-shadow web design. And every outlined thing takes the same ink at
+   the same weight, because that outline is what holds a magenta blob and a
+   photograph of a phone on the same page.
+
+   Deliberately not the other three product pages. FRMT and CYANO are dark and
+   quiet because their subject is a photograph; this one is paper-white and loud
+   because its subject is color itself.
+   --------------------------------------------------------------------------- */
+:root{
+  --ink:#0c0a0e; --paper:#fcfaf6;
+  --yellow:#ffe900; --magenta:#d800f0; --pink:#f03090; --cyan:#78f0f0;
+  --purple:#7860d8; --coral:#f06060; --green:#18a818; --mint:#a8e6cf; --lilac:#cdb4db;
+  --stroke:4px; --drop:8px;
+  --sans:"SF Pro Rounded",ui-rounded,"Nunito","Quicksand",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--sans); font-size:19px; line-height:1.62;
+  overflow-x:hidden;
+}
+.wrap{max-width:1040px; margin:0 auto; padding:0 24px}
+a{color:var(--ink); text-underline-offset:3px; text-decoration-thickness:2px}
+h1,h2,h3{line-height:1.04; letter-spacing:-.02em; margin:0}
+h1{font-size:clamp(3.2rem,11vw,6.4rem); font-weight:900; text-transform:lowercase}
+h2{font-size:clamp(2rem,5.4vw,3.2rem); font-weight:900; text-transform:lowercase; margin:0 0 .5em}
+h3{font-size:1.24rem; font-weight:800; margin:0 0 .35em}
+p{margin:0 0 1.1em; max-width:66ch}
+.lede{font-size:clamp(1.16rem,2.6vw,1.42rem); font-weight:600}
+.small{font-size:.94rem}
+.mono{font-family:var(--mono); font-size:.8rem; letter-spacing:.13em; text-transform:uppercase; font-weight:600}
+
+/* The one rule everything else leans on: a solid offset shadow, never blurred. */
+.hard{border:var(--stroke) solid var(--ink); box-shadow:var(--drop) var(--drop) 0 var(--ink)}
+
+/* --- decoration ------------------------------------------------------------ */
+.shape{position:absolute; border:var(--stroke) solid var(--ink); box-shadow:var(--drop) var(--drop) 0 var(--ink); z-index:0; pointer-events:none}
+.blob{border-radius:52% 48% 44% 56% / 50% 54% 46% 50%}
+.hex{clip-path:polygon(25% 2%,75% 2%,100% 50%,75% 98%,25% 98%,0 50%); border:0; box-shadow:none}
+.hex-i{position:absolute; z-index:0; pointer-events:none}
+.eye{position:absolute; background:#fff; border:var(--stroke) solid var(--ink); border-radius:50%; z-index:1; display:grid; place-items:center}
+.eye::after{content:""; width:46%; height:46%; background:var(--ink); border-radius:50%; transform:translate(-14%,10%)}
+
+/* --- hero ------------------------------------------------------------------ */
+.hero{position:relative; padding:76px 0 56px; overflow:hidden}
+.hero .wrap{position:relative; z-index:2}
+.badge{display:inline-block; padding:7px 15px; background:var(--yellow); font-weight:800; font-size:.84rem; letter-spacing:.05em; text-transform:uppercase; margin-bottom:22px}
+.sub{font-size:clamp(1.3rem,3.4vw,2rem); font-weight:800; text-transform:lowercase; margin:.25em 0 .8em}
+.swatches{display:flex; gap:10px; margin:30px 0 26px; max-width:620px}
+.swatches i{flex:1; height:64px; border:var(--stroke) solid var(--ink); border-radius:10px; box-shadow:6px 6px 0 var(--ink)}
+.cta{display:inline-block; padding:16px 30px; background:var(--ink); color:var(--paper); font-weight:900; font-size:1.06rem; text-decoration:none; border:var(--stroke) solid var(--ink); box-shadow:var(--drop) var(--drop) 0 var(--magenta); transition:transform .08s, box-shadow .08s}
+.cta:hover{transform:translate(3px,3px); box-shadow:5px 5px 0 var(--magenta)}
+.cta-row{display:flex; gap:18px; align-items:center; flex-wrap:wrap; margin-top:8px}
+.price{font-weight:700}
+
+/* --- structure ------------------------------------------------------------- */
+section{padding:64px 0; position:relative}
+.band{background:var(--mint); border-top:var(--stroke) solid var(--ink); border-bottom:var(--stroke) solid var(--ink)}
+.band-lilac{background:var(--lilac)}
+.band-cyan{background:var(--cyan)}
+.claim{font-size:clamp(2.2rem,6.6vw,4rem)}
+
+.grid{display:grid; gap:22px; grid-template-columns:repeat(auto-fit,minmax(268px,1fr)); margin-top:36px}
+.card{background:var(--paper); padding:26px; border:var(--stroke) solid var(--ink); box-shadow:var(--drop) var(--drop) 0 var(--ink)}
+.card p{margin:0; font-size:.98rem}
+.card .chip{display:inline-block; width:34px; height:34px; border:var(--stroke) solid var(--ink); border-radius:9px; margin-bottom:14px}
+
+.shots{display:grid; gap:26px; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); margin-top:38px}
+.shots figure{margin:0}
+.shots img{width:100%; height:auto; display:block; border:var(--stroke) solid var(--ink); border-radius:16px; box-shadow:var(--drop) var(--drop) 0 var(--ink)}
+.shots figcaption{margin-top:12px; font-size:.9rem; font-weight:600}
+
+.scroller{overflow-x:auto; -webkit-overflow-scrolling:touch; margin-top:26px}
+.scroller table{min-width:460px; margin-top:0}
+table{border-collapse:collapse; width:100%; margin-top:26px; background:var(--paper); border:var(--stroke) solid var(--ink); box-shadow:var(--drop) var(--drop) 0 var(--ink)}
+th,td{padding:13px 16px; text-align:left; border-bottom:2px solid var(--ink); font-size:.97rem}
+th{font-weight:800; background:var(--yellow)}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:700}
+
+details{border:var(--stroke) solid var(--ink); background:var(--paper); margin-bottom:14px; box-shadow:6px 6px 0 var(--ink)}
+summary{padding:17px 20px; font-weight:800; cursor:pointer; font-size:1.04rem; list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+"; float:right; font-weight:900}
+details[open] summary::after{content:"\2212"}  /* minus sign, not an en-dash */
+details p{padding:0 20px 18px; margin:0; font-size:.98rem}
+
+.langs{display:flex; flex-wrap:wrap; gap:9px; margin-top:22px}
+.langs span{padding:7px 13px; background:var(--paper); border:3px solid var(--ink); font-weight:700; font-size:.87rem}
+
+footer{border-top:var(--stroke) solid var(--ink); padding:52px 0; background:var(--paper)}
+.also{display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(232px,1fr)); margin-top:26px}
+.also a{display:block; padding:22px; text-decoration:none; border:var(--stroke) solid var(--ink); box-shadow:6px 6px 0 var(--ink); background:var(--paper)}
+.also strong{display:block; font-size:1.1rem; margin-bottom:5px}
+.also span{font-size:.92rem; display:block}
+
+@media (max-width:640px){
+  :root{--stroke:3px; --drop:6px}
+  body{font-size:17px}
+  section{padding:48px 0}
+  .swatches i{height:46px}
+  .shape{display:none}
+}
+@media (prefers-reduced-motion:reduce){.cta{transition:none}}
+
+/* i18n:start */
+.i18n{max-width:var(--w,initial);margin:0 auto;padding:26px 22px 40px;display:flex;flex-wrap:wrap;
+gap:6px 14px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.55;
+justify-content:center}
+.i18n a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+.i18n a:hover{border-bottom-color:currentColor}
+.i18n span[aria-current]{opacity:.5;cursor:default}
+/* i18n:end */
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <!-- Shapes bleed off the edges and sit behind the words, the way they do on the slides. -->
+  <div class="shape hex" style="width:300px;height:300px;background:var(--magenta);top:-70px;left:-90px"></div>
+  <div class="shape blob" style="width:210px;height:196px;background:var(--cyan);top:34px;right:-72px"></div>
+  <div class="shape blob" style="width:168px;height:158px;background:var(--green);bottom:-58px;right:16%"></div>
+  <div class="eye" style="width:38px;height:38px;bottom:6px;right:23.4%"></div>
+  <div class="eye" style="width:38px;height:38px;bottom:14px;right:19.8%"></div>
+
+  <div class="wrap">
+    <span class="badge hard">iPhone &amp; iPad</span>
+    <h1>harmony<br>palette</h1>
+    <p class="sub">onde as cores se entendem.</p>
+    <p class="lede">Uma roda de cores em que dá mesmo para trabalhar, 160 paletas das quais vale a pena roubar e as ferramentas de acessibilidade que você ia pular. Feita para quem escolhe cores para viver, e para qualquer um que simplesmente goste delas.</p>
+
+    <div class="swatches" aria-hidden="true">
+      <i style="background:var(--magenta)"></i>
+      <i style="background:var(--coral)"></i>
+      <i style="background:var(--yellow)"></i>
+      <i style="background:var(--mint)"></i>
+      <i style="background:var(--cyan)"></i>
+      <i style="background:var(--purple)"></i>
+    </div>
+
+    <div class="cta-row">
+      <a class="cta" href="https://apps.apple.com/app/id6757116756">Baixe na App Store</a>
+      <span class="price small">Grátis. Pro a partir de $2.99 por mês ou $29.99 uma vez só.</span>
+    </div>
+    <p class="mono" style="margin-top:26px">roda de cores · paletas · contraste · extração · onze idiomas</p>
+  </div>
+</header>
+
+<section class="band">
+  <div class="wrap">
+    <h2 class="claim">Aqui o assunto é a cor,<br>não a decoração.</h2>
+    <p class="lede">A maioria das ferramentas de design trata a cor como um ajuste: um quadradinho em que você clica, enterrado num inspetor, a caminho de fazer outra coisa. O Harmony Palette é o programa oposto. A cor é a tela inteira, a interface é barulhenta de propósito, e a ideia é passar tempo com ela em vez de passar por ela.</p>
+    <p>É uma decisão de projeto, não um acidente. Os contornos grossos e os blocos chapados estão ali porque uma cor precisa de uma borda dura contra a qual ser julgada. Ponha uma amostra sobre um degradê suave e você não saberá o que está vendo. Ponha numa caixa preta ao lado de outra caixa preta e saberá.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>duas rodas, porque<br>elas discordam</h2>
+    <p>Pergunte a uma tela qual é o oposto do vermelho e ela diz ciano. Pergunte a um pintor e ele diz verde. Os dois estão certos e estão respondendo a perguntas diferentes: uma é como a luz se mistura, a outra é a roda ensinada nas escolas de arte e refinada por Johannes Itten na Bauhaus.</p>
+    <p>Isso importa mais do que parece. Uma tríade que na roda RGB parece equilibrada pode sair torta em RYB, e uma paleta feita para impressão se comporta de outro jeito que uma feita para tela. O Harmony Palette te dá os dois modelos e deixa você alternar entre eles na mesma cor, para você ver a discordância em vez de escolher um lado sem querer.</p>
+
+    <div class="grid">
+      <div class="card"><span class="chip" style="background:var(--coral)"></span>
+        <h3>Complementar</h3><p>Duas cores de frente uma para a outra. O contraste mais forte que existe, e o mais fácil de exagerar.</p></div>
+      <div class="card"><span class="chip" style="background:var(--mint)"></span>
+        <h3>Análogo</h3><p>Três vizinhos. Calmo e coeso, e é por isso que tanto trabalho de marca mora aqui.</p></div>
+      <div class="card"><span class="chip" style="background:var(--purple)"></span>
+        <h3>Monocromático</h3><p>Um só matiz, trabalhado através de seus tons escuros e claros. Difícil de errar.</p></div>
+      <div class="card"><span class="chip" style="background:var(--yellow)"></span>
+        <h3>Triádico</h3><p>Três em distâncias iguais. Vivo e equilibrado ao mesmo tempo, o que é uma combinação rara.</p></div>
+      <div class="card"><span class="chip" style="background:var(--cyan)"></span>
+        <h3>Complementar dividido</h3><p>Uma base mais os dois vizinhos do seu oposto. Quase a mesma força, bem menos tensão.</p></div>
+      <div class="card"><span class="chip" style="background:var(--pink)"></span>
+        <h3>Quadrado &amp; retangular</h3><p>Quatro cores, em distâncias iguais ou aos pares. Amplitude suficiente para um sistema inteiro.</p></div>
+      <div class="card"><span class="chip" style="background:var(--green)"></span>
+        <h3>Composto</h3><p>Relações complementares e análogas trançadas juntas. Complexo, e vale o trabalho.</p></div>
+      <div class="card" style="background:var(--yellow)"><span class="chip" style="background:var(--paper)"></span>
+        <h3>Oito no total</h3><p>Quatro na versão gratuita. Os outros quatro, e a biblioteca selecionada, vêm com o Pro.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band band-lilac">
+  <div class="wrap">
+    <h2>a parte de acessibilidade<br>que você ia pular</h2>
+    <p class="lede">A verificação de contraste costuma morar numa aba separada do navegador, é feita no fim e é pulada quando o prazo se mexe. Aqui ela está dentro, ao lado das cores, enquanto você ainda está escolhendo.</p>
+    <p>O Harmony Palette informa a relação de contraste WCAG 2.1 de qualquer par de primeiro plano e fundo e a classifica em AA e AAA, separadamente para texto normal e texto grande, porque os limiares são diferentes: 4.5:1 e 3:1. Quando um par não alcança, ele pode ajustar a última cor que você tocou até passar da marca, de modo que a correção é um toque em vez de uma planilha.</p>
+    <p>Ele também mostra a paleta como outra pessoa a vê. Protanopia, deuteranopia, tritanopia e acromatopsia, aplicadas a uma única cor ou a uma paleta salva inteira, para você descobrir que o seu verde de sucesso e o seu vermelho de erro são a mesma amostra para muitíssima gente antes de publicar e não depois.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>uma biblioteca que você<br>não teve que construir</h2>
+    <p>160 paletas, escolhidas a mão em dez categorias: natureza, arte clássica, arquitetura, moda, comida e bebida, geografia, décadas, abstrato, feriados e marca. A Noite estrelada está ali, e Bauhaus, e os Tons terrosos dos anos 70, e o azul e a areia de uma costa mediterrânea. Cada uma leva etiquetas, para você procurar por um clima ou uma estação em vez de rolar a tela.</p>
+    <p>Há também 279 cores com nome, das comuns até Creme de mamão e Gainsboro, para que uma cor em que você chega tenha um nome que dê para falar em voz alta numa reunião.</p>
+
+    <div class="shots">
+      <figure><img src="/harmony/assets/shot-wheel.jpg" width="552" height="1200" loading="lazy" decoding="async" alt="A roda de cores do Harmony Palette com um esquema complementar selecionado, mostrando amostras vermelha e ciano e um controle de brilho."><figcaption>A roda, em RGB ou RYB</figcaption></figure>
+      <figure><img src="/harmony/assets/shot-library.jpg" width="552" height="1200" loading="lazy" decoding="async" alt="Uma grade de paletas salvas na biblioteca do Harmony Palette, cada uma mostrando suas cores e um nome."><figcaption>Sua própria biblioteca, em pastas</figcaption></figure>
+      <figure><img src="/harmony/assets/shot-explore.jpg" width="552" height="1200" loading="lazy" decoding="async" alt="A aba Explorar mostrando paletas selecionadas em destaque e blocos de categoria para natureza e arte clássica."><figcaption>160 paletas selecionadas</figcaption></figure>
+      <figure><img src="/harmony/assets/shot-tools.jpg" width="552" height="1200" loading="lazy" decoding="async" alt="A aba Ferramentas listando o verificador de contraste, o simulador de daltonismo, o gerador de paletas aleatórias e o extrator de imagens."><figcaption>As ferramentas, todas as quatro</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="band band-cyan">
+  <div class="wrap">
+    <h2>ela sai como código,<br>não como captura de tela</h2>
+    <p class="lede">Uma paleta que fica no app é um moodboard. Uma paleta que dá para colar é trabalho.</p>
+    <p>O Pro exporta extensões de cor para SwiftUI e UIKit, propriedades personalizadas de CSS e uma configuração do Tailwind, prontas para colar num projeto sem redigitar um único valor hexadecimal. Para o outro lado do trabalho há PDF de várias páginas para apresentações a clientes e SVG para impressão, além de imagens para redes no tamanho de um post quadrado, um post vertical ou um story.</p>
+    <p>O gratuito te dá HEX, RGB, HSL e HSV para copiar à mão, o que para muita gente é tudo o que vai precisar. O CMYK fica com o Pro, ao lado das exportações para impressão a que pertence.</p>
+
+    <div class="scroller">
+    <table>
+      <thead><tr><th>Grátis</th><th>Pro</th></tr></thead>
+      <tbody>
+        <tr><td>A roda de cores inteira, os dois modelos</td><td>Tudo o que há no Grátis</td></tr>
+        <tr><td>4 tipos de harmonia</td><td>Todos os 8 tipos de harmonia</td></tr>
+        <tr><td>15 paletas salvas, 3 pastas</td><td>Paletas e pastas sem limite</td></tr>
+        <tr><td>Extração de cores de fotos</td><td>160 curated palettes</td></tr>
+        <tr><td>Valores HEX, RGB, HSL e HSV</td><td>CMYK, o verificador de contraste e a simulação de visão</td></tr>
+        <tr><td>Compartilhar com marca-d'água</td><td>Exportação para PDF, SVG e código, sem marca-d'água</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="small" style="margin-top:20px">O Pro custa $2.99 por mês ou $14.99 por ano, ambos com sete dias de teste, ou $29.99 uma vez só para sempre, o que inclui tudo o que for acrescentado depois.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>onze idiomas,<br>cores inclusas</h2>
+    <p class="lede">A maioria dos apps traduz seus botões. Este traduz as cores.</p>
+    <p>Todos os 279 nomes de cor e todas as 160 paletas selecionadas, com suas descrições e suas etiquetas de busca, existem em todos os idiomas em que o app sai. Quem usa em português recebe Azul meia-noite, e não Midnight Blue plantado no meio de uma interface no resto em português. O mesmo vale para a paleta chamada Noite estrelada, descrita como a noite rodopiante de van Gogh, e para as etiquetas com que você a procuraria.</p>
+    <p>A busca entende os dois ao mesmo tempo, e isso importa mais do que parece: se você conheceu uma paleta como Ocean Sunrise, num tutorial ou numa captura, ela continua ali com esse nome seja qual for o idioma em que você usa o app agora. Traduzir acrescenta um jeito de encontrar algo. Nunca tira nenhum.</p>
+    <div class="langs">
+      <span>English</span><span>Deutsch</span><span>Español</span><span>Español (LatAm)</span>
+      <span>Français</span><span>Italiano</span><span>日本語</span><span>한국어</span>
+      <span>Nederlands</span><span>Português (BR)</span><span>简体中文</span>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>sem alarde, ele respeita você</h2>
+    <div class="grid">
+      <div class="card"><h3>Sem conta</h3><p>Nada para se cadastrar. Você abre e funciona.</p></div>
+      <div class="card"><h3>Funciona off-line</h3><p>Todas as suas partes, inclusive a extração de cores de uma foto.</p></div>
+      <div class="card"><h3>As fotos ficam onde estão</h3><p>A extração de cores acontece no dispositivo. Suas imagens não são enviadas para lugar nenhum.</p></div>
+      <div class="card"><h3>Sem rastreamento, sem anúncios</h3><p>Sem publicidade, sem analytics, sem coleta de dados de nenhum tipo.</p></div>
+      <div class="card"><h3>Sincronização com iCloud</h3><p>As paletas e as pastas seguem você entre os seus próprios dispositivos, pelo seu banco de dados privado.</p></div>
+      <div class="card"><h3>iPhone e iPad</h3><p>iOS 17.2 ou posterior. Uma compra cobre os dois.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Perguntas</h2>
+    <details><summary>Qual é a diferença entre as rodas de cores RGB e RYB?</summary>
+      <p>RGB é como uma tela mistura luz, então o complementar do vermelho é o ciano. RYB é a roda ensinada nas escolas de arte e refinada por Johannes Itten na Bauhaus, onde o complementar do vermelho é o verde. Nenhuma está errada; elas respondem a perguntas diferentes. Uma paleta que parece equilibrada numa pode parecer torta na outra, então você tem as duas e pode alternar entre elas na mesma cor.</p></details>
+    <details><summary>O Harmony Palette verifica o contraste de cor para acessibilidade?</summary>
+      <p>Sim. Ele informa a relação de contraste WCAG 2.1 de qualquer par de primeiro plano e fundo e a classifica em AA e AAA para texto normal e grande. Se um par não alcançar, ele pode ajustar a última cor que você tocou até chegar a 4.5:1. Ele também mostra como uma paleta se lê sob protanopia, deuteranopia, tritanopia e acromatopsia.</p></details>
+    <details><summary>Posso exportar uma paleta como código?</summary>
+      <p>Sim. O Pro exporta trechos prontos para colar para SwiftUI, UIKit, propriedades personalizadas de CSS e Tailwind, além de PDF de várias páginas e SVG. O nível gratuito te dá valores HEX, RGB, HSL e HSV para copiar à mão.</p></details>
+    <details><summary>O Harmony Palette é grátis?</summary>
+      <p>O nível gratuito é uma ferramenta de verdade e não uma demo: a roda inteira, quatro tipos de harmonia, até quinze paletas salvas e extração de cores de fotos. O Pro acrescenta as outras quatro harmonias, paletas sem limite, a biblioteca selecionada, as ferramentas de acessibilidade e os formatos de exportação, por $2.99 por mês ou $14.99 por ano com sete dias de teste, ou $29.99 uma vez só.</p></details>
+    <details><summary>Funciona off-line, e coleta algum dado?</summary>
+      <p>Funciona inteiramente off-line e não há conta. A análise das fotos acontece no dispositivo e suas imagens nunca são enviadas. Nada é rastreado, não há publicidade e nenhum dado é coletado. Se você estiver conectado ao iCloud, paletas e pastas sincronizam entre os seus próprios dispositivos pelo seu banco de dados privado.</p></details>
+    <details><summary>Quais idiomas o Harmony Palette suporta?</summary>
+      <p>Onze: inglês, alemão, espanhol, espanhol da América Latina, francês, italiano, japonês, coreano, neerlandês, português do Brasil e chinês simplificado. Os 279 nomes de cor e as 160 paletas selecionadas também estão traduzidos, e a busca encontra tanto o nome traduzido quanto o inglês.</p></details>
+  </div>
+</section>
+
+<section style="position:relative;overflow:hidden">
+  <div class="shape blob" style="width:190px;height:178px;background:var(--yellow);top:22px;left:-78px"></div>
+  <div class="shape hex" style="width:216px;height:216px;background:var(--pink);bottom:-64px;right:-72px"></div>
+  <div class="wrap" style="position:relative;z-index:2">
+    <h2>vá escolher umas cores</h2>
+    <p class="lede">Grátis para começar, sem conta, e a roda é a primeira coisa que você vê.</p>
+    <a class="cta" href="https://apps.apple.com/app/id6757116756">Get it on the App Store</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="mono">Mais de Levi Foster</p>
+    <div class="also">
+      <a href="/frmt/"><strong>FRMT</strong><span>Uma câmera que revela um negativo em vez de filtrar a foto.</span></a>
+      <a href="/cyano/"><strong>CYANO</strong><span>Cópias em cianotipia, calculadas a partir da química do processo de 1842.</span></a>
+      <a href="/modul8/"><strong>MODUL8</strong><span>Dezenove efeitos glitch empilháveis, em camadas e reordenáveis. Grátis.</span></a>
+    </div>
+    <p class="small" style="margin-top:34px">
+      <a href="/harmony/privacy/">Privacidade</a> ·
+      <a href="https://mergewiththemachine.com/harmony-terms">Termos</a> ·
+      <a href="https://mergewiththemachine.com/harmony-support">Suporte</a> ·
+      <a href="/">lf.wtf</a>
+    </p>
+    <p class="small">Feito em Fort Worth, Texas.</p>
+  </div>
+</footer>
+
+
+<nav class="i18n" aria-label="Language">
+  <a href="/harmony/" hreflang="en" lang="en">English</a>
+  <a href="/de/harmony/" hreflang="de" lang="de">Deutsch</a>
+  <a href="/es/harmony/" hreflang="es" lang="es">Español</a>
+  <a href="/es-mx/harmony/" hreflang="es-MX" lang="es-MX">Español (MX)</a>
+  <a href="/fr/harmony/" hreflang="fr" lang="fr">Français</a>
+  <a href="/it/harmony/" hreflang="it" lang="it">Italiano</a>
+  <a href="/ja/harmony/" hreflang="ja" lang="ja">日本語</a>
+  <a href="/ko/harmony/" hreflang="ko" lang="ko">한국어</a>
+  <a href="/nl/harmony/" hreflang="nl" lang="nl">Nederlands</a>
+  <span aria-current="true" lang="pt-BR">Português (BR)</span>
+  <a href="/zh-hans/harmony/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+</nav>
+</body>
+</html>
