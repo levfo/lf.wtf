@@ -23,6 +23,9 @@ The apps share a bias. I would rather simulate the thing than approximate the lo
 
 ### Work
 
+### Harmony Palette
+A colour tool for iPhone and iPad. An interactive wheel in both the RGB model a screen actually uses and the RYB model a painter was taught, eight harmony types, 160 curated palettes, a contrast checker that tells you which pairs are legible, and export straight to SwiftUI, CSS, Tailwind, SVG or PDF.
+iPhone & iPad · Free, Pro from $2.99 · https://apps.apple.com/us/app/harmony-palette/id6757116756
 ### FRMT: Film Simulation
 A film simulation camera for iPhone. It models the photographic process itself rather than applying a colour filter: light scattering through the emulsion, dye layers holding each other back, grain forming where the light actually landed. Four stocks, built from published manufacturer measurements, developed from a RAW negative on the device.
 iPhone · $14.99 once · https://apps.apple.com/us/app/frmt-film-simulation/id6800928630
@@ -35,9 +38,6 @@ iPhone · Free · https://apps.apple.com/us/app/modul8-glitch-art-effects/id6755
 A cyanotype app for iPhone. It runs the chemistry of the 1842 sunprint process instead of tinting the picture blue: the paper is blind to red and green, so two colours a camera recorded as equally bright come out at opposite ends of the print. No darkroom, no chemicals, no printer.
 iPhone · Free · Not yet on the App Store; it is awaiting review.
 
-### Harmony Palette
-A colour tool for iPhone and iPad. An interactive wheel in both the RGB model a screen actually uses and the RYB model a painter was taught, eight harmony types, 160 curated palettes, a contrast checker that tells you which pairs are legible, and export straight to SwiftUI, CSS, Tailwind, SVG or PDF.
-iPhone & iPad · Free, Pro from $2.99 · https://apps.apple.com/us/app/harmony-palette/id6757116756
 
 ### Merge With The Machine
 An art project about the line where human imagination meets machine generation. Generated visuals, experimental tools, and a print shop.

@@ -272,6 +272,84 @@
     "pt-BR": "Trabalho",
     "zh-Hans": "作品"
   },
+  "Harmony Palette": {
+    "kind": "text:a",
+    "de": "Harmony Palette",
+    "es": "Harmony Palette",
+    "es-MX": "Harmony Palette",
+    "fr": "Harmony Palette",
+    "it": "Harmony Palette",
+    "ja": "Harmony Palette",
+    "ko": "Harmony Palette",
+    "nl": "Harmony Palette",
+    "pt-BR": "Harmony Palette",
+    "zh-Hans": "Harmony Palette"
+  },
+  "A colour tool for iPhone and iPad. An interactive wheel in both the RGB model a screen\n          actually uses and the RYB model a painter was taught, eight harmony types, 160 curated\n          palettes, a contrast checker that tells you which pairs are legible, and export straight\n          to SwiftUI, CSS, Tailwind, SVG or PDF.": {
+    "kind": "text:p",
+    "de": "Ein Farbwerkzeug für iPhone und iPad. Ein interaktiver Kreis, sowohl im RGB-Modell, das ein Bildschirm tatsächlich benutzt, als auch im RYB-Modell, das eine Malerin gelernt hat, acht Harmonietypen, 160 kuratierte Paletten, ein Kontrastprüfer, der sagt, welche Paare lesbar sind, und Export direkt nach SwiftUI, CSS, Tailwind, SVG oder PDF.",
+    "es": "Una herramienta de color para iPhone y iPad. Una rueda interactiva tanto en el modelo RGB que usa de verdad una pantalla como en el modelo RYB que le enseñaron a un pintor, ocho tipos de armonía, 160 paletas seleccionadas, un comprobador de contraste que te dice qué pares se leen bien, y exportación directa a SwiftUI, CSS, Tailwind, SVG o PDF.",
+    "es-MX": "Una herramienta de color para iPhone y iPad. Una rueda interactiva tanto en el modelo RGB que usa de verdad una pantalla como en el modelo RYB que le enseñaron a un pintor, ocho tipos de armonía, 160 paletas seleccionadas, un verificador de contraste que te dice qué pares se leen bien, y exportación directa a SwiftUI, CSS, Tailwind, SVG o PDF.",
+    "fr": "Un outil de couleur pour iPhone et iPad. Une roue interactive à la fois dans le modèle RVB qu'un écran utilise vraiment et dans le modèle RJB qu'on a enseigné à un peintre, huit types d'harmonie, 160 palettes sélectionnées, un vérificateur de contraste qui vous dit quelles paires sont lisibles, et l'export direct vers SwiftUI, CSS, Tailwind, SVG ou PDF.",
+    "it": "Uno strumento di colore per iPhone e iPad. Una ruota interattiva sia nel modello RGB che uno schermo usa davvero sia nel modello RYB che hanno insegnato a un pittore, otto tipi di armonia, 160 palette selezionate, un controllo del contrasto che ti dice quali coppie si leggono, e l'esportazione diretta in SwiftUI, CSS, Tailwind, SVG o PDF.",
+    "ja": "iPhone と iPad のための色の道具。画面が実際に使う RGB のモデルと、画家が教わった RYB のモデルの両方による対話的なホイール、8 種類の調和、厳選された 160 のパレット、どの組み合わせが読めるかを教えてくれるコントラストチェッカー、そして SwiftUI、CSS、Tailwind、SVG、PDF への直接の書き出し。",
+    "ko": "iPhone과 iPad를 위한 색 도구. 화면이 실제로 쓰는 RGB 모델과 화가가 배운 RYB 모델을 모두 지원하는 대화형 색상환, 8가지 조화, 엄선된 160개의 팔레트, 어떤 조합이 읽히는지 알려주는 명도 대비 검사기, 그리고 SwiftUI, CSS, Tailwind, SVG, PDF로의 바로 내보내기.",
+    "nl": "Een kleurgereedschap voor iPhone en iPad. Een interactief wiel in zowel het RGB-model dat een scherm echt gebruikt als het RYB-model dat een schilder is geleerd, acht harmonietypes, 160 samengestelde paletten, een contrastchecker die je vertelt welke paren leesbaar zijn, en export rechtstreeks naar SwiftUI, CSS, Tailwind, SVG of PDF.",
+    "pt-BR": "Uma ferramenta de cor para iPhone e iPad. Uma roda interativa tanto no modelo RGB que uma tela de fato usa quanto no modelo RYB que ensinaram a um pintor, oito tipos de harmonia, 160 paletas selecionadas, um verificador de contraste que diz quais pares são legíveis, e exportação direta para SwiftUI, CSS, Tailwind, SVG ou PDF.",
+    "zh-Hans": "一件为 iPhone 和 iPad 打造的颜色工具。可交互的色轮，既有屏幕真正使用的 RGB 模型，也有画家学过的 RYB 模型；8 种配色关系、精选的 160 套调色板、会告诉你哪些搭配读得清楚的对比度检查器，以及直接导出为 SwiftUI、CSS、Tailwind、SVG 或 PDF。"
+  },
+  "iPhone": {
+    "kind": "text:span",
+    "de": "iPhone",
+    "es": "iPhone",
+    "es-MX": "iPhone",
+    "fr": "iPhone",
+    "it": "iPhone",
+    "ja": "iPhone",
+    "ko": "iPhone",
+    "nl": "iPhone",
+    "pt-BR": "iPhone",
+    "zh-Hans": "iPhone"
+  },
+  "iPad": {
+    "kind": "text:span",
+    "de": "iPad",
+    "es": "iPad",
+    "es-MX": "iPad",
+    "fr": "iPad",
+    "it": "iPad",
+    "ja": "iPad",
+    "ko": "iPad",
+    "nl": "iPad",
+    "pt-BR": "iPad",
+    "zh-Hans": "iPad"
+  },
+  "Free, Pro from $2.99": {
+    "kind": "text:span",
+    "de": "Kostenlos, Pro ab $2.99",
+    "es": "Gratis, Pro desde $2.99",
+    "es-MX": "Gratis, Pro desde $2.99",
+    "fr": "Gratuit, Pro à partir de $2.99",
+    "it": "Gratis, Pro da $2.99",
+    "ja": "無料、Pro は $2.99 から",
+    "ko": "무료, Pro는 $2.99부터",
+    "nl": "Gratis, Pro vanaf $2.99",
+    "pt-BR": "Grátis, Pro a partir de $2.99",
+    "zh-Hans": "免费，Pro $2.99 起"
+  },
+  "App Store": {
+    "kind": "text:a",
+    "de": "App Store",
+    "es": "App Store",
+    "es-MX": "App Store",
+    "fr": "App Store",
+    "it": "App Store",
+    "ja": "App Store",
+    "ko": "App Store",
+    "nl": "App Store",
+    "pt-BR": "App Store",
+    "zh-Hans": "App Store"
+  },
   "FRMT: Film Simulation": {
     "kind": "text:a",
     "de": "FRMT: Filmsimulation",
@@ -298,19 +376,6 @@
     "pt-BR": "Uma câmera de simulação de filme para iPhone. Ela modela o próprio processo fotográfico em vez de aplicar um filtro de cor: a luz se espalhando pela emulsão, as camadas de corante segurando umas às outras, o grão se formando onde a luz de fato caiu. Quatro filmes, construídos a partir de medições publicadas pelos fabricantes, revelados no aparelho a partir de um negativo RAW.",
     "zh-Hans": "一款 iPhone 上的胶片模拟相机。它模拟的是摄影这道工序本身，而不是套一层颜色滤镜：光在乳剂中散射，染料层彼此拖住，颗粒生成在光真正落下的地方。四款胶片，依据厂商公开的实测数据构建，在设备上从 RAW 底片完成显影。"
   },
-  "iPhone": {
-    "kind": "text:span",
-    "de": "iPhone",
-    "es": "iPhone",
-    "es-MX": "iPhone",
-    "fr": "iPhone",
-    "it": "iPhone",
-    "ja": "iPhone",
-    "ko": "iPhone",
-    "nl": "iPhone",
-    "pt-BR": "iPhone",
-    "zh-Hans": "iPhone"
-  },
   "$14.99 once": {
     "kind": "text:span",
     "de": "14,99 $ einmalig",
@@ -323,19 +388,6 @@
     "nl": "$14,99 eenmalig",
     "pt-BR": "US$ 14,99 uma vez",
     "zh-Hans": "14.99 美元买断"
-  },
-  "App Store": {
-    "kind": "text:a",
-    "de": "App Store",
-    "es": "App Store",
-    "es-MX": "App Store",
-    "fr": "App Store",
-    "it": "App Store",
-    "ja": "App Store",
-    "ko": "App Store",
-    "nl": "App Store",
-    "pt-BR": "App Store",
-    "zh-Hans": "App Store"
   },
   "MODUL8: Glitch Art Effects": {
     "kind": "text:a",
@@ -414,58 +466,6 @@
     "nl": "Binnenkort in de App Store",
     "pt-BR": "Em breve na App Store",
     "zh-Hans": "即将上架 App Store"
-  },
-  "Harmony Palette": {
-    "kind": "text:a",
-    "de": "Harmony Palette",
-    "es": "Harmony Palette",
-    "es-MX": "Harmony Palette",
-    "fr": "Harmony Palette",
-    "it": "Harmony Palette",
-    "ja": "Harmony Palette",
-    "ko": "Harmony Palette",
-    "nl": "Harmony Palette",
-    "pt-BR": "Harmony Palette",
-    "zh-Hans": "Harmony Palette"
-  },
-  "A colour tool for iPhone and iPad. An interactive wheel in both the RGB model a screen\n          actually uses and the RYB model a painter was taught, eight harmony types, 160 curated\n          palettes, a contrast checker that tells you which pairs are legible, and export straight\n          to SwiftUI, CSS, Tailwind, SVG or PDF.": {
-    "kind": "text:p",
-    "de": "Ein Farbwerkzeug für iPhone und iPad. Ein interaktiver Kreis, sowohl im RGB-Modell, das ein Bildschirm tatsächlich benutzt, als auch im RYB-Modell, das eine Malerin gelernt hat, acht Harmonietypen, 160 kuratierte Paletten, ein Kontrastprüfer, der sagt, welche Paare lesbar sind, und Export direkt nach SwiftUI, CSS, Tailwind, SVG oder PDF.",
-    "es": "Una herramienta de color para iPhone y iPad. Una rueda interactiva tanto en el modelo RGB que usa de verdad una pantalla como en el modelo RYB que le enseñaron a un pintor, ocho tipos de armonía, 160 paletas seleccionadas, un comprobador de contraste que te dice qué pares se leen bien, y exportación directa a SwiftUI, CSS, Tailwind, SVG o PDF.",
-    "es-MX": "Una herramienta de color para iPhone y iPad. Una rueda interactiva tanto en el modelo RGB que usa de verdad una pantalla como en el modelo RYB que le enseñaron a un pintor, ocho tipos de armonía, 160 paletas seleccionadas, un verificador de contraste que te dice qué pares se leen bien, y exportación directa a SwiftUI, CSS, Tailwind, SVG o PDF.",
-    "fr": "Un outil de couleur pour iPhone et iPad. Une roue interactive à la fois dans le modèle RVB qu'un écran utilise vraiment et dans le modèle RJB qu'on a enseigné à un peintre, huit types d'harmonie, 160 palettes sélectionnées, un vérificateur de contraste qui vous dit quelles paires sont lisibles, et l'export direct vers SwiftUI, CSS, Tailwind, SVG ou PDF.",
-    "it": "Uno strumento di colore per iPhone e iPad. Una ruota interattiva sia nel modello RGB che uno schermo usa davvero sia nel modello RYB che hanno insegnato a un pittore, otto tipi di armonia, 160 palette selezionate, un controllo del contrasto che ti dice quali coppie si leggono, e l'esportazione diretta in SwiftUI, CSS, Tailwind, SVG o PDF.",
-    "ja": "iPhone と iPad のための色の道具。画面が実際に使う RGB のモデルと、画家が教わった RYB のモデルの両方による対話的なホイール、8 種類の調和、厳選された 160 のパレット、どの組み合わせが読めるかを教えてくれるコントラストチェッカー、そして SwiftUI、CSS、Tailwind、SVG、PDF への直接の書き出し。",
-    "ko": "iPhone과 iPad를 위한 색 도구. 화면이 실제로 쓰는 RGB 모델과 화가가 배운 RYB 모델을 모두 지원하는 대화형 색상환, 8가지 조화, 엄선된 160개의 팔레트, 어떤 조합이 읽히는지 알려주는 명도 대비 검사기, 그리고 SwiftUI, CSS, Tailwind, SVG, PDF로의 바로 내보내기.",
-    "nl": "Een kleurgereedschap voor iPhone en iPad. Een interactief wiel in zowel het RGB-model dat een scherm echt gebruikt als het RYB-model dat een schilder is geleerd, acht harmonietypes, 160 samengestelde paletten, een contrastchecker die je vertelt welke paren leesbaar zijn, en export rechtstreeks naar SwiftUI, CSS, Tailwind, SVG of PDF.",
-    "pt-BR": "Uma ferramenta de cor para iPhone e iPad. Uma roda interativa tanto no modelo RGB que uma tela de fato usa quanto no modelo RYB que ensinaram a um pintor, oito tipos de harmonia, 160 paletas selecionadas, um verificador de contraste que diz quais pares são legíveis, e exportação direta para SwiftUI, CSS, Tailwind, SVG ou PDF.",
-    "zh-Hans": "一件为 iPhone 和 iPad 打造的颜色工具。可交互的色轮，既有屏幕真正使用的 RGB 模型，也有画家学过的 RYB 模型；8 种配色关系、精选的 160 套调色板、会告诉你哪些搭配读得清楚的对比度检查器，以及直接导出为 SwiftUI、CSS、Tailwind、SVG 或 PDF。"
-  },
-  "iPad": {
-    "kind": "text:span",
-    "de": "iPad",
-    "es": "iPad",
-    "es-MX": "iPad",
-    "fr": "iPad",
-    "it": "iPad",
-    "ja": "iPad",
-    "ko": "iPad",
-    "nl": "iPad",
-    "pt-BR": "iPad",
-    "zh-Hans": "iPad"
-  },
-  "Free, Pro from $2.99": {
-    "kind": "text:span",
-    "de": "Kostenlos, Pro ab $2.99",
-    "es": "Gratis, Pro desde $2.99",
-    "es-MX": "Gratis, Pro desde $2.99",
-    "fr": "Gratuit, Pro à partir de $2.99",
-    "it": "Gratis, Pro da $2.99",
-    "ja": "無料、Pro は $2.99 から",
-    "ko": "무료, Pro는 $2.99부터",
-    "nl": "Gratis, Pro vanaf $2.99",
-    "pt-BR": "Grátis, Pro a partir de $2.99",
-    "zh-Hans": "免费，Pro $2.99 起"
   },
   "Merge With The Machine": {
     "kind": "text:a",
@@ -675,6 +675,19 @@
     "pt-BR": "lf.wtf",
     "zh-Hans": "lf.wtf"
   },
+  "A colour harmony and palette app for iPhone and iPad, with an interactive wheel in both the RGB and RYB models, eight harmony types, a WCAG contrast checker and export to code.": {
+    "kind": "ld",
+    "de": "Eine App für Farbharmonie und Paletten für iPhone und iPad, mit einem interaktiven Kreis im RGB- und im RYB-Modell, acht Harmonietypen, einem WCAG-Kontrastprüfer und Export als Code.",
+    "es": "Una app de armonía de color y paletas para iPhone y iPad, con una rueda interactiva en los modelos RGB y RYB, ocho tipos de armonía, un comprobador de contraste WCAG y exportación a código.",
+    "es-MX": "Una app de armonía de color y paletas para iPhone y iPad, con una rueda interactiva en los modelos RGB y RYB, ocho tipos de armonía, un verificador de contraste WCAG y exportación a código.",
+    "fr": "Une application d'harmonie des couleurs et de palettes pour iPhone et iPad, avec une roue interactive dans les modèles RVB et RJB, huit types d'harmonie, un vérificateur de contraste WCAG et l'export vers du code.",
+    "it": "Un'app di armonia cromatica e palette per iPhone e iPad, con una ruota interattiva nei modelli RGB e RYB, otto tipi di armonia, un controllo del contrasto WCAG e l'esportazione in codice.",
+    "ja": "iPhone と iPad のための配色とパレットのアプリ。RGB と RYB の両モデルによる対話的なホイール、8 種類の調和、WCAG コントラストチェッカー、コードへの書き出し。",
+    "ko": "iPhone과 iPad를 위한 색 조화와 팔레트 앱. RGB와 RYB 두 모델을 지원하는 대화형 색상환, 8가지 조화, WCAG 명도 대비 검사기, 코드로의 내보내기.",
+    "nl": "Een app voor kleurharmonie en paletten voor iPhone en iPad, met een interactief wiel in zowel het RGB- als het RYB-model, acht harmonietypes, een WCAG-contrastchecker en export naar code.",
+    "pt-BR": "Um app de harmonia de cores e paletas para iPhone e iPad, com uma roda interativa nos modelos RGB e RYB, oito tipos de harmonia, um verificador de contraste WCAG e exportação para código.",
+    "zh-Hans": "一款为 iPhone 和 iPad 打造的配色与调色板应用，带有支持 RGB 与 RYB 两种模型的交互式色轮、8 种配色关系、WCAG 对比度检查器，以及导出为代码。"
+  },
   "A film simulation camera for iPhone that simulates the photographic process rather than applying a colour filter.": {
     "kind": "ld",
     "de": "Eine Filmsimulationskamera für iPhone, die den fotografischen Prozess simuliert, statt einen Farbfilter anzuwenden.",
@@ -713,19 +726,6 @@
     "nl": "Een cyanotypie-app voor iPhone die de chemie van het zonnedrukproces uit 1842 simuleert in plaats van een foto blauw te kleuren.",
     "pt-BR": "Um app de cianotipia para iPhone que simula a química do processo de impressão ao sol de 1842 em vez de tingir uma foto de azul.",
     "zh-Hans": "一款 iPhone 蓝晒应用，模拟 1842 年日光晒印工艺的化学，而不是把照片染成蓝色。"
-  },
-  "A colour harmony and palette app for iPhone and iPad, with an interactive wheel in both the RGB and RYB models, eight harmony types, a WCAG contrast checker and export to code.": {
-    "kind": "ld",
-    "de": "Eine App für Farbharmonie und Paletten für iPhone und iPad, mit einem interaktiven Kreis im RGB- und im RYB-Modell, acht Harmonietypen, einem WCAG-Kontrastprüfer und Export als Code.",
-    "es": "Una app de armonía de color y paletas para iPhone y iPad, con una rueda interactiva en los modelos RGB y RYB, ocho tipos de armonía, un comprobador de contraste WCAG y exportación a código.",
-    "es-MX": "Una app de armonía de color y paletas para iPhone y iPad, con una rueda interactiva en los modelos RGB y RYB, ocho tipos de armonía, un verificador de contraste WCAG y exportación a código.",
-    "fr": "Une application d'harmonie des couleurs et de palettes pour iPhone et iPad, avec une roue interactive dans les modèles RVB et RJB, huit types d'harmonie, un vérificateur de contraste WCAG et l'export vers du code.",
-    "it": "Un'app di armonia cromatica e palette per iPhone e iPad, con una ruota interattiva nei modelli RGB e RYB, otto tipi di armonia, un controllo del contrasto WCAG e l'esportazione in codice.",
-    "ja": "iPhone と iPad のための配色とパレットのアプリ。RGB と RYB の両モデルによる対話的なホイール、8 種類の調和、WCAG コントラストチェッカー、コードへの書き出し。",
-    "ko": "iPhone과 iPad를 위한 색 조화와 팔레트 앱. RGB와 RYB 두 모델을 지원하는 대화형 색상환, 8가지 조화, WCAG 명도 대비 검사기, 코드로의 내보내기.",
-    "nl": "Een app voor kleurharmonie en paletten voor iPhone en iPad, met een interactief wiel in zowel het RGB- als het RYB-model, acht harmonietypes, een WCAG-contrastchecker en export naar code.",
-    "pt-BR": "Um app de harmonia de cores e paletas para iPhone e iPad, com uma roda interativa nos modelos RGB e RYB, oito tipos de harmonia, um verificador de contraste WCAG e exportação para código.",
-    "zh-Hans": "一款为 iPhone 和 iPad 打造的配色与调色板应用，带有支持 RGB 与 RYB 两种模型的交互式色轮、8 种配色关系、WCAG 对比度检查器，以及导出为代码。"
   },
   "Apps and projects by Levi Foster": {
     "kind": "ld",
