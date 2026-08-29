@@ -15,6 +15,12 @@
 /cyano/assets/*
   Cache-Control: public, max-age=31536000, immutable
 
+/harmony/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/dollop/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
 # Served as UTF-8 text so crawlers read them inline instead of downloading them.
 /llms.txt
   Content-Type: text/plain; charset=utf-8
