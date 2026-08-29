@@ -1,0 +1,836 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dollop: a color mixing game where blue and yellow make green</title>
+<meta name="description" content="A slow, calming color mixing puzzle for iPhone. The paint is simulated rather than blended, so blue and yellow make green instead of gray. Free, no account, no ads, no internet needed.">
+<meta name="color-scheme" content="light">
+<link rel="alternate" hreflang="en" href="https://lf.wtf/dollop/">
+<link rel="alternate" hreflang="de" href="https://lf.wtf/de/dollop/">
+<link rel="alternate" hreflang="es" href="https://lf.wtf/es/dollop/">
+<link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/dollop/">
+<link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/dollop/">
+<link rel="alternate" hreflang="it" href="https://lf.wtf/it/dollop/">
+<link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/dollop/">
+<link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/dollop/">
+<link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/dollop/">
+<link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/dollop/">
+<link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/dollop/">
+<link rel="alternate" hreflang="x-default" href="https://lf.wtf/dollop/">
+<link rel="canonical" href="https://lf.wtf/dollop/">
+<link rel="icon" href="/dollop/assets/icon.png">
+<link rel="apple-touch-icon" href="/dollop/assets/icon.png">
+
+<meta property="og:title" content="Dollop: a color mixing game where blue and yellow make green">
+<meta property="og:description" content="A slow, calming paint puzzle for iPhone. The pigment is simulated, not blended.">
+<meta property="og:image" content="https://lf.wtf/dollop/assets/icon.png">
+<meta property="og:image:alt" content="The Dollop icon: a blue dollop and a yellow dollop overlapping, green where they cross.">
+<meta property="og:url" content="https://lf.wtf/dollop/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="lf.wtf">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="es_MX">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dollop: a color mixing game where blue and yellow make green">
+<meta name="twitter:description" content="A slow, calming paint puzzle for iPhone. The pigment is simulated, not blended.">
+<meta name="twitter:image" content="https://lf.wtf/dollop/assets/icon.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobileApplication",
+      "@id": "https://lf.wtf/dollop/#app",
+      "name": "Dollop",
+      "alternateName": "Dollop: Color Mixing Game",
+      "url": "https://lf.wtf/dollop/",
+      "image": "https://lf.wtf/dollop/assets/icon.png",
+      "description": "A color mixing puzzle for iPhone in which paint mixes subtractively. Each pigment is held as sixteen reflectance readings from 400 to 700 nanometers and combined under Kubelka-Munk theory, so blue and yellow make green rather than gray. Five modes, a creature that hatches from the first color you match, and no account, advertising or networking of any kind.",
+      "applicationCategory": "GameApplication",
+      "applicationSubCategory": "Puzzle",
+      "operatingSystem": "iOS 17.0 or later",
+      "featureList": [
+        "Zen, an unhurried run of colors to mix",
+        "Daily, one color a day worked out on the device from the date",
+        "Blind, where the target is covered after a few seconds",
+        "Precise, which asks for a match closer than most eyes can resolve",
+        "From Life, which pulls a color out of a photograph you take",
+        "A creature that hatches from your first match and keeps the DNA of every color it has eaten",
+        "Synthesized sound in a single pentatonic scale, with nothing loud in it",
+        "Eleven languages, VoiceOver labels and Dynamic Type"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Levi Foster",
+        "url": "https://lf.wtf/"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Levi Foster",
+        "url": "https://lf.wtf/"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free to play. One purchase of 4.99 US dollars unlocks Blind, Precise and From Life. There is no subscription."
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://lf.wtf/dollop/#page",
+      "url": "https://lf.wtf/dollop/",
+      "name": "Dollop: a color mixing game where blue and yellow make green",
+      "about": {
+        "@id": "https://lf.wtf/dollop/#app"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "lf.wtf",
+          "item": "https://lf.wtf/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Dollop",
+          "item": "https://lf.wtf/dollop/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://lf.wtf/dollop/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why do blue and yellow make green in paint but gray on a screen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because they are two different kinds of mixing. A screen adds light: red, green and blue emitters sum, so blue light plus yellow light gives something pale. Paint subtracts light. Blue pigment absorbs most of the red end of the spectrum, yellow pigment absorbs most of the blue end, and what survives both is the middle, which is green. Dollop mixes the second way, which is why it gives a real green."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is subtractive color mixing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Subtractive mixing is what happens when colorants are combined: each one removes part of the spectrum, and you see only the light that nothing absorbed. It is how paint, ink and dye behave. Additive mixing is the opposite and describes light itself, which is what a screen or a stage lamp does. Dollop models the subtractive case with Kubelka-Munk theory, the approximation the paint industry uses to predict a batch before anyone stirs it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Dollop free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Zen and Daily are free forever and are whole modes rather than a demonstration. One purchase of 4.99 US dollars, paid once and never again, unlocks Blind, Precise and From Life. There is no subscription, no advertising, and no lives or energy to wait for."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does Delta E mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Delta E is the distance between two colors in a space built so that equal distances look about equally different to a person. A Delta E of 1 is roughly the smallest difference a trained eye catches side by side, and 3 is close enough that most people would call it a match. Dollop shows it while you mix: Zen, Daily and Blind accept anything under 3, and Precise wants under 1."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Dollop need an account or an internet connection?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Neither. There is no account, no sign in, and no networking code in the app at all. Even the daily color is computed on the device from the date rather than fetched, so everyone gets the same color each day without a server being involved. Nothing you do is collected or sent anywhere."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I play Dollop if I am color blind?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Partly, and further than you might expect. The distance from the target is shown as a live number, so a match can be closed in by reading it rather than by judging two colors against each other. Blind mode, which hides the target on purpose, is the one that will not work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which pigments are in the game?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Eight standing pigments: titanium white, cadmium yellow, cadmium red, quinacridone magenta, ultramarine, phthalo blue, phthalo green and lamp black. Each round hands you six of them, chosen so that the color you were given can actually be reached from what is on the tray."
+          }
+        }
+      ],
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+
+<style>
+:root {
+  --paper:  #FCFAF6;
+  --ink:    #0C0A0E;
+  --yellow: #FFE900;
+  --board:  #EFECE4;
+  --w: 700px;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: var(--w); margin: 0 auto; padding: 0 22px; }
+
+/* Anything that names rather than speaks. */
+.label {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 11.5px;
+  font-weight: 600;
+}
+h1, h2, h3, .word {
+  font-family: ui-rounded, "SF Pro Rounded", system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+.word { font-size: clamp(54px, 15vw, 92px); font-weight: 900; letter-spacing: -0.05em; }
+h1 { font-size: clamp(30px, 6.4vw, 44px); margin: 0 0 14px; }
+h2 { font-size: clamp(23px, 4.4vw, 30px); margin: 0 0 12px; }
+h3 { font-size: 18px; margin: 0 0 4px; letter-spacing: -0.01em; }
+p { margin: 0 0 18px; }
+a { color: var(--ink); text-underline-offset: 3px; }
+:focus-visible { outline: 4px solid var(--ink); outline-offset: 2px; }
+
+header { padding: 54px 0 0; }
+header .label { opacity: 0.5; display: block; margin-top: 2px; }
+
+section { padding: 0 0 54px; }
+.lede { font-size: 20px; line-height: 1.45; }
+.hero { padding-top: 26px; }
+
+/* Panels: hard rule, hard offset shadow, no radius. The shadow is also the minimum gap, because it
+   falls into the space below and right of its own element. */
+.panel {
+  border: 4px solid var(--ink);
+  box-shadow: 8px 8px 0 var(--ink);
+  background: #fff;
+  margin: 0 8px 8px 0;
+}
+
+/* ---------------------------------------------------------------- the board */
+
+.compare { display: grid; grid-template-columns: 1fr 1fr; border-bottom: 4px solid var(--ink); }
+.half {
+  padding: 10px 12px 12px; min-height: 84px;
+  display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start;
+}
+.half + .half { border-left: 4px solid var(--ink); background: var(--board); }
+.half .label { background: var(--ink); color: var(--paper); padding: 2px 6px; }
+.half .read {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 13px; font-weight: 700; align-self: flex-end;
+  background: var(--ink); color: var(--paper); padding: 2px 6px;
+}
+.half .read:empty { display: none; }
+.half .read.hit { background: var(--yellow); color: var(--ink); }
+canvas { display: block; width: 100%; height: 250px; background: var(--board); }
+.tray { display: grid; grid-template-columns: repeat(6, 1fr); border-top: 4px solid var(--ink); }
+.chip {
+  appearance: none; border: 0; border-left: 4px solid var(--ink);
+  height: 64px; cursor: pointer; padding: 0; position: relative;
+}
+.tray .chip:first-child { border-left: 0; }
+.chip:active { filter: brightness(0.94); }
+.chip:focus-visible { outline: 4px solid var(--ink); outline-offset: -10px; }
+.chip .n {
+  position: absolute; right: 4px; bottom: 4px;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 11px; font-weight: 700;
+  background: var(--ink); color: var(--paper); padding: 0 4px; visibility: hidden;
+}
+.chip .n.on { visibility: visible; }
+.controls { display: flex; border-top: 4px solid var(--ink); }
+.controls button {
+  appearance: none; background: #fff; border: 0; cursor: pointer; flex: 1;
+  padding: 14px 8px; color: var(--ink);
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+}
+.controls button + button { border-left: 4px solid var(--ink); }
+.controls button:hover { background: var(--board); }
+.controls button.go { background: var(--yellow); }
+.status { margin: 16px 8px 0 0; min-height: 3em; }
+.status .hint { opacity: 0.6; }
+.strings { display: none; }
+
+/* ---------------------------------------------------------------- the rest */
+
+.buy {
+  display: inline-block; margin: 4px 8px 6px 0; padding: 15px 26px;
+  background: var(--yellow); border: 4px solid var(--ink); box-shadow: 8px 8px 0 var(--ink);
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; font-size: 13px;
+  text-decoration: none;
+}
+/* Until the app is through review there is nowhere for this to go, and a link to "#" reads as a
+   broken page rather than as an unreleased app. To release: make the span
+   <a class="buy" href="https://apps.apple.com/app/id...">, change the wording, drop this rule. */
+.buy.pending { background: #fff; cursor: default; }
+.terms { font-size: 15px; opacity: 0.65; margin-top: 2px; }
+
+.modes { margin: 0; padding: 0; list-style: none; }
+.modes li { border-top: 3px solid var(--ink); padding: 15px 0; }
+.modes li:last-child { border-bottom: 3px solid var(--ink); }
+.modes p { margin: 0; opacity: 0.78; }
+.modes .paid {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.5; margin-top: 6px;
+}
+
+.pad { padding: 26px; }
+.pad.board { background: var(--board); }
+.pad h2 { margin-top: 0; }
+.pad p:last-child { margin-bottom: 0; }
+
+.faq h3 { margin: 26px 0 4px; }
+.faq p { opacity: 0.86; }
+
+footer { border-top: 4px solid var(--ink); padding: 22px 0 0; margin-bottom: 34px; font-size: 15px; }
+footer nav a { margin-right: 20px; }
+footer .also { margin: 14px 0 0; opacity: 0.7; }
+
+@media (max-width: 460px) {
+  .tray { grid-template-columns: repeat(3, 1fr); }
+  .tray .chip:nth-child(4) { border-left: 0; }
+  .tray .chip:nth-child(n+4) { border-top: 4px solid var(--ink); }
+  canvas { height: 210px; }
+}
+
+/* i18n:start */
+.i18n{max-width:var(--w,initial);margin:0 auto;padding:26px 22px 40px;display:flex;flex-wrap:wrap;
+gap:6px 14px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.55;
+justify-content:center}
+.i18n a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+.i18n a:hover{border-bottom-color:currentColor}
+.i18n span[aria-current]{opacity:.5;cursor:default}
+/* i18n:end */
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header>
+  <div class="word">dollop</div>
+  <span class="label">A color game for iPhone</span>
+</header>
+
+<section class="hero">
+  <h1>Blue and yellow make green.</h1>
+  <p class="lede">On a screen they make gray. Dollop is a puzzle about mixing paint, and the paint in
+  it is simulated rather than blended, so it behaves the way paint behaves. You are given a color.
+  You mix it.</p>
+
+  <div class="panel">
+    <div class="compare">
+      <div class="half" id="target">
+        <span class="label">Target</span>
+      </div>
+      <div class="half" id="yours">
+        <span class="label">Yours</span>
+        <span class="read" id="delta"></span>
+      </div>
+    </div>
+    <canvas id="board" aria-hidden="true"></canvas>
+    <div class="tray" id="tray"></div>
+    <div class="controls">
+      <button type="button" id="clear">Scrape it off</button>
+      <button type="button" id="again" class="go">New color</button>
+    </div>
+  </div>
+
+  <p class="status" id="status" role="status"><span class="hint">Tap a pigment to put a dollop on the
+  board. This is the game itself, running the app's own arithmetic rather than a picture of it.</span></p>
+
+  <p><span class="buy pending">Coming to the App Store</span></p>
+  <p class="terms">Free. iPhone, iOS 17 and later. One optional purchase, no subscription.</p>
+</section>
+
+<section>
+  <h2>Why it is green and not gray</h2>
+  <p>A screen adds light. Red, green and blue emitters sum, so blue light plus yellow light gives you
+  something pale and washed out. Paint does the opposite. Every pigment <em>removes</em> part of the
+  spectrum, and what reaches your eye is only the light that nothing absorbed. Blue pigment takes out
+  the red end, yellow pigment takes out the blue end, and the middle survives. The middle is green.</p>
+  <p>Most color games blend two RGB values and hand you mud. Dollop keeps every pigment as sixteen
+  reflectance readings from 400 to 700 nanometers and mixes them under Kubelka-Munk theory, which is
+  the approximation the paint industry uses to predict a batch before anyone stirs it. The ratio
+  matters and the order does not: two parts blue to one part yellow lands somewhere different from
+  one to one, exactly as it would on a palette.</p>
+</section>
+
+<section>
+  <h2>Five ways to play</h2>
+  <ul class="modes">
+    <li>
+      <h3>Zen</h3>
+      <p>Colors one after another, for as long as you want. Nothing is timed and nothing is scored.</p>
+    </li>
+    <li>
+      <h3>Daily</h3>
+      <p>One color a day, the same one for everybody, worked out on your phone from the date. There
+      are five hundred and fifty five of them, spaced far enough apart that no two days feel like
+      the same puzzle.</p>
+    </li>
+    <li>
+      <h3>Blind</h3>
+      <p>A few seconds to look, then the target is covered and you mix it from memory. One peek, ten
+      seconds in.</p>
+      <p class="paid">Included in the unlock</p>
+    </li>
+    <li>
+      <h3>Precise</h3>
+      <p>The same colors, held to a tolerance most eyes cannot resolve. This is the one that will
+      keep you there.</p>
+      <p class="paid">Included in the unlock</p>
+    </li>
+    <li>
+      <h3>From Life</h3>
+      <p>Photograph anything, point at a color in it, and mix that. When no paint on the tray can
+      reach it, the app says so instead of quietly substituting something close.</p>
+      <p class="paid">Included in the unlock</p>
+    </li>
+  </ul>
+  <p style="margin-top:22px">Zen and Daily are free forever, and they are whole modes rather than a
+  sample of one. A single purchase of <b>$4.99</b> unlocks the other three, paid once and never
+  again. No subscription, no advertising, and nothing that runs out and asks you to wait.</p>
+</section>
+
+<section>
+  <div class="panel pad board">
+    <h2>Something hatches out of it</h2>
+    <p>The first color you match becomes a small creature, in that color. Everything you mix after
+    that feeds it, and its DNA is the strip of every color it has ever eaten, in order. It grows
+    slowly. It sleeps while you are gone. Leave it a month and it dries out, which one round undoes.
+    Nothing here can die, and nothing will notify you to say it misses you.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Made to be quiet</h2>
+  <p>Every sound is synthesized rather than sampled, and all of them sit in one pentatonic scale, so
+  however they land on top of each other they stay consonant. A drop parting from the tray rises in
+  pitch, the way a small amount of liquid pinching off does. A dollop sounds deeper as it grows.
+  Nothing is loud, nothing repeats exactly, and the audio mixes underneath whatever you were already
+  listening to instead of stopping it.</p>
+  <p>The paint is drawn as a real wet surface and shaded so that the flat top of a dollop is exactly
+  the color you mixed rather than a lighter version of it. That sounds like a small thing. It is the
+  difference between judging your mix and judging a highlight.</p>
+  <p>It reads in eleven languages, every control is labeled for VoiceOver, and the type scales with
+  the rest of your phone. Because the distance to the target is shown as a number, a color blind
+  player can close in on a match by reading rather than by comparing.</p>
+</section>
+
+<section>
+  <h2>What it does not do</h2>
+  <p>No account. No sign in. No analytics, no advertising, no tracking, and no networking code in the
+  app at all. The daily color is computed rather than downloaded. Photographs used in From Life are
+  read on your phone and never leave it. Nothing you do in Dollop is collected, because there is
+  nothing in it that could collect anything.</p>
+  <p><a href="/dollop/privacy/">The privacy policy</a> says the same at greater length, and says
+  nothing else.</p>
+</section>
+
+<!-- These answers are word for word what the FAQ schema in the head carries. Structured data has to
+     be visible on the page it describes, so the two are one text kept in one place, not a short
+     version for readers and a long one for crawlers. -->
+<section class="faq">
+  <h2>Questions</h2>
+
+  <h3>Why do blue and yellow make green in paint but gray on a screen?</h3>
+  <p>Because they are two different kinds of mixing. A screen adds light: red, green and blue
+  emitters sum, so blue light plus yellow light gives something pale. Paint subtracts light. Blue
+  pigment absorbs most of the red end of the spectrum, yellow pigment absorbs most of the blue end,
+  and what survives both is the middle, which is green. Dollop mixes the second way, which is why it
+  gives a real green.</p>
+
+  <h3>What is subtractive color mixing?</h3>
+  <p>Subtractive mixing is what happens when colorants are combined: each one removes part of the
+  spectrum, and you see only the light that nothing absorbed. It is how paint, ink and dye behave.
+  Additive mixing is the opposite and describes light itself, which is what a screen or a stage lamp
+  does. Dollop models the subtractive case with Kubelka-Munk theory, the approximation the paint
+  industry uses to predict a batch before anyone stirs it.</p>
+
+  <h3>Is Dollop free?</h3>
+  <p>Yes. Zen and Daily are free forever and are whole modes rather than a demonstration. One
+  purchase of 4.99 US dollars, paid once and never again, unlocks Blind, Precise and From Life.
+  There is no subscription, no advertising, and no lives or energy to wait for.</p>
+
+  <h3>What does Delta E mean?</h3>
+  <p>Delta E is the distance between two colors in a space built so that equal distances look about
+  equally different to a person. A Delta E of 1 is roughly the smallest difference a trained eye
+  catches side by side, and 3 is close enough that most people would call it a match. Dollop shows it
+  while you mix: Zen, Daily and Blind accept anything under 3, and Precise wants under 1.</p>
+
+  <h3>Does Dollop need an account or an internet connection?</h3>
+  <p>Neither. There is no account, no sign in, and no networking code in the app at all. Even the
+  daily color is computed on the device from the date rather than fetched, so everyone gets the same
+  color each day without a server being involved. Nothing you do is collected or sent anywhere.</p>
+
+  <h3>Can I play Dollop if I am color blind?</h3>
+  <p>Partly, and further than you might expect. The distance from the target is shown as a live
+  number, so a match can be closed in by reading it rather than by judging two colors against each
+  other. Blind mode, which hides the target on purpose, is the one that will not work.</p>
+
+  <h3>Which pigments are in the game?</h3>
+  <p>Eight standing pigments: titanium white, cadmium yellow, cadmium red, quinacridone magenta,
+  ultramarine, phthalo blue, phthalo green and lamp black. Each round hands you six of them, chosen
+  so that the color you were given can actually be reached from what is on the tray.</p>
+</section>
+
+<footer>
+  <nav>
+    <a href="/">lf.wtf</a>
+    <a href="/dollop/privacy/">Privacy</a>
+    <a href="mailto:L@LF.WTF">L@LF.WTF</a>
+  </nav>
+  <p class="also">Also here: <a href="/harmony/">Harmony Palette</a>, which is about choosing colors
+  rather than making them.</p>
+</footer>
+
+<!-- What the demonstration says at runtime. It lives in the markup rather than in the script,
+     because the translator only ever reads the markup. -->
+<div class="strings" id="strings" hidden>
+  <span data-k="matched">Matched. That is a real green, and it came out of the arithmetic.</span>
+  <span data-k="close">Close. One more dollop of something.</span>
+  <span data-k="far">Keep going.</span>
+  <span data-k="off">Scraped off. Start again.</span>
+  <span data-k="fresh">A new color, mixable from what is on the tray.</span>
+  <span data-k="full">The board is full. Scrape it off and start again.</span>
+  <span data-k="chip">Add a dollop of this pigment</span>
+</div>
+
+</div><!-- .wrap -->
+
+<script>
+/* The app's model, ported rather than approximated.
+
+   The pigments below are the control points the game carries, expanded to sixteen bands by the same
+   smoothstep. Mixing happens in K/S, which is the quantity that adds linearly and the reason the
+   game can invert a recipe instead of searching for one. Color appears only at the end, through the
+   CIE 1931 two degree observer under D65. Nothing here is a gradient and nothing is a guess. */
+
+const BANDS = 16;
+function curve(points) {
+  const out = [];
+  for (let i = 0; i < BANDS; i++) {
+    const nm = 400 + i * 20;
+    let a = points[0], b = points[points.length - 1];
+    for (let j = 0; j < points.length - 1; j++) {
+      if (nm >= points[j][0] && nm <= points[j + 1][0]) { a = points[j]; b = points[j + 1]; break; }
+    }
+    let t = b[0] === a[0] ? 0 : (nm - a[0]) / (b[0] - a[0]);
+    t = Math.min(1, Math.max(0, t));
+    t = t * t * (3 - 2 * t);
+    out.push(Math.min(0.985, Math.max(0.002, a[1] + (b[1] - a[1]) * t)));
+  }
+  return out;
+}
+
+const PIGMENTS = [
+  curve([[400, 0.90], [700, 0.93]]),                                        // titanium white
+  curve([[400, 0.04], [480, 0.05], [530, 0.80], [700, 0.88]]),              // cadmium yellow
+  curve([[400, 0.05], [560, 0.05], [610, 0.72], [700, 0.80]]),              // cadmium red
+  curve([[400, 0.42], [500, 0.10], [560, 0.05], [620, 0.62], [700, 0.76]]), // quinacridone
+  curve([[400, 0.30], [470, 0.55], [540, 0.10], [600, 0.03], [700, 0.04]]), // phthalo blue
+  curve([[400, 0.014], [700, 0.016]]),                                      // lamp black
+];
+
+const OX = [0.0143,0.1344,0.3483,0.2908,0.0956,0.0049,0.0633,0.2904,0.5945,0.9163,1.0622,0.8544,0.4479,0.1649,0.0468,0.0114];
+const OY = [0.0004,0.0040,0.0230,0.0600,0.1390,0.3230,0.7100,0.9540,0.9950,0.8700,0.6310,0.3810,0.1750,0.0610,0.0170,0.0041];
+const OZ = [0.0679,0.6456,1.7471,1.6692,0.8130,0.2720,0.0782,0.0203,0.0039,0.0017,0.0008,0.0002,0.0000,0.0000,0.0000,0.0000];
+const D65 = [82.75,93.43,104.86,117.01,115.92,109.35,104.79,104.41,100.00,95.79,90.01,87.70,83.29,80.21,78.28,71.61];
+const YNORM = OY.reduce((sum, v, i) => sum + v * D65[i], 0);
+
+const ks   = r => { const v = Math.min(0.9999, Math.max(0.0001, r)); return (1 - v) * (1 - v) / (2 * v); };
+const unks = k => { const v = Math.max(0, k); return 1 + v - Math.sqrt(v * v + 2 * v); };
+
+function mix(parts) {                                   // parts: [[spectrum, weight], ...]
+  const total = parts.reduce((sum, p) => sum + p[1], 0);
+  if (!(total > 0)) return PIGMENTS[0];
+  const out = [];
+  for (let i = 0; i < BANDS; i++) {
+    let acc = 0;
+    for (const p of parts) acc += p[1] * ks(p[0][i]);
+    out.push(Math.min(0.985, Math.max(0.002, unks(acc / total))));
+  }
+  return out;
+}
+
+function xyz(s) {
+  let X = 0, Y = 0, Z = 0;
+  for (let i = 0; i < BANDS; i++) {
+    const e = s[i] * D65[i];
+    X += e * OX[i]; Y += e * OY[i]; Z += e * OZ[i];
+  }
+  return [X / YNORM, Y / YNORM, Z / YNORM];
+}
+function css(s) {
+  const [X, Y, Z] = xyz(s);
+  const g = v => {
+    const c = Math.max(0, v);
+    const o = c <= 0.0031308 ? c * 12.92 : 1.055 * Math.pow(c, 1 / 2.4) - 0.055;
+    return Math.round(Math.min(1, Math.max(0, o)) * 255);
+  };
+  return 'rgb(' + g(3.2406 * X - 1.5372 * Y - 0.4986 * Z) + ','
+                + g(-0.9689 * X + 1.8758 * Y + 0.0415 * Z) + ','
+                + g(0.0557 * X - 0.2040 * Y + 1.0570 * Z) + ')';
+}
+function lab(s) {
+  const [X, Y, Z] = xyz(s);
+  const f = t => t > 0.008856 ? Math.cbrt(t) : 7.787 * t + 16 / 116;
+  const fx = f(X / 0.95047), fy = f(Y), fz = f(Z / 1.08883);
+  return [116 * fy - 16, 500 * (fx - fy), 200 * (fy - fz)];
+}
+const deltaE = (a, b) => Math.hypot(a[0] - b[0], a[1] - b[1], a[2] - b[2]);
+
+/* Targets are built the way the game builds them: take two or three pigments off the tray and a
+   whole number ratio, and mix. Inverting a recipe rather than searching for one is what guarantees
+   the color is reachable, so nobody is ever asked for something the tray cannot make. */
+const RATIOS = [[1, 1], [2, 1], [3, 1], [1, 1, 1], [2, 1, 1], [3, 2]];
+
+function newTarget() {
+  for (let guard = 0; guard < 200; guard++) {
+    const ratio = RATIOS[Math.floor(Math.random() * RATIOS.length)];
+    const pool = PIGMENTS.map((_, i) => i).sort(() => Math.random() - 0.5).slice(0, ratio.length);
+    const s = mix(pool.map((i, n) => [PIGMENTS[i], ratio[n]]));
+    const L = lab(s)[0];
+    if (L > 26 && L < 86) return s;          // nothing worth aiming at right up against the ends
+  }
+  return mix([[PIGMENTS[4], 1], [PIGMENTS[1], 1]]);
+}
+
+/* ---------------------------------------------------------------- the board */
+
+const S = {};
+document.querySelectorAll('#strings [data-k]').forEach(el => { S[el.dataset.k] = el.textContent; });
+
+const canvas   = document.getElementById('board');
+const ctx      = canvas.getContext('2d');
+const trayEl   = document.getElementById('tray');
+const targetEl = document.getElementById('target');
+const yoursEl  = document.getElementById('yours');
+const deltaEl  = document.getElementById('delta');
+const statusEl = document.getElementById('status');
+const still    = window.matchMedia('(prefers-reduced-motion: reduce)');
+const decimal  = new Intl.NumberFormat(document.documentElement.lang || 'en',
+                                       { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+
+const LIMIT = 20;
+let target  = newTarget();
+let counts  = PIGMENTS.map(() => 0);
+let flying  = [];        // dollops still on their way in
+let squash  = 0;         // the wobble a landing sets off
+let phase   = 0;
+let matched = false;
+
+const chips = PIGMENTS.map((s, i) => {
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'chip';
+  button.style.background = css(s);
+  button.setAttribute('aria-label', S.chip);
+  const n = document.createElement('span');
+  n.className = 'n';
+  button.appendChild(n);
+  button.addEventListener('click', () => add(i));
+  trayEl.appendChild(button);
+  return n;
+});
+
+const drops = () => counts.reduce((a, b) => a + b, 0);
+
+function current() {
+  const parts = PIGMENTS.map((s, i) => [s, counts[i]]).filter(p => p[1] > 0);
+  return parts.length ? mix(parts) : null;
+}
+
+function add(i) {
+  if (drops() + flying.length >= LIMIT) { say(S.full); return; }
+  const angle = Math.random() * Math.PI * 2;
+  const w = canvas.clientWidth, h = canvas.clientHeight;
+  const flight = {
+    pigment: i,
+    x: w / 2 + Math.cos(angle) * (w / 2 + 60),
+    y: h / 2 + Math.sin(angle) * (h / 2 + 50),
+    t: 0,
+  };
+  if (still.matches) land(flight); else flying.push(flight);
+}
+
+function land(flight) {
+  counts[flight.pigment] += 1;
+  squash = 1;
+  readout();
+}
+
+function readout() {
+  const s = current();
+  chips.forEach((n, i) => {
+    n.textContent = counts[i] || '';
+    n.classList.toggle('on', counts[i] > 0);
+  });
+  if (!s) {
+    yoursEl.style.background = '';
+    deltaEl.textContent = '';
+    deltaEl.classList.remove('hit');
+    return;
+  }
+  const d = deltaE(lab(s), lab(target));
+  yoursEl.style.background = css(s);
+  deltaEl.textContent = 'ΔE ' + decimal.format(d);
+  const hit = d < 3;
+  deltaEl.classList.toggle('hit', hit);
+  if (hit) {
+    if (!matched) { matched = true; say(S.matched); }
+  } else {
+    matched = false;
+    say(d < 7 ? S.close : S.far);
+  }
+}
+
+function say(text) { statusEl.textContent = text; }
+
+/* One dollop, drawn as a wet surface rather than as a circle. The fill is exactly the mixed color,
+   because the flat top of a puddle is the color you mixed; only a small specular and the rim go on
+   top of it. Getting that the other way round is what makes painted color look lighter than it is. */
+function dollop(cx, cy, r, fill, wobble) {
+  const N = 72;
+  ctx.beginPath();
+  for (let i = 0; i <= N; i++) {
+    const a = i / N * Math.PI * 2;
+    const rr = r * (1 + wobble * (Math.sin(a * 3 + phase) * 0.55 + Math.sin(a * 5 - phase * 1.4) * 0.3));
+    const x = cx + Math.cos(a) * rr, y = cy + Math.sin(a) * rr * 0.94;
+    i ? ctx.lineTo(x, y) : ctx.moveTo(x, y);
+  }
+  ctx.closePath();
+  ctx.fillStyle = fill;
+  ctx.fill();
+
+  ctx.save();
+  ctx.clip();
+  const sheen = ctx.createRadialGradient(cx - r * 0.34, cy - r * 0.44, r * 0.02,
+                                         cx - r * 0.34, cy - r * 0.44, r * 0.60);
+  sheen.addColorStop(0, 'rgba(255,255,255,0.50)');
+  sheen.addColorStop(0.45, 'rgba(255,255,255,0.09)');
+  sheen.addColorStop(1, 'rgba(255,255,255,0)');
+  ctx.fillStyle = sheen;
+  ctx.fillRect(cx - r * 1.5, cy - r * 1.5, r * 3, r * 3);
+
+  const rim = ctx.createRadialGradient(cx + r * 0.30, cy + r * 0.40, r * 0.35,
+                                       cx + r * 0.30, cy + r * 0.40, r * 1.05);
+  rim.addColorStop(0, 'rgba(0,0,0,0)');
+  rim.addColorStop(1, 'rgba(0,0,0,0.18)');
+  ctx.fillStyle = rim;
+  ctx.fillRect(cx - r * 1.5, cy - r * 1.5, r * 3, r * 3);
+  ctx.restore();
+
+  ctx.lineWidth = 4;
+  ctx.strokeStyle = '#0C0A0E';
+  ctx.stroke();
+}
+
+let previous = 0;
+function frame(now) {
+  const dt = Math.min(0.05, (now - (previous || now)) / 1000);
+  previous = now;
+
+  const w = canvas.clientWidth, h = canvas.clientHeight;
+  const dpr = Math.min(2, window.devicePixelRatio || 1);
+  if (canvas.width !== Math.round(w * dpr) || canvas.height !== Math.round(h * dpr)) {
+    canvas.width = Math.round(w * dpr);
+    canvas.height = Math.round(h * dpr);
+  }
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, w, h);
+
+  if (!still.matches) phase += dt * 1.1;
+  squash = Math.max(0, squash - dt * 2.2);
+
+  const n = drops();
+  if (n > 0) {
+    const r = Math.min(h * 0.40, 21 * Math.sqrt(n) + 15);
+    const bounce = 1 + squash * 0.09 * Math.sin(squash * 13);
+    dollop(w / 2, h / 2, r * bounce, css(current()), 0.045 + squash * 0.045);
+  }
+
+  for (let i = flying.length - 1; i >= 0; i--) {
+    const f = flying[i];
+    f.t = Math.min(1, f.t + dt * 2.4);
+    const e = 1 - Math.pow(1 - f.t, 3);
+    dollop(f.x + (w / 2 - f.x) * e, f.y + (h / 2 - f.y) * e,
+           15 + 5 * e, css(PIGMENTS[f.pigment]), 0.05);
+    if (f.t >= 1) { flying.splice(i, 1); land(f); }
+  }
+  requestAnimationFrame(frame);
+}
+
+function reset(fresh) {
+  counts = PIGMENTS.map(() => 0);
+  flying = [];
+  matched = false;
+  if (fresh) {
+    target = newTarget();
+    targetEl.style.background = css(target);
+  }
+  readout();
+  say(fresh ? S.fresh : S.off);
+}
+
+document.getElementById('clear').addEventListener('click', () => reset(false));
+document.getElementById('again').addEventListener('click', () => reset(true));
+
+targetEl.style.background = css(target);
+readout();
+requestAnimationFrame(frame);
+</script>
+
+<nav class="i18n" aria-label="Language">
+  <span aria-current="true" lang="en">English</span>
+  <a href="/de/dollop/" hreflang="de" lang="de">Deutsch</a>
+  <a href="/es/dollop/" hreflang="es" lang="es">Español</a>
+  <a href="/es-mx/dollop/" hreflang="es-MX" lang="es-MX">Español (MX)</a>
+  <a href="/fr/dollop/" hreflang="fr" lang="fr">Français</a>
+  <a href="/it/dollop/" hreflang="it" lang="it">Italiano</a>
+  <a href="/ja/dollop/" hreflang="ja" lang="ja">日本語</a>
+  <a href="/ko/dollop/" hreflang="ko" lang="ko">한국어</a>
+  <a href="/nl/dollop/" hreflang="nl" lang="nl">Nederlands</a>
+  <a href="/pt-br/dollop/" hreflang="pt-BR" lang="pt-BR">Português (BR)</a>
+  <a href="/zh-hans/dollop/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+</nav>
+</body>
+</html>

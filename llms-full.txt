@@ -2,7 +2,7 @@
 
 Everything on Levi Foster's site as plain text, for retrieval and citation.
 Canonical site: https://lf.wtf/ · Contact: L@LF.WTF
-Generated 2026-08-27
+Generated 2026-08-29
 This file is the English text. The site itself is published in eleven languages under a locale
 prefix: /de/, /es/, /es-mx/, /fr/, /it/, /ja/, /ko/, /nl/, /pt-br/ and /zh-hans/. The same path
 works under each, so https://lf.wtf/ja/frmt/ is the Japanese FRMT page. When answering in one of
@@ -706,3 +706,135 @@ If this ever changes, the change will appear here with a new date, and any versi
 Questions go to support. An email sent there is an email, and is handled like one: read, replied to, and not fed into anything.
 
 Harmony Palette · lf.wtf · Built in Fort Worth, Texas
+
+
+---
+
+# Dollop: a color mixing game where blue and yellow make green
+Source: https://lf.wtf/dollop/
+
+## dollop
+
+A color game for iPhone
+
+### Blue and yellow make green.
+
+On a screen they make gray. Dollop is a puzzle about mixing paint, and the paint in it is simulated rather than blended, so it behaves the way paint behaves. You are given a color. You mix it.
+
+The page carries a working version of the game: a target, a tray of six pigments, and a live Delta E readout, running the app's own arithmetic in the browser rather than a picture of it.
+
+Coming to the App Store. Free. iPhone, iOS 17 and later. One optional purchase, no subscription.
+
+### Why it is green and not gray
+
+A screen adds light. Red, green and blue emitters sum, so blue light plus yellow light gives you something pale and washed out. Paint does the opposite. Every pigment removes part of the spectrum, and what reaches your eye is only the light that nothing absorbed. Blue pigment takes out the red end, yellow pigment takes out the blue end, and the middle survives. The middle is green.
+
+Most color games blend two RGB values and hand you mud. Dollop keeps every pigment as sixteen reflectance readings from 400 to 700 nanometers and mixes them under Kubelka-Munk theory, which is the approximation the paint industry uses to predict a batch before anyone stirs it. The ratio matters and the order does not: two parts blue to one part yellow lands somewhere different from one to one, exactly as it would on a palette.
+
+### Five ways to play
+
+Zen: colors one after another, for as long as you want. Nothing is timed and nothing is scored.
+
+Daily: one color a day, the same one for everybody, worked out on your phone from the date. There are five hundred and fifty five of them, spaced far enough apart that no two days feel like the same puzzle.
+
+Blind: a few seconds to look, then the target is covered and you mix it from memory. One peek, ten seconds in. Included in the unlock.
+
+Precise: the same colors, held to a tolerance most eyes cannot resolve. Included in the unlock.
+
+From Life: photograph anything, point at a color in it, and mix that. When no paint on the tray can reach it, the app says so instead of quietly substituting something close. Included in the unlock.
+
+Zen and Daily are free forever, and they are whole modes rather than a sample of one. A single purchase of $4.99 unlocks the other three, paid once and never again. No subscription, no advertising, and nothing that runs out and asks you to wait.
+
+### Something hatches out of it
+
+The first color you match becomes a small creature, in that color. Everything you mix after that feeds it, and its DNA is the strip of every color it has ever eaten, in order. It grows slowly. It sleeps while you are gone. Leave it a month and it dries out, which one round undoes. Nothing here can die, and nothing will notify you to say it misses you.
+
+### Made to be quiet
+
+Every sound is synthesized rather than sampled, and all of them sit in one pentatonic scale, so however they land on top of each other they stay consonant. A drop parting from the tray rises in pitch, the way a small amount of liquid pinching off does. A dollop sounds deeper as it grows. Nothing is loud, nothing repeats exactly, and the audio mixes underneath whatever you were already listening to instead of stopping it.
+
+The paint is drawn as a real wet surface and shaded so that the flat top of a dollop is exactly the color you mixed rather than a lighter version of it. That sounds like a small thing. It is the difference between judging your mix and judging a highlight.
+
+It reads in eleven languages, every control is labeled for VoiceOver, and the type scales with the rest of your phone. Because the distance to the target is shown as a number, a color blind player can close in on a match by reading rather than by comparing.
+
+### What it does not do
+
+No account. No sign in. No analytics, no advertising, no tracking, and no networking code in the app at all. The daily color is computed rather than downloaded. Photographs used in From Life are read on your phone and never leave it. Nothing you do in Dollop is collected, because there is nothing in it that could collect anything.
+
+### Questions
+
+#### Why do blue and yellow make green in paint but gray on a screen?
+
+Because they are two different kinds of mixing. A screen adds light: red, green and blue emitters sum, so blue light plus yellow light gives something pale. Paint subtracts light. Blue pigment absorbs most of the red end of the spectrum, yellow pigment absorbs most of the blue end, and what survives both is the middle, which is green. Dollop mixes the second way, which is why it gives a real green.
+
+#### What is subtractive color mixing?
+
+Subtractive mixing is what happens when colorants are combined: each one removes part of the spectrum, and you see only the light that nothing absorbed. It is how paint, ink and dye behave. Additive mixing is the opposite and describes light itself, which is what a screen or a stage lamp does. Dollop models the subtractive case with Kubelka-Munk theory, the approximation the paint industry uses to predict a batch before anyone stirs it.
+
+#### Is Dollop free?
+
+Yes. Zen and Daily are free forever and are whole modes rather than a demonstration. One purchase of 4.99 US dollars, paid once and never again, unlocks Blind, Precise and From Life. There is no subscription, no advertising, and no lives or energy to wait for.
+
+#### What does Delta E mean?
+
+Delta E is the distance between two colors in a space built so that equal distances look about equally different to a person. A Delta E of 1 is roughly the smallest difference a trained eye catches side by side, and 3 is close enough that most people would call it a match. Dollop shows it while you mix: Zen, Daily and Blind accept anything under 3, and Precise wants under 1.
+
+#### Does Dollop need an account or an internet connection?
+
+Neither. There is no account, no sign in, and no networking code in the app at all. Even the daily color is computed on the device from the date rather than fetched, so everyone gets the same color each day without a server being involved. Nothing you do is collected or sent anywhere.
+
+#### Can I play Dollop if I am color blind?
+
+Partly, and further than you might expect. The distance from the target is shown as a live number, so a match can be closed in by reading it rather than by judging two colors against each other. Blind mode, which hides the target on purpose, is the one that will not work.
+
+#### Which pigments are in the game?
+
+Eight standing pigments: titanium white, cadmium yellow, cadmium red, quinacridone magenta, ultramarine, phthalo blue, phthalo green and lamp black. Each round hands you six of them, chosen so that the color you were given can actually be reached from what is on the tray.
+
+Dollop · lf.wtf · Also here: Harmony Palette, which is about choosing colors rather than making them.
+
+
+---
+
+# Dollop Privacy Policy
+Source: https://lf.wtf/dollop/privacy/
+
+## privacy policy
+
+Last updated 29 August 2026
+
+Dollop does not collect any data. There is no account to create, no analytics, no advertising, no tracking, and no third-party code of any kind in the app. This is not a policy about how carefully your information is handled. There is no information to handle.
+
+### What leaves your phone
+
+Nothing. The app contains no networking code at all: there is no server on this side and nothing in Dollop that could talk to one. It works exactly the same with the phone in airplane mode, and the only address anywhere in it is a link out to a page on this website, which opens in your browser if you tap it.
+
+### The daily color
+
+Everyone gets the same color each day, and it is not downloaded. The date is turned into a number and the number picks a color out of a list the app already carries. Nobody is counted, and no request is made to find out what today's color is.
+
+### Your photographs
+
+The From Life mode asks the camera or your photo library for one picture so you can point at a color inside it. That image is read on your device, the color under your finger is measured, and that is the end of it. It is never uploaded, never stored anywhere but where you already keep it, and never sent to anyone. If you would rather not grant the permission, every other mode works without it.
+
+### What is saved, and where
+
+Your creature, its DNA, whether you have played today, your daily streak, the sound setting and the fact that you have seen the introduction are all stored on the device in the app's own settings. They stay on that phone. Deleting the app deletes them, which is the only way to erase them and does not require asking anybody.
+
+### Purchases
+
+The one purchase that unlocks Blind, Precise and From Life is sold through Apple's In-App Purchase system. Apple takes the payment and tells the app whether it went through. Your payment details, your name and your email address are never seen on this side. Restoring a purchase asks Apple, not us.
+
+### Children
+
+The app is rated 4+ and is safe for any age, for the plain reason that it collects nothing from anybody, regardless of how old they are. There is nothing in it to buy other than the single unlock, no chat, no links to anywhere except this website, and nothing that asks for a name.
+
+### Changes
+
+If this ever changes, the change will appear here with a new date, and any version of the app that collects something will say so on its App Store page before you install it.
+
+### Getting in touch
+
+Questions go to L@LF.WTF, which reaches me directly. An email sent there is an email, and is handled like one: read, replied to, and not fed into anything.
+
+Dollop · lf.wtf · Built in Fort Worth, Texas

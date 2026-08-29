@@ -20,7 +20,8 @@ ROOT = Path(__file__).resolve().parent.parent
 ENGLISH_ONLY = {}
 
 WEIGHT = {"": ("weekly", "1.0"), "frmt/": ("monthly", "0.9"), "modul8/": ("monthly", "0.9"),
-          "cyano/": ("monthly", "0.9"), "harmony/": ("monthly", "0.9")}
+          "cyano/": ("monthly", "0.9"), "harmony/": ("monthly", "0.9"),
+          "dollop/": ("monthly", "0.9")}
 
 
 def main(lastmod):

@@ -58,6 +58,8 @@ PAGES = {
     "modul8/privacy/index.html": "modul8/privacy/",
     "harmony/index.html": "harmony/",
     "harmony/privacy/index.html": "harmony/privacy/",
+    "dollop/index.html": "dollop/",
+    "dollop/privacy/index.html": "dollop/privacy/",
 }
 
 ATTRS = {"content", "alt", "title", "aria-label", "placeholder"}
@@ -165,6 +167,20 @@ def strip_injected(source):
     source = re.sub(r'\n?<link rel="alternate" hreflang="[^"]*" href="[^"]*">', "", source)
     source = re.sub(r'\n?<meta property="og:locale:alternate" content="[^"]*">', "", source)
     return source
+
+
+def occurrences(source):
+    """Every translatable string in the page, in document order, **with repeats kept**.
+
+    The dictionary wants each string once. The forward scan wants each *appearance*, because it
+    replaces at most one per pair and never backtracks: with a deduplicated list, a string used
+    twice on a page is translated in the first place it appears and left in English in the second.
+    That is what happened to the word "Free" in the work list, which reads "iPhone / Kostenlos" on
+    one card and "iPhone / Free" on the next in all ten languages.
+    """
+    walk = _Walk()
+    walk.feed(strip_injected(source))
+    return [v.strip() for _, v in walk.segments if v.strip()]
 
 
 def extract(source):
@@ -344,7 +360,11 @@ class Face:
 def build_page(source, locale, page_url, table):
     """One localised page: translated copy, correct language metadata, reciprocal alternates."""
     _, hreflang, og_locale, _ = LOCALES[locale]
-    pairs = [(e, t) for e, t in table if e != t]
+    # One pair per appearance rather than one per distinct string, so a repeated segment is
+    # translated everywhere it occurs. Strings that translate to themselves are dropped: they are
+    # brand names, and searching for them would move the cursor past copy that still needs work.
+    lookup = dict(table)
+    pairs = [(v, lookup[v]) for v in occurrences(source) if lookup.get(v, v) != v]
     out, misses = _apply_text(source, pairs)
     out = _apply_ld(out, dict(table), hreflang)
 
