@@ -31,7 +31,15 @@ Rules, all taken from the app rather than invented for the page:
 - **Committed to light.** The app forces light mode because the whole look is paper, and a page
   that inverted it would be showing something the product is not.
 
-The colours in the mixing demonstration are not picked to look right. They are the sixteen band
-reflectance spectra of phthalo blue and cadmium yellow, mixed under Kubelka-Munk and converted
-through the CIE 1931 observer, in the browser, by the same arithmetic the app runs. That is the
-page's one argument and it should not be faked.
+The colors in the hero are not picked to look right. The page carries the same eight pigment control
+points the app carries, expands them to sixteen bands with the same smoothstep, mixes them in K/S
+under Kubelka-Munk and converts through the CIE 1931 observer, in the browser. Targets are built the
+way the game builds them, by inverting a whole number recipe over the tray, which is what guarantees
+every one of them is reachable. That is the page's one argument and it must not be faked: a CSS
+gradient claiming that blue and yellow make green would be the right claim with the wrong evidence.
+
+Two consequences worth keeping. The board is a `<canvas>` marked `aria-hidden`, and everything it
+says goes through a `role="status"` line underneath, so the demonstration is narrated rather than
+silent. And every string it speaks lives in a hidden block in the markup, because `tools/i18n.py`
+refuses to read inside a `<script>` and anything left in there would have shipped in English to ten
+languages.
