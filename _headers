@@ -18,6 +18,10 @@
 /harmony/assets/*
   Cache-Control: public, max-age=31536000, immutable
 
+# Immutable means immutable: a file under here must never be edited in place, only added beside
+# the old one under a new name. Replacing dollop/assets/icon.png after this rule existed left the
+# previous icon pinned at the edge and in every browser that had seen it, for a year, with no way
+# to withdraw it. The current one is icon-2.png; the next is icon-3.png.
 /dollop/assets/*
   Cache-Control: public, max-age=31536000, immutable
 
