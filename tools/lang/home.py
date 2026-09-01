@@ -599,40 +599,44 @@ T["A colour harmony and palette app for iPhone and iPad, with an interactive whe
 #: are the only place the home page mentions the game, and they carry the same claim its hero does
 #: so that the two cannot drift apart.
 
-T["A color mixing game for iPhone. The paint is simulated rather than blended, so blue and\n          yellow make green instead of the gray you get from averaging two screen colors. Five\n          modes, a creature that hatches out of your first match, and nothing in it that hurries you."] = (
-    "Ein Farbmischspiel fürs iPhone. Die Farbe wird simuliert statt überblendet, deshalb ergeben "
-    "Blau und Gelb Grün und nicht das Grau, das beim Mitteln zweier Bildschirmfarben herauskommt. "
-    "Fünf Modi, ein Wesen, das aus deinem ersten Treffer schlüpft, und nichts darin, das dich "
-    "hetzt.",
-    "Un juego de mezcla de colores para iPhone. La pintura se simula en vez de fundirse, así que el "
-    "azul y el amarillo dan verde y no el gris que sale de promediar dos colores de pantalla. Cinco "
-    "modos, una criatura que nace de tu primer acierto, y nada dentro que te meta prisa.",
-    "Un juego de mezcla de colores para iPhone. La pintura se simula en vez de fundirse, así que el "
-    "azul y el amarillo dan verde y no el gris que sale de promediar dos colores de pantalla. Cinco "
-    "modos, una criatura que nace de tu primer acierto, y nada dentro que te apure.",
-    "Un jeu de mélange de couleurs pour iPhone. La peinture est simulée plutôt que fondue : le bleu "
-    "et le jaune donnent donc du vert et non le gris qu'on obtient en moyennant deux couleurs "
-    "d'écran. Cinq modes, une créature qui éclot de votre première réussite, et rien dedans qui "
-    "vous presse.",
-    "Un gioco di mescolanza dei colori per iPhone. La vernice è simulata invece che sfumata, così "
-    "blu e giallo danno verde e non il grigio che esce dal fare la media di due colori dello "
-    "schermo. Cinque modalità, una creatura che nasce dal tuo primo abbinamento, e niente che ti "
-    "metta fretta.",
-    "iPhone のための色混ぜゲーム。絵の具はブレンドではなくシミュレーションなので、青と黄は、"
-    "画面の色を平均したときの灰色ではなく緑になります。五つのモード、最初に合わせた色から孵る"
-    "生きもの、そして急かすものは何もありません。",
-    "iPhone을 위한 색 혼합 게임. 물감을 겹쳐 섞는 대신 시뮬레이션하기 때문에, 파랑과 노랑이 화면 "
-    "색 두 개를 평균 낸 회색이 아니라 초록이 됩니다. 다섯 가지 모드, 처음 맞춘 색에서 부화하는 "
-    "생물, 그리고 재촉하는 것은 하나도 없습니다.",
-    "Een kleurmengspel voor iPhone. De verf wordt gesimuleerd in plaats van gemengd, dus blauw en "
-    "geel worden groen in plaats van het grijs dat je krijgt door twee schermkleuren te middelen. "
-    "Vijf modi, een wezen dat uit je eerste treffer komt, en niets erin dat je opjaagt.",
-    "Um jogo de mistura de cores para iPhone. A tinta é simulada em vez de mesclada, então azul e "
-    "amarelo dão verde e não o cinza que sai de tirar a média de duas cores de tela. Cinco modos, "
-    "uma criatura que nasce do seu primeiro acerto, e nada ali dentro que te apresse.",
-    "一款 iPhone 上的调色游戏。颜料是被模拟出来的，不是简单混合，所以蓝加黄得到的是绿色，"
-    "而不是把两个屏幕颜色取平均后的灰。五种模式，一只从你配对的第一个颜色里孵出来的小生物，"
-    "以及没有任何催着你的东西。")
+T["A color mixing game for iPhone. You are given a color and you mix it, out of paint that\n          behaves like paint: blue and yellow make green here, not the gray two screen colors would\n          average to. Five modes, a creature that hatches out of your first match, and nothing in it\n          that hurries you."] = (
+    "Ein Farbmischspiel fürs iPhone. Du bekommst einen Farbton und mischst ihn aus Farbe, die sich "
+    "wie Farbe verhält: Blau und Gelb ergeben hier Grün und nicht das Grau, zu dem zwei "
+    "Bildschirmfarben sich mitteln würden. Fünf Modi, ein Wesen, das aus deinem ersten Treffer "
+    "schlüpft, und nichts darin, das dich hetzt.",
+    "Un juego de mezcla de colores para iPhone. Te dan un color y lo mezclas con pintura que se "
+    "comporta como pintura: aquí el azul y el amarillo dan verde, no el gris al que se promediarían "
+    "dos colores de pantalla. Cinco modos, una criatura que nace de tu primer acierto, y nada "
+    "dentro que te meta prisa.",
+    "Un juego de mezcla de colores para iPhone. Te dan un color y lo mezclas con pintura que se "
+    "comporta como pintura: aquí el azul y el amarillo dan verde, no el gris al que se promediarían "
+    "dos colores de pantalla. Cinco modos, una criatura que nace de tu primer acierto, y nada "
+    "dentro que te apure.",
+    "Un jeu de mélange de couleurs pour iPhone. On vous donne une couleur et vous la mélangez avec "
+    "de la peinture qui se comporte comme de la peinture : ici le bleu et le jaune donnent du vert, "
+    "pas le gris qu'on obtiendrait en moyennant deux couleurs d'écran. Cinq modes, une créature qui "
+    "éclot de votre première réussite, et rien dedans qui vous presse.",
+    "Un gioco di mescolanza dei colori per iPhone. Ti viene dato un colore e lo mescoli con vernice "
+    "che si comporta come vernice: qui blu e giallo danno verde, non il grigio a cui si "
+    "mediarebbero due colori dello schermo. Cinque modalità, una creatura che nasce dal tuo primo "
+    "abbinamento, e niente che ti metta fretta.",
+    "iPhone のための色混ぜゲーム。示された色を、絵の具らしく振る舞う絵の具で混ぜてつくります。"
+    "ここでは青と黄が緑になります。画面の色を平均したときの灰色ではありません。五つのモード、"
+    "最初に合わせた色から孵る生きもの、そして急かすものは何もありません。",
+    "iPhone을 위한 색 혼합 게임. 주어진 색을, 물감답게 움직이는 물감으로 섞어 만듭니다. 여기서 "
+    "파랑과 노랑은 초록이 됩니다. 화면 색 두 개를 평균 낸 회색이 아닙니다. 다섯 가지 모드, 처음 "
+    "맞춘 색에서 부화하는 생물, 그리고 재촉하는 것은 하나도 없습니다.",
+    "Een kleurmengspel voor iPhone. Je krijgt een kleur en mengt die uit verf die zich als verf "
+    "gedraagt: blauw en geel worden hier groen, niet het grijs dat je krijgt door twee "
+    "schermkleuren te middelen. Vijf modi, een wezen dat uit je eerste treffer komt, en niets erin "
+    "dat je opjaagt.",
+    "Um jogo de mistura de cores para iPhone. Você recebe uma cor e a mistura com tinta que se "
+    "comporta como tinta: aqui azul e amarelo dão verde, não o cinza que sai da média de duas cores "
+    "de tela. Cinco modos, uma criatura que nasce do seu primeiro acerto, e nada ali dentro que te "
+    "apresse.",
+    "一款 iPhone 上的调色游戏。给你一个颜色，你用表现得像真颜料的颜料把它调出来：在这里蓝加黄"
+    "是绿色，而不是把两个屏幕颜色取平均后的灰。五种模式，一只从你配对的第一个颜色里孵出来的"
+    "小生物，以及没有任何催着你的东西。")
 
 T["Coming to the App Store"] = (
     "Bald im App Store",
@@ -646,22 +650,23 @@ T["Coming to the App Store"] = (
     "Em breve na App Store",
     "即将上架 App Store")
 
-T["A color mixing game for iPhone in which paint mixes subtractively, so blue and yellow make green rather than gray."] = (
-    "Ein Farbmischspiel fürs iPhone, in dem Farbe subtraktiv mischt, sodass Blau und Gelb Grün "
-    "ergeben statt Grau.",
-    "Un juego de mezcla de colores para iPhone en el que la pintura mezcla de forma sustractiva, "
-    "así que el azul y el amarillo dan verde y no gris.",
-    "Un juego de mezcla de colores para iPhone en el que la pintura mezcla de forma sustractiva, "
-    "así que el azul y el amarillo dan verde y no gris.",
-    "Un jeu de mélange de couleurs pour iPhone où la peinture se mélange de façon soustractive, si "
-    "bien que le bleu et le jaune donnent du vert et non du gris.",
-    "Un gioco di mescolanza dei colori per iPhone in cui la vernice si mescola in modo sottrattivo, "
-    "così blu e giallo danno verde e non grigio.",
-    "絵の具が減法で混ざる iPhone 用の色混ぜゲーム。だから青と黄は灰色ではなく緑になります。",
-    "물감이 감산으로 섞이는 iPhone용 색 혼합 게임. 그래서 파랑과 노랑이 회색이 아니라 초록이 "
-    "됩니다.",
-    "Een kleurmengspel voor iPhone waarin verf subtractief mengt, zodat blauw en geel groen worden "
-    "in plaats van grijs.",
-    "Um jogo de mistura de cores para iPhone em que a tinta mistura de forma subtrativa, então azul "
-    "e amarelo dão verde e não cinza.",
-    "一款 iPhone 上的调色游戏，颜料按减法混合，所以蓝加黄是绿色而不是灰色。")
+T["A slow color mixing game for iPhone, where blue and yellow make green the way they do on a palette rather than gray the way they do on a screen."] = (
+    "Ein ruhiges Farbmischspiel fürs iPhone, in dem Blau und Gelb Grün ergeben wie auf einer "
+    "Palette und nicht Grau wie auf einem Bildschirm.",
+    "Un juego de mezcla de colores tranquilo para iPhone, donde el azul y el amarillo dan verde "
+    "como en una paleta y no gris como en una pantalla.",
+    "Un juego de mezcla de colores tranquilo para iPhone, donde el azul y el amarillo dan verde "
+    "como en una paleta y no gris como en una pantalla.",
+    "Un jeu de mélange de couleurs tranquille pour iPhone, où le bleu et le jaune donnent du vert "
+    "comme sur une palette et non du gris comme sur un écran.",
+    "Un gioco di mescolanza dei colori tranquillo per iPhone, dove blu e giallo danno verde come su "
+    "una tavolozza e non grigio come su uno schermo.",
+    "iPhone のための静かな色混ぜゲーム。青と黄は、画面の上の灰色ではなく、パレットの上と同じ緑に"
+    "なります。",
+    "iPhone을 위한 차분한 색 혼합 게임. 파랑과 노랑이 화면에서처럼 회색이 아니라 팔레트에서처럼 "
+    "초록이 됩니다.",
+    "Een rustig kleurmengspel voor iPhone, waarin blauw en geel groen worden zoals op een palet en "
+    "niet grijs zoals op een scherm.",
+    "Um jogo de mistura de cores calmo para iPhone, onde azul e amarelo dão verde como numa paleta "
+    "e não cinza como numa tela.",
+    "一款安静的 iPhone 调色游戏，蓝加黄得到的是调色板上的绿，而不是屏幕上的灰。")

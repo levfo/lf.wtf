@@ -719,9 +719,9 @@ A color game for iPhone
 
 ### Blue and yellow make green.
 
-On a screen they make gray. Dollop is a puzzle about mixing paint, and the paint in it is simulated rather than blended, so it behaves the way paint behaves. You are given a color. You mix it.
+On a screen they make gray. Dollop is a puzzle about mixing paint, and the paint in it behaves the way paint behaves. You are given a color. You mix it.
 
-The page carries a working version of the game: a target, a tray of six pigments, and a live Delta E readout, running the app's own arithmetic in the browser rather than a picture of it.
+The page carries a working version of the game: a target, a tray of six pigments, and a live Delta E readout.
 
 Coming to the App Store. Free. iPhone, iOS 17 and later. One optional purchase, no subscription.
 
@@ -729,7 +729,7 @@ Coming to the App Store. Free. iPhone, iOS 17 and later. One optional purchase, 
 
 A screen adds light. Red, green and blue emitters sum, so blue light plus yellow light gives you something pale and washed out. Paint does the opposite. Every pigment removes part of the spectrum, and what reaches your eye is only the light that nothing absorbed. Blue pigment takes out the red end, yellow pigment takes out the blue end, and the middle survives. The middle is green.
 
-Most color games blend two RGB values and hand you mud. Dollop keeps every pigment as sixteen reflectance readings from 400 to 700 nanometers and mixes them under Kubelka-Munk theory, which is the approximation the paint industry uses to predict a batch before anyone stirs it. The ratio matters and the order does not: two parts blue to one part yellow lands somewhere different from one to one, exactly as it would on a palette.
+So the ratio matters and the order does not. Two parts blue to one part yellow lands somewhere different from one to one, exactly as it would on a palette, and getting there is the game: a little more yellow, a little more white, until the two halves of the screen stop being two halves.
 
 ### Five ways to play
 
@@ -769,7 +769,7 @@ Because they are two different kinds of mixing. A screen adds light: red, green 
 
 #### What is subtractive color mixing?
 
-Subtractive mixing is what happens when colorants are combined: each one removes part of the spectrum, and you see only the light that nothing absorbed. It is how paint, ink and dye behave. Additive mixing is the opposite and describes light itself, which is what a screen or a stage lamp does. Dollop models the subtractive case with Kubelka-Munk theory, the approximation the paint industry uses to predict a batch before anyone stirs it.
+Subtractive mixing is what happens when colorants are combined: each one removes part of the spectrum, and you see only the light that nothing absorbed. It is how paint, ink and dye behave. Additive mixing is the opposite and describes light itself, which is what a screen or a stage lamp does. Dollop is the subtractive kind, which is why mixing in it feels like mixing paint.
 
 #### Is Dollop free?
 

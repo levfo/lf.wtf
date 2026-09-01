@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dollop : un jeu de mélange de couleurs où le bleu et le jaune donnent du vert</title>
-<meta name="description" content="Un puzzle de mélange de couleurs lent et apaisant pour iPhone. La peinture est simulée plutôt que fondue : le bleu et le jaune donnent donc du vert, pas du gris. Gratuit, sans compte, sans publicité, sans connexion.">
+<meta name="description" content="Un puzzle de mélange de couleurs lent et apaisant pour iPhone. Ici le bleu et le jaune donnent du vert, comme sur une palette et non comme sur un écran. Gratuit, sans compte, sans publicité, sans connexion.">
 <meta name="color-scheme" content="light">
 <link rel="alternate" hreflang="en" href="https://lf.wtf/dollop/">
 <link rel="alternate" hreflang="de" href="https://lf.wtf/de/dollop/">
@@ -23,7 +23,7 @@
 <link rel="apple-touch-icon" href="/dollop/assets/icon-2.png">
 
 <meta property="og:title" content="Dollop : un jeu de mélange de couleurs où le bleu et le jaune donnent du vert">
-<meta property="og:description" content="Un puzzle de peinture lent et apaisant pour iPhone. Le pigment est simulé, pas fondu.">
+<meta property="og:description" content="Un puzzle de peinture lent et apaisant pour iPhone. On vous donne une couleur. Vous la mélangez.">
 <meta property="og:image" content="https://lf.wtf/dollop/assets/icon-2.png">
 <meta property="og:image:alt" content="L'icône de Dollop : une noisette de bleu et une de jaune qui se chevauchent, vertes là où elles se croisent.">
 <meta property="og:url" content="https://lf.wtf/fr/dollop/">
@@ -42,7 +42,7 @@
 <meta property="og:locale:alternate" content="zh_CN">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Dollop : un jeu de mélange de couleurs où le bleu et le jaune donnent du vert">
-<meta name="twitter:description" content="Un puzzle de peinture lent et apaisant pour iPhone. Le pigment est simulé, pas fondu.">
+<meta name="twitter:description" content="Un puzzle de peinture lent et apaisant pour iPhone. On vous donne une couleur. Vous la mélangez.">
 <meta name="twitter:image" content="https://lf.wtf/dollop/assets/icon-2.png">
 
 <script type="application/ld+json">
@@ -56,7 +56,7 @@
       "alternateName": "Dollop: Color Mixing Game",
       "url": "https://lf.wtf/dollop/",
       "image": "https://lf.wtf/dollop/assets/icon-2.png",
-      "description": "Un puzzle de mélange de couleurs pour iPhone où la peinture se mélange de façon soustractive. Chaque pigment est conservé sous forme de seize mesures de réflectance de 400 à 700 nanomètres et combiné selon la théorie de Kubelka-Munk : le bleu et le jaune donnent donc du vert et non du gris. Cinq modes, une créature qui éclot de la première couleur réussie, et ni compte, ni publicité, ni réseau d'aucune sorte.",
+      "description": "Un puzzle de mélange de couleurs tranquille pour iPhone. On vous donne une couleur et vous la mélangez à partir d'un plateau de peinture, où le bleu et le jaune donnent du vert comme sur une palette et non du gris comme sur un écran. Cinq modes, une créature qui éclot de la première couleur réussie, et ni compte, ni publicité, ni réseau d'aucune sorte.",
       "applicationCategory": "GameApplication",
       "applicationSubCategory": "Puzzle",
       "operatingSystem": "iOS 17.0 or later",
@@ -132,7 +132,7 @@
           "name": "Qu'est-ce que la synthèse soustractive des couleurs ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "La synthèse soustractive, c'est ce qui se produit quand on combine des colorants : chacun retire une partie du spectre, et vous ne voyez que la lumière que rien n'a absorbée. C'est ainsi que se comportent la peinture, l'encre et la teinture. La synthèse additive est l'inverse et décrit la lumière elle-même, ce que fait un écran ou un projecteur de scène. Dollop modélise le cas soustractif avec la théorie de Kubelka-Munk, l'approximation dont l'industrie de la peinture se sert pour prévoir un lot avant que quiconque ne remue."
+            "text": "La synthèse soustractive, c'est ce qui se produit quand on combine des colorants : chacun retire une partie du spectre, et vous ne voyez que la lumière que rien n'a absorbée. C'est ainsi que se comportent la peinture, l'encre et la teinture. La synthèse additive est l'inverse et décrit la lumière elle-même, ce que fait un écran ou un projecteur de scène. Dollop est du côté soustractif, et c'est pour cela que mélanger dedans donne la sensation de mélanger de la peinture."
           }
         },
         {
@@ -351,7 +351,7 @@ justify-content:center}
 
 <section class="hero">
   <h1>Le bleu et le jaune donnent du vert.</h1>
-  <p class="lede">Sur un écran, ils donnent du gris. Dollop est un puzzle sur le mélange de la peinture, et cette peinture est simulée plutôt que fondue : elle se comporte donc comme de la peinture. On vous donne une couleur. Vous la mélangez.</p>
+  <p class="lede">Sur un écran, ils donnent du gris. Dollop est un puzzle sur le mélange de la peinture, et cette peinture se comporte comme de la peinture. On vous donne une couleur. Vous la mélangez.</p>
 
   <div class="panel">
     <div class="compare">
@@ -380,7 +380,7 @@ justify-content:center}
 <section>
   <h2>Pourquoi c'est vert et pas gris</h2>
   <p>Un écran ajoute de la lumière. Les émetteurs rouge, vert et bleu s'additionnent : la lumière bleue plus la lumière jaune donne donc quelque chose de pâle et délavé. La peinture fait l'inverse. Chaque pigment <em>retire</em> une partie du spectre, et ce qui atteint votre œil n'est que la lumière que rien n'a absorbée. Le pigment bleu retire l'extrémité rouge, le pigment jaune retire l'extrémité bleue, et le milieu survit. Le milieu, c'est le vert.</p>
-  <p>La plupart des jeux de couleur fondent deux valeurs RVB et vous rendent de la boue. Dollop garde chaque pigment sous forme de seize mesures de réflectance de 400 à 700 nanomètres et les mélange selon la théorie de Kubelka-Munk, l'approximation dont l'industrie de la peinture se sert pour prévoir un lot avant que quiconque ne remue. Le rapport compte, l'ordre non : deux parts de bleu pour une de jaune n'arrivent pas au même endroit qu'une pour une, exactement comme sur une palette.</p>
+  <p>Le rapport compte donc, et l'ordre non. Deux parts de bleu pour une de jaune n'arrivent pas au même endroit qu'une pour une, exactement comme sur une palette, et y arriver est tout le jeu : un peu plus de jaune, un peu plus de blanc, jusqu'à ce que les deux moitiés de l'écran cessent d'être deux moitiés.</p>
 </section>
 
 <section>
@@ -443,7 +443,7 @@ justify-content:center}
   <p>Parce que ce sont deux façons de mélanger différentes. Un écran ajoute de la lumière : les émetteurs rouge, vert et bleu s'additionnent, donc lumière bleue plus lumière jaune donne quelque chose de pâle. La peinture soustrait de la lumière. Le pigment bleu absorbe l'essentiel de l'extrémité rouge du spectre, le pigment jaune l'essentiel de l'extrémité bleue, et ce qui survit aux deux, c'est le milieu, c'est-à-dire le vert. Dollop mélange de la seconde façon, et c'est pour cela qu'il donne un vrai vert.</p>
 
   <h3>Qu'est-ce que la synthèse soustractive des couleurs ?</h3>
-  <p>La synthèse soustractive, c'est ce qui se produit quand on combine des colorants : chacun retire une partie du spectre, et vous ne voyez que la lumière que rien n'a absorbée. C'est ainsi que se comportent la peinture, l'encre et la teinture. La synthèse additive est l'inverse et décrit la lumière elle-même, ce que fait un écran ou un projecteur de scène. Dollop modélise le cas soustractif avec la théorie de Kubelka-Munk, l'approximation dont l'industrie de la peinture se sert pour prévoir un lot avant que quiconque ne remue.</p>
+  <p>La synthèse soustractive, c'est ce qui se produit quand on combine des colorants : chacun retire une partie du spectre, et vous ne voyez que la lumière que rien n'a absorbée. C'est ainsi que se comportent la peinture, l'encre et la teinture. La synthèse additive est l'inverse et décrit la lumière elle-même, ce que fait un écran ou un projecteur de scène. Dollop est du côté soustractif, et c'est pour cela que mélanger dedans donne la sensation de mélanger de la peinture.</p>
 
   <h3>Dollop est-il gratuit ?</h3>
   <p>Oui. Zen et Quotidien sont gratuits pour toujours et sont des modes entiers, pas une démonstration. Un seul achat de 4,99 dollars, payé une fois et plus jamais, déverrouille À l'aveugle, Précis et D'après nature. Il n'y a pas d'abonnement, pas de publicité, ni vies ni énergie à attendre.</p>

@@ -1016,3 +1016,220 @@ T = {
         "Não há assinatura.",
         "免费游玩。一次 4.99 美元的购买即可解锁盲配、精准和写生。没有订阅。"),
 }
+
+# ------------------------------------------------------- rewritten, September 2026
+#
+# The page led on the fidelity of the mixing model, which is the wrong claim for a game and is also
+# FRMT's claim rather than this one's. These replace the sentences that boasted about the engine
+# with sentences about playing it. The physics stays where it answers a question a player asks; it
+# is gone from every place it was there to impress.
+
+T.update({
+    "A slow, calming color mixing puzzle for iPhone. Blue and yellow make green here, the way "
+    "they do on a palette and not the way they do on a screen. Free, no account, no ads, no "
+    "internet needed.": (
+        "Ein ruhiges, entschleunigtes Farbmisch-Puzzle fürs iPhone. Blau und Gelb ergeben hier "
+        "Grün, so wie auf einer Palette und nicht so wie auf einem Bildschirm. Kostenlos, ohne "
+        "Konto, ohne Werbung, ohne Internet.",
+        "Un puzle de mezcla de colores lento y relajante para iPhone. Aquí el azul y el amarillo "
+        "dan verde, como en una paleta y no como en una pantalla. Gratis, sin cuenta, sin anuncios "
+        "y sin internet.",
+        "Un juego de mezcla de colores lento y relajante para iPhone. Aquí el azul y el amarillo "
+        "dan verde, como en una paleta y no como en una pantalla. Gratis, sin cuenta, sin anuncios "
+        "y sin internet.",
+        "Un puzzle de mélange de couleurs lent et apaisant pour iPhone. Ici le bleu et le jaune "
+        "donnent du vert, comme sur une palette et non comme sur un écran. Gratuit, sans compte, "
+        "sans publicité, sans connexion.",
+        "Un puzzle di mescolanza dei colori lento e rilassante per iPhone. Qui blu e giallo danno "
+        "verde, come su una tavolozza e non come su uno schermo. Gratis, senza account, senza "
+        "pubblicità, senza internet.",
+        "iPhone のためのゆっくり静かな色混ぜパズル。ここでは青と黄で緑になります。画面の上では"
+        "なく、パレットの上と同じように。無料、アカウント不要、広告なし、通信なし。",
+        "iPhone을 위한 느리고 차분한 색 혼합 퍼즐. 여기서는 파랑과 노랑이 초록이 됩니다. 화면이 "
+        "아니라 팔레트 위에서처럼. 무료, 계정 없음, 광고 없음, 인터넷 없이.",
+        "Een traag, rustgevend kleurmengspel voor iPhone. Blauw en geel worden hier groen, zoals op "
+        "een palet en niet zoals op een scherm. Gratis, zonder account, zonder advertenties, zonder "
+        "internet.",
+        "Um quebra-cabeça de mistura de cores lento e tranquilo para iPhone. Aqui azul e amarelo "
+        "dão verde, como numa paleta e não como numa tela. Grátis, sem conta, sem anúncios e sem "
+        "internet.",
+        "一款慢节奏、让人平静的 iPhone 调色解谜游戏。在这里，蓝加黄会变成绿，就像在调色板上，"
+        "而不是在屏幕上。免费，无需账号，没有广告，不联网。"),
+
+    "A slow, calming paint puzzle for iPhone. You are given a color. You mix it.": (
+        "Ein ruhiges, entschleunigtes Farbpuzzle fürs iPhone. Du bekommst einen Farbton. Du "
+        "mischst ihn.",
+        "Un puzle de pintura lento y relajante para iPhone. Te dan un color. Lo mezclas.",
+        "Un juego de pintura lento y relajante para iPhone. Te dan un color. Lo mezclas.",
+        "Un puzzle de peinture lent et apaisant pour iPhone. On vous donne une couleur. Vous la "
+        "mélangez.",
+        "Un puzzle di pittura lento e rilassante per iPhone. Ti viene dato un colore. Lo mescoli.",
+        "iPhone のためのゆっくり静かな絵の具パズル。色がひとつ示されます。それを混ぜてつくります。",
+        "iPhone을 위한 느리고 차분한 물감 퍼즐. 색이 하나 주어집니다. 그 색을 만듭니다.",
+        "Een traag, rustgevend verfspel voor iPhone. Je krijgt een kleur. Die meng je.",
+        "Um quebra-cabeça de tinta lento e tranquilo para iPhone. Você recebe uma cor. Você a "
+        "mistura.",
+        "一款慢节奏、让人平静的 iPhone 颜料解谜游戏。给你一个颜色，你把它调出来。"),
+
+    "On a screen they make gray. Dollop is a puzzle about mixing paint, and the paint in\n  it "
+    "behaves the way paint behaves. You are given a color. You mix it.": (
+        "Auf einem Bildschirm ergeben sie Grau. Dollop ist ein Puzzle über das Mischen von Farbe, "
+        "und diese Farbe verhält sich wie Farbe. Du bekommst einen Farbton. Du mischst ihn.",
+        "En una pantalla dan gris. Dollop es un puzle sobre mezclar pintura, y esa pintura se "
+        "comporta como se comporta la pintura. Te dan un color. Lo mezclas.",
+        "En una pantalla dan gris. Dollop es un juego sobre mezclar pintura, y esa pintura se "
+        "comporta como se comporta la pintura. Te dan un color. Lo mezclas.",
+        "Sur un écran, ils donnent du gris. Dollop est un puzzle sur le mélange de la peinture, et "
+        "cette peinture se comporte comme de la peinture. On vous donne une couleur. Vous la "
+        "mélangez.",
+        "Su uno schermo danno grigio. Dollop è un puzzle sul mescolare la vernice, e quella vernice "
+        "si comporta come si comporta la vernice. Ti viene dato un colore. Lo mescoli.",
+        "画面の上では灰色になります。Dollop は絵の具を混ぜるパズルで、その絵の具は絵の具の"
+        "とおりに振る舞います。色がひとつ示されます。それを混ぜてつくります。",
+        "화면에서는 회색이 됩니다. Dollop은 물감을 섞는 퍼즐이고, 그 물감은 실제 물감처럼 "
+        "움직입니다. 색이 하나 주어집니다. 그 색을 만들면 됩니다.",
+        "Op een scherm worden ze grijs. Dollop is een puzzel over het mengen van verf, en die verf "
+        "gedraagt zich zoals verf zich gedraagt. Je krijgt een kleur. Die meng je.",
+        "Numa tela eles dão cinza. Dollop é um quebra-cabeça sobre misturar tinta, e essa tinta se "
+        "comporta como tinta se comporta. Você recebe uma cor. Você a mistura.",
+        "在屏幕上它们只会变成灰色。Dollop 是一款关于调颜料的解谜游戏，而这里的颜料，表现得就像"
+        "真的颜料。给你一个颜色，你把它调出来。"),
+
+    "So the ratio matters and the order does not. Two parts blue to one part yellow lands "
+    "somewhere\n  different from one to one, exactly as it would on a palette, and getting there "
+    "is the game: a\n  little more yellow, a little more white, until the two halves of the screen "
+    "stop being two\n  halves.": (
+        "Also zählt das Verhältnis und die Reihenfolge nicht. Zwei Teile Blau auf einen Teil Gelb "
+        "landen woanders als eins zu eins, genau wie auf einer Palette, und genau dorthin zu kommen "
+        "ist das Spiel: ein wenig mehr Gelb, ein wenig mehr Weiß, bis die beiden Hälften des "
+        "Bildschirms aufhören, zwei Hälften zu sein.",
+        "Así que la proporción importa y el orden no. Dos partes de azul por una de amarillo caen "
+        "en un sitio distinto que uno a uno, igual que en una paleta, y llegar ahí es el juego: un "
+        "poco más de amarillo, un poco más de blanco, hasta que las dos mitades de la pantalla "
+        "dejan de ser dos mitades.",
+        "Así que la proporción importa y el orden no. Dos partes de azul por una de amarillo caen "
+        "en un lugar distinto que uno a uno, igual que en una paleta, y llegar ahí es el juego: un "
+        "poco más de amarillo, un poco más de blanco, hasta que las dos mitades de la pantalla "
+        "dejan de ser dos mitades.",
+        "Le rapport compte donc, et l'ordre non. Deux parts de bleu pour une de jaune n'arrivent "
+        "pas au même endroit qu'une pour une, exactement comme sur une palette, et y arriver est "
+        "tout le jeu : un peu plus de jaune, un peu plus de blanc, jusqu'à ce que les deux moitiés "
+        "de l'écran cessent d'être deux moitiés.",
+        "Quindi il rapporto conta e l'ordine no. Due parti di blu per una di giallo finiscono "
+        "altrove rispetto a uno a uno, esattamente come su una tavolozza, e arrivarci è il gioco: "
+        "un po' più di giallo, un po' più di bianco, finché le due metà dello schermo smettono di "
+        "essere due metà.",
+        "だから比率は効き、順序は効きません。青二に対して黄一は、一対一とは違うところに着地し"
+        "ます。パレットの上とまったく同じです。そこへ寄せていくことがこのゲームです。黄色を少し"
+        "足し、白を少し足し、画面の左右がふたつに見えなくなるまで。",
+        "그래서 비율은 영향을 주고 순서는 주지 않습니다. 파랑 둘에 노랑 하나는 일 대 일과 다른 "
+        "곳에 떨어집니다. 팔레트 위에서와 똑같이. 거기에 다가가는 것이 이 게임입니다. 노랑을 조금 "
+        "더, 흰색을 조금 더, 화면의 두 쪽이 더 이상 둘로 보이지 않을 때까지.",
+        "Dus de verhouding doet ertoe en de volgorde niet. Twee delen blauw op één deel geel komt "
+        "ergens anders uit dan één op één, precies zoals op een palet, en daar komen is het spel: "
+        "een beetje meer geel, een beetje meer wit, tot de twee helften van het scherm ophouden "
+        "twee helften te zijn.",
+        "Então a proporção importa e a ordem não. Duas partes de azul para uma de amarelo cai em "
+        "outro lugar que não um para um, exatamente como numa paleta, e chegar lá é o jogo: um "
+        "pouco mais de amarelo, um pouco mais de branco, até as duas metades da tela deixarem de "
+        "ser duas metades.",
+        "所以比例有影响，先后没有。两份蓝配一份黄，落点和一比一并不相同，和在调色板上完全一样。"
+        "而把它调过去，就是这个游戏：多一点黄，多一点白，直到屏幕上的两半不再是两半。"),
+
+    "Subtractive mixing is what happens when colorants are combined: each one removes part of the\n"
+    "  spectrum, and you see only the light that nothing absorbed. It is how paint, ink and dye "
+    "behave.\n  Additive mixing is the opposite and describes light itself, which is what a screen "
+    "or a stage lamp\n  does. Dollop is the subtractive kind, which is why mixing in it feels like "
+    "mixing paint.": (
+        "Subtraktive Mischung ist das, was passiert, wenn Farbmittel zusammenkommen: jedes entfernt "
+        "einen Teil des Spektrums, und du siehst nur das Licht, das nichts geschluckt hat. So "
+        "verhalten sich Farbe, Tinte und Farbstoff. Additive Mischung ist das Gegenteil und "
+        "beschreibt das Licht selbst, also das, was ein Bildschirm oder ein Bühnenscheinwerfer tut. "
+        "Dollop ist die subtraktive Sorte, und deshalb fühlt sich Mischen darin an wie Farbe "
+        "mischen.",
+        "La mezcla sustractiva es lo que ocurre cuando se combinan colorantes: cada uno quita una "
+        "parte del espectro y solo ves la luz que nada absorbió. Es como se comportan la pintura, "
+        "la tinta y el tinte. La mezcla aditiva es lo contrario y describe la luz misma, que es lo "
+        "que hace una pantalla o un foco de escenario. Dollop es de la clase sustractiva, y por eso "
+        "mezclar en él se siente como mezclar pintura.",
+        "La mezcla sustractiva es lo que ocurre cuando se combinan colorantes: cada uno quita una "
+        "parte del espectro y solo ves la luz que nada absorbió. Es como se comportan la pintura, "
+        "la tinta y el tinte. La mezcla aditiva es lo contrario y describe la luz misma, que es lo "
+        "que hace una pantalla o un foco de escenario. Dollop es de la clase sustractiva, y por eso "
+        "mezclar en él se siente como mezclar pintura.",
+        "La synthèse soustractive, c'est ce qui se produit quand on combine des colorants : chacun "
+        "retire une partie du spectre, et vous ne voyez que la lumière que rien n'a absorbée. C'est "
+        "ainsi que se comportent la peinture, l'encre et la teinture. La synthèse additive est "
+        "l'inverse et décrit la lumière elle-même, ce que fait un écran ou un projecteur de scène. "
+        "Dollop est du côté soustractif, et c'est pour cela que mélanger dedans donne la sensation "
+        "de mélanger de la peinture.",
+        "La mescolanza sottrattiva è ciò che accade quando si combinano coloranti: ciascuno toglie "
+        "una parte dello spettro, e vedi soltanto la luce che nulla ha assorbito. È così che si "
+        "comportano vernice, inchiostro e tintura. La mescolanza additiva è l'opposto e descrive la "
+        "luce stessa, cioè quello che fa uno schermo o un faro da palco. Dollop è del tipo "
+        "sottrattivo, ed è per questo che mescolare al suo interno sembra mescolare vernice.",
+        "減法混色とは、色材を混ぜたときに起きることです。それぞれがスペクトルの一部を取り去り、"
+        "何にも吸われなかった光だけが見えます。絵の具もインクも染料もこう振る舞います。加法混色"
+        "はその逆で、光そのものの話です。画面や舞台照明がしているのがそれです。Dollop は減法の"
+        "側なので、混ぜている感じが絵の具を混ぜている感じになります。",
+        "감산 혼합은 색료를 합쳤을 때 일어나는 일입니다. 각각이 스펙트럼의 일부를 덜어내고, "
+        "아무것도 흡수하지 않은 빛만 보입니다. 물감과 잉크와 염료가 이렇게 움직입니다. 가산 "
+        "혼합은 그 반대이고 빛 자체를 설명합니다. 화면이나 무대 조명이 하는 일이 그것입니다. "
+        "Dollop은 감산 쪽이어서, 여기서 색을 섞으면 물감을 섞는 느낌이 납니다.",
+        "Subtractief mengen is wat er gebeurt als kleurstoffen worden gecombineerd: elk haalt een "
+        "deel van het spectrum weg, en je ziet alleen het licht dat niets heeft opgeslokt. Zo "
+        "gedragen verf, inkt en kleurstof zich. Additief mengen is het omgekeerde en beschrijft het "
+        "licht zelf, wat een scherm of een toneellamp doet. Dollop is de subtractieve soort, en "
+        "daarom voelt mengen erin als verf mengen.",
+        "Mistura subtrativa é o que acontece quando corantes são combinados: cada um remove uma "
+        "parte do espectro, e você vê só a luz que nada absorveu. É assim que tinta, tinta de "
+        "impressão e corante se comportam. A mistura aditiva é o oposto e descreve a luz em si, que "
+        "é o que uma tela ou um refletor de palco faz. O Dollop é do tipo subtrativo, e é por isso "
+        "que misturar nele parece misturar tinta.",
+        "减法混色，指的是色料被混在一起时发生的事：每一种都减去光谱里的一段，你看到的只有没被"
+        "任何东西吸收掉的光。颜料、油墨和染料都是这样。加法混色正好相反，说的是光本身，屏幕和"
+        "舞台灯做的就是这件事。Dollop 属于减法这一侧，所以在里面调色，手感就像在调真的颜料。"),
+
+    "A slow color mixing puzzle for iPhone. You are given a color and you mix it out of a tray of "
+    "paint, where blue and yellow make green the way they do on a palette rather than gray the way "
+    "they do on a screen. Five modes, a creature that hatches from the first color you match, and "
+    "no account, advertising or networking of any kind.": (
+        "Ein ruhiges Farbmisch-Puzzle fürs iPhone. Du bekommst einen Farbton und mischst ihn aus "
+        "einer Palette, auf der Blau und Gelb Grün ergeben wie auf einer echten Palette und nicht "
+        "Grau wie auf einem Bildschirm. Fünf Modi, ein Wesen, das aus dem ersten getroffenen "
+        "Farbton schlüpft, und weder Konto noch Werbung noch irgendeine Netzwerkverbindung.",
+        "Un puzle de mezcla de colores tranquilo para iPhone. Te dan un color y lo mezclas a partir "
+        "de una bandeja de pintura, donde el azul y el amarillo dan verde como en una paleta y no "
+        "gris como en una pantalla. Cinco modos, una criatura que nace del primer color que "
+        "aciertas, y ni cuenta ni publicidad ni conexión de ningún tipo.",
+        "Un juego de mezcla de colores tranquilo para iPhone. Te dan un color y lo mezclas a partir "
+        "de una bandeja de pintura, donde el azul y el amarillo dan verde como en una paleta y no "
+        "gris como en una pantalla. Cinco modos, una criatura que nace del primer color que "
+        "aciertas, y ni cuenta ni publicidad ni conexión de ningún tipo.",
+        "Un puzzle de mélange de couleurs tranquille pour iPhone. On vous donne une couleur et vous "
+        "la mélangez à partir d'un plateau de peinture, où le bleu et le jaune donnent du vert "
+        "comme sur une palette et non du gris comme sur un écran. Cinq modes, une créature qui "
+        "éclot de la première couleur réussie, et ni compte, ni publicité, ni réseau d'aucune "
+        "sorte.",
+        "Un puzzle di mescolanza dei colori tranquillo per iPhone. Ti viene dato un colore e lo "
+        "mescoli da un vassoio di vernice, dove blu e giallo danno verde come su una tavolozza e "
+        "non grigio come su uno schermo. Cinque modalità, una creatura che nasce dal primo colore "
+        "indovinato, e nessun account, nessuna pubblicità e nessuna rete di alcun tipo.",
+        "iPhone のための静かな色混ぜパズル。示された色を、絵の具のトレイから混ぜてつくります。"
+        "ここでは青と黄が、画面の上の灰色ではなく、パレットの上と同じ緑になります。五つのモード、"
+        "最初に合わせた色から孵る生きもの、そしてアカウントも広告も一切の通信もありません。",
+        "iPhone을 위한 차분한 색 혼합 퍼즐. 주어진 색을 물감 트레이에서 섞어 만듭니다. 여기서 "
+        "파랑과 노랑은 화면에서처럼 회색이 아니라 팔레트에서처럼 초록이 됩니다. 다섯 가지 모드, "
+        "처음 맞춘 색에서 부화하는 생물, 그리고 계정도 광고도 어떤 종류의 통신도 없습니다.",
+        "Een rustig kleurmengspel voor iPhone. Je krijgt een kleur en mengt die uit een palet met "
+        "verf, waar blauw en geel groen worden zoals op een palet en niet grijs zoals op een "
+        "scherm. Vijf modi, een wezen dat uit je eerste geraakte kleur komt, en geen account, geen "
+        "advertenties en geen netwerk van welke aard dan ook.",
+        "Um quebra-cabeça de mistura de cores calmo para iPhone. Você recebe uma cor e a mistura a "
+        "partir de uma bandeja de tinta, onde azul e amarelo dão verde como numa paleta e não cinza "
+        "como numa tela. Cinco modos, uma criatura que nasce da primeira cor que você acerta, e "
+        "nenhuma conta, publicidade ou rede de qualquer tipo.",
+        "一款安静的 iPhone 调色解谜游戏。给你一个颜色，你从一盘颜料里把它调出来。在这里，"
+        "蓝加黄得到的是调色板上的绿，而不是屏幕上的灰。五种模式，一只从你配对的第一个颜色里孵"
+        "出来的小生物，没有账号、没有广告，也没有任何联网。"),
+})

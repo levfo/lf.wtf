@@ -35,8 +35,10 @@ The colors in the hero are not picked to look right. The page carries the same e
 points the app carries, expands them to sixteen bands with the same smoothstep, mixes them in K/S
 under Kubelka-Munk and converts through the CIE 1931 observer, in the browser. Targets are built the
 way the game builds them, by inverting a whole number recipe over the tray, which is what guarantees
-every one of them is reachable. That is the page's one argument and it must not be faked: a CSS
-gradient claiming that blue and yellow make green would be the right claim with the wrong evidence.
+every one of them is reachable. The page does not boast about any of this and should not start: it is a game, and the
+reason the demonstration runs the real arithmetic is so that playing with it is not a lie, not so
+that a visitor can be told how well it was built. FRMT is the app whose selling point is the
+fidelity of its simulation. This one's selling point is that it is nice to play.
 
 Two consequences worth keeping. The board is a `<canvas>` marked `aria-hidden`, and everything it
 says goes through a `role="status"` line underneath, so the demonstration is narrated rather than
