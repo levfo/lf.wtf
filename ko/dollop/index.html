@@ -60,6 +60,11 @@
       "applicationCategory": "GameApplication",
       "applicationSubCategory": "Puzzle",
       "operatingSystem": "iOS 17.0 or later",
+      "installUrl": "https://apps.apple.com/app/id6807468926",
+      "downloadUrl": "https://apps.apple.com/app/id6807468926",
+      "sameAs": [
+        "https://apps.apple.com/app/id6807468926"
+      ],
       "featureList": [
         "젠: 서두르지 않고 색을 계속 섞는 모드",
         "데일리: 날짜로부터 기기 안에서 계산되는 하루 한 가지 색",
@@ -296,10 +301,6 @@ canvas { display: block; width: 100%; height: 250px; background: var(--board); }
   font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; font-size: 13px;
   text-decoration: none;
 }
-/* Until the app is through review there is nowhere for this to go, and a link to "#" reads as a
-   broken page rather than as an unreleased app. To release: make the span
-   <a class="buy" href="https://apps.apple.com/app/id...">, change the wording, drop this rule. */
-.buy.pending { background: #fff; cursor: default; }
 .terms { font-size: 15px; opacity: 0.65; margin-top: 2px; }
 
 .modes { margin: 0; padding: 0; list-style: none; }
@@ -375,7 +376,7 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
 
   <p class="status" id="status" role="status"><span class="hint">안료를 탭하면 판 위에 물감이 한 덩이 놓입니다. 이것은 그림이 아니라, 앱과 똑같은 계산을 그대로 돌리는 게임 그 자체입니다.</span></p>
 
-  <p><span class="buy pending">곧 App Store에 출시</span></p>
+  <p><a class="buy" href="https://apps.apple.com/app/id6807468926" data-appstore>App Store에서 다운로드</a></p>
   <p class="terms">무료. iPhone, iOS 17 이상. 선택 구매 하나뿐, 구독 없음.</p>
 </section>
 

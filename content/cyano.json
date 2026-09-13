@@ -1285,5 +1285,18 @@
     "nl": "Nee. Geen account, geen analytics, geen server en geen eigen netwerkcode. Foto's verlaten je telefoon nooit. Het privacybeleid is één pagina en zegt dat.",
     "pt-BR": "Não. Sem conta, sem análises, sem servidor e sem código de rede próprio. As fotografias nunca saem do seu telefone. A política de privacidade tem uma página e diz isso.",
     "zh-Hans": "不会。没有账号、没有分析、没有服务器，也没有自己的联网代码。照片永远不会离开你的手机。 隐私政策 只有一页，上面就是这么写的。"
+  },
+  "Download on the App Store": {
+    "kind": "text:a",
+    "de": "Im App Store laden",
+    "es": "Descargar en la App Store",
+    "es-MX": "Descargar en la App Store",
+    "fr": "Télécharger dans l'App Store",
+    "it": "Scarica dall'App Store",
+    "ja": "App Store でダウンロード",
+    "ko": "App Store에서 다운로드",
+    "nl": "Downloaden in de App Store",
+    "pt-BR": "Baixar na App Store",
+    "zh-Hans": "在 App Store 下载"
   }
 }

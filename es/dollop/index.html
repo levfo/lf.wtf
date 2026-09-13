@@ -60,6 +60,11 @@
       "applicationCategory": "GameApplication",
       "applicationSubCategory": "Puzzle",
       "operatingSystem": "iOS 17.0 or later",
+      "installUrl": "https://apps.apple.com/app/id6807468926",
+      "downloadUrl": "https://apps.apple.com/app/id6807468926",
+      "sameAs": [
+        "https://apps.apple.com/app/id6807468926"
+      ],
       "featureList": [
         "Zen, una tanda tranquila de colores para mezclar",
         "Diario, un color al día calculado en el dispositivo a partir de la fecha",
@@ -296,10 +301,6 @@ canvas { display: block; width: 100%; height: 250px; background: var(--board); }
   font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; font-size: 13px;
   text-decoration: none;
 }
-/* Until the app is through review there is nowhere for this to go, and a link to "#" reads as a
-   broken page rather than as an unreleased app. To release: make the span
-   <a class="buy" href="https://apps.apple.com/app/id...">, change the wording, drop this rule. */
-.buy.pending { background: #fff; cursor: default; }
 .terms { font-size: 15px; opacity: 0.65; margin-top: 2px; }
 
 .modes { margin: 0; padding: 0; list-style: none; }
@@ -373,7 +374,7 @@ justify-content:center}
 
   <p class="status" id="status" role="status"><span class="hint">Toca un pigmento para poner una gota en el tablero. Esto es el juego mismo, ejecutando la misma aritmética que la app y no una imagen de ella.</span></p>
 
-  <p><span class="buy pending">Próximamente en el App Store</span></p>
+  <p><a class="buy" href="https://apps.apple.com/app/id6807468926" data-appstore>Descargar en la App Store</a></p>
   <p class="terms">Gratis. iPhone, iOS 17 o posterior. Una compra opcional, sin suscripción.</p>
 </section>
 

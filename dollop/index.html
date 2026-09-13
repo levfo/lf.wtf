@@ -60,6 +60,11 @@
       "applicationCategory": "GameApplication",
       "applicationSubCategory": "Puzzle",
       "operatingSystem": "iOS 17.0 or later",
+      "installUrl": "https://apps.apple.com/app/id6807468926",
+      "downloadUrl": "https://apps.apple.com/app/id6807468926",
+      "sameAs": [
+        "https://apps.apple.com/app/id6807468926"
+      ],
       "featureList": [
         "Zen, an unhurried run of colors to mix",
         "Daily, one color a day worked out on the device from the date",
@@ -296,10 +301,6 @@ canvas { display: block; width: 100%; height: 250px; background: var(--board); }
   font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; font-size: 13px;
   text-decoration: none;
 }
-/* Until the app is through review there is nowhere for this to go, and a link to "#" reads as a
-   broken page rather than as an unreleased app. To release: make the span
-   <a class="buy" href="https://apps.apple.com/app/id...">, change the wording, drop this rule. */
-.buy.pending { background: #fff; cursor: default; }
 .terms { font-size: 15px; opacity: 0.65; margin-top: 2px; }
 
 .modes { margin: 0; padding: 0; list-style: none; }
@@ -375,7 +376,7 @@ justify-content:center}
   <p class="status" id="status" role="status"><span class="hint">Tap a pigment to put a dollop on the
   board. This is the game itself, running the app's own arithmetic rather than a picture of it.</span></p>
 
-  <p><span class="buy pending">Coming to the App Store</span></p>
+  <p><a class="buy" href="https://apps.apple.com/app/id6807468926" data-appstore>Download on the App Store</a></p>
   <p class="terms">Free. iPhone, iOS 17 and later. One optional purchase, no subscription.</p>
 </section>
 

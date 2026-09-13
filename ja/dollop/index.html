@@ -60,6 +60,11 @@
       "applicationCategory": "GameApplication",
       "applicationSubCategory": "Puzzle",
       "operatingSystem": "iOS 17.0 or later",
+      "installUrl": "https://apps.apple.com/app/id6807468926",
+      "downloadUrl": "https://apps.apple.com/app/id6807468926",
+      "sameAs": [
+        "https://apps.apple.com/app/id6807468926"
+      ],
       "featureList": [
         "禅：急かされずに色を混ぜ続けるモード",
         "デイリー：日付から端末の中で計算される、一日にひとつの色",
@@ -296,10 +301,6 @@ canvas { display: block; width: 100%; height: 250px; background: var(--board); }
   font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; font-size: 13px;
   text-decoration: none;
 }
-/* Until the app is through review there is nowhere for this to go, and a link to "#" reads as a
-   broken page rather than as an unreleased app. To release: make the span
-   <a class="buy" href="https://apps.apple.com/app/id...">, change the wording, drop this rule. */
-.buy.pending { background: #fff; cursor: default; }
 .terms { font-size: 15px; opacity: 0.65; margin-top: 2px; }
 
 .modes { margin: 0; padding: 0; list-style: none; }
@@ -375,7 +376,7 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
 
   <p class="status" id="status" role="status"><span class="hint">顔料をタップすると、板に絵の具がひとつ落ちます。これは画像ではなく、アプリと同じ計算をそのまま動かしているゲームそのものです。</span></p>
 
-  <p><span class="buy pending">App Store にまもなく登場</span></p>
+  <p><a class="buy" href="https://apps.apple.com/app/id6807468926" data-appstore>App Store でダウンロード</a></p>
   <p class="terms">無料。iPhone、iOS 17 以降。任意の購入がひとつだけ、サブスクリプションはありません。</p>
 </section>
 

@@ -60,6 +60,11 @@
       "applicationCategory": "GameApplication",
       "applicationSubCategory": "Puzzle",
       "operatingSystem": "iOS 17.0 or later",
+      "installUrl": "https://apps.apple.com/app/id6807468926",
+      "downloadUrl": "https://apps.apple.com/app/id6807468926",
+      "sameAs": [
+        "https://apps.apple.com/app/id6807468926"
+      ],
       "featureList": [
         "禅：不赶时间，一个接一个地调色",
         "每日：由日期在设备上算出的、每天一个的颜色",
@@ -296,10 +301,6 @@ canvas { display: block; width: 100%; height: 250px; background: var(--board); }
   font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; font-size: 13px;
   text-decoration: none;
 }
-/* Until the app is through review there is nowhere for this to go, and a link to "#" reads as a
-   broken page rather than as an unreleased app. To release: make the span
-   <a class="buy" href="https://apps.apple.com/app/id...">, change the wording, drop this rule. */
-.buy.pending { background: #fff; cursor: default; }
 .terms { font-size: 15px; opacity: 0.65; margin-top: 2px; }
 
 .modes { margin: 0; padding: 0; list-style: none; }
@@ -375,7 +376,7 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
 
   <p class="status" id="status" role="status"><span class="hint">点一下颜料，就会有一团落到板上。这不是截图，而是游戏本身，跑的就是 App 里的那套算术。</span></p>
 
-  <p><span class="buy pending">即将上架 App Store</span></p>
+  <p><a class="buy" href="https://apps.apple.com/app/id6807468926" data-appstore>在 App Store 下载</a></p>
   <p class="terms">免费。iPhone，iOS 17 及以上。只有一项可选内购，没有订阅。</p>
 </section>
 

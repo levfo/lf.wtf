@@ -25,25 +25,28 @@ The apps share a bias. I would rather simulate the thing than approximate the lo
 
 ### Harmony Palette
 A colour tool for iPhone and iPad. An interactive wheel in both the RGB model a screen actually uses and the RYB model a painter was taught, eight harmony types, 160 curated palettes, a contrast checker that tells you which pairs are legible, and export straight to SwiftUI, CSS, Tailwind, SVG or PDF.
-iPhone & iPad · Free, Pro from $2.99 · https://apps.apple.com/us/app/harmony-palette/id6757116756
+iPhone & iPad · Free, Pro from $2.99 · https://apps.apple.com/app/id6757116756
 ### FRMT: Film Simulation
 A film simulation camera for iPhone. It models the photographic process itself rather than applying a colour filter: light scattering through the emulsion, dye layers holding each other back, grain forming where the light actually landed. Four stocks, built from published manufacturer measurements, developed from a RAW negative on the device.
-iPhone · $14.99 once · https://apps.apple.com/us/app/frmt-film-simulation/id6800928630
+iPhone · $14.99 once · https://apps.apple.com/app/id6800928630
 
 ### MODUL8: Glitch Art Effects
 A glitch art app for iPhone. Nineteen stackable effects, each modelled on a specific way real hardware used to fail: VHS tracking loss, CRT phosphor bloom, datamosh block corruption, pixel sorting, channel separation. Reorder the layers and the picture changes.
-iPhone · Free · https://apps.apple.com/us/app/modul8-glitch-art-effects/id6755617539
+iPhone · Free · https://apps.apple.com/app/id6755617539
 
 ### CYANO: Cyanotype Photos
 A cyanotype app for iPhone. It runs the chemistry of the 1842 sunprint process instead of tinting the picture blue: the paper is blind to red and green, so two colours a camera recorded as equally bright come out at opposite ends of the print. No darkroom, no chemicals, no printer.
-iPhone · Free · Not yet on the App Store; it is awaiting review.
+iPhone · Free · https://apps.apple.com/app/id6802050987
 
+### Dollop
+A color mixing game for iPhone. You are given a color and you mix it, out of paint that behaves like paint: blue and yellow make green here, not the gray two screen colors would average to. Five modes, a creature that hatches out of your first match, and nothing in it that hurries you.
+iPhone · Free · https://apps.apple.com/app/id6807468926
 
 ### Merge With The Machine
 An art project about the line where human imagination meets machine generation. Generated visuals, experimental tools, and a print shop.
 
 ### Elsewhere
-- App Store: https://apps.apple.com/us/developer/levi-foster/id1854976064
+- App Store: https://apps.apple.com/developer/levi-foster/id1854976064
 - Instagram
 - X
 - TikTok
@@ -723,7 +726,7 @@ On a screen they make gray. Dollop is a puzzle about mixing paint, and the paint
 
 The page carries a working version of the game: a target, a tray of six pigments, and a live Delta E readout.
 
-Coming to the App Store. Free. iPhone, iOS 17 and later. One optional purchase, no subscription.
+On the App Store. Free. iPhone, iOS 17 and later. One optional purchase, no subscription.
 
 ### Why it is green and not gray
 

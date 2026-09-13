@@ -1194,5 +1194,18 @@
     "nl": "Acht vaste pigmenten: titaanwit, cadmiumgeel, cadmiumrood, quinacridonmagenta, ultramarijn, ftaloblauw, ftalogroen en lampenzwart. Elke ronde krijg je er zes, gekozen zodat de gevraagde kleur echt bereikbaar is met wat er op het palet ligt.",
     "pt-BR": "Oito pigmentos fixos: branco de titânio, amarelo de cádmio, vermelho de cádmio, magenta de quinacridona, ultramar, azul ftalo, verde ftalo e preto de fumo. Cada rodada te dá seis, escolhidos de forma que a cor pedida seja de fato alcançável com o que está na bandeja.",
     "zh-Hans": "八种常备颜料：钛白、镉黄、镉红、喹吖啶酮品红、群青、酞菁蓝、酞菁绿和灯黑。每一局会给你其中六种，并且是挑过的，保证给出的那个颜色真的能用盘里的东西调出来。"
+  },
+  "Download on the App Store": {
+    "kind": "text:a",
+    "de": "Im App Store laden",
+    "es": "Descargar en la App Store",
+    "es-MX": "Descargar en la App Store",
+    "fr": "Télécharger dans l'App Store",
+    "it": "Scarica dall'App Store",
+    "ja": "App Store でダウンロード",
+    "ko": "App Store에서 다운로드",
+    "nl": "Downloaden in de App Store",
+    "pt-BR": "Baixar na App Store",
+    "zh-Hans": "在 App Store 下载"
   }
 }

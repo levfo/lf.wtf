@@ -9,6 +9,10 @@ Levi Foster's site. Plain static HTML, no build step, no framework.
     /modul8/privacy   
     /cyano/           CYANO, cyanotype for iPhone
     /cyano/privacy    
+    /harmony/         Harmony Palette, colour harmony for iPhone and iPad
+    /harmony/privacy  
+    /dollop/          Dollop, a colour mixing game for iPhone
+    /dollop/privacy   
     robots.txt        
     sitemap.xml       every real URL; update lastmod when a page changes
     _headers          Cloudflare Pages: security headers + immutable asset caching

@@ -61,6 +61,11 @@
       "applicationCategory": "PhotoApplication",
       "applicationSubCategory": "Photo Editing",
       "operatingSystem": "iOS 17.0 or later",
+      "installUrl": "https://apps.apple.com/app/id6802050987",
+      "downloadUrl": "https://apps.apple.com/app/id6802050987",
+      "sameAs": [
+        "https://apps.apple.com/app/id6802050987"
+      ],
       "mainEntityOfPage": {
         "@id": "https://lf.wtf/cyano/#webpage"
       },
@@ -236,13 +241,6 @@ header { padding: 3rem 0 0; }
 }
 .buy:hover { background: var(--wash); }
 .buy .price { font-weight: 400; opacity: 0.72; }
-/* Until the app is through review there is nowhere for this button to go. It said "Download on the
-   App Store" and pointed at "#", which looks like a broken page rather than an unreleased app, so
-   it says what is actually true and stops pretending to be a link.
-   To release: swap both <span class="buy pending"> back to <a class="buy"
-   href="https://apps.apple.com/us/app/cyano-cyanotype-photos/id6802050987">, restore the wording,
-   and drop this rule. */
-.buy.pending { background: transparent; color: var(--paper); box-shadow: inset 0 0 0 1px var(--wash); cursor: default; }
 .terms { margin: 0 0 1rem; }
 
 figure { margin: 3rem 0 0; }
@@ -308,7 +306,7 @@ justify-content:center}
       <strong>CYANO fa quella chimica via software.</strong> Non uno scambio di colori regolato a occhio, ma la risposta all'ultravioletto del sensibilizzante integrata contro la luce solare su tutto lo spettro, e blu di Prussia costruito con la legge di Beer-Lambert. Niente camera oscura, niente prodotti chimici, niente stampante.
     </p>
 
-    <span class="buy pending" data-appstore>Presto sull'App Store <span class="price">Gratis</span></span>
+    <a class="buy" href="https://apps.apple.com/app/id6802050987" data-appstore>Scarica dall'App Store <span class="price">Gratis</span></a>
     <p class="terms label">Nessun abbonamento &middot; Nessun account &middot; Niente esce dal telefono</p>
   </header>
 
@@ -418,7 +416,7 @@ justify-content:center}
     <p>
       Gratis, e la versione gratuita è tutta la simulazione. Niente porta filigrane e niente viene trattenuto per far capire qualcosa.
     </p>
-    <span class="buy pending" data-appstore>Presto sull'App Store <span class="price">Gratis</span></span>
+    <a class="buy" href="https://apps.apple.com/app/id6802050987" data-appstore>Scarica dall'App Store <span class="price">Gratis</span></a>
   </section>
 
   <section class="close">

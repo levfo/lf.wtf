@@ -61,6 +61,11 @@
       "applicationCategory": "PhotoApplication",
       "applicationSubCategory": "Photo Editing",
       "operatingSystem": "iOS 17.0 or later",
+      "installUrl": "https://apps.apple.com/app/id6802050987",
+      "downloadUrl": "https://apps.apple.com/app/id6802050987",
+      "sameAs": [
+        "https://apps.apple.com/app/id6802050987"
+      ],
       "mainEntityOfPage": {
         "@id": "https://lf.wtf/cyano/#webpage"
       },
@@ -236,13 +241,6 @@ header { padding: 3rem 0 0; }
 }
 .buy:hover { background: var(--wash); }
 .buy .price { font-weight: 400; opacity: 0.72; }
-/* Until the app is through review there is nowhere for this button to go. It said "Download on the
-   App Store" and pointed at "#", which looks like a broken page rather than an unreleased app, so
-   it says what is actually true and stops pretending to be a link.
-   To release: swap both <span class="buy pending"> back to <a class="buy"
-   href="https://apps.apple.com/us/app/cyano-cyanotype-photos/id6802050987">, restore the wording,
-   and drop this rule. */
-.buy.pending { background: transparent; color: var(--paper); box-shadow: inset 0 0 0 1px var(--wash); cursor: default; }
 .terms { margin: 0 0 1rem; }
 
 figure { margin: 3rem 0 0; }
@@ -310,7 +308,7 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
       <strong>CYANO 用软件把这套化学跑出来。</strong> 不是凭眼睛调出来的颜色替换，而是把感光剂的紫外响应在整个光谱上对太阳光积分，再依比尔-朗伯定律一层层叠出普鲁士蓝。不需要暗房、不需要药水、不需要打印机。
     </p>
 
-    <span class="buy pending" data-appstore>即将上架 App Store <span class="price">免费</span></span>
+    <a class="buy" href="https://apps.apple.com/app/id6802050987" data-appstore>在 App Store 下载 <span class="price">免费</span></a>
     <p class="terms label">无订阅 &middot; 无账号 &middot; 什么都不会离开你的手机</p>
   </header>
 
@@ -420,7 +418,7 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
     <p>
       免费，而且免费版就是完整的模拟。没有任何水印，也没有为了说明什么而故意留一手。
     </p>
-    <span class="buy pending" data-appstore>即将上架 App Store <span class="price">免费</span></span>
+    <a class="buy" href="https://apps.apple.com/app/id6802050987" data-appstore>在 App Store 下载 <span class="price">免费</span></a>
   </section>
 
   <section class="close">

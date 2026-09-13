@@ -60,6 +60,11 @@
       "applicationCategory": "GameApplication",
       "applicationSubCategory": "Puzzle",
       "operatingSystem": "iOS 17.0 or later",
+      "installUrl": "https://apps.apple.com/app/id6807468926",
+      "downloadUrl": "https://apps.apple.com/app/id6807468926",
+      "sameAs": [
+        "https://apps.apple.com/app/id6807468926"
+      ],
       "featureList": [
         "Zen, eine gemächliche Folge von Farben zum Mischen",
         "Täglich, ein Farbton pro Tag, auf dem Gerät aus dem Datum errechnet",
@@ -296,10 +301,6 @@ canvas { display: block; width: 100%; height: 250px; background: var(--board); }
   font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; font-size: 13px;
   text-decoration: none;
 }
-/* Until the app is through review there is nowhere for this to go, and a link to "#" reads as a
-   broken page rather than as an unreleased app. To release: make the span
-   <a class="buy" href="https://apps.apple.com/app/id...">, change the wording, drop this rule. */
-.buy.pending { background: #fff; cursor: default; }
 .terms { font-size: 15px; opacity: 0.65; margin-top: 2px; }
 
 .modes { margin: 0; padding: 0; list-style: none; }
@@ -375,7 +376,7 @@ html[lang="de"] h1, html[lang="de"] h2, html[lang="de"] .sub { text-transform: n
 
   <p class="status" id="status" role="status"><span class="hint">Tippe ein Pigment an, um einen Klecks auf das Brett zu setzen. Das hier ist das Spiel selbst: es rechnet mit derselben Arithmetik wie die App und ist kein Bild davon.</span></p>
 
-  <p><span class="buy pending">Bald im App Store</span></p>
+  <p><a class="buy" href="https://apps.apple.com/app/id6807468926" data-appstore>Im App Store laden</a></p>
   <p class="terms">Kostenlos. iPhone, iOS 17 und neuer. Ein optionaler Kauf, kein Abo.</p>
 </section>
 
