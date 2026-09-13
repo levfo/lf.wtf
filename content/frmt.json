@@ -1169,18 +1169,18 @@
     "pt-BR": "Sem assinatura, sem conta, sem nuvem, sem anúncios, sem marca d'água, sem compras dentro do app, sem pagar mais para liberar os filmes bons. Suas fotografias nunca saem do seu telefone, porque o app não tem nenhum código de rede.",
     "zh-Hans": "无订阅、无账号、无云端、无广告、无水印、无应用内购买，也不会让你再花钱去解锁\"好胶片\"。你的照片永远不会离开你的手机，因为这个应用里根本没有联网代码。"
   },
-  "Requires an iPhone that can capture Apple ProRAW.": {
+  "Most accurate on an iPhone that can capture Apple ProRAW. Works on any iPhone running iOS 17.2 or later.": {
     "kind": "text:p",
-    "de": "Erfordert ein iPhone, das Apple ProRAW aufnehmen kann.",
-    "es": "Requiere un iPhone capaz de capturar Apple ProRAW.",
-    "es-MX": "Requiere un iPhone capaz de capturar Apple ProRAW.",
-    "fr": "Nécessite un iPhone capable de photographier en Apple ProRAW.",
-    "it": "Richiede un iPhone in grado di scattare in Apple ProRAW.",
-    "ja": "Apple ProRAW で撮影できる iPhone が必要です。",
-    "ko": "Apple ProRAW로 촬영할 수 있는 iPhone이 필요합니다.",
-    "nl": "Vereist een iPhone die Apple ProRAW kan vastleggen.",
-    "pt-BR": "Requer um iPhone capaz de capturar Apple ProRAW.",
-    "zh-Hans": "需要一台能够拍摄 Apple ProRAW 的 iPhone。"
+    "de": "Am genauesten auf einem iPhone, das Apple ProRAW aufnehmen kann. Läuft auf jedem iPhone mit iOS 17.2 oder neuer.",
+    "es": "Más preciso en un iPhone capaz de capturar Apple ProRAW. Funciona en cualquier iPhone con iOS 17.2 o posterior.",
+    "es-MX": "Más preciso en un iPhone capaz de capturar Apple ProRAW. Funciona en cualquier iPhone con iOS 17.2 o posterior.",
+    "fr": "Le plus fidèle sur un iPhone capable de photographier en Apple ProRAW. Fonctionne sur tout iPhone sous iOS 17.2 ou plus récent.",
+    "it": "Più accurato su un iPhone in grado di scattare in Apple ProRAW. Funziona su qualsiasi iPhone con iOS 17.2 o successivo.",
+    "ja": "Apple ProRAW で撮影できる iPhone で最も正確に動作します。iOS 17.2 以降のすべての iPhone で使えます。",
+    "ko": "Apple ProRAW로 촬영할 수 있는 iPhone에서 가장 정확합니다. iOS 17.2 이상의 모든 iPhone에서 사용할 수 있습니다.",
+    "nl": "Het nauwkeurigst op een iPhone die Apple ProRAW kan vastleggen. Werkt op elke iPhone met iOS 17.2 of nieuwer.",
+    "pt-BR": "Mais preciso num iPhone capaz de capturar Apple ProRAW. Funciona em qualquer iPhone com iOS 17.2 ou posterior.",
+    "zh-Hans": "在能够拍摄 Apple ProRAW 的 iPhone 上最为准确。可在任何运行 iOS 17.2 或更高版本的 iPhone 上使用。"
   },
   "Questions": {
     "kind": "text:p",
@@ -1351,18 +1351,18 @@
     "pt-BR": "Em quais iPhones funciona?",
     "zh-Hans": "支持哪些 iPhone？"
   },
-  "Any iPhone that can capture Apple ProRAW, running iOS 17.2 or later.": {
+  "Any iPhone running iOS 17.2 or later. Most accurate on one that can capture Apple ProRAW.": {
     "kind": "text:p",
-    "de": "Jedes iPhone, das Apple ProRAW aufnehmen kann, mit iOS 17.2 oder neuer.",
-    "es": "Cualquier iPhone capaz de capturar Apple ProRAW, con iOS 17.2 o posterior.",
-    "es-MX": "Cualquier iPhone capaz de capturar Apple ProRAW, con iOS 17.2 o posterior.",
-    "fr": "Tout iPhone capable de photographier en Apple ProRAW, sous iOS 17.2 ou version ultérieure.",
-    "it": "Qualsiasi iPhone in grado di scattare in Apple ProRAW, con iOS 17.2 o successivo.",
-    "ja": "Apple ProRAW で撮影でき、iOS 17.2 以降が動作している iPhone。",
-    "ko": "Apple ProRAW로 촬영할 수 있고 iOS 17.2 이상이 설치된 iPhone.",
-    "nl": "Elke iPhone die Apple ProRAW kan vastleggen, met iOS 17.2 of nieuwer.",
-    "pt-BR": "Qualquer iPhone capaz de capturar Apple ProRAW, com iOS 17.2 ou posterior.",
-    "zh-Hans": "任何能够拍摄 Apple ProRAW 且运行 iOS 17.2 或更高版本的 iPhone。"
+    "de": "Jedes iPhone mit iOS 17.2 oder neuer. Am genauesten auf einem, das Apple ProRAW aufnehmen kann.",
+    "es": "Cualquier iPhone con iOS 17.2 o posterior. Más preciso en uno capaz de capturar Apple ProRAW.",
+    "es-MX": "Cualquier iPhone con iOS 17.2 o posterior. Más preciso en uno capaz de capturar Apple ProRAW.",
+    "fr": "Tout iPhone sous iOS 17.2 ou plus récent. Le plus fidèle sur un modèle capable de photographier en Apple ProRAW.",
+    "it": "Qualsiasi iPhone con iOS 17.2 o successivo. Più accurato su uno in grado di scattare in Apple ProRAW.",
+    "ja": "iOS 17.2 以降のすべての iPhone。Apple ProRAW で撮影できる機種で最も正確に動作します。",
+    "ko": "iOS 17.2 이상의 모든 iPhone. Apple ProRAW로 촬영할 수 있는 기종에서 가장 정확합니다.",
+    "nl": "Elke iPhone met iOS 17.2 of nieuwer. Het nauwkeurigst op een die Apple ProRAW kan vastleggen.",
+    "pt-BR": "Qualquer iPhone com iOS 17.2 ou posterior. Mais preciso num que consiga capturar Apple ProRAW.",
+    "zh-Hans": "任何运行 iOS 17.2 或更高版本的 iPhone。在能够拍摄 Apple ProRAW 的机型上最为准确。"
   },
   "Levi Foster": {
     "kind": "text:a",
