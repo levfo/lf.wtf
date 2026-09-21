@@ -168,18 +168,18 @@
     "pt-BR": "Toque em um pigmento para colocar um pingo no tabuleiro. Isto é o jogo em si, rodando a mesma aritmética do app e não uma imagem dela.",
     "zh-Hans": "点一下颜料，就会有一团落到板上。这不是截图，而是游戏本身，跑的就是 App 里的那套算术。"
   },
-  "Coming to the App Store": {
-    "kind": "text:span",
-    "de": "Bald im App Store",
-    "es": "Próximamente en el App Store",
-    "es-MX": "Próximamente en el App Store",
-    "fr": "Bientôt sur l'App Store",
-    "it": "Presto sull'App Store",
-    "ja": "App Store にまもなく登場",
-    "ko": "곧 App Store에 출시",
-    "nl": "Binnenkort in de App Store",
-    "pt-BR": "Em breve na App Store",
-    "zh-Hans": "即将上架 App Store"
+  "Download on the App Store": {
+    "kind": "text:a",
+    "de": "Im App Store laden",
+    "es": "Descargar en la App Store",
+    "es-MX": "Descargar en la App Store",
+    "fr": "Télécharger dans l'App Store",
+    "it": "Scarica dall'App Store",
+    "ja": "App Store でダウンロード",
+    "ko": "App Store에서 다운로드",
+    "nl": "Downloaden in de App Store",
+    "pt-BR": "Baixar na App Store",
+    "zh-Hans": "在 App Store 下载"
   },
   "Free. iPhone, iOS 17 and later. One optional purchase, no subscription.": {
     "kind": "text:p",
@@ -1194,18 +1194,5 @@
     "nl": "Acht vaste pigmenten: titaanwit, cadmiumgeel, cadmiumrood, quinacridonmagenta, ultramarijn, ftaloblauw, ftalogroen en lampenzwart. Elke ronde krijg je er zes, gekozen zodat de gevraagde kleur echt bereikbaar is met wat er op het palet ligt.",
     "pt-BR": "Oito pigmentos fixos: branco de titânio, amarelo de cádmio, vermelho de cádmio, magenta de quinacridona, ultramar, azul ftalo, verde ftalo e preto de fumo. Cada rodada te dá seis, escolhidos de forma que a cor pedida seja de fato alcançável com o que está na bandeja.",
     "zh-Hans": "八种常备颜料：钛白、镉黄、镉红、喹吖啶酮品红、群青、酞菁蓝、酞菁绿和灯黑。每一局会给你其中六种，并且是挑过的，保证给出的那个颜色真的能用盘里的东西调出来。"
-  },
-  "Download on the App Store": {
-    "kind": "text:a",
-    "de": "Im App Store laden",
-    "es": "Descargar en la App Store",
-    "es-MX": "Descargar en la App Store",
-    "fr": "Télécharger dans l'App Store",
-    "it": "Scarica dall'App Store",
-    "ja": "App Store でダウンロード",
-    "ko": "App Store에서 다운로드",
-    "nl": "Downloaden in de App Store",
-    "pt-BR": "Baixar na App Store",
-    "zh-Hans": "在 App Store 下载"
   }
 }

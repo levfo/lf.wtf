@@ -14,7 +14,7 @@ links; those were corrected too, so the separator is a colon on both sides now.
 #: Names, handles and marks that are the same in every language.
 KEEP = {
     "Levi", "Foster", "Levi Foster", "FRMT", "MODUL8", "CYANO", "MERGE", "lf.wtf",
-    "Harmony Palette", "Merge With The Machine", "Dollop", "iPhone", "iPad", "App Store",
+    "Harmony Palette", "Merge With The Machine", "Dollop", "Kippu", "iPhone", "iPad", "App Store",
     "Instagram", "X", "TikTok", "Etsy", "GitHub", "L@LF.WTF",
 }
 
@@ -670,3 +670,99 @@ T["A slow color mixing game for iPhone, where blue and yellow make green the way
     "Um jogo de mistura de cores calmo para iPhone, onde azul e amarelo dão verde como numa paleta "
     "e não cinza como numa tela.",
     "一款安静的 iPhone 调色游戏，蓝加黄得到的是调色板上的绿，而不是屏幕上的灰。")
+
+
+# ------------------------------------------------------------------------ Kippu
+#: The card, its ItemList entry, and the three site descriptions that now name it. The full page
+#: is at tools/lang/kippu.py.
+
+T["Kippu: Learn Japanese"] = (
+    "Kippu: Japanisch lernen", "Kippu: Aprende japonés", "Kippu: Aprende japonés",
+    "Kippu : Apprendre le japonais", "Kippu: Impara il giapponese", "Kippu：日本語を学ぶ",
+    "Kippu: 일본어 배우기", "Kippu: Japans leren", "Kippu: Aprenda japonês", "Kippu：学日语")
+
+T["A Japanese learning app for iPhone and iPad. The Japanese you need for a trip to Japan,\n          with what the staff say back, and then the whole JLPT N5: both kana, kanji with stroke\n          order, grammar, listening and a mock test. Short sittings, a voice on every line, and\n          three games."] = (
+    "Eine App zum Japanischlernen für iPhone und iPad. Das Japanisch, das du für die Reise nach "
+    "Japan brauchst, mit dem, was das Personal antwortet, und danach der ganze JLPT N5: beide "
+    "Kana, Kanji mit Strichfolge, Grammatik, Hören und ein Probetest. Kurze Lektionen, eine "
+    "Stimme auf jeder Zeile und drei Spiele.",
+    "Una aplicación para aprender japonés en iPhone y iPad. El japonés que necesitas para un "
+    "viaje a Japón, con lo que responde el personal, y después el JLPT N5 completo: los dos "
+    "silabarios, kanji con orden de trazos, gramática, comprensión auditiva y un examen de "
+    "prueba. Sesiones cortas, una voz en cada línea y tres juegos.",
+    "Una aplicación para aprender japonés en iPhone y iPad. El japonés que necesitas para un "
+    "viaje a Japón, con lo que contesta el personal, y después el JLPT N5 completo: los dos "
+    "silabarios, kanji con orden de trazos, gramática, comprensión auditiva y un examen de "
+    "prueba. Sesiones cortas, una voz en cada línea y tres juegos.",
+    "Une application pour apprendre le japonais sur iPhone et iPad. Le japonais qu'il vous faut "
+    "pour un voyage au Japon, avec ce que le personnel répond, puis tout le JLPT N5 : les deux "
+    "kana, les kanji avec l'ordre des traits, la grammaire, la compréhension orale et un test "
+    "blanc. Des séances courtes, une voix sur chaque ligne et trois jeux.",
+    "Un'app per imparare il giapponese su iPhone e iPad. Il giapponese che ti serve per un "
+    "viaggio in Giappone, con quello che risponde il personale, e poi tutto il JLPT N5: "
+    "entrambi i kana, kanji con l'ordine dei tratti, grammatica, ascolto e un test di prova. "
+    "Sessioni brevi, una voce su ogni riga e tre giochi.",
+    "iPhone と iPad のための日本語学習アプリ。日本を旅するために必要な日本語を、店員さんの返答"
+    "つきで。そのあとは JLPT N5 の全範囲：ひらがなとカタカナ、筆順つきの漢字、文法、聴解、"
+    "模擬試験。短い学習、すべての行に音声、そして3つのゲーム。",
+    "iPhone과 iPad를 위한 일본어 학습 앱. 일본 여행에 필요한 일본어를 직원의 답변과 함께, "
+    "그다음은 JLPT N5 전체: 두 가나, 필순이 있는 한자, 문법, 듣기, 모의고사. 짧은 학습, 모든 "
+    "문장에 음성, 그리고 세 가지 게임.",
+    "Een app om Japans te leren voor iPhone en iPad. Het Japans dat je nodig hebt voor een reis "
+    "naar Japan, met wat het personeel terugzegt, en daarna het hele JLPT N5: beide kana, kanji "
+    "met streepvolgorde, grammatica, luisteren en een proeftoets. Korte sessies, een stem bij "
+    "elke regel en drie spellen.",
+    "Um app para aprender japonês no iPhone e iPad. O japonês que você precisa para uma viagem "
+    "ao Japão, com o que o atendente responde, e depois o JLPT N5 inteiro: os dois kana, kanji "
+    "com ordem dos traços, gramática, compreensão auditiva e um simulado. Sessões curtas, uma "
+    "voz em cada linha e três jogos.",
+    "一款 iPhone 和 iPad 上的日语学习应用。去日本旅行要用的日语，附有店员的回答，然后是完整的 "
+    "JLPT N5：两套假名、带笔顺的汉字、语法、听力和模拟考试。短时学习，每一句都有配音，还有三个游戏。")
+
+T["A Japanese learning app for iPhone and iPad: the Japanese for a trip to Japan, then the JLPT N5."] = (
+    "Eine App zum Japanischlernen für iPhone und iPad: das Japanisch für die Reise nach Japan, danach der JLPT N5.",
+    "Una aplicación para aprender japonés en iPhone y iPad: el japonés para un viaje a Japón, y luego el JLPT N5.",
+    "Una aplicación para aprender japonés en iPhone y iPad: el japonés para un viaje a Japón, y luego el JLPT N5.",
+    "Une application pour apprendre le japonais sur iPhone et iPad : le japonais pour un voyage au Japon, puis le JLPT N5.",
+    "Un'app per imparare il giapponese su iPhone e iPad: il giapponese per un viaggio in Giappone, poi il JLPT N5.",
+    "iPhone と iPad のための日本語学習アプリ：日本を旅するための日本語、そして JLPT N5。",
+    "iPhone과 iPad를 위한 일본어 학습 앱: 일본 여행을 위한 일본어, 그다음 JLPT N5.",
+    "Een app om Japans te leren voor iPhone en iPad: het Japans voor een reis naar Japan, daarna het JLPT N5.",
+    "Um app para aprender japonês no iPhone e iPad: o japonês para uma viagem ao Japão, depois o JLPT N5.",
+    "一款 iPhone 和 iPad 上的日语学习应用：去日本旅行要用的日语，然后是 JLPT N5。")
+
+T["Levi Foster is an independent app developer and artist in Fort Worth, Texas. He makes FRMT film simulation, MODUL8 glitch art, CYANO cyanotype, the color mixing game Dollop, the Japanese learning app Kippu and Harmony Palette for iPhone, and runs Merge With The Machine."] = (
+    "Levi Foster ist unabhängiger App-Entwickler und Künstler in Fort Worth, Texas. Er macht die Filmsimulation FRMT, die Glitch-Art-App MODUL8, die Cyanotypie-App CYANO, das Farbmischspiel Dollop, die Japanisch-Lern-App Kippu und Harmony Palette für iPhone und betreibt Merge With The Machine.",
+    "Levi Foster es desarrollador de apps y artista independiente en Fort Worth, Texas. Hace la simulación de película FRMT, la app de glitch art MODUL8, la de cianotipia CYANO, el juego de mezcla de colores Dollop, la app para aprender japonés Kippu y Harmony Palette para iPhone, y lleva Merge With The Machine.",
+    "Levi Foster es desarrollador de apps y artista independiente en Fort Worth, Texas. Hace la simulación de película FRMT, la app de glitch art MODUL8, la de cianotipia CYANO, el juego de mezcla de colores Dollop, la app para aprender japonés Kippu y Harmony Palette para iPhone, y lleva Merge With The Machine.",
+    "Levi Foster est développeur d'apps et artiste indépendant à Fort Worth, au Texas. Il fait la simulation argentique FRMT, l'app de glitch art MODUL8, l'app de cyanotype CYANO, le jeu de mélange de couleurs Dollop, l'app d'apprentissage du japonais Kippu et Harmony Palette pour iPhone, et mène Merge With The Machine.",
+    "Levi Foster è sviluppatore di app e artista indipendente a Fort Worth, Texas. Fa la simulazione di pellicola FRMT, l'app di glitch art MODUL8, quella di cianotipia CYANO, il gioco di mescolanza dei colori Dollop, l'app per imparare il giapponese Kippu e Harmony Palette per iPhone, e porta avanti Merge With The Machine.",
+    "Levi Foster はテキサス州フォートワースを拠点とする独立系のアプリ開発者であり、アーティストです。フィルムシミュレーション FRMT、グリッチアート MODUL8、サイアノタイプ CYANO、色混ぜゲーム Dollop、日本語学習アプリ Kippu、Harmony Palette を iPhone 向けに制作し、Merge With The Machine を運営しています。",
+    "Levi Foster는 텍사스주 포트워스에서 활동하는 독립 앱 개발자이자 아티스트입니다. 필름 시뮬레이션 FRMT, 글리치 아트 MODUL8, 사이아노타입 CYANO, 색 혼합 게임 Dollop, 일본어 학습 앱 Kippu, Harmony Palette를 iPhone용으로 만들고 Merge With The Machine을 운영합니다.",
+    "Levi Foster is een onafhankelijke app-ontwikkelaar en kunstenaar in Fort Worth, Texas. Hij maakt de filmsimulatie FRMT, de glitch-art-app MODUL8, de cyanotypie-app CYANO, het kleurmengspel Dollop, de Japans-leerapp Kippu en Harmony Palette voor iPhone, en runt Merge With The Machine.",
+    "Levi Foster é desenvolvedor de apps e artista independente em Fort Worth, Texas. Ele faz a simulação de filme FRMT, o app de glitch art MODUL8, o de cianotipia CYANO, o jogo de mistura de cores Dollop, o app para aprender japonês Kippu e o Harmony Palette para iPhone, e toca o Merge With The Machine.",
+    "Levi Foster 是一位独立 App 开发者和艺术家，常驻美国得州沃斯堡。他为 iPhone 制作胶片模拟 FRMT、故障艺术 MODUL8、蓝晒 CYANO、调色游戏 Dollop、日语学习应用 Kippu 和 Harmony Palette，并经营 Merge With The Machine。")
+
+T["Independent app developer and artist in Fort Worth, Texas. FRMT film simulation, MODUL8 glitch art, CYANO cyanotype, Dollop color mixing, Kippu Japanese learning, Harmony Palette, and Merge With The Machine."] = (
+    "Unabhängiger App-Entwickler und Künstler in Fort Worth, Texas. Filmsimulation FRMT, Glitch Art MODUL8, Cyanotypie CYANO, Farbmischspiel Dollop, Japanisch lernen mit Kippu, Harmony Palette und Merge With The Machine.",
+    "Desarrollador de apps y artista independiente en Fort Worth, Texas. Simulación de película FRMT, glitch art MODUL8, cianotipia CYANO, mezcla de colores Dollop, japonés con Kippu, Harmony Palette y Merge With The Machine.",
+    "Desarrollador de apps y artista independiente en Fort Worth, Texas. Simulación de película FRMT, glitch art MODUL8, cianotipia CYANO, mezcla de colores Dollop, japonés con Kippu, Harmony Palette y Merge With The Machine.",
+    "Développeur d'apps et artiste indépendant à Fort Worth, au Texas. Simulation argentique FRMT, glitch art MODUL8, cyanotype CYANO, mélange de couleurs Dollop, japonais avec Kippu, Harmony Palette et Merge With The Machine.",
+    "Sviluppatore di app e artista indipendente a Fort Worth, Texas. Simulazione di pellicola FRMT, glitch art MODUL8, cianotipia CYANO, mescolanza dei colori Dollop, giapponese con Kippu, Harmony Palette e Merge With The Machine.",
+    "テキサス州フォートワースの独立系アプリ開発者、アーティスト。フィルムシミュレーション FRMT、グリッチアート MODUL8、サイアノタイプ CYANO、色混ぜゲーム Dollop、日本語学習 Kippu、Harmony Palette、Merge With The Machine。",
+    "텍사스주 포트워스의 독립 앱 개발자이자 아티스트. 필름 시뮬레이션 FRMT, 글리치 아트 MODUL8, 사이아노타입 CYANO, 색 혼합 Dollop, 일본어 학습 Kippu, Harmony Palette, 그리고 Merge With The Machine.",
+    "Onafhankelijke app-ontwikkelaar en kunstenaar in Fort Worth, Texas. Filmsimulatie FRMT, glitch art MODUL8, cyanotypie CYANO, kleurmengen met Dollop, Japans leren met Kippu, Harmony Palette en Merge With The Machine.",
+    "Desenvolvedor de apps e artista independente em Fort Worth, Texas. Simulação de filme FRMT, glitch art MODUL8, cianotipia CYANO, mistura de cores Dollop, japonês com Kippu, Harmony Palette e Merge With The Machine.",
+    "独立 App 开发者和艺术家，常驻美国得州沃斯堡。胶片模拟 FRMT、故障艺术 MODUL8、蓝晒 CYANO、调色 Dollop、日语学习 Kippu、Harmony Palette，以及 Merge With The Machine。")
+
+T["Levi Foster is an independent iPhone app developer and artist based in Fort Worth, Texas. He builds photography and design tools including FRMT, MODUL8, CYANO and Harmony Palette, makes the color mixing game Dollop and the Japanese learning app Kippu, and runs the art project Merge With The Machine."] = (
+    "Levi Foster ist unabhängiger iPhone-App-Entwickler und Künstler mit Sitz in Fort Worth, Texas. Er baut Foto- und Gestaltungswerkzeuge, darunter FRMT, MODUL8, CYANO und Harmony Palette, macht das Farbmischspiel Dollop und die Japanisch-Lern-App Kippu und betreibt das Kunstprojekt Merge With The Machine.",
+    "Levi Foster es desarrollador independiente de apps para iPhone y artista, con base en Fort Worth, Texas. Construye herramientas de fotografía y diseño como FRMT, MODUL8, CYANO y Harmony Palette, hace el juego de mezcla de colores Dollop y la app para aprender japonés Kippu, y lleva el proyecto artístico Merge With The Machine.",
+    "Levi Foster es desarrollador independiente de apps para iPhone y artista, con base en Fort Worth, Texas. Construye herramientas de fotografía y diseño como FRMT, MODUL8, CYANO y Harmony Palette, hace el juego de mezcla de colores Dollop y la app para aprender japonés Kippu, y lleva el proyecto artístico Merge With The Machine.",
+    "Levi Foster est développeur indépendant d'apps iPhone et artiste, établi à Fort Worth, au Texas. Il construit des outils de photographie et de design dont FRMT, MODUL8, CYANO et Harmony Palette, fait le jeu de mélange de couleurs Dollop et l'app d'apprentissage du japonais Kippu, et mène le projet artistique Merge With The Machine.",
+    "Levi Foster è sviluppatore indipendente di app per iPhone e artista, con base a Fort Worth, Texas. Costruisce strumenti di fotografia e design fra cui FRMT, MODUL8, CYANO e Harmony Palette, fa il gioco di mescolanza dei colori Dollop e l'app per imparare il giapponese Kippu, e porta avanti il progetto artistico Merge With The Machine.",
+    "Levi Foster はテキサス州フォートワースを拠点とする独立系の iPhone アプリ開発者であり、アーティストです。FRMT、MODUL8、CYANO、Harmony Palette をはじめとする写真とデザインのツールをつくり、色混ぜゲーム Dollop と日本語学習アプリ Kippu を制作し、アートプロジェクト Merge With The Machine を運営しています。",
+    "Levi Foster는 텍사스주 포트워스를 기반으로 활동하는 독립 iPhone 앱 개발자이자 아티스트입니다. FRMT, MODUL8, CYANO, Harmony Palette를 비롯한 사진과 디자인 도구를 만들고, 색 혼합 게임 Dollop과 일본어 학습 앱 Kippu를 만들며, 아트 프로젝트 Merge With The Machine을 운영합니다.",
+    "Levi Foster is een onafhankelijke iPhone-app-ontwikkelaar en kunstenaar, gevestigd in Fort Worth, Texas. Hij bouwt foto- en ontwerptools waaronder FRMT, MODUL8, CYANO en Harmony Palette, maakt het kleurmengspel Dollop en de Japans-leerapp Kippu, en runt het kunstproject Merge With The Machine.",
+    "Levi Foster é desenvolvedor independente de apps para iPhone e artista, baseado em Fort Worth, Texas. Ele constrói ferramentas de fotografia e design como FRMT, MODUL8, CYANO e Harmony Palette, faz o jogo de mistura de cores Dollop e o app para aprender japonês Kippu, e toca o projeto artístico Merge With The Machine.",
+    "Levi Foster 是一位独立 iPhone App 开发者和艺术家，常驻美国得州沃斯堡。他构建 FRMT、MODUL8、CYANO 和 Harmony Palette 等摄影与设计工具，制作调色游戏 Dollop 和日语学习应用 Kippu，并经营艺术项目 Merge With The Machine。")

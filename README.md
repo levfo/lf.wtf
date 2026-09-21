@@ -13,6 +13,8 @@ Levi Foster's site. Plain static HTML, no build step, no framework.
     /harmony/privacy  
     /dollop/          Dollop, a colour mixing game for iPhone
     /dollop/privacy   
+    /kippu/           Kippu, Japanese for a trip and the JLPT N5, for iPhone and iPad
+    /kippu/privacy    
     robots.txt        
     sitemap.xml       every real URL; update lastmod when a page changes
     _headers          Cloudflare Pages: security headers + immutable asset caching

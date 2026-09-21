@@ -841,3 +841,102 @@ If this ever changes, the change will appear here with a new date, and any versi
 Questions go to L@LF.WTF, which reaches me directly. An email sent there is an email, and is handled like one: read, replied to, and not fed into anything.
 
 Dollop · lf.wtf · Built in Fort Worth, Texas
+
+# Kippu: learn Japanese for your trip, then the JLPT N5
+Source: https://lf.wtf/kippu/
+
+## kippu
+
+Japanese for iPhone and iPad
+
+### The Japanese you need for the trip. Then the JLPT N5.
+
+Real phrases with what the staff say back. Both kana, then kanji with their stroke order. Short sittings that bring back what you are about to forget, before you forget it.
+
+Download on the App Store
+
+Free to start. iPhone and iPad, iOS 18 and later. Kippu Plus opens everything, with the first week free.
+
+### Two paths, one app
+
+### Travel
+
+Eleven short modules in the order a trip happens: arriving, the konbini, restaurants, hotels and ryokan, trains, shopping, health, being polite, sights, reading the city. Each phrase comes with what the staff say back and how you answer.
+
+### JLPT N5
+
+Twenty-two units covering the exam: both kana, 690 words, 103 kanji with stroke order, 72 grammar points, listening, reading passages, and a thirty-question mock test.
+
+Choose on the first screen and switch whenever you like. What you learn on one path counts on the other.
+
+### How Japan works
+
+Fifty quick cards on the things nobody teaches in a phrasebook: train types and station numbers, IC cards, the last train, tipping, shoes, onsen etiquette, the emergency numbers. Each one has a one-question check, so it sticks.
+
+### How you learn
+
+### Short sittings
+
+A few minutes at a time. What you are about to forget comes back first, so the time goes where it does the most good.
+
+### At your own pace
+
+Learn ahead, review a module, or go over everything you know, whenever you like. Nothing is locked behind a calendar.
+
+### A voice on every line
+
+Every word, phrase and sentence is spoken, a little slower than street speed so each syllable is there to hear. Staff replies use a second voice.
+
+### Three games Plus
+
+Match pairs, race the clock, or catch falling kanji by typing their readings. Only what you already know shows up, so a game is always practice.
+
+### Keep going
+
+A placement check so you start at the right level. A streak, a level that grows with what you remember, and an evening reminder if you want one.
+
+### Kippu Plus
+
+Both kana units, the first module of each path and the Guide are free. Kippu Plus opens every module on both paths, the three games and all seven themes.
+
+The first week is free on either plan. Cancel any time in your Apple account. Prices shown in US dollars; the App Store shows yours.
+
+### What it does not do
+
+No account and nothing to sign in to. No advertising, no analytics, no tracking. Your progress stays on your phone and, if you use iCloud, in your own private iCloud database, which Apple holds and I cannot read. Every lesson, recording and game is on the device, so the app works on the plane.
+
+The privacy policy says the same at greater length, and says nothing else.
+
+### Questions
+
+### Is Kippu for a trip or for the JLPT?
+
+Both, and you choose on the first screen. The travel path is eleven short modules in the order a trip happens, from arriving to reading the city. The N5 path is the whole exam: both kana, 690 words, 103 kanji, 72 grammar points, listening, reading and a mock test. You can switch between them at any time and everything you learn on one counts on the other.
+
+### Do I need to know hiragana before I start?
+
+No. Both kana come first on either path, and a short placement check lets you skip what you already know. Every word shows its reading until you no longer need it, and every kanji is introduced before it appears in a sentence.
+
+### Is Kippu free?
+
+It is free to start, with both kana units, the first module of each path and the travel Guide included. Kippu Plus opens every module, the three games and all seven themes, at 9.99 US dollars a month or 49.99 a year. The first week is free and you can cancel in your Apple account at any time.
+
+### Does it work offline?
+
+Yes. Every lesson, every recording and every game is on the phone. The only thing that uses the network is syncing your progress between your own devices through iCloud, and that waits until you are connected.
+
+### Who speaks the recordings?
+
+A natural Japanese voice, recorded for every word, phrase and sentence in the app, slightly slower than street speed so you can hear each syllable. Staff replies use a second voice, so a conversation sounds like two people.
+
+### Do I need an account?
+
+No. There is nothing to sign up for and nothing to sign in to. Progress is kept on your phone and, if you use iCloud, in your own private iCloud database, which Apple holds and I cannot read.
+
+Also here: Dollop, a colour mixing game for the flight over.
+
+# Kippu Privacy Policy
+Source: https://lf.wtf/kippu/privacy/
+
+Kippu does not collect any data. There is no account, no analytics, no advertising, no tracking and no third-party code in the app. The only network traffic is with Apple: progress syncs to the user's own private iCloud database, which Apple holds and the developer cannot read, and the App Store confirms the subscription. Lessons, recordings and games are inside the app and work offline. The evening reminder is a local notification. Kippu Plus is sold through Apple's In-App Purchase system; payment details never reach the developer. Rated 4+. Questions: L@LF.WTF.
+

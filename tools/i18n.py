@@ -60,6 +60,8 @@ PAGES = {
     "harmony/privacy/index.html": "harmony/privacy/",
     "dollop/index.html": "dollop/",
     "dollop/privacy/index.html": "dollop/privacy/",
+    "kippu/index.html": "kippu/",
+    "kippu/privacy/index.html": "kippu/privacy/",
 }
 
 ATTRS = {"content", "alt", "title", "aria-label", "placeholder"}
