@@ -12,7 +12,7 @@
     "pt-BR": "GRNGE: efeitos de fotocópia, pontilhado, retícula e dither para fotos no iPhone",
     "zh-Hans": "GRNGE：把照片变成复印、点描、网点和抖动效果的 iPhone 应用"
   },
-  "Turn photos into black-and-white photocopy, stipple, halftone and dither prints on iPhone. Layer them in colour inks, draw on them, cut out the subject, add stickers, and save at post, story, square or poster size.": {
+  "Turn photos into black-and-white photocopy, stipple, halftone and dither prints on iPhone. Layer them in color inks, draw on them, cut out the subject, add stickers, and save at post, story, square or poster size.": {
     "kind": "attr:content",
     "de": "Mach aus Fotos Schwarz-Weiß-Drucke auf dem iPhone: Fotokopie, Punktiert, Raster oder Dither. Leg sie in farbigen Tinten übereinander, zeichne darauf, schneide das Motiv aus, kleb Sticker drauf und sichere sie als Post, Story, Quadrat oder Poster.",
     "es": "Convierte tus fotos en impresiones en blanco y negro en el iPhone: fotocopia, puntillismo, trama o dither. Superponlas en tintas de color, dibuja encima, recorta el sujeto, añade pegatinas y guárdalas en tamaño post, historia, cuadrado o póster.",
@@ -25,7 +25,7 @@
     "pt-BR": "Transforme fotos em impressões em preto e branco no iPhone: fotocópia, pontilhado, retícula ou dither. Sobreponha em tintas coloridas, desenhe por cima, recorte o assunto, adicione adesivos e salve no tamanho de post, story, quadrado ou pôster.",
     "zh-Hans": "在 iPhone 上把照片变成黑白印刷品：复印、点描、网点或抖动。用彩色墨叠印，在上面涂鸦，抠出主体，贴上贴纸，再按帖子、快拍、方形或海报尺寸保存。"
   },
-  "Black-and-white prints from your photos, on iPhone. Layer them in colour inks, draw on them, cut out the subject, add stickers, and save at the size you post.": {
+  "Black-and-white prints from your photos, on iPhone. Layer them in color inks, draw on them, cut out the subject, add stickers, and save at the size you post.": {
     "kind": "attr:content",
     "de": "Schwarz-Weiß-Drucke aus deinen Fotos, auf dem iPhone. Leg sie in farbigen Tinten übereinander, zeichne darauf, schneide das Motiv aus, kleb Sticker drauf und sichere sie in der Größe, in der du postest.",
     "es": "Impresiones en blanco y negro de tus fotos, en el iPhone. Superponlas en tintas de color, dibuja encima, recorta el sujeto, añade pegatinas y guárdalas al tamaño en que publicas.",
@@ -103,7 +103,7 @@
     "pt-BR": "Comece com uma foto.",
     "zh-Hans": "从一张照片开始。"
   },
-  "GRNGE turns it into a black-and-white print: photocopy, stipple, halftone or dither.\n    Then layer it in colour inks, draw on it, cut out the subject, add stickers, and save it at the size\n    you post.": {
+  "GRNGE turns it into a black-and-white print: photocopy, stipple, halftone or dither.\n    Then layer it in color inks, draw on it, cut out the subject, add stickers, and save it at the size\n    you post.": {
     "kind": "text:p",
     "de": "GRNGE macht daraus einen Schwarz-Weiß-Druck: Fotokopie, Punktiert, Raster oder Dither. Dann leg ihn in farbigen Tinten übereinander, zeichne darauf, schneide das Motiv aus, kleb Sticker drauf und sichere ihn in der Größe, in der du postest.",
     "es": "GRNGE la convierte en una impresión en blanco y negro: fotocopia, puntillismo, trama o dither. Luego superponla en tintas de color, dibuja encima, recorta el sujeto, añade pegatinas y guárdala al tamaño en que publicas.",
@@ -155,7 +155,7 @@
     "pt-BR": "Um skatista agachado na prancha, impresso em preto e branco duro sobre papel creme.",
     "zh-Hans": "一个蹲在滑板上的滑手，以强烈的黑白印在米白色的纸上。"
   },
-  "The original colour photo of the skateboarder.": {
+  "The original color photo of the skateboarder.": {
     "kind": "attr:alt",
     "de": "Das farbige Originalfoto des Skateboarders.",
     "es": "La foto original en color del skater.",
@@ -350,7 +350,7 @@
     "pt-BR": "Camadas",
     "zh-Hans": "叠层"
   },
-  "Layer it in colour": {
+  "Layer it in color": {
     "kind": "text:h2",
     "de": "Leg Farbe darüber",
     "es": "Superponla en color",
@@ -714,7 +714,7 @@
     "pt-BR": "Retícula e Dither",
     "zh-Hans": "网点和抖动"
   },
-  "As many sheets as you like, in colour inks, see-through and shifted": {
+  "As many sheets as you like, in color inks, see-through and shifted": {
     "kind": "text:li",
     "de": "So viele Blätter, wie du willst, in farbigen Tinten, durchscheinend und versetzt",
     "es": "Todas las capas que quieras, en tintas de color, transparentes y desplazadas",
@@ -935,7 +935,7 @@
     "pt-BR": "Ele imprime em papel?",
     "zh-Hans": "会打印到纸上吗？"
   },
-  "No. Print makes an image and saves it to Photos, sized for a post, a story, a square or an A3\n  poster. The paper colour is part of the picture. The poster size is 300 dpi, so a print shop can\n  print it.": {
+  "No. Print makes an image and saves it to Photos, sized for a post, a story, a square or an A3\n  poster. The paper color is part of the picture. The poster size is 300 dpi, so a print shop can\n  print it.": {
     "kind": "text:p",
     "de": "Nein. Drucken erzeugt ein Bild und sichert es in Fotos, in der Größe für einen Post, eine Story, ein Quadrat oder ein A3-Poster. Die Papierfarbe ist Teil des Bildes. Die Postergröße hat 300 dpi, eine Druckerei kann sie also drucken.",
     "es": "No. Imprimir crea una imagen y la guarda en Fotos, al tamaño de un post, una historia, un cuadrado o un póster A3. El color del papel forma parte de la imagen. El tamaño póster es de 300 ppp, así que una imprenta puede imprimirlo.",
@@ -1117,7 +1117,7 @@
     "pt-BR": "Levi Foster",
     "zh-Hans": "Levi Foster"
   },
-  "A photo effects app for iPhone that turns photos into black-and-white prints: Photocopy, Stipple, Halftone and Dither. Prints can be layered in colour inks, drawn on, cut out around the subject with a clean, torn or sticker edge, decorated with stickers, and saved at post, story, square or A3 poster size on white, newsprint, kraft, pink, orange or clear paper.": {
+  "A photo effects app for iPhone that turns photos into black-and-white prints: Photocopy, Stipple, Halftone and Dither. Prints can be layered in color inks, drawn on, cut out around the subject with a clean, torn or sticker edge, decorated with stickers, and saved at post, story, square or A3 poster size on white, newsprint, kraft, pink, orange or clear paper.": {
     "kind": "ld",
     "de": "Eine Fotoeffekt-App fürs iPhone, die Fotos in Schwarz-Weiß-Drucke verwandelt: Fotokopie, Punktiert, Raster und Dither. Drucke lassen sich in farbigen Tinten übereinanderlegen, bemalen, mit sauberem, gerissenem oder Sticker-Rand um das Motiv ausschneiden, mit Stickern bekleben und als Post, Story, Quadrat oder A3-Poster auf weißem Papier, Zeitungspapier, Kraftpapier, Pink, Orange oder transparent sichern.",
     "es": "Una app de efectos de foto para iPhone que convierte fotos en impresiones en blanco y negro: Fotocopia, Puntillismo, Trama y Dither. Las impresiones se pueden superponer en tintas de color, dibujar, recortar alrededor del sujeto con borde limpio, rasgado o de pegatina, decorar con pegatinas y guardar en tamaño post, historia, cuadrado o póster A3 sobre papel blanco, de periódico, kraft, rosa, naranja o transparente.",
@@ -1208,7 +1208,7 @@
     "pt-BR": "Adesivos impressos nas mesmas tintas",
     "zh-Hans": "用同样墨色印出的贴纸"
   },
-  "Save at post, story, square or A3 poster size, on coloured or clear paper": {
+  "Save at post, story, square or A3 poster size, on colored or clear paper": {
     "kind": "ld",
     "de": "Sichern als Post, Story, Quadrat oder A3-Poster, auf farbigem oder transparentem Papier",
     "es": "Guarda en tamaño post, historia, cuadrado o póster A3, en papel de color o transparente",
@@ -1260,7 +1260,7 @@
     "pt-BR": "Sim, para baixar e para usar. Fotocópia e Pontilhado, duas camadas, marcador e caneta, e impressões de 1080 px com o carimbo GRNGE são grátis. O GRNGE Pro libera todo o resto por 5,99 dólares americanos por mês ou 29,99 por ano, e o plano anual começa com uma semana grátis. Cancele quando quiser na sua conta Apple.",
     "zh-Hans": "是的，下载和使用都免费。复印和点描、两层叠层、马克笔和钢笔，以及带 GRNGE 印记的 1080 px 输出都是免费的。GRNGE Pro 解锁其余全部，每月 5.99 美元或每年 29.99 美元，年度方案首周免费。随时可在你的 Apple 账户中取消。"
   },
-  "No. Print makes an image and saves it to Photos, sized for a post, a story, a square or an A3 poster. The paper colour is part of the picture. The poster size is 300 dpi, so a print shop can print it.": {
+  "No. Print makes an image and saves it to Photos, sized for a post, a story, a square or an A3 poster. The paper color is part of the picture. The poster size is 300 dpi, so a print shop can print it.": {
     "kind": "ld",
     "de": "Nein. Drucken erzeugt ein Bild und sichert es in Fotos, in der Größe für einen Post, eine Story, ein Quadrat oder ein A3-Poster. Die Papierfarbe ist Teil des Bildes. Die Postergröße hat 300 dpi, eine Druckerei kann sie also drucken.",
     "es": "No. Imprimir crea una imagen y la guarda en Fotos, al tamaño de un post, una historia, un cuadrado o un póster A3. El color del papel forma parte de la imagen. El tamaño póster es de 300 ppp, así que una imprenta puede imprimirlo.",

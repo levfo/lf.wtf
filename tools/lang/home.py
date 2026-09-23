@@ -816,7 +816,7 @@ T["GRNGE: Grunge Photo Effects"] = (
     "GRNGE: 그런지 사진 효과", "GRNGE: Grunge-foto-effecten", "GRNGE: Efeitos de foto grunge",
     "GRNGE：Grunge 风格照片效果")
 
-T["A photo effects app for iPhone. Photos become black-and-white photocopy, stipple, halftone and dither prints, then get layered in colour inks, drawn on, cut out, covered in stickers, and saved at the size you post."] = (
+T["A photo effects app for iPhone. Photos become black-and-white photocopy, stipple, halftone and dither prints, then get layered in color inks, drawn on, cut out, covered in stickers, and saved at the size you post."] = (
     "Eine Fotoeffekt-App fürs iPhone. Aus Fotos werden Schwarz-Weiß-Drucke in Fotokopie, Punktiert, "
     "Raster und Dither, die du in farbigen Tinten übereinanderlegst, bemalst, ausschneidest, mit "
     "Stickern beklebst und in der Größe sicherst, in der du postest.",
@@ -845,7 +845,7 @@ T["A photo effects app for iPhone. Photos become black-and-white photocopy, stip
     "一款 iPhone 照片效果应用。照片变成复印、点描、网点和抖动的黑白印刷品，再用彩色墨叠印、"
     "涂鸦、抠图、贴满贴纸，按你发帖的尺寸保存。")
 
-T["A photo effects app for iPhone: black-and-white photocopy, stipple, halftone and dither prints, layered in colour, drawn on and cut out."] = (
+T["A photo effects app for iPhone: black-and-white photocopy, stipple, halftone and dither prints, layered in color, drawn on and cut out."] = (
     "Eine Fotoeffekt-App fürs iPhone: Schwarz-Weiß-Drucke in Fotokopie, Punktiert, Raster und "
     "Dither, in Farbe übereinandergelegt, bemalt und ausgeschnitten.",
     "Una app de efectos de foto para iPhone: impresiones en blanco y negro de fotocopia, "

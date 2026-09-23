@@ -950,7 +950,7 @@ Photo effects for iPhone
 
 ### Start with a photo.
 
-GRNGE turns it into a black-and-white print: photocopy, stipple, halftone or dither. Then layer it in colour inks, draw on it, cut out the subject, add stickers, and save it at the size you post.
+GRNGE turns it into a black-and-white print: photocopy, stipple, halftone or dither. Then layer it in color inks, draw on it, cut out the subject, add stickers, and save it at the size you post.
 
 Download on the App Store
 
@@ -962,7 +962,7 @@ Original, Photocopy, Stipple, Halftone, Dither.
 
 Three dials do the same thing on all four. Ink goes lighter or darker, Grit goes from clean to dirty, Wear goes from fresh to worn. Hold the picture to see the photo again.
 
-### Layer it in colour
+### Layer it in color
 
 Print the same photo again in orange, pink or blue and lay it over the first. Each sheet has its own effect, ink and strength. Let it show through, or shift it out of line. Recipes on the home screen set up a whole stack in one tap, and stay editable.
 
@@ -988,7 +988,7 @@ GRNGE is free to download and free to use. GRNGE Pro opens the rest.
 
 Free: Photocopy and Stipple; Ink, Grit and Wear; two sheets in the stack; marker, pen and eraser; burst, star and arrow stickers; 1080 px prints with the GRNGE stamp, on white or newsprint.
 
-GRNGE Pro: Halftone and Dither; as many sheets as you like, in colour inks, see-through and shifted; spray, splat and stencil; cut-outs and every sticker; every paper stock; full-size and A3 poster prints, stamp optional.
+GRNGE Pro: Halftone and Dither; as many sheets as you like, in color inks, see-through and shifted; spray, splat and stencil; cut-outs and every sticker; every paper stock; full-size and A3 poster prints, stamp optional.
 
 29.99 US dollars a year with 7 days free, or 5.99 a month. Pro tools work in the editor, so you can try them first. When you print, subscribe or print without them. The free week is on the yearly plan. Cancel any time in your Apple account. Prices shown in US dollars; the App Store shows yours.
 
@@ -1006,7 +1006,7 @@ Yes, to download and to use. Photocopy and Stipple, two sheets, marker and pen, 
 
 ### Does it print on paper?
 
-No. Print makes an image and saves it to Photos, sized for a post, a story, a square or an A3 poster. The paper colour is part of the picture. The poster size is 300 dpi, so a print shop can print it.
+No. Print makes an image and saves it to Photos, sized for a post, a story, a square or an A3 poster. The paper color is part of the picture. The poster size is 300 dpi, so a print shop can print it.
 
 ### Do my photos leave my phone?
 
