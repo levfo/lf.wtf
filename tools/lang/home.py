@@ -766,3 +766,100 @@ T["Levi Foster is an independent iPhone app developer and artist based in Fort W
     "Levi Foster is een onafhankelijke iPhone-app-ontwikkelaar en kunstenaar, gevestigd in Fort Worth, Texas. Hij bouwt foto- en ontwerptools waaronder FRMT, MODUL8, CYANO en Harmony Palette, maakt het kleurmengspel Dollop en de Japans-leerapp Kippu, en runt het kunstproject Merge With The Machine.",
     "Levi Foster é desenvolvedor independente de apps para iPhone e artista, baseado em Fort Worth, Texas. Ele constrói ferramentas de fotografia e design como FRMT, MODUL8, CYANO e Harmony Palette, faz o jogo de mistura de cores Dollop e o app para aprender japonês Kippu, e toca o projeto artístico Merge With The Machine.",
     "Levi Foster 是一位独立 iPhone App 开发者和艺术家，常驻美国得州沃斯堡。他构建 FRMT、MODUL8、CYANO 和 Harmony Palette 等摄影与设计工具，制作调色游戏 Dollop 和日语学习应用 Kippu，并经营艺术项目 Merge With The Machine。")
+
+
+# ------------------------------------------------------------------------ GRNGE
+#: The card, its ItemList entry, and the three site descriptions that now name it. The full page
+#: is at tools/lang/grnge.py. The descriptions are the Kippu versions with GRNGE added after CYANO.
+
+KEEP.add("GRNGE")
+
+T['Levi Foster is an independent app developer and artist in Fort Worth, Texas. He makes FRMT film simulation, MODUL8 glitch art, CYANO cyanotype, GRNGE photo effects, the color mixing game Dollop, the Japanese learning app Kippu and Harmony Palette for iPhone, and runs Merge With The Machine.'] = (
+    'Levi Foster ist unabhängiger App-Entwickler und Künstler in Fort Worth, Texas. Er macht die Filmsimulation FRMT, die Glitch-Art-App MODUL8, die Cyanotypie-App CYANO, die Fotoeffekt-App GRNGE, das Farbmischspiel Dollop, die Japanisch-Lern-App Kippu und Harmony Palette für iPhone und betreibt Merge With The Machine.',
+    'Levi Foster es desarrollador de apps y artista independiente en Fort Worth, Texas. Hace la simulación de película FRMT, la app de glitch art MODUL8, la de cianotipia CYANO, la de efectos de foto GRNGE, el juego de mezcla de colores Dollop, la app para aprender japonés Kippu y Harmony Palette para iPhone, y lleva Merge With The Machine.',
+    'Levi Foster es desarrollador de apps y artista independiente en Fort Worth, Texas. Hace la simulación de película FRMT, la app de glitch art MODUL8, la de cianotipia CYANO, la de efectos de foto GRNGE, el juego de mezcla de colores Dollop, la app para aprender japonés Kippu y Harmony Palette para iPhone, y lleva Merge With The Machine.',
+    "Levi Foster est développeur d'apps et artiste indépendant à Fort Worth, au Texas. Il fait la simulation argentique FRMT, l'app de glitch art MODUL8, l'app de cyanotype CYANO, l'app d'effets photo GRNGE, le jeu de mélange de couleurs Dollop, l'app d'apprentissage du japonais Kippu et Harmony Palette pour iPhone, et mène Merge With The Machine.",
+    "Levi Foster è sviluppatore di app e artista indipendente a Fort Worth, Texas. Fa la simulazione di pellicola FRMT, l'app di glitch art MODUL8, quella di cianotipia CYANO, quella di effetti foto GRNGE, il gioco di mescolanza dei colori Dollop, l'app per imparare il giapponese Kippu e Harmony Palette per iPhone, e porta avanti Merge With The Machine.",
+    'Levi Foster はテキサス州フォートワースを拠点とする独立系のアプリ開発者であり、アーティストです。フィルムシミュレーション FRMT、グリッチアート MODUL8、サイアノタイプ CYANO、写真エフェクト GRNGE、色混ぜゲーム Dollop、日本語学習アプリ Kippu、Harmony Palette を iPhone 向けに制作し、Merge With The Machine を運営しています。',
+    'Levi Foster는 텍사스주 포트워스에서 활동하는 독립 앱 개발자이자 아티스트입니다. 필름 시뮬레이션 FRMT, 글리치 아트 MODUL8, 사이아노타입 CYANO, 사진 효과 GRNGE, 색 혼합 게임 Dollop, 일본어 학습 앱 Kippu, Harmony Palette를 iPhone용으로 만들고 Merge With The Machine을 운영합니다.',
+    'Levi Foster is een onafhankelijke app-ontwikkelaar en kunstenaar in Fort Worth, Texas. Hij maakt de filmsimulatie FRMT, de glitch-art-app MODUL8, de cyanotypie-app CYANO, de foto-effectenapp GRNGE, het kleurmengspel Dollop, de Japans-leerapp Kippu en Harmony Palette voor iPhone, en runt Merge With The Machine.',
+    'Levi Foster é desenvolvedor de apps e artista independente em Fort Worth, Texas. Ele faz a simulação de filme FRMT, o app de glitch art MODUL8, o de cianotipia CYANO, o de efeitos de foto GRNGE, o jogo de mistura de cores Dollop, o app para aprender japonês Kippu e o Harmony Palette para iPhone, e toca o Merge With The Machine.',
+    'Levi Foster 是一位独立 App 开发者和艺术家，常驻美国得州沃斯堡。他为 iPhone 制作胶片模拟 FRMT、故障艺术 MODUL8、蓝晒 CYANO、照片效果 GRNGE、调色游戏 Dollop、日语学习应用 Kippu 和 Harmony Palette，并经营 Merge With The Machine。')
+
+T['Independent app developer and artist in Fort Worth, Texas. FRMT film simulation, MODUL8 glitch art, CYANO cyanotype, GRNGE photo effects, Dollop color mixing, Kippu Japanese learning, Harmony Palette, and Merge With The Machine.'] = (
+    'Unabhängiger App-Entwickler und Künstler in Fort Worth, Texas. Filmsimulation FRMT, Glitch Art MODUL8, Cyanotypie CYANO, Fotoeffekte GRNGE, Farbmischspiel Dollop, Japanisch lernen mit Kippu, Harmony Palette und Merge With The Machine.',
+    'Desarrollador de apps y artista independiente en Fort Worth, Texas. Simulación de película FRMT, glitch art MODUL8, cianotipia CYANO, efectos de foto GRNGE, mezcla de colores Dollop, japonés con Kippu, Harmony Palette y Merge With The Machine.',
+    'Desarrollador de apps y artista independiente en Fort Worth, Texas. Simulación de película FRMT, glitch art MODUL8, cianotipia CYANO, efectos de foto GRNGE, mezcla de colores Dollop, japonés con Kippu, Harmony Palette y Merge With The Machine.',
+    "Développeur d'apps et artiste indépendant à Fort Worth, au Texas. Simulation argentique FRMT, glitch art MODUL8, cyanotype CYANO, effets photo GRNGE, mélange de couleurs Dollop, japonais avec Kippu, Harmony Palette et Merge With The Machine.",
+    'Sviluppatore di app e artista indipendente a Fort Worth, Texas. Simulazione di pellicola FRMT, glitch art MODUL8, cianotipia CYANO, effetti foto GRNGE, mescolanza dei colori Dollop, giapponese con Kippu, Harmony Palette e Merge With The Machine.',
+    'テキサス州フォートワースの独立系アプリ開発者、アーティスト。フィルムシミュレーション FRMT、グリッチアート MODUL8、サイアノタイプ CYANO、写真エフェクト GRNGE、色混ぜゲーム Dollop、日本語学習 Kippu、Harmony Palette、Merge With The Machine。',
+    '텍사스주 포트워스의 독립 앱 개발자이자 아티스트. 필름 시뮬레이션 FRMT, 글리치 아트 MODUL8, 사이아노타입 CYANO, 사진 효과 GRNGE, 색 혼합 Dollop, 일본어 학습 Kippu, Harmony Palette, 그리고 Merge With The Machine.',
+    'Onafhankelijke app-ontwikkelaar en kunstenaar in Fort Worth, Texas. Filmsimulatie FRMT, glitch art MODUL8, cyanotypie CYANO, foto-effecten GRNGE, kleurmengen met Dollop, Japans leren met Kippu, Harmony Palette en Merge With The Machine.',
+    'Desenvolvedor de apps e artista independente em Fort Worth, Texas. Simulação de filme FRMT, glitch art MODUL8, cianotipia CYANO, efeitos de foto GRNGE, mistura de cores Dollop, japonês com Kippu, Harmony Palette e Merge With The Machine.',
+    '独立 App 开发者和艺术家，常驻美国得州沃斯堡。胶片模拟 FRMT、故障艺术 MODUL8、蓝晒 CYANO、照片效果 GRNGE、调色 Dollop、日语学习 Kippu、Harmony Palette，以及 Merge With The Machine。')
+
+T['Levi Foster is an independent iPhone app developer and artist based in Fort Worth, Texas. He builds photography and design tools including FRMT, MODUL8, CYANO, GRNGE and Harmony Palette, makes the color mixing game Dollop and the Japanese learning app Kippu, and runs the art project Merge With The Machine.'] = (
+    'Levi Foster ist unabhängiger iPhone-App-Entwickler und Künstler mit Sitz in Fort Worth, Texas. Er baut Foto- und Gestaltungswerkzeuge, darunter FRMT, MODUL8, CYANO, GRNGE und Harmony Palette, macht das Farbmischspiel Dollop und die Japanisch-Lern-App Kippu und betreibt das Kunstprojekt Merge With The Machine.',
+    'Levi Foster es desarrollador independiente de apps para iPhone y artista, con base en Fort Worth, Texas. Construye herramientas de fotografía y diseño como FRMT, MODUL8, CYANO, GRNGE y Harmony Palette, hace el juego de mezcla de colores Dollop y la app para aprender japonés Kippu, y lleva el proyecto artístico Merge With The Machine.',
+    'Levi Foster es desarrollador independiente de apps para iPhone y artista, con base en Fort Worth, Texas. Construye herramientas de fotografía y diseño como FRMT, MODUL8, CYANO, GRNGE y Harmony Palette, hace el juego de mezcla de colores Dollop y la app para aprender japonés Kippu, y lleva el proyecto artístico Merge With The Machine.',
+    "Levi Foster est développeur indépendant d'apps iPhone et artiste, établi à Fort Worth, au Texas. Il construit des outils de photographie et de design dont FRMT, MODUL8, CYANO, GRNGE et Harmony Palette, fait le jeu de mélange de couleurs Dollop et l'app d'apprentissage du japonais Kippu, et mène le projet artistique Merge With The Machine.",
+    "Levi Foster è sviluppatore indipendente di app per iPhone e artista, con base a Fort Worth, Texas. Costruisce strumenti di fotografia e design fra cui FRMT, MODUL8, CYANO, GRNGE e Harmony Palette, fa il gioco di mescolanza dei colori Dollop e l'app per imparare il giapponese Kippu, e porta avanti il progetto artistico Merge With The Machine.",
+    'Levi Foster はテキサス州フォートワースを拠点とする独立系の iPhone アプリ開発者であり、アーティストです。FRMT、MODUL8、CYANO、GRNGE、Harmony Palette をはじめとする写真とデザインのツールをつくり、色混ぜゲーム Dollop と日本語学習アプリ Kippu を制作し、アートプロジェクト Merge With The Machine を運営しています。',
+    'Levi Foster는 텍사스주 포트워스를 기반으로 활동하는 독립 iPhone 앱 개발자이자 아티스트입니다. FRMT, MODUL8, CYANO, GRNGE, Harmony Palette를 비롯한 사진과 디자인 도구를 만들고, 색 혼합 게임 Dollop과 일본어 학습 앱 Kippu를 만들며, 아트 프로젝트 Merge With The Machine을 운영합니다.',
+    'Levi Foster is een onafhankelijke iPhone-app-ontwikkelaar en kunstenaar, gevestigd in Fort Worth, Texas. Hij bouwt foto- en ontwerptools waaronder FRMT, MODUL8, CYANO, GRNGE en Harmony Palette, maakt het kleurmengspel Dollop en de Japans-leerapp Kippu, en runt het kunstproject Merge With The Machine.',
+    'Levi Foster é desenvolvedor independente de apps para iPhone e artista, baseado em Fort Worth, Texas. Ele constrói ferramentas de fotografia e design como FRMT, MODUL8, CYANO, GRNGE e Harmony Palette, faz o jogo de mistura de cores Dollop e o app para aprender japonês Kippu, e toca o projeto artístico Merge With The Machine.',
+    'Levi Foster 是一位独立 iPhone App 开发者和艺术家，常驻美国得州沃斯堡。他构建 FRMT、MODUL8、CYANO、GRNGE 和 Harmony Palette 等摄影与设计工具，制作调色游戏 Dollop 和日语学习应用 Kippu，并经营艺术项目 Merge With The Machine。')
+
+T["GRNGE: Grunge Photo Effects"] = (
+    "GRNGE: Grunge-Fotoeffekte", "GRNGE: Efectos de foto grunge", "GRNGE: Efectos de foto grunge",
+    "GRNGE : Effets photo grunge", "GRNGE: Effetti foto grunge", "GRNGE：グランジな写真エフェクト",
+    "GRNGE: 그런지 사진 효과", "GRNGE: Grunge-foto-effecten", "GRNGE: Efeitos de foto grunge",
+    "GRNGE：Grunge 风格照片效果")
+
+T["A photo effects app for iPhone. Photos become black-and-white photocopy, stipple, halftone and dither prints, then get layered in colour inks, drawn on, cut out, covered in stickers, and saved at the size you post."] = (
+    "Eine Fotoeffekt-App fürs iPhone. Aus Fotos werden Schwarz-Weiß-Drucke in Fotokopie, Punktiert, "
+    "Raster und Dither, die du in farbigen Tinten übereinanderlegst, bemalst, ausschneidest, mit "
+    "Stickern beklebst und in der Größe sicherst, in der du postest.",
+    "Una app de efectos de foto para iPhone. Las fotos se vuelven impresiones en blanco y negro de "
+    "fotocopia, puntillismo, trama y dither, que luego se superponen en tintas de color, se dibujan, "
+    "se recortan, se llenan de pegatinas y se guardan al tamaño en que publicas.",
+    "Una app de efectos de foto para iPhone. Las fotos se vuelven impresiones en blanco y negro de "
+    "fotocopia, puntillismo, trama y dither, que luego se superponen en tintas de color, se dibujan, "
+    "se recortan, se llenan de calcomanías y se guardan al tamaño en que publicas.",
+    "Une app d'effets photo pour iPhone. Les photos deviennent des tirages noir et blanc en "
+    "photocopie, pointillé, trame et tramage, qu'on superpose en encres de couleur, qu'on dessine, "
+    "qu'on découpe, qu'on couvre d'autocollants et qu'on enregistre au format de ses publications.",
+    "Un'app di effetti foto per iPhone. Le foto diventano stampe in bianco e nero a fotocopia, "
+    "puntinato, retino e dither, poi si sovrappongono in inchiostri colorati, si disegnano, si "
+    "ritagliano, si coprono di adesivi e si salvano nel formato in cui pubblichi.",
+    "iPhone の写真エフェクトアプリ。写真を白黒のコピー、点描、網点、ディザのプリントにして、"
+    "カラーインクで重ね、描き込み、切り抜き、シールを貼って、投稿するサイズで保存します。",
+    "iPhone용 사진 효과 앱. 사진을 흑백 복사, 점묘, 망점, 디더 인쇄물로 바꾸고, 컬러 잉크로 "
+    "겹치고, 그리고, 오려내고, 스티커를 붙여서 올릴 크기로 저장합니다.",
+    "Een foto-effectenapp voor iPhone. Foto's worden zwart-witafdrukken in fotokopie, stippel, "
+    "raster en dither, die je in kleurinkten over elkaar legt, bekrabbelt, uitknipt, vol stickers "
+    "plakt en bewaart op het formaat waarop je post.",
+    "Um app de efeitos de foto para iPhone. As fotos viram impressões em preto e branco de "
+    "fotocópia, pontilhado, retícula e dither, que depois são sobrepostas em tintas coloridas, "
+    "rabiscadas, recortadas, cobertas de adesivos e salvas no tamanho em que você posta.",
+    "一款 iPhone 照片效果应用。照片变成复印、点描、网点和抖动的黑白印刷品，再用彩色墨叠印、"
+    "涂鸦、抠图、贴满贴纸，按你发帖的尺寸保存。")
+
+T["A photo effects app for iPhone: black-and-white photocopy, stipple, halftone and dither prints, layered in colour, drawn on and cut out."] = (
+    "Eine Fotoeffekt-App fürs iPhone: Schwarz-Weiß-Drucke in Fotokopie, Punktiert, Raster und "
+    "Dither, in Farbe übereinandergelegt, bemalt und ausgeschnitten.",
+    "Una app de efectos de foto para iPhone: impresiones en blanco y negro de fotocopia, "
+    "puntillismo, trama y dither, superpuestas en color, dibujadas y recortadas.",
+    "Una app de efectos de foto para iPhone: impresiones en blanco y negro de fotocopia, "
+    "puntillismo, trama y dither, superpuestas en color, dibujadas y recortadas.",
+    "Une app d'effets photo pour iPhone : des tirages noir et blanc en photocopie, pointillé, trame "
+    "et tramage, superposés en couleur, dessinés et découpés.",
+    "Un'app di effetti foto per iPhone: stampe in bianco e nero a fotocopia, puntinato, retino e "
+    "dither, sovrapposte a colori, disegnate e ritagliate.",
+    "iPhone の写真エフェクトアプリ：コピー、点描、網点、ディザの白黒プリントを、色で重ね、描き込み、切り抜く。",
+    "iPhone용 사진 효과 앱: 복사, 점묘, 망점, 디더 흑백 인쇄물을 색으로 겹치고, 그리고, 오려낸다.",
+    "Een foto-effectenapp voor iPhone: zwart-witafdrukken in fotokopie, stippel, raster en dither, "
+    "in kleur over elkaar gelegd, bekrabbeld en uitgeknipt.",
+    "Um app de efeitos de foto para iPhone: impressões em preto e branco de fotocópia, pontilhado, "
+    "retícula e dither, sobrepostas em cores, rabiscadas e recortadas.",
+    "一款 iPhone 照片效果应用：复印、点描、网点和抖动的黑白印刷品，可以叠色、涂鸦和抠图。")

@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GRNGE: 사진을 복사, 점묘, 망점, 디더 효과로 바꾸는 iPhone 앱</title>
+<meta name="description" content="iPhone에서 사진을 흑백 인쇄물로. 복사, 점묘, 망점, 디더. 컬러 잉크로 겹치고, 위에 그리고, 피사체를 오려내고, 스티커를 붙여서 게시물, 스토리, 정사각형, 포스터 크기로 저장하세요.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0E0E0D">
+<link rel="alternate" hreflang="en" href="https://lf.wtf/grnge/">
+<link rel="alternate" hreflang="de" href="https://lf.wtf/de/grnge/">
+<link rel="alternate" hreflang="es" href="https://lf.wtf/es/grnge/">
+<link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/grnge/">
+<link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/grnge/">
+<link rel="alternate" hreflang="it" href="https://lf.wtf/it/grnge/">
+<link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/grnge/">
+<link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/grnge/">
+<link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/grnge/">
+<link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/grnge/">
+<link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/grnge/">
+<link rel="alternate" hreflang="x-default" href="https://lf.wtf/grnge/">
+<link rel="canonical" href="https://lf.wtf/ko/grnge/">
+<link rel="icon" href="/grnge/assets/icon.png">
+<link rel="apple-touch-icon" href="/grnge/assets/icon.png">
+
+<meta property="og:title" content="GRNGE: 사진을 복사, 점묘, 망점, 디더 효과로 바꾸는 iPhone 앱">
+<meta property="og:description" content="내 사진으로 만드는 흑백 인쇄물, iPhone에서. 컬러 잉크로 겹치고, 위에 그리고, 피사체를 오려내고, 스티커를 붙여서 올릴 크기로 저장하세요.">
+<meta property="og:image" content="https://lf.wtf/grnge/assets/icon.png">
+<meta property="og:image:alt" content="GRNGE 아이콘: 주황색 마커로 동그라미를 친 흑백 눈.">
+<meta property="og:url" content="https://lf.wtf/ko/grnge/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="lf.wtf">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="es_MX">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GRNGE: 사진을 복사, 점묘, 망점, 디더 효과로 바꾸는 iPhone 앱">
+<meta name="twitter:description" content="내 사진으로 만드는 흑백 인쇄물, iPhone에서. 컬러 잉크로 겹치고, 위에 그리고, 피사체를 오려내고, 스티커를 붙여서 올릴 크기로 저장하세요.">
+<meta name="twitter:image" content="https://lf.wtf/grnge/assets/icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;600;800&family=Rubik+Mono+One&family=Space+Mono:wght@400;700&family=Special+Elite&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rock+Salt&text=G&display=swap">
+<script>
+/* The Latin faces have no CJK glyphs. Each CJK page loads the display face the app uses for its
+   script, and only that one: Japanese is never set in a Chinese face. */
+(function () {
+  var f = {"ja": "Dela+Gothic+One", "ko": "Black+Han+Sans", "zh-Hans": "ZCOOL+QingKe+HuangYou"}[document.documentElement.lang];
+  if (!f) return;
+  var l = document.createElement("link");
+  l.rel = "stylesheet";
+  l.href = "https://fonts.googleapis.com/css2?family=" + f + "&display=swap";
+  document.head.appendChild(l);
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobileApplication",
+      "@id": "https://lf.wtf/grnge/#app",
+      "name": "GRNGE",
+      "url": "https://lf.wtf/grnge/",
+      "image": "https://lf.wtf/grnge/assets/icon.png",
+      "description": "사진을 흑백 인쇄물로 바꾸는 iPhone 사진 효과 앱. 복사, 점묘, 망점, 디더. 인쇄물은 컬러 잉크로 겹치고, 위에 그리고, 깨끗한, 찢은, 스티커 테두리로 피사체를 오려내고, 스티커를 붙여서 게시물, 스토리, 정사각형, A3 포스터 크기로 흰색, 신문 용지, 크래프트, 분홍, 주황, 투명 용지에 저장할 수 있다.",
+      "applicationCategory": "PhotoApplication",
+      "applicationSubCategory": "Photo effects",
+      "operatingSystem": "iOS 17.0 or later",
+      "installUrl": "https://apps.apple.com/app/id6815086918",
+      "downloadUrl": "https://apps.apple.com/app/id6815086918",
+      "sameAs": [
+        "https://apps.apple.com/app/id6815086918"
+      ],
+      "featureList": [
+        "네 가지 흑백 효과: 복사, 점묘, 망점, 디더",
+        "모든 효과에 세 가지 다이얼: 잉크, 거칠기, 닳음",
+        "같은 사진의 인쇄물을 검정, 주황, 분홍, 파랑 잉크로 겹치기, 비침과 어긋남까지",
+        "마커, 펜, 스프레이, 물감 튀김, 스텐실로 낙서",
+        "피사체를 깨끗한, 찢은, 스티커 테두리로 오려내기",
+        "같은 잉크로 인쇄되는 스티커",
+        "게시물, 스토리, 정사각형, A3 포스터 크기로, 컬러 또는 투명 용지에 저장",
+        "계정 없음, 네트워크 코드 없음, 사진은 휴대폰 안에서 처리"
+      ],
+      "author": {
+        "@type": "Person",
+        "@id": "https://lf.wtf/#levifoster",
+        "name": "Levi Foster",
+        "url": "https://lf.wtf/"
+      },
+      "publisher": {
+        "@type": "Person",
+        "@id": "https://lf.wtf/#levifoster",
+        "name": "Levi Foster",
+        "url": "https://lf.wtf/"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "다운로드 무료. 복사와 점묘, 레이어 두 장, 마커와 펜, GRNGE 스탬프가 찍힌 1080 px 인쇄를 무료로 쓸 수 있다. GRNGE Pro는 나머지를 모두 열어 주며 월 5.99 미국 달러 또는 연 29.99 미국 달러이고, 연간 플랜은 첫 1주일이 무료다."
+      },
+      "inLanguage": "ko"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://lf.wtf/grnge/#page",
+      "url": "https://lf.wtf/grnge/",
+      "name": "GRNGE: 사진을 복사, 점묘, 망점, 디더 효과로 바꾸는 iPhone 앱",
+      "about": {
+        "@id": "https://lf.wtf/grnge/#app"
+      },
+      "inLanguage": "ko"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "lf.wtf",
+          "item": "https://lf.wtf/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "GRNGE",
+          "item": "https://lf.wtf/grnge/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://lf.wtf/grnge/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "GRNGE는 무료인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네, 다운로드도 사용도 무료예요. 복사와 점묘, 레이어 두 장, 마커와 펜, GRNGE 스탬프가 찍힌 1080 px 인쇄는 무료예요. GRNGE Pro는 나머지를 모두 열어 주며, 월 5.99 미국 달러 또는 연 29.99 미국 달러예요. 연간 플랜은 첫 1주일이 무료예요. 해지는 Apple 계정에서 언제든지 할 수 있어요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "종이에 인쇄되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "아니요. 인쇄하면 이미지가 만들어져 사진에 저장돼요. 크기는 게시물, 스토리, 정사각형, A3 포스터 중에서 골라요. 용지 색도 이미지의 일부예요. 포스터 크기는 300 dpi라서 인쇄소에서 뽑을 수 있어요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "내 사진이 휴대폰 밖으로 나가나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "아니요. 모든 효과는 휴대폰 안에서 처리되고, 앱에는 네트워크 코드가 없어요. 인쇄물은 직접 공유할 때만 밖으로 나가요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "어떤 사진이든 되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "보관함의 사진이든, 앱에서 찍은 사진이든 다 돼요. 어둡거나 밋밋한 사진은 인쇄 전에 고르게 맞춰져요. 오려내기에는 사람, 반려동물, 물건처럼 뚜렷한 피사체가 필요해요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "계정이 필요한가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "아니요. 가입할 것이 없어요. 인쇄물은 휴대폰의 앱 안에 보관되고, 인쇄하면 사진에도 저장돼요."
+          }
+        }
+      ],
+      "inLanguage": "ko"
+    }
+  ]
+}
+</script>
+
+<style>
+/* GRNGE as it is in the app: toner ground, paper, one loud orange, pink now and then. Torn
+   edges, tape and grain. Display type is Anton, labels are Space Mono in capitals, filenames
+   are Special Elite. The headline is cut into ransom tiles at runtime, the way the app cuts it. */
+:root {
+  --toner:  #0E0E0D;
+  --soot:   #1B1B19;
+  --ash:    #2A2A27;
+  --paper:  #EEEBE3;
+  --dust:   #9C988E;
+  --ink:    #55524B;
+  --signal: #FF4B1F;
+  --riot:   #FF3EA5;
+  --tape:   rgba(233, 222, 190, .78);
+  --w: 1040px;
+
+  --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+  --block:   "Rubik Mono One", "Arial Black", sans-serif;
+  --type:    "Special Elite", "Courier New", Courier, monospace;
+  --mono:    "Space Mono", ui-monospace, Menlo, Consolas, monospace;
+  --body:    "Archivo", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --hand:    "Rock Salt", "Marker Felt", cursive;
+
+  /* Light specks on toner, dark specks on paper. One tile each, drawn once. */
+  --grain-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 .95  0 0 0 -1.6 .9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.09'/%3E%3C/svg%3E");
+  --grain-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .05  0 0 0 0 .05  0 0 0 0 .05  0 0 0 -1.8 1'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.12'/%3E%3C/svg%3E");
+  --torn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'%3E%3Cpath d='M0 12V5l8-2 6 3 8-4 8 3 7-4 8 3 7-2 8 4 8-3 7 2 8-4 7 3 9-2 7 4 8-3 7 2 9-4 7 3 8-2 7 3 8-2 8 3 8-4 8 3 8-2 8 2v7z'/%3E%3C/svg%3E");
+}
+html[lang="ja"] {
+  --cjk: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", YuGothic, "Noto Sans JP", Meiryo;
+  --cjk-serif: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, "Noto Serif JP";
+  --cjk-display: "Dela Gothic One";
+}
+html[lang="ko"] {
+  --cjk: "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic";
+  --cjk-serif: "AppleMyungjo", "Noto Serif KR", "Batang";
+  --cjk-display: "Black Han Sans";
+}
+html[lang="zh-Hans"] {
+  --cjk: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei";
+  --cjk-serif: "Songti SC", "Noto Serif SC", SimSun;
+  --cjk-display: "ZCOOL QingKe HuangYou";
+}
+html[lang="ja"], html[lang="ko"], html[lang="zh-Hans"] {
+  --display: "Anton", var(--cjk-display), var(--cjk), sans-serif;
+  --block:   "Rubik Mono One", var(--cjk-display), var(--cjk), sans-serif;
+  --type:    "Special Elite", var(--cjk-serif), serif;
+  --mono:    "Space Mono", var(--cjk), monospace;
+  --body:    "Archivo", var(--cjk), system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--toner) var(--grain-dark);
+  color: var(--paper);
+  font-family: var(--body);
+  font-size: 17px;
+  line-height: 1.58;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+.wrap { max-width: var(--w); margin: 0 auto; padding: 0 20px; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+.vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Anything that names rather than speaks. */
+.label {
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 11.5px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.file { font-family: var(--type); font-size: 14px; color: var(--dust); letter-spacing: .02em; }
+
+h1, h2, h3 { font-weight: 400; margin: 0; text-wrap: balance; }
+h2 {
+  font-family: var(--display);
+  font-size: clamp(34px, 7vw, 56px);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: .01em;
+}
+h3 { font-family: var(--display); font-size: 24px; line-height: 1.1; text-transform: uppercase; letter-spacing: .02em; }
+
+/* ---------------------------------------------------------------- paper and tape */
+
+.paper {
+  position: relative;
+  background: var(--paper) var(--grain-light);
+  color: var(--toner);
+}
+.paper::before, .paper::after {
+  content: ""; position: absolute; left: 0; right: 0; height: 11px;
+  background: var(--paper);
+  -webkit-mask: var(--torn) 0 0 / 220px 100% repeat-x;
+          mask: var(--torn) 0 0 / 220px 100% repeat-x;
+}
+.paper::before { top: -10px; }
+.paper::after { bottom: -10px; transform: scaleY(-1); -webkit-mask-position: 73px 0; mask-position: 73px 0; }
+.paper p { color: #2B2A26; }
+
+.tape { position: relative; }
+.tape::before {
+  content: ""; position: absolute; z-index: 2; top: -15px; left: 50%;
+  width: 104px; height: 30px; margin-left: -52px;
+  background: var(--tape);
+  transform: rotate(-3deg);
+  clip-path: polygon(0 8%, 5% 0, 9% 12%, 14% 2%, 100% 0, 96% 16%, 100% 30%, 95% 48%, 100% 64%, 96% 82%, 100% 100%, 8% 100%, 3% 90%, 0 72%, 5% 55%, 0 38%, 4% 22%);
+}
+.tape.left::before { left: 18%; transform: rotate(-8deg); }
+.tape.right::before { left: 78%; transform: rotate(6deg); }
+
+.print {
+  margin: 0;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, .55), 0 2px 0 rgba(0, 0, 0, .4);
+}
+.tilt-l { transform: rotate(-2deg); }
+.tilt-r { transform: rotate(1.6deg); }
+
+/* ---------------------------------------------------------------- header */
+
+header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 30px 0 10px; }
+.mark { display: flex; align-items: flex-end; gap: 4px; line-height: 1; }
+.mark span { display: inline-block; padding: 3px 7px; }
+.mark .m1 { font-family: "Anton", sans-serif; font-size: 40px; color: var(--toner); background: var(--paper); transform: rotate(-4deg); }
+.mark .m2 { font-family: "Rubik Mono One", sans-serif; font-size: 26px; color: var(--toner); background: var(--signal); padding: 6px 7px; transform: rotate(3deg) translateY(-3px); }
+.mark .m3 { font-family: "Special Elite", monospace; font-size: 40px; color: var(--paper); background: var(--toner); box-shadow: inset 0 0 0 2px var(--paper); transform: rotate(-2deg); }
+.mark .m4 { font-family: var(--hand); font-size: 32px; color: var(--paper); transform: rotate(6deg) translateY(-4px); }
+.mark .m5 { font-family: "Anton", sans-serif; font-size: 35px; color: var(--toner); background: var(--riot); transform: rotate(-3deg); }
+header .label { color: var(--dust); text-align: right; }
+
+/* ---------------------------------------------------------------- hero */
+
+.hero { display: grid; gap: 40px; padding: 34px 0 30px; align-items: center; }
+@media (min-width: 820px) { .hero { grid-template-columns: 1.05fr 1fr; gap: 56px; padding-top: 48px; } }
+
+.start { color: var(--signal); margin-bottom: 14px; }
+.ransom {
+  font-family: var(--display);
+  font-size: clamp(46px, 11vw, 84px);
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+.tiles { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; }
+.tiles span { display: inline-block; padding: .04em .16em; line-height: 1.08; white-space: nowrap; }
+.tiles .t0 { font-family: var(--display); background: var(--paper); color: var(--toner); transform: rotate(-3deg); }
+.tiles .t1 { font-family: var(--type); font-size: .8em; text-transform: none; background: var(--toner); color: var(--paper); box-shadow: inset 0 0 0 2px var(--paper); transform: rotate(2deg); }
+.tiles .t2 { font-family: var(--block); font-size: .58em; background: var(--signal); color: var(--toner); padding: .22em .3em; transform: rotate(-4deg); }
+.tiles .t3 { font-family: var(--display); font-size: 1.05em; background: var(--riot); color: var(--toner); transform: rotate(2.5deg); }
+.tiles .t4 { font-family: var(--type); font-size: .85em; background: var(--paper); color: var(--toner); outline: 2px solid var(--toner); outline-offset: -5px; transform: rotate(-1.5deg); }
+html[lang="ja"] .tiles .t1, html[lang="ko"] .tiles .t1, html[lang="zh-Hans"] .tiles .t1,
+html[lang="ja"] .tiles .t4, html[lang="ko"] .tiles .t4, html[lang="zh-Hans"] .tiles .t4 { font-family: var(--cjk-serif), serif; font-weight: 700; }
+html[lang="ja"] .ransom, html[lang="ko"] .ransom, html[lang="zh-Hans"] .ransom { font-size: clamp(38px, 9vw, 68px); }
+
+.lede { font-size: 19px; line-height: 1.55; max-width: 34em; margin: 26px 0 28px; color: var(--paper); }
+
+.buy {
+  display: inline-block;
+  font-family: var(--display);
+  font-size: 24px;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--toner);
+  background: var(--signal);
+  padding: 14px 26px 13px;
+  transform: rotate(-1deg);
+  box-shadow: 5px 5px 0 var(--paper);
+  margin: 0 5px 5px 0;
+}
+.buy:hover { transform: rotate(-1deg) translate(-1px, -1px); box-shadow: 6px 6px 0 var(--paper); }
+.buy:focus-visible { outline: 3px solid var(--riot); outline-offset: 4px; }
+.terms { font-size: 14px; color: var(--dust); margin: 16px 0 0; max-width: 34em; }
+
+.pair { position: relative; max-width: 440px; margin: 10px auto 0; padding: 0 0 40px 0; }
+.pair .after { width: 86%; margin-left: auto; }
+.pair .before { position: absolute; left: 0; bottom: 0; width: 44%; z-index: 3; border: 6px solid var(--paper); }
+.pair .file { position: absolute; right: 2%; bottom: 6px; }
+
+/* ---------------------------------------------------------------- effects */
+
+section { padding: 56px 0; }
+.intro { max-width: 36em; margin: 18px 0 0; color: var(--paper); }
+.fx { list-style: none; padding: 0; margin: 38px 0 0; display: grid; gap: 34px 18px; grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 700px) { .fx { grid-template-columns: repeat(5, 1fr); } }
+.fx figure { margin: 0; }
+.fx li:nth-child(odd) figure { transform: rotate(-1.5deg); }
+.fx li:nth-child(even) figure { transform: rotate(1.2deg); }
+.fx figcaption { margin-top: 12px; }
+.fx figcaption span { display: inline-block; padding: 3px 8px 2px; background: var(--paper); color: var(--toner); }
+.fx li:first-child figcaption span { background: transparent; color: var(--dust); box-shadow: inset 0 0 0 1px var(--dust); }
+.dials { max-width: 36em; margin: 34px 0 0; }
+
+/* ---------------------------------------------------------------- features */
+
+.feature { display: grid; gap: 34px; align-items: center; }
+@media (min-width: 760px) {
+  .feature { grid-template-columns: 1fr 1fr; gap: 64px; }
+  .feature.flip figure { order: 2; }
+}
+.feature figure { max-width: 440px; width: 100%; justify-self: center; }
+.feature figure.tall { max-width: 340px; }
+.feature .copy { padding: 30px 26px 26px; max-width: 30em; }
+.feature .copy h2 { margin-bottom: 14px; }
+.feature .copy p { margin: 0; font-size: 18px; }
+.feature .copy .label { display: inline-block; margin-bottom: 14px; background: var(--toner); color: var(--paper); padding: 4px 8px 3px; }
+.feature.flip .copy { transform: rotate(.8deg); }
+.feature:not(.flip) .copy { transform: rotate(-.6deg); }
+
+/* ---------------------------------------------------------------- pro */
+
+.pro { padding: 40px 26px 34px; }
+.pro h2 { margin-bottom: 10px; }
+.pro > p { max-width: 36em; }
+.tiers { display: grid; gap: 22px; margin: 26px 0; }
+@media (min-width: 760px) { .tiers { grid-template-columns: 1fr 1fr; } }
+.tiers h3 { margin-bottom: 10px; }
+.tiers h3 .tag { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; background: var(--signal); color: var(--toner); padding: 3px 7px 2px; vertical-align: middle; margin-left: 6px; }
+.tiers ul { margin: 0; padding: 0; list-style: none; }
+.tiers li { padding: 8px 0 8px 22px; border-top: 2px solid var(--toner); position: relative; color: #2B2A26; }
+.tiers li::before { content: ""; position: absolute; left: 2px; top: 17px; width: 9px; height: 9px; background: var(--toner); transform: rotate(45deg); }
+.tiers .plus li::before { background: var(--signal); }
+.price { display: flex; flex-wrap: wrap; gap: 16px; margin: 8px 0 18px; }
+.price > div { background: var(--toner); color: var(--paper); padding: 14px 18px 12px; min-width: 150px; transform: rotate(-1.2deg); }
+.price > div + div { transform: rotate(1deg); }
+.price .n { display: block; font-family: var(--display); font-size: 40px; line-height: 1; }
+.price .per { display: block; font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; margin-top: 6px; }
+.price .save { display: inline-block; margin-top: 10px; font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; background: var(--signal); color: var(--toner); padding: 3px 7px 2px; }
+.pro .terms { color: var(--ink); }
+
+/* ---------------------------------------------------------------- quiet bits */
+
+.plain { max-width: 40em; }
+.plain h2 { margin-bottom: 16px; }
+.plain p { margin: 0 0 14px; }
+.plain a, .faq a { text-decoration-color: var(--signal); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.faq h2 { margin-bottom: 8px; }
+.faq h3 { font-size: 22px; margin: 30px 0 8px; color: var(--paper); }
+.faq h3::before { content: "\2192\00a0"; color: var(--signal); }
+.faq p { margin: 0; max-width: 40em; color: #D9D5CB; }
+
+footer { border-top: 2px dashed var(--ash); margin-top: 30px; padding: 26px 0 10px; }
+footer nav { display: flex; flex-wrap: wrap; gap: 8px 22px; }
+footer nav a { font-family: var(--mono); font-weight: 700; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; }
+footer nav a:hover { color: var(--signal); }
+footer .also { color: var(--dust); font-size: 15px; margin: 14px 0 0; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .buy { transition: transform .12s, box-shadow .12s; }
+}
+
+/* i18n:start */
+.i18n{max-width:var(--w,initial);margin:0 auto;padding:26px 22px 40px;display:flex;flex-wrap:wrap;
+gap:6px 14px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.55;
+justify-content:center}
+.i18n a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+.i18n a:hover{border-bottom-color:currentColor}
+.i18n span[aria-current]{opacity:.5;cursor:default}
+/* i18n:end */
+
+html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: normal !important; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header>
+  <div class="mark" role="img" aria-label="GRNGE">
+    <span class="m1">G</span><span class="m2">R</span><span class="m3">N</span><span class="m4">G</span><span class="m5">E</span>
+  </div>
+  <span class="label">iPhone을 위한 사진 효과</span>
+</header>
+
+<section class="hero">
+  <div>
+    <p class="label start">여기서 시작</p>
+    <h1 class="ransom" id="headline">사진 한 장으로 시작.</h1>
+    <p class="lede">GRNGE가 흑백 인쇄물로 바꿔 줘요. 복사, 점묘, 망점, 디더. 그다음 컬러 잉크로 겹치고, 위에 그리고, 피사체를 오려내고, 스티커를 붙여서 올릴 크기로 저장하세요.</p>
+    <p><a class="buy" href="https://apps.apple.com/app/id6815086918">App Store에서 다운로드</a></p>
+    <p class="terms">무료. iPhone, iOS 17 이상. GRNGE Pro로 모든 기능을 열 수 있고, 연간 플랜은 첫 1주일이 무료예요.</p>
+  </div>
+  <div class="pair">
+    <figure class="print after tape right tilt-r"><img src="/grnge/assets/hero-print.jpg" width="720" height="951" alt="보드 위에 웅크린 스케이트보더가 미색 종이 위에 강한 흑백으로 인쇄되어 있다."></figure>
+    <figure class="print before tape left tilt-l"><img src="/grnge/assets/hero-photo.jpg" width="480" height="635" alt="스케이트보더의 원본 컬러 사진."></figure>
+    <span class="file" aria-hidden="true">grnge_0048</span>
+  </div>
+</section>
+
+<section>
+  <h2>사진 한 장, 인쇄물 네 가지</h2>
+  <ul class="fx">
+    <li><figure><img class="print" src="/grnge/assets/fx-original.jpg" width="300" height="396" loading="lazy" alt="선글라스를 쓰고 가죽 재킷을 입은 여성의 인물 사진."><figcaption class="label"><span>원본</span></figcaption></figure></li>
+    <li><figure><img class="print" src="/grnge/assets/fx-photocopy.jpg" width="300" height="396" loading="lazy" alt="같은 인물 사진을 거친 입자가 있는 강한 흑백으로."><figcaption class="label"><span>복사</span></figcaption></figure></li>
+    <li><figure><img class="print" src="/grnge/assets/fx-stipple.jpg" width="300" height="396" loading="lazy" alt="같은 인물 사진을 흩어진 점으로."><figcaption class="label"><span>점묘</span></figcaption></figure></li>
+    <li><figure><img class="print" src="/grnge/assets/fx-halftone.jpg" width="300" height="396" loading="lazy" alt="같은 인물 사진을 신문 사진처럼 둥근 망점으로."><figcaption class="label"><span>망점</span></figcaption></figure></li>
+    <li><figure><img class="print" src="/grnge/assets/fx-dither.jpg" width="300" height="396" loading="lazy" alt="같은 인물 사진을 촘촘한 흑백 픽셀로."><figcaption class="label"><span>디더</span></figcaption></figure></li>
+  </ul>
+  <p class="dials">세 개의 다이얼은 네 가지 모두에서 똑같이 작동해요. 잉크는 연하게에서 진하게, 거칠기는 깨끗하게에서 지저분하게, 닳음은 새것에서 낡음까지. 사진을 길게 누르면 원본을 다시 볼 수 있어요.</p>
+</section>
+
+<section class="feature">
+  <figure class="print tape tilt-l"><img src="/grnge/assets/stack.jpg" width="713" height="670" loading="lazy" alt="검정으로 인쇄한 인물 사진 위에 주황색 망점을 살짝 어긋나게 겹친 모습."></figure>
+  <div class="copy paper">
+    <span class="label">레이어</span>
+    <h2>색을 겹치기</h2>
+    <p>같은 사진을 주황, 분홍, 파랑으로 한 번 더 인쇄해서 첫 장 위에 겹치세요. 장마다 효과, 잉크, 농도가 따로 있어요. 아래가 비치게 하거나, 살짝 어긋나게 할 수 있어요. 홈 화면의 레시피는 한 번 탭으로 여러 장을 한꺼번에 준비하고, 그대로 편집할 수 있어요.</p>
+  </div>
+</section>
+
+<section class="feature flip">
+  <figure class="print tape right tilt-r"><img src="/grnge/assets/scribble.jpg" width="720" height="795" loading="lazy" alt="선글라스 둘레에 주황색 마커 동그라미, 검은 지그재그, 분홍 별 세 개를 그린 인물 사진."></figure>
+  <div class="copy paper">
+    <span class="label">낙서</span>
+    <h2>위에 그리기</h2>
+    <p>마커, 펜, 스프레이, 물감 튀김, 스텐실. 검정, 흰색, 주황, 분홍, 파랑으로. 거칠게도, 깨끗하게도. 낙서는 따로 한 장에 담겨서 인쇄물 위나 아래에 둘 수 있어요.</p>
+  </div>
+</section>
+
+<section class="feature">
+  <figure class="print tape left tilt-r"><img src="/grnge/assets/cut.jpg" width="720" height="726" loading="lazy" alt="흰 스티커 테두리로 오려낸 인물 사진, 분홍 망점 배경 위에."></figure>
+  <div class="copy paper">
+    <span class="label">자르기</span>
+    <h2>피사체 오려내기</h2>
+    <p>GRNGE가 사진 속 사람, 반려동물, 물건을 찾아서 깨끗하게, 찢어서, 또는 스티커 테두리로 오려내요. 드래그, 핀치, 회전으로 위치를 잡으세요.</p>
+  </div>
+</section>
+
+<section class="feature flip">
+  <figure class="print tall tape tilt-l"><img src="/grnge/assets/stick.jpg" width="678" height="1085" loading="lazy" alt="까마귀 흑백 인쇄물에 주황색 폭발과 왕관을 붙인 모습."></figure>
+  <div class="copy paper">
+    <span class="label">붙이기</span>
+    <h2>스티커 붙이기</h2>
+    <p>폭발, 별, 불꽃, 왕관, 화살표, 엑스, 번개, 스마일, 하트. 모두 같은 잉크, 같은 거친 테두리로 인쇄돼요.</p>
+  </div>
+</section>
+
+<section class="feature">
+  <figure class="print tape right tilt-l"><img src="/grnge/assets/print.jpg" width="720" height="851" loading="lazy" alt="분홍 종이에 인쇄한 스케이트보더. 아래쪽에 파일 이름 grnge_0015와 GRNGE 스탬프."></figure>
+  <div class="copy paper">
+    <span class="label">인쇄</span>
+    <h2>인쇄하기</h2>
+    <p>게시물, 스토리, 정사각형, A3 포스터. 흰색, 신문 용지, 크래프트, 분홍, 주황 용지, 또는 배경 없는 PNG가 되는 투명 용지. 인쇄하면 사진에 저장되고, 공유로 어디든 보낼 수 있어요.</p>
+  </div>
+</section>
+
+<section>
+  <div class="paper pro">
+    <h2>GRNGE Pro</h2>
+    <p>GRNGE는 다운로드도 사용도 무료예요. GRNGE Pro로 나머지가 모두 열려요.</p>
+    <div class="tiers">
+      <div>
+        <h3>무료</h3>
+        <ul>
+          <li>복사와 점묘</li>
+          <li>잉크, 거칠기, 닳음</li>
+          <li>레이어 두 장</li>
+          <li>마커, 펜, 지우개</li>
+          <li>폭발, 별, 화살표 스티커</li>
+          <li>GRNGE 스탬프가 찍힌 1080 px 인쇄, 흰색 또는 신문 용지</li>
+        </ul>
+      </div>
+      <div class="plus">
+        <h3>GRNGE Pro</h3>
+        <ul>
+          <li>망점과 디더</li>
+          <li>레이어 제한 없음. 컬러 잉크, 비침, 어긋남까지</li>
+          <li>스프레이, 물감 튀김, 스텐실</li>
+          <li>오려내기와 모든 스티커</li>
+          <li>모든 용지</li>
+          <li>원본 크기와 A3 포스터 인쇄, 스탬프는 선택</li>
+        </ul>
+      </div>
+    </div>
+    <div class="price">
+      <div>
+        <span class="n">$29.99</span>
+        <span class="per">연간</span>
+        <span class="save">7일 무료</span>
+      </div>
+      <div>
+        <span class="n">$5.99</span>
+        <span class="per">월간</span>
+      </div>
+    </div>
+    <p class="terms">Pro 도구도 편집기에서 쓸 수 있어서 먼저 써 볼 수 있어요. 인쇄할 때 구독하거나, Pro 없이 인쇄하면 돼요. 무료 1주일은 연간 플랜에만 있어요. 해지는 Apple 계정에서 언제든지. 가격은 미국 달러 기준이며, 실제 가격은 App Store에 표시돼요.</p>
+  </div>
+</section>
+
+<section class="plain">
+  <h2>하지 않는 것</h2>
+  <p>계정도, 로그인할 것도 없어요. 광고도, 분석도, 추적도 없어요. 앱에는 네트워크 코드가 없어서, 사진은 휴대폰 안에서 처리되고 공유하지 않는 한 그대로 남아요.</p>
+  <p><a href="/grnge/privacy/">개인정보 처리방침</a> 에는 같은 내용이 더 길게 적혀 있고, 그 밖의 내용은 없습니다.</p>
+</section>
+
+<!-- These answers are word for word what the FAQ schema in the head carries. Structured data has to
+     be visible on the page it describes, so the two are one text kept in one place. -->
+<section class="faq">
+  <h2>자주 묻는 질문</h2>
+
+  <h3>GRNGE는 무료인가요?</h3>
+  <p>네, 다운로드도 사용도 무료예요. 복사와 점묘, 레이어 두 장, 마커와 펜, GRNGE 스탬프가 찍힌 1080 px 인쇄는 무료예요. GRNGE Pro는 나머지를 모두 열어 주며, 월 5.99 미국 달러 또는 연 29.99 미국 달러예요. 연간 플랜은 첫 1주일이 무료예요. 해지는 Apple 계정에서 언제든지 할 수 있어요.</p>
+
+  <h3>종이에 인쇄되나요?</h3>
+  <p>아니요. 인쇄하면 이미지가 만들어져 사진에 저장돼요. 크기는 게시물, 스토리, 정사각형, A3 포스터 중에서 골라요. 용지 색도 이미지의 일부예요. 포스터 크기는 300 dpi라서 인쇄소에서 뽑을 수 있어요.</p>
+
+  <h3>내 사진이 휴대폰 밖으로 나가나요?</h3>
+  <p>아니요. 모든 효과는 휴대폰 안에서 처리되고, 앱에는 네트워크 코드가 없어요. 인쇄물은 직접 공유할 때만 밖으로 나가요.</p>
+
+  <h3>어떤 사진이든 되나요?</h3>
+  <p>보관함의 사진이든, 앱에서 찍은 사진이든 다 돼요. 어둡거나 밋밋한 사진은 인쇄 전에 고르게 맞춰져요. 오려내기에는 사람, 반려동물, 물건처럼 뚜렷한 피사체가 필요해요.</p>
+
+  <h3>계정이 필요한가요?</h3>
+  <p>아니요. 가입할 것이 없어요. 인쇄물은 휴대폰의 앱 안에 보관되고, 인쇄하면 사진에도 저장돼요.</p>
+</section>
+
+<footer>
+  <nav>
+    <a href="/">lf.wtf</a>
+    <a href="/grnge/privacy/">개인정보</a>
+    <a href="mailto:L@LF.WTF">L@LF.WTF</a>
+  </nav>
+  <p class="also">이곳의 다른 앱: <a href="/cyano/">CYANO</a>, 사진을 시아노타입으로 바꿔 주는 앱.</p>
+</footer>
+
+</div><!-- .wrap -->
+
+<script>
+/* Cut the headline into ransom tiles, the way the app does: words where the language spaces
+   them, single characters in Chinese and Japanese, punctuation stuck to what it follows. The
+   heading keeps its text for anything that reads it; the tiles are only for looking at. */
+(function () {
+  var h = document.getElementById("headline");
+  if (!h) return;
+  var text = h.textContent.replace(/\s+/g, " ").trim();
+  var lang = document.documentElement.lang;
+  var pieces = [];
+  if (lang === "ja" || lang === "zh-Hans") {
+    Array.from(text.replace(/\s/g, "")).forEach(function (ch) {
+      if (/[\p{P}]/u.test(ch) && pieces.length) pieces[pieces.length - 1] += ch;
+      else pieces.push(ch);
+    });
+  } else {
+    pieces = text.split(" ");
+  }
+  var tiles = document.createElement("span");
+  tiles.className = "tiles";
+  tiles.setAttribute("aria-hidden", "true");
+  pieces.forEach(function (p, i) {
+    var s = document.createElement("span");
+    s.className = "t" + (i % 5);
+    s.textContent = p;
+    tiles.appendChild(s);
+  });
+  var said = document.createElement("span");
+  said.className = "vh";
+  said.textContent = text;
+  h.textContent = "";
+  h.appendChild(said);
+  h.appendChild(tiles);
+})();
+</script>
+
+
+<nav class="i18n" aria-label="Language">
+  <a href="/grnge/" hreflang="en" lang="en">English</a>
+  <a href="/de/grnge/" hreflang="de" lang="de">Deutsch</a>
+  <a href="/es/grnge/" hreflang="es" lang="es">Español</a>
+  <a href="/es-mx/grnge/" hreflang="es-MX" lang="es-MX">Español (MX)</a>
+  <a href="/fr/grnge/" hreflang="fr" lang="fr">Français</a>
+  <a href="/it/grnge/" hreflang="it" lang="it">Italiano</a>
+  <a href="/ja/grnge/" hreflang="ja" lang="ja">日本語</a>
+  <span aria-current="true" lang="ko">한국어</span>
+  <a href="/nl/grnge/" hreflang="nl" lang="nl">Nederlands</a>
+  <a href="/pt-br/grnge/" hreflang="pt-BR" lang="pt-BR">Português (BR)</a>
+  <a href="/zh-hans/grnge/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+</nav>
+</body>
+</html>

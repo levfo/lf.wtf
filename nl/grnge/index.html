@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GRNGE: fotokopie-, stippel-, raster- en dither-effecten voor foto's op iPhone</title>
+<meta name="description" content="Maak van foto's zwart-witafdrukken op je iPhone: fotokopie, stippel, raster of dither. Leg ze in kleurinkten over elkaar, teken erop, knip het onderwerp uit, plak stickers erop en bewaar ze als post, story, vierkant of poster.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0E0E0D">
+<link rel="alternate" hreflang="en" href="https://lf.wtf/grnge/">
+<link rel="alternate" hreflang="de" href="https://lf.wtf/de/grnge/">
+<link rel="alternate" hreflang="es" href="https://lf.wtf/es/grnge/">
+<link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/grnge/">
+<link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/grnge/">
+<link rel="alternate" hreflang="it" href="https://lf.wtf/it/grnge/">
+<link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/grnge/">
+<link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/grnge/">
+<link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/grnge/">
+<link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/grnge/">
+<link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/grnge/">
+<link rel="alternate" hreflang="x-default" href="https://lf.wtf/grnge/">
+<link rel="canonical" href="https://lf.wtf/nl/grnge/">
+<link rel="icon" href="/grnge/assets/icon.png">
+<link rel="apple-touch-icon" href="/grnge/assets/icon.png">
+
+<meta property="og:title" content="GRNGE: fotokopie-, stippel-, raster- en dither-effecten voor foto's op iPhone">
+<meta property="og:description" content="Zwart-witafdrukken van je foto's, op je iPhone. Leg ze in kleurinkten over elkaar, teken erop, knip het onderwerp uit, plak stickers erop en bewaar ze op het formaat waarop je post.">
+<meta property="og:image" content="https://lf.wtf/grnge/assets/icon.png">
+<meta property="og:image:alt" content="Het GRNGE-icoon: een zwart-wit oog met een oranje stiftcirkel eromheen.">
+<meta property="og:url" content="https://lf.wtf/nl/grnge/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="lf.wtf">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="es_MX">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GRNGE: fotokopie-, stippel-, raster- en dither-effecten voor foto's op iPhone">
+<meta name="twitter:description" content="Zwart-witafdrukken van je foto's, op je iPhone. Leg ze in kleurinkten over elkaar, teken erop, knip het onderwerp uit, plak stickers erop en bewaar ze op het formaat waarop je post.">
+<meta name="twitter:image" content="https://lf.wtf/grnge/assets/icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;600;800&family=Rubik+Mono+One&family=Space+Mono:wght@400;700&family=Special+Elite&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rock+Salt&text=G&display=swap">
+<script>
+/* The Latin faces have no CJK glyphs. Each CJK page loads the display face the app uses for its
+   script, and only that one: Japanese is never set in a Chinese face. */
+(function () {
+  var f = {"ja": "Dela+Gothic+One", "ko": "Black+Han+Sans", "zh-Hans": "ZCOOL+QingKe+HuangYou"}[document.documentElement.lang];
+  if (!f) return;
+  var l = document.createElement("link");
+  l.rel = "stylesheet";
+  l.href = "https://fonts.googleapis.com/css2?family=" + f + "&display=swap";
+  document.head.appendChild(l);
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobileApplication",
+      "@id": "https://lf.wtf/grnge/#app",
+      "name": "GRNGE",
+      "url": "https://lf.wtf/grnge/",
+      "image": "https://lf.wtf/grnge/assets/icon.png",
+      "description": "Een foto-effectenapp voor iPhone die foto's omzet in zwart-witafdrukken: Fotokopie, Stippel, Raster en Dither. Afdrukken kun je in kleurinkten over elkaar leggen, bekrabbelen, rond het onderwerp uitknippen met een schone, gescheurde of stickerrand, beplakken met stickers en bewaren als post, story, vierkant of A3-poster op wit papier, krantenpapier, kraft, roze, oranje of transparant papier.",
+      "applicationCategory": "PhotoApplication",
+      "applicationSubCategory": "Photo effects",
+      "operatingSystem": "iOS 17.0 or later",
+      "installUrl": "https://apps.apple.com/app/id6815086918",
+      "downloadUrl": "https://apps.apple.com/app/id6815086918",
+      "sameAs": [
+        "https://apps.apple.com/app/id6815086918"
+      ],
+      "featureList": [
+        "Vier zwart-witeffecten: Fotokopie, Stippel, Raster en Dither",
+        "Drie schuiven bij elk effect: Inkt, Korrel en Slijtage",
+        "Afdrukken van dezelfde foto stapelen in zwarte, oranje, roze en blauwe inkt, doorschijnend en verschoven",
+        "Krabbelen met stift, pen, spuitbus, spetter en sjabloon",
+        "Knip het onderwerp uit met een schone, gescheurde of stickerrand",
+        "Stickers, gedrukt in dezelfde inkten",
+        "Bewaren als post, story, vierkant of A3-poster, op gekleurd of transparant papier",
+        "Geen account, geen netwerkcode, foto's verwerkt op de telefoon"
+      ],
+      "author": {
+        "@type": "Person",
+        "@id": "https://lf.wtf/#levifoster",
+        "name": "Levi Foster",
+        "url": "https://lf.wtf/"
+      },
+      "publisher": {
+        "@type": "Person",
+        "@id": "https://lf.wtf/#levifoster",
+        "name": "Levi Foster",
+        "url": "https://lf.wtf/"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Gratis te downloaden, met Fotokopie en Stippel, twee lagen, stift en pen, en afdrukken van 1080 px met de GRNGE-stempel. GRNGE Pro opent al het andere voor 5,99 Amerikaanse dollar per maand of 29,99 per jaar, en het jaarabonnement begint met een gratis week."
+      },
+      "inLanguage": "nl"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://lf.wtf/grnge/#page",
+      "url": "https://lf.wtf/grnge/",
+      "name": "GRNGE: fotokopie-, stippel-, raster- en dither-effecten voor foto's op iPhone",
+      "about": {
+        "@id": "https://lf.wtf/grnge/#app"
+      },
+      "inLanguage": "nl"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "lf.wtf",
+          "item": "https://lf.wtf/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "GRNGE",
+          "item": "https://lf.wtf/grnge/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://lf.wtf/grnge/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is GRNGE gratis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, om te downloaden en te gebruiken. Fotokopie en Stippel, twee lagen, stift en pen, en afdrukken van 1080 px met de GRNGE-stempel zijn gratis. GRNGE Pro opent al het andere voor 5,99 Amerikaanse dollar per maand of 29,99 per jaar, en het jaarabonnement begint met een gratis week. Opzeggen kan altijd in je Apple-account."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Drukt het af op papier?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nee. Afdrukken maakt een afbeelding en bewaart die in Foto's, op het formaat van een post, een story, een vierkant of een A3-poster. De papierkleur hoort bij het beeld. Het posterformaat is 300 dpi, dus een drukkerij kan het drukken."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Verlaten mijn foto's mijn telefoon?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nee. Elk effect draait op de telefoon, en de app heeft geen netwerkcode. Een afdruk gaat alleen weg als je hem deelt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Welke foto's werken?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Elke foto uit je bibliotheek, of een die je in de app maakt. Donkere en vlakke foto's worden vóór het afdrukken bijgetrokken. Uitknippen werkt met een duidelijk onderwerp: een persoon, een huisdier of een voorwerp."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Heb ik een account nodig?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nee. Er is niets om je voor aan te melden. Je afdrukken blijven in de app op je telefoon, en in Foto's zodra je ze afdrukt."
+          }
+        }
+      ],
+      "inLanguage": "nl"
+    }
+  ]
+}
+</script>
+
+<style>
+/* GRNGE as it is in the app: toner ground, paper, one loud orange, pink now and then. Torn
+   edges, tape and grain. Display type is Anton, labels are Space Mono in capitals, filenames
+   are Special Elite. The headline is cut into ransom tiles at runtime, the way the app cuts it. */
+:root {
+  --toner:  #0E0E0D;
+  --soot:   #1B1B19;
+  --ash:    #2A2A27;
+  --paper:  #EEEBE3;
+  --dust:   #9C988E;
+  --ink:    #55524B;
+  --signal: #FF4B1F;
+  --riot:   #FF3EA5;
+  --tape:   rgba(233, 222, 190, .78);
+  --w: 1040px;
+
+  --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+  --block:   "Rubik Mono One", "Arial Black", sans-serif;
+  --type:    "Special Elite", "Courier New", Courier, monospace;
+  --mono:    "Space Mono", ui-monospace, Menlo, Consolas, monospace;
+  --body:    "Archivo", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --hand:    "Rock Salt", "Marker Felt", cursive;
+
+  /* Light specks on toner, dark specks on paper. One tile each, drawn once. */
+  --grain-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 .95  0 0 0 -1.6 .9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.09'/%3E%3C/svg%3E");
+  --grain-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .05  0 0 0 0 .05  0 0 0 0 .05  0 0 0 -1.8 1'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.12'/%3E%3C/svg%3E");
+  --torn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'%3E%3Cpath d='M0 12V5l8-2 6 3 8-4 8 3 7-4 8 3 7-2 8 4 8-3 7 2 8-4 7 3 9-2 7 4 8-3 7 2 9-4 7 3 8-2 7 3 8-2 8 3 8-4 8 3 8-2 8 2v7z'/%3E%3C/svg%3E");
+}
+html[lang="ja"] {
+  --cjk: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", YuGothic, "Noto Sans JP", Meiryo;
+  --cjk-serif: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, "Noto Serif JP";
+  --cjk-display: "Dela Gothic One";
+}
+html[lang="ko"] {
+  --cjk: "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic";
+  --cjk-serif: "AppleMyungjo", "Noto Serif KR", "Batang";
+  --cjk-display: "Black Han Sans";
+}
+html[lang="zh-Hans"] {
+  --cjk: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei";
+  --cjk-serif: "Songti SC", "Noto Serif SC", SimSun;
+  --cjk-display: "ZCOOL QingKe HuangYou";
+}
+html[lang="ja"], html[lang="ko"], html[lang="zh-Hans"] {
+  --display: "Anton", var(--cjk-display), var(--cjk), sans-serif;
+  --block:   "Rubik Mono One", var(--cjk-display), var(--cjk), sans-serif;
+  --type:    "Special Elite", var(--cjk-serif), serif;
+  --mono:    "Space Mono", var(--cjk), monospace;
+  --body:    "Archivo", var(--cjk), system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--toner) var(--grain-dark);
+  color: var(--paper);
+  font-family: var(--body);
+  font-size: 17px;
+  line-height: 1.58;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+.wrap { max-width: var(--w); margin: 0 auto; padding: 0 20px; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+.vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Anything that names rather than speaks. */
+.label {
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 11.5px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.file { font-family: var(--type); font-size: 14px; color: var(--dust); letter-spacing: .02em; }
+
+h1, h2, h3 { font-weight: 400; margin: 0; text-wrap: balance; }
+h2 {
+  font-family: var(--display);
+  font-size: clamp(34px, 7vw, 56px);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: .01em;
+}
+h3 { font-family: var(--display); font-size: 24px; line-height: 1.1; text-transform: uppercase; letter-spacing: .02em; }
+
+/* ---------------------------------------------------------------- paper and tape */
+
+.paper {
+  position: relative;
+  background: var(--paper) var(--grain-light);
+  color: var(--toner);
+}
+.paper::before, .paper::after {
+  content: ""; position: absolute; left: 0; right: 0; height: 11px;
+  background: var(--paper);
+  -webkit-mask: var(--torn) 0 0 / 220px 100% repeat-x;
+          mask: var(--torn) 0 0 / 220px 100% repeat-x;
+}
+.paper::before { top: -10px; }
+.paper::after { bottom: -10px; transform: scaleY(-1); -webkit-mask-position: 73px 0; mask-position: 73px 0; }
+.paper p { color: #2B2A26; }
+
+.tape { position: relative; }
+.tape::before {
+  content: ""; position: absolute; z-index: 2; top: -15px; left: 50%;
+  width: 104px; height: 30px; margin-left: -52px;
+  background: var(--tape);
+  transform: rotate(-3deg);
+  clip-path: polygon(0 8%, 5% 0, 9% 12%, 14% 2%, 100% 0, 96% 16%, 100% 30%, 95% 48%, 100% 64%, 96% 82%, 100% 100%, 8% 100%, 3% 90%, 0 72%, 5% 55%, 0 38%, 4% 22%);
+}
+.tape.left::before { left: 18%; transform: rotate(-8deg); }
+.tape.right::before { left: 78%; transform: rotate(6deg); }
+
+.print {
+  margin: 0;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, .55), 0 2px 0 rgba(0, 0, 0, .4);
+}
+.tilt-l { transform: rotate(-2deg); }
+.tilt-r { transform: rotate(1.6deg); }
+
+/* ---------------------------------------------------------------- header */
+
+header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 30px 0 10px; }
+.mark { display: flex; align-items: flex-end; gap: 4px; line-height: 1; }
+.mark span { display: inline-block; padding: 3px 7px; }
+.mark .m1 { font-family: "Anton", sans-serif; font-size: 40px; color: var(--toner); background: var(--paper); transform: rotate(-4deg); }
+.mark .m2 { font-family: "Rubik Mono One", sans-serif; font-size: 26px; color: var(--toner); background: var(--signal); padding: 6px 7px; transform: rotate(3deg) translateY(-3px); }
+.mark .m3 { font-family: "Special Elite", monospace; font-size: 40px; color: var(--paper); background: var(--toner); box-shadow: inset 0 0 0 2px var(--paper); transform: rotate(-2deg); }
+.mark .m4 { font-family: var(--hand); font-size: 32px; color: var(--paper); transform: rotate(6deg) translateY(-4px); }
+.mark .m5 { font-family: "Anton", sans-serif; font-size: 35px; color: var(--toner); background: var(--riot); transform: rotate(-3deg); }
+header .label { color: var(--dust); text-align: right; }
+
+/* ---------------------------------------------------------------- hero */
+
+.hero { display: grid; gap: 40px; padding: 34px 0 30px; align-items: center; }
+@media (min-width: 820px) { .hero { grid-template-columns: 1.05fr 1fr; gap: 56px; padding-top: 48px; } }
+
+.start { color: var(--signal); margin-bottom: 14px; }
+.ransom {
+  font-family: var(--display);
+  font-size: clamp(46px, 11vw, 84px);
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+.tiles { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; }
+.tiles span { display: inline-block; padding: .04em .16em; line-height: 1.08; white-space: nowrap; }
+.tiles .t0 { font-family: var(--display); background: var(--paper); color: var(--toner); transform: rotate(-3deg); }
+.tiles .t1 { font-family: var(--type); font-size: .8em; text-transform: none; background: var(--toner); color: var(--paper); box-shadow: inset 0 0 0 2px var(--paper); transform: rotate(2deg); }
+.tiles .t2 { font-family: var(--block); font-size: .58em; background: var(--signal); color: var(--toner); padding: .22em .3em; transform: rotate(-4deg); }
+.tiles .t3 { font-family: var(--display); font-size: 1.05em; background: var(--riot); color: var(--toner); transform: rotate(2.5deg); }
+.tiles .t4 { font-family: var(--type); font-size: .85em; background: var(--paper); color: var(--toner); outline: 2px solid var(--toner); outline-offset: -5px; transform: rotate(-1.5deg); }
+html[lang="ja"] .tiles .t1, html[lang="ko"] .tiles .t1, html[lang="zh-Hans"] .tiles .t1,
+html[lang="ja"] .tiles .t4, html[lang="ko"] .tiles .t4, html[lang="zh-Hans"] .tiles .t4 { font-family: var(--cjk-serif), serif; font-weight: 700; }
+html[lang="ja"] .ransom, html[lang="ko"] .ransom, html[lang="zh-Hans"] .ransom { font-size: clamp(38px, 9vw, 68px); }
+
+.lede { font-size: 19px; line-height: 1.55; max-width: 34em; margin: 26px 0 28px; color: var(--paper); }
+
+.buy {
+  display: inline-block;
+  font-family: var(--display);
+  font-size: 24px;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--toner);
+  background: var(--signal);
+  padding: 14px 26px 13px;
+  transform: rotate(-1deg);
+  box-shadow: 5px 5px 0 var(--paper);
+  margin: 0 5px 5px 0;
+}
+.buy:hover { transform: rotate(-1deg) translate(-1px, -1px); box-shadow: 6px 6px 0 var(--paper); }
+.buy:focus-visible { outline: 3px solid var(--riot); outline-offset: 4px; }
+.terms { font-size: 14px; color: var(--dust); margin: 16px 0 0; max-width: 34em; }
+
+.pair { position: relative; max-width: 440px; margin: 10px auto 0; padding: 0 0 40px 0; }
+.pair .after { width: 86%; margin-left: auto; }
+.pair .before { position: absolute; left: 0; bottom: 0; width: 44%; z-index: 3; border: 6px solid var(--paper); }
+.pair .file { position: absolute; right: 2%; bottom: 6px; }
+
+/* ---------------------------------------------------------------- effects */
+
+section { padding: 56px 0; }
+.intro { max-width: 36em; margin: 18px 0 0; color: var(--paper); }
+.fx { list-style: none; padding: 0; margin: 38px 0 0; display: grid; gap: 34px 18px; grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 700px) { .fx { grid-template-columns: repeat(5, 1fr); } }
+.fx figure { margin: 0; }
+.fx li:nth-child(odd) figure { transform: rotate(-1.5deg); }
+.fx li:nth-child(even) figure { transform: rotate(1.2deg); }
+.fx figcaption { margin-top: 12px; }
+.fx figcaption span { display: inline-block; padding: 3px 8px 2px; background: var(--paper); color: var(--toner); }
+.fx li:first-child figcaption span { background: transparent; color: var(--dust); box-shadow: inset 0 0 0 1px var(--dust); }
+.dials { max-width: 36em; margin: 34px 0 0; }
+
+/* ---------------------------------------------------------------- features */
+
+.feature { display: grid; gap: 34px; align-items: center; }
+@media (min-width: 760px) {
+  .feature { grid-template-columns: 1fr 1fr; gap: 64px; }
+  .feature.flip figure { order: 2; }
+}
+.feature figure { max-width: 440px; width: 100%; justify-self: center; }
+.feature figure.tall { max-width: 340px; }
+.feature .copy { padding: 30px 26px 26px; max-width: 30em; }
+.feature .copy h2 { margin-bottom: 14px; }
+.feature .copy p { margin: 0; font-size: 18px; }
+.feature .copy .label { display: inline-block; margin-bottom: 14px; background: var(--toner); color: var(--paper); padding: 4px 8px 3px; }
+.feature.flip .copy { transform: rotate(.8deg); }
+.feature:not(.flip) .copy { transform: rotate(-.6deg); }
+
+/* ---------------------------------------------------------------- pro */
+
+.pro { padding: 40px 26px 34px; }
+.pro h2 { margin-bottom: 10px; }
+.pro > p { max-width: 36em; }
+.tiers { display: grid; gap: 22px; margin: 26px 0; }
+@media (min-width: 760px) { .tiers { grid-template-columns: 1fr 1fr; } }
+.tiers h3 { margin-bottom: 10px; }
+.tiers h3 .tag { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; background: var(--signal); color: var(--toner); padding: 3px 7px 2px; vertical-align: middle; margin-left: 6px; }
+.tiers ul { margin: 0; padding: 0; list-style: none; }
+.tiers li { padding: 8px 0 8px 22px; border-top: 2px solid var(--toner); position: relative; color: #2B2A26; }
+.tiers li::before { content: ""; position: absolute; left: 2px; top: 17px; width: 9px; height: 9px; background: var(--toner); transform: rotate(45deg); }
+.tiers .plus li::before { background: var(--signal); }
+.price { display: flex; flex-wrap: wrap; gap: 16px; margin: 8px 0 18px; }
+.price > div { background: var(--toner); color: var(--paper); padding: 14px 18px 12px; min-width: 150px; transform: rotate(-1.2deg); }
+.price > div + div { transform: rotate(1deg); }
+.price .n { display: block; font-family: var(--display); font-size: 40px; line-height: 1; }
+.price .per { display: block; font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; margin-top: 6px; }
+.price .save { display: inline-block; margin-top: 10px; font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; background: var(--signal); color: var(--toner); padding: 3px 7px 2px; }
+.pro .terms { color: var(--ink); }
+
+/* ---------------------------------------------------------------- quiet bits */
+
+.plain { max-width: 40em; }
+.plain h2 { margin-bottom: 16px; }
+.plain p { margin: 0 0 14px; }
+.plain a, .faq a { text-decoration-color: var(--signal); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.faq h2 { margin-bottom: 8px; }
+.faq h3 { font-size: 22px; margin: 30px 0 8px; color: var(--paper); }
+.faq h3::before { content: "\2192\00a0"; color: var(--signal); }
+.faq p { margin: 0; max-width: 40em; color: #D9D5CB; }
+
+footer { border-top: 2px dashed var(--ash); margin-top: 30px; padding: 26px 0 10px; }
+footer nav { display: flex; flex-wrap: wrap; gap: 8px 22px; }
+footer nav a { font-family: var(--mono); font-weight: 700; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; }
+footer nav a:hover { color: var(--signal); }
+footer .also { color: var(--dust); font-size: 15px; margin: 14px 0 0; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .buy { transition: transform .12s, box-shadow .12s; }
+}
+
+/* i18n:start */
+.i18n{max-width:var(--w,initial);margin:0 auto;padding:26px 22px 40px;display:flex;flex-wrap:wrap;
+gap:6px 14px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.55;
+justify-content:center}
+.i18n a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+.i18n a:hover{border-bottom-color:currentColor}
+.i18n span[aria-current]{opacity:.5;cursor:default}
+/* i18n:end */
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header>
+  <div class="mark" role="img" aria-label="GRNGE">
+    <span class="m1">G</span><span class="m2">R</span><span class="m3">N</span><span class="m4">G</span><span class="m5">E</span>
+  </div>
+  <span class="label">Foto-effecten voor iPhone</span>
+</header>
+
+<section class="hero">
+  <div>
+    <p class="label start">Begin hier</p>
+    <h1 class="ransom" id="headline">Begin met een foto.</h1>
+    <p class="lede">GRNGE maakt er een zwart-witafdruk van: fotokopie, stippel, raster of dither. Leg hem daarna in kleurinkten over elkaar, teken erop, knip het onderwerp uit, plak stickers erop en bewaar hem op het formaat waarop je post.</p>
+    <p><a class="buy" href="https://apps.apple.com/app/id6815086918">Download in de App Store</a></p>
+    <p class="terms">Gratis. iPhone, iOS 17 en later. GRNGE Pro opent alles, met een gratis week bij het jaarabonnement.</p>
+  </div>
+  <div class="pair">
+    <figure class="print after tape right tilt-r"><img src="/grnge/assets/hero-print.jpg" width="720" height="951" alt="Een skateboarder die op zijn plank hurkt, hard zwart-wit gedrukt op gebroken wit papier."></figure>
+    <figure class="print before tape left tilt-l"><img src="/grnge/assets/hero-photo.jpg" width="480" height="635" alt="De originele kleurenfoto van de skateboarder."></figure>
+    <span class="file" aria-hidden="true">grnge_0048</span>
+  </div>
+</section>
+
+<section>
+  <h2>Vier afdrukken van één foto</h2>
+  <ul class="fx">
+    <li><figure><img class="print" src="/grnge/assets/fx-original.jpg" width="300" height="396" loading="lazy" alt="Portret van een vrouw met zonnebril en leren jas."><figcaption class="label"><span>Origineel</span></figcaption></figure></li>
+    <li><figure><img class="print" src="/grnge/assets/fx-photocopy.jpg" width="300" height="396" loading="lazy" alt="Hetzelfde portret in hard zwart-wit met korrel."><figcaption class="label"><span>Fotokopie</span></figcaption></figure></li>
+    <li><figure><img class="print" src="/grnge/assets/fx-stipple.jpg" width="300" height="396" loading="lazy" alt="Hetzelfde portret opgebouwd uit losse stippen."><figcaption class="label"><span>Stippel</span></figcaption></figure></li>
+    <li><figure><img class="print" src="/grnge/assets/fx-halftone.jpg" width="300" height="396" loading="lazy" alt="Hetzelfde portret in een raster van ronde stippen, zoals een krantenfoto."><figcaption class="label"><span>Raster</span></figcaption></figure></li>
+    <li><figure><img class="print" src="/grnge/assets/fx-dither.jpg" width="300" height="396" loading="lazy" alt="Hetzelfde portret in fijne zwarte en witte pixels."><figcaption class="label"><span>Dither</span></figcaption></figure></li>
+  </ul>
+  <p class="dials">Drie schuiven doen bij alle vier hetzelfde. Inkt gaat lichter of donkerder, Korrel van schoon naar vuil, Slijtage van nieuw naar versleten. Houd de afbeelding vast om de foto weer te zien.</p>
+</section>
+
+<section class="feature">
+  <figure class="print tape tilt-l"><img src="/grnge/assets/stack.jpg" width="713" height="670" loading="lazy" alt="Het portret als zwarte afdruk met een oranje raster erover, iets verschoven."></figure>
+  <div class="copy paper">
+    <span class="label">Lagen</span>
+    <h2>Leg er kleur overheen</h2>
+    <p>Druk dezelfde foto nog eens af in oranje, roze of blauw en leg hem over de eerste. Elke laag heeft zijn eigen effect, inkt en sterkte. Laat hem doorschijnen, of verschuif hem. Recepten op het beginscherm zetten met één tik een hele stapel klaar, en alles blijft bewerkbaar.</p>
+  </div>
+</section>
+
+<section class="feature flip">
+  <figure class="print tape right tilt-r"><img src="/grnge/assets/scribble.jpg" width="720" height="795" loading="lazy" alt="Het portret met een oranje stiftcirkel om de zonnebril, een zwarte zigzag en drie roze sterren."></figure>
+  <div class="copy paper">
+    <span class="label">Krabbel</span>
+    <h2>Teken erop</h2>
+    <p>Stift, pen, spuitbus, spetter en sjabloon, in zwart, wit, oranje, roze of blauw. Ruw of schoon. Krabbels krijgen hun eigen laag, boven of onder de afdrukken.</p>
+  </div>
+</section>
+
+<section class="feature">
+  <figure class="print tape left tilt-r"><img src="/grnge/assets/cut.jpg" width="720" height="726" loading="lazy" alt="Het portret uitgeknipt met een witte stickerrand, op een roze rasterachtergrond."></figure>
+  <div class="copy paper">
+    <span class="label">Knippen</span>
+    <h2>Knip het onderwerp uit</h2>
+    <p>GRNGE vindt de persoon, het huisdier of het voorwerp in de foto en knipt het uit met een schone, gescheurde of stickerrand. Sleep, knijp en draai om het te plaatsen.</p>
+  </div>
+</section>
+
+<section class="feature flip">
+  <figure class="print tall tape tilt-l"><img src="/grnge/assets/stick.jpg" width="678" height="1085" loading="lazy" alt="Een zwart-witafdruk van een kraai met een oranje knal en een kroon erop geplakt."></figure>
+  <div class="copy paper">
+    <span class="label">Plakken</span>
+    <h2>Plak er iets op</h2>
+    <p>Knallen, sterren, vonken, kronen, pijlen, kruizen, bliksems, smileys en harten, gedrukt in dezelfde inkten met dezelfde ruwe rand.</p>
+  </div>
+</section>
+
+<section class="feature">
+  <figure class="print tape right tilt-l"><img src="/grnge/assets/print.jpg" width="720" height="851" loading="lazy" alt="De skateboarder gedrukt op roze papier, onderaan de bestandsnaam grnge_0015 en de GRNGE-stempel."></figure>
+  <div class="copy paper">
+    <span class="label">Afdrukken</span>
+    <h2>Druk het af</h2>
+    <p>Post, story, vierkant of A3-poster. Wit papier, krantenpapier, kraft, roze of oranje, of transparant papier voor een PNG zonder achtergrond. Afdrukken bewaart hem in Foto's. Deel stuurt hem overal anders heen.</p>
+  </div>
+</section>
+
+<section>
+  <div class="paper pro">
+    <h2>GRNGE Pro</h2>
+    <p>GRNGE is gratis te downloaden en gratis te gebruiken. GRNGE Pro opent de rest.</p>
+    <div class="tiers">
+      <div>
+        <h3>Gratis</h3>
+        <ul>
+          <li>Fotokopie en Stippel</li>
+          <li>Inkt, Korrel en Slijtage</li>
+          <li>Twee lagen</li>
+          <li>Stift, pen en gum</li>
+          <li>Stickers: knal, ster en pijl</li>
+          <li>Afdrukken van 1080 px met de GRNGE-stempel, op wit of krantenpapier</li>
+        </ul>
+      </div>
+      <div class="plus">
+        <h3>GRNGE Pro</h3>
+        <ul>
+          <li>Raster en Dither</li>
+          <li>Zoveel lagen als je wilt, in kleurinkten, doorschijnend en verschoven</li>
+          <li>Spuitbus, spetter en sjabloon</li>
+          <li>Uitknipsels en alle stickers</li>
+          <li>Alle papiersoorten</li>
+          <li>Ware grootte en A3-poster, stempel optioneel</li>
+        </ul>
+      </div>
+    </div>
+    <div class="price">
+      <div>
+        <span class="n">$29.99</span>
+        <span class="per">per jaar</span>
+        <span class="save">7 dagen gratis</span>
+      </div>
+      <div>
+        <span class="n">$5.99</span>
+        <span class="per">per maand</span>
+      </div>
+    </div>
+    <p class="terms">Pro-gereedschap werkt in de editor, dus je kunt het eerst proberen. Bij het afdrukken neem je een abonnement of druk je af zonder. De gratis week hoort bij het jaarabonnement. Opzeggen kan altijd in je Apple-account. Prijzen in Amerikaanse dollars; de App Store toont de jouwe.</p>
+  </div>
+</section>
+
+<section class="plain">
+  <h2>Wat het niet doet</h2>
+  <p>Geen account en niets om op in te loggen. Geen advertenties, geen analytics, geen tracking. De app heeft geen netwerkcode: foto's worden op de telefoon verwerkt en blijven daar, tenzij je ze deelt.</p>
+  <p><a href="/grnge/privacy/">Het privacybeleid</a> zegt hetzelfde, uitgebreider, en verder niets.</p>
+</section>
+
+<!-- These answers are word for word what the FAQ schema in the head carries. Structured data has to
+     be visible on the page it describes, so the two are one text kept in one place. -->
+<section class="faq">
+  <h2>Vragen</h2>
+
+  <h3>Is GRNGE gratis?</h3>
+  <p>Ja, om te downloaden en te gebruiken. Fotokopie en Stippel, twee lagen, stift en pen, en afdrukken van 1080 px met de GRNGE-stempel zijn gratis. GRNGE Pro opent al het andere voor 5,99 Amerikaanse dollar per maand of 29,99 per jaar, en het jaarabonnement begint met een gratis week. Opzeggen kan altijd in je Apple-account.</p>
+
+  <h3>Drukt het af op papier?</h3>
+  <p>Nee. Afdrukken maakt een afbeelding en bewaart die in Foto's, op het formaat van een post, een story, een vierkant of een A3-poster. De papierkleur hoort bij het beeld. Het posterformaat is 300 dpi, dus een drukkerij kan het drukken.</p>
+
+  <h3>Verlaten mijn foto's mijn telefoon?</h3>
+  <p>Nee. Elk effect draait op de telefoon, en de app heeft geen netwerkcode. Een afdruk gaat alleen weg als je hem deelt.</p>
+
+  <h3>Welke foto's werken?</h3>
+  <p>Elke foto uit je bibliotheek, of een die je in de app maakt. Donkere en vlakke foto's worden vóór het afdrukken bijgetrokken. Uitknippen werkt met een duidelijk onderwerp: een persoon, een huisdier of een voorwerp.</p>
+
+  <h3>Heb ik een account nodig?</h3>
+  <p>Nee. Er is niets om je voor aan te melden. Je afdrukken blijven in de app op je telefoon, en in Foto's zodra je ze afdrukt.</p>
+</section>
+
+<footer>
+  <nav>
+    <a href="/">lf.wtf</a>
+    <a href="/grnge/privacy/">Privacy</a>
+    <a href="mailto:L@LF.WTF">L@LF.WTF</a>
+  </nav>
+  <p class="also">Ook hier: <a href="/cyano/">CYANO</a>, dat foto's in cyanotypieën verandert.</p>
+</footer>
+
+</div><!-- .wrap -->
+
+<script>
+/* Cut the headline into ransom tiles, the way the app does: words where the language spaces
+   them, single characters in Chinese and Japanese, punctuation stuck to what it follows. The
+   heading keeps its text for anything that reads it; the tiles are only for looking at. */
+(function () {
+  var h = document.getElementById("headline");
+  if (!h) return;
+  var text = h.textContent.replace(/\s+/g, " ").trim();
+  var lang = document.documentElement.lang;
+  var pieces = [];
+  if (lang === "ja" || lang === "zh-Hans") {
+    Array.from(text.replace(/\s/g, "")).forEach(function (ch) {
+      if (/[\p{P}]/u.test(ch) && pieces.length) pieces[pieces.length - 1] += ch;
+      else pieces.push(ch);
+    });
+  } else {
+    pieces = text.split(" ");
+  }
+  var tiles = document.createElement("span");
+  tiles.className = "tiles";
+  tiles.setAttribute("aria-hidden", "true");
+  pieces.forEach(function (p, i) {
+    var s = document.createElement("span");
+    s.className = "t" + (i % 5);
+    s.textContent = p;
+    tiles.appendChild(s);
+  });
+  var said = document.createElement("span");
+  said.className = "vh";
+  said.textContent = text;
+  h.textContent = "";
+  h.appendChild(said);
+  h.appendChild(tiles);
+})();
+</script>
+
+
+<nav class="i18n" aria-label="Language">
+  <a href="/grnge/" hreflang="en" lang="en">English</a>
+  <a href="/de/grnge/" hreflang="de" lang="de">Deutsch</a>
+  <a href="/es/grnge/" hreflang="es" lang="es">Español</a>
+  <a href="/es-mx/grnge/" hreflang="es-MX" lang="es-MX">Español (MX)</a>
+  <a href="/fr/grnge/" hreflang="fr" lang="fr">Français</a>
+  <a href="/it/grnge/" hreflang="it" lang="it">Italiano</a>
+  <a href="/ja/grnge/" hreflang="ja" lang="ja">日本語</a>
+  <a href="/ko/grnge/" hreflang="ko" lang="ko">한국어</a>
+  <span aria-current="true" lang="nl">Nederlands</span>
+  <a href="/pt-br/grnge/" hreflang="pt-BR" lang="pt-BR">Português (BR)</a>
+  <a href="/zh-hans/grnge/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+</nav>
+</body>
+</html>

@@ -15,6 +15,8 @@ Levi Foster's site. Plain static HTML, no build step, no framework.
     /dollop/privacy   
     /kippu/           Kippu, Japanese for a trip and the JLPT N5, for iPhone and iPad
     /kippu/privacy    
+    /grnge/           GRNGE, black-and-white photo prints for iPhone
+    /grnge/privacy    
     robots.txt        
     sitemap.xml       every real URL; update lastmod when a page changes
     _headers          Cloudflare Pages: security headers + immutable asset caching

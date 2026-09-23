@@ -940,3 +940,89 @@ Source: https://lf.wtf/kippu/privacy/
 
 Kippu does not collect any data. There is no account, no analytics, no advertising, no tracking and no third-party code in the app. The only network traffic is with Apple: progress syncs to the user's own private iCloud database, which Apple holds and the developer cannot read, and the App Store confirms the subscription. Lessons, recordings and games are inside the app and work offline. The evening reminder is a local notification. Kippu Plus is sold through Apple's In-App Purchase system; payment details never reach the developer. Rated 4+. Questions: L@LF.WTF.
 
+
+# GRNGE: photocopy, stipple, halftone and dither photo effects for iPhone
+Source: https://lf.wtf/grnge/
+
+## GRNGE
+
+Photo effects for iPhone
+
+### Start with a photo.
+
+GRNGE turns it into a black-and-white print: photocopy, stipple, halftone or dither. Then layer it in colour inks, draw on it, cut out the subject, add stickers, and save it at the size you post.
+
+Download on the App Store
+
+Free. iPhone, iOS 17 and later. GRNGE Pro opens everything, with a free week on the yearly plan.
+
+### Four prints from one photo
+
+Original, Photocopy, Stipple, Halftone, Dither.
+
+Three dials do the same thing on all four. Ink goes lighter or darker, Grit goes from clean to dirty, Wear goes from fresh to worn. Hold the picture to see the photo again.
+
+### Layer it in colour
+
+Print the same photo again in orange, pink or blue and lay it over the first. Each sheet has its own effect, ink and strength. Let it show through, or shift it out of line. Recipes on the home screen set up a whole stack in one tap, and stay editable.
+
+### Draw on it
+
+Marker, pen, spray, splat and stencil, in black, white, orange, pink or blue. Rough or clean. Scribbles sit on their own sheet, over or under the prints.
+
+### Cut out the subject
+
+GRNGE finds the person, pet or object in the photo and cuts it out with a clean, torn or sticker edge. Drag, pinch and twist to place it.
+
+### Stick things on
+
+Bursts, stars, sparks, crowns, arrows, crosses, bolts, smileys and hearts, printed in the same inks with the same rough edge.
+
+### Print it
+
+Post, story, square or A3 poster. White, newsprint, kraft, pink or orange paper, or clear paper for a PNG with no background. Print saves it to Photos. Share sends it anywhere else.
+
+### GRNGE Pro
+
+GRNGE is free to download and free to use. GRNGE Pro opens the rest.
+
+Free: Photocopy and Stipple; Ink, Grit and Wear; two sheets in the stack; marker, pen and eraser; burst, star and arrow stickers; 1080 px prints with the GRNGE stamp, on white or newsprint.
+
+GRNGE Pro: Halftone and Dither; as many sheets as you like, in colour inks, see-through and shifted; spray, splat and stencil; cut-outs and every sticker; every paper stock; full-size and A3 poster prints, stamp optional.
+
+29.99 US dollars a year with 7 days free, or 5.99 a month. Pro tools work in the editor, so you can try them first. When you print, subscribe or print without them. The free week is on the yearly plan. Cancel any time in your Apple account. Prices shown in US dollars; the App Store shows yours.
+
+### What it does not do
+
+No account and nothing to sign in to. No advertising, no analytics, no tracking. The app has no network code: photos are processed on the phone and stay there unless you share them.
+
+The privacy policy says the same at greater length, and says nothing else.
+
+### Questions
+
+### Is GRNGE free?
+
+Yes, to download and to use. Photocopy and Stipple, two sheets, marker and pen, and 1080 px prints with the GRNGE stamp are free. GRNGE Pro opens everything else at 5.99 US dollars a month or 29.99 a year, and the yearly plan starts with a free week. Cancel any time in your Apple account.
+
+### Does it print on paper?
+
+No. Print makes an image and saves it to Photos, sized for a post, a story, a square or an A3 poster. The paper colour is part of the picture. The poster size is 300 dpi, so a print shop can print it.
+
+### Do my photos leave my phone?
+
+No. Every effect runs on the phone, and the app has no network code. A print leaves only when you share it.
+
+### Which photos work?
+
+Any photo from your library, or one you take in the app. Dark and flat photos are evened out before they print. Cutting out needs a clear subject: a person, a pet or an object.
+
+### Do I need an account?
+
+No. There is nothing to sign up for. Your prints are kept in the app on your phone, and in Photos once you print them.
+
+Also here: CYANO, which turns photos into cyanotypes.
+
+# GRNGE Privacy Policy
+Source: https://lf.wtf/grnge/privacy/
+
+GRNGE does not collect any data. There is no account, no analytics, no advertising, no tracking and no third-party code in the app, and the app contains no networking code. The only network traffic is between the phone and Apple, when the App Store checks the subscription. Photos are chosen through the system picker, which needs no permission and hands the app only the picture chosen, or taken with the camera, which is asked for only when the camera button is tapped. Every effect and the subject cut-out run on the phone; photos are never uploaded. A copy of the photo is kept inside the app with its print until the print or the app is deleted. The app asks for add-only access to Photos, used only when Print is tapped. GRNGE Pro is sold through Apple's In-App Purchase system; payment details never reach the developer. Rated 4+. Questions: L@LF.WTF.

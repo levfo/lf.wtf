@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidade do GRNGE</title>
+<link rel="alternate" hreflang="en" href="https://lf.wtf/grnge/privacy/">
+<link rel="alternate" hreflang="de" href="https://lf.wtf/de/grnge/privacy/">
+<link rel="alternate" hreflang="es" href="https://lf.wtf/es/grnge/privacy/">
+<link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/grnge/privacy/">
+<link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/grnge/privacy/">
+<link rel="alternate" hreflang="it" href="https://lf.wtf/it/grnge/privacy/">
+<link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/grnge/privacy/">
+<link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/grnge/privacy/">
+<link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/grnge/privacy/">
+<link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/grnge/privacy/">
+<link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/grnge/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://lf.wtf/grnge/privacy/">
+<link rel="canonical" href="https://lf.wtf/pt-br/grnge/privacy/">
+<meta name="description" content="O GRNGE não coleta nada. Não há conta, nem análise, nem publicidade, nem código de rede no app. As fotos são processadas no seu telefone e nunca saem dele, a não ser que você as compartilhe.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0E0E0D">
+<link rel="icon" href="/grnge/assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;700&family=Space+Mono:wght@700&display=swap">
+<style>
+/* The product page's language, quieted down: one sheet of paper taped to the toner ground, with
+   the torn edge, the grain and the orange. The ransom lettering stays next door, because a policy
+   has to be easy to read. */
+:root{--toner:#0E0E0D; --paper:#EEEBE3; --ink:#2B2A26; --dust:#9C988E; --signal:#FF4B1F;
+  --display:"Anton",Impact,"Arial Narrow Bold",sans-serif;
+  --mono:"Space Mono",ui-monospace,Menlo,monospace;
+  --body:"Archivo",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --torn:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'%3E%3Cpath d='M0 12V5l8-2 6 3 8-4 8 3 7-4 8 3 7-2 8 4 8-3 7 2 8-4 7 3 9-2 7 4 8-3 7 2 9-4 7 3 8-2 7 3 8-2 8 3 8-4 8 3 8-2 8 2v7z'/%3E%3C/svg%3E")}
+html[lang="ja"]{--cjk:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",YuGothic,"Noto Sans JP",Meiryo}
+html[lang="ko"]{--cjk:"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic"}
+html[lang="zh-Hans"]{--cjk:"PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei"}
+html[lang="ja"],html[lang="ko"],html[lang="zh-Hans"]{--display:"Anton",var(--cjk),sans-serif;--mono:"Space Mono",var(--cjk),monospace;--body:"Archivo",var(--cjk),sans-serif}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0; background:var(--toner); color:var(--paper);
+  font:400 18px/1.68 var(--body);
+  padding:0 clamp(.9rem,4vw,2.5rem) 3rem}
+main{max-width:42rem;margin:3.2rem auto 0;position:relative;background:var(--paper);color:var(--ink);
+  padding:1.4rem clamp(1.3rem,5vw,2.8rem) 2.2rem}
+main::before,main::after{content:"";position:absolute;left:0;right:0;height:11px;background:var(--paper);
+  -webkit-mask:var(--torn) 0 0/220px 100% repeat-x;mask:var(--torn) 0 0/220px 100% repeat-x}
+main::before{top:-10px}
+main::after{bottom:-10px;transform:scaleY(-1)}
+.tape{position:absolute;top:-1.1rem;left:50%;width:7rem;height:1.9rem;margin-left:-3.5rem;background:rgba(233,222,190,.8);
+  transform:rotate(-3deg);clip-path:polygon(0 8%,5% 0,9% 12%,14% 2%,100% 0,96% 16%,100% 30%,95% 48%,100% 64%,96% 82%,100% 100%,8% 100%,3% 90%,0 72%,5% 55%,0 38%,4% 22%)}
+.label{font:700 .7rem/1.3 var(--mono);letter-spacing:.16em;text-transform:uppercase}
+a.back{display:inline-block;padding:.6rem 0 0;text-decoration:none;color:var(--toner)}
+h1{font:400 clamp(2.4rem,8vw,3.4rem)/1 var(--display);text-transform:uppercase;letter-spacing:.01em;color:var(--toner);margin:1.6rem 0 .7rem}
+h2{font:400 1.45rem/1.15 var(--display);text-transform:uppercase;letter-spacing:.02em;color:var(--toner);margin:2.2rem 0 .6rem;padding-top:1.3rem;border-top:3px solid var(--toner)}
+p{margin:0 0 1rem}
+p.stamp{margin:0 0 2rem;color:var(--toner)}
+strong{color:var(--toner);font-weight:700}
+a{color:var(--toner);text-decoration-color:var(--signal);text-decoration-thickness:2px;text-underline-offset:3px}
+.mark{background:var(--signal);padding:0 .25em;color:var(--toner);font-weight:700}
+footer{border-top:3px solid var(--toner);margin-top:2.4rem;padding-top:1.2rem}
+footer a{text-decoration:none}
+
+/* i18n:start */
+.i18n{max-width:var(--w,initial);margin:0 auto;padding:26px 22px 40px;display:flex;flex-wrap:wrap;
+gap:6px 14px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.55;
+justify-content:center}
+.i18n a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+.i18n a:hover{border-bottom-color:currentColor}
+.i18n span[aria-current]{opacity:.5;cursor:default}
+/* i18n:end */
+</style>
+</head>
+<body>
+<main>
+  <span class="tape" aria-hidden="true"></span>
+  <a class="back label" href="/grnge/">&larr; GRNGE</a>
+
+  <h1>Política de privacidade</h1>
+  <p class="stamp label">Última atualização: 23 de setembro de 2026</p>
+
+  <p><span class="mark">O GRNGE não coleta nenhum dado.</span> Não há conta para criar, nem análise, nem publicidade, nem rastreamento, nem código de terceiros de qualquer tipo no app. Isto não é uma política sobre o cuidado com que suas informações são tratadas. Deste lado não há informação nenhuma para tratar.</p>
+
+  <h2>O que sai do seu telefone</h2>
+  <p><strong>Nada que chegue até mim.</strong> O app não contém código de rede: deste lado não há servidor, nem nada no GRNGE que pudesse falar com um. Ele funciona exatamente igual com o telefone em modo avião. O único tráfego é entre o seu telefone e a Apple, quando a App Store verifica sua assinatura.</p>
+
+  <h2>Suas fotos</h2>
+  <p>Você escolhe uma foto da sua fototeca ou tira uma com a câmera. Todos os efeitos, e a busca do assunto para um recorte, rodam no seu telefone. <strong>Suas fotos nunca são enviadas para a internet nem para ninguém.</strong> Uma cópia da foto fica guardada dentro do app junto com a impressão, para você poder voltar e alterar. Apagar a impressão apaga a cópia, e apagar o app apaga tudo.</p>
+
+  <h2>Permissões que o app pede</h2>
+  <p><strong>Câmera.</strong> Pedida só quando você toca no botão da câmera, e usada só para tirar a foto que você escolher usar.</p>
+  <p><strong>Fotos, só adicionar.</strong> Usada só quando você toca em Imprimir, para salvar a impressão pronta na sua fototeca. O app pede permissão para adicionar, não para ver sua fototeca.</p>
+  <p><strong>Escolher uma foto</strong> não precisa de permissão nenhuma. O seletor é executado pelo iOS, e o app recebe só a imagem que você escolher. Ele nunca vê o resto da sua fototeca.</p>
+
+  <h2>O que é salvo, e onde</h2>
+  <p>Suas impressões, os ajustes delas e as preferências do app ficam no telefone, no armazenamento do próprio app. O app não as sincroniza com lugar nenhum e nada mais consegue lê-las. Apagar o app apaga tudo isso, sem precisar pedir a ninguém.</p>
+
+  <h2>Compras</h2>
+  <p>O GRNGE Pro é vendido como assinatura pelo sistema de compras no app da Apple. A Apple recebe o pagamento, cuida da semana grátis e das renovações, e informa ao app se a assinatura está ativa. <strong>Seus dados de pagamento, seu nome e seu e-mail nunca são vistos deste lado.</strong> Restaurar uma compra pergunta à Apple, não a mim, e o cancelamento é feito na sua conta Apple.</p>
+
+  <h2>Crianças</h2>
+  <p>O app tem classificação 4+ e é seguro para qualquer idade, pelo simples motivo de que não coleta nada de ninguém. Não há chat, nem feed, nem perfil, nem links para fora além desta política e dos termos de uso padrão da Apple, e nada que peça um nome.</p>
+
+  <h2>Alterações</h2>
+  <p>Se isso um dia mudar, a mudança aparecerá aqui com uma nova data, e qualquer versão do app que colete algo dirá isso na sua página da App Store antes de você instalar.</p>
+
+  <h2>Contato</h2>
+  <p>Perguntas vão para <a href="mailto:L@LF.WTF">L@LF.WTF</a>, que chega direto a mim. Um e-mail enviado para lá é um e-mail, e é tratado como tal: lido, respondido e não jogado em nada.</p>
+
+  <footer>
+    <p class="label"><a href="/grnge/">GRNGE</a> &middot; <a href="/">lf.wtf</a> &middot; Feito em Fort Worth, Texas</p>
+  </footer>
+</main>
+
+<nav class="i18n" aria-label="Language">
+  <a href="/grnge/privacy/" hreflang="en" lang="en">English</a>
+  <a href="/de/grnge/privacy/" hreflang="de" lang="de">Deutsch</a>
+  <a href="/es/grnge/privacy/" hreflang="es" lang="es">Español</a>
+  <a href="/es-mx/grnge/privacy/" hreflang="es-MX" lang="es-MX">Español (MX)</a>
+  <a href="/fr/grnge/privacy/" hreflang="fr" lang="fr">Français</a>
+  <a href="/it/grnge/privacy/" hreflang="it" lang="it">Italiano</a>
+  <a href="/ja/grnge/privacy/" hreflang="ja" lang="ja">日本語</a>
+  <a href="/ko/grnge/privacy/" hreflang="ko" lang="ko">한국어</a>
+  <a href="/nl/grnge/privacy/" hreflang="nl" lang="nl">Nederlands</a>
+  <span aria-current="true" lang="pt-BR">Português (BR)</span>
+  <a href="/zh-hans/grnge/privacy/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+</nav>
+</body>
+</html>

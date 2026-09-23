@@ -62,6 +62,8 @@ PAGES = {
     "dollop/privacy/index.html": "dollop/privacy/",
     "kippu/index.html": "kippu/",
     "kippu/privacy/index.html": "kippu/privacy/",
+    "grnge/index.html": "grnge/",
+    "grnge/privacy/index.html": "grnge/privacy/",
 }
 
 ATTRS = {"content", "alt", "title", "aria-label", "placeholder"}

@@ -1,0 +1,308 @@
+"""lf.wtf/grnge/privacy, in ten languages.
+
+Order of every tuple: de, es, es-MX, fr, it, ja, ko, nl, pt-BR, zh-Hans.
+
+The sentences GRNGE shares with Kippu's and Dollop's policies reuse their translations, so the
+same promise reads the same way across the site. French is the exception: GRNGE speaks to the
+reader as "tu", in the app and on its product page, so the shared sentences are rewritten to
+match rather than switching register between the two pages.
+
+The permissions are named the way iOS names them: the camera, and Photos with add-only access.
+Choosing a photo goes through the system picker and needs no permission, and every language says
+so, because it is the reason the app never sees the rest of a library.
+"""
+
+KEEP = {"GRNGE", "GRNGE Pro", "lf.wtf", "L@LF.WTF"}
+
+T = {
+    "GRNGE Privacy Policy": (
+        "GRNGE Datenschutzerklärung",
+        "Política de privacidad de GRNGE",
+        "Política de privacidad de GRNGE",
+        "Politique de confidentialité de GRNGE",
+        "Informativa sulla privacy di GRNGE",
+        "GRNGE プライバシーポリシー",
+        "GRNGE 개인정보 처리방침",
+        "Privacybeleid van GRNGE",
+        "Política de privacidade do GRNGE",
+        "GRNGE 隐私政策"),
+
+    "GRNGE collects nothing. There is no account, no analytics, no advertising and no networking code in the app. Photos are processed on your phone and never leave it unless you share them.": (
+        "GRNGE erfasst nichts. Es gibt kein Konto, keine Analyse, keine Werbung und keinen Netzwerkcode in der App. Fotos werden auf deinem Telefon verarbeitet und verlassen es nie, außer du teilst sie.",
+        "GRNGE no recopila nada. No hay cuenta, ni analítica, ni publicidad, ni código de red en la app. Las fotos se procesan en tu teléfono y nunca salen de él, salvo que las compartas.",
+        "GRNGE no recopila nada. No hay cuenta, ni analítica, ni publicidad, ni código de red en la app. Las fotos se procesan en tu teléfono y nunca salen de él, salvo que las compartas.",
+        "GRNGE ne collecte rien. Pas de compte, pas d'analyse d'audience, pas de publicité et aucun code réseau dans l'app. Les photos sont traitées sur ton téléphone et n'en sortent jamais, sauf si tu les partages.",
+        "GRNGE non raccoglie nulla. Nessun account, nessuna analisi, nessuna pubblicità e nessun codice di rete nell'app. Le foto vengono elaborate sul tuo telefono e non ne escono mai, a meno che tu non le condivida.",
+        "GRNGE は何も収集しません。アカウントも、解析も、広告も、ネットワークのコードもありません。写真は端末の中で処理され、共有しない限り端末から出ることはありません。",
+        "GRNGE는 아무것도 수집하지 않습니다. 계정도, 분석도, 광고도, 네트워크 코드도 앱에 없습니다. 사진은 휴대폰 안에서 처리되며 공유하지 않는 한 밖으로 나가지 않습니다.",
+        "GRNGE verzamelt niets. Geen account, geen analytics, geen advertenties en geen netwerkcode in de app. Foto's worden op je telefoon verwerkt en verlaten hem nooit, tenzij je ze deelt.",
+        "O GRNGE não coleta nada. Não há conta, nem análise, nem publicidade, nem código de rede no app. As fotos são processadas no seu telefone e nunca saem dele, a não ser que você as compartilhe.",
+        "GRNGE 不收集任何数据。没有账户，没有分析，没有广告，应用里也没有联网代码。照片在你的手机上处理，除非你分享，否则不会离开手机。"),
+
+    "Privacy policy": (
+        "Datenschutzerklärung", "Política de privacidad", "Política de privacidad",
+        "Politique de confidentialité", "Informativa sulla privacy", "プライバシーポリシー",
+        "개인정보 처리방침", "Privacybeleid", "Política de privacidade", "隐私政策"),
+
+    "Last updated 23 September 2026": (
+        "Zuletzt aktualisiert am 23. September 2026", "Última actualización: 23 de septiembre de 2026",
+        "Última actualización: 23 de septiembre de 2026", "Dernière mise à jour le 23 septembre 2026",
+        "Ultimo aggiornamento: 23 settembre 2026", "最終更新日：2026年9月23日", "최종 업데이트: 2026년 9월 23일",
+        "Laatst bijgewerkt op 23 september 2026", "Última atualização: 23 de setembro de 2026",
+        "最后更新：2026年9月23日"),
+
+    "GRNGE does not collect any data.": (
+        "GRNGE erfasst keinerlei Daten.", "GRNGE no recopila ningún dato.",
+        "GRNGE no recopila ningún dato.", "GRNGE ne collecte aucune donnée.",
+        "GRNGE non raccoglie alcun dato.", "GRNGE はいかなるデータも収集しません。",
+        "GRNGE는 어떤 데이터도 수집하지 않습니다.", "GRNGE verzamelt geen enkele gegevens.",
+        "O GRNGE não coleta nenhum dado.", "GRNGE 不收集任何数据。"),
+
+    "There is no account to create, no analytics, no advertising, no tracking, and no third-party code of any kind in the app. This is not a policy about how carefully your information is handled. There is no information on this side to handle.": (
+        "Es gibt kein Konto anzulegen, keine Analyse, keine Werbung, kein Tracking und keinerlei Code von Dritten in der App. Dies ist keine Erklärung darüber, wie sorgfältig mit deinen Informationen umgegangen wird. Auf dieser Seite gibt es keine Informationen, mit denen umzugehen wäre.",
+        "No hay ninguna cuenta que crear, ni analítica, ni publicidad, ni rastreo, ni código de terceros de ningún tipo en la aplicación. Esto no es una política sobre el cuidado con el que se maneja tu información. De este lado no hay información que manejar.",
+        "No hay ninguna cuenta que crear, ni analítica, ni publicidad, ni rastreo, ni código de terceros de ningún tipo en la aplicación. Esto no es una política sobre el cuidado con el que se maneja tu información. De este lado no hay información que manejar.",
+        "Il n'y a aucun compte à créer, pas d'analyse d'audience, pas de publicité, pas de pistage, et aucun code tiers d'aucune sorte dans l'application. Ce n'est pas une politique sur le soin apporté à tes informations. De ce côté-ci, il n'y a aucune information à traiter.",
+        "Non c'è nessun account da creare, nessuna analisi, nessuna pubblicità, nessun tracciamento e nessun codice di terze parti di alcun tipo nell'app. Questa non è un'informativa su quanta cura si presta alle tue informazioni. Da questa parte non c'è alcuna informazione da trattare.",
+        "作成するアカウントはなく、解析も、広告も、トラッキングも、第三者のコードも一切アプリに含まれていません。これは、あなたの情報をどれだけ慎重に扱うかについての方針ではありません。こちら側には扱う情報そのものがありません。",
+        "만들 계정도 없고, 분석도, 광고도, 추적도, 어떤 종류의 제3자 코드도 앱에 없습니다. 이 문서는 당신의 정보를 얼마나 조심스럽게 다루는지에 관한 방침이 아닙니다. 이쪽에는 다룰 정보 자체가 없습니다.",
+        "Er is geen account om aan te maken, geen analytics, geen advertenties, geen tracking en geen enkele code van derden in de app. Dit is geen beleid over hoe zorgvuldig er met je gegevens wordt omgegaan. Aan deze kant zijn er geen gegevens om mee om te gaan.",
+        "Não há conta para criar, nem análise, nem publicidade, nem rastreamento, nem código de terceiros de qualquer tipo no app. Isto não é uma política sobre o cuidado com que suas informações são tratadas. Deste lado não há informação nenhuma para tratar.",
+        "没有需要创建的账户，没有分析，没有广告，没有追踪，应用中也没有任何第三方代码。这不是一份关于如何谨慎处理你信息的政策。这一边根本没有信息可处理。"),
+
+    "What leaves your phone": (
+        "Was dein Telefon verlässt", "Qué sale de tu teléfono", "Qué sale de tu teléfono",
+        "Ce qui sort de ton téléphone", "Che cosa esce dal tuo telefono", "端末から出ていくもの",
+        "휴대폰 밖으로 나가는 것", "Wat je telefoon verlaat", "O que sai do seu telefone",
+        "有什么会离开你的手机"),
+
+    "Nothing that reaches me.": (
+        "Nichts, das mich erreicht.", "Nada que me llegue a mí.", "Nada que me llegue a mí.",
+        "Rien qui me parvienne.", "Niente che arrivi a me.", "私に届くものは何もありません。",
+        "제게 닿는 것은 아무것도 없습니다.", "Niets dat bij mij terechtkomt.", "Nada que chegue até mim.",
+        "没有任何东西会到我这里。"),
+
+    "The app contains no networking code: there is no server on this side and nothing in GRNGE that could talk to one. It works exactly the same with the phone in airplane mode. The only traffic is between your phone and Apple, when the App Store checks your subscription.": (
+        "Die App enthält keinen Netzwerkcode: Auf dieser Seite gibt es keinen Server und nichts in GRNGE, das mit einem sprechen könnte. Sie funktioniert im Flugmodus genau gleich. Der einzige Datenverkehr läuft zwischen deinem Telefon und Apple, wenn der App Store dein Abo prüft.",
+        "La app no contiene código de red: de este lado no hay ningún servidor, ni nada en GRNGE que pudiera hablar con uno. Funciona exactamente igual con el teléfono en modo avión. El único tráfico es entre tu teléfono y Apple, cuando el App Store comprueba tu suscripción.",
+        "La app no contiene código de red: de este lado no hay ningún servidor, ni nada en GRNGE que pudiera hablar con uno. Funciona exactamente igual con el teléfono en modo avión. El único tráfico es entre tu teléfono y Apple, cuando el App Store verifica tu suscripción.",
+        "L'app ne contient aucun code réseau : il n'y a pas de serveur de ce côté-ci, ni rien dans GRNGE qui puisse parler à un serveur. Elle fonctionne exactement pareil en mode avion. Le seul trafic a lieu entre ton téléphone et Apple, quand l'App Store vérifie ton abonnement.",
+        "L'app non contiene codice di rete: da questa parte non c'è nessun server, né niente in GRNGE che possa parlare con uno. Funziona esattamente allo stesso modo con il telefono in modalità aereo. L'unico traffico è tra il tuo telefono e Apple, quando l'App Store controlla il tuo abbonamento.",
+        "アプリにはネットワークのコードがありません。こちら側にサーバーはなく、GRNGE の中にサーバーと通信できるものもありません。機内モードでもまったく同じように動きます。通信が発生するのは、App Store がサブスクリプションを確認するときの、端末と Apple の間だけです。",
+        "앱에는 네트워크 코드가 없습니다. 이쪽에는 서버가 없고, GRNGE 안에도 서버와 통신할 수 있는 것이 없습니다. 비행기 모드에서도 똑같이 작동합니다. 유일한 통신은 App Store가 구독을 확인할 때 휴대폰과 Apple 사이에서 일어납니다.",
+        "De app bevat geen netwerkcode: aan deze kant is er geen server, en niets in GRNGE dat met een server zou kunnen praten. Hij werkt precies hetzelfde met de telefoon in vliegtuigmodus. Het enige verkeer is tussen je telefoon en Apple, wanneer de App Store je abonnement controleert.",
+        "O app não contém código de rede: deste lado não há servidor, nem nada no GRNGE que pudesse falar com um. Ele funciona exatamente igual com o telefone em modo avião. O único tráfego é entre o seu telefone e a Apple, quando a App Store verifica sua assinatura.",
+        "应用里没有联网代码：这一边没有服务器，GRNGE 里也没有任何能和服务器通信的东西。手机开着飞行模式，它照样一模一样地工作。唯一的网络通信发生在你的手机和 Apple 之间，是 App Store 在核对你的订阅。"),
+
+    "Your photographs": (
+        "Deine Fotos", "Tus fotos", "Tus fotos", "Tes photos", "Le tue foto", "あなたの写真",
+        "당신의 사진", "Jouw foto's", "Suas fotos", "你的照片"),
+
+    "You choose a photo from your library or take one with the camera. Every effect, and finding the subject for a cut-out, runs on your phone.": (
+        "Du wählst ein Foto aus deiner Mediathek oder nimmst eins mit der Kamera auf. Jeder Effekt, und auch das Finden des Motivs zum Ausschneiden, läuft auf deinem Telefon.",
+        "Eliges una foto de tu fototeca o haces una con la cámara. Todos los efectos, y la búsqueda del sujeto para un recorte, se ejecutan en tu teléfono.",
+        "Eliges una foto de tu fototeca o tomas una con la cámara. Todos los efectos, y la búsqueda del sujeto para un recorte, se ejecutan en tu teléfono.",
+        "Tu choisis une photo dans ta photothèque ou tu en prends une avec l'appareil photo. Chaque effet, et la recherche du sujet pour une découpe, tourne sur ton téléphone.",
+        "Scegli una foto dalla libreria o ne scatti una con la fotocamera. Ogni effetto, e anche la ricerca del soggetto per un ritaglio, gira sul tuo telefono.",
+        "ライブラリから写真を選ぶか、カメラで撮ります。エフェクトも、切り抜きのための被写体探しも、すべて端末の中で行われます。",
+        "보관함에서 사진을 고르거나 카메라로 찍습니다. 모든 효과와, 오려내기를 위한 피사체 찾기는 휴대폰 안에서 처리됩니다.",
+        "Je kiest een foto uit je bibliotheek of maakt er een met de camera. Elk effect, en het vinden van het onderwerp om uit te knippen, draait op je telefoon.",
+        "Você escolhe uma foto da sua fototeca ou tira uma com a câmera. Todos os efeitos, e a busca do assunto para um recorte, rodam no seu telefone.",
+        "你从图库选一张照片，或者用相机拍一张。所有效果，以及为抠图寻找主体，都在你的手机上运行。"),
+
+    "Your photos are never uploaded and never sent to anyone.": (
+        "Deine Fotos werden nie hochgeladen und nie an irgendwen geschickt.",
+        "Tus fotos nunca se suben ni se envían a nadie.",
+        "Tus fotos nunca se suben ni se envían a nadie.",
+        "Tes photos ne sont jamais envoyées en ligne ni transmises à qui que ce soit.",
+        "Le tue foto non vengono mai caricate né inviate a nessuno.",
+        "写真がアップロードされたり、誰かに送られたりすることは決してありません。",
+        "사진은 절대 업로드되지 않고, 누구에게도 보내지지 않습니다.",
+        "Je foto's worden nooit geüpload en nooit naar iemand gestuurd.",
+        "Suas fotos nunca são enviadas para a internet nem para ninguém.",
+        "你的照片从不上传，也从不发送给任何人。"),
+
+    "A copy of the photo is kept inside the app with your print, so you can go back and change it. Deleting the print deletes it, and deleting the app deletes everything.": (
+        "Eine Kopie des Fotos wird in der App zusammen mit deinem Druck aufbewahrt, damit du später zurückgehen und ihn ändern kannst. Löschst du den Druck, ist sie weg, und löschst du die App, ist alles weg.",
+        "Se guarda una copia de la foto dentro de la app junto con tu impresión, para que puedas volver y cambiarla. Al borrar la impresión se borra la copia, y al borrar la app se borra todo.",
+        "Se guarda una copia de la foto dentro de la app junto con tu impresión, para que puedas volver y cambiarla. Al borrar la impresión se borra la copia, y al borrar la app se borra todo.",
+        "Une copie de la photo est gardée dans l'app avec ton tirage, pour que tu puisses y revenir et le modifier. Supprimer le tirage la supprime, et supprimer l'app supprime tout.",
+        "Una copia della foto resta dentro l'app insieme alla stampa, così puoi tornarci e modificarla. Eliminare la stampa la elimina, ed eliminare l'app elimina tutto.",
+        "あとから戻って変更できるよう、写真のコピーはプリントと一緒にアプリの中に保存されます。プリントを削除すればそのコピーも消え、アプリを削除すればすべて消えます。",
+        "나중에 돌아와 고칠 수 있도록 사진의 사본이 인쇄물과 함께 앱 안에 보관됩니다. 인쇄물을 삭제하면 사본도 삭제되고, 앱을 삭제하면 모두 삭제됩니다.",
+        "Een kopie van de foto wordt in de app bij je afdruk bewaard, zodat je terug kunt gaan en hem kunt aanpassen. Verwijder je de afdruk, dan is de kopie weg, en verwijder je de app, dan is alles weg.",
+        "Uma cópia da foto fica guardada dentro do app junto com a impressão, para você poder voltar e alterar. Apagar a impressão apaga a cópia, e apagar o app apaga tudo.",
+        "照片的副本会和你的作品一起保存在应用里，方便你之后回来修改。删除作品就会删除副本，删除应用就会删除一切。"),
+
+    "Permissions the app asks for": (
+        "Berechtigungen, die die App anfragt", "Permisos que pide la app", "Permisos que pide la app",
+        "Les autorisations que l'app demande", "I permessi che l'app chiede", "アプリが求める許可",
+        "앱이 요청하는 권한", "Toestemmingen die de app vraagt", "Permissões que o app pede",
+        "应用请求的权限"),
+
+    "Camera.": (
+        "Kamera.", "Cámara.", "Cámara.", "Appareil photo.", "Fotocamera.", "カメラ。", "카메라.",
+        "Camera.", "Câmera.", "相机。"),
+
+    "Asked for only when you tap the camera button, and used only to take the photo you choose to use.": (
+        "Wird nur angefragt, wenn du auf die Kamerataste tippst, und nur genutzt, um das Foto aufzunehmen, das du verwenden willst.",
+        "Solo se pide cuando tocas el botón de la cámara, y solo se usa para hacer la foto que eliges usar.",
+        "Solo se pide cuando tocas el botón de la cámara, y solo se usa para tomar la foto que eliges usar.",
+        "Demandé seulement quand tu touches le bouton de l'appareil photo, et utilisé seulement pour prendre la photo que tu choisis d'utiliser.",
+        "Richiesta solo quando tocchi il pulsante della fotocamera, e usata solo per scattare la foto che scegli di usare.",
+        "カメラボタンをタップしたときにだけ許可を求め、使うと決めた写真を撮るためだけに使います。",
+        "카메라 버튼을 누를 때만 요청하며, 사용하기로 한 사진을 찍는 데만 씁니다.",
+        "Wordt alleen gevraagd als je op de cameraknop tikt, en alleen gebruikt om de foto te maken die je wilt gebruiken.",
+        "Pedida só quando você toca no botão da câmera, e usada só para tirar a foto que você escolher usar.",
+        "只在你点相机按钮时请求，也只用来拍你选择使用的那张照片。"),
+
+    "Photos, to add.": (
+        "Fotos, nur hinzufügen.", "Fotos, solo añadir.", "Fotos, solo agregar.", "Photos, en ajout.",
+        "Foto, solo aggiunta.", "写真（追加のみ）。", "사진(추가만).", "Foto's, alleen toevoegen.",
+        "Fotos, só adicionar.", "照片（仅添加）。"),
+
+    "Used only when you tap Print, to save the finished print to your library. The app asks for permission to add, not to see your library.": (
+        "Wird nur genutzt, wenn du auf Drucken tippst, um den fertigen Druck in deiner Mediathek zu sichern. Die App fragt nach der Erlaubnis, etwas hinzuzufügen, nicht deine Mediathek zu sehen.",
+        "Solo se usa cuando tocas Imprimir, para guardar la impresión terminada en tu fototeca. La app pide permiso para añadir, no para ver tu fototeca.",
+        "Solo se usa cuando tocas Imprimir, para guardar la impresión terminada en tu fototeca. La app pide permiso para agregar, no para ver tu fototeca.",
+        "Utilisé seulement quand tu touches Imprimer, pour enregistrer le tirage fini dans ta photothèque. L'app demande la permission d'ajouter, pas de voir ta photothèque.",
+        "Usato solo quando tocchi Stampa, per salvare la stampa finita nella tua libreria. L'app chiede il permesso di aggiungere, non di vedere la tua libreria.",
+        "プリントをタップしたときに、仕上がったプリントをライブラリに保存するためだけに使います。求めるのは追加の許可で、ライブラリを見る許可ではありません。",
+        "인쇄를 누를 때 완성된 인쇄물을 보관함에 저장하는 데만 씁니다. 앱이 요청하는 것은 추가 권한이며, 보관함을 볼 권한이 아닙니다.",
+        "Alleen gebruikt als je op Afdrukken tikt, om de afgewerkte afdruk in je bibliotheek te bewaren. De app vraagt toestemming om toe te voegen, niet om je bibliotheek te zien.",
+        "Usada só quando você toca em Imprimir, para salvar a impressão pronta na sua fototeca. O app pede permissão para adicionar, não para ver sua fototeca.",
+        "只在你点“打印”时使用，把完成的作品存进图库。应用请求的是添加权限，而不是查看图库的权限。"),
+
+    "Choosing a photo": (
+        "Ein Foto auswählen", "Elegir una foto", "Elegir una foto", "Choisir une photo",
+        "Scegliere una foto", "写真を選ぶこと", "사진을 고르는 것", "Een foto kiezen",
+        "Escolher uma foto", "选照片"),
+
+    "needs no permission at all. The picker is run by iOS, and the app receives only the picture you pick. It never sees the rest of your library.": (
+        "braucht überhaupt keine Erlaubnis. Die Auswahl läuft über iOS, und die App bekommt nur das Bild, das du auswählst. Den Rest deiner Mediathek sieht sie nie.",
+        "no necesita ningún permiso. El selector lo gestiona iOS, y la app recibe solo la imagen que eliges. Nunca ve el resto de tu fototeca.",
+        "no necesita ningún permiso. El selector lo gestiona iOS, y la app recibe solo la imagen que eliges. Nunca ve el resto de tu fototeca.",
+        "ne demande aucune autorisation. Le sélecteur est géré par iOS, et l'app ne reçoit que l'image que tu choisis. Elle ne voit jamais le reste de ta photothèque.",
+        "non richiede alcun permesso. Il selettore è gestito da iOS, e l'app riceve solo l'immagine che scegli. Non vede mai il resto della tua libreria.",
+        "には許可はいりません。写真の選択画面は iOS が動かしていて、アプリが受け取るのは選んだ1枚だけです。ライブラリのほかの写真を見ることはありません。",
+        "에는 권한이 전혀 필요 없습니다. 사진 선택 화면은 iOS가 실행하며, 앱은 고른 사진 한 장만 받습니다. 보관함의 나머지는 절대 보지 못합니다.",
+        "heeft helemaal geen toestemming nodig. De kiezer wordt door iOS uitgevoerd, en de app krijgt alleen de afbeelding die je kiest. De rest van je bibliotheek ziet hij nooit.",
+        "não precisa de permissão nenhuma. O seletor é executado pelo iOS, e o app recebe só a imagem que você escolher. Ele nunca vê o resto da sua fototeca.",
+        "不需要任何权限。选图界面由 iOS 运行，应用只会收到你选的那一张。它永远看不到图库里的其他照片。"),
+
+    "What is saved, and where": (
+        "Was gespeichert wird, und wo", "Qué se guarda y dónde", "Qué se guarda y dónde",
+        "Ce qui est enregistré, et où", "Che cosa viene salvato, e dove", "何が、どこに保存されるか",
+        "무엇이, 어디에 저장되는가", "Wat er wordt bewaard, en waar", "O que é salvo, e onde",
+        "保存了什么，保存在哪里"),
+
+    "Your prints, their settings and the app's preferences are stored on the phone, in the app's own storage. The app does not sync them anywhere and nothing else can read them. Deleting the app deletes them, which does not require asking anybody.": (
+        "Deine Drucke, ihre Einstellungen und die Voreinstellungen der App werden auf dem Telefon gespeichert, im eigenen Speicher der App. Die App synchronisiert sie nirgendwohin, und nichts anderes kann sie lesen. Die App zu löschen löscht sie, und dafür musst du niemanden fragen.",
+        "Tus impresiones, sus ajustes y las preferencias de la app se guardan en el teléfono, en el almacenamiento propio de la app. La app no las sincroniza con ningún sitio y nada más puede leerlas. Borrar la app las borra, y para eso no hace falta pedírselo a nadie.",
+        "Tus impresiones, sus ajustes y las preferencias de la app se guardan en el teléfono, en el almacenamiento propio de la app. La app no las sincroniza con ningún lado y nada más puede leerlas. Borrar la app las borra, y para eso no hace falta pedírselo a nadie.",
+        "Tes tirages, leurs réglages et les préférences de l'app sont stockés sur le téléphone, dans l'espace propre à l'app. L'app ne les synchronise nulle part et rien d'autre ne peut les lire. Supprimer l'app les supprime, sans avoir à le demander à personne.",
+        "Le tue stampe, le loro impostazioni e le preferenze dell'app sono salvate sul telefono, nello spazio dell'app. L'app non le sincronizza da nessuna parte e nient'altro può leggerle. Eliminare l'app le elimina, e non serve chiederlo a nessuno.",
+        "プリント、その設定、アプリの環境設定は、端末の中のアプリ専用の領域に保存されます。アプリがそれをどこかに同期することはなく、ほかのものが読むこともできません。アプリを削除すれば消え、誰かに頼む必要はありません。",
+        "인쇄물과 그 설정, 앱의 환경설정은 휴대폰 안, 앱 전용 저장 공간에 저장됩니다. 앱은 이를 어디에도 동기화하지 않으며, 다른 무엇도 읽을 수 없습니다. 앱을 삭제하면 함께 삭제되고, 누구에게 요청할 필요도 없습니다.",
+        "Je afdrukken, hun instellingen en de voorkeuren van de app worden op de telefoon bewaard, in de eigen opslag van de app. De app synchroniseert ze nergens heen en niets anders kan ze lezen. De app verwijderen verwijdert ze, en daarvoor hoef je niemand iets te vragen.",
+        "Suas impressões, os ajustes delas e as preferências do app ficam no telefone, no armazenamento do próprio app. O app não as sincroniza com lugar nenhum e nada mais consegue lê-las. Apagar o app apaga tudo isso, sem precisar pedir a ninguém.",
+        "你的作品、它们的设置以及应用的偏好设置都保存在手机上，应用自己的存储空间里。应用不会把它们同步到任何地方，别的东西也读不到。删除应用就会删除它们，不需要找任何人。"),
+
+    "Purchases": (
+        "Käufe", "Compras", "Compras", "Achats", "Acquisti", "購入", "구매", "Aankopen", "Compras", "购买"),
+
+    "GRNGE Pro is sold through Apple's In-App Purchase system as a subscription. Apple takes the payment, manages the free week and the renewals, and tells the app whether the subscription is active.": (
+        "GRNGE Pro wird als Abo über Apples In-App-Kauf-System verkauft. Apple nimmt die Zahlung entgegen, verwaltet die Gratiswoche und die Verlängerungen und sagt der App, ob das Abo aktiv ist.",
+        "GRNGE Pro se vende como suscripción a través del sistema de compras dentro de la app de Apple. Apple cobra el pago, gestiona la semana gratis y las renovaciones, y le dice a la app si la suscripción está activa.",
+        "GRNGE Pro se vende como suscripción a través del sistema de compras dentro de la app de Apple. Apple cobra, administra la semana gratis y las renovaciones, y le dice a la app si la suscripción está activa.",
+        "GRNGE Pro est vendu sous forme d'abonnement via le système d'achat intégré d'Apple. Apple encaisse le paiement, gère la semaine offerte et les renouvellements, et indique à l'app si l'abonnement est actif.",
+        "GRNGE Pro è venduto come abbonamento tramite il sistema di acquisti in-app di Apple. Apple riceve il pagamento, gestisce la settimana gratis e i rinnovi, e dice all'app se l'abbonamento è attivo.",
+        "GRNGE Pro は、Apple の App 内課金の仕組みを通じてサブスクリプションとして販売されます。支払いを受け取り、無料の1週間と更新を管理し、サブスクリプションが有効かどうかをアプリに伝えるのは Apple です。",
+        "GRNGE Pro는 Apple의 앱 내 구입 시스템을 통해 구독으로 판매됩니다. 결제를 받고, 무료 1주일과 갱신을 관리하고, 구독이 활성 상태인지 앱에 알려 주는 것은 Apple입니다.",
+        "GRNGE Pro wordt als abonnement verkocht via het In-App Purchase-systeem van Apple. Apple neemt de betaling aan, beheert de gratis week en de verlengingen, en vertelt de app of het abonnement actief is.",
+        "O GRNGE Pro é vendido como assinatura pelo sistema de compras no app da Apple. A Apple recebe o pagamento, cuida da semana grátis e das renovações, e informa ao app se a assinatura está ativa.",
+        "GRNGE Pro 通过 Apple 的 App 内购买系统以订阅形式出售。收款、管理免费的一周和续订、告诉应用订阅是否有效，都由 Apple 负责。"),
+
+    "Your payment details, your name and your email address are never seen on this side.": (
+        "Deine Zahlungsdaten, dein Name und deine E-Mail-Adresse sind auf dieser Seite nie zu sehen.",
+        "Tus datos de pago, tu nombre y tu correo electrónico nunca se ven de este lado.",
+        "Tus datos de pago, tu nombre y tu correo electrónico nunca se ven de este lado.",
+        "Tes données de paiement, ton nom et ton adresse e-mail ne sont jamais visibles de ce côté-ci.",
+        "I tuoi dati di pagamento, il tuo nome e il tuo indirizzo email non si vedono mai da questa parte.",
+        "あなたの支払い情報、名前、メールアドレスがこちら側に見えることは決してありません。",
+        "당신의 결제 정보, 이름, 이메일 주소는 이쪽에서 결코 볼 수 없습니다.",
+        "Je betaalgegevens, je naam en je e-mailadres zijn aan deze kant nooit te zien.",
+        "Seus dados de pagamento, seu nome e seu e-mail nunca são vistos deste lado.",
+        "你的付款信息、姓名和电子邮件地址，这一边从来看不到。"),
+
+    "Restoring a purchase asks Apple, not me, and cancelling is done in your Apple account.": (
+        "Das Wiederherstellen eines Kaufs fragt Apple, nicht mich, und gekündigt wird in deinem Apple-Konto.",
+        "Restaurar una compra se lo pregunta a Apple, no a mí, y cancelar se hace en tu cuenta de Apple.",
+        "Restaurar una compra se lo pregunta a Apple, no a mí, y cancelar se hace en tu cuenta de Apple.",
+        "Restaurer un achat interroge Apple, pas moi, et la résiliation se fait dans ton compte Apple.",
+        "Il ripristino di un acquisto lo chiede ad Apple, non a me, e la disdetta si fa nel tuo account Apple.",
+        "購入の復元は私ではなく Apple に問い合わせ、解約はあなたの Apple アカウントで行います。",
+        "구매 복원은 제가 아니라 Apple에 묻고, 해지는 당신의 Apple 계정에서 합니다.",
+        "Een aankoop herstellen vraagt het aan Apple, niet aan mij, en opzeggen doe je in je Apple-account.",
+        "Restaurar uma compra pergunta à Apple, não a mim, e o cancelamento é feito na sua conta Apple.",
+        "恢复购买问的是 Apple，不是我；取消在你的 Apple 账户里进行。"),
+
+    "Children": (
+        "Kinder", "Menores", "Menores", "Enfants", "Minori", "お子様について", "어린이", "Kinderen",
+        "Crianças", "儿童"),
+
+    "The app is rated 4+ and is safe for any age, for the plain reason that it collects nothing from anybody. There is no chat, no feed, no profile, no links out except to this policy and to Apple's standard terms of use, and nothing that asks for a name.": (
+        "Die App ist ab 4 Jahren freigegeben und für jedes Alter sicher, aus dem einfachen Grund, dass sie von niemandem etwas erfasst. Es gibt keinen Chat, keinen Feed, kein Profil, keine Links nach draußen außer zu dieser Erklärung und zu Apples Standard-Nutzungsbedingungen, und nichts, das nach einem Namen fragt.",
+        "La app está clasificada para mayores de 4 años y es segura para cualquier edad, por la sencilla razón de que no recopila nada de nadie. No hay chat, ni feed, ni perfil, ni enlaces hacia fuera salvo a esta política y a los términos de uso estándar de Apple, ni nada que pida un nombre.",
+        "La app está clasificada para mayores de 4 años y es segura para cualquier edad, por la sencilla razón de que no recopila nada de nadie. No hay chat, ni feed, ni perfil, ni enlaces hacia afuera salvo a esta política y a los términos de uso estándar de Apple, ni nada que pida un nombre.",
+        "L'app est classée 4+ et convient à tous les âges, pour la simple raison qu'elle ne collecte rien de personne. Il n'y a pas de chat, pas de fil, pas de profil, aucun lien vers l'extérieur sauf vers cette politique et vers les conditions d'utilisation standard d'Apple, et rien qui demande un nom.",
+        "L'app è classificata 4+ ed è adatta a ogni età, per il semplice motivo che non raccoglie nulla da nessuno. Non ci sono chat, feed o profili, nessun link verso l'esterno tranne questa informativa e i termini d'uso standard di Apple, e niente che chieda un nome.",
+        "このアプリは 4+ に指定されていて、どの年齢でも安全です。理由は単純で、誰からも何も収集しないからです。チャットも、フィードも、プロフィールもなく、外へのリンクはこのポリシーと Apple の標準利用規約だけで、名前をたずねるものもありません。",
+        "이 앱은 4+ 등급이며 어떤 나이에도 안전합니다. 이유는 간단합니다. 누구에게서도 아무것도 수집하지 않기 때문입니다. 채팅도, 피드도, 프로필도 없고, 이 방침과 Apple의 표준 이용 약관 외에는 바깥으로 나가는 링크도 없으며, 이름을 묻는 것도 없습니다.",
+        "De app heeft de leeftijdsclassificatie 4+ en is veilig voor elke leeftijd, om de eenvoudige reden dat hij van niemand iets verzamelt. Er is geen chat, geen feed, geen profiel, geen links naar buiten behalve naar dit beleid en naar de standaardgebruiksvoorwaarden van Apple, en niets dat om een naam vraagt.",
+        "O app tem classificação 4+ e é seguro para qualquer idade, pelo simples motivo de que não coleta nada de ninguém. Não há chat, nem feed, nem perfil, nem links para fora além desta política e dos termos de uso padrão da Apple, e nada que peça um nome.",
+        "本应用的分级为 4+，适合任何年龄，原因很简单：它不从任何人那里收集任何东西。没有聊天，没有信息流，没有个人资料，除了这份政策和 Apple 的标准使用条款之外没有任何外部链接，也没有任何要求填写姓名的地方。"),
+
+    "Changes": (
+        "Änderungen", "Cambios", "Cambios", "Modifications", "Modifiche", "変更について", "변경",
+        "Wijzigingen", "Alterações", "变更"),
+
+    "If this ever changes, the change will appear here with a new date, and any version of the app that collects something will say so on its App Store page before you install it.": (
+        "Sollte sich das jemals ändern, erscheint die Änderung hier mit neuem Datum, und jede Version der App, die etwas erfasst, sagt das auf ihrer App-Store-Seite, bevor du sie installierst.",
+        "Si esto cambia alguna vez, el cambio aparecerá aquí con una nueva fecha, y cualquier versión de la aplicación que recopile algo lo dirá en su página del App Store antes de que la instales.",
+        "Si esto cambia alguna vez, el cambio aparecerá aquí con una nueva fecha, y cualquier versión de la aplicación que recopile algo lo dirá en su página del App Store antes de que la instales.",
+        "Si cela devait changer un jour, la modification apparaîtrait ici avec une nouvelle date, et toute version de l'application qui collecte quelque chose le dirait sur sa page App Store avant que tu ne l'installes.",
+        "Se mai dovesse cambiare, la modifica comparirà qui con una nuova data, e qualsiasi versione dell'app che raccolga qualcosa lo dirà sulla sua pagina dell'App Store prima che tu la installi.",
+        "もし変わることがあれば、その変更は新しい日付とともにここに表示され、何かを収集するバージョンのアプリは、インストールする前に App Store のページでそう明記します。",
+        "만약 바뀐다면 그 변경은 새 날짜와 함께 여기에 표시되고, 무언가를 수집하는 앱 버전은 설치하기 전에 App Store 페이지에서 그렇게 밝힙니다.",
+        "Als dit ooit verandert, verschijnt de wijziging hier met een nieuwe datum, en elke versie van de app die iets verzamelt, zegt dat op zijn App Store-pagina voordat je hem installeert.",
+        "Se isso um dia mudar, a mudança aparecerá aqui com uma nova data, e qualquer versão do app que colete algo dirá isso na sua página da App Store antes de você instalar.",
+        "如果这一点有朝一日改变，变更会以新的日期出现在这里，任何会收集数据的应用版本都会在你安装之前在它的 App Store 页面上说明。"),
+
+    "Getting in touch": (
+        "Kontakt", "Contacto", "Contacto", "Contact", "Contatti", "お問い合わせ", "연락처", "Contact",
+        "Contato", "联系方式"),
+
+    "Questions go to": (
+        "Fragen gehen an", "Las preguntas van a", "Las preguntas van a", "Les questions vont à",
+        "Le domande vanno a", "質問は", "질문은", "Vragen gaan naar", "Perguntas vão para",
+        "有问题请发到"),
+
+    ", which reaches me directly. An email sent there is an email, and is handled like one: read, replied to, and not fed into anything.": (
+        ", das mich direkt erreicht. Eine E-Mail dorthin ist eine E-Mail und wird auch so behandelt: gelesen, beantwortet und in nichts eingespeist.",
+        ", que me llega directamente. Un correo enviado ahí es un correo, y se trata como tal: se lee, se responde y no se mete en nada.",
+        ", que me llega directamente. Un correo enviado ahí es un correo, y se trata como tal: se lee, se responde y no se mete en nada.",
+        ", qui me parvient directement. Un e-mail envoyé là est un e-mail, et traité comme tel : lu, répondu, et versé dans rien.",
+        ", che mi arriva direttamente. Un'email inviata lì è un'email, e viene trattata come tale: letta, risposta e non inserita in nulla.",
+        "へ。私に直接届きます。そこに送られたメールはメールとして扱われます。読んで、返事をして、他の何かに流し込むことはありません。",
+        "으로 보내 주세요. 제게 직접 닿습니다. 그곳으로 보낸 이메일은 이메일로 다뤄집니다. 읽고, 답장하고, 다른 어디에도 넣지 않습니다.",
+        ", dat mij rechtstreeks bereikt. Een e-mail daarheen is een e-mail en wordt zo behandeld: gelezen, beantwoord en nergens in gestopt.",
+        ", que chega direto a mim. Um e-mail enviado para lá é um e-mail, e é tratado como tal: lido, respondido e não jogado em nada.",
+        "，它直接到我这里。发到那里的邮件就是一封邮件，也按邮件处理：阅读、回复，不会被喂进任何系统。"),
+
+    "Built in Fort Worth, Texas": (
+        "Gebaut in Fort Worth, Texas", "Hecho en Fort Worth, Texas", "Hecho en Fort Worth, Texas",
+        "Conçu à Fort Worth, Texas", "Costruito a Fort Worth, Texas", "テキサス州フォートワースにて制作",
+        "텍사스 포트워스에서 만듦", "Gemaakt in Fort Worth, Texas", "Feito em Fort Worth, Texas",
+        "于德克萨斯州沃斯堡制作"),
+}
