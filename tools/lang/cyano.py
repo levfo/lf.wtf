@@ -205,11 +205,17 @@ T = {
         "de Beer-Lambert. Sem câmara escura, sem produtos químicos, sem impressora.",
         "不是凭眼睛调出来的颜色替换，而是把感光剂的紫外响应在整个光谱上对太阳光积分，"
         "再依比尔-朗伯定律一层层叠出普鲁士蓝。不需要暗房、不需要药水、不需要打印机。"),
-    "Coming to the App Store": (
-        "Bald im App Store", "Próximamente en la App Store", "Próximamente en la App Store",
-        "Bientôt sur l'App Store", "Presto sull'App Store", "まもなく App Store に登場",
-        "곧 App Store에 출시", "Binnenkort in de App Store", "Em breve na App Store",
-        "即将上架 App Store"),
+    "Download on the App Store": (
+        "Im App Store laden",
+        "Descargar en la App Store",
+        "Descargar en la App Store",
+        "Télécharger dans l'App Store",
+        "Scarica dall'App Store",
+        "App Store でダウンロード",
+        "App Store에서 다운로드",
+        "Downloaden in de App Store",
+        "Baixar na App Store",
+        "在 App Store 下载"),
     "Free": ("Kostenlos", "Gratis", "Gratis", "Gratuit", "Gratis", "無料", "무료", "Gratis",
              "Grátis", "免费"),
     "No subscription": ("Kein Abo", "Sin suscripción", "Sin suscripción", "Sans abonnement",
@@ -1032,27 +1038,28 @@ T.update({
                            "Effets de glitch art", "Effetti glitch art",
                            "グリッチアートエフェクト", "글리치 아트 효과", "Glitch-arteffecten",
                            "Efeitos de glitch art", "故障艺术特效"),
-    "Nineteen stackable effects, each modelled on a specific way real hardware used to fail.\n"
-    "        Free.": (
-        "Neunzehn stapelbare Effekte, jeder einer bestimmten Art nachgebildet, auf die echte "
-        "Hardware früher versagte. Kostenlos.",
-        "Diecinueve efectos apilables, cada uno modelado sobre una forma concreta en que fallaba "
-        "el hardware real. Gratis.",
-        "Diecinueve efectos apilables, cada uno modelado sobre una forma concreta en que fallaba "
-        "el hardware real. Gratis.",
-        "Dix-neuf effets empilables, chacun modélisé sur une façon précise dont le matériel tombait "
-        "en panne. Gratuit.",
-        "Diciannove effetti impilabili, ognuno modellato su un modo preciso in cui l'hardware vero "
-        "si guastava. Gratis.",
-        "積み重ねられる十九のエフェクト。いずれも実在のハードウェアが壊れたときの特定の壊れ方を"
-        "再現しています。無料。",
-        "쌓아 올릴 수 있는 열아홉 가지 효과. 각각 실제 하드웨어가 고장 나던 특정한 방식을 "
-        "모델링했습니다. 무료.",
-        "Negentien stapelbare effecten, elk gemodelleerd op een specifieke manier waarop echte "
-        "hardware kapotging. Gratis.",
-        "Dezenove efeitos empilháveis, cada um modelado sobre um jeito específico pelo qual o "
-        "hardware de verdade falhava. Grátis.",
-        "十九种可叠加的效果，每一种都对应真实硬件当年出错的某种具体方式。免费。"),
+    "Twenty-nine stackable effects for photos and video, each modelled on a specific way real\n"
+    "        hardware used to fail. Free, with optional Premium.": (
+        "Neunundzwanzig stapelbare Effekte für Fotos und Video, jeder einer bestimmten Art "
+        "nachgebildet, auf die echte Hardware früher versagte. Kostenlos, Premium optional.",
+        "Veintinueve efectos apilables para fotos y vídeo, cada uno modelado sobre una forma "
+        "concreta en que fallaba el hardware real. Gratis, con Premium opcional.",
+        "Veintinueve efectos apilables para fotos y video, cada uno modelado sobre una forma "
+        "concreta en que fallaba el hardware real. Gratis, con Premium opcional.",
+        "Vingt-neuf effets empilables pour photos et vidéos, chacun modélisé sur une façon précise "
+        "dont le matériel tombait en panne. Gratuit, avec Premium en option.",
+        "Ventinove effetti impilabili per foto e video, ognuno modellato su un modo preciso in cui "
+        "l'hardware vero si guastava. Gratis, con Premium opzionale.",
+        "写真と動画に使える、積み重ねられる二十九のエフェクト。いずれも実在のハードウェアが"
+        "壊れたときの特定の壊れ方を再現しています。無料、Premium はオプション。",
+        "사진과 동영상에 쌓아 올릴 수 있는 스물아홉 가지 효과. 각각 실제 하드웨어가 고장 나던 "
+        "특정한 방식을 모델링했습니다. 무료, Premium은 선택.",
+        "Negenentwintig stapelbare effecten voor foto's en video, elk gemodelleerd op een "
+        "specifieke manier waarop echte hardware kapotging. Gratis, met optioneel Premium.",
+        "Vinte e nove efeitos empilháveis para fotos e vídeos, cada um modelado sobre um jeito "
+        "específico pelo qual o hardware de verdade falhava. Grátis, com Premium opcional.",
+        "二十九种可叠加的效果，适用于照片和视频，每一种都对应真实硬件当年出错的某种具体方式。"
+        "免费，Premium 可选。"),
     "Privacy": ("Datenschutz", "Privacidad", "Privacidad", "Confidentialité", "Privacy",
                 "プライバシー", "개인정보", "Privacy", "Privacidade", "隐私"),
     "Support": ("Support", "Soporte", "Soporte", "Assistance", "Assistenza", "サポート", "지원",

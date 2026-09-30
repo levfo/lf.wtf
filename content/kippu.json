@@ -480,18 +480,18 @@
     "pt-BR": "por ano",
     "zh-Hans": "每年"
   },
-  "Four months free": {
+  "Seven months free": {
     "kind": "text:span",
-    "de": "Vier Monate geschenkt",
-    "es": "Cuatro meses gratis",
-    "es-MX": "Cuatro meses gratis",
-    "fr": "Quatre mois offerts",
-    "it": "Quattro mesi gratis",
-    "ja": "4か月分お得",
-    "ko": "넉 달 무료",
-    "nl": "Vier maanden gratis",
-    "pt-BR": "Quatro meses grátis",
-    "zh-Hans": "省下四个月"
+    "de": "Sieben Monate geschenkt",
+    "es": "Siete meses gratis",
+    "es-MX": "Siete meses gratis",
+    "fr": "Sept mois offerts",
+    "it": "Sette mesi gratis",
+    "ja": "7か月分お得",
+    "ko": "일곱 달 무료",
+    "nl": "Zeven maanden gratis",
+    "pt-BR": "Sete meses grátis",
+    "zh-Hans": "省下七个月"
   },
   "a month": {
     "kind": "text:span",

@@ -12,18 +12,18 @@
     "pt-BR": "Política de privacidade do MODUL8",
     "zh-Hans": "MODUL8 隐私政策"
   },
-  "How MODUL8 handles your photos and your data. Photos are processed on your device and never uploaded. From version 1.3 there is no advertising and no networking code at all.": {
+  "How MODUL8 handles your photos and your data. Photos and videos are processed on your device and never uploaded. From version 2.0 there is no advertising and no Google AdMob.": {
     "kind": "attr:content",
-    "de": "Wie MODUL8 mit deinen Fotos und deinen Daten umgeht. Fotos werden auf deinem Gerät verarbeitet und nie hochgeladen. Ab Version 1.3 gibt es keine Werbung und überhaupt keinen Netzwerkcode.",
-    "es": "Cómo trata MODUL8 tus fotos y tus datos. Las fotos se procesan en tu dispositivo y nunca se suben. Desde la versión 1.3 no hay publicidad ni nada de código de red.",
-    "es-MX": "Cómo trata MODUL8 tus fotos y tus datos. Las fotos se procesan en tu dispositivo y nunca se suben. Desde la versión 1.3 no hay publicidad ni nada de código de red.",
-    "fr": "Comment MODUL8 traite vos photos et vos données. Les photos sont traitées sur votre appareil et jamais envoyées. Depuis la version 1.3, il n'y a plus de publicité ni aucun code réseau.",
-    "it": "Come MODUL8 tratta le tue foto e i tuoi dati. Le foto vengono elaborate sul tuo dispositivo e non vengono mai caricate. Dalla versione 1.3 non c'è pubblicità né alcun codice di rete.",
-    "ja": "MODUL8 が写真とデータをどう扱うか。写真は端末の上で処理され、アップロードされることはありません。バージョン 1.3 からは広告がなく、通信のコードそのものもありません。",
-    "ko": "MODUL8가 사진과 데이터를 어떻게 다루는지. 사진은 기기 안에서 처리되고 절대 업로드되지 않습니다. 1.3 버전부터는 광고도, 네트워크 코드도 전혀 없습니다.",
-    "nl": "Hoe MODUL8 met je foto's en je gegevens omgaat. Foto's worden op je toestel verwerkt en nooit geüpload. Vanaf versie 1.3 is er geen advertentie en helemaal geen netwerkcode.",
-    "pt-BR": "Como o MODUL8 lida com suas fotos e seus dados. As fotos são processadas no seu aparelho e nunca enviadas. A partir da versão 1.3 não há publicidade nem nenhum código de rede.",
-    "zh-Hans": "MODUL8 如何处理你的照片和数据。照片在你的设备上处理，永远不会上传。从 1.3 版起没有广告，也完全没有联网代码。"
+    "de": "Wie MODUL8 mit deinen Fotos und deinen Daten umgeht. Fotos und Videos werden auf deinem Gerät verarbeitet und nie hochgeladen. Ab Version 2.0 gibt es keine Werbung und kein Google AdMob.",
+    "es": "Cómo trata MODUL8 tus fotos y tus datos. Las fotos y los vídeos se procesan en tu dispositivo y nunca se suben. Desde la versión 2.0 no hay publicidad ni Google AdMob.",
+    "es-MX": "Cómo trata MODUL8 tus fotos y tus datos. Las fotos y los videos se procesan en tu dispositivo y nunca se suben. Desde la versión 2.0 no hay publicidad ni Google AdMob.",
+    "fr": "Comment MODUL8 traite vos photos et vos données. Les photos et les vidéos sont traitées sur votre appareil et jamais envoyées. Depuis la version 2.0, il n'y a plus de publicité ni de Google AdMob.",
+    "it": "Come MODUL8 tratta le tue foto e i tuoi dati. Foto e video vengono elaborati sul tuo dispositivo e non vengono mai caricati. Dalla versione 2.0 non c'è pubblicità né Google AdMob.",
+    "ja": "MODUL8 が写真とデータをどう扱うか。写真も動画も端末の上で処理され、アップロードされることはありません。バージョン 2.0 からは広告も Google AdMob もありません。",
+    "ko": "MODUL8가 사진과 데이터를 어떻게 다루는지. 사진과 동영상은 기기 안에서 처리되고 절대 업로드되지 않습니다. 2.0 버전부터는 광고도 Google AdMob도 없습니다.",
+    "nl": "Hoe MODUL8 met je foto's en je gegevens omgaat. Foto's en video's worden op je toestel verwerkt en nooit geüpload. Vanaf versie 2.0 zijn er geen advertenties en is er geen Google AdMob.",
+    "pt-BR": "Como o MODUL8 lida com suas fotos e seus dados. Fotos e vídeos são processados no seu aparelho e nunca enviados. A partir da versão 2.0 não há publicidade nem Google AdMob.",
+    "zh-Hans": "MODUL8 如何处理你的照片和数据。照片和视频在你的设备上处理，永远不会上传。从 2.0 版起没有广告，也没有 Google AdMob。"
   },
   "MODUL8 app icon": {
     "kind": "attr:alt",
@@ -77,18 +77,18 @@
     "pt-BR": "Política de privacidade",
     "zh-Hans": "隐私政策"
   },
-  "Last updated 27 August 2026": {
+  "Last updated 30 September 2026": {
     "kind": "text:p",
-    "de": "Zuletzt aktualisiert am 27. August 2026",
-    "es": "Última actualización: 27 de agosto de 2026",
-    "es-MX": "Última actualización: 27 de agosto de 2026",
-    "fr": "Dernière mise à jour : 27 août 2026",
-    "it": "Ultimo aggiornamento: 27 agosto 2026",
-    "ja": "最終更新：2026年8月27日",
-    "ko": "최종 업데이트: 2026년 8월 27일",
-    "nl": "Laatst bijgewerkt: 27 augustus 2026",
-    "pt-BR": "Última atualização: 27 de agosto de 2026",
-    "zh-Hans": "最后更新：2026年8月27日"
+    "de": "Zuletzt aktualisiert am 30. September 2026",
+    "es": "Última actualización: 30 de septiembre de 2026",
+    "es-MX": "Última actualización: 30 de septiembre de 2026",
+    "fr": "Dernière mise à jour : 30 septembre 2026",
+    "it": "Ultimo aggiornamento: 30 settembre 2026",
+    "ja": "最終更新：2026年9月30日",
+    "ko": "최종 업데이트: 2026년 9월 30일",
+    "nl": "Laatst bijgewerkt: 30 september 2026",
+    "pt-BR": "Última atualização: 30 de setembro de 2026",
+    "zh-Hans": "最后更新：2026年9月30日"
   },
   "The short version.": {
     "kind": "text:strong",
@@ -103,44 +103,44 @@
     "pt-BR": "A versão curta.",
     "zh-Hans": "简短版本。"
   },
-  "Your photos and videos are processed on your iPhone and\n      are never uploaded anywhere. There is no account and no image server.": {
+  "Your photos and videos are processed on your iPhone and\n      are never uploaded anywhere. There is no image server.": {
     "kind": "text:p",
-    "de": "Deine Fotos und Videos werden auf deinem iPhone verarbeitet und nirgendwohin hochgeladen. Es gibt kein Konto und keinen Bildserver.",
-    "es": "Tus fotos y vídeos se procesan en tu iPhone y no se suben a ninguna parte. No hay cuenta ni servidor de imágenes.",
-    "es-MX": "Tus fotos y videos se procesan en tu iPhone y no se suben a ninguna parte. No hay cuenta ni servidor de imágenes.",
-    "fr": "Vos photos et vidéos sont traitées sur votre iPhone et ne sont envoyées nulle part. Il n'y a pas de compte et pas de serveur d'images.",
-    "it": "Le tue foto e i tuoi video vengono elaborati sul tuo iPhone e non vengono caricati da nessuna parte. Non c'è account e non c'è server di immagini.",
-    "ja": "写真も動画も、あなたの iPhone の中で処理され、どこにもアップロードされません。アカウントも、画像サーバーもありません。",
-    "ko": "사진과 영상은 당신의 iPhone 안에서 처리되고, 어디로도 업로드되지 않습니다. 계정도, 이미지 서버도 없습니다.",
-    "nl": "Je foto's en video's worden op je iPhone verwerkt en nergens naartoe geüpload. Er is geen account en geen beeldserver.",
-    "pt-BR": "Suas fotos e vídeos são processados no seu iPhone e nunca enviados para lugar nenhum. Não há conta nem servidor de imagens.",
-    "zh-Hans": "你的照片和视频都在你的 iPhone 上处理，不会被上传到任何地方。没有账号，也没有图像服务器。"
+    "de": "Deine Fotos und Videos werden auf deinem iPhone verarbeitet und nirgendwohin hochgeladen. Es gibt keinen Bildserver.",
+    "es": "Tus fotos y vídeos se procesan en tu iPhone y no se suben a ninguna parte. No hay servidor de imágenes.",
+    "es-MX": "Tus fotos y videos se procesan en tu iPhone y no se suben a ninguna parte. No hay servidor de imágenes.",
+    "fr": "Vos photos et vidéos sont traitées sur votre iPhone et ne sont envoyées nulle part. Il n'y a pas de serveur d'images.",
+    "it": "Le tue foto e i tuoi video vengono elaborati sul tuo iPhone e non vengono caricati da nessuna parte. Non c'è nessun server di immagini.",
+    "ja": "写真も動画も、あなたの iPhone の中で処理され、どこにもアップロードされません。画像サーバーもありません。",
+    "ko": "사진과 영상은 당신의 iPhone 안에서 처리되고, 어디로도 업로드되지 않습니다. 이미지 서버도 없습니다.",
+    "nl": "Je foto's en video's worden op je iPhone verwerkt en nergens naartoe geüpload. Er is geen beeldserver.",
+    "pt-BR": "Suas fotos e vídeos são processados no seu iPhone e nunca enviados para lugar nenhum. Não há servidor de imagens.",
+    "zh-Hans": "你的照片和视频都在你的 iPhone 上处理，不会被上传到任何地方。也没有图像服务器。"
   },
-  "From version 1.3 there is no advertising": {
+  "From version 2.0 there is no advertising and no Google AdMob.": {
     "kind": "text:strong",
-    "de": "Ab Version 1.3 gibt es keine Werbung",
-    "es": "Desde la versión 1.3 no hay publicidad",
-    "es-MX": "Desde la versión 1.3 no hay publicidad",
-    "fr": "Depuis la version 1.3, il n'y a plus de publicité",
-    "it": "Dalla versione 1.3 non c'è pubblicità",
-    "ja": "バージョン 1.3 からは広告がありません",
-    "ko": "1.3 버전부터는 광고가 없고",
-    "nl": "Vanaf versie 1.3 is er geen advertentie",
-    "pt-BR": "A partir da versão 1.3 não há publicidade",
-    "zh-Hans": "从 1.3 版起没有广告"
+    "de": "Ab Version 2.0 gibt es keine Werbung und kein Google AdMob.",
+    "es": "Desde la versión 2.0 no hay publicidad ni Google AdMob.",
+    "es-MX": "Desde la versión 2.0 no hay publicidad ni Google AdMob.",
+    "fr": "Depuis la version 2.0, il n'y a plus de publicité ni de Google AdMob.",
+    "it": "Dalla versione 2.0 non c'è pubblicità né Google AdMob.",
+    "ja": "バージョン 2.0 からは、広告も Google AdMob もありません。",
+    "ko": "2.0 버전부터는 광고도 Google AdMob도 없습니다.",
+    "nl": "Vanaf versie 2.0 zijn er geen advertenties en is er geen Google AdMob.",
+    "pt-BR": "A partir da versão 2.0 não há publicidade nem Google AdMob.",
+    "zh-Hans": "从 2.0 版起没有广告，也没有 Google AdMob。"
   },
-  ", and the app contains no\n      networking code at all. Version 1.2 and earlier show ads in the free tier through Google\n      AdMob. Both are described below, because 1.2 is what is on the App Store while 1.3 is in\n      review.": {
+  "The App\n      Store privacy label reads Data Not Collected. Version 1.2 and earlier showed ads in the free\n      tier through Google AdMob, which is covered at the end for anyone still running an old\n      copy.": {
     "kind": "text:p",
-    "de": ", und die App enthält überhaupt keinen Netzwerkcode. Version 1.2 und früher zeigen in der kostenlosen Stufe Werbung über Google AdMob. Beides steht unten, weil 1.2 das ist, was im App Store liegt, solange 1.3 in Prüfung ist.",
-    "es": ", y la app no contiene nada de código de red. La versión 1.2 y anteriores muestran anuncios en el nivel gratuito a través de Google AdMob. Ambas se describen abajo, porque 1.2 es lo que hay en la App Store mientras 1.3 está en revisión.",
-    "es-MX": ", y la app no contiene nada de código de red. La versión 1.2 y anteriores muestran anuncios en el nivel gratuito a través de Google AdMob. Ambas se describen abajo, porque 1.2 es lo que hay en la App Store mientras 1.3 está en revisión.",
-    "fr": ", et l'app ne contient aucun code réseau. La version 1.2 et les précédentes affichent des publicités dans l'offre gratuite via Google AdMob. Les deux sont décrites ci-dessous, parce que 1.2 est ce qui se trouve sur l'App Store tant que 1.3 est en cours d'examen.",
-    "it": ", e l'app non contiene proprio codice di rete. La versione 1.2 e precedenti mostrano pubblicità nel livello gratuito tramite Google AdMob. Entrambe sono descritte sotto, perché 1.2 è quello che c'è sull'App Store finché 1.3 è in revisione.",
-    "ja": "。アプリには通信のコードそのものが入っていません。バージョン 1.2 以前は、無料版で Google AdMob による広告を表示します。1.3 が審査中のあいだ App Store にあるのは 1.2 なので、下では両方について説明します。",
-    "ko": ", 앱에는 네트워크 코드 자체가 들어 있지 않습니다. 1.2 버전과 그 이전은 무료 등급에서 Google AdMob을 통해 광고를 표시합니다. 1.3이 심사 중인 동안 App Store에 올라와 있는 것은 1.2이므로, 아래에서 둘 다 설명합니다.",
-    "nl": ", en de app bevat helemaal geen netwerkcode. Versie 1.2 en eerder tonen advertenties in de gratis laag via Google AdMob. Beide staan hieronder beschreven, omdat 1.2 is wat er in de App Store staat zolang 1.3 in beoordeling is.",
-    "pt-BR": ", e o app não contém nenhum código de rede. A versão 1.2 e anteriores mostram anúncios no nível gratuito através do Google AdMob. As duas estão descritas abaixo, porque 1.2 é o que está na App Store enquanto a 1.3 está em análise.",
-    "zh-Hans": "，应用里也完全没有联网代码。1.2 版及更早版本会在免费层通过 Google AdMob 显示广告。下面两种情况都会说明，因为在 1.3 通过审核之前，App Store 上的仍然是 1.2。"
+    "de": "Das Datenschutzetikett im App Store lautet „Keine Daten erfasst“. Version 1.2 und früher zeigten in der kostenlosen Stufe Werbung über Google AdMob; das steht am Ende, für alle, die noch eine alte Fassung benutzen.",
+    "es": "La etiqueta de privacidad de la App Store dice «No se recopilan datos». La versión 1.2 y anteriores mostraban anuncios en el nivel gratuito a través de Google AdMob, lo que se explica al final para quien siga usando una copia antigua.",
+    "es-MX": "La etiqueta de privacidad de la App Store dice “No se recopilan datos”. La versión 1.2 y anteriores mostraban anuncios en el nivel gratuito a través de Google AdMob, lo que se explica al final para quien siga usando una copia antigua.",
+    "fr": "L'étiquette de confidentialité de l'App Store indique « Données non collectées ». La version 1.2 et les précédentes affichaient des publicités dans l'offre gratuite via Google AdMob, ce qui est décrit à la fin pour ceux qui utilisent encore une ancienne copie.",
+    "it": "L'etichetta sulla privacy dell'App Store riporta «Dati non raccolti». La versione 1.2 e precedenti mostravano pubblicità nel livello gratuito tramite Google AdMob, di cui si parla alla fine per chi usa ancora una copia vecchia.",
+    "ja": "App Store のプライバシーラベルは「データの収集なし」です。バージョン 1.2 以前は、無料版で Google AdMob による広告を表示していました。古いバージョンをまだ使っている方のために、そのことは最後に説明します。",
+    "ko": "App Store의 개인정보 보호 라벨은 ‘데이터가 수집되지 않음’입니다. 1.2 버전과 그 이전은 무료 등급에서 Google AdMob을 통해 광고를 표시했으며, 아직 예전 버전을 쓰는 분을 위해 끝부분에서 설명합니다.",
+    "nl": "Het privacylabel in de App Store luidt ‘Er worden geen gegevens verzameld’. Versie 1.2 en eerder toonden advertenties in de gratis laag via Google AdMob; dat staat aan het einde beschreven, voor wie nog een oude versie gebruikt.",
+    "pt-BR": "O rótulo de privacidade da App Store diz “Dados não coletados”. A versão 1.2 e anteriores mostravam anúncios no nível gratuito através do Google AdMob, o que está explicado no fim para quem ainda usa uma cópia antiga.",
+    "zh-Hans": "App Store 上的隐私标签写着“未收集数据”。1.2 版及更早版本曾在免费层通过 Google AdMob 显示广告，文末会为仍在使用旧版本的人说明。"
   },
   "Which version this describes": {
     "kind": "text:h2",
@@ -155,18 +155,18 @@
     "pt-BR": "Qual versão isto descreve",
     "zh-Hans": "本文所描述的版本"
   },
-  "MODUL8 1.3 removes advertising entirely. Google AdMob, the consent form it required in Europe\n      and Apple's App Tracking Transparency prompt are all gone from the app, and with them the only\n      code that ever talked to the network. Until 1.3 clears review, the App Store is still serving\n      1.2, so the section on advertising below still applies to the copy you are most likely to have.": {
+  "This policy describes MODUL8 2.0, released on 24 September 2026, and every version after it.\n      2.0 removes advertising entirely: Google AdMob is gone from the app. If you have not updated\n      and are still running 1.2 or earlier, the section on advertising near the end applies to your\n      copy.": {
     "kind": "text:p",
-    "de": "MODUL8 1.3 entfernt die Werbung vollständig. Google AdMob, das Einwilligungsformular, das es in Europa verlangte, und Apples App-Tracking-Transparency-Abfrage sind alle aus der App verschwunden, und mit ihnen der einzige Code, der je mit dem Netz gesprochen hat. Bis 1.3 die Prüfung besteht, liefert der App Store weiterhin 1.2 aus, der Abschnitt zur Werbung unten gilt also weiterhin für die Fassung, die du am ehesten hast.",
-    "es": "MODUL8 1.3 elimina la publicidad por completo. Google AdMob, el formulario de consentimiento que exigía en Europa y el aviso de App Tracking Transparency de Apple han desaparecido de la app, y con ellos el único código que alguna vez habló con la red. Hasta que 1.3 pase la revisión, la App Store sigue sirviendo 1.2, así que la sección de publicidad de abajo sigue aplicándose a la copia que es más probable que tengas.",
-    "es-MX": "MODUL8 1.3 elimina la publicidad por completo. Google AdMob, el formulario de consentimiento que exigía en Europa y el aviso de App Tracking Transparency de Apple desaparecieron de la app, y con ellos el único código que alguna vez habló con la red. Hasta que 1.3 pase la revisión, la App Store sigue sirviendo 1.2, así que la sección de publicidad de abajo sigue aplicándose a la copia que es más probable que tengas.",
-    "fr": "MODUL8 1.3 supprime la publicité entièrement. Google AdMob, le formulaire de consentement qu'il imposait en Europe et l'invite App Tracking Transparency d'Apple ont tous disparu de l'app, et avec eux le seul code qui ait jamais parlé au réseau. Tant que 1.3 n'a pas passé l'examen, l'App Store sert encore 1.2, et la section sur la publicité ci-dessous s'applique donc toujours à la version que vous avez le plus probablement.",
-    "it": "MODUL8 1.3 rimuove del tutto la pubblicità. Google AdMob, il modulo di consenso che richiedeva in Europa e la richiesta App Tracking Transparency di Apple sono spariti dall'app, e con loro l'unico codice che abbia mai parlato con la rete. Finché 1.3 non supera la revisione, l'App Store serve ancora la 1.2, quindi la sezione sulla pubblicità qui sotto vale ancora per la copia che è più probabile tu abbia.",
-    "ja": "MODUL8 1.3 は広告を完全になくします。Google AdMob も、それがヨーロッパで要求していた同意フォームも、Apple の App Tracking Transparency の確認も、すべてアプリから消え、同時に、これまでネットワークと話していた唯一のコードも消えました。1.3 が審査を通るまで App Store が配信しているのは 1.2 なので、下の広告に関する節は、あなたが持っている可能性が高いほうの版に今も当てはまります。",
-    "ko": "MODUL8 1.3은 광고를 완전히 없앱니다. Google AdMob도, 그것이 유럽에서 요구하던 동의 양식도, Apple의 App Tracking Transparency 안내도 모두 앱에서 사라졌고, 그와 함께 지금까지 네트워크와 이야기하던 유일한 코드도 사라졌습니다. 1.3이 심사를 통과할 때까지 App Store가 제공하는 것은 1.2이므로, 아래 광고에 관한 절은 당신이 가지고 있을 가능성이 높은 쪽에 여전히 해당합니다.",
-    "nl": "MODUL8 1.3 haalt de advertenties er helemaal uit. Google AdMob, het toestemmingsformulier dat het in Europa vereiste en Apples App Tracking Transparency-vraag zijn allemaal uit de app verdwenen, en daarmee de enige code die ooit met het netwerk sprak. Totdat 1.3 de beoordeling doorkomt, levert de App Store nog 1.2, dus het stuk over advertenties hieronder geldt nog steeds voor de versie die je het waarschijnlijkst hebt.",
-    "pt-BR": "O MODUL8 1.3 remove a publicidade por completo. O Google AdMob, o formulário de consentimento que ele exigia na Europa e o aviso de App Tracking Transparency da Apple sumiram todos do app, e com eles o único código que alguma vez falou com a rede. Até a 1.3 passar na análise, a App Store ainda serve a 1.2, então a seção sobre publicidade abaixo continua valendo para a cópia que você provavelmente tem.",
-    "zh-Hans": "MODUL8 1.3 彻底移除了广告。Google AdMob、它在欧洲要求的同意表单，以及 Apple 的 App Tracking Transparency 提示，全部从应用中消失，随之消失的还有唯一曾与网络通信的代码。在 1.3 通过审核之前，App Store 提供的仍然是 1.2，所以下面关于广告的部分，依然适用于你手上最可能的那个版本。"
+    "de": "Diese Erklärung beschreibt MODUL8 2.0, erschienen am 24. September 2026, und jede spätere Version. 2.0 entfernt die Werbung vollständig: Google AdMob ist aus der App verschwunden. Wenn du nicht aktualisiert hast und noch 1.2 oder früher benutzt, gilt für deine Fassung der Abschnitt über Werbung gegen Ende.",
+    "es": "Esta política describe MODUL8 2.0, publicada el 24 de septiembre de 2026, y todas las versiones posteriores. La 2.0 elimina la publicidad por completo: Google AdMob ya no está en la app. Si no has actualizado y sigues usando la 1.2 o una anterior, la sección sobre publicidad del final se aplica a tu copia.",
+    "es-MX": "Esta política describe MODUL8 2.0, publicada el 24 de septiembre de 2026, y todas las versiones posteriores. La 2.0 elimina la publicidad por completo: Google AdMob ya no está en la app. Si no has actualizado y sigues usando la 1.2 o una anterior, la sección sobre publicidad del final se aplica a tu copia.",
+    "fr": "Cette politique décrit MODUL8 2.0, sortie le 24 septembre 2026, et toutes les versions suivantes. La 2.0 supprime entièrement la publicité : Google AdMob a disparu de l'app. Si vous n'avez pas fait la mise à jour et utilisez encore la 1.2 ou une version antérieure, la section sur la publicité vers la fin s'applique à votre copie.",
+    "it": "Questa informativa descrive MODUL8 2.0, uscita il 24 settembre 2026, e ogni versione successiva. La 2.0 elimina del tutto la pubblicità: Google AdMob non c'è più nell'app. Se non hai aggiornato e usi ancora la 1.2 o una precedente, alla tua copia si applica la sezione sulla pubblicità verso la fine.",
+    "ja": "このポリシーは、2026 年 9 月 24 日に公開された MODUL8 2.0 と、それ以降のすべてのバージョンについて説明するものです。2.0 では広告を完全に取り除き、Google AdMob はアプリからなくなりました。まだアップデートしておらず 1.2 以前を使っている場合は、終わりのほうにある広告についての項目があなたのアプリに当てはまります。",
+    "ko": "이 방침은 2026년 9월 24일에 출시된 MODUL8 2.0과 그 이후의 모든 버전을 설명합니다. 2.0은 광고를 완전히 없앴고, Google AdMob은 앱에서 사라졌습니다. 아직 업데이트하지 않고 1.2 이하 버전을 쓰고 있다면, 끝부분의 광고 항목이 당신의 앱에 해당합니다.",
+    "nl": "Dit beleid beschrijft MODUL8 2.0, uitgebracht op 24 september 2026, en elke versie daarna. 2.0 haalt advertenties volledig weg: Google AdMob is uit de app verdwenen. Heb je niet bijgewerkt en gebruik je nog 1.2 of eerder, dan geldt het deel over advertenties tegen het einde voor jouw exemplaar.",
+    "pt-BR": "Esta política descreve o MODUL8 2.0, lançado em 24 de setembro de 2026, e todas as versões depois dele. A 2.0 remove a publicidade por completo: o Google AdMob saiu do app. Se você não atualizou e ainda usa a 1.2 ou anterior, a seção sobre publicidade perto do fim vale para a sua cópia.",
+    "zh-Hans": "本政策适用于 2026 年 9 月 24 日发布的 MODUL8 2.0 及之后的所有版本。2.0 彻底移除了广告：Google AdMob 已从应用中去掉。如果你还没有更新、仍在使用 1.2 或更早的版本，文末关于广告的部分适用于你手上的这一份。"
   },
   "What the app does with your media": {
     "kind": "text:h2",
@@ -207,44 +207,44 @@
     "pt-BR": "Todo o processamento de imagem e vídeo acontece localmente no seu aparelho. Seus originais e suas edições nunca são enviados para os nossos servidores nem para nenhum servidor de terceiros, e não temos acesso ao conteúdo da sua fototeca. Isso valeu em todas as versões.",
     "zh-Hans": "所有图像和视频的处理都在你的设备本地完成。你的原件和你的编辑结果永远不会被上传到我们的服务器或任何第三方服务器，我们也无法访问你图库中的内容。这在每一个版本中都是如此。"
   },
-  "Version 1.3 onwards: nothing is collected": {
+  "Version 2.0 onwards: no ads, no data collected": {
     "kind": "text:h2",
-    "de": "Ab Version 1.3: Es wird nichts gesammelt",
-    "es": "Desde la versión 1.3: no se recoge nada",
-    "es-MX": "Desde la versión 1.3: no se recoge nada",
-    "fr": "À partir de la version 1.3 : rien n'est collecté",
-    "it": "Dalla versione 1.3: non si raccoglie niente",
-    "ja": "バージョン 1.3 以降：何も収集しません",
-    "ko": "1.3 버전부터: 아무것도 수집하지 않습니다",
-    "nl": "Vanaf versie 1.3: er wordt niets verzameld",
-    "pt-BR": "Da versão 1.3 em diante: nada é coletado",
-    "zh-Hans": "1.3 版起：什么都不收集"
+    "de": "Ab Version 2.0: keine Werbung, keine Datenerfassung",
+    "es": "Desde la versión 2.0: sin anuncios, sin recopilación de datos",
+    "es-MX": "Desde la versión 2.0: sin anuncios, sin recopilación de datos",
+    "fr": "À partir de la version 2.0 : pas de publicité, aucune donnée collectée",
+    "it": "Dalla versione 2.0: niente pubblicità, nessun dato raccolto",
+    "ja": "バージョン 2.0 以降：広告なし、データの収集なし",
+    "ko": "2.0 버전부터: 광고 없음, 데이터 수집 없음",
+    "nl": "Vanaf versie 2.0: geen advertenties, geen gegevens verzameld",
+    "pt-BR": "Da versão 2.0 em diante: sem anúncios, sem coleta de dados",
+    "zh-Hans": "2.0 版起：没有广告，不收集数据"
   },
-  "No analytics. No crash reporting. No advertising identifier. No third-party SDKs of any kind.\n      No tracking across apps or websites. The app contains no networking code, so there is nothing\n      to upload and no server holding a copy of anything.": {
+  "MODUL8 shows no ads and does not include Google AdMob or any other advertising SDK. Nothing you\n      open in it is uploaded, and its App Store privacy label reads Data Not Collected: we do not\n      collect data from the app, and nothing in it is used to track you across apps or websites.": {
     "kind": "text:p",
-    "de": "Keine Analyse. Keine Absturzberichte. Keine Werbe-ID. Keinerlei SDKs von Dritten. Kein Tracking über Apps oder Websites hinweg. Die App enthält keinen Netzwerkcode, es gibt also nichts hochzuladen und keinen Server, der eine Kopie von irgendetwas hält.",
-    "es": "Sin analíticas. Sin informes de fallos. Sin identificador de publicidad. Sin SDK de terceros de ningún tipo. Sin seguimiento entre apps o sitios web. La app no contiene código de red, así que no hay nada que subir ni servidor alguno guardando una copia de nada.",
-    "es-MX": "Sin analíticas. Sin informes de fallas. Sin identificador de publicidad. Sin SDK de terceros de ningún tipo. Sin seguimiento entre apps o sitios web. La app no contiene código de red, así que no hay nada que subir ni servidor alguno guardando una copia de nada.",
-    "fr": "Pas d'analytique. Pas de rapport de plantage. Pas d'identifiant publicitaire. Aucun SDK tiers d'aucune sorte. Pas de suivi entre apps ou sites web. L'app ne contient aucun code réseau, il n'y a donc rien à envoyer et aucun serveur qui garde une copie de quoi que ce soit.",
-    "it": "Nessuna analisi. Nessuna segnalazione di crash. Nessun identificatore pubblicitario. Nessun SDK di terze parti di alcun tipo. Nessun tracciamento fra app o siti web. L'app non contiene codice di rete, quindi non c'è niente da caricare e nessun server che tenga una copia di niente.",
-    "ja": "解析なし。クラッシュ報告なし。広告識別子なし。いかなる第三者 SDK もなし。アプリやウェブサイトをまたぐトラッキングなし。アプリには通信のコードが入っていないので、送るものも、何かの控えを持つサーバーもありません。",
-    "ko": "분석 없음. 크래시 리포트 없음. 광고 식별자 없음. 어떤 종류의 서드파티 SDK도 없음. 앱이나 웹사이트를 넘나드는 추적 없음. 앱에는 네트워크 코드가 없어서, 올릴 것도 없고 무언가의 사본을 가진 서버도 없습니다.",
-    "nl": "Geen analytics. Geen crashrapportage. Geen advertentie-identificatie. Geen SDK's van derden van welke aard dan ook. Geen tracking over apps of websites heen. De app bevat geen netwerkcode, dus er valt niets te uploaden en er is geen server met een kopie van wat dan ook.",
-    "pt-BR": "Sem análises. Sem relatório de falhas. Sem identificador de publicidade. Sem SDKs de terceiros de nenhum tipo. Sem rastreamento entre apps ou sites. O app não contém código de rede, então não há nada para enviar e nenhum servidor guardando cópia de nada.",
-    "zh-Hans": "没有分析。没有崩溃报告。没有广告标识符。没有任何第三方 SDK。没有跨应用或跨网站的追踪。应用里没有联网代码，所以没有东西可上传，也没有服务器留着任何副本。"
+    "de": "MODUL8 zeigt keine Werbung und enthält weder Google AdMob noch ein anderes Werbe-SDK. Nichts, was du darin öffnest, wird hochgeladen, und das Datenschutzetikett im App Store lautet „Keine Daten erfasst“: Wir erfassen keine Daten aus der App, und nichts darin wird genutzt, um dich über Apps oder Websites hinweg zu verfolgen.",
+    "es": "MODUL8 no muestra anuncios y no incluye Google AdMob ni ningún otro SDK de publicidad. Nada de lo que abres en ella se sube, y su etiqueta de privacidad en la App Store dice «No se recopilan datos»: no recopilamos datos desde la app, y nada en ella se usa para seguirte entre apps o sitios web.",
+    "es-MX": "MODUL8 no muestra anuncios y no incluye Google AdMob ni ningún otro SDK de publicidad. Nada de lo que abres en ella se sube, y su etiqueta de privacidad en la App Store dice “No se recopilan datos”: no recopilamos datos desde la app, y nada en ella se usa para rastrearte entre apps o sitios web.",
+    "fr": "MODUL8 n'affiche aucune publicité et n'intègre ni Google AdMob ni aucun autre SDK publicitaire. Rien de ce que vous y ouvrez n'est envoyé, et son étiquette de confidentialité sur l'App Store indique « Données non collectées » : nous ne collectons aucune donnée depuis l'app, et rien en elle ne sert à vous suivre d'une app ou d'un site web à l'autre.",
+    "it": "MODUL8 non mostra pubblicità e non include Google AdMob né alcun altro SDK pubblicitario. Niente di quello che ci apri viene caricato, e la sua etichetta sulla privacy nell'App Store riporta «Dati non raccolti»: non raccogliamo dati dall'app, e niente al suo interno viene usato per tracciarti fra app o siti web.",
+    "ja": "MODUL8 は広告を表示せず、Google AdMob もほかの広告 SDK も入っていません。開いたものがアップロードされることはなく、App Store のプライバシーラベルは「データの収集なし」です。私たちはアプリからデータを収集せず、アプリや Web サイトをまたいであなたを追跡するために使われるものも、アプリの中にはありません。",
+    "ko": "MODUL8는 광고를 표시하지 않으며, Google AdMob이나 다른 어떤 광고 SDK도 들어 있지 않습니다. 앱에서 연 것은 무엇도 업로드되지 않고, App Store의 개인정보 보호 라벨은 ‘데이터가 수집되지 않음’입니다. 저희는 앱에서 데이터를 수집하지 않으며, 앱 안의 어떤 것도 앱이나 웹사이트를 넘나들며 당신을 추적하는 데 쓰이지 않습니다.",
+    "nl": "MODUL8 toont geen advertenties en bevat geen Google AdMob of enige andere advertentie-SDK. Niets wat je erin opent wordt geüpload, en het privacylabel in de App Store luidt ‘Er worden geen gegevens verzameld’: wij verzamelen geen gegevens uit de app, en niets erin wordt gebruikt om je over apps of websites heen te volgen.",
+    "pt-BR": "O MODUL8 não mostra anúncios e não inclui o Google AdMob nem nenhum outro SDK de publicidade. Nada do que você abre nele é enviado, e o rótulo de privacidade dele na App Store diz “Dados não coletados”: não coletamos dados pelo app, e nada nele é usado para rastrear você entre apps ou sites.",
+    "zh-Hans": "MODUL8 不显示广告，也不包含 Google AdMob 或任何其他广告 SDK。你在里面打开的任何东西都不会被上传，它在 App Store 上的隐私标签写着“未收集数据”：我们不从应用中收集数据，应用里也没有任何东西被用来跨应用或跨网站追踪你。"
   },
-  "Because none of this exists, there is also nothing to opt out of and no data to request or\n      delete. Deleting the app removes its settings with it.": {
+  "Because we hold nothing, there is no data to request or delete. Deleting the app removes its\n      settings with it.": {
     "kind": "text:p",
-    "de": "Weil nichts davon existiert, gibt es auch nichts, wovon man sich abmelden könnte, und keine Daten, die man anfordern oder löschen könnte. Löschst du die App, verschwinden ihre Einstellungen mit ihr.",
-    "es": "Como nada de esto existe, tampoco hay nada de lo que darse de baja ni datos que solicitar o borrar. Borrar la app se lleva sus ajustes con ella.",
-    "es-MX": "Como nada de esto existe, tampoco hay nada de lo que darse de baja ni datos que solicitar o borrar. Borrar la app se lleva sus ajustes con ella.",
-    "fr": "Comme rien de tout cela n'existe, il n'y a rien dont se désinscrire ni de données à demander ou supprimer. Supprimer l'app emporte ses réglages avec elle.",
-    "it": "Dato che niente di tutto questo esiste, non c'è nemmeno niente da cui disiscriversi né dati da richiedere o cancellare. Eliminando l'app spariscono con essa le sue impostazioni.",
-    "ja": "こうしたものがそもそも存在しないため、オプトアウトすべきものも、開示や削除を請求すべきデータもありません。アプリを削除すれば、その設定も一緒になくなります。",
-    "ko": "이런 것들이 애초에 존재하지 않으므로, 수신을 거부할 것도, 열람이나 삭제를 요청할 데이터도 없습니다. 앱을 삭제하면 그 설정도 함께 사라집니다.",
-    "nl": "Omdat niets hiervan bestaat, valt er ook nergens uit te stappen en zijn er geen gegevens om op te vragen of te laten wissen. De app verwijderen neemt de instellingen mee.",
-    "pt-BR": "Como nada disso existe, também não há nada para recusar nem dados para solicitar ou apagar. Apagar o app leva as configurações dele junto.",
-    "zh-Hans": "因为这些统统不存在，也就没有什么可以退出，没有数据可以索取或删除。删除应用时，它的设置也会一并消失。"
+    "de": "Weil wir nichts haben, gibt es auch keine Daten, die du anfordern oder löschen lassen könntest. Löschst du die App, verschwinden ihre Einstellungen mit ihr.",
+    "es": "Como no guardamos nada, no hay datos que solicitar ni que borrar. Borrar la app se lleva sus ajustes con ella.",
+    "es-MX": "Como no guardamos nada, no hay datos que solicitar ni que borrar. Borrar la app se lleva sus ajustes con ella.",
+    "fr": "Comme nous ne détenons rien, il n'y a aucune donnée à demander ni à supprimer. Supprimer l'app emporte ses réglages avec elle.",
+    "it": "Poiché non conserviamo nulla, non ci sono dati da richiedere o cancellare. Eliminando l'app spariscono con essa le sue impostazioni.",
+    "ja": "私たちは何も保持していないので、開示や削除を請求すべきデータもありません。アプリを削除すれば、その設定も一緒になくなります。",
+    "ko": "저희가 가진 것이 없으므로, 열람이나 삭제를 요청할 데이터도 없습니다. 앱을 삭제하면 그 설정도 함께 사라집니다.",
+    "nl": "Omdat wij niets bewaren, zijn er ook geen gegevens om op te vragen of te laten wissen. De app verwijderen neemt de instellingen mee.",
+    "pt-BR": "Como não guardamos nada, não há dados para solicitar ou apagar. Apagar o app leva as configurações dele junto.",
+    "zh-Hans": "因为我们什么都没有保存，也就没有数据可以索取或删除。删除应用时，它的设置也会一并消失。"
   },
   "Version 1.2 and earlier: advertising": {
     "kind": "text:h2",
@@ -259,18 +259,18 @@
     "pt-BR": "Versão 1.2 e anteriores: publicidade",
     "zh-Hans": "1.2 版及更早版本：广告"
   },
-  "The free version showed ads through Google AdMob, which was the one part of the app that\n      involved a third party. Premium removed them. AdMob could collect and use:": {
+  "The free tier of version 1.2 and earlier showed ads through Google AdMob, the one part of\n      those versions that involved a third party. Premium removed them, and updating to 2.0 removes\n      AdMob altogether. In those versions AdMob could collect and use:": {
     "kind": "text:p",
-    "de": "Die kostenlose Fassung zeigte Werbung über Google AdMob, und das war der eine Teil der App, an dem ein Dritter beteiligt war. Premium entfernte sie. AdMob konnte erheben und nutzen:",
-    "es": "La versión gratuita mostraba anuncios a través de Google AdMob, que era la única parte de la app en la que intervenía un tercero. Premium los quitaba. AdMob podía recoger y usar:",
-    "es-MX": "La versión gratuita mostraba anuncios a través de Google AdMob, que era la única parte de la app en la que intervenía un tercero. Premium los quitaba. AdMob podía recoger y usar:",
-    "fr": "La version gratuite affichait des publicités via Google AdMob, la seule partie de l'app impliquant un tiers. Premium les supprimait. AdMob pouvait collecter et utiliser :",
-    "it": "La versione gratuita mostrava pubblicità tramite Google AdMob, che era l'unica parte dell'app in cui interveniva un terzo. Premium le toglieva. AdMob poteva raccogliere e usare:",
-    "ja": "無料版は Google AdMob を通じて広告を表示していました。第三者が関わるのは、アプリのなかでその部分だけでした。Premium にすると広告はなくなりました。AdMob が収集し利用しうるのは次のものです。",
-    "ko": "무료 버전은 Google AdMob을 통해 광고를 표시했고, 제3자가 관여하는 부분은 앱에서 그것뿐이 었습니다. Premium은 광고를 없앴습니다. AdMob이 수집하고 사용할 수 있었던 것은 다음과 같습니다.",
-    "nl": "De gratis versie toonde advertenties via Google AdMob, het enige deel van de app waar een derde partij bij betrokken was. Premium haalde ze weg. AdMob kon verzamelen en gebruiken:",
-    "pt-BR": "A versão gratuita mostrava anúncios através do Google AdMob, que era a única parte do app em que um terceiro entrava. O Premium os removia. O AdMob podia coletar e usar:",
-    "zh-Hans": "免费版通过 Google AdMob 显示广告，那是应用中唯一涉及第三方的部分。Premium 会去掉它们。AdMob 可能收集并使用："
+    "de": "Die kostenlose Stufe von Version 1.2 und früher zeigte Werbung über Google AdMob, den einzigen Teil dieser Versionen, an dem ein Dritter beteiligt war. Premium entfernte sie, und das Update auf 2.0 entfernt AdMob ganz. In diesen Versionen konnte AdMob Folgendes erheben und nutzen:",
+    "es": "El nivel gratuito de la versión 1.2 y anteriores mostraba anuncios a través de Google AdMob, la única parte de esas versiones en la que intervenía un tercero. Premium los quitaba, y actualizar a la 2.0 elimina AdMob por completo. En esas versiones AdMob podía recopilar y usar:",
+    "es-MX": "El nivel gratuito de la versión 1.2 y anteriores mostraba anuncios a través de Google AdMob, la única parte de esas versiones en la que intervenía un tercero. Premium los quitaba, y actualizar a la 2.0 elimina AdMob por completo. En esas versiones AdMob podía recopilar y usar:",
+    "fr": "L'offre gratuite de la version 1.2 et des précédentes affichait des publicités via Google AdMob, la seule partie de ces versions qui faisait intervenir un tiers. Premium les supprimait, et la mise à jour vers la 2.0 retire complètement AdMob. Dans ces versions, AdMob pouvait collecter et utiliser :",
+    "it": "Il livello gratuito della versione 1.2 e precedenti mostrava pubblicità tramite Google AdMob, l'unica parte di quelle versioni che coinvolgeva una terza parte. Premium la toglieva, e aggiornare alla 2.0 elimina AdMob del tutto. In quelle versioni AdMob poteva raccogliere e usare:",
+    "ja": "バージョン 1.2 以前の無料版は、Google AdMob を通じて広告を表示していました。それらのバージョンで第三者が関わる唯一の部分です。Premium では広告が消え、2.0 にアップデートすれば AdMob そのものがなくなります。それらのバージョンで AdMob が収集・利用できたのは次のものです。",
+    "ko": "1.2 버전과 그 이전의 무료 등급은 Google AdMob을 통해 광고를 표시했으며, 그 버전들에서 제3자가 관여한 유일한 부분이었습니다. Premium은 광고를 없앴고, 2.0으로 업데이트하면 AdMob 자체가 사라집니다. 그 버전들에서 AdMob은 다음을 수집하고 사용할 수 있었습니다.",
+    "nl": "De gratis laag van versie 1.2 en eerder toonde advertenties via Google AdMob, het enige deel van die versies waar een derde partij bij betrokken was. Premium haalde ze weg, en bijwerken naar 2.0 haalt AdMob helemaal weg. In die versies kon AdMob het volgende verzamelen en gebruiken:",
+    "pt-BR": "O nível gratuito da versão 1.2 e anteriores mostrava anúncios através do Google AdMob, a única parte dessas versões que envolvia terceiros. O Premium os removia, e atualizar para a 2.0 remove o AdMob por completo. Nessas versões o AdMob podia coletar e usar:",
+    "zh-Hans": "1.2 版及更早版本的免费层通过 Google AdMob 显示广告，这是那些版本中唯一涉及第三方的部分。Premium 会去掉广告，而更新到 2.0 则会彻底移除 AdMob。在那些版本中，AdMob 可能收集并使用："
   },
   "Device identifiers": {
     "kind": "text:strong",
@@ -441,18 +441,18 @@
     "pt-BR": "Crianças",
     "zh-Hans": "儿童"
   },
-  "MODUL8 is not directed at anyone under 13, and we do not knowingly collect personally\n      identifiable information from anyone under 13. From version 1.3 the app collects nothing from\n      anybody, of any age. If you are a parent or guardian and believe your child gave us personal\n      data through an earlier version, please get in touch and we will remove it.": {
+  "MODUL8 is not directed at anyone under 13, and we do not knowingly collect personally\n      identifiable information from anyone under 13. From version 2.0 the app collects nothing from\n      anybody, of any age. If you are a parent or guardian and believe your child gave us personal\n      data through an earlier version, please get in touch and we will remove it.": {
     "kind": "text:p",
-    "de": "MODUL8 richtet sich nicht an Personen unter 13 Jahren, und wir erheben wissentlich keine personenbezogenen Daten von Personen unter 13. Ab Version 1.3 sammelt die App von niemandem etwas, in keinem Alter. Wenn du Elternteil oder Erziehungsberechtigte bist und glaubst, dass dein Kind uns über eine frühere Version personenbezogene Daten gegeben hat, melde dich, und wir entfernen sie.",
-    "es": "MODUL8 no está dirigida a menores de 13 años, y no recogemos a sabiendas información personal identificable de menores de 13. Desde la versión 1.3 la app no recoge nada de nadie, de ninguna edad. Si eres madre, padre o tutor y crees que tu hijo nos dio datos personales a través de una versión anterior, ponte en contacto y los eliminaremos.",
-    "es-MX": "MODUL8 no está dirigida a menores de 13 años, y no recogemos a sabiendas información personal identificable de menores de 13. Desde la versión 1.3 la app no recoge nada de nadie, de ninguna edad. Si eres madre, padre o tutor y crees que tu hijo nos dio datos personales a través de una versión anterior, ponte en contacto y los eliminaremos.",
-    "fr": "MODUL8 ne s'adresse pas aux personnes de moins de 13 ans, et nous ne collectons pas sciemment d'informations personnelles identifiables auprès de personnes de moins de 13 ans. Depuis la version 1.3, l'app ne collecte rien de personne, à tout âge. Si vous êtes parent ou tuteur et pensez que votre enfant nous a donné des données personnelles via une version antérieure, contactez-nous et nous les supprimerons.",
-    "it": "MODUL8 non è rivolta a chi ha meno di 13 anni, e non raccogliamo consapevolmente informazioni personali identificabili da chi ha meno di 13 anni. Dalla versione 1.3 l'app non raccoglie niente da nessuno, di qualunque età. Se sei un genitore o un tutore e pensi che tuo figlio ci abbia dato dati personali tramite una versione precedente, scrivici e li rimuoveremo.",
-    "ja": "MODUL8 は 13 歳未満の方を対象としておらず、13 歳未満の方から個人を特定できる情報を意図して収集することはありません。バージョン 1.3 以降、アプリは年齢を問わず誰からも何も収集しません。保護者の方で、以前のバージョンを通じてお子さまが個人データを渡したとお考えの場合は、ご連絡いただければ削除します。",
-    "ko": "MODUL8는 13세 미만을 대상으로 하지 않으며, 13세 미만으로부터 개인 식별 정보를 알면서 수집하지 않습니다. 1.3 버전부터 앱은 나이에 관계없이 누구에게서도 아무것도 수집하지 않습니다. 보호자이시고 자녀가 이전 버전을 통해 개인 정보를 제공했다고 생각되시면, 연락 주시면 삭제하겠습니다.",
-    "nl": "MODUL8 richt zich niet op mensen onder de 13, en wij verzamelen niet bewust persoonlijk identificeerbare informatie van mensen onder de 13. Vanaf versie 1.3 verzamelt de app van niemand iets, ongeacht leeftijd. Ben je ouder of voogd en denk je dat je kind ons via een eerdere versie persoonsgegevens heeft gegeven, neem dan contact op en we verwijderen ze.",
-    "pt-BR": "O MODUL8 não é direcionado a menores de 13 anos, e não coletamos conscientemente informações pessoalmente identificáveis de menores de 13. A partir da versão 1.3 o app não coleta nada de ninguém, de qualquer idade. Se você é mãe, pai ou responsável e acredita que seu filho nos deu dados pessoais por uma versão anterior, entre em contato e nós removeremos.",
-    "zh-Hans": "MODUL8 并非面向 13 岁以下人群，我们也不会有意收集 13 岁以下人群的个人身份信息。自 1.3 版起，应用不会从任何年龄的任何人那里收集任何东西。如果你是家长或监护人，并认为你的孩子通过更早的版本向我们提供了个人数据，请与我们联系，我们会将其删除。"
+    "de": "MODUL8 richtet sich nicht an Personen unter 13 Jahren, und wir erheben wissentlich keine personenbezogenen Daten von Personen unter 13. Ab Version 2.0 sammelt die App von niemandem etwas, in keinem Alter. Wenn du Elternteil oder Erziehungsberechtigte bist und glaubst, dass dein Kind uns über eine frühere Version personenbezogene Daten gegeben hat, melde dich, und wir entfernen sie.",
+    "es": "MODUL8 no está dirigida a menores de 13 años, y no recogemos a sabiendas información personal identificable de menores de 13. Desde la versión 2.0 la app no recoge nada de nadie, de ninguna edad. Si eres madre, padre o tutor y crees que tu hijo nos dio datos personales a través de una versión anterior, ponte en contacto y los eliminaremos.",
+    "es-MX": "MODUL8 no está dirigida a menores de 13 años, y no recogemos a sabiendas información personal identificable de menores de 13. Desde la versión 2.0 la app no recoge nada de nadie, de ninguna edad. Si eres madre, padre o tutor y crees que tu hijo nos dio datos personales a través de una versión anterior, ponte en contacto y los eliminaremos.",
+    "fr": "MODUL8 ne s'adresse pas aux personnes de moins de 13 ans, et nous ne collectons pas sciemment d'informations personnelles identifiables auprès de personnes de moins de 13 ans. Depuis la version 2.0, l'app ne collecte rien de personne, à tout âge. Si vous êtes parent ou tuteur et pensez que votre enfant nous a donné des données personnelles via une version antérieure, contactez-nous et nous les supprimerons.",
+    "it": "MODUL8 non è rivolta a chi ha meno di 13 anni, e non raccogliamo consapevolmente informazioni personali identificabili da chi ha meno di 13 anni. Dalla versione 2.0 l'app non raccoglie niente da nessuno, di qualunque età. Se sei un genitore o un tutore e pensi che tuo figlio ci abbia dato dati personali tramite una versione precedente, scrivici e li rimuoveremo.",
+    "ja": "MODUL8 は 13 歳未満の方を対象としておらず、13 歳未満の方から個人を特定できる情報を意図して収集することはありません。バージョン 2.0 以降、アプリは年齢を問わず誰からも何も収集しません。保護者の方で、以前のバージョンを通じてお子さまが個人データを渡したとお考えの場合は、ご連絡いただければ削除します。",
+    "ko": "MODUL8는 13세 미만을 대상으로 하지 않으며, 13세 미만으로부터 개인 식별 정보를 알면서 수집하지 않습니다. 2.0 버전부터 앱은 나이에 관계없이 누구에게서도 아무것도 수집하지 않습니다. 보호자이시고 자녀가 이전 버전을 통해 개인 정보를 제공했다고 생각되시면, 연락 주시면 삭제하겠습니다.",
+    "nl": "MODUL8 richt zich niet op mensen onder de 13, en wij verzamelen niet bewust persoonlijk identificeerbare informatie van mensen onder de 13. Vanaf versie 2.0 verzamelt de app van niemand iets, ongeacht leeftijd. Ben je ouder of voogd en denk je dat je kind ons via een eerdere versie persoonsgegevens heeft gegeven, neem dan contact op en we verwijderen ze.",
+    "pt-BR": "O MODUL8 não é direcionado a menores de 13 anos, e não coletamos conscientemente informações pessoalmente identificáveis de menores de 13. A partir da versão 2.0 o app não coleta nada de ninguém, de qualquer idade. Se você é mãe, pai ou responsável e acredita que seu filho nos deu dados pessoais por uma versão anterior, entre em contato e nós removeremos.",
+    "zh-Hans": "MODUL8 并非面向 13 岁以下人群，我们也不会有意收集 13 岁以下人群的个人身份信息。自 2.0 版起，应用不会从任何年龄的任何人那里收集任何东西。如果你是家长或监护人，并认为你的孩子通过更早的版本向我们提供了个人数据，请与我们联系，我们会将其删除。"
   },
   "Changes to this policy": {
     "kind": "text:h2",

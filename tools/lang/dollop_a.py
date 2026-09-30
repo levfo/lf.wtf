@@ -185,17 +185,17 @@ T = {
         "mesma aritmética do app e não uma imagem dela.",
         "点一下颜料，就会有一团落到板上。这不是截图，而是游戏本身，跑的就是 App 里的那套算术。"),
 
-    "Coming to the App Store": (
-        "Bald im App Store",
-        "Próximamente en el App Store",
-        "Próximamente en el App Store",
-        "Bientôt sur l'App Store",
-        "Presto sull'App Store",
-        "App Store にまもなく登場",
-        "곧 App Store에 출시",
-        "Binnenkort in de App Store",
-        "Em breve na App Store",
-        "即将上架 App Store"),
+    "Download on the App Store": (
+        "Im App Store laden",
+        "Descargar en la App Store",
+        "Descargar en la App Store",
+        "Télécharger dans l'App Store",
+        "Scarica dall'App Store",
+        "App Store でダウンロード",
+        "App Store에서 다운로드",
+        "Downloaden in de App Store",
+        "Baixar na App Store",
+        "在 App Store 下载"),
 
     "Free. iPhone, iOS 17 and later. One optional purchase, no subscription.": (
         "Kostenlos. iPhone, iOS 17 und neuer. Ein optionaler Kauf, kein Abo.",

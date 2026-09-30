@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Carmeet: la città di Need for Speed Underground 2, ricostruita come raduno d'auto nel browser</title>
+<meta name="description" content="Carmeet è un raduno d'auto multigiocatore e gratuito nel tuo browser. La città e 29 auto sono state ricavate con il reverse engineering dal disco PS2 di Need for Speed: Underground 2 e ricostruite per stare insieme: elabora un'auto, fatti un giro, conosci gente.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#06080a">
+<meta name="author" content="Levi Foster">
+<link rel="alternate" hreflang="en" href="https://lf.wtf/carmeet/">
+<link rel="alternate" hreflang="de" href="https://lf.wtf/de/carmeet/">
+<link rel="alternate" hreflang="es" href="https://lf.wtf/es/carmeet/">
+<link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/carmeet/">
+<link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/carmeet/">
+<link rel="alternate" hreflang="it" href="https://lf.wtf/it/carmeet/">
+<link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/carmeet/">
+<link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/carmeet/">
+<link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/carmeet/">
+<link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/carmeet/">
+<link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/carmeet/">
+<link rel="alternate" hreflang="x-default" href="https://lf.wtf/carmeet/">
+<link rel="canonical" href="https://lf.wtf/it/carmeet/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2306080a'/%3E%3Ctext x='16' y='22' font-family='Arial,Helvetica,sans-serif' font-weight='700' font-style='italic' font-size='15' fill='%238af4ca' text-anchor='middle'%3EC/%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="/assets/fonts/saira-italic.woff2" as="font" type="font/woff2" crossorigin>
+
+<meta property="og:title" content="Carmeet: un raduno d'auto gratuito nel tuo browser">
+<meta property="og:description" content="La città e le auto di Underground 2, ricavate dal disco PS2 con il reverse engineering e ricostruite come posto dove ritrovarsi. Elabora un'auto, gira per un'unica città condivisa, incontra tutti quelli online.">
+<meta property="og:url" content="https://lf.wtf/it/carmeet/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Levi Foster">
+<meta property="og:locale" content="it_IT">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="es_MX">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:image" content="https://lf.wtf/carmeet/assets/og-carmeet.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Un'auto che attraversa di notte la città di Carmeet, sotto il logo Carmeet">
+<meta property="og:video" content="https://lf.wtf/carmeet/assets/carmeet-hype-720.mp4">
+<meta property="og:video:type" content="video/mp4">
+<meta property="og:video:width" content="720">
+<meta property="og:video:height" content="1280">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@cybermynd">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://lf.wtf/carmeet/#webpage",
+      "url": "https://lf.wtf/carmeet/",
+      "name": "Carmeet: un raduno d'auto gratuito nel tuo browser",
+      "description": "Come è nato Carmeet: la città e le auto di Need for Speed: Underground 2, ricavate dal disco PS2 con il reverse engineering e ricostruite come raduno d'auto multigiocatore nel browser.",
+      "isPartOf": {
+        "@id": "https://lf.wtf/#website"
+      },
+      "about": {
+        "@id": "https://lf.wtf/carmeet/#game"
+      },
+      "author": {
+        "@id": "https://lf.wtf/#levifoster"
+      },
+      "primaryImageOfPage": "https://lf.wtf/carmeet/assets/og-carmeet.jpg",
+      "breadcrumb": {
+        "@id": "https://lf.wtf/carmeet/#breadcrumb"
+      },
+      "datePublished": "2026-09-30",
+      "dateModified": "2026-09-30",
+      "inLanguage": "it"
+    },
+    {
+      "@type": "VideoGame",
+      "@id": "https://lf.wtf/carmeet/#game",
+      "name": "Carmeet",
+      "url": "https://carmeet.lf.wtf/",
+      "description": "Un raduno d'auto multigiocatore e gratuito nel browser. Elabora una delle 29 auto nel garage originale, gira per un'unica città condivisa con tutti quelli online, scendi e cammina, usa le emote, la chat vocale e testuale, e scatta foto con un telefono nel gioco.",
+      "genre": [
+        "Driving",
+        "Social",
+        "Sandbox"
+      ],
+      "gamePlatform": [
+        "Web browser",
+        "Desktop",
+        "Mobile"
+      ],
+      "playMode": "MultiPlayer",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "Any modern web browser",
+      "numberOfPlayers": {
+        "@type": "QuantitativeValue",
+        "minValue": 1,
+        "maxValue": 2000
+      },
+      "author": {
+        "@id": "https://lf.wtf/#levifoster"
+      },
+      "image": "https://lf.wtf/carmeet/assets/street.jpg",
+      "screenshot": [
+        "https://lf.wtf/carmeet/assets/garage.jpg",
+        "https://lf.wtf/carmeet/assets/driving.jpg",
+        "https://lf.wtf/carmeet/assets/on-foot.jpg"
+      ],
+      "trailer": {
+        "@id": "https://lf.wtf/carmeet/#trailer"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://carmeet.lf.wtf/"
+      }
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://lf.wtf/carmeet/#trailer",
+      "name": "Trailer di Carmeet",
+      "description": "Ventidue secondi di Carmeet: un convoglio in città, auto elaborate nel garage, il raduno, la fotocamera del telefono e la mappa dall'alto.",
+      "thumbnailUrl": "https://lf.wtf/carmeet/assets/poster.jpg",
+      "contentUrl": "https://lf.wtf/carmeet/assets/carmeet-hype-720.mp4",
+      "uploadDate": "2026-09-30",
+      "duration": "PT22S",
+      "width": 720,
+      "height": 1280
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://lf.wtf/carmeet/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Levi Foster",
+          "item": "https://lf.wtf/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Carmeet",
+          "item": "https://lf.wtf/carmeet/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://lf.wtf/carmeet/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Carmeet è gratis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì. Gira nel browser e giocare non costa nulla. Non c'è niente da scaricare o installare."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Funziona sul telefono?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì. Su telefoni e tablet compaiono i controlli touch, in verticale o in orizzontale. Sul computer funzionano tastiera e controller."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Si può gareggiare?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non ci sono gare. Carmeet è fatto per elaborare un'auto, girare e ritrovarsi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Perché chiede un'email?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Il server pubblico chiede un'email una volta sola, prima di entrare. Resta a chi gestisce il server, e gli altri giocatori non la vedono mai."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Carmeet è fatto da EA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Carmeet è un fan project indipendente di Levi Foster. Non è affiliato a Electronic Arts, né approvato o sponsorizzato da Electronic Arts."
+          }
+        }
+      ],
+      "inLanguage": "it"
+    }
+  ]
+}
+</script>
+
+<style>
+@font-face{font-family:"Saira";src:url(/assets/fonts/saira-italic.woff2) format("woff2");font-style:italic;font-weight:400 900;font-stretch:75% 125%;font-display:swap}
+@font-face{font-family:"Saira";src:url(/assets/fonts/saira.woff2) format("woff2");font-style:normal;font-weight:400 900;font-stretch:75% 125%;font-display:swap}
+:root{--black:#06080a;--glass:#0d1214;--glass-a:#0d1214e6;--steel:#182022;--line:#3a4a4d;--ink:#f1f5f2;--muted:#a3b3b0;
+--mint:#8af4ca;--mint-ink:#0b1a16;--go:#c6ff45;--go-ink:#0f1a04;--chyron:#a9e34a;
+--slant:polygon(12px 0,100% 0,calc(100% - 12px) 100%,0 100%);--cut:polygon(0 0,100% 0,100% calc(100% - 26px),calc(100% - 26px) 100%,0 100%);
+--w:1240px;--font:"Saira","Bahnschrift","DIN Alternate",system-ui,sans-serif}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;background:var(--black)}
+body{margin:0;background:var(--black);color:var(--ink);font:400 17px/1.6 var(--font);font-stretch:95%}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;background:repeating-linear-gradient(0deg,#0000 0 2px,#0000002a 2px 3px)}
+a{color:var(--mint)}
+a:hover{color:#fff}
+:focus-visible{outline:3px solid var(--mint);outline-offset:3px}
+img,video{display:block;max-width:100%;height:auto}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 28px}
+.it{font-style:italic}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+
+/* buttons: slanted like the game's menu rows */
+.btn{display:inline-flex;align-items:center;gap:14px;min-height:52px;padding:10px 30px;font:italic 700 19px/1 var(--font);font-stretch:110%;text-decoration:none;clip-path:var(--slant);border-bottom:3px solid var(--line);background:var(--glass-a);color:var(--ink);transition:background .12s,color .12s}
+.btn:hover{background:var(--mint);color:var(--mint-ink)}
+.btn.go{background:var(--go);color:var(--go-ink);border-bottom-color:#8fc12a;min-height:64px;padding:12px 40px;font-size:24px;font-weight:800}
+.btn.go:hover{background:#dcff8a;color:var(--go-ink)}
+.chyron{position:relative;display:inline-flex;align-items:center;gap:12px;min-height:40px;padding:6px 22px;margin:0 22px;background:#0a0d0ee8;border-top:2px solid var(--chyron);border-bottom:2px solid var(--chyron);font-style:italic;font-size:14px;color:#e8f4ec}
+.chyron::before,.chyron::after{content:"";position:absolute;top:-2px;bottom:-2px;width:22px;background:#0a0d0ee8;border:2px solid var(--chyron)}
+.chyron::before{left:-22px;border-right:0;border-radius:22px 0 0 22px}
+.chyron::after{right:-22px;border-left:0;border-radius:0 22px 22px 0}
+.chyron strong{font-weight:800;font-size:16px}
+
+/* top */
+.top{position:sticky;top:0;z-index:40;background:#06080ad9;backdrop-filter:blur(8px);border-bottom:1px solid #1d2729}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:62px}
+.mark{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.mark b{font:italic 900 26px/1 var(--font);color:var(--mint);letter-spacing:-.04em}
+.mark span{font:italic 800 20px/1 var(--font);font-stretch:115%}
+.top nav{display:flex;align-items:center;gap:22px}
+.top nav a:not(.btn){color:var(--muted);text-decoration:none;font-style:italic;font-size:15px;padding:12px 0}
+.top nav a:not(.btn):hover{color:var(--ink)}
+.top .btn{min-height:42px;padding:6px 22px;font-size:16px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid #1d2729}
+.hero-bg{position:absolute;inset:0;background:url(/carmeet/assets/street.jpg) center 40%/cover no-repeat;opacity:.34;filter:saturate(1.1)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--black) 8%,#06080acc 45%,#06080a55 75%,var(--black)),linear-gradient(0deg,var(--black),#0000 40%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:56px;align-items:center;padding-top:64px;padding-bottom:72px}
+.hero h1{margin:0}
+.hero h1 img{width:min(620px,100%);filter:drop-shadow(0 6px 22px #000c)}
+.tag{margin:26px 0 0;font:italic 800 clamp(26px,3.2vw,40px)/1.08 var(--font);font-stretch:112%;letter-spacing:-.01em}
+.tag em{font-style:italic;color:var(--mint)}
+.lede{margin:18px 0 0;max-width:600px;color:#d5dfdb;font-size:18px}
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px;margin-top:30px}
+.hero .chyron{margin-top:30px}
+.stats{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;max-width:640px}
+.stats li{background:var(--glass-a);border-left:3px solid var(--mint);padding:10px 14px;clip-path:var(--cut)}
+.stats b{display:block;font:italic 800 30px/1.05 var(--font);font-stretch:110%;color:#fff}
+.stats span{font-size:13px;font-style:italic;color:var(--muted)}
+.phone{position:relative;background:#000;border:3px solid #1f2a2c;border-radius:34px;padding:10px;box-shadow:0 0 0 1px #000,0 30px 80px #000c,0 0 60px #8af4ca22}
+.phone video{width:100%;aspect-ratio:9/16;border-radius:24px;object-fit:cover;background:#000}
+.phone .sound{position:absolute;right:22px;bottom:52px;min-height:40px;padding:6px 18px;font-size:14px;border:0;cursor:pointer}
+.phone .sound[aria-pressed="true"]{background:var(--mint);color:var(--mint-ink)}
+.phone figcaption{margin-top:10px;font-size:13px;font-style:italic;color:var(--muted);text-align:center}
+
+/* section heads: FEng style */
+section{scroll-margin-top:70px}
+.head{display:flex;align-items:flex-end;gap:18px;margin:0 0 30px}
+.head h2{margin:0;font:italic 900 clamp(34px,5vw,64px)/.95 var(--font);font-stretch:118%;letter-spacing:-.015em;text-transform:uppercase}
+.head .bar{flex:1;height:6px;margin-bottom:10px;background:linear-gradient(90deg,var(--mint),#8af4ca00);clip-path:var(--slant)}
+.kicker{margin:0 0 6px;font:italic 700 15px/1 var(--font);color:var(--mint);letter-spacing:.06em;text-transform:uppercase}
+.sub{max-width:720px;margin:-12px 0 36px;color:#cfd9d5}
+
+/* what it is */
+.what{padding:84px 0 40px}
+.feature{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:40px;align-items:center;margin-bottom:56px}
+.feature:nth-child(even) .shot{order:2}
+.shot{position:relative;margin:0;background:#000;border-left:4px solid var(--mint);clip-path:var(--cut)}
+.shot img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.copy h3{margin:0 0 10px;font:italic 800 34px/1.05 var(--font);font-stretch:112%}
+.copy p{margin:0;color:#cfd9d5}
+.copy ul{margin:16px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.copy li{background:var(--glass);color:var(--ink);font-size:14px;font-style:italic;padding:5px 16px;clip-path:var(--slant);border-bottom:2px solid var(--line)}
+.photos{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.33fr);gap:10px;margin:0}
+.photos img{width:100%;height:100%;object-fit:cover;border:6px solid #eef2ee;box-shadow:0 12px 30px #000a}
+.photos figcaption{grid-column:1/-1;font-size:13px;font-style:italic;color:var(--muted)}
+
+/* reel */
+.reel{padding:20px 0 76px}
+.reel ul{list-style:none;margin:0;padding:0 28px;display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;max-width:var(--w);margin:0 auto}
+.reel li{flex:0 0 min(210px,42vw);scroll-snap-align:start}
+.reel img{width:100%;aspect-ratio:9/16;object-fit:cover;clip-path:var(--cut);border-left:3px solid var(--mint)}
+.reel p{max-width:var(--w);margin:12px auto 0;padding:0 28px;font-size:13px;font-style:italic;color:var(--muted)}
+
+/* how it was made */
+.made{padding:84px 0;background:linear-gradient(180deg,#06080a,#0a1012 30%,#06080a);border-top:1px solid #1d2729;border-bottom:1px solid #1d2729}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.step{display:grid;grid-template-columns:110px minmax(0,1fr) minmax(0,.9fr);gap:28px;align-items:start;background:var(--glass-a);padding:22px 28px 22px 22px;border-left:4px solid var(--line);clip-path:var(--cut);transition:border-color .15s}
+.step:hover{border-left-color:var(--mint)}
+.step .n{font:italic 900 64px/.85 var(--font);font-stretch:120%;color:var(--mint);text-shadow:0 0 18px #8af4ca55}
+.step h3{margin:0 0 8px;font:italic 800 26px/1.1 var(--font);font-stretch:110%}
+.step p{margin:0;color:#cfd9d5}
+.step code{display:block;font:500 13px/1.6 ui-monospace,"Cascadia Mono",Consolas,monospace;color:var(--mint);background:#060a0b;border:1px solid #1d2729;padding:12px 14px;white-space:normal}
+.origin{margin-top:26px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:18px;align-items:center;max-width:820px}
+.origin p{margin:0;color:#cfd9d5}
+
+/* play */
+.play{padding:84px 0}
+.play-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px;align-items:start}
+.panel{background:var(--glass-a);border-left:4px solid var(--go);padding:30px 32px;clip-path:var(--cut)}
+.panel p{margin:0 0 22px;color:#d5dfdb}
+.controls{margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.controls div{background:#060a0b;padding:14px 16px;border-top:2px solid var(--line)}
+.controls dt{font:italic 800 17px/1.2 var(--font);color:var(--mint);margin-bottom:8px}
+.controls dd{margin:0;font-size:14px;color:#cfd9d5}
+kbd{display:inline-block;min-width:24px;padding:0 6px;margin:0 2px 3px 0;border:1px solid #4a5b5e;border-bottom-width:2px;font:600 12px/20px ui-monospace,Consolas,monospace;color:#fff;text-align:center;background:#0f1618}
+.mobile{display:grid;grid-template-columns:150px minmax(0,1fr);gap:22px;align-items:center}
+.mobile img{border:3px solid #1f2a2c;border-radius:20px}
+.mobile p{margin:0;color:#cfd9d5}
+
+/* faq */
+.faq{padding:0 0 84px}
+.faq details{background:var(--glass-a);margin-bottom:6px;border-left:4px solid var(--line);clip-path:var(--cut)}
+.faq details[open]{border-left-color:var(--mint)}
+.faq summary{cursor:pointer;list-style:none;padding:18px 24px;font:italic 700 20px/1.3 var(--font)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"\00BB";float:right;color:var(--mint);transition:transform .15s}
+.faq details[open] summary::after{transform:rotate(90deg)}
+.faq details p{margin:0;padding:0 24px 20px;color:#cfd9d5}
+
+.final{padding:70px 0 90px;text-align:center;border-top:1px solid #1d2729;background:radial-gradient(ellipse at 50% 120%,#8af4ca1f,#0000 60%)}
+.final img{width:min(520px,90%);margin:0 auto 26px}
+.final p{margin:0 auto 28px;max-width:560px;color:#cfd9d5}
+
+footer{border-top:1px solid #1d2729;padding:28px 0 10px;color:var(--muted);font-size:13px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 28px}
+footer p{margin:0;max-width:760px}
+.i18n{color:var(--muted)}
+
+@media (max-width:980px){
+.hero .wrap{grid-template-columns:minmax(0,1fr);gap:40px;padding-top:40px}
+.phone{max-width:340px;margin:0 auto}
+.feature,.play-grid{grid-template-columns:minmax(0,1fr);gap:22px}
+.feature:nth-child(even) .shot{order:0}
+.step{grid-template-columns:70px minmax(0,1fr);gap:8px 18px}
+.step .n{font-size:44px;grid-row:span 2}
+.step code{grid-column:2}
+}
+@media (max-width:640px){
+body{font-size:16px}
+.wrap{padding:0 16px}
+.top nav a:not(.btn){display:none}
+.stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+.btn.go{width:100%;justify-content:center;font-size:20px;padding:12px 18px}
+.controls{grid-template-columns:minmax(0,1fr)}
+.mobile{grid-template-columns:110px minmax(0,1fr)}
+.reel ul,.reel p{padding:0 16px}
+.step{padding:18px 18px 22px 16px;grid-template-columns:52px minmax(0,1fr)}
+.step .n{font-size:34px}
+.chyron{font-size:12px;margin:0 20px}
+}
+html[lang="de"] .head h2{text-transform:uppercase!important}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.step{transition:none}}
+
+/* i18n:start */
+.i18n{max-width:var(--w,initial);margin:0 auto;padding:26px 22px 40px;display:flex;flex-wrap:wrap;
+gap:6px 14px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.55;
+justify-content:center}
+.i18n a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+.i18n a:hover{border-bottom-color:currentColor}
+.i18n span[aria-current]{opacity:.5;cursor:default}
+/* i18n:end */
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top"><b aria-hidden="true">C/</b><span>Carmeet</span></a>
+    <nav aria-label="Sezioni">
+      <a href="#what">Cos'è</a>
+      <a href="#made">Come è stato fatto</a>
+      <a href="https://lf.wtf/">lf.wtf</a>
+      <a class="btn go" href="https://carmeet.lf.wtf/">Gioca</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="title">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <h1 id="title"><img src="/carmeet/assets/carmeet-logo.png" width="940" height="139" alt="Carmeet"></h1>
+      <p class="tag">Elabora la tua auto. Gira per un'unica città condivisa. <em>Incontra tutti quelli online.</em></p>
+      <p class="lede">Carmeet è un raduno d'auto multigiocatore e gratuito che gira nel tuo browser. La città, le 29 auto e il garage vengono dal disco PlayStation 2 di Need for Speed: Underground 2, smontato file per file e ricostruito per il web. Le gare non ci sono più. Resta la parte che tutti ricordano: elaborare un'auto e presentarsi al raduno per farla vedere.</p>
+      <div class="cta">
+        <a class="btn go" href="https://carmeet.lf.wtf/">Gioca gratis nel browser <span aria-hidden="true">&#187;</span></a>
+        <a class="btn" href="#made">Come è stato fatto</a>
+      </div>
+      <p class="chyron"><strong>Carmeet</strong> <span>Free roam · un'unica città condivisa · tutti online</span></p>
+      <ul class="stats">
+        <li><b>29</b><span>auto da elaborare</span></li>
+        <li><b>1</b><span>città condivisa</span></li>
+        <li><b>2,000</b><span>giocatori per server</span></li>
+        <li><b>0</b><span>download</span></li>
+      </ul>
+    </div>
+    <figure class="phone">
+      <video id="trailer" autoplay muted loop playsinline preload="metadata" poster="/carmeet/assets/poster.jpg" width="720" height="1280" aria-label="Trailer di Carmeet: un convoglio in città, auto da elaborare, il raduno e la fotocamera del telefono">
+        <source src="/carmeet/assets/carmeet-hype-720.mp4" type="video/mp4">
+      </video>
+      <button class="btn sound" type="button" aria-pressed="false" aria-controls="trailer">Audio</button>
+      <figcaption>Trailer, registrato nel gioco</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="what wrap" id="what" aria-labelledby="what-title">
+  <div class="head"><h2 id="what-title">Cos'è</h2><span class="bar" aria-hidden="true"></span></div>
+
+  <div class="feature">
+    <figure class="shot"><img src="/carmeet/assets/garage.jpg" width="1280" height="720" alt="Il garage di Carmeet: una Nissan 350Z argento sulla pedana girevole, con il menu Customize aperto" loading="lazy"></figure>
+    <div class="copy">
+      <p class="kicker">01 · Garage</p>
+      <h3>Elaborala</h3>
+      <p>Scegli una delle 29 auto del gioco e passala nel garage originale. Anche le icone del menu, il font corsivo e gli strumenti sono decodificati dal disco, così è tutto come nel 2004.</p>
+      <ul><li>Body kit</li><li>Cofani e alettoni</li><li>Vernice</li><li>Vinili</li><li>Cerchi</li><li>Vetri oscurati</li><li>Neon</li></ul>
+    </div>
+  </div>
+
+  <div class="feature">
+    <figure class="shot"><img src="/carmeet/assets/driving.jpg" width="1280" height="720" alt="Alla guida di notte in città, con tachimetro, mappa e chat sullo schermo" loading="lazy"></figure>
+    <div class="copy">
+      <p class="kicker">02 · Strade</p>
+      <h3>Portala in giro</h3>
+      <p>Chi apre il link finisce nella stessa città. Ogni auto va con la sua curva di coppia e i suoi rapporti del cambio, presi dai dati del gioco. Parla con la chat vocale di prossimità, scrivi in chat e leggi le targhette con i nomi per capire chi è chi.</p>
+    </div>
+  </div>
+
+  <div class="feature">
+    <figure class="shot"><img src="/carmeet/assets/on-foot.jpg" width="1280" height="720" alt="Un giocatore sceso dall'auto che balla accanto a una 350Z parcheggiata in una strada della città" loading="lazy"></figure>
+    <div class="copy">
+      <p class="kicker">03 · Il raduno</p>
+      <h3>Parcheggiala</h3>
+      <p>Fermati dove vuoi, scendi e cammina. Corri fino all'auto di qualcuno, poi saluta, esulta, indica, balla o siediti. Il tuo pilota lo vesti come vuoi tu, e ti segue in strada.</p>
+    </div>
+  </div>
+
+  <div class="feature">
+    <figure class="photos">
+      <img src="/carmeet/assets/photo-meet.jpg" width="720" height="960" alt="Una foto scattata con il telefono del gioco: giocatori che esultano tra file di auto parcheggiate" loading="lazy">
+      <img src="/carmeet/assets/photo-selfie.jpg" width="1280" height="720" alt="Un selfie scattato con la fotocamera frontale del telefono del gioco al raduno" loading="lazy">
+      <figcaption>Entrambe le foto sono state scattate con il telefono del gioco.</figcaption>
+    </figure>
+    <div class="copy">
+      <p class="kicker">04 · Telefono</p>
+      <h3>Scatta</h3>
+      <p>Tira fuori il telefono e fotografa il raduno, con la fotocamera posteriore o in selfie. Ogni foto riceve grana e color grading da pellicola, viene salvata nel browser e compare nel garage.</p>
+    </div>
+  </div>
+</section>
+
+<section class="reel" aria-label="Fotogrammi dal trailer">
+  <ul>
+    <li><img src="/carmeet/assets/still-6-6.jpg" width="540" height="960" alt="Un'auto blu con alettone sulla pedana girevole del garage" loading="lazy"></li>
+    <li><img src="/carmeet/assets/still-7-3.jpg" width="540" height="960" alt="Un'auto rossa con un vinile a ragnatela nel garage" loading="lazy"></li>
+    <li><img src="/carmeet/assets/still-8-9.jpg" width="540" height="960" alt="Giocatori riuniti tra le auto parcheggiate al raduno" loading="lazy"></li>
+    <li><img src="/carmeet/assets/still-10-4.jpg" width="540" height="960" alt="Un giocatore che esulta accanto a un'auto bianca con neon sottoscocca" loading="lazy"></li>
+    <li><img src="/carmeet/assets/still-12-6.jpg" width="540" height="960" alt="Il telefono del gioco alzato per fotografare la folla" loading="lazy"></li>
+    <li><img src="/carmeet/assets/still-16-7.jpg" width="540" height="960" alt="La città dall'alto, con un convoglio sulla strada tra i grattacieli" loading="lazy"></li>
+    <li><img src="/carmeet/assets/still-20-5.jpg" width="540" height="960" alt="Il raduno visto dall'alto: file di auto elaborate" loading="lazy"></li>
+  </ul>
+  <p>Fotogrammi dal trailer. Scorri di lato per vederne altri.</p>
+</section>
+
+<section class="made" id="made" aria-labelledby="made-title">
+  <div class="wrap">
+    <div class="head"><h2 id="made-title">Come è stato fatto</h2><span class="bar" aria-hidden="true"></span></div>
+    <p class="sub">Underground 2 è uscito nel 2004. La sua città non doveva mai lasciare la console, quindi ogni passaggio per portarla in un browser è stato ricavato dai byte del disco.</p>
+    <ol class="steps">
+      <li class="step">
+        <span class="n" aria-hidden="true">01</span>
+        <div><h3>Leggere il disco</h3><p>L'immagine del disco viene solo letta, mai modificata. I suoi file stanno dentro archivi impacchettati, indicizzati per nomi sottoposti a hash. Ricostruire la funzione di hash ha permesso di recuperare i nomi di 1.381 dei suoi 1.392 file.</p></div>
+        <code>Indice ZDIR · record da 24 byte · h = 33 × h + c</code>
+      </li>
+      <li class="step">
+        <span class="n" aria-hidden="true">02</span>
+        <div><h3>Decodificare la geometria</h3><p>EA salvava i suoi modelli come pacchetti per le vector unit della PlayStation 2, con posizioni compresse. Il punto in cui una triangle strip si interrompe lo decide il generatore di numeri casuali della vector unit, quindi è stato ricostruito anche quel generatore. Corrisponde su tutte le 140.493 strip su cui è stato verificato.</p></div>
+        <code>Pacchetti VIF · generatore di numeri casuali della VU1 · 140.493 strip</code>
+      </li>
+      <li class="step">
+        <span class="n" aria-hidden="true">03</span>
+        <div><h3>Ricostruire la città</h3><p>I dati di posizionamento dello scenario, gli archivi delle texture e le palette sono stati decodificati e trasformati in modelli pronti per il web. La città viene caricata in streaming intorno a te, cella dopo cella, così gira anche su un telefono.</p></div>
+        <code>Texture TPK · palette a 4 e 8 bit · celle in streaming</code>
+      </li>
+      <li class="step">
+        <span class="n" aria-hidden="true">04</span>
+        <div><h3>Ripristinare il garage</h3><p>Le 29 auto giocabili arrivano con i loro body kit, vernici, vinili e cerchi. Il garage originale, le icone del menu, il font e gli strumenti personalizzati sono quelli del gioco, decodificati e usati così come sono.</p></div>
+        <code>29 auto · garage originale · 496 texture di menu · 7 font</code>
+      </li>
+      <li class="step">
+        <span class="n" aria-hidden="true">05</span>
+        <div><h3>Recuperare il suono</h3><p>I suoni dei motori sono decodificati dalle registrazioni originali del gioco, un grain per ciclo motore, e riprodotti lungo tutto l'arco di giri di ogni auto.</p></div>
+        <code>Sweep del motore · loop del minimo · curve di coppia</code>
+      </li>
+      <li class="step">
+        <span class="n" aria-hidden="true">06</span>
+        <div><h3>Aggiungere le persone</h3><p>Niente della parte social è sul disco. I personaggi che camminano, le emote, la fotocamera del telefono, la chat, la voce di prossimità e le targhette con i nomi sono nuovi. Un server regge fino a 2.000 giocatori nella stessa città, e a ogni giocatore vengono inviate solo le persone vicine.</p></div>
+        <code>WebSockets · voce WebRTC · 2.000 giocatori per server</code>
+      </li>
+    </ol>
+    <div class="origin">
+      <span class="chyron"><strong>2026</strong></span>
+      <p>Carmeet è nato come un modo per girare a piedi per la città con un visore Quest e scattare foto. Poi è arrivata la guida, e poi le altre persone.</p>
+    </div>
+  </div>
+</section>
+
+<section class="play wrap" id="play" aria-labelledby="play-title">
+  <div class="head"><h2 id="play-title">Gioca</h2><span class="bar" aria-hidden="true"></span></div>
+  <div class="play-grid">
+    <div class="panel">
+      <p>Apri il link, elabora la tua auto e guida. Non c'è niente da installare. La prima volta che entri il server ti chiede un'email, e gli altri giocatori non la vedono mai.</p>
+      <dl class="controls">
+        <div><dt>Tastiera</dt><dd><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> guidare<br><kbd>Spazio</kbd> freno a mano<br><kbd>E</kbd> scendere<br><kbd>G</kbd> garage<br><kbd>P</kbd> telefono<br><kbd>T</kbd> chat</dd></div>
+        <div><dt>Controller</dt><dd>La levetta sinistra sterza o cammina. I grilletti sono gas e freno. B per scendere e risalire.</dd></div>
+        <div><dt>Touch</dt><dd>Un pad di sterzo e i pedali sullo schermo, in verticale o in orizzontale. Quando sei fuori dall'auto, il pad ti fa camminare.</dd></div>
+      </dl>
+    </div>
+    <div class="mobile">
+      <img src="/carmeet/assets/mobile-driving.jpg" width="412" height="915" alt="Carmeet su un telefono, alla guida con i controlli touch" loading="lazy">
+      <p>Funziona anche sui telefoni. I controlli touch compaiono da soli, e un amico con lo stesso link spunta nella tua strada.</p>
+    </div>
+  </div>
+</section>
+
+<section class="faq wrap" id="faq" aria-labelledby="faq-title">
+  <div class="head"><h2 id="faq-title">Domande</h2><span class="bar" aria-hidden="true"></span></div>
+  <details><summary>Carmeet è gratis?</summary><p>Sì. Gira nel browser e giocare non costa nulla. Non c'è niente da scaricare o installare.</p></details>
+  <details><summary>Funziona sul telefono?</summary><p>Sì. Su telefoni e tablet compaiono i controlli touch, in verticale o in orizzontale. Sul computer funzionano tastiera e controller.</p></details>
+  <details><summary>Si può gareggiare?</summary><p>Non ci sono gare. Carmeet è fatto per elaborare un'auto, girare e ritrovarsi.</p></details>
+  <details><summary>Perché chiede un'email?</summary><p>Il server pubblico chiede un'email una volta sola, prima di entrare. Resta a chi gestisce il server, e gli altri giocatori non la vedono mai.</p></details>
+  <details><summary>Carmeet è fatto da EA?</summary><p>No. Carmeet è un fan project indipendente di Levi Foster. Non è affiliato a Electronic Arts, né approvato o sponsorizzato da Electronic Arts.</p></details>
+</section>
+
+<section class="final" aria-label="Gioca a Carmeet">
+  <img src="/carmeet/assets/carmeet-logo.png" width="940" height="139" alt="" loading="lazy">
+  <p>Il garage è aperto e la strada ti aspetta.</p>
+  <a class="btn go" href="https://carmeet.lf.wtf/">Gioca gratis nel browser <span aria-hidden="true">&#187;</span></a>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Carmeet è un fan project indipendente di <a href="https://lf.wtf/">Levi Foster</a>. Non è affiliato a Electronic Arts, né approvato o sponsorizzato da Electronic Arts. Need for Speed e Underground sono marchi di Electronic Arts Inc.</p>
+    <a href="https://lf.wtf/">lf.wtf</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var v = document.getElementById('trailer');
+  var b = document.querySelector('.phone .sound');
+  if (!v || !b) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { v.removeAttribute('autoplay'); v.pause(); v.controls = true; }
+  b.addEventListener('click', function () {
+    v.muted = !v.muted;
+    b.setAttribute('aria-pressed', String(!v.muted));
+    if (!v.muted && v.paused) v.play();
+  });
+})();
+</script>
+
+<nav class="i18n" aria-label="Language">
+  <a href="/carmeet/" hreflang="en" lang="en">English</a>
+  <a href="/de/carmeet/" hreflang="de" lang="de">Deutsch</a>
+  <a href="/es/carmeet/" hreflang="es" lang="es">Español</a>
+  <a href="/es-mx/carmeet/" hreflang="es-MX" lang="es-MX">Español (MX)</a>
+  <a href="/fr/carmeet/" hreflang="fr" lang="fr">Français</a>
+  <span aria-current="true" lang="it">Italiano</span>
+  <a href="/ja/carmeet/" hreflang="ja" lang="ja">日本語</a>
+  <a href="/ko/carmeet/" hreflang="ko" lang="ko">한국어</a>
+  <a href="/nl/carmeet/" hreflang="nl" lang="nl">Nederlands</a>
+  <a href="/pt-br/carmeet/" hreflang="pt-BR" lang="pt-BR">Português (BR)</a>
+  <a href="/zh-hans/carmeet/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+</nav>
+</body>
+</html>

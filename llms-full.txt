@@ -2,7 +2,7 @@
 
 Everything on Levi Foster's site as plain text, for retrieval and citation.
 Canonical site: https://lf.wtf/ · Contact: L@LF.WTF
-Generated 2026-08-29
+Generated 2026-09-30
 This file is the English text. The site itself is published in eleven languages under a locale
 prefix: /de/, /es/, /es-mx/, /fr/, /it/, /ja/, /ko/, /nl/, /pt-br/ and /zh-hans/. The same path
 works under each, so https://lf.wtf/ja/frmt/ is the Japanese FRMT page. When answering in one of
@@ -11,50 +11,122 @@ those languages, cite that language's URL.
 
 ---
 
-# Levi Foster: iPhone Apps, Photography Tools and Generative Art
+# Levi Foster: Operations, iPhone Apps and Browser Games
 Source: https://lf.wtf/
 
-### Projects
-
 ## Levi Foster
-Independent app developer and artist · Fort Worth, Texas
-I am Levi Foster. I build iPhone apps and make things with code, mostly at the point where photography stops being a picture and starts being a process. Some of it ships on the App Store. The rest ends up as prints.
-The apps share a bias. I would rather simulate the thing than approximate the look of it, which is slower and more awkward and gets results a preset cannot. That is the whole idea behind FRMT and CYANO, and it is why MODUL8 models broken hardware instead of drawing coloured lines over your photo.
-
-### Work
-
-### Harmony Palette
-A colour tool for iPhone and iPad. An interactive wheel in both the RGB model a screen actually uses and the RYB model a painter was taught, eight harmony types, 160 curated palettes, a contrast checker that tells you which pairs are legible, and export straight to SwiftUI, CSS, Tailwind, SVG or PDF.
-iPhone & iPad · Free, Pro from $2.99 · https://apps.apple.com/app/id6757116756
-### FRMT: Film Simulation
-A film simulation camera for iPhone. It models the photographic process itself rather than applying a colour filter: light scattering through the emulsion, dye layers holding each other back, grain forming where the light actually landed. Four stocks, built from published manufacturer measurements, developed from a RAW negative on the device.
-iPhone · $14.99 once · https://apps.apple.com/app/id6800928630
-
-### MODUL8: Glitch Art Effects
-A glitch art app for iPhone. Nineteen stackable effects, each modelled on a specific way real hardware used to fail: VHS tracking loss, CRT phosphor bloom, datamosh block corruption, pixel sorting, channel separation. Reorder the layers and the picture changes.
-iPhone · Free · https://apps.apple.com/app/id6755617539
-
-### CYANO: Cyanotype Photos
-A cyanotype app for iPhone. It runs the chemistry of the 1842 sunprint process instead of tinting the picture blue: the paper is blind to red and green, so two colours a camera recorded as equally bright come out at opposite ends of the print. No darkroom, no chemicals, no printer.
-iPhone · Free · https://apps.apple.com/app/id6802050987
-
-### Dollop
-A color mixing game for iPhone. You are given a color and you mix it, out of paint that behaves like paint: blue and yellow make green here, not the gray two screen colors would average to. Five modes, a creature that hatches out of your first match, and nothing in it that hurries you.
-iPhone · Free · https://apps.apple.com/app/id6807468926
-
-### Merge With The Machine
-An art project about the line where human imagination meets machine generation. Generated visuals, experimental tools, and a print shop.
-
-### Elsewhere
-- App Store: https://apps.apple.com/developer/levi-foster/id1854976064
-- Instagram
-- X
-- TikTok
-- Etsy
-- GitHub
-
+Director of operations and co-owner at Red Arrow Marketing. Co-owner of Crest Acquisitions, where I work on research and AI integration. Developer of seven iPhone apps and two browser games, Morterra and Carmeet. Artist behind Merge With The Machine.
+L@LF.WTF
+App Store
+Instagram
+X
+GitHub
+### Table of works
+12 elements
+### Specification
+Every element in full: the companies, the apps and games, and the art.
+No. Element Role Format Description Links
+Ra
+#### Red Arrow Marketing
+Venture
+Role Director of operations, co-owner
+Format Agency, Fort Worth, Texas
+A Fort Worth web design and digital marketing agency. Websites, SEO, ads, social and content, made in-house for clients nationwide.
+redarrowmarketing.com
+Cr
+#### Crest Acquisitions
+Venture
+Role Co-owner, research, AI integration
+Format Acquisitions, nationwide
+Buys liens, non-performing notes and distressed real estate for cash, anywhere in the country. My side is research and AI integration.
+crestacquisitions.com
+Mo
+#### Morterra
+Game
+Role Graphics, developer
+Format Browser game, free
+A free multiplayer survival sandbox that runs in the browser. Hunt, mine and build anywhere, with no download and no sign-up.
+morterra.com
+Hp
+#### Harmony Palette
+App
+Role Developer
+Format iPhone, free, Pro from $2.99
+A color harmony and palette tool. RGB and RYB wheels, eight harmony types, 160 curated palettes, a WCAG contrast checker, and export to SwiftUI, CSS, Tailwind, SVG or PDF.
+lf.wtf/harmony
+App Store
+Fr
+#### FRMT
+App
+Role Developer
+Format iPhone, $14.99 once
+A film simulation camera. Four film stocks built from published manufacturer data, developed from a RAW negative on the phone.
+lf.wtf/frmt
+App Store
+M8
+#### MODUL8
+App
+Role Developer
+Format iPhone, free, Premium
+Glitch art for photos and video. 29 effects modeled on the ways real hardware failed, from VHS tracking loss to a satellite feed losing lock, saved up to 4K.
+lf.wtf/modul8
+App Store
+Cy
+#### CYANO
+App
+Role Developer
+Format iPhone, free
+Cyanotype prints from your photos, following the chemistry of the 1842 sunprint. No darkroom, no chemicals, no printer.
+lf.wtf/cyano
+App Store
+Dl
+#### Dollop
+Game
+Role Developer
+Format iPhone game, free
+A slow color mixing game with paint that behaves like paint, so blue and yellow make green. Five modes, and nothing that hurries you.
+lf.wtf/dollop
+App Store
+Kp
+#### Kippu
+App
+Role Developer
+Format iPhone and iPad, free
+Japanese for a trip to Japan, with what the staff say back, then the whole JLPT N5: kana, kanji, grammar, listening and a mock test.
+lf.wtf/kippu
+App Store
+Gr
+#### GRNGE
+App
+Role Developer
+Format iPhone, free
+Photocopy, stipple, halftone and dither prints from your photos, layered in color inks, drawn on, cut out and covered in stickers.
+lf.wtf/grnge
+App Store
+Cm
+#### Carmeet
+Game
+Role Reverse engineering, developer
+Format Browser game, free
+A 2004 street racing city, pulled off the game disc and rebuilt in the browser as a place to hang out. Build a car, cruise with whoever is online, meet up, take photos.
+lf.wtf/carmeet
+Mw
+#### Merge With The Machine
+Art
+Role Artist
+Format Art project, prints
+An art project about where human imagination meets machine generation. Generated visuals, experimental tools and a print shop.
+mergewiththemachine.com
 ### Contact
-Email L@LF.WTF. That reaches me directly.
+L@LF.WTF
+Email reaches me directly.
+App Store
+Instagram
+X
+TikTok
+Etsy
+GitHub
+
 
 ---
 
@@ -110,7 +182,7 @@ One price, once
 
 ### $14.99. That is the whole business model.
 No subscription, no account, no cloud, no ads, no watermark, no in app purchases, no upsell to unlock the good stocks. Your photographs never leave your phone, because the app has no networking code in it at all.
-Requires an iPhone that can capture Apple ProRAW.
+Most accurate on an iPhone that can capture Apple ProRAW. Works on any iPhone running iOS 17.2 or later.
 Questions
 
 ### The things people ask first.
@@ -131,7 +203,7 @@ No. Every frame is developed on the iPhone's own GPU. The app contains no networ
 Because it runs the chemistry rather than looking up an answer. Light transport through the emulsion, the interaction between dye layers and grain formation are all computed for every frame, and that costs real time on a phone.
 
 **Which iPhones does it work on?**
-Any iPhone that can capture Apple ProRAW, running iOS 17.2 or later.
+Any iPhone running iOS 17.2 or later. Most accurate on one that can capture Apple ProRAW.
 FRMT is built by Levi Foster in Fort Worth, Texas
 
 ---
@@ -142,18 +214,18 @@ Source: https://lf.wtf/modul8/
 Glitch art app for iPhone
 
 ## Break your photos on purpose.
-MODUL8 is an image modulation kit for iPhone. Nineteen effects, each one modelled on a specific way that real hardware used to fail: tape that lost tracking, tubes that bloomed at the edges, compression that gave up halfway through a frame. Stack them, reorder them, and turn a photo into something that looks like it came off a machine that was already dying.
-It is free, every effect runs on your phone, and your photos never leave the device.
+MODUL8 is an image modulation kit for iPhone. Twenty-nine effects, each one modelled on a specific way that real hardware used to fail: tape that lost tracking, tubes that bloomed at the edges, a satellite feed losing lock, compression that gave up halfway through a frame. Stack them, reorder them, and turn a photo or a video clip into something that looks like it came off a machine that was already dying.
+The nineteen classic effects are free, there are no ads, everything renders on your phone, and nothing you open in it is ever uploaded.
 The idea
 
 ### A filter paints over a photo. MODUL8 damages it.
 Most glitch apps ship one look. They lay a fixed pattern of coloured lines over whatever you give them, and every photo comes out wearing the same costume. You can spot the app from across a feed.
 MODUL8 works the other way round. Each effect is a small simulation of one real failure, and it reads the actual pixels underneath before deciding what to do to them. Pixel Sort finds the bright regions in your specific frame and drags them until the buildings turn to vertical rain. Datamosh picks blocks and pastes them somewhere they do not belong. VHS bleeds colour sideways the way a worn tape head did. Feed two different photos to the same settings and you get two different pictures, because the damage is a response to the image rather than a layer on top of it.
-Nothing is baked in. Nineteen effects, any number of them at once, in any order you like.
+Nothing is baked in. Twenty-nine effects, stacked in any order you like.
 What is actually in there
 
-### Nineteen effects. Every one of them is a real failure mode.
-They are not variations on a theme. Each one models something different, which is why stacking them gets interesting instead of muddy.
+### Twenty-nine effects. Every one of them is a real failure mode.
+They are not variations on a theme. Each one models something different, which is why stacking them gets interesting instead of muddy. Nineteen classics are free, and ten more come with Premium.
 
 ### Analogue video
 VHS tracking errors, head switching noise at the bottom of the frame, chroma delay, interlacing comb, signal sync loss, analogue static. This is the family that makes a picture look like it was recorded off a television at two in the morning.
@@ -163,55 +235,62 @@ Datamosh copies blocks from one part of the frame into another and smears the mo
 
 ### Display and colour
 CRT adds phosphor glow, barrel curvature and a shadow mask. Bit Crush and Dither drop the colour depth to something a machine from 1994 could hold. RGB Split pulls the three channels apart. Film Grain and Noise put texture back on top.
+
+### Ten more with Premium
+New in 2.0, and each one another machine to fail through: a satellite feed losing lock, a broadcast arriving twice and leaving a ghost, slow-scan television, teletext, a fax line, a picture reposted until it wears out, a webcam, a handheld games console, a magnet held to a tube, and tape chewed up by the deck.
+Free · 19 classics: Noise, Pixel Shift, RGB Split, Scanlines, Distortion, Corruption, Feedback, VHS, CRT, Chroma, Film, Crush, Interlace, Invert, Datamosh, Dither, Static, Sort, Sync
+Premium · 10 new in 2.0: Satellite, Ghosting, Slow Scan, Teletext, Fax, Repost, Webcam, Handheld, Magnet, Chewed
 Same photo, different damage
 
 ### The stack decides the picture.
 Five renders from two source frames, changed only by which effects were switched on and what order they ran in. Order matters: sorting a photo and then splitting the channels is not the same picture as splitting the channels first and sorting after.
 The interface
 
-### One screen. Everything on it does one thing.
-The canvas is at the top and it updates while you drag. Underneath it are nine presets to get you somewhere in one tap, then the layer stack showing exactly what is running and in what order, then the effect rack. Tap an effect to open its own parameters. No menus, no modes, no hunting.
-Load a photo from your library, or shoot one in the app.
-Tap a preset. VHS, CRT, Cyber, Ghost, Retro, Film, Melt, Static or Fried.
-Open any effect and move its sliders. Intensity, and then whatever else that particular effect has: block size, tracking, spacing, curvature, threshold.
-Drag the layers into a different order and watch the picture change.
-Export to your camera roll, or save the whole stack as a preset of your own.
+### Rebuilt for 2.0. Everything renders on the GPU.
+The preview is sharp and it updates while you drag, and a 4K still takes a moment instead of half a minute. The layer stack shows exactly what is running and in what order, and every setting has its own level meter. Nothing is a single slider.
+Open a photo, or a video clip, from your library.
+Start from a preset. Nine are built in, and Premium adds two packs, Dead Air and Y2K.
+Open any effect and move its settings. Any of them can drift, step or sweep on its own.
+Put the layers in a different order and watch the picture change.
+Burn in a camcorder, digicam, VCR or CCTV date, or mask the subject so it stays clean while the background breaks, or the other way round.
+Save to your camera roll, or save the whole stack to use again.
 On the device
 
 ### Your photos stay on your phone.
-Every effect runs locally. There is no upload, no account, no render queue and no server holding a copy of anything you shot. The app is six megabytes and the editing works in aeroplane mode.
-It is also why the sliders feel live: you are dragging the real image rather than waiting on a round trip to somebody's GPU. The free version does serve ads, which is the one part that talks to the network. Premium removes them.
+Everything is processed on the device. There is no upload, no render queue and no server holding a copy of anything you shot. The app is about four megabytes.
+It is also why the settings feel live: you are dragging the real image on your own phone's GPU rather than waiting on a round trip to somebody else's. And there are no ads, in the free version or in Premium.
 Video too
 
-### Loops, not just stills.
-Turn any finished image into a seamless looping video with the effect parameters animating across the loop. The tracking drifts, the sort threshold moves, the channels breathe. It exports straight to your camera roll at a size that posts cleanly.
+### Clips and loops, not just stills.
+Open a video clip and watch it play through your effects, then trim up to a minute and save it at 1080p or 4K with its sound. Or turn a still into a three-second loop. Any setting can drift, step or sweep on its own, and loops and videos carry the movement: the tracking drifts, the channels breathe. Video and loops come with Premium.
 The deal
 
 ### Free. Premium is optional.
-Every one of the nineteen effects and all nine presets are free, with no limit on how many you stack. Nothing is held hostage behind a paywall and nothing you export is watermarked. Premium is about output and comfort, not about unlocking the tools.
-- Free All 19 effects, all 9 presets, unlimited stacking, save and share, no watermark
-- Premium Full resolution export, looping video export, saving your own presets, no ads
+The nineteen classic effects, the layers and the built-in presets work without a subscription, and there are no ads. Premium adds everything new in 2.0 and bigger exports. You can try any Premium feature on your own photo first: only saving asks.
+- Free 19 classic effects, layers, the built-in presets, saves at 1024 pixels, no ads
+- Premium Video, the ten new effects, settings that move, date stamps, masks, the Dead Air and Y2K preset packs, exports at 2048 pixels and 4K, three-second loops
+- Plans Monthly or yearly. The yearly plan starts with a 7-day free trial, and the app shows prices in your own currency.
 Questions
 
 ### The things people ask first.
 
 ### Is MODUL8 free?
-Yes. All 19 effects, all 9 presets and unlimited stacking are free, and nothing you export is watermarked. Premium adds full resolution export, looping video export, saving your own presets, and removes ads.
+Yes. The 19 classic effects, layers and the built-in presets work without a subscription and save at 1024 pixels, and there are no ads. Premium adds video, the ten new effects, settings that move, date stamps, masks and two preset packs, plus exports at 2048 pixels and 4K and three-second loops. It is monthly or yearly, and the yearly plan starts with a 7-day free trial.
 
 ### What effects are in it?
-Noise, Pixel Shift, RGB Split, Scanlines, Distortion, Corruption, Feedback, VHS, CRT, Chroma, Film Grain, Bit Crush, Interlace, Invert, Datamosh, Dither, Analogue Static, Pixel Sort and Signal Sync. Any number at once, in any order.
+Twenty-nine. Nineteen classics are free: Noise, Pixel Shift, RGB Split, Scanlines, Distortion, Corruption, Feedback, VHS, CRT, Chroma, Film, Crush, Interlace, Invert, Datamosh, Dither, Static, Sort and Sync. Ten more come with Premium: Satellite, Ghosting, Slow Scan, Teletext, Fax, Repost, Webcam, Handheld, Magnet and Chewed. Stack them in any order.
 
 ### How is it different from other glitch apps?
 Most of them lay a fixed pattern over whatever you give them, so every photo comes out wearing the same costume. Each MODUL8 effect models one specific hardware failure and reads the pixels underneath before deciding what to do, so the same settings give different results on different photographs.
 
 ### Does it upload my photos?
-No. Every effect runs locally on your iPhone. There is no account, no render queue and no server holding your images. The free version serves ads, which is the only part of the app that touches the network.
+No. Everything is processed on your iPhone and nothing is uploaded. There is no render queue and no server holding your images, and there are no ads.
 
 ### Can it make glitch videos?
-Yes. Any finished image can be exported as a seamless looping video with the effect parameters animating across the loop, straight to your camera roll.
+Yes. Open a clip, trim it to a minute or less and save it at 1080p or 4K with its sound. You can also turn a still into a three-second loop, with any setting drifting, stepping or sweeping across it. Video and loops come with Premium.
 
 ### Which iPhones does it work on?
-Any iPhone running iOS 15 or later. The app is about 6 MB.
+Any iPhone running iOS 17 or later. The app is about 4 MB.
 
 ---
 
@@ -238,9 +317,9 @@ Why it looks like that
 
 Cyanotype paper is blind to red and green. It responds only to ultraviolet and the deepest blue, which means it reads a scene at completely the wrong brightness, and that is the whole point of it.
 
-Look at the picture above. To the camera, those yellow flowers and that sky are the same brightness: measure them and the flowers come out at 177, the sky at 167. You could not tell them apart in a black and white conversion.
+Look at the picture above. To the camera, those yellow flowers and that sky are the same brightness: measure them and the flowers come out at 177, the sky at 165. You could not tell them apart in a black and white conversion.
 
-On the paper they end up at opposite ends. The flowers fall to 57 and the sky rises to 222, because yellow carries almost no light this sensitiser can use while the sky is carrying more than the sheet can hold. Nothing was adjusted to make that happen; it is what the chemistry does.
+On the paper they end up at opposite ends. The flowers fall to 69 and the sky rises to 225, because yellow carries almost no light this sensitiser can use while the sky is carrying more than the sheet can hold. Nothing was adjusted to make that happen; it is what the chemistry does.
 
 Two colours your camera recorded as equally bright come out at opposite ends of the print.
 
@@ -306,7 +385,7 @@ No. No account, no analytics, no server, and no networking code of its own. Phot
 
 Free, and the free version is the whole simulation. Nothing is watermarked and nothing is held back to make a point.
 
-# Harmony Palette: Color Wheel & Palette App for iPhone and iPad
+# Harmony Palette: Color Wheel & Palette App for iPhone
 Source: https://lf.wtf/harmony/
 
 ## harmony palette
@@ -477,9 +556,9 @@ No advertising, no analytics, no data collection of any kind.
 
 Palettes and folders follow you between your own devices, through your private database.
 
-#### iPhone and iPad
+#### iPhone
 
-iOS 17.2 or later. One purchase covers both.
+iOS 17.2 or later.
 
 ### questions
 
@@ -575,40 +654,32 @@ Source: https://lf.wtf/modul8/privacy/
 MODUL8
 
 ## Privacy Policy
-Last updated 22 November 2025
-The short version. Your photos and videos are processed on your iPhone and are never uploaded anywhere. There is no account and no image server.
-The free version shows ads through Google AdMob, and that is the one part of the app that involves a third party. Premium removes ads.
+Last updated 30 September 2026
+The short version. Your photos and videos are processed on your iPhone and are never uploaded anywhere. There is no image server.
+From version 2.0 there is no advertising and no Google AdMob. The App Store privacy label reads Data Not Collected. Version 1.2 and earlier showed ads in the free tier through Google AdMob, which is covered at the end for anyone still running an old copy.
+
+### Which version this describes
+This policy describes MODUL8 2.0, released on 24 September 2026, and every version after it. 2.0 removes advertising entirely: Google AdMob is gone from the app. If you have not updated and are still running 1.2 or earlier, the section on advertising near the end applies to your copy.
 
 ### What the app does with your media
 MODUL8 needs access to your photo library for two things: loading the images or videos you choose, and saving the finished versions back. That is the whole of it.
-All image and video processing happens locally on your device. Your originals and your edits are never uploaded to our servers or to any third-party server, and we have no access to the contents of your library.
+All image and video processing happens locally on your device. Your originals and your edits are never uploaded to our servers or to any third-party server, and we have no access to the contents of your library. This has been true in every version.
 
-### Usage data
-Some usage data is collected automatically when you use the app. It may include your device type, mobile operating system, IP address, unique device identifiers and other diagnostic data, along with information about how and when the app is used.
+### Version 2.0 onwards: no ads, no data collected
+MODUL8 shows no ads and does not include Google AdMob or any other advertising SDK. Nothing you open in it is uploaded, and its App Store privacy label reads Data Not Collected: we do not collect data from the app, and nothing in it is used to track you across apps or websites.
+Because we hold nothing, there is no data to request or delete. Deleting the app removes its settings with it.
 
-### Advertising
-We use Google AdMob to show ads in the free version. AdMob may collect and use:
-- Device identifiers: the Advertising Identifier (IDFA) on iOS, only if you allow it at the App Tracking Transparency prompt.
-- Usage data: information about how you interact with the ads.
-This is used to serve personalised ads and to measure how they perform. You can turn personalised tracking off at any time in Settings › Privacy & Security › Tracking. For details on what Google collects, see the Google Privacy Policy.
+### Version 1.2 and earlier: advertising
+The free tier of version 1.2 and earlier showed ads through Google AdMob, the one part of those versions that involved a third party. Premium removed them, and updating to 2.0 removes AdMob altogether. In those versions AdMob could collect and use:
+- Device identifiers: the Advertising Identifier (IDFA) on iOS, and only if you allowed it at the App Tracking Transparency prompt.
+- Usage data: information about how you interacted with the ads, along with device type, operating system and IP address.
+That was used to serve personalised ads and to measure how they performed. You can turn personalised tracking off at any time in Settings › Privacy & Security › Tracking. For what Google collects and how long it keeps it, see the Google Privacy Policy. That data sits with Google rather than with us, so a request to see or delete it goes to them.
 
-### How the data is used
-- To provide and maintain the app, including monitoring how it is used.
-- To respond to requests you send us.
-- To show advertisements through Google AdMob, which is what funds the free version.
-- In the event of a merger, sale or other transfer of assets, information may be part of what transfers.
-
-### Retention
-Personal data is retained only as long as it is needed for the purposes described here, or as long as required to meet legal obligations, resolve disputes and enforce our agreements.
-
-### Disclosure
-We may have to disclose personal data if required to by law or in response to a valid request from a public authority such as a court or government agency. We may also disclose it in good faith where it is necessary to comply with a legal obligation, protect our rights or property, investigate possible wrongdoing connected to the app, protect the personal safety of users or the public, or defend against legal liability.
+### Premium
+Premium is handled entirely by Apple through the App Store. The app asks the system whether a purchase is active and receives yes or no. It never sees your Apple Account, your name or any payment detail, and no payment information is stored in the app or sent anywhere by it. Apple's own handling of that transaction is covered by Apple's privacy policy, not this one.
 
 ### Children
-MODUL8 is not directed at anyone under 13, and we do not knowingly collect personally identifiable information from anyone under 13. If you are a parent or guardian and believe your child has given us personal data, please get in touch and we will remove it.
-
-### Links to other sites
-The app may link to sites we do not operate. We have no control over their content or their privacy practices, and we would suggest reading the policy of any site you visit.
+MODUL8 is not directed at anyone under 13, and we do not knowingly collect personally identifiable information from anyone under 13. From version 2.0 the app collects nothing from anybody, of any age. If you are a parent or guardian and believe your child gave us personal data through an earlier version, please get in touch and we will remove it.
 
 ### Changes to this policy
 This policy may be updated from time to time. Any changes are posted on this page and take effect once posted, and the date at the top changes with them.
@@ -1026,3 +1097,108 @@ Also here: CYANO, which turns photos into cyanotypes.
 Source: https://lf.wtf/grnge/privacy/
 
 GRNGE does not collect any data. There is no account, no analytics, no advertising, no tracking and no third-party code in the app, and the app contains no networking code. The only network traffic is between the phone and Apple, when the App Store checks the subscription. Photos are chosen through the system picker, which needs no permission and hands the app only the picture chosen, or taken with the camera, which is asked for only when the camera button is tapped. Every effect and the subject cut-out run on the phone; photos are never uploaded. A copy of the photo is kept inside the app with its print until the print or the app is deleted. The app asks for add-only access to Photos, used only when Print is tapped. GRNGE Pro is sold through Apple's In-App Purchase system; payment details never reach the developer. Rated 4+. Questions: L@LF.WTF.
+
+---
+
+# Carmeet: Need for Speed Underground 2's City, Rebuilt as a Browser Car Meet
+Source: https://lf.wtf/carmeet/
+
+## [image: Carmeet]
+Build your car. Cruise one shared city. Meet everyone online.
+Carmeet is a free multiplayer car meet that runs in your browser. The city, the 29 cars and the garage come from the PlayStation 2 disc of Need for Speed: Underground 2, taken apart file by file and rebuilt for the web. The racing is gone. What is left is the part everyone remembers: building a car and rolling up to show it off.
+Play free in your browser
+How it was made
+Carmeet Free roam · one shared city · everyone online
+29 cars to build
+1 shared city
+2,000 players per server
+0 downloads
+Sound
+Trailer, captured in the game
+### What it is
+[image: The Carmeet garage: a silver Nissan 350Z on the turntable, with the Customize menu open]
+01 · Garage
+#### Build it
+Pick one of 29 cars from the game and work through the original garage. The menu icons, the italic menu font and the gauges are decoded from the disc too, so it looks the way it did in 2004.
+Body kits
+Hoods and wings
+Paint
+Vinyls
+Wheels
+Tint
+Neon
+[image: Driving through the city at night with the speedometer, map and chat on screen]
+02 · Streets
+#### Cruise it
+Everyone who opens the link lands in the same city. Each car drives on its own torque curve and gearing from the game's data. Talk over proximity voice, type in the chat, and read the name plates to see who is who.
+[image: A player out of the car, dancing next to a parked 350Z on a city street]
+03 · The meet
+#### Park it
+Stop anywhere, get out and walk. Sprint over to someone's car, then wave, cheer, point, dance or sit. Your driver is yours to dress, and they follow you onto the street.
+[image: A photo taken with the in-game phone: players cheering between rows of parked cars]
+[image: A selfie taken with the in-game phone's front camera at the meet]
+Both photos were taken with the phone in the game.
+04 · Phone
+#### Shoot it
+Take out your phone and shoot the meet, back camera or selfie. Every photo gets a film grain and grade, is saved in your browser, and shows up in the garage.
+[image: A blue car with a wing on the garage turntable]
+[image: A red car with a web vinyl in the garage]
+[image: Players gathered between parked cars at the meet]
+[image: A player cheering beside a white car with neon underglow]
+[image: The in-game phone raised to photograph the crowd]
+[image: The city from above, with a convoy on the road between towers]
+[image: The meet from directly above: rows of customized cars]
+Frames from the trailer. Scroll sideways for more.
+### How it was made
+Underground 2 came out in 2004. Its city was never meant to leave the console, so every step of getting it into a browser had to be worked out from the bytes on the disc.
+#### Read the disc
+The disc image is only ever read, never changed. Its files sit inside packed archives, indexed by hashed names. Rebuilding the hash function recovered the names of 1,381 of its 1,392 files.
+ZDIR index · 24-byte records · h = 33 × h + c
+#### Decode the geometry
+EA stored its models as PlayStation 2 vector unit packets with compressed positions. Where a triangle strip breaks is decided by the vector unit's random number generator, so that generator was rebuilt too. It matches all 140,493 strips it was checked against.
+VIF packets · VU1 random number generator · 140,493 strips
+#### Rebuild the city
+Scenery placement records, texture archives and palettes were decoded and turned into web-ready models. The city streams in around you, cell by cell, so it runs on a phone.
+TPK textures · 4 and 8-bit palettes · streamed cells
+#### Restore the garage
+The 29 player cars come with their body kits, paint, vinyls and wheels. The original garage, the menu icons, the font and the custom gauges are the game's own, decoded and used as they are.
+29 cars · original garage · 496 menu textures · 7 fonts
+#### Recover the sound
+Engine sounds are decoded from the game's own recordings, one grain per engine cycle, and played through each car's rev range.
+Engine sweeps · idle loops · torque curves
+#### Add the people
+None of the social side is on the disc. The walking characters, emotes, phone camera, chat, proximity voice and name plates are new. One server holds up to 2,000 players in the same city, and each player is only sent the people near them.
+WebSockets · WebRTC voice · 2,000 players per server
+2026
+Carmeet started as a way to walk around the city in a Quest headset and take photographs. The driving came next, and then other people.
+### Play
+Open the link, build your car and drive. There is nothing to install. The server asks for an email the first time you join, and other players never see it.
+Keyboard
+W A S D drive
+Space handbrake
+E get out
+G garage
+P phone
+T chat
+Gamepad
+Left stick steers or walks. Triggers are gas and brake. B gets out and back in.
+Touch
+A steering pad and pedals on screen, in portrait or landscape. The pad walks you when you are out of the car.
+[image: Carmeet on a phone, driving with the touch controls]
+It works on phones too. Touch controls appear by themselves, and a friend on the same link shows up on your street.
+### Questions
+Is Carmeet free?
+Yes. It runs in the browser and costs nothing to play. There is nothing to download or install.
+Does it work on a phone?
+Yes. Touch controls appear on phones and tablets, in portrait or landscape. Keyboards and gamepads work on a computer.
+Can you race?
+There are no races. Carmeet is about building a car, cruising and meeting up.
+Why does it ask for an email?
+The public server asks for an email once, before you join. It stays with the host, and other players never see it.
+Is Carmeet made by EA?
+No. Carmeet is an independent fan project by Levi Foster. It is not affiliated with, endorsed or sponsored by Electronic Arts.
+The garage is open and the street is waiting.
+Play free in your browser
+
+
+---

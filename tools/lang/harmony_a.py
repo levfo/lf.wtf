@@ -15,12 +15,12 @@ T = {
         "Harmony Palette: ruota dei colori", "Harmony Palette: カラーホイール",
         "Harmony Palette: 색상환", "Harmony Palette: kleurenwiel",
         "Harmony Palette: roda de cores", "Harmony Palette：色轮"),
-    "Palette App for iPhone and iPad": (
-        "Paletten-App für iPhone und iPad", "app de paletas para iPhone y iPad",
-        "app de paletas para iPhone y iPad", "application de palettes pour iPhone et iPad",
-        "app di palette per iPhone e iPad", "iPhone と iPad のためのパレットアプリ",
-        "iPhone과 iPad를 위한 팔레트 앱", "palet-app voor iPhone en iPad",
-        "app de paletas para iPhone e iPad", "为 iPhone 和 iPad 打造的调色板应用"),
+    "Palette App for iPhone": (
+        "Paletten-App fürs iPhone", "app de paletas para iPhone",
+        "app de paletas para iPhone", "application de palettes pour iPhone",
+        "app di palette per iPhone", "iPhone のためのパレットアプリ",
+        "iPhone을 위한 팔레트 앱", "palet-app voor iPhone",
+        "app de paletas para iPhone", "为 iPhone 打造的调色板应用"),
     "A color harmony app for designers. Eight harmony types on an interactive RGB and RYB color wheel, 160 curated palettes, a WCAG contrast checker, color blindness simulation, and export to PDF, SVG, SwiftUI, UIKit, CSS and Tailwind. In eleven languages, color names included.": (
         "Eine Farbharmonie-App für Gestalterinnen und Gestalter. Acht Harmonietypen auf einem "
         "interaktiven RGB- und RYB-Farbkreis, 160 kuratierte Paletten, ein WCAG-Kontrastprüfer, "

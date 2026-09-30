@@ -39,3 +39,6 @@
 
 /grnge/assets/*
   Cache-Control: public, max-age=31536000, immutable
+
+/carmeet/assets/*
+  Cache-Control: public, max-age=31536000, immutable

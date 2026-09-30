@@ -1350,17 +1350,17 @@ T.update({
         "telefone, porque o app não tem nenhum código de rede.",
         "无订阅、无账号、无云端、无广告、无水印、无应用内购买，也不会让你再花钱去解锁\"好胶片\"。"
         "你的照片永远不会离开你的手机，因为这个应用里根本没有联网代码。"),
-    "Requires an iPhone that can capture Apple ProRAW.": (
-        "Erfordert ein iPhone, das Apple ProRAW aufnehmen kann.",
-        "Requiere un iPhone capaz de capturar Apple ProRAW.",
-        "Requiere un iPhone capaz de capturar Apple ProRAW.",
-        "Nécessite un iPhone capable de photographier en Apple ProRAW.",
-        "Richiede un iPhone in grado di scattare in Apple ProRAW.",
-        "Apple ProRAW で撮影できる iPhone が必要です。",
-        "Apple ProRAW로 촬영할 수 있는 iPhone이 필요합니다.",
-        "Vereist een iPhone die Apple ProRAW kan vastleggen.",
-        "Requer um iPhone capaz de capturar Apple ProRAW.",
-        "需要一台能够拍摄 Apple ProRAW 的 iPhone。"),
+    "Most accurate on an iPhone that can capture Apple ProRAW. Works on any iPhone running iOS 17.2 or later.": (
+        "Am genauesten auf einem iPhone, das Apple ProRAW aufnehmen kann. Läuft auf jedem iPhone mit iOS 17.2 oder neuer.",
+        "Más preciso en un iPhone capaz de capturar Apple ProRAW. Funciona en cualquier iPhone con iOS 17.2 o posterior.",
+        "Más preciso en un iPhone capaz de capturar Apple ProRAW. Funciona en cualquier iPhone con iOS 17.2 o posterior.",
+        "Le plus fidèle sur un iPhone capable de photographier en Apple ProRAW. Fonctionne sur tout iPhone sous iOS 17.2 ou plus récent.",
+        "Più accurato su un iPhone in grado di scattare in Apple ProRAW. Funziona su qualsiasi iPhone con iOS 17.2 o successivo.",
+        "Apple ProRAW で撮影できる iPhone で最も正確に動作します。iOS 17.2 以降のすべての iPhone で使えます。",
+        "Apple ProRAW로 촬영할 수 있는 iPhone에서 가장 정확합니다. iOS 17.2 이상의 모든 iPhone에서 사용할 수 있습니다.",
+        "Het nauwkeurigst op een iPhone die Apple ProRAW kan vastleggen. Werkt op elke iPhone met iOS 17.2 of nieuwer.",
+        "Mais preciso num iPhone capaz de capturar Apple ProRAW. Funciona em qualquer iPhone com iOS 17.2 ou posterior.",
+        "在能够拍摄 Apple ProRAW 的 iPhone 上最为准确。可在任何运行 iOS 17.2 或更高版本的 iPhone 上使用。"),
     "Questions": ("Fragen", "Preguntas", "Preguntas", "Questions", "Domande", "よくある質問",
                   "질문", "Vragen", "Perguntas", "常见问题"),
     "The things people ask first.": (
@@ -1577,17 +1577,17 @@ T.update({
         "Sur quels iPhone fonctionne-t-il ?", "Su quali iPhone funziona?",
         "どの iPhone で使えますか。", "어떤 iPhone에서 쓸 수 있나요?",
         "Op welke iPhones werkt het?", "Em quais iPhones funciona?", "支持哪些 iPhone？"),
-    "Any iPhone that can capture Apple ProRAW, running iOS 17.2 or later.": (
-        "Jedes iPhone, das Apple ProRAW aufnehmen kann, mit iOS 17.2 oder neuer.",
-        "Cualquier iPhone capaz de capturar Apple ProRAW, con iOS 17.2 o posterior.",
-        "Cualquier iPhone capaz de capturar Apple ProRAW, con iOS 17.2 o posterior.",
-        "Tout iPhone capable de photographier en Apple ProRAW, sous iOS 17.2 ou version ultérieure.",
-        "Qualsiasi iPhone in grado di scattare in Apple ProRAW, con iOS 17.2 o successivo.",
-        "Apple ProRAW で撮影でき、iOS 17.2 以降が動作している iPhone。",
-        "Apple ProRAW로 촬영할 수 있고 iOS 17.2 이상이 설치된 iPhone.",
-        "Elke iPhone die Apple ProRAW kan vastleggen, met iOS 17.2 of nieuwer.",
-        "Qualquer iPhone capaz de capturar Apple ProRAW, com iOS 17.2 ou posterior.",
-        "任何能够拍摄 Apple ProRAW 且运行 iOS 17.2 或更高版本的 iPhone。"),
+    "Any iPhone running iOS 17.2 or later. Most accurate on one that can capture Apple ProRAW.": (
+        "Jedes iPhone mit iOS 17.2 oder neuer. Am genauesten auf einem, das Apple ProRAW aufnehmen kann.",
+        "Cualquier iPhone con iOS 17.2 o posterior. Más preciso en uno capaz de capturar Apple ProRAW.",
+        "Cualquier iPhone con iOS 17.2 o posterior. Más preciso en uno capaz de capturar Apple ProRAW.",
+        "Tout iPhone sous iOS 17.2 ou plus récent. Le plus fidèle sur un modèle capable de photographier en Apple ProRAW.",
+        "Qualsiasi iPhone con iOS 17.2 o successivo. Più accurato su uno in grado di scattare in Apple ProRAW.",
+        "iOS 17.2 以降のすべての iPhone。Apple ProRAW で撮影できる機種で最も正確に動作します。",
+        "iOS 17.2 이상의 모든 iPhone. Apple ProRAW로 촬영할 수 있는 기종에서 가장 정확합니다.",
+        "Elke iPhone met iOS 17.2 of nieuwer. Het nauwkeurigst op een die Apple ProRAW kan vastleggen.",
+        "Qualquer iPhone com iOS 17.2 ou posterior. Mais preciso num que consiga capturar Apple ProRAW.",
+        "任何运行 iOS 17.2 或更高版本的 iPhone。在能够拍摄 Apple ProRAW 的机型上最为准确。"),
 
     # --- JSON-LD. Same claims, phrased for a machine reading the graph rather than a visitor.
     "A film simulation camera for iPhone that models the photographic process itself rather than "

@@ -7,16 +7,27 @@ MODUL8 already ships in these ten languages, and a site that calls an effect one
 button in the app calls it another reads as machine translation even when both are correct on their
 own. They were pulled straight out of `GlitchArt/Localizable.xcstrings`, so the two cannot drift.
 
-Preset names (VHS, CRT, Cyber, Ghost, Retro, Film, Melt, Static, Fried) stay in English throughout,
-because that is what the app shows on its preset row in every language.
+**The ten Premium effects that arrived in 2.0, and the Dead Air and Y2K preset packs, use the names
+from the app's own localised App Store listing for 2.0** (the `description` of the iTunes lookup
+for each storefront), for the same reason. The listing is the one place those names are published
+per language, so the page says Bandsalat, Masticada, テープ噛み and 绞带 exactly where the app does.
+Words for the 2.0 features follow the listing too: German Stempel and Masken, French tampons, and so
+on. Premium stays in Latin letters everywhere, as it already did on this page before 2.0.
+
+Preset names (the CRT and Cyber presets in the gallery captions) stay in English throughout,
+because that is what the app shows on its preset row in every language. The two Premium packs are
+the exception: the listing translates Dead Air, so the page does as well, and Y2K stays Y2K except
+in Chinese, where the listing calls it 千禧.
 """
 
 KEEP = {
     "MODUL8", "FRMT", "CYANO", "Levi Foster", "iPhone", "App Store",
-    "Free · iPhone · iOS 15+",
+    "Free · iPhone · iOS 17+",
     "Effects: VHS · Chroma · Interlace · Sync · Static · Scanlines",
     "Effects: Datamosh · Corruption · Pixel Shift · Pixel Sort · Feedback",
     "Effects: CRT · Crush · Dither · RGB Split · Invert · Film · Noise · Distortion",
+    "Effects: Satellite · Ghosting · Slow Scan · Teletext · Fax · Repost · Webcam · Handheld · "
+    "Magnet · Chewed",
     "CRT + Scanlines + RGB Split", "VHS + Chroma + RGB Split",
     "Distortion + RGB Split + Noise", "Crush + Dither + Scanlines + Sort",
     "Distortion + RGB Split + Sort",
@@ -64,7 +75,31 @@ EFFECTS = {
              "SINCRONIA", "信号同步"),
 }
 
+#: The ten Premium effects new in 2.0, named as the app's localised 2.0 App Store listing names them.
+PREMIUM_EFFECTS = {
+    "SATELLITE": ("SATELLIT", "SATÉLITE", "SATÉLITE", "SATELLITE", "SATELLITE", "衛星放送",
+                  "위성 방송", "SATELLIET", "SATÉLITE", "卫星"),
+    "GHOSTING": ("GEISTERBILD", "DOBLE IMAGEN", "DOBLE IMAGEN", "DÉDOUBLEMENT", "SDOPPIAMENTO",
+                 "ゴースト障害", "고스트 현상", "SPOOKBEELD", "SOMBRA", "鬼影"),
+    "SLOW SCAN": ("SLOW SCAN", "SLOW SCAN", "SLOW SCAN", "SLOW SCAN", "SLOW SCAN", "低速走査",
+                  "저속 주사", "SLOW SCAN", "SLOW SCAN", "慢扫描"),
+    "TELETEXT": ("VIDEOTEXT", "TELETEXTO", "TELETEXTO", "TÉLÉTEXTE", "TELEVIDEO", "文字放送",
+                 "문자방송", "TELETEKST", "TELETEXTO", "图文电视"),
+    "FAX": ("FAX", "FAX", "FAX", "FAX", "FAX", "FAX", "팩스", "FAX", "FAX", "传真"),
+    "REPOST": ("REPOST", "RESUBIDA", "RESUBIDA", "REPOST", "REPOST", "再投稿", "재업로드", "REPOST",
+               "REPOST", "电子包浆"),
+    "WEBCAM": ("WEBCAM", "WEBCAM", "WEBCAM", "WEBCAM", "WEBCAM", "WEBカメラ", "웹캠", "WEBCAM",
+               "WEBCAM", "摄像头"),
+    "HANDHELD": ("HANDHELD", "PORTÁTIL", "PORTÁTIL", "CONSOLE", "CONSOLE", "携帯ゲーム機",
+                 "휴대 게임기", "HANDHELD", "PORTÁTIL", "掌机"),
+    "MAGNET": ("MAGNET", "IMÁN", "IMÁN", "AIMANT", "CALAMITA", "磁石", "자석", "MAGNEET", "ÍMÃ",
+               "磁化"),
+    "CHEWED": ("BANDSALAT", "MASTICADA", "MASTICADA", "BANDE MANGÉE", "NASTRO MANGIATO",
+               "テープ噛み", "테이프 씹힘", "BANDSALADE", "ENROSCADA", "绞带"),
+}
+
 T = dict(EFFECTS)
+T.update(PREMIUM_EFFECTS)
 
 T.update({
     "MODUL8: Glitch Art App for iPhone | Free Glitch Photo Effects": (
@@ -78,62 +113,12 @@ T.update({
         "MODUL8: glitch-art-app voor iPhone | Gratis glitch-fotoeffecten",
         "MODUL8: app de glitch art para iPhone | Efeitos glitch grátis",
         "MODUL8｜iPhone 故障艺术应用 | 免费故障照片特效"),
-    "MODUL8 is a free glitch art app for iPhone. 19 stackable effects modelled on real hardware "
-    "failures: VHS, CRT, datamosh, pixel sorting, RGB split. Runs on device.": (
-        "MODUL8 ist eine kostenlose Glitch-Art-App für iPhone. 19 stapelbare Effekte, echten "
-        "Hardwarefehlern nachgebildet: VHS, CRT, Datamosh, Pixel Sorting, RGB-Trennung. Läuft auf "
-        "dem Gerät.",
-        "MODUL8 es una app de glitch art gratis para iPhone. 19 efectos apilables modelados sobre "
-        "fallos reales de hardware: VHS, CRT, datamosh, ordenación de píxeles, separación RGB. "
-        "Funciona en el dispositivo.",
-        "MODUL8 es una app de glitch art gratis para iPhone. 19 efectos apilables modelados sobre "
-        "fallas reales de hardware: VHS, CRT, datamosh, ordenación de píxeles, separación RGB. "
-        "Funciona en el dispositivo.",
-        "MODUL8 est une app de glitch art gratuite pour iPhone. 19 effets empilables modélisés sur "
-        "de vraies pannes de matériel : VHS, CRT, datamosh, tri de pixels, séparation RVB. "
-        "Fonctionne sur l'appareil.",
-        "MODUL8 è un'app di glitch art gratis per iPhone. 19 effetti impilabili modellati su guasti "
-        "hardware reali: VHS, CRT, datamosh, pixel sorting, separazione RGB. Gira sul dispositivo.",
-        "MODUL8 は iPhone 用の無料グリッチアートアプリです。実在のハードウェア故障を再現した、"
-        "積み重ねられる 19 のエフェクト。VHS、CRT、データモッシュ、ピクセルソート、RGB 分離。"
-        "処理は端末上で完結します。",
-        "MODUL8는 iPhone용 무료 글리치 아트 앱입니다. 실제 하드웨어 고장을 모델링한, 쌓아 올릴 수 "
-        "있는 19가지 효과. VHS, CRT, 데이터모시, 픽셀 정렬, RGB 분리. 기기 안에서 처리합니다.",
-        "MODUL8 is een gratis glitch-art-app voor iPhone. 19 stapelbare effecten gemodelleerd op "
-        "echte hardwarestoringen: VHS, CRT, datamosh, pixel sorting, RGB-splitsing. Draait op het "
-        "toestel.",
-        "O MODUL8 é um app de glitch art grátis para iPhone. 19 efeitos empilháveis modelados "
-        "sobre falhas reais de hardware: VHS, CRT, datamosh, ordenação de pixels, separação RGB. "
-        "Roda no aparelho.",
-        "MODUL8 是一款 iPhone 上的免费故障艺术应用。19 种可叠加效果，"
-        "每一种都对应真实硬件的故障：VHS、CRT、数据莫氏、像素排序、RGB 分离。全部在设备上运行。"),
     "MODUL8: Glitch Art App for iPhone": (
         "MODUL8: Glitch-Art-App für iPhone", "MODUL8: app de glitch art para iPhone",
         "MODUL8: app de glitch art para iPhone", "MODUL8 : app de glitch art pour iPhone",
         "MODUL8: app di glitch art per iPhone", "MODUL8｜iPhone 用グリッチアートアプリ",
         "MODUL8｜iPhone 글리치 아트 앱", "MODUL8: glitch-art-app voor iPhone",
         "MODUL8: app de glitch art para iPhone", "MODUL8｜iPhone 故障艺术应用"),
-    "19 stackable glitch effects modelled on real hardware failures: VHS, CRT, datamosh, pixel "
-    "sorting. Free on iPhone.": (
-        "19 stapelbare Glitch-Effekte, echten Hardwarefehlern nachgebildet: VHS, CRT, Datamosh, "
-        "Pixel Sorting. Kostenlos auf iPhone.",
-        "19 efectos glitch apilables modelados sobre fallos reales de hardware: VHS, CRT, "
-        "datamosh, ordenación de píxeles. Gratis en iPhone.",
-        "19 efectos glitch apilables modelados sobre fallas reales de hardware: VHS, CRT, "
-        "datamosh, ordenación de píxeles. Gratis en iPhone.",
-        "19 effets glitch empilables modélisés sur de vraies pannes de matériel : VHS, CRT, "
-        "datamosh, tri de pixels. Gratuit sur iPhone.",
-        "19 effetti glitch impilabili modellati su guasti hardware reali: VHS, CRT, datamosh, "
-        "pixel sorting. Gratis su iPhone.",
-        "実在のハードウェア故障を再現した、積み重ねられる 19 のグリッチエフェクト。VHS、CRT、"
-        "データモッシュ、ピクセルソート。iPhone で無料。",
-        "실제 하드웨어 고장을 모델링한, 쌓아 올릴 수 있는 19가지 글리치 효과. VHS, CRT, "
-        "데이터모시, 픽셀 정렬. iPhone에서 무료.",
-        "19 stapelbare glitch-effecten gemodelleerd op echte hardwarestoringen: VHS, CRT, "
-        "datamosh, pixel sorting. Gratis op iPhone.",
-        "19 efeitos glitch empilháveis modelados sobre falhas reais de hardware: VHS, CRT, "
-        "datamosh, ordenação de pixels. Grátis no iPhone.",
-        "19 种可叠加的故障效果，对应真实硬件的故障：VHS、CRT、数据莫氏、像素排序。iPhone 上免费。"),
     "A Tokyo crossing dissolved into vertical streaks by MODUL8's pixel sorting.": (
         "Eine Tokioter Kreuzung, vom Pixel Sorting in MODUL8 in senkrechte Schlieren aufgelöst.",
         "Un cruce de Tokio disuelto en vetas verticales por la ordenación de píxeles de MODUL8.",
@@ -165,71 +150,6 @@ T.update({
                   "fotos", "故意"),
     "purpose.": ("mit Absicht.", "a propósito.", "a propósito.", "exprès.", "apposta.",
                  "壊してみる。", "부숴 보세요.", "met opzet.", "de propósito.", "弄坏。"),
-    "MODUL8 is an image modulation kit for iPhone. Nineteen effects, each one modelled on a\n"
-    "      specific way that real hardware used to fail: tape that lost tracking, tubes that "
-    "bloomed at\n      the edges, compression that gave up halfway through a frame. Stack them, "
-    "reorder them, and\n      turn a photo into something that looks like it came off a machine "
-    "that was already dying.": (
-        "MODUL8 ist ein Baukasten zur Bildmodulation für iPhone. Neunzehn Effekte, jeder einer "
-        "bestimmten Art nachgebildet, auf die echte Hardware früher versagte: Band, das die Spur "
-        "verlor, Röhren, die an den Rändern blühten, Kompression, die mitten im Bild aufgab. "
-        "Staple sie, ordne sie um, und mach aus einem Foto etwas, das aussieht, als käme es aus "
-        "einer Maschine, die schon im Sterben lag.",
-        "MODUL8 es un kit de modulación de imagen para iPhone. Diecinueve efectos, cada uno "
-        "modelado sobre una forma concreta en que fallaba el hardware real: cinta que perdía el "
-        "tracking, tubos que florecían por los bordes, compresión que se rendía a mitad de "
-        "fotograma. Apílalos, reordénalos y convierte una foto en algo que parece salido de una "
-        "máquina que ya se estaba muriendo.",
-        "MODUL8 es un kit de modulación de imagen para iPhone. Diecinueve efectos, cada uno "
-        "modelado sobre una forma concreta en que fallaba el hardware real: cinta que perdía el "
-        "tracking, tubos que florecían por los bordes, compresión que se rendía a mitad de cuadro. "
-        "Apílalos, reordénalos y convierte una foto en algo que parece salido de una máquina que "
-        "ya se estaba muriendo.",
-        "MODUL8 est un kit de modulation d'image pour iPhone. Dix-neuf effets, chacun modélisé sur "
-        "une façon précise dont le matériel tombait en panne : la bande qui perdait la piste, les "
-        "tubes qui fleurissaient sur les bords, la compression qui abandonnait au milieu d'une "
-        "image. Empilez-les, réordonnez-les, et transformez une photo en quelque chose qui semble "
-        "sorti d'une machine déjà mourante.",
-        "MODUL8 è un kit di modulazione dell'immagine per iPhone. Diciannove effetti, ognuno "
-        "modellato su un modo preciso in cui l'hardware vero si guastava: il nastro che perdeva il "
-        "tracking, i tubi che fiorivano ai bordi, la compressione che si arrendeva a metà "
-        "fotogramma. Impilali, riordinali, e trasforma una foto in qualcosa che sembra uscito da "
-        "una macchina già morente.",
-        "MODUL8 は iPhone のための画像モジュレーションキットです。十九のエフェクトは、いずれも"
-        "実在のハードウェアが壊れたときの特定の壊れ方を再現しています。トラッキングを失ったテープ、"
-        "端がにじんだブラウン管、一枚の途中で諦めた圧縮。積み重ね、順序を入れ替えれば、"
-        "すでに死にかけていた機械から出てきたような一枚になります。",
-        "MODUL8는 iPhone을 위한 이미지 변조 키트입니다. 열아홉 가지 효과가 각각 실제 하드웨어가 "
-        "고장 나던 특정한 방식을 모델링합니다. 트래킹을 잃은 테이프, 가장자리가 번진 브라운관, "
-        "한 프레임 도중에 포기해 버린 압축. 쌓고, 순서를 바꾸면, 이미 죽어 가던 기계에서 나온 것 "
-        "같은 사진이 됩니다.",
-        "MODUL8 is een beeldmodulatiekit voor iPhone. Negentien effecten, elk gemodelleerd op een "
-        "specifieke manier waarop echte hardware kapotging: band die de tracking verloor, buizen "
-        "die aan de randen opbloeiden, compressie die halverwege een beeld opgaf. Stapel ze, "
-        "herschik ze, en maak van een foto iets dat eruitziet alsof het van een machine komt die "
-        "al aan het sterven was.",
-        "O MODUL8 é um kit de modulação de imagem para iPhone. Dezenove efeitos, cada um modelado "
-        "sobre um jeito específico pelo qual o hardware de verdade falhava: fita que perdia o "
-        "tracking, tubos que floresciam nas bordas, compressão que desistia no meio de um quadro. "
-        "Empilhe, reordene, e transforme uma foto em algo que parece ter saído de uma máquina que "
-        "já estava morrendo.",
-        "MODUL8 是一套 iPhone 上的图像调制工具。十九种效果，每一种都对应真实硬件当年出错的某种"
-        "具体方式：跑了带的磁带、边缘晕开的显像管、在一帧中途放弃的压缩。把它们叠起来、换个顺序，"
-        "一张照片就会变成像是从一台已经在垂死的机器里吐出来的东西。"),
-    "It is free, every effect runs on your phone, and your photos never leave the device.": (
-        "Sie ist kostenlos, jeder Effekt läuft auf deinem Telefon, und deine Fotos verlassen das "
-        "Gerät nie.",
-        "Es gratis, cada efecto se ejecuta en tu móvil, y tus fotos nunca salen del dispositivo.",
-        "Es gratis, cada efecto se ejecuta en tu celular, y tus fotos nunca salen del dispositivo.",
-        "C'est gratuit, chaque effet tourne sur votre téléphone, et vos photos ne quittent jamais "
-        "l'appareil.",
-        "È gratis, ogni effetto gira sul tuo telefono, e le tue foto non lasciano mai il "
-        "dispositivo.",
-        "無料で、どのエフェクトもあなたの端末の上で動き、写真が端末の外に出ることはありません。",
-        "무료이고, 모든 효과가 당신의 휴대폰에서 돌아가며, 사진은 절대 기기를 떠나지 않습니다.",
-        "Het is gratis, elk effect draait op je telefoon, en je foto's verlaten het toestel nooit.",
-        "É grátis, cada efeito roda no seu telefone, e suas fotos nunca saem do aparelho.",
-        "它是免费的，每一种效果都在你的手机上运行，你的照片永远不会离开设备。"),
     "Download on the App Store": (
         "Im App Store laden", "Descargar en la App Store", "Descargar en la App Store",
         "Télécharger dans l'App Store", "Scarica dall'App Store", "App Store でダウンロード",
@@ -386,22 +306,6 @@ T.update({
         "把它们一路拖到楼群变成竖直的雨。数据莫氏挑出区块，贴到根本不属于它们的位置。"
         "VHS 让颜色像磨损的磁头那样向侧面渗开。用同样的设置喂两张不同的照片，"
         "你会得到两张不同的画面，因为这种损坏是对图像的回应，而不是盖在上面的一层。"),
-    "Nothing is baked in. Nineteen effects, any number of them at once, in any order you like.": (
-        "Nichts ist festgelegt. Neunzehn Effekte, beliebig viele auf einmal, in beliebiger "
-        "Reihenfolge.",
-        "Nada está fijado. Diecinueve efectos, todos los que quieras a la vez, en el orden que "
-        "quieras.",
-        "Nada está fijado. Diecinueve efectos, todos los que quieras a la vez, en el orden que "
-        "quieras.",
-        "Rien n'est figé. Dix-neuf effets, autant que vous voulez à la fois, dans l'ordre qui vous "
-        "plaît.",
-        "Niente è fissato. Diciannove effetti, quanti ne vuoi insieme, nell'ordine che preferisci.",
-        "決め打ちのものはありません。十九のエフェクトを、いくつでも同時に、好きな順序で。",
-        "정해진 것은 없습니다. 열아홉 가지 효과를, 몇 개든 한꺼번에, 원하는 순서로.",
-        "Niets ligt vast. Negentien effecten, zoveel tegelijk als je wilt, in welke volgorde je "
-        "maar wilt.",
-        "Nada é fixo. Dezenove efeitos, quantos você quiser de uma vez, na ordem que preferir.",
-        "没有任何东西是写死的。十九种效果，想同时用几种就用几种，顺序随你。"),
     "The original photograph of a Tokyo crossing on a clear day: office towers, signage, a crowd "
     "on the striped crossing.": (
         "Das Originalfoto einer Tokioter Kreuzung an einem klaren Tag: Bürotürme, Schilder, eine "
@@ -472,39 +376,6 @@ T.update({
         "Ce qu'il y a vraiment dedans", "Cosa c'è davvero dentro", "実際に入っているもの",
         "실제로 들어 있는 것", "Wat er werkelijk in zit", "O que tem de fato ali dentro",
         "里面究竟有什么"),
-    "Nineteen effects. Every one of them is a real failure mode.": (
-        "Neunzehn Effekte. Jeder davon ist ein echter Fehlermodus.",
-        "Diecinueve efectos. Cada uno es un modo de fallo real.",
-        "Diecinueve efectos. Cada uno es un modo de falla real.",
-        "Dix-neuf effets. Chacun est un mode de panne réel.",
-        "Diciannove effetti. Ognuno è una modalità di guasto reale.",
-        "十九のエフェクト。そのどれもが、実在した壊れ方です。",
-        "열아홉 가지 효과. 그 하나하나가 실제로 있었던 고장 방식입니다.",
-        "Negentien effecten. Elk ervan is een echte storingsmodus.",
-        "Dezenove efeitos. Cada um deles é um modo de falha real.",
-        "十九种效果。每一种都是真实存在过的失效方式。"),
-    "They are not variations on a theme. Each one models something different, which is why "
-    "stacking\n      them gets interesting instead of muddy.": (
-        "Sie sind keine Variationen eines Themas. Jeder bildet etwas anderes nach, und darum wird "
-        "das Stapeln interessant statt matschig.",
-        "No son variaciones sobre un tema. Cada uno modela algo distinto, y por eso apilarlos "
-        "resulta interesante en vez de embarrado.",
-        "No son variaciones sobre un tema. Cada uno modela algo distinto, y por eso apilarlos "
-        "resulta interesante en vez de embarrado.",
-        "Ce ne sont pas des variations sur un thème. Chacun modélise quelque chose de différent, "
-        "et c'est pourquoi les empiler devient intéressant au lieu de devenir boueux.",
-        "Non sono variazioni su un tema. Ognuno modella qualcosa di diverso, ed è per questo che "
-        "impilarli diventa interessante invece che fangoso.",
-        "同じ主題の変奏ではありません。どれも別のものを再現しているので、重ねると濁るのではなく、"
-        "面白くなります。",
-        "하나의 주제에 대한 변주가 아닙니다. 각각이 서로 다른 것을 모델링하기 때문에, 쌓으면 "
-        "탁해지는 대신 흥미로워집니다.",
-        "Het zijn geen variaties op een thema. Elk modelleert iets anders, en daarom wordt stapelen "
-        "interessant in plaats van modderig.",
-        "Não são variações sobre um tema. Cada um modela algo diferente, e é por isso que empilhá-los "
-        "fica interessante em vez de embolado.",
-        "它们不是同一个主题的变奏。每一种模拟的都是不同的东西，所以叠起来会变得有意思，"
-        "而不是糊成一团。"),
     "Analogue video": ("Analoges Video", "Vídeo analógico", "Video analógico",
                        "Vidéo analogique", "Video analogico", "アナログ映像", "아날로그 영상",
                        "Analoge video", "Vídeo analógico", "模拟视频"),
@@ -802,59 +673,6 @@ T.update({
     "The interface": ("Die Oberfläche", "La interfaz", "La interfaz", "L'interface",
                       "L'interfaccia", "画面", "인터페이스", "De interface", "A interface",
                       "界面"),
-    "One screen. Everything on it does one thing.": (
-        "Ein Bildschirm. Alles darauf tut genau eine Sache.",
-        "Una pantalla. Todo lo que hay en ella hace una cosa.",
-        "Una pantalla. Todo lo que hay en ella hace una cosa.",
-        "Un écran. Tout ce qui s'y trouve fait une seule chose.",
-        "Una schermata. Tutto quello che c'è sopra fa una cosa sola.",
-        "画面はひとつ。その上のものは、それぞれひとつの働きしかしません。",
-        "화면 하나. 그 위에 있는 것들은 각각 한 가지 일만 합니다.",
-        "Eén scherm. Alles erop doet één ding.",
-        "Uma tela. Tudo nela faz uma coisa.", "只有一个界面。上面的每样东西只做一件事。"),
-    "The canvas is at the top and it updates while you drag. Underneath it are nine presets to "
-    "get\n      you somewhere in one tap, then the layer stack showing exactly what is running and "
-    "in what\n      order, then the effect rack. Tap an effect to open its own parameters. No "
-    "menus, no modes, no\n      hunting.": (
-        "Die Leinwand liegt oben und aktualisiert sich, während du ziehst. Darunter neun Presets, "
-        "die dich mit einem Tippen irgendwohin bringen, dann der Ebenenstapel, der genau zeigt, "
-        "was läuft und in welcher Reihenfolge, dann das Effektregal. Tippe einen Effekt an, um "
-        "seine eigenen Parameter zu öffnen. Keine Menüs, keine Modi, kein Suchen.",
-        "El lienzo está arriba y se actualiza mientras arrastras. Debajo hay nueve preajustes para "
-        "llegar a algún sitio con un toque, luego la pila de capas que muestra exactamente qué se "
-        "está ejecutando y en qué orden, y luego el estante de efectos. Toca un efecto para abrir "
-        "sus propios parámetros. Sin menús, sin modos, sin buscar.",
-        "El lienzo está arriba y se actualiza mientras arrastras. Debajo hay nueve preajustes para "
-        "llegar a algún lado con un toque, luego la pila de capas que muestra exactamente qué se "
-        "está ejecutando y en qué orden, y luego el estante de efectos. Toca un efecto para abrir "
-        "sus propios parámetros. Sin menús, sin modos, sin buscar.",
-        "La toile est en haut et se met à jour pendant que vous faites glisser. En dessous, neuf "
-        "préréglages pour arriver quelque part en une touche, puis la pile de calques qui montre "
-        "exactement ce qui tourne et dans quel ordre, puis le râtelier d'effets. Touchez un effet "
-        "pour ouvrir ses propres paramètres. Pas de menus, pas de modes, pas de chasse au trésor.",
-        "La tela sta in alto e si aggiorna mentre trascini. Sotto ci sono nove preset per "
-        "arrivare da qualche parte con un tocco, poi lo stack dei livelli che mostra esattamente "
-        "cosa sta girando e in che ordine, poi la rastrelliera degli effetti. Tocca un effetto per "
-        "aprire i suoi parametri. Niente menu, niente modalità, niente caccia al tesoro.",
-        "キャンバスは上にあり、ドラッグしているあいだも更新され続けます。その下に、"
-        "一タップでどこかへ連れていってくれる九つのプリセット、次に、何がどの順で走っているかを"
-        "そのまま示すレイヤースタック、そしてエフェクトの棚。エフェクトをタップすれば、"
-        "そのエフェクト固有のパラメータが開きます。メニューもモードも、探し回ることもありません。",
-        "캔버스는 위에 있고, 끄는 동안에도 계속 갱신됩니다. 그 아래에 한 번의 탭으로 어딘가에 "
-        "도달하게 해 주는 아홉 개의 프리셋, 그다음에 무엇이 어떤 순서로 돌고 있는지 그대로 보여 "
-        "주는 레이어 스택, 그리고 효과 선반. 효과를 누르면 그 효과만의 파라미터가 열립니다. "
-        "메뉴도, 모드도, 뒤져 찾는 일도 없습니다.",
-        "Het canvas zit bovenaan en werkt bij terwijl je sleept. Daaronder negen presets om je met "
-        "één tik ergens te brengen, dan de lagenstapel die precies laat zien wat er draait en in "
-        "welke volgorde, dan het effectenrek. Tik op een effect om de eigen parameters te openen. "
-        "Geen menu's, geen modi, geen zoeken.",
-        "A tela de trabalho fica no topo e se atualiza enquanto você arrasta. Abaixo dela há nove "
-        "presets para chegar a algum lugar com um toque, depois a pilha de camadas mostrando "
-        "exatamente o que está rodando e em que ordem, e então a prateleira de efeitos. Toque num "
-        "efeito para abrir os parâmetros dele. Sem menus, sem modos, sem caçada.",
-        "画布在最上面，你拖动的时候它就在更新。下面是九个预设，一下就能把你带到某个地方；"
-        "再往下是图层堆栈，如实显示正在运行的是什么、按什么顺序；再往下是效果架。"
-        "点一个效果就能打开它自己的参数。没有菜单，没有模式，也不用到处找。"),
     "MODUL8 running on iPhone: the glitched canvas at the top, a row of preset buttons, and the "
     "layer list showing Noise, Distortion and RGB Split.": (
         "MODUL8 auf dem iPhone: oben die geglitchte Leinwand, eine Reihe Preset-Tasten und die "
@@ -914,73 +732,6 @@ T.update({
         "Um cruzamento derretido por ordenação de pixels na tela, com quatro efeitos empilhados "
         "abaixo.",
         "画布上是被像素排序融化的路口，下面叠着四种效果。"),
-    "Load a photo from your library, or shoot one in the app.": (
-        "Lade ein Foto aus deiner Mediathek, oder nimm eines in der App auf.",
-        "Carga una foto de tu fototeca, o haz una en la app.",
-        "Carga una foto de tu fototeca, o toma una en la app.",
-        "Chargez une photo depuis votre photothèque, ou prenez-en une dans l'app.",
-        "Carica una foto dalla tua libreria, o scattane una nell'app.",
-        "ライブラリから写真を読み込むか、アプリの中で一枚撮ります。",
-        "보관함에서 사진을 불러오거나, 앱 안에서 한 장 찍으세요.",
-        "Laad een foto uit je bibliotheek, of maak er een in de app.",
-        "Carregue uma foto da sua fototeca, ou tire uma no app.",
-        "从图库里载入一张照片，或者直接在应用里拍一张。"),
-    "Tap a preset. VHS, CRT, Cyber, Ghost, Retro, Film, Melt, Static or Fried.": (
-        "Tippe ein Preset an. VHS, CRT, Cyber, Ghost, Retro, Film, Melt, Static oder Fried.",
-        "Toca un preajuste. VHS, CRT, Cyber, Ghost, Retro, Film, Melt, Static o Fried.",
-        "Toca un preajuste. VHS, CRT, Cyber, Ghost, Retro, Film, Melt, Static o Fried.",
-        "Touchez un préréglage. VHS, CRT, Cyber, Ghost, Retro, Film, Melt, Static ou Fried.",
-        "Tocca un preset. VHS, CRT, Cyber, Ghost, Retro, Film, Melt, Static o Fried.",
-        "プリセットをタップします。VHS、CRT、Cyber、Ghost、Retro、Film、Melt、Static、Fried。",
-        "프리셋을 누르세요. VHS, CRT, Cyber, Ghost, Retro, Film, Melt, Static, Fried.",
-        "Tik op een preset. VHS, CRT, Cyber, Ghost, Retro, Film, Melt, Static of Fried.",
-        "Toque num preset. VHS, CRT, Cyber, Ghost, Retro, Film, Melt, Static ou Fried.",
-        "点一个预设。VHS、CRT、Cyber、Ghost、Retro、Film、Melt、Static 或 Fried。"),
-    "Open any effect and move its sliders. Intensity, and then whatever else that particular "
-    "effect has: block size, tracking, spacing, curvature, threshold.": (
-        "Öffne einen beliebigen Effekt und bewege seine Regler. Intensität, und dann alles andere, "
-        "was dieser Effekt hat: Blockgröße, Spur, Abstand, Krümmung, Schwelle.",
-        "Abre cualquier efecto y mueve sus controles. Intensidad, y luego lo que tenga ese efecto "
-        "en concreto: tamaño de bloque, tracking, separación, curvatura, umbral.",
-        "Abre cualquier efecto y mueve sus controles. Intensidad, y luego lo que tenga ese efecto "
-        "en concreto: tamaño de bloque, tracking, separación, curvatura, umbral.",
-        "Ouvrez n'importe quel effet et bougez ses curseurs. L'intensité, puis tout ce que cet "
-        "effet possède en propre : taille de bloc, piste, espacement, courbure, seuil.",
-        "Apri qualsiasi effetto e muovi i suoi cursori. Intensità, e poi quello che quel "
-        "particolare effetto ha: dimensione dei blocchi, tracking, spaziatura, curvatura, soglia.",
-        "どのエフェクトも開いて、スライダーを動かせます。強度、そしてそのエフェクト固有の項目。"
-        "ブロックサイズ、トラッキング、間隔、曲率、しきい値。",
-        "어떤 효과든 열어서 슬라이더를 움직이세요. 강도, 그리고 그 효과에만 있는 것들. 블록 크기, "
-        "트래킹, 간격, 곡률, 임계값.",
-        "Open elk effect en beweeg de schuifjes. Intensiteit, en verder wat dat specifieke effect "
-        "heeft: blokgrootte, tracking, afstand, kromming, drempel.",
-        "Abra qualquer efeito e mova os controles. Intensidade, e depois o que aquele efeito tiver: "
-        "tamanho de bloco, tracking, espaçamento, curvatura, limiar.",
-        "打开任意一个效果，拖动它的滑块。强度，以及这个效果特有的那些：块大小、循迹、间距、"
-        "曲率、阈值。"),
-    "Drag the layers into a different order and watch the picture change.": (
-        "Zieh die Ebenen in eine andere Reihenfolge und sieh zu, wie sich das Bild ändert.",
-        "Arrastra las capas a otro orden y mira cómo cambia la imagen.",
-        "Arrastra las capas a otro orden y mira cómo cambia la imagen.",
-        "Faites glisser les calques dans un autre ordre et regardez l'image changer.",
-        "Trascina i livelli in un altro ordine e guarda l'immagine cambiare.",
-        "レイヤーを別の順序へドラッグして、絵が変わるのを見てください。",
-        "레이어를 다른 순서로 끌어다 놓고, 그림이 바뀌는 것을 보세요.",
-        "Sleep de lagen in een andere volgorde en kijk hoe het beeld verandert.",
-        "Arraste as camadas para outra ordem e veja a imagem mudar.",
-        "把图层拖成另一种顺序，看着画面变化。"),
-    "Export to your camera roll, or save the whole stack as a preset of your own.": (
-        "Exportiere in deine Aufnahmen, oder sichere den ganzen Stapel als eigenes Preset.",
-        "Exporta a tu carrete, o guarda toda la pila como un preajuste tuyo.",
-        "Exporta a tu carrete, o guarda toda la pila como un preajuste tuyo.",
-        "Exportez vers votre pellicule, ou enregistrez toute la pile comme votre propre "
-        "préréglage.",
-        "Esporta nel tuo rullino, o salva tutto lo stack come un preset tuo.",
-        "カメラロールに書き出すか、積み方まるごとを自分のプリセットとして保存します。",
-        "카메라 롤로 내보내거나, 쌓아 놓은 전체를 나만의 프리셋으로 저장하세요.",
-        "Exporteer naar je filmrol, of bewaar de hele stapel als je eigen preset.",
-        "Exporte para o seu rolo da câmera, ou salve a pilha inteira como um preset seu.",
-        "导出到相机胶卷，或者把整套叠法存成你自己的预设。"),
     "On the device": ("Auf dem Gerät", "En el dispositivo", "En el dispositivo",
                       "Sur l'appareil", "Sul dispositivo", "端末の上で", "기기 안에서",
                       "Op het toestel", "No aparelho", "在设备上"),
@@ -990,113 +741,8 @@ T.update({
         "Le tue foto restano sul tuo telefono.", "写真は端末に留まります。",
         "당신의 사진은 휴대폰에 남습니다.", "Je foto's blijven op je telefoon.",
         "Suas fotos ficam no seu telefone.", "你的照片留在你的手机里。"),
-    "Every effect runs locally. There is no upload, no account, no render queue and no server\n"
-    "          holding a copy of anything you shot. The app is six megabytes and the editing works "
-    "in\n          aeroplane mode.": (
-        "Jeder Effekt läuft lokal. Es gibt keinen Upload, kein Konto, keine Renderwarteschlange "
-        "und keinen Server, der eine Kopie von irgendetwas hält, das du aufgenommen hast. Die App "
-        "ist sechs Megabyte groß, und das Bearbeiten funktioniert im Flugmodus.",
-        "Cada efecto se ejecuta localmente. No hay subida, ni cuenta, ni cola de render, ni "
-        "servidor guardando una copia de nada de lo que hayas hecho. La app ocupa seis megabytes y "
-        "la edición funciona en modo avión.",
-        "Cada efecto se ejecuta localmente. No hay subida, ni cuenta, ni cola de render, ni "
-        "servidor guardando una copia de nada de lo que hayas tomado. La app ocupa seis megabytes "
-        "y la edición funciona en modo avión.",
-        "Chaque effet tourne localement. Il n'y a pas d'envoi, pas de compte, pas de file de "
-        "rendu et pas de serveur qui garde une copie de ce que vous avez photographié. L'app pèse "
-        "six mégaoctets et l'édition fonctionne en mode avion.",
-        "Ogni effetto gira in locale. Non c'è upload, non c'è account, non c'è coda di rendering e "
-        "non c'è server che tenga una copia di quello che hai scattato. L'app pesa sei megabyte e "
-        "l'editing funziona in modalità aereo.",
-        "どのエフェクトも端末の中で動きます。アップロードも、アカウントも、レンダリング待ちの列も、"
-        "あなたが撮ったものの控えを持つサーバーもありません。アプリは 6 メガバイトで、"
-        "編集は機内モードでも動きます。",
-        "모든 효과가 기기 안에서 돌아갑니다. 업로드도, 계정도, 렌더 대기열도, 당신이 찍은 것의 "
-        "사본을 가진 서버도 없습니다. 앱은 6메가바이트이고, 편집은 비행기 모드에서도 됩니다.",
-        "Elk effect draait lokaal. Er is geen upload, geen account, geen renderwachtrij en geen "
-        "server met een kopie van wat je ook hebt geschoten. De app is zes megabyte en het bewerken "
-        "werkt in vliegtuigmodus.",
-        "Cada efeito roda localmente. Não há upload, não há conta, não há fila de renderização e "
-        "não há servidor guardando cópia de nada do que você fotografou. O app tem seis megabytes e "
-        "a edição funciona em modo avião.",
-        "每一种效果都在本地运行。没有上传、没有账号、没有渲染队列，"
-        "也没有任何服务器留着你拍的东西的副本。这个应用只有六兆字节，编辑在飞行模式下照样能用。"),
-    "It is also why the sliders feel live: you are dragging the real image rather than waiting\n"
-    "          on a round trip to somebody's GPU. The free version does serve ads, which is the "
-    "one part\n          that talks to the network. Premium removes them.": (
-        "Es ist auch der Grund, warum sich die Regler live anfühlen: Du ziehst am echten Bild und "
-        "wartest nicht auf den Hin- und Rückweg zur GPU von irgendwem. Die kostenlose Fassung "
-        "zeigt Werbung, und das ist der eine Teil, der mit dem Netz spricht. Premium entfernt sie.",
-        "Es también por lo que los controles se sienten en vivo: estás arrastrando la imagen real "
-        "en vez de esperar una ida y vuelta a la GPU de alguien. La versión gratuita sí muestra "
-        "anuncios, que son la única parte que habla con la red. Premium los quita.",
-        "Es también por lo que los controles se sienten en vivo: estás arrastrando la imagen real "
-        "en vez de esperar una ida y vuelta a la GPU de alguien. La versión gratuita sí muestra "
-        "anuncios, que son la única parte que habla con la red. Premium los quita.",
-        "C'est aussi pourquoi les curseurs paraissent vivants : vous faites glisser l'image réelle "
-        "au lieu d'attendre un aller-retour vers le GPU de quelqu'un. La version gratuite affiche "
-        "de la publicité, la seule partie qui parle au réseau. Premium la supprime.",
-        "È anche il motivo per cui i cursori sembrano vivi: stai trascinando l'immagine vera "
-        "invece di aspettare un andata e ritorno alla GPU di qualcun altro. La versione gratuita "
-        "mostra pubblicità, che è l'unica parte che parla con la rete. Premium la toglie.",
-        "スライダーが生きているように感じられるのも同じ理由です。誰かの GPU との往復を待つのでは"
-        "なく、実際の画像そのものをドラッグしているからです。無料版には広告が入り、"
-        "ネットワークと話すのはその部分だけです。Premium にすると広告はなくなります。",
-        "슬라이더가 살아 있는 것처럼 느껴지는 이유이기도 합니다. 누군가의 GPU를 왕복하기를 "
-        "기다리는 게 아니라, 실제 이미지를 직접 끌고 있으니까요. 무료 버전에는 광고가 붙는데, "
-        "네트워크와 이야기하는 부분은 그것뿐입니다. Premium은 광고를 없앱니다.",
-        "Het is ook waarom de schuifjes live aanvoelen: je sleept het echte beeld in plaats van te "
-        "wachten op een retourtje naar iemands GPU. De gratis versie toont wel advertenties, het "
-        "enige deel dat met het netwerk praat. Premium haalt ze weg.",
-        "É também por isso que os controles parecem ao vivo: você está arrastando a imagem real em "
-        "vez de esperar uma ida e volta até a GPU de alguém. A versão gratuita exibe anúncios, que "
-        "são a única parte que fala com a rede. O Premium os remove.",
-        "这也是滑块用起来像实时的原因：你拖的是真实的图像，而不是在等一次往返别人 GPU 的来回。"
-        "免费版确实会有广告，那是唯一与网络打交道的部分。Premium 会去掉它们。"),
     "Video too": ("Auch Video", "También vídeo", "También video", "La vidéo aussi", "Anche video",
                   "動画も", "영상도", "Video ook", "Vídeo também", "视频也可以"),
-    "Loops, not just stills.": (
-        "Schleifen, nicht nur Standbilder.", "Bucles, no solo fijos.", "Bucles, no solo fijos.",
-        "Des boucles, pas seulement des images fixes.", "Loop, non solo fermi immagine.",
-        "静止画だけでなく、ループも。", "정지 이미지만이 아니라 루프도.",
-        "Loops, niet alleen stills.", "Loops, não só imagens paradas.", "不只是静图，还有循环。"),
-    "Turn any finished image into a seamless looping video with the effect parameters animating\n"
-    "          across the loop. The tracking drifts, the sort threshold moves, the channels "
-    "breathe. It\n          exports straight to your camera roll at a size that posts cleanly.": (
-        "Mach aus jedem fertigen Bild ein nahtlos geschleiftes Video, in dem sich die "
-        "Effektparameter über die Schleife hinweg bewegen. Die Spur driftet, die Sortierschwelle "
-        "wandert, die Kanäle atmen. Es wird direkt in deine Aufnahmen exportiert, in einer Größe, "
-        "die sich sauber posten lässt.",
-        "Convierte cualquier imagen terminada en un vídeo en bucle sin costuras con los parámetros "
-        "de los efectos animándose a lo largo del bucle. El tracking deriva, el umbral de "
-        "ordenación se mueve, los canales respiran. Se exporta directo a tu carrete a un tamaño que "
-        "se publica limpio.",
-        "Convierte cualquier imagen terminada en un video en bucle sin costuras con los parámetros "
-        "de los efectos animándose a lo largo del bucle. El tracking deriva, el umbral de "
-        "ordenación se mueve, los canales respiran. Se exporta directo a tu carrete a un tamaño que "
-        "se publica limpio.",
-        "Transformez n'importe quelle image finie en vidéo bouclée sans raccord, avec les "
-        "paramètres des effets qui s'animent sur la boucle. La piste dérive, le seuil de tri "
-        "bouge, les canaux respirent. L'export va droit dans votre pellicule, à une taille qui se "
-        "publie proprement.",
-        "Trasforma qualsiasi immagine finita in un video in loop senza stacchi, con i parametri "
-        "degli effetti che si animano lungo il loop. Il tracking va alla deriva, la soglia di "
-        "ordinamento si sposta, i canali respirano. Esce dritto nel tuo rullino a una dimensione "
-        "che si pubblica pulita.",
-        "仕上がった画像はどれでも、エフェクトのパラメータがループのあいだ動き続ける、"
-        "継ぎ目のないループ動画にできます。トラッキングは流れ、ソートのしきい値は動き、"
-        "チャンネルは呼吸します。書き出しはそのままカメラロールへ、きれいに投稿できるサイズで。",
-        "완성된 이미지는 무엇이든, 효과 파라미터가 루프 내내 움직이는 이음매 없는 루프 영상으로 "
-        "만들 수 있습니다. 트래킹이 흐르고, 정렬 임계값이 움직이고, 채널이 숨을 쉽니다. 내보내기는 "
-        "곧장 카메라 롤로, 깔끔하게 올라가는 크기로.",
-        "Maak van elk afgerond beeld een naadloos loopende video waarin de effectparameters over de "
-        "loop heen animeren. De tracking drijft, de sorteerdrempel beweegt, de kanalen ademen. Het "
-        "exporteert rechtstreeks naar je filmrol op een formaat dat netjes post.",
-        "Transforme qualquer imagem pronta num vídeo em loop sem emenda, com os parâmetros dos "
-        "efeitos se animando ao longo do loop. O tracking deriva, o limiar de ordenação se move, os "
-        "canais respiram. Exporta direto para o seu rolo da câmera num tamanho que posta limpo.",
-        "任何一张完成的图像都能变成无缝循环的视频，效果参数会在整个循环里持续变化。"
-        "循迹在漂移，排序阈值在移动，通道在呼吸。导出直接进相机胶卷，尺寸适合干净地发布。"),
     "The deal": ("Das Angebot", "El trato", "El trato", "Le deal", "L'accordo", "料金のこと",
                  "조건", "De deal", "O acordo", "价格是这样的"),
     "Free. Premium is optional.": (
@@ -1105,79 +751,9 @@ T.update({
         "Gratis. Premium è facoltativo.", "無料。Premium は任意です。",
         "무료. Premium은 선택입니다.", "Gratis. Premium is optioneel.",
         "Grátis. O Premium é opcional.", "免费。Premium 是可选的。"),
-    "Every one of the nineteen effects and all nine presets are free, with no limit on how many\n"
-    "        you stack. Nothing is held hostage behind a paywall and nothing you export is "
-    "watermarked.\n        Premium is about output and comfort, not about unlocking the tools.": (
-        "Alle neunzehn Effekte und alle neun Presets sind kostenlos, ohne Grenze, wie viele du "
-        "stapelst. Nichts wird hinter einer Bezahlschranke festgehalten, und nichts, was du "
-        "exportierst, trägt ein Wasserzeichen. Bei Premium geht es um Ausgabe und Bequemlichkeit, "
-        "nicht darum, die Werkzeuge freizuschalten.",
-        "Los diecinueve efectos y los nueve preajustes son gratis, sin límite de cuántos apiles. "
-        "Nada queda secuestrado tras un muro de pago y nada de lo que exportas lleva marca de agua. "
-        "Premium va de salida y comodidad, no de desbloquear las herramientas.",
-        "Los diecinueve efectos y los nueve preajustes son gratis, sin límite de cuántos apiles. "
-        "Nada queda secuestrado tras un muro de pago y nada de lo que exportas lleva marca de agua. "
-        "Premium va de salida y comodidad, no de desbloquear las herramientas.",
-        "Les dix-neuf effets et les neuf préréglages sont tous gratuits, sans limite sur le nombre "
-        "que vous empilez. Rien n'est retenu derrière un péage et rien de ce que vous exportez "
-        "n'est filigrané. Premium concerne la sortie et le confort, pas le déverrouillage des "
-        "outils.",
-        "Tutti e diciannove gli effetti e tutti e nove i preset sono gratis, senza limite a quanti "
-        "ne impili. Niente è tenuto in ostaggio dietro un paywall e niente di quello che esporti "
-        "porta filigrane. Premium riguarda l'output e la comodità, non lo sblocco degli strumenti.",
-        "十九のエフェクトも九つのプリセットも、すべて無料です。いくつ重ねてもかまいません。"
-        "課金の壁の向こうに人質に取られているものはなく、書き出したものに透かしも入りません。"
-        "Premium は出力と快適さの話であって、道具を解放するための話ではありません。",
-        "열아홉 가지 효과와 아홉 개의 프리셋 모두 무료이고, 몇 개를 쌓든 제한이 없습니다. 결제 "
-        "장벽 뒤에 붙잡아 둔 것은 없고, 내보낸 것에 워터마크도 없습니다. Premium은 출력과 편의에 "
-        "대한 것이지, 도구를 푸는 것에 대한 것이 아닙니다.",
-        "Alle negentien effecten en alle negen presets zijn gratis, zonder limiet op hoeveel je er "
-        "stapelt. Er wordt niets gegijzeld achter een betaalmuur en niets wat je exporteert draagt "
-        "een watermerk. Premium gaat over uitvoer en gemak, niet over het vrijspelen van het "
-        "gereedschap.",
-        "Todos os dezenove efeitos e todos os nove presets são grátis, sem limite de quantos você "
-        "empilha. Nada fica refém atrás de um paywall e nada do que você exporta leva marca "
-        "d'água. O Premium é sobre saída e conforto, não sobre destravar as ferramentas.",
-        "十九种效果和九个预设全部免费，叠多少层都不限。没有任何东西被扣在付费墙后面，"
-        "你导出的东西也不会带水印。Premium 关乎输出和省事，而不是解锁工具。"),
     "Free": ("Kostenlos", "Gratis", "Gratis", "Gratuit", "Gratis", "無料", "무료", "Gratis",
              "Grátis", "免费"),
-    "All 19 effects, all 9 presets, unlimited stacking, save and share, no watermark": (
-        "Alle 19 Effekte, alle 9 Presets, unbegrenztes Stapeln, Sichern und Teilen, kein "
-        "Wasserzeichen",
-        "Los 19 efectos, los 9 preajustes, apilado ilimitado, guardar y compartir, sin marca de "
-        "agua",
-        "Los 19 efectos, los 9 preajustes, apilado ilimitado, guardar y compartir, sin marca de "
-        "agua",
-        "Les 19 effets, les 9 préréglages, empilage illimité, enregistrer et partager, sans "
-        "filigrane",
-        "Tutti i 19 effetti, tutti i 9 preset, impilamento illimitato, salva e condividi, nessuna "
-        "filigrana",
-        "19 のエフェクトすべて、9 つのプリセットすべて、重ね放題、保存と共有、透かしなし",
-        "19가지 효과 전부, 9개 프리셋 전부, 무제한 쌓기, 저장과 공유, 워터마크 없음",
-        "Alle 19 effecten, alle 9 presets, onbeperkt stapelen, bewaren en delen, geen watermerk",
-        "Todos os 19 efeitos, todos os 9 presets, empilhamento ilimitado, salvar e compartilhar, "
-        "sem marca d'água",
-        "全部 19 种效果、全部 9 个预设、无限叠加、保存与分享、无水印"),
     "Premium": ("Premium",) * 10,
-    "Full resolution export, looping video export, saving your own presets, no ads": (
-        "Export in voller Auflösung, Export als Videoschleife, eigene Presets sichern, keine "
-        "Werbung",
-        "Exportación a resolución completa, exportación de vídeo en bucle, guardar tus propios "
-        "preajustes, sin anuncios",
-        "Exportación a resolución completa, exportación de video en bucle, guardar tus propios "
-        "preajustes, sin anuncios",
-        "Export en pleine résolution, export en vidéo bouclée, enregistrement de vos propres "
-        "préréglages, sans publicité",
-        "Esportazione a piena risoluzione, esportazione video in loop, salvataggio dei tuoi preset, "
-        "nessuna pubblicità",
-        "フル解像度での書き出し、ループ動画の書き出し、自分のプリセットの保存、広告なし",
-        "원본 해상도 내보내기, 루프 영상 내보내기, 나만의 프리셋 저장, 광고 없음",
-        "Export op volle resolutie, export als loopende video, je eigen presets bewaren, geen "
-        "advertenties",
-        "Exportação em resolução total, exportação de vídeo em loop, salvar seus próprios presets, "
-        "sem anúncios",
-        "完整分辨率导出、循环视频导出、保存自己的预设、无广告"),
     "Privacy policy": ("Datenschutzerklärung", "Política de privacidad", "Política de privacidad",
                        "Politique de confidentialité", "Informativa sulla privacy",
                        "プライバシーポリシー", "개인정보 처리방침", "Privacybeleid",
@@ -1213,47 +789,6 @@ T.update({
 })
 
 # ---------------------------------------------------------------- FAQ and structured data
-#
-# The effect roll-call is left in the app's own names, joined the way the visible list is, so a
-# reader can match every word against a button.
-_EFFECT_LIST = tuple(
-    ", ".join(EFFECTS[k][i] for k in
-              ["NOISE", "PIXEL SHIFT", "RGB SPLIT", "SCANLINES", "DISTORTION", "CORRUPTION",
-               "FEEDBACK", "VHS", "CRT", "CHROMA", "FILM", "CRUSH", "INTERLACE", "INVERT",
-               "DATAMOSH", "DITHER", "STATIC", "SORT", "SYNC"])
-    for i in range(10))
-
-_FREE_ANSWER = (
-    "Ja. Alle 19 Effekte, alle 9 Presets und unbegrenztes Stapeln sind kostenlos, und nichts, was "
-    "du exportierst, trägt ein Wasserzeichen. Premium ergänzt Export in voller Auflösung, Export "
-    "als Videoschleife, das Sichern eigener Presets, und entfernt die Werbung.",
-    "Sí. Los 19 efectos, los 9 preajustes y el apilado ilimitado son gratis, y nada de lo que "
-    "exportas lleva marca de agua. Premium añade exportación a resolución completa, exportación de "
-    "vídeo en bucle, guardar tus propios preajustes, y quita los anuncios.",
-    "Sí. Los 19 efectos, los 9 preajustes y el apilado ilimitado son gratis, y nada de lo que "
-    "exportas lleva marca de agua. Premium añade exportación a resolución completa, exportación de "
-    "video en bucle, guardar tus propios preajustes, y quita los anuncios.",
-    "Oui. Les 19 effets, les 9 préréglages et l'empilage illimité sont gratuits, et rien de ce que "
-    "vous exportez n'est filigrané. Premium ajoute l'export en pleine résolution, l'export en "
-    "vidéo bouclée, l'enregistrement de vos propres préréglages, et supprime la publicité.",
-    "Sì. Tutti i 19 effetti, tutti i 9 preset e l'impilamento illimitato sono gratis, e niente di "
-    "quello che esporti porta filigrane. Premium aggiunge l'esportazione a piena risoluzione, "
-    "l'esportazione video in loop, il salvataggio dei tuoi preset, e toglie la pubblicità.",
-    "はい。19 のエフェクト、9 つのプリセット、そして重ね放題はすべて無料で、書き出したものに"
-    "透かしも入りません。Premium では、フル解像度での書き出し、ループ動画の書き出し、"
-    "自分のプリセットの保存が加わり、広告がなくなります。",
-    "네. 19가지 효과, 9개 프리셋, 무제한 쌓기가 모두 무료이고, 내보낸 것에 워터마크도 없습니다. "
-    "Premium은 원본 해상도 내보내기, 루프 영상 내보내기, 나만의 프리셋 저장을 더하고 광고를 "
-    "없앱니다.",
-    "Ja. Alle 19 effecten, alle 9 presets en onbeperkt stapelen zijn gratis, en niets wat je "
-    "exporteert draagt een watermerk. Premium voegt export op volle resolutie toe, export als "
-    "loopende video, het bewaren van je eigen presets, en haalt de advertenties weg.",
-    "Sim. Todos os 19 efeitos, todos os 9 presets e o empilhamento ilimitado são grátis, e nada do "
-    "que você exporta leva marca d'água. O Premium acrescenta exportação em resolução total, "
-    "exportação de vídeo em loop, salvar seus próprios presets, e remove os anúncios.",
-    "是的。19 种效果、9 个预设和无限叠加全部免费，你导出的东西也不带水印。"
-    "Premium 增加完整分辨率导出、循环视频导出、保存自己的预设，并去掉广告。")
-
 _DIFFERENT_ANSWER = (
     "Die meisten legen ein festes Muster über alles, was du ihnen gibst, und jedes Foto kommt im "
     "selben Kostüm heraus. Jeder MODUL8-Effekt bildet einen bestimmten Hardwarefehler nach und "
@@ -1290,102 +825,16 @@ _DIFFERENT_ANSWER = (
     "MODUL8 的每一种效果都模拟某一个具体的硬件故障，并且会先读取底下的像素再决定要做什么，"
     "所以同样的设置在不同照片上会给出不同的结果。")
 
-_UPLOAD_ANSWER = (
-    "Nein. Jeder Effekt läuft lokal auf deinem iPhone. Es gibt kein Konto, keine "
-    "Renderwarteschlange und keinen Server, der deine Bilder hält. Die kostenlose Fassung zeigt "
-    "Werbung, und das ist der einzige Teil der App, der das Netz benutzt.",
-    "No. Cada efecto se ejecuta localmente en tu iPhone. No hay cuenta, ni cola de render, ni "
-    "servidor guardando tus imágenes. La versión gratuita muestra anuncios, que son la única parte "
-    "de la app que usa la red.",
-    "No. Cada efecto se ejecuta localmente en tu iPhone. No hay cuenta, ni cola de render, ni "
-    "servidor guardando tus imágenes. La versión gratuita muestra anuncios, que son la única parte "
-    "de la app que usa la red.",
-    "Non. Chaque effet tourne localement sur votre iPhone. Il n'y a pas de compte, pas de file de "
-    "rendu et pas de serveur qui garde vos images. La version gratuite affiche de la publicité, la "
-    "seule partie de l'app qui utilise le réseau.",
-    "No. Ogni effetto gira in locale sul tuo iPhone. Non c'è account, non c'è coda di rendering e "
-    "non c'è server che tenga le tue immagini. La versione gratuita mostra pubblicità, l'unica "
-    "parte dell'app che usa la rete.",
-    "いいえ。どのエフェクトもあなたの iPhone の中で動きます。アカウントも、レンダリング待ちの"
-    "列も、あなたの画像を持つサーバーもありません。無料版には広告が入り、"
-    "ネットワークを使うのはアプリのなかでその部分だけです。",
-    "아니요. 모든 효과가 당신의 iPhone 안에서 돌아갑니다. 계정도, 렌더 대기열도, 당신의 이미지를 "
-    "가진 서버도 없습니다. 무료 버전에는 광고가 붙는데, 앱에서 네트워크를 쓰는 부분은 그것뿐입니다.",
-    "Nee. Elk effect draait lokaal op je iPhone. Er is geen account, geen renderwachtrij en geen "
-    "server met jouw beelden. De gratis versie toont advertenties, het enige deel van de app dat "
-    "het netwerk gebruikt.",
-    "Não. Cada efeito roda localmente no seu iPhone. Não há conta, não há fila de renderização e "
-    "não há servidor guardando suas imagens. A versão gratuita exibe anúncios, que são a única "
-    "parte do app que usa a rede.",
-    "不会。每一种效果都在你的 iPhone 本地运行。没有账号、没有渲染队列，也没有服务器存着你的图像。"
-    "免费版会显示广告，那是这个应用里唯一用到网络的部分。")
-
-_VIDEO_ANSWER = (
-    "Ja. Jedes fertige Bild lässt sich als nahtlos geschleiftes Video exportieren, in dem sich die "
-    "Effektparameter über die Schleife hinweg bewegen, direkt in deine Aufnahmen.",
-    "Sí. Cualquier imagen terminada se puede exportar como vídeo en bucle sin costuras con los "
-    "parámetros de los efectos animándose a lo largo del bucle, directo a tu carrete.",
-    "Sí. Cualquier imagen terminada se puede exportar como video en bucle sin costuras con los "
-    "parámetros de los efectos animándose a lo largo del bucle, directo a tu carrete.",
-    "Oui. N'importe quelle image finie peut être exportée en vidéo bouclée sans raccord, avec les "
-    "paramètres des effets qui s'animent sur la boucle, directement dans votre pellicule.",
-    "Sì. Qualsiasi immagine finita può essere esportata come video in loop senza stacchi, con i "
-    "parametri degli effetti che si animano lungo il loop, dritto nel tuo rullino.",
-    "はい。仕上がった画像はどれでも、エフェクトのパラメータがループのあいだ動き続ける継ぎ目のない"
-    "ループ動画として、そのままカメラロールへ書き出せます。",
-    "네. 완성된 이미지는 무엇이든, 효과 파라미터가 루프 내내 움직이는 이음매 없는 루프 영상으로 "
-    "곧장 카메라 롤에 내보낼 수 있습니다.",
-    "Ja. Elk afgerond beeld kan worden geëxporteerd als naadloos loopende video waarin de "
-    "effectparameters over de loop heen animeren, rechtstreeks naar je filmrol.",
-    "Sim. Qualquer imagem pronta pode ser exportada como vídeo em loop sem emenda, com os "
-    "parâmetros dos efeitos se animando ao longo do loop, direto para o seu rolo da câmera.",
-    "可以。任何一张完成的图像都能导出为无缝循环视频，效果参数会在整个循环里持续变化，"
-    "直接存进相机胶卷。")
-
 T.update({
     "Is MODUL8 free?": ("Ist MODUL8 kostenlos?", "¿MODUL8 es gratis?", "¿MODUL8 es gratis?",
                         "MODUL8 est-il gratuit ?", "MODUL8 è gratis?", "MODUL8 は無料ですか。",
                         "MODUL8는 무료인가요?", "Is MODUL8 gratis?", "O MODUL8 é grátis?",
                         "MODUL8 是免费的吗？"),
-    "Yes. All 19 effects, all 9 presets and unlimited stacking are free, and nothing you export\n"
-    "        is watermarked. Premium adds full resolution export, looping video export, saving your "
-    "own\n        presets, and removes ads.": _FREE_ANSWER,
-    "Yes. All 19 effects, all 9 presets and unlimited stacking are free, and nothing you export "
-    "carries a watermark. Premium adds full resolution export, looping video export, saving your "
-    "own presets, and removes ads.": _FREE_ANSWER,
     "What effects are in it?": (
         "Welche Effekte sind drin?", "¿Qué efectos trae?", "¿Qué efectos trae?",
         "Quels effets contient-il ?", "Che effetti ci sono?", "どんなエフェクトが入っていますか。",
         "어떤 효과가 들어 있나요?", "Welke effecten zitten erin?", "Que efeitos tem nele?",
         "里面有哪些效果？"),
-    "Noise, Pixel Shift, RGB Split, Scanlines, Distortion, Corruption, Feedback, VHS, CRT,\n"
-    "        Chroma, Film Grain, Bit Crush, Interlace, Invert, Datamosh, Dither, Analogue Static, "
-    "Pixel\n        Sort and Signal Sync. Any number at once, in any order.": tuple(
-        _EFFECT_LIST[i] + suffix for i, suffix in enumerate([
-            ". Beliebig viele auf einmal, in beliebiger Reihenfolge.",
-            ". Todos los que quieras a la vez, en el orden que quieras.",
-            ". Todos los que quieras a la vez, en el orden que quieras.",
-            ". Autant que vous voulez à la fois, dans n'importe quel ordre.",
-            ". Quanti ne vuoi insieme, in qualsiasi ordine.",
-            "。いくつでも同時に、好きな順序で。",
-            ". 몇 개든 한꺼번에, 어떤 순서로든.",
-            ". Zoveel tegelijk als je wilt, in welke volgorde dan ook.",
-            ". Quantos você quiser de uma vez, em qualquer ordem.",
-            "。想同时用几种就用几种，顺序随你。"])),
-    "Noise, Pixel Shift, RGB Split, Scanlines, Distortion, Corruption, Feedback, VHS, CRT, Chroma, "
-    "Film Grain, Bit Crush, Interlace, Invert, Datamosh, Dither, Analogue Static, Pixel Sort and "
-    "Signal Sync. Any number of them can run at once, in any order.": tuple(
-        _EFFECT_LIST[i] + suffix for i, suffix in enumerate([
-            ". Beliebig viele davon können gleichzeitig laufen, in beliebiger Reihenfolge.",
-            ". Pueden ejecutarse todos a la vez, en el orden que quieras.",
-            ". Pueden ejecutarse todos a la vez, en el orden que quieras.",
-            ". Autant qu'on veut peuvent tourner en même temps, dans n'importe quel ordre.",
-            ". Quanti se ne vuole possono girare insieme, in qualsiasi ordine.",
-            "。いくつでも同時に走らせられ、順序も自由です。",
-            ". 몇 개든 동시에 돌릴 수 있고, 순서도 자유입니다.",
-            ". Zoveel als je wilt kunnen tegelijk draaien, in welke volgorde dan ook.",
-            ". Quantos quiser podem rodar ao mesmo tempo, em qualquer ordem.",
-            "。想同时跑几种都可以，顺序也随意。"])),
     "How is it different from other glitch apps?": (
         "Wie unterscheidet es sich von anderen Glitch-Apps?",
         "¿En qué se diferencia de otras apps de glitch?",
@@ -1400,150 +849,989 @@ T.update({
     "        wearing the same costume. Each MODUL8 effect models one specific hardware failure and "
     "reads\n        the pixels underneath before deciding what to do, so the same settings give "
     "different\n        results on different photographs.": _DIFFERENT_ANSWER,
-    "Most glitch apps lay a fixed pattern over whatever you give them, so every photo comes out "
-    "looking the same. Each MODUL8 effect models one specific hardware failure and reads the pixels "
-    "underneath before deciding what to do, so the same settings produce different results on "
-    "different photographs.": _DIFFERENT_ANSWER,
     "Does it upload my photos?": (
         "Lädt es meine Fotos hoch?", "¿Sube mis fotos?", "¿Sube mis fotos?",
         "Est-ce qu'il envoie mes photos ?", "Carica le mie foto?",
         "写真をアップロードしますか。", "제 사진을 업로드하나요?", "Uploadt het mijn foto's?",
         "Ele envia minhas fotos?", "它会上传我的照片吗？"),
-    "No. Every effect runs locally on your iPhone. There is no account, no render queue and no\n"
-    "        server holding your images. The free version serves ads, which is the only part of the "
-    "app\n        that touches the network.": _UPLOAD_ANSWER,
-    "No. Every effect runs locally on your iPhone. There is no account, no render queue and no "
-    "server holding your images. The free version does serve ads, which is the only part of the app "
-    "that uses the network.": _UPLOAD_ANSWER,
-    "Does MODUL8 upload my photos?": (
-        "Lädt MODUL8 meine Fotos hoch?", "¿MODUL8 sube mis fotos?", "¿MODUL8 sube mis fotos?",
-        "MODUL8 envoie-t-il mes photos ?", "MODUL8 carica le mie foto?",
-        "MODUL8 は写真をアップロードしますか。", "MODUL8가 제 사진을 업로드하나요?",
-        "Uploadt MODUL8 mijn foto's?", "O MODUL8 envia minhas fotos?", "MODUL8 会上传我的照片吗？"),
     "Can it make glitch videos?": (
         "Kann es Glitch-Videos machen?", "¿Puede hacer vídeos glitch?",
         "¿Puede hacer videos glitch?", "Peut-il faire des vidéos glitch ?",
         "Può fare video glitch?", "グリッチ動画はつくれますか。", "글리치 영상도 만들 수 있나요?",
         "Kan het glitch-video's maken?", "Ele consegue fazer vídeos glitch?",
         "它能做故障视频吗？"),
-    "Yes. Any finished image can be exported as a seamless looping video with the effect\n"
-    "        parameters animating across the loop, straight to your camera roll.": _VIDEO_ANSWER,
-    "Yes. Any finished image can be exported as a seamless looping video with the effect parameters "
-    "animating across the loop, saved straight to your camera roll.": _VIDEO_ANSWER,
-    "Can MODUL8 make glitch videos?": (
-        "Kann MODUL8 Glitch-Videos machen?", "¿MODUL8 puede hacer vídeos glitch?",
-        "¿MODUL8 puede hacer videos glitch?", "MODUL8 peut-il faire des vidéos glitch ?",
-        "MODUL8 può fare video glitch?", "MODUL8 でグリッチ動画はつくれますか。",
-        "MODUL8로 글리치 영상을 만들 수 있나요?", "Kan MODUL8 glitch-video's maken?",
-        "O MODUL8 consegue fazer vídeos glitch?", "MODUL8 能做故障视频吗？"),
     "Which iPhones does it work on?": (
         "Auf welchen iPhones läuft es?", "¿En qué iPhones funciona?", "¿En qué iPhones funciona?",
         "Sur quels iPhone fonctionne-t-il ?", "Su quali iPhone funziona?",
         "どの iPhone で使えますか。", "어떤 iPhone에서 쓸 수 있나요?",
         "Op welke iPhones werkt het?", "Em quais iPhones funciona?", "支持哪些 iPhone？"),
-    "Any iPhone running iOS 15 or later. The app is about 6 MB.": (
-        "Jedes iPhone mit iOS 15 oder neuer. Die App ist etwa 6 MB groß.",
-        "Cualquier iPhone con iOS 15 o posterior. La app ocupa unos 6 MB.",
-        "Cualquier iPhone con iOS 15 o posterior. La app ocupa unos 6 MB.",
-        "Tout iPhone sous iOS 15 ou version ultérieure. L'app pèse environ 6 Mo.",
-        "Qualsiasi iPhone con iOS 15 o successivo. L'app pesa circa 6 MB.",
-        "iOS 15 以降が動く iPhone。アプリの大きさはおよそ 6 MB です。",
-        "iOS 15 이상이 설치된 iPhone. 앱 크기는 약 6 MB입니다.",
-        "Elke iPhone met iOS 15 of nieuwer. De app is ongeveer 6 MB.",
-        "Qualquer iPhone com iOS 15 ou posterior. O app tem cerca de 6 MB.",
-        "任何运行 iOS 15 或更高版本的 iPhone。应用大约 6 MB。"),
-    "Which iPhones does MODUL8 support?": (
-        "Welche iPhones unterstützt MODUL8?", "¿Qué iPhones admite MODUL8?",
-        "¿Qué iPhones admite MODUL8?", "Quels iPhone MODUL8 prend-il en charge ?",
-        "Quali iPhone supporta MODUL8?", "MODUL8 はどの iPhone に対応していますか。",
-        "MODUL8는 어떤 iPhone을 지원하나요?", "Welke iPhones ondersteunt MODUL8?",
-        "Quais iPhones o MODUL8 suporta?", "MODUL8 支持哪些 iPhone？"),
-    "What glitch effects does MODUL8 include?": (
-        "Welche Glitch-Effekte enthält MODUL8?", "¿Qué efectos glitch incluye MODUL8?",
-        "¿Qué efectos glitch incluye MODUL8?", "Quels effets glitch MODUL8 inclut-il ?",
-        "Quali effetti glitch include MODUL8?", "MODUL8 にはどんなグリッチエフェクトが"
-        "入っていますか。", "MODUL8에는 어떤 글리치 효과가 들어 있나요?",
-        "Welke glitch-effecten bevat MODUL8?", "Que efeitos glitch o MODUL8 inclui?",
-        "MODUL8 包含哪些故障效果？"),
-    "A glitch art app for iPhone with 19 stackable effects, each modelled on a specific way real "
-    "hardware used to fail: VHS tracking, CRT phosphor bloom, datamosh block corruption, pixel "
-    "sorting and RGB channel separation. All processing runs on device.": (
-        "Eine Glitch-Art-App für iPhone mit 19 stapelbaren Effekten, jeder einer bestimmten Art "
-        "nachgebildet, auf die echte Hardware früher versagte: VHS-Spur, CRT-Phosphorblüte, "
-        "Datamosh-Blockfehler, Pixel Sorting und RGB-Kanaltrennung. Die gesamte Verarbeitung läuft "
-        "auf dem Gerät.",
-        "Una app de glitch art para iPhone con 19 efectos apilables, cada uno modelado sobre una "
-        "forma concreta en que fallaba el hardware real: tracking de VHS, floración del fósforo del "
-        "CRT, corrupción de bloques por datamosh, ordenación de píxeles y separación de canales "
-        "RGB. Todo el procesado se ejecuta en el dispositivo.",
-        "Una app de glitch art para iPhone con 19 efectos apilables, cada uno modelado sobre una "
-        "forma concreta en que fallaba el hardware real: tracking de VHS, floración del fósforo del "
-        "CRT, corrupción de bloques por datamosh, ordenación de píxeles y separación de canales "
-        "RGB. Todo el procesamiento se ejecuta en el dispositivo.",
-        "Une app de glitch art pour iPhone avec 19 effets empilables, chacun modélisé sur une façon "
-        "précise dont le matériel tombait en panne : piste VHS, floraison du phosphore CRT, "
-        "corruption de blocs en datamosh, tri de pixels et séparation des canaux RVB. Tout le "
-        "traitement tourne sur l'appareil.",
-        "Un'app di glitch art per iPhone con 19 effetti impilabili, ognuno modellato su un modo "
-        "preciso in cui l'hardware vero si guastava: tracking VHS, fioritura del fosforo CRT, "
-        "corruzione a blocchi da datamosh, pixel sorting e separazione dei canali RGB. Tutta "
-        "l'elaborazione gira sul dispositivo.",
-        "積み重ねられる 19 のエフェクトを備えた iPhone 用グリッチアートアプリ。いずれも実在の"
-        "ハードウェアが壊れたときの特定の壊れ方を再現しています。VHS のトラッキング、"
-        "CRT の蛍光体のにじみ、データモッシュのブロック破損、ピクセルソート、RGB チャンネル分離。"
-        "処理はすべて端末上で行われます。",
-        "쌓아 올릴 수 있는 19가지 효과를 갖춘 iPhone용 글리치 아트 앱. 각각 실제 하드웨어가 고장 "
-        "나던 특정한 방식을 모델링했습니다. VHS 트래킹, CRT 인광체 번짐, 데이터모시 블록 손상, 픽셀 "
-        "정렬, RGB 채널 분리. 모든 처리가 기기 안에서 이루어집니다.",
-        "Een glitch-art-app voor iPhone met 19 stapelbare effecten, elk gemodelleerd op een "
-        "specifieke manier waarop echte hardware kapotging: VHS-tracking, CRT-fosforbloei, "
-        "datamosh-blokcorruptie, pixel sorting en RGB-kanaalscheiding. Alle verwerking draait op "
-        "het toestel.",
-        "Um app de glitch art para iPhone com 19 efeitos empilháveis, cada um modelado sobre um "
-        "jeito específico pelo qual o hardware de verdade falhava: tracking de VHS, floração do "
-        "fósforo do CRT, corrupção de blocos por datamosh, ordenação de pixels e separação de "
-        "canais RGB. Todo o processamento roda no aparelho.",
-        "一款 iPhone 故障艺术应用，19 种可叠加效果，每一种都对应真实硬件当年出错的某种具体方式："
-        "VHS 循迹、CRT 荧光粉晕开、datamosh 区块损坏、像素排序和 RGB 通道分离。全部处理都在设备上"
-        "进行。"),
-    "19 stackable glitch effects": (
-        "19 stapelbare Glitch-Effekte", "19 efectos glitch apilables",
-        "19 efectos glitch apilables", "19 effets glitch empilables",
-        "19 effetti glitch impilabili", "積み重ねられる 19 のグリッチエフェクト",
-        "쌓아 올릴 수 있는 19가지 글리치 효과", "19 stapelbare glitch-effecten",
-        "19 efeitos glitch empilháveis", "19 种可叠加的故障效果"),
     "Reorderable effect layers": (
         "Umsortierbare Effektebenen", "Capas de efectos reordenables",
         "Capas de efectos reordenables", "Calques d'effets réordonnables",
         "Livelli di effetti riordinabili", "順序を入れ替えられるエフェクトレイヤー",
         "순서를 바꿀 수 있는 효과 레이어", "Herschikbare effectlagen",
         "Camadas de efeitos reordenáveis", "可重新排序的效果图层"),
-    "Nine presets: VHS, CRT, Cyber, Ghost, Retro, Film, Melt, Static, Fried": (
-        "Neun Presets: VHS, CRT, Cyber, Ghost, Retro, Film, Melt, Static, Fried",
-        "Nueve preajustes: VHS, CRT, Cyber, Ghost, Retro, Film, Melt, Static, Fried",
-        "Nueve preajustes: VHS, CRT, Cyber, Ghost, Retro, Film, Melt, Static, Fried",
-        "Neuf préréglages : VHS, CRT, Cyber, Ghost, Retro, Film, Melt, Static, Fried",
-        "Nove preset: VHS, CRT, Cyber, Ghost, Retro, Film, Melt, Static, Fried",
-        "九つのプリセット：VHS、CRT、Cyber、Ghost、Retro、Film、Melt、Static、Fried",
-        "아홉 개의 프리셋: VHS, CRT, Cyber, Ghost, Retro, Film, Melt, Static, Fried",
-        "Negen presets: VHS, CRT, Cyber, Ghost, Retro, Film, Melt, Static, Fried",
-        "Nove presets: VHS, CRT, Cyber, Ghost, Retro, Film, Melt, Static, Fried",
-        "九个预设：VHS、CRT、Cyber、Ghost、Retro、Film、Melt、Static、Fried"),
-    "Per-effect parameter control": (
-        "Parametersteuerung pro Effekt", "Control de parámetros por efecto",
-        "Control de parámetros por efecto", "Contrôle des paramètres effet par effet",
-        "Controllo dei parametri per ogni effetto", "エフェクトごとのパラメータ調整",
-        "효과별 파라미터 조절", "Parameterregeling per effect",
-        "Controle de parâmetros por efeito", "逐效果的参数控制"),
-    "Looping video export": (
-        "Export als Videoschleife", "Exportación de vídeo en bucle",
-        "Exportación de video en bucle", "Export en vidéo bouclée",
-        "Esportazione video in loop", "ループ動画の書き出し", "루프 영상 내보내기",
-        "Export als loopende video", "Exportação de vídeo em loop", "循环视频导出"),
-    "On-device processing, no upload": (
-        "Verarbeitung auf dem Gerät, kein Upload", "Procesado en el dispositivo, sin subida",
-        "Procesamiento en el dispositivo, sin subida", "Traitement sur l'appareil, sans envoi",
-        "Elaborazione sul dispositivo, nessun upload", "処理は端末上、アップロードなし",
-        "기기 내 처리, 업로드 없음", "Verwerking op het toestel, geen upload",
-        "Processamento no aparelho, sem upload", "在设备上处理，不上传"),
+})
+
+# ---------------------------------------------------------------- 2.0
+#
+# Everything the 2.0 release changed: 29 effects with the free/Premium split, video, settings that
+# move, stamps and masks, the preset packs, GPU rendering, no ads. The keys are written with their
+# line wrapping collapsed; merge.py matches them against the page and the FAQ schema alike.
+#
+# The effect roll-call in the FAQ answer uses the names the app's localised 2.0 listing uses, so a
+# reader can match every word against a button.
+T.update({
+    "MODUL8 is a free glitch art app for iPhone. 29 stackable effects for photos and video, "
+    "modelled on real hardware failures: VHS, CRT, datamosh, pixel sorting, satellite dropout. "
+    "Runs on device.": (
+        "MODUL8 ist eine kostenlose Glitch-Art-App für iPhone. 29 stapelbare Effekte für Fotos und "
+        "Video, echten Hardwarefehlern nachgebildet: VHS, CRT, Datamosh, Pixel Sorting, "
+        "abreißendes Satellitensignal. Läuft auf dem Gerät.",
+        "MODUL8 es una app de glitch art gratis para iPhone. 29 efectos apilables para fotos y "
+        "vídeo, modelados sobre fallos reales de hardware: VHS, CRT, datamosh, ordenación de "
+        "píxeles, señal de satélite perdida. Funciona en el dispositivo.",
+        "MODUL8 es una app de glitch art gratis para iPhone. 29 efectos apilables para fotos y "
+        "video, modelados sobre fallas reales de hardware: VHS, CRT, datamosh, ordenación de "
+        "píxeles, señal de satélite perdida. Funciona en el dispositivo.",
+        "MODUL8 est une app de glitch art gratuite pour iPhone. 29 effets empilables pour photos et "
+        "vidéos, modélisés sur de vraies pannes de matériel : VHS, CRT, datamosh, tri de pixels, "
+        "signal satellite qui décroche. Fonctionne sur l'appareil.",
+        "MODUL8 è un'app di glitch art gratis per iPhone. 29 effetti impilabili per foto e video, "
+        "modellati su guasti hardware reali: VHS, CRT, datamosh, pixel sorting, segnale "
+        "satellitare perso. Gira sul dispositivo.",
+        "MODUL8 は iPhone 用の無料グリッチアートアプリです。写真にも動画にも使える、実在の"
+        "ハードウェア故障を再現した、積み重ねられる 29 のエフェクト。VHS、CRT、データモッシュ、"
+        "ピクセルソート、途切れた衛星放送。処理は端末上で完結します。",
+        "MODUL8는 iPhone용 무료 글리치 아트 앱입니다. 실제 하드웨어 고장을 모델링한, 사진과 "
+        "동영상에 쌓아 올릴 수 있는 29가지 효과. VHS, CRT, 데이터모시, 픽셀 정렬, 끊긴 위성 신호. "
+        "기기 안에서 처리합니다.",
+        "MODUL8 is een gratis glitch-art-app voor iPhone. 29 stapelbare effecten voor foto's en "
+        "video, gemodelleerd op echte hardwarestoringen: VHS, CRT, datamosh, pixel sorting, "
+        "wegvallend satellietsignaal. Draait op het toestel.",
+        "O MODUL8 é um app de glitch art grátis para iPhone. 29 efeitos empilháveis para fotos e "
+        "vídeos, modelados sobre falhas reais de hardware: VHS, CRT, datamosh, ordenação de "
+        "pixels, sinal de satélite caindo. Roda no aparelho.",
+        "MODUL8 是一款 iPhone 上的免费故障艺术应用。29 种可叠加效果，照片和视频都能用，"
+        "每一种都对应真实硬件的故障：VHS、CRT、数据莫氏、像素排序、失锁的卫星信号。"
+        "全部在设备上运行。"),
+    "29 stackable glitch effects for photos and video, modelled on real hardware failures: VHS, "
+    "CRT, datamosh, pixel sorting. Free on iPhone.": (
+        "29 stapelbare Glitch-Effekte für Fotos und Video, echten Hardwarefehlern nachgebildet: "
+        "VHS, CRT, Datamosh, Pixel Sorting. Kostenlos auf iPhone.",
+        "29 efectos glitch apilables para fotos y vídeo, modelados sobre fallos reales de "
+        "hardware: VHS, CRT, datamosh, ordenación de píxeles. Gratis en iPhone.",
+        "29 efectos glitch apilables para fotos y video, modelados sobre fallas reales de "
+        "hardware: VHS, CRT, datamosh, ordenación de píxeles. Gratis en iPhone.",
+        "29 effets glitch empilables pour photos et vidéos, modélisés sur de vraies pannes de "
+        "matériel : VHS, CRT, datamosh, tri de pixels. Gratuit sur iPhone.",
+        "29 effetti glitch impilabili per foto e video, modellati su guasti hardware reali: VHS, "
+        "CRT, datamosh, pixel sorting. Gratis su iPhone.",
+        "写真にも動画にも使える、実在のハードウェア故障を再現した、積み重ねられる 29 の"
+        "グリッチエフェクト。VHS、CRT、データモッシュ、ピクセルソート。iPhone で無料。",
+        "실제 하드웨어 고장을 모델링한, 사진과 동영상에 쌓아 올릴 수 있는 29가지 글리치 효과. "
+        "VHS, CRT, 데이터모시, 픽셀 정렬. iPhone에서 무료.",
+        "29 stapelbare glitch-effecten voor foto's en video, gemodelleerd op echte "
+        "hardwarestoringen: VHS, CRT, datamosh, pixel sorting. Gratis op iPhone.",
+        "29 efeitos glitch empilháveis para fotos e vídeos, modelados sobre falhas reais de "
+        "hardware: VHS, CRT, datamosh, ordenação de pixels. Grátis no iPhone.",
+        "29 种可叠加的故障效果，照片和视频都能用，对应真实硬件的故障：VHS、CRT、数据莫氏、"
+        "像素排序。iPhone 上免费。"),
+    "MODUL8 is an image modulation kit for iPhone. Twenty-nine effects, each one modelled on a "
+    "specific way that real hardware used to fail: tape that lost tracking, tubes that bloomed at "
+    "the edges, a satellite feed losing lock, compression that gave up halfway through a frame. "
+    "Stack them, reorder them, and turn a photo or a video clip into something that looks like it "
+    "came off a machine that was already dying.": (
+        "MODUL8 ist ein Baukasten zur Bildmodulation für iPhone. Neunundzwanzig Effekte, jeder "
+        "einer bestimmten Art nachgebildet, auf die echte Hardware früher versagte: Band, das die "
+        "Spur verlor, Röhren, die an den Rändern blühten, ein Satellitensignal, das abriss, "
+        "Kompression, die mitten im Bild aufgab. Staple sie, ordne sie um, und mach aus einem Foto "
+        "oder einem Videoclip etwas, das aussieht, als käme es aus einer Maschine, die schon im "
+        "Sterben lag.",
+        "MODUL8 es un kit de modulación de imagen para iPhone. Veintinueve efectos, cada uno "
+        "modelado sobre una forma concreta en que fallaba el hardware real: cinta que perdía el "
+        "tracking, tubos que florecían por los bordes, una señal de satélite que se caía, "
+        "compresión que se rendía a mitad de fotograma. Apílalos, reordénalos y convierte una foto "
+        "o un clip de vídeo en algo que parece salido de una máquina que ya se estaba muriendo.",
+        "MODUL8 es un kit de modulación de imagen para iPhone. Veintinueve efectos, cada uno "
+        "modelado sobre una forma concreta en que fallaba el hardware real: cinta que perdía el "
+        "tracking, tubos que florecían por los bordes, una señal de satélite que se caía, "
+        "compresión que se rendía a mitad de cuadro. Apílalos, reordénalos y convierte una foto o "
+        "un clip de video en algo que parece salido de una máquina que ya se estaba muriendo.",
+        "MODUL8 est un kit de modulation d'image pour iPhone. Vingt-neuf effets, chacun modélisé "
+        "sur une façon précise dont le matériel tombait en panne : la bande qui perdait la piste, "
+        "les tubes qui fleurissaient sur les bords, un signal satellite qui décrochait, la "
+        "compression qui abandonnait au milieu d'une image. Empilez-les, réordonnez-les, et "
+        "transformez une photo ou un clip vidéo en quelque chose qui semble sorti d'une machine "
+        "déjà mourante.",
+        "MODUL8 è un kit di modulazione dell'immagine per iPhone. Ventinove effetti, ognuno "
+        "modellato su un modo preciso in cui l'hardware vero si guastava: il nastro che perdeva il "
+        "tracking, i tubi che fiorivano ai bordi, un segnale satellitare che perdeva l'aggancio, la "
+        "compressione che si arrendeva a metà fotogramma. Impilali, riordinali, e trasforma una "
+        "foto o una clip video in qualcosa che sembra uscito da una macchina già morente.",
+        "MODUL8 は iPhone のための画像モジュレーションキットです。二十九のエフェクトは、"
+        "いずれも実在のハードウェアが壊れたときの特定の壊れ方を再現しています。トラッキングを"
+        "失ったテープ、端がにじんだブラウン管、受信が途切れた衛星放送、一枚の途中で諦めた圧縮。"
+        "積み重ね、順序を入れ替えれば、写真も動画のクリップも、すでに死にかけていた機械から"
+        "出てきたような姿になります。",
+        "MODUL8는 iPhone을 위한 이미지 변조 키트입니다. 스물아홉 가지 효과가 각각 실제 하드웨어가 "
+        "고장 나던 특정한 방식을 모델링합니다. 트래킹을 잃은 테이프, 가장자리가 번진 브라운관, "
+        "신호를 놓친 위성 방송, 한 프레임 도중에 포기해 버린 압축. 쌓고, 순서를 바꾸면, 사진이든 "
+        "동영상 클립이든 이미 죽어 가던 기계에서 나온 것처럼 됩니다.",
+        "MODUL8 is een beeldmodulatiekit voor iPhone. Negenentwintig effecten, elk gemodelleerd "
+        "op een specifieke manier waarop echte hardware kapotging: band die de tracking verloor, "
+        "buizen die aan de randen opbloeiden, een satellietsignaal dat wegviel, compressie die "
+        "halverwege een beeld opgaf. Stapel ze, herschik ze, en maak van een foto of een videoclip "
+        "iets dat eruitziet alsof het van een machine komt die al aan het sterven was.",
+        "O MODUL8 é um kit de modulação de imagem para iPhone. Vinte e nove efeitos, cada um "
+        "modelado sobre um jeito específico pelo qual o hardware de verdade falhava: fita que "
+        "perdia o tracking, tubos que floresciam nas bordas, um sinal de satélite que caía, "
+        "compressão que desistia no meio de um quadro. Empilhe, reordene, e transforme uma foto ou "
+        "um clipe de vídeo em algo que parece ter saído de uma máquina que já estava morrendo.",
+        "MODUL8 是一套 iPhone 上的图像调制工具。二十九种效果，每一种都对应真实硬件当年出错的"
+        "某种具体方式：跑了带的磁带、边缘晕开的显像管、失锁的卫星信号、在一帧中途放弃的压缩。"
+        "把它们叠起来、换个顺序，一张照片或一段视频就会变成像是从一台已经在垂死的机器里"
+        "吐出来的东西。"),
+    "The nineteen classic effects are free, there are no ads, everything renders on your phone, "
+    "and nothing you open in it is ever uploaded.": (
+        "Die neunzehn klassischen Effekte sind kostenlos, es gibt keine Werbung, alles wird auf "
+        "deinem Telefon gerechnet, und nichts, was du darin öffnest, wird je hochgeladen.",
+        "Los diecinueve efectos clásicos son gratis, no hay anuncios, todo se procesa en tu móvil "
+        "y nada de lo que abres en ella se sube nunca.",
+        "Los diecinueve efectos clásicos son gratis, no hay anuncios, todo se procesa en tu "
+        "celular y nada de lo que abres en ella se sube nunca.",
+        "Les dix-neuf effets classiques sont gratuits, il n'y a pas de publicité, tout est calculé "
+        "sur votre téléphone, et rien de ce que vous y ouvrez n'est jamais envoyé.",
+        "I diciannove effetti classici sono gratis, non c'è pubblicità, tutto viene elaborato sul "
+        "tuo telefono, e niente di quello che ci apri viene mai caricato.",
+        "定番の十九のエフェクトは無料で、広告はなく、描画はすべてあなたの端末の上で行われ、"
+        "開いたものがアップロードされることは一度もありません。",
+        "기본 효과 열아홉 가지는 무료이고, 광고는 없으며, 모든 렌더링이 당신의 휴대폰에서 "
+        "이루어지고, 앱에서 연 것은 무엇도 업로드되지 않습니다.",
+        "De negentien klassieke effecten zijn gratis, er zijn geen advertenties, alles wordt op je "
+        "telefoon gerenderd, en niets wat je erin opent wordt ooit geüpload.",
+        "Os dezenove efeitos clássicos são grátis, não há anúncios, tudo é renderizado no seu "
+        "telefone, e nada do que você abre nele é enviado, nunca.",
+        "十九种经典效果免费，没有广告，一切都在你的手机上渲染，你在里面打开的任何东西都不会"
+        "被上传。"),
+    "Nothing is baked in. Twenty-nine effects, stacked in any order you like.": (
+        "Nichts ist festgelegt. Neunundzwanzig Effekte, gestapelt in beliebiger Reihenfolge.",
+        "Nada está fijado. Veintinueve efectos, apilados en el orden que quieras.",
+        "Nada está fijado. Veintinueve efectos, apilados en el orden que quieras.",
+        "Rien n'est figé. Vingt-neuf effets, empilés dans l'ordre qui vous plaît.",
+        "Niente è fissato. Ventinove effetti, impilati nell'ordine che preferisci.",
+        "決め打ちのものはありません。二十九のエフェクトを、好きな順序で重ねて。",
+        "정해진 것은 없습니다. 스물아홉 가지 효과를, 원하는 순서로 쌓아서.",
+        "Niets ligt vast. Negenentwintig effecten, gestapeld in welke volgorde je maar wilt.",
+        "Nada é fixo. Vinte e nove efeitos, empilhados na ordem que você preferir.",
+        "没有任何东西是写死的。二十九种效果，按你喜欢的顺序叠加。"),
+    "Twenty-nine effects. Every one of them is a real failure mode.": (
+        "Neunundzwanzig Effekte. Jeder davon ist ein echter Fehlermodus.",
+        "Veintinueve efectos. Cada uno es un modo de fallo real.",
+        "Veintinueve efectos. Cada uno es un modo de falla real.",
+        "Vingt-neuf effets. Chacun est un mode de panne réel.",
+        "Ventinove effetti. Ognuno è una modalità di guasto reale.",
+        "二十九のエフェクト。そのどれもが、実在した壊れ方です。",
+        "스물아홉 가지 효과. 그 하나하나가 실제로 있었던 고장 방식입니다.",
+        "Negenentwintig effecten. Elk ervan is een echte storingsmodus.",
+        "Vinte e nove efeitos. Cada um deles é um modo de falha real.",
+        "二十九种效果。每一种都是真实存在过的失效方式。"),
+    "They are not variations on a theme. Each one models something different, which is why "
+    "stacking them gets interesting instead of muddy. Nineteen classics are free, and ten more "
+    "come with Premium.": (
+        "Sie sind keine Variationen eines Themas. Jeder bildet etwas anderes nach, und darum wird "
+        "das Stapeln interessant statt matschig. Neunzehn Klassiker sind kostenlos, zehn weitere "
+        "gibt es mit Premium.",
+        "No son variaciones sobre un tema. Cada uno modela algo distinto, y por eso apilarlos "
+        "resulta interesante en vez de embarrado. Diecinueve clásicos son gratis, y diez más "
+        "vienen con Premium.",
+        "No son variaciones sobre un tema. Cada uno modela algo distinto, y por eso apilarlos "
+        "resulta interesante en vez de embarrado. Diecinueve clásicos son gratis, y diez más "
+        "vienen con Premium.",
+        "Ce ne sont pas des variations sur un thème. Chacun modélise quelque chose de différent, "
+        "et c'est pourquoi les empiler devient intéressant au lieu de devenir boueux. Dix-neuf "
+        "classiques sont gratuits, et dix de plus viennent avec Premium.",
+        "Non sono variazioni su un tema. Ognuno modella qualcosa di diverso, ed è per questo che "
+        "impilarli diventa interessante invece che fangoso. Diciannove classici sono gratis, e "
+        "altri dieci arrivano con Premium.",
+        "同じ主題の変奏ではありません。どれも別のものを再現しているので、重ねると濁るのではなく、"
+        "面白くなります。定番の十九は無料で、さらに十が Premium で加わります。",
+        "하나의 주제에 대한 변주가 아닙니다. 각각이 서로 다른 것을 모델링하기 때문에, 쌓으면 "
+        "탁해지는 대신 흥미로워집니다. 기본 열아홉 가지는 무료이고, 열 가지가 Premium으로 "
+        "더해집니다.",
+        "Het zijn geen variaties op een thema. Elk modelleert iets anders, en daarom wordt stapelen "
+        "interessant in plaats van modderig. Negentien klassiekers zijn gratis, en nog tien komen "
+        "met Premium.",
+        "Não são variações sobre um tema. Cada um modela algo diferente, e é por isso que "
+        "empilhá-los fica interessante em vez de embolado. Dezenove clássicos são grátis, e mais "
+        "dez vêm com o Premium.",
+        "它们不是同一个主题的变奏。每一种模拟的都是不同的东西，所以叠起来会变得有意思，"
+        "而不是糊成一团。十九种经典效果免费，另外十种随 Premium 提供。"),
+    "Ten more with Premium": (
+        "Zehn weitere mit Premium", "Diez más con Premium", "Diez más con Premium",
+        "Dix de plus avec Premium", "Altri dieci con Premium", "Premium でさらに十",
+        "Premium으로 열 가지 더", "Nog tien met Premium", "Mais dez com o Premium",
+        "Premium 再加十种"),
+    "New in 2.0, and each one another machine to fail through: a satellite feed losing lock, a "
+    "broadcast arriving twice and leaving a ghost, slow-scan television, teletext, a fax line, a "
+    "picture reposted until it wears out, a webcam, a handheld games console, a magnet held to a "
+    "tube, and tape chewed up by the deck.": (
+        "Neu in 2.0, und jeder davon eine weitere Maschine, an der etwas kaputtgehen kann: ein "
+        "Satellitensignal, das abreißt, eine Sendung, die doppelt ankommt und ein Geisterbild "
+        "hinterlässt, Slow-Scan-Fernsehen, Videotext, eine Faxleitung, ein Bild, das so oft neu "
+        "gepostet wurde, bis es verschlissen ist, eine Webcam, eine Handheld-Konsole, ein Magnet "
+        "an der Bildröhre und Band, das der Rekorder zu Bandsalat gekaut hat.",
+        "Nuevos en la 2.0, y cada uno otra máquina con la que fallar: una señal de satélite que se "
+        "cae, una emisión que llega dos veces y deja una doble imagen, televisión de barrido "
+        "lento, teletexto, una línea de fax, una imagen resubida hasta gastarse, una webcam, una "
+        "consola portátil, un imán pegado a un tubo y una cinta masticada por el aparato.",
+        "Nuevos en la 2.0, y cada uno otra máquina con la cual fallar: una señal de satélite que "
+        "se cae, una transmisión que llega dos veces y deja una doble imagen, televisión de "
+        "barrido lento, teletexto, una línea de fax, una imagen resubida hasta gastarse, una "
+        "webcam, una consola portátil, un imán pegado a un cinescopio y una cinta masticada por la "
+        "videocasetera.",
+        "Nouveaux dans la 2.0, et chacun une machine de plus par laquelle tomber en panne : un "
+        "signal satellite qui décroche, une émission qui arrive deux fois et laisse un "
+        "dédoublement, la télévision à balayage lent, le télétexte, une ligne de fax, une image "
+        "repostée jusqu'à l'usure, une webcam, une console portable, un aimant posé contre un tube, "
+        "et une bande mangée par le magnétoscope.",
+        "Nuovi nella 2.0, e ognuno un'altra macchina attraverso cui guastarsi: un segnale "
+        "satellitare che perde l'aggancio, una trasmissione che arriva due volte e lascia uno "
+        "sdoppiamento, la televisione a scansione lenta, il televideo, una linea fax, un'immagine "
+        "ripostata finché non si consuma, una webcam, una console portatile, una calamita "
+        "appoggiata a un tubo catodico, e un nastro mangiato dal videoregistratore.",
+        "2.0 で新しく加わったもので、どれもまた別の機械の壊れ方です。受信が途切れた衛星放送、"
+        "二重に届いてゴーストを残す放送、低速走査テレビ、文字放送、FAX の回線、再投稿を重ねて"
+        "すり減った画像、Web カメラ、携帯ゲーム機、ブラウン管に近づけた磁石、そしてデッキに"
+        "噛まれたテープ。",
+        "2.0에서 새로 들어온 것들로, 하나하나가 또 다른 기계의 고장 방식입니다. 신호를 놓친 위성 "
+        "방송, 두 번 도착해 고스트를 남기는 방송, 저속 주사 텔레비전, 문자방송, 팩스 회선, "
+        "재업로드를 거듭하다 닳아 버린 사진, 웹캠, 휴대 게임기, 브라운관에 갖다 댄 자석, 그리고 "
+        "데크에 씹힌 테이프.",
+        "Nieuw in 2.0, en elk een volgende machine om door kapot te gaan: een satellietsignaal dat "
+        "wegvalt, een uitzending die twee keer aankomt en een spookbeeld achterlaat, "
+        "slow-scan-televisie, teletekst, een faxlijn, een beeld dat zo vaak opnieuw gepost is tot "
+        "het versleten is, een webcam, een handheld spelcomputer, een magneet tegen een beeldbuis, "
+        "en band die door de recorder is opgevreten.",
+        "Novos na 2.0, e cada um mais uma máquina por onde falhar: um sinal de satélite caindo, "
+        "uma transmissão que chega duas vezes e deixa uma sombra, televisão de varredura lenta, "
+        "teletexto, uma linha de fax, uma imagem repostada até se gastar, uma webcam, um videogame "
+        "portátil, um ímã encostado num tubo e uma fita enroscada pelo aparelho.",
+        "2.0 新增，每一种都是又一台可以出故障的机器：失锁的卫星信号、到达两次而留下鬼影的广播、"
+        "慢扫描电视、图文电视、一条传真线路、被反复转发直到包浆的图片、摄像头、掌机、"
+        "贴在显像管上的磁铁，以及被录像机绞坏的磁带。"),
+    "Free · 19 classics": (
+        "Kostenlos · 19 Klassiker", "Gratis · 19 clásicos", "Gratis · 19 clásicos",
+        "Gratuit · 19 classiques", "Gratis · 19 classici", "無料 · 定番の 19 種類",
+        "무료 · 기본 19가지", "Gratis · 19 klassiekers", "Grátis · 19 clássicos",
+        "免费 · 19 种经典效果"),
+    "Premium · 10 new in 2.0": (
+        "Premium · 10 neue in 2.0", "Premium · 10 nuevos en la 2.0", "Premium · 10 nuevos en la 2.0",
+        "Premium · 10 nouveaux dans la 2.0", "Premium · 10 nuovi nella 2.0",
+        "Premium · 2.0 で新しい 10 種類", "Premium · 2.0의 새 효과 10가지",
+        "Premium · 10 nieuw in 2.0", "Premium · 10 novos na 2.0", "Premium · 2.0 新增 10 种"),
+    "Rebuilt for 2.0. Everything renders on the GPU.": (
+        "Neu gebaut für 2.0. Alles wird auf der GPU gerechnet.",
+        "Rehecha para la 2.0. Todo se procesa en la GPU.",
+        "Rehecha para la 2.0. Todo se procesa en la GPU.",
+        "Reconstruite pour la 2.0. Tout est calculé sur le GPU.",
+        "Rifatta per la 2.0. Tutto viene elaborato sulla GPU.",
+        "2.0 で作り直しました。描画はすべて GPU で。",
+        "2.0에서 새로 만들었습니다. 모든 렌더링은 GPU에서.",
+        "Opnieuw gebouwd voor 2.0. Alles wordt op de GPU gerenderd.",
+        "Refeito para a 2.0. Tudo é renderizado na GPU.",
+        "为 2.0 重做。所有渲染都在 GPU 上完成。"),
+    "The preview is sharp and it updates while you drag, and a 4K still takes a moment instead of "
+    "half a minute. The layer stack shows exactly what is running and in what order, and every "
+    "setting has its own level meter. Nothing is a single slider.": (
+        "Die Vorschau ist scharf und aktualisiert sich, während du ziehst, und ein 4K-Foto braucht "
+        "einen Moment statt einer halben Minute. Der Ebenenstapel zeigt genau, was läuft und in "
+        "welcher Reihenfolge, und jeder Regler hat seine eigene Pegelanzeige. Nichts ist nur ein "
+        "einzelner Schieberegler.",
+        "La vista previa es nítida y se actualiza mientras arrastras, y una foto en 4K tarda un "
+        "momento en lugar de medio minuto. La pila de capas muestra exactamente qué se está "
+        "ejecutando y en qué orden, y cada control tiene su propio medidor de nivel. Nada se "
+        "reduce a un solo control.",
+        "La vista previa es nítida y se actualiza mientras arrastras, y una foto en 4K tarda un "
+        "momento en vez de medio minuto. La pila de capas muestra exactamente qué se está "
+        "ejecutando y en qué orden, y cada control tiene su propio medidor de nivel. Nada se "
+        "reduce a un solo control.",
+        "L'aperçu est net et se met à jour pendant que vous faites glisser, et une photo en 4K "
+        "prend un instant au lieu d'une demi-minute. La pile de calques montre exactement ce qui "
+        "tourne et dans quel ordre, et chaque réglage a son propre vumètre. Rien ne se résume à un "
+        "curseur unique.",
+        "L'anteprima è nitida e si aggiorna mentre trascini, e una foto in 4K richiede un attimo "
+        "invece di mezzo minuto. La pila dei livelli mostra esattamente cosa sta girando e in che "
+        "ordine, e ogni controllo ha il suo indicatore di livello. Niente si riduce a un solo "
+        "cursore.",
+        "プレビューはシャープで、ドラッグしているあいだにも更新され、4K の静止画も 30 秒ではなく"
+        "一瞬で仕上がります。レイヤーの重なりには、何がどの順番で動いているかがそのまま表示され、"
+        "パラメータごとにレベルメーターが付いています。スライダー 1 本で終わるものはありません。",
+        "미리보기는 선명하고 끄는 동안에도 갱신되며, 4K 사진도 30초가 아니라 금방 끝납니다. "
+        "레이어 스택은 무엇이 어떤 순서로 돌고 있는지 정확히 보여 주고, 설정마다 레벨 미터가 "
+        "따로 있습니다. 슬라이더 하나로 끝나는 것은 없습니다.",
+        "De preview is scherp en werkt bij terwijl je sleept, en een 4K-foto kost een moment in "
+        "plaats van een halve minuut. De lagenstapel laat precies zien wat er draait en in welke "
+        "volgorde, en elke regelaar heeft zijn eigen niveaumeter. Niets is maar één schuifje.",
+        "A prévia é nítida e se atualiza enquanto você arrasta, e uma foto em 4K leva um instante "
+        "em vez de meio minuto. A pilha de camadas mostra exatamente o que está rodando e em que "
+        "ordem, e cada controle tem seu próprio medidor de nível. Nada se resume a um controle só.",
+        "预览清晰，拖动时就会随之更新，一张 4K 静态图以前要半分钟，现在转眼就好。图层栈清楚显示"
+        "正在运行什么、按什么顺序，每个参数都有自己的电平表。没有什么是一根滑杆了事的。"),
+    "Open a photo, or a video clip, from your library.": (
+        "Öffne ein Foto oder einen Videoclip aus deiner Mediathek.",
+        "Abre una foto, o un clip de vídeo, de tu fototeca.",
+        "Abre una foto, o un clip de video, de tu fototeca.",
+        "Ouvrez une photo, ou un clip vidéo, depuis votre photothèque.",
+        "Apri una foto, o una clip video, dalla tua libreria.",
+        "ライブラリから写真を、あるいは動画のクリップを開きます。",
+        "보관함에서 사진이나 동영상 클립을 엽니다.",
+        "Open een foto, of een videoclip, uit je bibliotheek.",
+        "Abra uma foto, ou um clipe de vídeo, da sua biblioteca.",
+        "从图库里打开一张照片，或一段视频。"),
+    "Start from a preset. Nine are built in, and Premium adds two packs, Dead Air and Y2K.": (
+        "Fang mit einem Preset an. Neun sind eingebaut, und Premium bringt zwei Pakete dazu, "
+        "Sendepause und Y2K.",
+        "Empieza por un preajuste. Nueve vienen incluidos, y Premium añade dos paquetes, Fin de "
+        "emisión e Y2K.",
+        "Empieza con un preajuste. Nueve vienen incluidos, y Premium agrega dos paquetes, Fuera "
+        "del aire y Y2K.",
+        "Partez d'un préréglage. Neuf sont intégrés, et Premium ajoute deux packs, Blanc "
+        "d'antenne et Y2K.",
+        "Parti da un preset. Nove sono inclusi, e Premium aggiunge due pack, Fuori onda e Y2K.",
+        "プリセットから始めます。9 種類を収録し、Premium ではプリセットパック「放送事故」と"
+        "「Y2K」が加わります。",
+        "프리셋에서 시작합니다. 기본 9종이 들어 있고, Premium에는 방송 사고와 Y2K, 두 가지 팩이 "
+        "더해집니다.",
+        "Begin bij een preset. Negen zitten erin, en Premium voegt twee pakketten toe, Storing en "
+        "Y2K.",
+        "Comece por um preset. Nove vêm prontos, e o Premium acrescenta dois pacotes, Fora do ar e "
+        "Y2K.",
+        "从一个预设开始。内置九个，Premium 再加两套合集：“停播”和“千禧”。"),
+    "Open any effect and move its settings. Any of them can drift, step or sweep on its own.": (
+        "Öffne einen beliebigen Effekt und bewege seine Regler. Jeder davon kann von selbst "
+        "driften, springen oder schwingen.",
+        "Abre cualquier efecto y mueve sus controles. Cualquiera de ellos puede derivar, saltar o "
+        "barrer por sí solo.",
+        "Abre cualquier efecto y mueve sus controles. Cualquiera de ellos puede derivar, saltar o "
+        "barrer por sí solo.",
+        "Ouvrez n'importe quel effet et déplacez ses réglages. Chacun peut dériver, sauter ou "
+        "balayer tout seul.",
+        "Apri qualsiasi effetto e muovi i suoi controlli. Ognuno può oscillare, andare a scatti o "
+        "spazzare da solo.",
+        "どのエフェクトでも開いて、パラメータを動かします。どれも、ゆらぎ、ステップ、スイープで"
+        "ひとりでに動かせます。",
+        "어떤 효과든 열어 설정을 움직입니다. 어느 설정이든 스스로 흔들리고, 계단처럼 바뀌고, "
+        "쓸고 지나가게 할 수 있습니다.",
+        "Open een willekeurig effect en verschuif zijn regelaars. Elk ervan kan vanzelf zweven, "
+        "verspringen of zwaaien.",
+        "Abra qualquer efeito e mexa nos controles. Qualquer um deles pode oscilar, pular ou "
+        "varrer sozinho.",
+        "打开任意一个效果，调它的参数。每个参数都能自己漂移、跳变或扫动。"),
+    "Put the layers in a different order and watch the picture change.": (
+        "Bring die Ebenen in eine andere Reihenfolge und sieh zu, wie sich das Bild ändert.",
+        "Cambia el orden de las capas y mira cómo cambia la imagen.",
+        "Cambia el orden de las capas y mira cómo cambia la imagen.",
+        "Changez l'ordre des calques et regardez l'image changer.",
+        "Cambia l'ordine dei livelli e guarda l'immagine cambiare.",
+        "レイヤーの順番を入れ替えて、絵が変わるのを見ます。",
+        "레이어의 순서를 바꾸고 그림이 달라지는 것을 봅니다.",
+        "Zet de lagen in een andere volgorde en zie het beeld veranderen.",
+        "Mude a ordem das camadas e veja a imagem mudar.",
+        "把图层换个顺序，看着画面跟着变。"),
+    "Burn in a camcorder, digicam, VCR or CCTV date, or mask the subject so it stays clean while "
+    "the background breaks, or the other way round.": (
+        "Brenn ein Datum ein wie ein Camcorder, eine Digicam, ein Videorekorder oder eine "
+        "Überwachungskamera, oder maskiere das Motiv, damit es sauber bleibt, während der "
+        "Hintergrund zerbricht, oder umgekehrt.",
+        "Graba la fecha como una videocámara, una cámara digital, un vídeo doméstico o una cámara "
+        "de vigilancia, o enmascara al sujeto para que quede limpio mientras el fondo se rompe, o "
+        "al revés.",
+        "Graba la fecha como una videocámara, una cámara digital, una videocasetera o una cámara "
+        "de seguridad, o enmascara al sujeto para que quede limpio mientras el fondo se rompe, o "
+        "al revés.",
+        "Incrustez une date façon caméscope, appareil numérique, magnétoscope ou caméra de "
+        "surveillance, ou masquez le sujet pour qu'il reste net pendant que l'arrière-plan se "
+        "casse, ou l'inverse.",
+        "Imprimi una data da videocamera, fotocamera digitale, videoregistratore o telecamera di "
+        "sorveglianza, oppure maschera il soggetto perché resti pulito mentre lo sfondo si rompe, "
+        "o il contrario.",
+        "ビデオカメラ、デジカメ、ビデオデッキ、防犯カメラ風の日付を焼き込んだり、被写体に"
+        "マスクをかけて、背景だけを壊して被写体はきれいなまま残したり、その逆にしたりします。",
+        "캠코더, 디카, VCR, CCTV 스타일의 날짜를 새겨 넣거나, 피사체를 마스킹해 배경만 망가지는 "
+        "동안 피사체는 깨끗하게 두거나, 그 반대로 합니다.",
+        "Brand een datum in zoals een camcorder, digitale camera, videorecorder of "
+        "beveiligingscamera, of maskeer het onderwerp zodat het schoon blijft terwijl de "
+        "achtergrond breekt, of andersom.",
+        "Grave a data como uma filmadora, uma câmera digital, um videocassete ou uma câmera de "
+        "segurança, ou mascare o assunto para ele ficar limpo enquanto o fundo quebra, ou o "
+        "contrário.",
+        "烙上摄像机、数码相机、录像机或监控摄像头风格的日期，或者给主体加上蒙版，让背景碎掉而"
+        "主体保持干净，也可以反过来。"),
+    "Save to your camera roll, or save the whole stack to use again.": (
+        "Sichere in deine Aufnahmen, oder sichere den ganzen Stapel, um ihn wieder zu verwenden.",
+        "Guarda en tu carrete, o guarda la pila entera para volver a usarla.",
+        "Guarda en tu carrete, o guarda la pila entera para volver a usarla.",
+        "Enregistrez dans votre pellicule, ou enregistrez toute la pile pour la réutiliser.",
+        "Salva nel rullino, oppure salva l'intera pila per riusarla.",
+        "カメラロールに保存するか、重ねた組み合わせをまるごと保存して、また使います。",
+        "카메라 롤에 저장하거나, 쌓은 조합을 통째로 저장해 다시 씁니다.",
+        "Bewaar in je filmrol, of bewaar de hele stapel om opnieuw te gebruiken.",
+        "Salve no rolo da câmera, ou salve a pilha inteira para usar de novo.",
+        "存进相机胶卷，或者把整组叠加保存下来，下次再用。"),
+    "Everything is processed on the device. There is no upload, no render queue and no server "
+    "holding a copy of anything you shot. The app is about four megabytes.": (
+        "Alles wird auf dem Gerät verarbeitet. Es gibt keinen Upload, keine Renderwarteschlange "
+        "und keinen Server, der eine Kopie von irgendetwas hält, das du aufgenommen hast. Die App "
+        "ist etwa vier Megabyte groß.",
+        "Todo se procesa en el dispositivo. No hay subida, ni cola de render, ni servidor "
+        "guardando una copia de nada de lo que has fotografiado. La app ocupa unos cuatro megas.",
+        "Todo se procesa en el dispositivo. No hay subida, ni cola de render, ni servidor "
+        "guardando una copia de nada de lo que fotografiaste. La app pesa unos cuatro megas.",
+        "Tout est traité sur l'appareil. Il n'y a pas d'envoi, pas de file de rendu et pas de "
+        "serveur qui garde une copie de quoi que ce soit que vous avez photographié. L'app fait "
+        "environ quatre mégaoctets.",
+        "Tutto viene elaborato sul dispositivo. Non c'è upload, non c'è coda di rendering e non "
+        "c'è server che tenga una copia di niente di quello che hai scattato. L'app pesa circa "
+        "quattro megabyte.",
+        "処理はすべて端末の上で行われます。アップロードも、レンダリング待ちの列も、あなたが"
+        "撮ったものの複製を持つサーバーもありません。アプリの大きさは約 4 MB です。",
+        "모든 처리는 기기 안에서 이루어집니다. 업로드도, 렌더 대기열도, 당신이 찍은 것의 사본을 "
+        "가진 서버도 없습니다. 앱 크기는 약 4MB입니다.",
+        "Alles wordt op het toestel verwerkt. Er is geen upload, geen renderwachtrij en geen "
+        "server met een kopie van wat je ook hebt geschoten. De app is ongeveer vier megabyte.",
+        "Tudo é processado no aparelho. Não há envio, não há fila de renderização e não há "
+        "servidor guardando cópia de nada que você fotografou. O app tem cerca de quatro "
+        "megabytes.",
+        "一切都在设备上处理。没有上传，没有渲染队列，也没有服务器存着你拍下的任何东西的副本。"
+        "这个应用大约只有 4 MB。"),
+    "It is also why the settings feel live: you are dragging the real image on your own phone's "
+    "GPU rather than waiting on a round trip to somebody else's. And there are no ads, in the "
+    "free version or in Premium.": (
+        "Darum fühlen sich die Regler auch so unmittelbar an: Du ziehst am echten Bild, auf der "
+        "GPU deines eigenen Telefons, statt auf den Umweg über die von jemand anderem zu warten. "
+        "Und Werbung gibt es keine, weder in der kostenlosen Fassung noch in Premium.",
+        "Por eso también los controles se sienten en vivo: arrastras la imagen real en la GPU de "
+        "tu propio móvil en lugar de esperar un viaje de ida y vuelta a la de otro. Y no hay "
+        "anuncios, ni en la versión gratuita ni en Premium.",
+        "Por eso también los controles se sienten en vivo: arrastras la imagen real en la GPU de "
+        "tu propio celular en vez de esperar un viaje de ida y vuelta a la de otro. Y no hay "
+        "anuncios, ni en la versión gratuita ni en Premium.",
+        "C'est aussi pour cela que les réglages réagissent en direct : vous faites glisser la "
+        "vraie image sur le GPU de votre propre téléphone, au lieu d'attendre un aller-retour vers "
+        "celui de quelqu'un d'autre. Et il n'y a pas de publicité, ni dans la version gratuite ni "
+        "dans Premium.",
+        "È anche per questo che i controlli sembrano dal vivo: trascini l'immagine vera sulla GPU "
+        "del tuo telefono invece di aspettare un viaggio di andata e ritorno verso quella di "
+        "qualcun altro. E non c'è pubblicità, né nella versione gratuita né in Premium.",
+        "パラメータの反応がライブに感じられるのも、そのためです。ほかの誰かの GPU との往復を"
+        "待つのではなく、あなた自身の端末の GPU の上で本物の画像を動かしているからです。"
+        "そして広告は、無料版にも Premium にもありません。",
+        "설정이 실시간으로 느껴지는 것도 그래서입니다. 다른 누군가의 GPU를 오가는 왕복을 기다리는 "
+        "대신, 당신의 휴대폰 GPU 위에서 진짜 이미지를 움직이고 있으니까요. 그리고 광고는 무료 "
+        "버전에도 Premium에도 없습니다.",
+        "Daarom voelen de regelaars ook zo direct aan: je sleept aan het echte beeld op de GPU van "
+        "je eigen telefoon, in plaats van te wachten op een retourtje naar die van iemand anders. "
+        "En er zijn geen advertenties, niet in de gratis versie en niet in Premium.",
+        "É também por isso que os controles parecem ao vivo: você está arrastando a imagem de "
+        "verdade na GPU do seu próprio telefone em vez de esperar uma ida e volta até a de outra "
+        "pessoa. E não há anúncios, nem na versão gratuita nem no Premium.",
+        "这也是参数调起来如此跟手的原因：你是在自己手机的 GPU 上拖动真实的图像，而不是等着去"
+        "别人的 GPU 那里走一个来回。而且没有广告，免费版没有，Premium 也没有。"),
+    "Clips and loops, not just stills.": (
+        "Clips und Loops, nicht nur Standbilder.", "Clips y bucles, no solo fotos fijas.",
+        "Clips y bucles, no solo fotos fijas.",
+        "Des clips et des boucles, pas seulement des images fixes.", "Clip e loop, non solo foto.",
+        "静止画だけでなく、クリップもループも。", "정지 사진만이 아니라 클립과 루프도.",
+        "Clips en loops, niet alleen stilstaande beelden.", "Clipes e loops, não só fotos paradas.",
+        "不只是静态图，还有视频和循环动画。"),
+    "Open a video clip and watch it play through your effects, then trim up to a minute and save "
+    "it at 1080p or 4K with its sound. Or turn a still into a three-second loop. Any setting can "
+    "drift, step or sweep on its own, and loops and videos carry the movement: the tracking "
+    "drifts, the channels breathe. Video and loops come with Premium.": (
+        "Öffne einen Videoclip und sieh zu, wie er durch deine Effekte läuft, dann kürze ihn auf "
+        "bis zu eine Minute und sichere ihn in 1080p oder 4K, mit Ton. Oder mach aus einem "
+        "Standbild einen Loop von drei Sekunden. Jeder Regler kann von selbst driften, springen "
+        "oder schwingen, und Loops und Videos nehmen die Bewegung mit: Die Spur driftet, die "
+        "Kanäle atmen. Video und Loops gibt es mit Premium.",
+        "Abre un clip de vídeo y míralo reproducirse a través de tus efectos, luego recórtalo "
+        "hasta un minuto y guárdalo en 1080p o 4K, con su sonido. O convierte una foto fija en un "
+        "bucle de tres segundos. Cualquier control puede derivar, saltar o barrer por sí solo, y "
+        "los bucles y los vídeos conservan el movimiento: el tracking deriva, los canales "
+        "respiran. El vídeo y los bucles vienen con Premium.",
+        "Abre un clip de video y míralo reproducirse a través de tus efectos, luego recórtalo "
+        "hasta un minuto y guárdalo en 1080p o 4K, con su sonido. O convierte una foto fija en un "
+        "bucle de tres segundos. Cualquier control puede derivar, saltar o barrer por sí solo, y "
+        "los bucles y los videos conservan el movimiento: el tracking deriva, los canales "
+        "respiran. El video y los bucles vienen con Premium.",
+        "Ouvrez un clip vidéo et regardez-le passer à travers vos effets, puis coupez jusqu'à une "
+        "minute et enregistrez en 1080p ou en 4K, avec le son. Ou transformez une image fixe en "
+        "boucle de trois secondes. N'importe quel réglage peut dériver, sauter ou balayer tout "
+        "seul, et les boucles comme les vidéos gardent le mouvement : la piste dérive, les canaux "
+        "respirent. La vidéo et les boucles viennent avec Premium.",
+        "Apri una clip video e guardala scorrere attraverso i tuoi effetti, poi tagliala fino a un "
+        "minuto e salvala in 1080p o 4K, con il suo audio. Oppure trasforma una foto in un loop di "
+        "tre secondi. Qualsiasi controllo può oscillare, andare a scatti o spazzare da solo, e "
+        "loop e video si portano dietro il movimento: il tracking deriva, i canali respirano. "
+        "Video e loop arrivano con Premium.",
+        "動画のクリップを開くと、エフェクトを通した映像がそのまま再生されます。最大 1 分まで"
+        "トリミングして、音声付きのまま 1080p か 4K で保存できます。あるいは静止画を 3 秒の"
+        "ループにすることも。どのパラメータもゆらぎ、ステップ、スイープでひとりでに動かせて、"
+        "ループにも動画にもその動きが残ります。トラッキングは漂い、チャンネルは呼吸します。"
+        "動画とループは Premium の機能です。",
+        "동영상 클립을 열면 효과를 거친 영상이 그대로 재생되고, 최대 1분까지 잘라 소리와 함께 "
+        "1080p 또는 4K로 저장할 수 있습니다. 또는 정지 사진을 3초 루프로 만들 수도 있습니다. "
+        "어떤 설정이든 스스로 흔들리고, 계단처럼 바뀌고, 쓸고 지나가게 할 수 있으며, 루프와 "
+        "동영상에는 그 움직임이 그대로 담깁니다. 트래킹은 흘러가고, 채널은 숨을 쉽니다. "
+        "동영상과 루프는 Premium 기능입니다.",
+        "Open een videoclip en zie hem door je effecten spelen, knip hem dan tot een minuut en "
+        "bewaar hem in 1080p of 4K, met geluid. Of maak van een stilstaand beeld een loop van drie "
+        "seconden. Elke regelaar kan vanzelf zweven, verspringen of zwaaien, en loops en video's "
+        "nemen die beweging mee: de tracking drijft, de kanalen ademen. Video en loops komen met "
+        "Premium.",
+        "Abra um clipe de vídeo e veja ele rodar através dos seus efeitos, depois corte até um "
+        "minuto e salve em 1080p ou 4K, com o som. Ou transforme uma foto parada num loop de três "
+        "segundos. Qualquer controle pode oscilar, pular ou varrer sozinho, e os loops e vídeos "
+        "levam o movimento junto: o tracking deriva, os canais respiram. Vídeo e loops vêm com o "
+        "Premium.",
+        "打开一段视频，看着它穿过你的效果播放，然后剪到一分钟以内，连同声音以 1080p 或 4K "
+        "保存。也可以把一张静态图做成三秒循环动画。任何参数都能自己漂移、跳变或扫动，"
+        "循环动画和视频都会带上这种变化：循迹在漂，通道在呼吸。视频和循环动画随 Premium 提供。"),
+    "The nineteen classic effects, the layers and the built-in presets work without a "
+    "subscription, and there are no ads. Premium adds everything new in 2.0 and bigger exports. "
+    "You can try any Premium feature on your own photo first: only saving asks.": (
+        "Die neunzehn klassischen Effekte, die Ebenen und die eingebauten Presets funktionieren "
+        "ohne Abo, und es gibt keine Werbung. Premium bringt alles Neue aus 2.0 und größere "
+        "Exporte. Du kannst jede Premium-Funktion vorher an deinem eigenen Foto ausprobieren: Erst "
+        "beim Sichern wird gefragt.",
+        "Los diecinueve efectos clásicos, las capas y los preajustes incluidos funcionan sin "
+        "suscripción, y no hay anuncios. Premium añade todo lo nuevo de la 2.0 y exportaciones más "
+        "grandes. Puedes probar cualquier función Premium primero en tu propia foto: solo al "
+        "guardar se te pregunta.",
+        "Los diecinueve efectos clásicos, las capas y los preajustes incluidos funcionan sin "
+        "suscripción, y no hay anuncios. Premium agrega todo lo nuevo de la 2.0 y exportaciones "
+        "más grandes. Puedes probar cualquier función Premium primero en tu propia foto: solo al "
+        "guardar se te pregunta.",
+        "Les dix-neuf effets classiques, les calques et les préréglages intégrés fonctionnent sans "
+        "abonnement, et il n'y a pas de publicité. Premium ajoute tout ce qui est nouveau dans la "
+        "2.0 et des exports plus grands. Vous pouvez essayer n'importe quelle fonction Premium sur "
+        "votre propre photo d'abord : seul l'enregistrement la demande.",
+        "I diciannove effetti classici, i livelli e i preset inclusi funzionano senza abbonamento, "
+        "e non c'è pubblicità. Premium aggiunge tutto ciò che è nuovo nella 2.0 ed esportazioni "
+        "più grandi. Puoi provare qualsiasi funzione Premium prima sulla tua foto: solo il "
+        "salvataggio te lo chiede.",
+        "定番の十九のエフェクト、レイヤー、収録のプリセットはサブスクリプションなしで使え、"
+        "広告もありません。Premium では 2.0 の新機能すべてと、より大きな書き出しが加わります。"
+        "Premium の機能はどれも、まず自分の写真で試せます。確認が入るのは保存するときだけです。",
+        "기본 효과 열아홉 가지, 레이어, 기본 프리셋은 구독 없이 쓸 수 있고, 광고도 없습니다. "
+        "Premium은 2.0의 새로운 것 전부와 더 큰 내보내기를 더합니다. Premium 기능은 모두 내 "
+        "사진으로 먼저 써 볼 수 있고, 저장할 때만 묻습니다.",
+        "De negentien klassieke effecten, de lagen en de ingebouwde presets werken zonder "
+        "abonnement, en er zijn geen advertenties. Premium voegt alles toe wat nieuw is in 2.0, "
+        "en grotere exports. Je kunt elke Premium-functie eerst op je eigen foto proberen: alleen "
+        "bewaren vraagt erom.",
+        "Os dezenove efeitos clássicos, as camadas e os presets prontos funcionam sem assinatura, "
+        "e não há anúncios. O Premium acrescenta tudo o que é novo na 2.0 e exportações maiores. "
+        "Você pode experimentar qualquer recurso Premium antes na sua própria foto: só na hora de "
+        "salvar ele pergunta.",
+        "十九种经典效果、图层和内置预设无需订阅即可使用，也没有广告。Premium 增加 2.0 的全部"
+        "新功能和更大的导出尺寸。任何 Premium 功能都能先在自己的照片上试用，只有保存时才会询问。"),
+    "19 classic effects, layers, the built-in presets, saves at 1024 pixels, no ads": (
+        "19 klassische Effekte, Ebenen, die eingebauten Presets, Sichern in 1024 Pixeln, keine "
+        "Werbung",
+        "19 efectos clásicos, capas, los preajustes incluidos, guardado a 1024 píxeles, sin "
+        "anuncios",
+        "19 efectos clásicos, capas, los preajustes incluidos, guardado a 1024 píxeles, sin "
+        "anuncios",
+        "19 effets classiques, calques, préréglages intégrés, enregistrement en 1024 pixels, "
+        "aucune publicité",
+        "19 effetti classici, livelli, i preset inclusi, salvataggio a 1024 pixel, nessuna "
+        "pubblicità",
+        "定番の 19 のエフェクト、レイヤー、収録のプリセット、1024 ピクセルでの保存、広告なし",
+        "기본 효과 19가지, 레이어, 기본 프리셋, 1024픽셀 저장, 광고 없음",
+        "19 klassieke effecten, lagen, de ingebouwde presets, bewaren in 1024 pixels, geen "
+        "advertenties",
+        "19 efeitos clássicos, camadas, os presets prontos, salvamento em 1024 pixels, sem "
+        "anúncios",
+        "19 种经典效果、图层、内置预设，以 1024 像素保存，无广告"),
+    "Video, the ten new effects, settings that move, date stamps, masks, the Dead Air and Y2K "
+    "preset packs, exports at 2048 pixels and 4K, three-second loops": (
+        "Video, die zehn neuen Effekte, Regler, die sich von selbst bewegen, Datumsstempel, "
+        "Masken, die Preset-Pakete Sendepause und Y2K, Export in 2048 Pixeln und 4K, Loops von "
+        "drei Sekunden",
+        "Vídeo, los diez efectos nuevos, controles que se mueven solos, marcas de fecha, "
+        "máscaras, los paquetes de preajustes Fin de emisión e Y2K, exportación a 2048 píxeles y "
+        "4K, bucles de tres segundos",
+        "Video, los diez efectos nuevos, controles que se mueven solos, marcas de fecha, "
+        "máscaras, los paquetes de preajustes Fuera del aire y Y2K, exportación a 2048 píxeles y "
+        "4K, bucles de tres segundos",
+        "La vidéo, les dix nouveaux effets, des réglages qui bougent tout seuls, les dates "
+        "incrustées, les masques, les packs de préréglages Blanc d'antenne et Y2K, l'export en "
+        "2048 pixels et en 4K, les boucles de trois secondes",
+        "Video, i dieci nuovi effetti, controlli che si muovono da soli, date impresse, maschere, "
+        "i pack di preset Fuori onda e Y2K, esportazione a 2048 pixel e 4K, loop di tre secondi",
+        "動画、新しい 10 のエフェクト、ひとりでに動くパラメータ、日付スタンプ、マスク、"
+        "プリセットパック「放送事故」と「Y2K」、2048 ピクセルと 4K での書き出し、3 秒のループ",
+        "동영상, 새 효과 10가지, 스스로 움직이는 설정, 날짜 스탬프, 마스킹, 방송 사고와 Y2K 프리셋 "
+        "팩, 2048픽셀과 4K 내보내기, 3초 루프",
+        "Video, de tien nieuwe effecten, regelaars die vanzelf bewegen, datumstempels, maskers, "
+        "de presetpakketten Storing en Y2K, export in 2048 pixels en 4K, loops van drie seconden",
+        "Vídeo, os dez efeitos novos, controles que se mexem sozinhos, carimbos de data, "
+        "máscaras, os pacotes de presets Fora do ar e Y2K, exportação em 2048 pixels e 4K, loops "
+        "de três segundos",
+        "视频、十种新效果、会自己动的参数、日期水印、蒙版、“停播”和“千禧”预设合集、2048 像素"
+        "与 4K 导出、三秒循环动画"),
+    "Plans": ("Abos", "Planes", "Planes", "Formules", "Piani", "プラン", "플랜", "Abonnement",
+              "Planos", "方案"),
+    "Monthly or yearly. The yearly plan starts with a 7-day free trial, and the app shows prices "
+    "in your own currency.": (
+        "Monatlich oder jährlich. Das Jahresabo beginnt mit einer 7-tägigen Gratis-Testphase, und "
+        "die App zeigt die Preise in deiner Währung.",
+        "Mensual o anual. El plan anual empieza con una prueba gratuita de 7 días, y la app "
+        "muestra los precios en tu propia moneda.",
+        "Mensual o anual. El plan anual empieza con una prueba gratis de 7 días, y la app muestra "
+        "los precios en tu propia moneda.",
+        "Au mois ou à l'année. La formule annuelle commence par un essai gratuit de 7 jours, et "
+        "l'app affiche les prix dans votre devise.",
+        "Mensile o annuale. Il piano annuale inizia con una prova gratuita di 7 giorni, e l'app "
+        "mostra i prezzi nella tua valuta.",
+        "月額と年額があり、年額プランは 7 日間の無料体験から始まります。価格はお住まいの国の"
+        "通貨でアプリ内に表示されます。",
+        "월간 또는 연간. 연간 플랜은 7일 무료 체험으로 시작하며, 가격은 앱에서 현지 통화로 "
+        "표시됩니다.",
+        "Per maand of per jaar. Het jaarabonnement begint met een gratis proefperiode van 7 dagen, "
+        "en de app toont de prijzen in je eigen valuta.",
+        "Mensal ou anual. O plano anual começa com um teste grátis de 7 dias, e o app mostra os "
+        "preços na sua moeda.",
+        "按月或按年。年付方案先享 7 天免费试用，应用内会以你所在地区的货币显示价格。"),
+
+    # ---- FAQ answers (the schema carries the same text, and merge.py matches both)
+    "Yes. The 19 classic effects, layers and the built-in presets work without a subscription and "
+    "save at 1024 pixels, and there are no ads. Premium adds video, the ten new effects, settings "
+    "that move, date stamps, masks and two preset packs, plus exports at 2048 pixels and 4K and "
+    "three-second loops. It is monthly or yearly, and the yearly plan starts with a 7-day free "
+    "trial.": (
+        "Ja. Die 19 klassischen Effekte, Ebenen und die eingebauten Presets funktionieren ohne Abo "
+        "und sichern in 1024 Pixeln, und es gibt keine Werbung. Premium bringt Video, die zehn "
+        "neuen Effekte, Regler, die sich von selbst bewegen, Datumsstempel, Masken und zwei "
+        "Preset-Pakete, dazu Export in 2048 Pixeln und 4K und Loops von drei Sekunden. Es läuft "
+        "monatlich oder jährlich, und das Jahresabo beginnt mit einer 7-tägigen Gratis-Testphase.",
+        "Sí. Los 19 efectos clásicos, las capas y los preajustes incluidos funcionan sin "
+        "suscripción y guardan a 1024 píxeles, y no hay anuncios. Premium añade vídeo, los diez "
+        "efectos nuevos, controles que se mueven solos, marcas de fecha, máscaras y dos paquetes "
+        "de preajustes, además de exportación a 2048 píxeles y 4K y bucles de tres segundos. Es "
+        "mensual o anual, y el plan anual empieza con una prueba gratuita de 7 días.",
+        "Sí. Los 19 efectos clásicos, las capas y los preajustes incluidos funcionan sin "
+        "suscripción y guardan a 1024 píxeles, y no hay anuncios. Premium agrega video, los diez "
+        "efectos nuevos, controles que se mueven solos, marcas de fecha, máscaras y dos paquetes "
+        "de preajustes, además de exportación a 2048 píxeles y 4K y bucles de tres segundos. Es "
+        "mensual o anual, y el plan anual empieza con una prueba gratis de 7 días.",
+        "Oui. Les 19 effets classiques, les calques et les préréglages intégrés fonctionnent sans "
+        "abonnement et s'enregistrent en 1024 pixels, et il n'y a pas de publicité. Premium "
+        "ajoute la vidéo, les dix nouveaux effets, des réglages qui bougent tout seuls, les dates "
+        "incrustées, les masques et deux packs de préréglages, plus l'export en 2048 pixels et en "
+        "4K et les boucles de trois secondes. C'est au mois ou à l'année, et la formule annuelle "
+        "commence par un essai gratuit de 7 jours.",
+        "Sì. I 19 effetti classici, i livelli e i preset inclusi funzionano senza abbonamento e "
+        "salvano a 1024 pixel, e non c'è pubblicità. Premium aggiunge video, i dieci nuovi "
+        "effetti, controlli che si muovono da soli, date impresse, maschere e due pack di preset, "
+        "più esportazione a 2048 pixel e 4K e loop di tre secondi. È mensile o annuale, e il "
+        "piano annuale inizia con una prova gratuita di 7 giorni.",
+        "はい。定番の 19 のエフェクト、レイヤー、収録のプリセットはサブスクリプションなしで使え、"
+        "1024 ピクセルで保存でき、広告もありません。Premium では動画、新しい 10 のエフェクト、"
+        "ひとりでに動くパラメータ、日付スタンプ、マスク、2 つのプリセットパックに加え、"
+        "2048 ピクセルと 4K での書き出しと 3 秒のループが使えます。月額と年額があり、年額プランは "
+        "7 日間の無料体験から始まります。",
+        "네. 기본 효과 19가지, 레이어, 기본 프리셋은 구독 없이 쓸 수 있고 1024픽셀로 저장되며, "
+        "광고도 없습니다. Premium은 동영상, 새 효과 10가지, 스스로 움직이는 설정, 날짜 스탬프, "
+        "마스킹, 프리셋 팩 두 가지에 더해 2048픽셀과 4K 내보내기, 3초 루프를 제공합니다. 월간 "
+        "또는 연간이며, 연간 플랜은 7일 무료 체험으로 시작합니다.",
+        "Ja. De 19 klassieke effecten, lagen en de ingebouwde presets werken zonder abonnement en "
+        "bewaren in 1024 pixels, en er zijn geen advertenties. Premium voegt video toe, de tien "
+        "nieuwe effecten, regelaars die vanzelf bewegen, datumstempels, maskers en twee "
+        "presetpakketten, plus export in 2048 pixels en 4K en loops van drie seconden. Het is per "
+        "maand of per jaar, en het jaarabonnement begint met een gratis proefperiode van 7 dagen.",
+        "Sim. Os 19 efeitos clássicos, as camadas e os presets prontos funcionam sem assinatura e "
+        "salvam em 1024 pixels, e não há anúncios. O Premium acrescenta vídeo, os dez efeitos "
+        "novos, controles que se mexem sozinhos, carimbos de data, máscaras e dois pacotes de "
+        "presets, mais exportação em 2048 pixels e 4K e loops de três segundos. É mensal ou "
+        "anual, e o plano anual começa com um teste grátis de 7 dias.",
+        "是的。19 种经典效果、图层和内置预设无需订阅即可使用，以 1024 像素保存，也没有广告。"
+        "Premium 增加视频、十种新效果、会自己动的参数、日期水印、蒙版和两套预设合集，另有 "
+        "2048 像素与 4K 导出以及三秒循环动画。可按月或按年订阅，年付方案先享 7 天免费试用。"),
+    "Twenty-nine. Nineteen classics are free: Noise, Pixel Shift, RGB Split, Scanlines, "
+    "Distortion, Corruption, Feedback, VHS, CRT, Chroma, Film, Crush, Interlace, Invert, Datamosh, "
+    "Dither, Static, Sort and Sync. Ten more come with Premium: Satellite, Ghosting, Slow Scan, "
+    "Teletext, Fax, Repost, Webcam, Handheld, Magnet and Chewed. Stack them in any order.": (
+        "Neunundzwanzig. Neunzehn Klassiker sind kostenlos: Rauschen, Versatz, RGB, Bildzeilen, "
+        "Verzerrung, Defekt, Rückkopplung, VHS, CRT, Chroma, Film, Crush, Zeilen, Invertieren, "
+        "Datamosh, Dither, Bildrauschen, Sortieren und Sync. Zehn weitere gibt es mit Premium: "
+        "Satellit, Geisterbild, Slow Scan, Videotext, Fax, Repost, Webcam, Handheld, Magnet und "
+        "Bandsalat. Staple sie in beliebiger Reihenfolge.",
+        "Veintinueve. Diecinueve clásicos son gratis: Ruido, Corrimiento, RGB, Líneas, "
+        "Distorsión, Corrupción, Realimentación, VHS, CRT, Croma, Película, Crush, Entrelazado, "
+        "Invertir, Datamosh, Tramado, Nieve, Ordenar y Sincronía. Diez más vienen con Premium: "
+        "Satélite, Doble imagen, Slow Scan, Teletexto, Fax, Resubida, Webcam, Portátil, Imán y "
+        "Masticada. Apílalos en el orden que quieras.",
+        "Veintinueve. Diecinueve clásicos son gratis: Ruido, Corrimiento, RGB, Líneas, "
+        "Distorsión, Corrupción, Realimentación, VHS, CRT, Croma, Película, Crush, Entrelazado, "
+        "Invertir, Datamosh, Tramado, Nieve, Ordenar y Sincronía. Diez más vienen con Premium: "
+        "Satélite, Doble imagen, Slow Scan, Teletexto, Fax, Resubida, Webcam, Portátil, Imán y "
+        "Masticada. Apílalos en el orden que quieras.",
+        "Vingt-neuf. Dix-neuf classiques sont gratuits : Bruit, Décalage, RVB, Lignes, "
+        "Distorsion, Corruption, Retour, VHS, CRT, Chroma, Pellicule, Crush, Entrelacé, "
+        "Inversion, Datamosh, Tramage, Neige, Tri et Synchro. Dix de plus viennent avec Premium : "
+        "Satellite, Dédoublement, Slow Scan, Télétexte, Fax, Repost, Webcam, Console, Aimant et "
+        "Bande mangée. Empilez-les dans l'ordre que vous voulez.",
+        "Ventinove. Diciannove classici sono gratis: Rumore, Sposta, RGB, Righe, Distorsione, "
+        "Corruzione, Feedback, VHS, CRT, Croma, Pellicola, Crush, Interlaccio, Inverti, Datamosh, "
+        "Dither, Neve, Ordina e Sync. Altri dieci arrivano con Premium: Satellite, Sdoppiamento, "
+        "Slow Scan, Televideo, Fax, Repost, Webcam, Console, Calamita e Nastro mangiato. Impilali "
+        "nell'ordine che vuoi.",
+        "29 種類です。定番の 19 種類は無料です：ノイズ、シフト、RGB分離、走査線、歪み、破損、"
+        "反復、VHS、CRT、色ずれ、フィルム、劣化、インタレース、色反転、モッシュ、ディザ、砂嵐、"
+        "ソート、同期ずれ。Premium でさらに 10 種類：衛星放送、ゴースト障害、低速走査、文字放送、"
+        "FAX、再投稿、Webカメラ、携帯ゲーム機、磁石、テープ噛み。好きな順番で重ねられます。",
+        "스물아홉 가지입니다. 기본 19가지는 무료입니다: 노이즈, 픽셀 시프트, RGB 분리, 주사선, "
+        "왜곡, 손상, 피드백, VHS, CRT, 색 어긋남, 필름, 열화, 인터레이스, 색 반전, 모시, 디더, "
+        "지지직, 픽셀 정렬, 동기 오류. Premium으로 10가지 더: 위성 방송, 고스트 현상, 저속 주사, "
+        "문자방송, 팩스, 재업로드, 웹캠, 휴대 게임기, 자석, 테이프 씹힘. 원하는 순서로 쌓을 수 "
+        "있습니다.",
+        "Negenentwintig. Negentien klassiekers zijn gratis: Ruis, Verschuif, RGB, Lijnen, "
+        "Vervorming, Corruptie, Terugkoppeling, VHS, Beeldbuis, Chroma, Film, Crush, Interlace, "
+        "Omkeren, Datamosh, Dither, Sneeuw, Sorteer en Sync. Nog tien komen met Premium: "
+        "Satelliet, Spookbeeld, Slow Scan, Teletekst, Fax, Repost, Webcam, Handheld, Magneet en "
+        "Bandsalade. Stapel ze in elke volgorde die je wilt.",
+        "Vinte e nove. Dezenove clássicos são grátis: Ruído, Deslocar, RGB, Linhas, Distorção, "
+        "Corrupção, Realimentação, VHS, CRT, Croma, Filme, Crush, Entrelaçamento, Inverter, "
+        "Datamosh, Dither, Chuvisco, Ordenar e Sincronia. Mais dez vêm com o Premium: Satélite, "
+        "Sombra, Slow Scan, Teletexto, Fax, Repost, Webcam, Portátil, Ímã e Enroscada. Empilhe na "
+        "ordem que quiser.",
+        "二十九种。十九种经典效果免费：噪点、像素偏移、RGB 分离、扫描线、畸变、数据损坏、反馈、"
+        "VHS、显像管、色度偏移、胶片、位深压碎、隔行扫描、反色、数据莫氏、抖动、雪花、像素排序"
+        "和信号同步。Premium 再加十种：卫星、鬼影、慢扫描、图文电视、传真、电子包浆、摄像头、"
+        "掌机、磁化和绞带。可以按任意顺序叠加。"),
+    "No. Everything is processed on your iPhone and nothing is uploaded. There is no render queue "
+    "and no server holding your images, and there are no ads.": (
+        "Nein. Alles wird auf deinem iPhone verarbeitet, und nichts wird hochgeladen. Es gibt "
+        "keine Renderwarteschlange und keinen Server, der deine Bilder hält, und es gibt keine "
+        "Werbung.",
+        "No. Todo se procesa en tu iPhone y no se sube nada. No hay cola de render ni servidor "
+        "guardando tus imágenes, y no hay anuncios.",
+        "No. Todo se procesa en tu iPhone y no se sube nada. No hay cola de render ni servidor "
+        "guardando tus imágenes, y no hay anuncios.",
+        "Non. Tout est traité sur votre iPhone et rien n'est envoyé. Il n'y a pas de file de "
+        "rendu ni de serveur qui garde vos images, et il n'y a pas de publicité.",
+        "No. Tutto viene elaborato sul tuo iPhone e non viene caricato nulla. Non c'è coda di "
+        "rendering né server che tenga le tue immagini, e non c'è pubblicità.",
+        "いいえ。処理はすべてあなたの iPhone の中で行われ、何もアップロードされません。"
+        "レンダリング待ちの列も、あなたの画像を持つサーバーもなく、広告もありません。",
+        "아니요. 모든 처리는 당신의 iPhone 안에서 이루어지고, 아무것도 업로드되지 않습니다. 렌더 "
+        "대기열도, 당신의 이미지를 가진 서버도 없으며, 광고도 없습니다.",
+        "Nee. Alles wordt op je iPhone verwerkt en er wordt niets geüpload. Er is geen "
+        "renderwachtrij en geen server met jouw beelden, en er zijn geen advertenties.",
+        "Não. Tudo é processado no seu iPhone e nada é enviado. Não há fila de renderização nem "
+        "servidor guardando suas imagens, e não há anúncios.",
+        "不会。一切都在你的 iPhone 上处理，不会上传任何内容。没有渲染队列，也没有服务器存着你的"
+        "图像，而且没有广告。"),
+    "Yes. Open a clip, trim it to a minute or less and save it at 1080p or 4K with its sound. You "
+    "can also turn a still into a three-second loop, with any setting drifting, stepping or "
+    "sweeping across it. Video and loops come with Premium.": (
+        "Ja. Öffne einen Clip, kürze ihn auf höchstens eine Minute und sichere ihn in 1080p oder "
+        "4K, mit Ton. Du kannst auch aus einem Standbild einen Loop von drei Sekunden machen, in "
+        "dem jeder Regler driftet, springt oder schwingt. Video und Loops gibt es mit Premium.",
+        "Sí. Abre un clip, recórtalo a un minuto o menos y guárdalo en 1080p o 4K con su sonido. "
+        "También puedes convertir una foto fija en un bucle de tres segundos, con cualquier "
+        "control derivando, saltando o barriendo a lo largo de él. El vídeo y los bucles vienen "
+        "con Premium.",
+        "Sí. Abre un clip, recórtalo a un minuto o menos y guárdalo en 1080p o 4K con su sonido. "
+        "También puedes convertir una foto fija en un bucle de tres segundos, con cualquier "
+        "control derivando, saltando o barriendo a lo largo de él. El video y los bucles vienen "
+        "con Premium.",
+        "Oui. Ouvrez un clip, coupez-le à une minute ou moins et enregistrez-le en 1080p ou en 4K "
+        "avec le son. Vous pouvez aussi transformer une image fixe en boucle de trois secondes, "
+        "avec n'importe quel réglage qui dérive, saute ou balaie tout du long. La vidéo et les "
+        "boucles viennent avec Premium.",
+        "Sì. Apri una clip, tagliala a un minuto o meno e salvala in 1080p o 4K con il suo audio. "
+        "Puoi anche trasformare una foto in un loop di tre secondi, con qualsiasi controllo che "
+        "oscilla, va a scatti o spazza lungo tutto il loop. Video e loop arrivano con Premium.",
+        "はい。クリップを開き、1 分以内にトリミングして、音声付きのまま 1080p か 4K で保存"
+        "できます。静止画を 3 秒のループにして、どのパラメータもそのあいだゆらぎ、ステップ、"
+        "スイープさせることもできます。動画とループは Premium の機能です。",
+        "네. 클립을 열어 1분 이하로 자르고 소리와 함께 1080p 또는 4K로 저장할 수 있습니다. 정지 "
+        "사진을 3초 루프로 만들어, 어떤 설정이든 그 동안 흔들리고, 계단처럼 바뀌고, 쓸고 "
+        "지나가게 할 수도 있습니다. 동영상과 루프는 Premium 기능입니다.",
+        "Ja. Open een clip, knip hem tot een minuut of korter en bewaar hem in 1080p of 4K met "
+        "geluid. Je kunt ook van een stilstaand beeld een loop van drie seconden maken, waarin "
+        "elke regelaar zweeft, verspringt of zwaait. Video en loops komen met Premium.",
+        "Sim. Abra um clipe, corte para um minuto ou menos e salve em 1080p ou 4K com o som. Você "
+        "também pode transformar uma foto parada num loop de três segundos, com qualquer controle "
+        "oscilando, pulando ou varrendo ao longo dele. Vídeo e loops vêm com o Premium.",
+        "可以。打开一段视频，剪到一分钟以内，连同声音以 1080p 或 4K 保存。也可以把一张静态图"
+        "做成三秒循环动画，让任意参数在其中漂移、跳变或扫动。视频和循环动画随 Premium 提供。"),
+    "Any iPhone running iOS 17 or later. The app is about 4 MB.": (
+        "Jedes iPhone mit iOS 17 oder neuer. Die App ist etwa 4 MB groß.",
+        "Cualquier iPhone con iOS 17 o posterior. La app ocupa unos 4 MB.",
+        "Cualquier iPhone con iOS 17 o posterior. La app pesa unos 4 MB.",
+        "N'importe quel iPhone sous iOS 17 ou plus récent. L'app fait environ 4 Mo.",
+        "Qualsiasi iPhone con iOS 17 o successivo. L'app pesa circa 4 MB.",
+        "iOS 17 以降を搭載したすべての iPhone で使えます。アプリの大きさは約 4 MB です。",
+        "iOS 17 이상을 실행하는 모든 iPhone에서 쓸 수 있습니다. 앱 크기는 약 4MB입니다.",
+        "Elke iPhone met iOS 17 of nieuwer. De app is ongeveer 4 MB.",
+        "Qualquer iPhone com iOS 17 ou posterior. O app tem cerca de 4 MB.",
+        "任何运行 iOS 17 或更高版本的 iPhone。应用大约 4 MB。"),
+
+    # ---- structured data: MobileApplication description and featureList
+    "A glitch art app for iPhone with 29 stackable effects for photos and video, each modelled on "
+    "a specific way real hardware used to fail: VHS tracking, CRT phosphor bloom, a satellite feed "
+    "losing lock, datamosh block corruption, pixel sorting and RGB channel separation. Everything "
+    "renders on the GPU and all processing runs on device.": (
+        "Eine Glitch-Art-App für iPhone mit 29 stapelbaren Effekten für Fotos und Video, jeder "
+        "einer bestimmten Art nachgebildet, auf die echte Hardware früher versagte: VHS-Spurfehler, "
+        "CRT-Phosphorblühen, ein Satellitensignal, das abreißt, Datamosh-Blockfehler, Pixel "
+        "Sorting und RGB-Kanaltrennung. Alles wird auf der GPU gerechnet, und die gesamte "
+        "Verarbeitung läuft auf dem Gerät.",
+        "Una app de glitch art para iPhone con 29 efectos apilables para fotos y vídeo, cada uno "
+        "modelado sobre una forma concreta en que fallaba el hardware real: tracking de VHS, "
+        "florecimiento del fósforo en CRT, una señal de satélite que se cae, corrupción de bloques "
+        "por datamosh, ordenación de píxeles y separación de canales RGB. Todo se procesa en la "
+        "GPU y en el dispositivo.",
+        "Una app de glitch art para iPhone con 29 efectos apilables para fotos y video, cada uno "
+        "modelado sobre una forma concreta en que fallaba el hardware real: tracking de VHS, "
+        "florecimiento del fósforo en CRT, una señal de satélite que se cae, corrupción de bloques "
+        "por datamosh, ordenación de píxeles y separación de canales RGB. Todo se procesa en la "
+        "GPU y en el dispositivo.",
+        "Une app de glitch art pour iPhone avec 29 effets empilables pour photos et vidéos, chacun "
+        "modélisé sur une façon précise dont le matériel tombait en panne : piste VHS, bavure du "
+        "phosphore CRT, signal satellite qui décroche, corruption de blocs par datamosh, tri de "
+        "pixels et séparation des canaux RVB. Tout est calculé sur le GPU et tout le traitement se "
+        "fait sur l'appareil.",
+        "Un'app di glitch art per iPhone con 29 effetti impilabili per foto e video, ognuno "
+        "modellato su un modo preciso in cui l'hardware vero si guastava: tracking VHS, bagliore "
+        "dei fosfori CRT, un segnale satellitare che perde l'aggancio, corruzione dei blocchi da "
+        "datamosh, pixel sorting e separazione dei canali RGB. Tutto viene elaborato sulla GPU e "
+        "sul dispositivo.",
+        "写真にも動画にも使える、積み重ねられる 29 のエフェクトを備えた iPhone 用グリッチアート"
+        "アプリ。どれも実在のハードウェアの特定の壊れ方を再現しています。VHS のトラッキング、"
+        "CRT の蛍光体のにじみ、受信が途切れた衛星放送、データモッシュのブロック破損、"
+        "ピクセルソート、RGB チャンネルの分離。描画はすべて GPU で行い、処理は端末上で完結します。",
+        "사진과 동영상에 쌓아 올릴 수 있는 29가지 효과를 갖춘 iPhone용 글리치 아트 앱. 각 효과는 "
+        "실제 하드웨어가 고장 나던 특정한 방식을 모델링합니다. VHS 트래킹, CRT 인광체 번짐, 신호를 "
+        "놓친 위성 방송, 데이터모시 블록 손상, 픽셀 정렬, RGB 채널 분리. 모든 렌더링은 GPU에서, "
+        "모든 처리는 기기 안에서 이루어집니다.",
+        "Een glitch-art-app voor iPhone met 29 stapelbare effecten voor foto's en video, elk "
+        "gemodelleerd op een specifieke manier waarop echte hardware kapotging: VHS-tracking, "
+        "fosforgloed van een CRT, een satellietsignaal dat wegvalt, blokcorruptie door datamosh, "
+        "pixel sorting en RGB-kanaalsplitsing. Alles wordt op de GPU gerenderd en alle verwerking "
+        "gebeurt op het toestel.",
+        "Um app de glitch art para iPhone com 29 efeitos empilháveis para fotos e vídeos, cada um "
+        "modelado sobre um jeito específico pelo qual o hardware de verdade falhava: tracking de "
+        "VHS, brilho do fósforo de CRT, um sinal de satélite caindo, corrupção de blocos por "
+        "datamosh, ordenação de pixels e separação de canais RGB. Tudo é renderizado na GPU e todo "
+        "o processamento roda no aparelho.",
+        "一款 iPhone 上的故障艺术应用，提供 29 种可叠加效果，照片和视频都能用，每一种都对应"
+        "真实硬件当年出错的某种具体方式：VHS 循迹、CRT 荧光粉晕光、失锁的卫星信号、数据莫氏的"
+        "区块损坏、像素排序和 RGB 通道分离。所有渲染都在 GPU 上完成，所有处理都在设备上运行。"),
+    "29 stackable glitch effects: 19 classics free, 10 more with Premium": (
+        "29 stapelbare Glitch-Effekte: 19 Klassiker kostenlos, 10 weitere mit Premium",
+        "29 efectos glitch apilables: 19 clásicos gratis, 10 más con Premium",
+        "29 efectos glitch apilables: 19 clásicos gratis, 10 más con Premium",
+        "29 effets glitch empilables : 19 classiques gratuits, 10 de plus avec Premium",
+        "29 effetti glitch impilabili: 19 classici gratis, altri 10 con Premium",
+        "積み重ねられる 29 のグリッチエフェクト：定番の 19 は無料、さらに 10 が Premium で",
+        "쌓아 올릴 수 있는 글리치 효과 29가지: 기본 19가지 무료, Premium으로 10가지 더",
+        "29 stapelbare glitch-effecten: 19 klassiekers gratis, nog 10 met Premium",
+        "29 efeitos glitch empilháveis: 19 clássicos grátis, mais 10 com o Premium",
+        "29 种可叠加的故障效果：19 种经典效果免费，另有 10 种随 Premium 提供"),
+    "Video: trim a clip up to a minute and save it at 1080p or 4K with its sound": (
+        "Video: einen Clip auf bis zu eine Minute kürzen und in 1080p oder 4K mit Ton sichern",
+        "Vídeo: recorta un clip hasta un minuto y guárdalo en 1080p o 4K con su sonido",
+        "Video: recorta un clip hasta un minuto y guárdalo en 1080p o 4K con su sonido",
+        "Vidéo : coupez un clip jusqu'à une minute et enregistrez-le en 1080p ou en 4K avec le son",
+        "Video: taglia una clip fino a un minuto e salvala in 1080p o 4K con il suo audio",
+        "動画：クリップを最大 1 分までトリミングし、音声付きのまま 1080p か 4K で保存",
+        "동영상: 클립을 최대 1분까지 잘라 소리와 함께 1080p 또는 4K로 저장",
+        "Video: knip een clip tot een minuut en bewaar hem in 1080p of 4K met geluid",
+        "Vídeo: corte um clipe até um minuto e salve em 1080p ou 4K com o som",
+        "视频：把一段视频剪到一分钟以内，连同声音以 1080p 或 4K 保存"),
+    "Settings that drift, step or sweep on their own": (
+        "Regler, die von selbst driften, springen oder schwingen",
+        "Controles que derivan, saltan o barren por sí solos",
+        "Controles que derivan, saltan o barren por sí solos",
+        "Des réglages qui dérivent, sautent ou balaient tout seuls",
+        "Controlli che oscillano, vanno a scatti o spazzano da soli",
+        "ゆらぎ、ステップ、スイープでひとりでに動くパラメータ",
+        "스스로 흔들리고, 계단처럼 바뀌고, 쓸고 지나가는 설정",
+        "Regelaars die vanzelf zweven, verspringen of zwaaien",
+        "Controles que oscilam, pulam ou varrem sozinhos",
+        "能自己漂移、跳变或扫动的参数"),
+    "Camcorder, digicam, VCR and CCTV date stamps": (
+        "Datumsstempel wie von Camcorder, Digicam, Videorekorder und Überwachungskamera",
+        "Marcas de fecha de videocámara, cámara digital, vídeo doméstico y cámara de vigilancia",
+        "Marcas de fecha de videocámara, cámara digital, videocasetera y cámara de seguridad",
+        "Dates incrustées façon caméscope, appareil numérique, magnétoscope et caméra de "
+        "surveillance",
+        "Date impresse da videocamera, fotocamera digitale, videoregistratore e telecamera di "
+        "sorveglianza",
+        "ビデオカメラ、デジカメ、ビデオデッキ、防犯カメラ風の日付スタンプ",
+        "캠코더, 디카, VCR, CCTV 스타일 날짜 스탬프",
+        "Datumstempels zoals van een camcorder, digitale camera, videorecorder en "
+        "beveiligingscamera",
+        "Carimbos de data de filmadora, câmera digital, videocassete e câmera de segurança",
+        "摄像机、数码相机、录像机和监控摄像头风格的日期水印"),
+    "Masks that keep the subject clean and break only the background, or the other way round": (
+        "Masken, die das Motiv sauber lassen und nur den Hintergrund zerstören, oder umgekehrt",
+        "Máscaras que dejan limpio al sujeto y rompen solo el fondo, o al revés",
+        "Máscaras que dejan limpio al sujeto y rompen solo el fondo, o al revés",
+        "Des masques qui gardent le sujet net et ne cassent que l'arrière-plan, ou l'inverse",
+        "Maschere che lasciano pulito il soggetto e rompono solo lo sfondo, o il contrario",
+        "被写体はきれいなまま背景だけを壊す、またはその逆にするマスク",
+        "피사체는 깨끗하게 두고 배경만 망가뜨리거나, 그 반대로 하는 마스킹",
+        "Maskers die het onderwerp schoon laten en alleen de achtergrond breken, of andersom",
+        "Máscaras que deixam o assunto limpo e quebram só o fundo, ou o contrário",
+        "让主体保持干净、只破坏背景的蒙版，也可以反过来"),
+    "Nine built-in presets, the Dead Air and Y2K Premium packs, and saved stacks": (
+        "Neun eingebaute Presets, die Premium-Pakete Sendepause und Y2K, und gesicherte Stapel",
+        "Nueve preajustes incluidos, los paquetes Premium Fin de emisión e Y2K, y combinaciones "
+        "guardadas",
+        "Nueve preajustes incluidos, los paquetes Premium Fuera del aire y Y2K, y combinaciones "
+        "guardadas",
+        "Neuf préréglages intégrés, les packs Premium Blanc d'antenne et Y2K, et des combinaisons "
+        "enregistrées",
+        "Nove preset inclusi, i pack Premium Fuori onda e Y2K, e combinazioni salvate",
+        "収録の 9 つのプリセット、Premium のプリセットパック「放送事故」と「Y2K」、保存した組み合わせ",
+        "기본 프리셋 9종, Premium 프리셋 팩 방송 사고와 Y2K, 저장한 조합",
+        "Negen ingebouwde presets, de Premium-pakketten Storing en Y2K, en bewaarde combinaties",
+        "Nove presets prontos, os pacotes Premium Fora do ar e Y2K, e combinações salvas",
+        "九个内置预设、“停播”和“千禧”两套 Premium 预设合集，以及保存的组合"),
+    "Export at 1024 pixels free, or at 2048 pixels and 4K and as three-second loops with "
+    "Premium": (
+        "Export in 1024 Pixeln kostenlos, mit Premium in 2048 Pixeln und 4K und als Loops von "
+        "drei Sekunden",
+        "Exportación a 1024 píxeles gratis, o a 2048 píxeles y 4K y como bucles de tres segundos "
+        "con Premium",
+        "Exportación a 1024 píxeles gratis, o a 2048 píxeles y 4K y como bucles de tres segundos "
+        "con Premium",
+        "Export en 1024 pixels gratuit, ou en 2048 pixels et en 4K et en boucles de trois "
+        "secondes avec Premium",
+        "Esportazione a 1024 pixel gratis, oppure a 2048 pixel e 4K e come loop di tre secondi con "
+        "Premium",
+        "無料では 1024 ピクセルで書き出し、Premium では 2048 ピクセルと 4K、3 秒のループでも書き出し",
+        "무료는 1024픽셀 내보내기, Premium은 2048픽셀과 4K, 3초 루프 내보내기",
+        "Export in 1024 pixels gratis, of in 2048 pixels en 4K en als loops van drie seconden met "
+        "Premium",
+        "Exportação em 1024 pixels grátis, ou em 2048 pixels e 4K e como loops de três segundos "
+        "com o Premium",
+        "免费以 1024 像素导出，Premium 可导出 2048 像素与 4K，以及三秒循环动画"),
+    "GPU rendering and on-device processing, no upload, no ads": (
+        "Rendering auf der GPU und Verarbeitung auf dem Gerät, kein Upload, keine Werbung",
+        "Procesado en la GPU y en el dispositivo, sin subidas, sin anuncios",
+        "Procesado en la GPU y en el dispositivo, sin subidas, sin anuncios",
+        "Rendu sur le GPU et traitement sur l'appareil, aucun envoi, aucune publicité",
+        "Rendering sulla GPU ed elaborazione sul dispositivo, nessun upload, nessuna pubblicità",
+        "GPU による描画と端末内での処理、アップロードなし、広告なし",
+        "GPU 렌더링과 기기 내 처리, 업로드 없음, 광고 없음",
+        "Renderen op de GPU en verwerking op het toestel, geen upload, geen advertenties",
+        "Renderização na GPU e processamento no aparelho, sem envio, sem anúncios",
+        "GPU 渲染，设备端处理，不上传，无广告"),
 })

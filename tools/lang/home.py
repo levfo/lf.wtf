@@ -2,864 +2,736 @@
 
 Order of every tuple: de, es, es-MX, fr, it, ja, ko, nl, pt-BR, zh-Hans.
 
-Titles and meta descriptions are written for search rather than translated word for word, because
-they are the two fields that decide whether the page is found at all. Each carries the local phrase
-someone would actually type: Filmsimulation, simulation argentique, フィルムシミュレーション,
-胶片模拟.
+The page is a periodic table: Levi is element Lf, and the twelve things he works on are its
+electrons. The short labels (Role, Format, Electrons, Shells, Origin, State, Venture, Game, Art,
+Open) are set in uppercase mono as data labels, so they are translated as the shortest natural
+label, not as a sentence. "Table of works" plays on "periodic table" and is written as each
+language's equivalent of that phrase: Werktabelle, Tabla de obras, Tableau des œuvres, Tavola delle
+opere, 作品表, 작품표, Werkentabel, Tabela de obras.
 
-No em-dashes anywhere, per house style. The English pages had them in their titles and cross
-links; those were corrected too, so the separator is a colon on both sides now.
+Address follows the rest of the site: du, tú, tu and je, vous in French, você in Portuguese, and
+해요체 or 합니다체 in Korean. First person stays first person ("wo ich", "donde me ocupo", わたし).
+Co-owner is the word a business card would use: Mitinhaber, socio, associé, socio, 共同オーナー,
+공동 소유주, mede-eigenaar, sócio, 合伙人. Prices are left exactly as the English writes them.
+
+"App" is deliberately left as "App" in every language, Japanese, Korean and Chinese included. The
+build replaces strings by scanning forward, and every "App" family label after the first comes
+straight after the previous row's "App Store" link, so a translated "App" would land inside that
+link ("アプリ Store") and leave the label itself in English. Chinese already writes App on this
+site; in Japanese and Korean it reads as the same Latin label the App Store link sits next to.
+
+No em-dashes anywhere, per house style.
 """
 
-#: Names, handles and marks that are the same in every language.
+#: Names, handles, domains and marks that are the same in every language.
 KEEP = {
-    "Levi", "Foster", "Levi Foster", "FRMT", "MODUL8", "CYANO", "MERGE", "lf.wtf",
-    "Harmony Palette", "Merge With The Machine", "Dollop", "Kippu", "iPhone", "iPad", "App Store",
-    "Instagram", "X", "TikTok", "Etsy", "GitHub", "L@LF.WTF",
+    "Levi", "Foster", "Levi Foster", "© Levi Foster", "lf.wtf", "L@LF.WTF",
+    "App Store", "Instagram", "X", "GitHub", "TikTok", "Etsy",
+    "Red Arrow Marketing", "Crest Acquisitions", "Morterra", "Carmeet",
+    "Harmony Palette", "FRMT", "MODUL8", "CYANO", "Dollop", "Kippu", "GRNGE",
+    "Merge With The Machine",
+    "redarrowmarketing.com", "crestacquisitions.com", "morterra.com", "mergewiththemachine.com",
+    "lf.wtf/harmony", "lf.wtf/frmt", "lf.wtf/modul8", "lf.wtf/cyano", "lf.wtf/dollop",
+    "lf.wtf/kippu", "lf.wtf/grnge", "lf.wtf/carmeet",
 }
 
 T = {
-    "Levi Foster: iPhone Apps, Photography Tools and Generative Art": (
-        "Levi Foster: iPhone-Apps, Fotowerkzeuge und generative Kunst",
-        "Levi Foster: apps para iPhone, herramientas de fotografía y arte generativo",
-        "Levi Foster: apps para iPhone, herramientas de fotografía y arte generativo",
-        "Levi Foster : apps iPhone, outils photo et art génératif",
-        "Levi Foster: app per iPhone, strumenti fotografici e arte generativa",
-        "Levi Foster｜iPhone アプリ、写真ツール、ジェネラティブアート",
-        "Levi Foster｜iPhone 앱, 사진 도구, 제너러티브 아트",
-        "Levi Foster: iPhone-apps, fototools en generatieve kunst",
-        "Levi Foster: apps para iPhone, ferramentas de fotografia e arte generativa",
-        "Levi Foster｜iPhone 应用、摄影工具与生成艺术"),
-    "Levi Foster is an independent app developer and artist in Fort Worth, Texas. He makes FRMT "
-    "film simulation, MODUL8 glitch art, CYANO cyanotype and Harmony Palette for iPhone, and runs "
-    "Merge With The Machine.": (
-        "Levi Foster ist unabhängiger App-Entwickler und Künstler in Fort Worth, Texas. Er macht "
-        "die Filmsimulation FRMT, die Glitch-Art-App MODUL8, die Cyanotypie-App CYANO und Harmony "
-        "Palette für iPhone und betreibt Merge With The Machine.",
-        "Levi Foster es desarrollador de apps y artista independiente en Fort Worth, Texas. Hace "
-        "la simulación de película FRMT, la app de glitch art MODUL8, la de cianotipia CYANO y "
-        "Harmony Palette para iPhone, y lleva Merge With The Machine.",
-        "Levi Foster es desarrollador de apps y artista independiente en Fort Worth, Texas. Hace "
-        "la simulación de película FRMT, la app de glitch art MODUL8, la de cianotipia CYANO y "
-        "Harmony Palette para iPhone, y lleva Merge With The Machine.",
-        "Levi Foster est développeur d'apps et artiste indépendant à Fort Worth, au Texas. Il fait "
-        "la simulation argentique FRMT, l'app de glitch art MODUL8, l'app de cyanotype CYANO et "
-        "Harmony Palette pour iPhone, et mène Merge With The Machine.",
-        "Levi Foster è sviluppatore di app e artista indipendente a Fort Worth, Texas. Fa la "
-        "simulazione di pellicola FRMT, l'app di glitch art MODUL8, quella di cianotipia CYANO e "
-        "Harmony Palette per iPhone, e porta avanti Merge With The Machine.",
-        "Levi Foster はテキサス州フォートワースを拠点とする独立系のアプリ開発者であり、"
-        "アーティストです。フィルムシミュレーション FRMT、グリッチアート MODUL8、"
-        "サイアノタイプ CYANO、Harmony Palette を iPhone 向けに制作し、"
-        "Merge With The Machine を運営しています。",
-        "Levi Foster는 텍사스주 포트워스에서 활동하는 독립 앱 개발자이자 아티스트입니다. "
-        "필름 시뮬레이션 FRMT, 글리치 아트 MODUL8, 사이아노타입 CYANO, Harmony Palette를 "
-        "iPhone용으로 만들고 Merge With The Machine을 운영합니다.",
-        "Levi Foster is een onafhankelijke app-ontwikkelaar en kunstenaar in Fort Worth, Texas. "
-        "Hij maakt de filmsimulatie FRMT, de glitch-art-app MODUL8, de cyanotypie-app CYANO en "
-        "Harmony Palette voor iPhone, en runt Merge With The Machine.",
-        "Levi Foster é desenvolvedor de apps e artista independente em Fort Worth, Texas. Ele faz "
-        "a simulação de filme FRMT, o app de glitch art MODUL8, o de cianotipia CYANO e o Harmony "
-        "Palette para iPhone, e toca o Merge With The Machine.",
-        "Levi Foster 是一位独立 App 开发者和艺术家，常驻美国得州沃斯堡。他为 iPhone 制作胶片模拟 "
-        "FRMT、故障艺术 MODUL8、蓝晒 CYANO 和 Harmony Palette，并经营 Merge With The Machine。"),
-    "Independent app developer and artist in Fort Worth, Texas. FRMT film simulation, MODUL8 "
-    "glitch art, CYANO cyanotype, Harmony Palette, and Merge With The Machine.": (
-        "Unabhängiger App-Entwickler und Künstler in Fort Worth, Texas. Filmsimulation FRMT, "
-        "Glitch Art MODUL8, Cyanotypie CYANO, Harmony Palette und Merge With The Machine.",
-        "Desarrollador de apps y artista independiente en Fort Worth, Texas. Simulación de "
-        "película FRMT, glitch art MODUL8, cianotipia CYANO, Harmony Palette y Merge With The "
-        "Machine.",
-        "Desarrollador de apps y artista independiente en Fort Worth, Texas. Simulación de "
-        "película FRMT, glitch art MODUL8, cianotipia CYANO, Harmony Palette y Merge With The "
-        "Machine.",
-        "Développeur d'apps et artiste indépendant à Fort Worth, Texas. Simulation argentique "
-        "FRMT, glitch art MODUL8, cyanotype CYANO, Harmony Palette et Merge With The Machine.",
-        "Sviluppatore di app e artista indipendente a Fort Worth, Texas. Simulazione di pellicola "
-        "FRMT, glitch art MODUL8, cianotipia CYANO, Harmony Palette e Merge With The Machine.",
-        "テキサス州フォートワース在住の独立系アプリ開発者/アーティスト。フィルムシミュレーション "
-        "FRMT、グリッチアート MODUL8、サイアノタイプ CYANO、Harmony Palette、"
-        "Merge With The Machine。",
-        "텍사스주 포트워스의 독립 앱 개발자이자 아티스트. 필름 시뮬레이션 FRMT, 글리치 아트 "
-        "MODUL8, 사이아노타입 CYANO, Harmony Palette, Merge With The Machine.",
-        "Onafhankelijke app-ontwikkelaar en kunstenaar in Fort Worth, Texas. Filmsimulatie FRMT, "
-        "glitch art MODUL8, cyanotypie CYANO, Harmony Palette en Merge With The Machine.",
-        "Desenvolvedor de apps e artista independente em Fort Worth, Texas. Simulação de filme "
-        "FRMT, glitch art MODUL8, cianotipia CYANO, Harmony Palette e Merge With The Machine.",
-        "常驻得州沃斯堡的独立 App 开发者与艺术家。胶片模拟 FRMT、故障艺术 MODUL8、蓝晒 CYANO、"
-        "Harmony Palette，以及 Merge With The Machine。"),
-    "An ASCII art portrait of Levi Foster": (
-        "Ein ASCII-Art-Porträt von Levi Foster",
-        "Un retrato en ASCII art de Levi Foster",
-        "Un retrato en ASCII art de Levi Foster",
-        "Un portrait en ASCII art de Levi Foster",
-        "Un ritratto in ASCII art di Levi Foster",
-        "Levi Foster のアスキーアートによる肖像",
-        "Levi Foster의 아스키 아트 초상",
-        "Een ASCII-artportret van Levi Foster",
-        "Um retrato em ASCII art de Levi Foster",
-        "Levi Foster 的 ASCII 艺术肖像"),
-    "Projects": ("Projekte", "Proyectos", "Proyectos", "Projets", "Progetti", "プロジェクト",
-                 "프로젝트", "Projecten", "Projetos", "项目"),
-    "ABOUT": ("ÜBER", "ACERCA DE", "ACERCA DE", "À PROPOS", "CHI SONO", "プロフィール", "소개",
-              "OVER", "SOBRE", "关于"),
-    "Independent app developer and artist": (
-        "Unabhängiger App-Entwickler und Künstler",
-        "Desarrollador de apps y artista independiente",
-        "Desarrollador de apps y artista independiente",
-        "Développeur d'apps et artiste indépendant",
-        "Sviluppatore di app e artista indipendente",
-        "独立系アプリ開発者/アーティスト", "독립 앱 개발자이자 아티스트",
-        "Onafhankelijk app-ontwikkelaar en kunstenaar",
-        "Desenvolvedor de apps e artista independente", "独立 App 开发者与艺术家"),
+    # ------------------------------------------------------------------ head
+    "Levi Foster: Operations, iPhone Apps and Browser Games, Fort Worth": (
+        "Levi Foster: Operations, iPhone-Apps und Browserspiele, Fort Worth",
+        "Levi Foster: operaciones, apps para iPhone y juegos de navegador, Fort Worth",
+        "Levi Foster: operaciones, apps para iPhone y juegos de navegador, Fort Worth",
+        "Levi Foster : opérations, apps iPhone et jeux par navigateur, Fort Worth",
+        "Levi Foster: operations, app per iPhone e giochi per browser, Fort Worth",
+        "Levi Foster｜オペレーション、iPhone アプリ、ブラウザゲーム｜フォートワース",
+        "Levi Foster｜운영, iPhone 앱, 브라우저 게임｜포트워스",
+        "Levi Foster: operations, iPhone-apps en browsergames, Fort Worth",
+        "Levi Foster: operações, apps para iPhone e jogos de navegador, Fort Worth",
+        "Levi Foster｜运营、iPhone 应用与网页游戏｜沃斯堡"),
+    "Levi Foster runs operations at Red Arrow Marketing, co-owns Crest Acquisitions, and builds "
+    "iPhone apps, browser games and art in Fort Worth, Texas.": (
+        "Levi Foster leitet das operative Geschäft bei Red Arrow Marketing, ist Mitinhaber von "
+        "Crest Acquisitions und baut iPhone-Apps, Browserspiele und Kunst in Fort Worth, Texas.",
+        "Levi Foster dirige las operaciones de Red Arrow Marketing, es socio de Crest "
+        "Acquisitions y crea apps para iPhone, juegos de navegador y arte en Fort Worth, Texas.",
+        "Levi Foster dirige las operaciones de Red Arrow Marketing, es socio de Crest "
+        "Acquisitions y crea apps para iPhone, juegos de navegador y arte en Fort Worth, Texas.",
+        "Levi Foster dirige les opérations de Red Arrow Marketing, est associé de Crest "
+        "Acquisitions et crée des apps iPhone, des jeux par navigateur et de l'art à Fort Worth, "
+        "au Texas.",
+        "Levi Foster dirige le operations di Red Arrow Marketing, è socio di Crest Acquisitions "
+        "e crea app per iPhone, giochi per browser e arte a Fort Worth, Texas.",
+        "Levi Foster は Red Arrow Marketing のオペレーションを統括し、Crest Acquisitions の"
+        "共同オーナーを務めながら、テキサス州フォートワースで iPhone アプリ、ブラウザゲーム、"
+        "アートをつくっています。",
+        "Levi Foster는 Red Arrow Marketing의 운영을 총괄하고 Crest Acquisitions의 공동 "
+        "소유주이며, 텍사스주 포트워스에서 iPhone 앱, 브라우저 게임, 아트를 만듭니다.",
+        "Levi Foster leidt de operations bij Red Arrow Marketing, is mede-eigenaar van Crest "
+        "Acquisitions en bouwt iPhone-apps, browsergames en kunst in Fort Worth, Texas.",
+        "Levi Foster dirige as operações da Red Arrow Marketing, é sócio da Crest Acquisitions e "
+        "cria apps para iPhone, jogos de navegador e arte em Fort Worth, Texas.",
+        "Levi Foster 负责 Red Arrow Marketing 的运营，是 Crest Acquisitions 的合伙人，并在"
+        "美国得州沃斯堡制作 iPhone 应用、网页游戏和艺术作品。"),
+    "Levi Foster: Operations, iPhone Apps and Browser Games": (
+        "Levi Foster: Operations, iPhone-Apps und Browserspiele",
+        "Levi Foster: operaciones, apps para iPhone y juegos de navegador",
+        "Levi Foster: operaciones, apps para iPhone y juegos de navegador",
+        "Levi Foster : opérations, apps iPhone et jeux par navigateur",
+        "Levi Foster: operations, app per iPhone e giochi per browser",
+        "Levi Foster｜オペレーション、iPhone アプリ、ブラウザゲーム",
+        "Levi Foster｜운영, iPhone 앱, 브라우저 게임",
+        "Levi Foster: operations, iPhone-apps en browsergames",
+        "Levi Foster: operações, apps para iPhone e jogos de navegador",
+        "Levi Foster｜运营、iPhone 应用与网页游戏"),
+    "Director of operations at Red Arrow Marketing, co-owner of Crest Acquisitions, and the "
+    "developer behind seven iPhone apps, Morterra graphics and Carmeet. Fort Worth, Texas.": (
+        "Leiter des operativen Geschäfts bei Red Arrow Marketing, Mitinhaber von Crest "
+        "Acquisitions und der Entwickler hinter sieben iPhone-Apps, der Grafik von Morterra und "
+        "Carmeet. Fort Worth, Texas.",
+        "Director de operaciones en Red Arrow Marketing, socio de Crest Acquisitions y el "
+        "desarrollador detrás de siete apps para iPhone, los gráficos de Morterra y Carmeet. "
+        "Fort Worth, Texas.",
+        "Director de operaciones en Red Arrow Marketing, socio de Crest Acquisitions y el "
+        "desarrollador detrás de siete apps para iPhone, los gráficos de Morterra y Carmeet. "
+        "Fort Worth, Texas.",
+        "Directeur des opérations chez Red Arrow Marketing, associé de Crest Acquisitions, et le "
+        "développeur derrière sept apps iPhone, les graphismes de Morterra et Carmeet. Fort "
+        "Worth, Texas.",
+        "Direttore operativo di Red Arrow Marketing, socio di Crest Acquisitions e lo "
+        "sviluppatore dietro sette app per iPhone, la grafica di Morterra e Carmeet. Fort Worth, "
+        "Texas.",
+        "Red Arrow Marketing のオペレーション責任者、Crest Acquisitions の共同オーナー。"
+        "7 本の iPhone アプリ、Morterra のグラフィック、Carmeet の開発者。テキサス州フォートワース。",
+        "Red Arrow Marketing의 운영 이사, Crest Acquisitions의 공동 소유주, 그리고 iPhone 앱 "
+        "7개와 Morterra 그래픽, Carmeet을 만든 개발자. 텍사스주 포트워스.",
+        "Directeur operations bij Red Arrow Marketing, mede-eigenaar van Crest Acquisitions en "
+        "de ontwikkelaar achter zeven iPhone-apps, de graphics van Morterra en Carmeet. Fort "
+        "Worth, Texas.",
+        "Diretor de operações da Red Arrow Marketing, sócio da Crest Acquisitions e o "
+        "desenvolvedor por trás de sete apps para iPhone, dos gráficos de Morterra e do Carmeet. "
+        "Fort Worth, Texas.",
+        "Red Arrow Marketing 运营总监，Crest Acquisitions 合伙人，七款 iPhone 应用、Morterra "
+        "图形与 Carmeet 的开发者。美国得州沃斯堡。"),
+    "The element Lf: Levi Foster, number 1": (
+        "Das Element Lf: Levi Foster, Ordnungszahl 1",
+        "El elemento Lf: Levi Foster, número atómico 1",
+        "El elemento Lf: Levi Foster, número atómico 1",
+        "L'élément Lf : Levi Foster, numéro atomique 1",
+        "L'elemento Lf: Levi Foster, numero atomico 1",
+        "元素 Lf：Levi Foster、原子番号 1",
+        "원소 Lf: Levi Foster, 원자 번호 1",
+        "Het element Lf: Levi Foster, atoomnummer 1",
+        "O elemento Lf: Levi Foster, número atômico 1",
+        "元素 Lf：Levi Foster，原子序数 1"),
+
+    # ------------------------------------------------------------------ bar
+    "Sections": ("Abschnitte", "Secciones", "Secciones", "Sections", "Sezioni", "セクション",
+                 "섹션", "Secties", "Seções", "栏目"),
+    "Table of works": ("Werktabelle", "Tabla de obras", "Tabla de obras", "Tableau des œuvres",
+                       "Tavola delle opere", "作品表", "작품표", "Werkentabel", "Tabela de obras",
+                       "作品表"),
+    "Specification": ("Spezifikation", "Especificación", "Especificación", "Spécification",
+                      "Specifiche", "仕様", "사양", "Specificatie", "Especificação", "规格"),
+    "Contact": ("Kontakt", "Contacto", "Contacto", "Contact", "Contatti", "連絡先", "연락처",
+                "Contact", "Contato", "联系"),
+    "Language": ("Sprache", "Idioma", "Idioma", "Langue", "Lingua", "言語", "언어", "Taal",
+                 "Idioma", "语言"),
+
+    # ------------------------------------------------------------------ the element
+    "Levi Foster, drawn as an element": (
+        "Levi Foster, als Element dargestellt",
+        "Levi Foster, dibujado como un elemento",
+        "Levi Foster, dibujado como un elemento",
+        "Levi Foster, dessiné comme un élément",
+        "Levi Foster, disegnato come un elemento",
+        "元素として描いた Levi Foster",
+        "원소로 그린 Levi Foster",
+        "Levi Foster, getekend als element",
+        "Levi Foster, desenhado como um elemento",
+        "画成一个元素的 Levi Foster"),
+    "Electrons": ("Elektronen", "Electrones", "Electrones", "Électrons", "Elettroni", "電子",
+                  "전자", "Elektronen", "Elétrons", "电子"),
+    "12, one per work": ("12, eins pro Werk", "12, uno por obra", "12, uno por obra",
+                         "12, un par œuvre", "12, uno per opera", "12、作品ごとに 1 つ",
+                         "12, 작품마다 하나", "12, één per werk", "12, um por obra",
+                         "12，每件作品一个"),
+    "Shells": ("Schalen", "Capas", "Capas", "Couches", "Gusci", "電子殻", "전자 껍질", "Schillen",
+               "Camadas", "电子层"),
+    "Origin": ("Herkunft", "Origen", "Origen", "Origine", "Origine", "出身", "출신", "Herkomst",
+               "Origem", "来自"),
     "Fort Worth, Texas": ("Fort Worth, Texas", "Fort Worth, Texas", "Fort Worth, Texas",
                           "Fort Worth, Texas", "Fort Worth, Texas", "テキサス州フォートワース",
                           "텍사스주 포트워스", "Fort Worth, Texas", "Fort Worth, Texas",
                           "美国得州沃斯堡"),
-    "I am Levi Foster. I build iPhone apps and make things with code, mostly at the point where\n"
-    "      photography stops being a picture and starts being a process. Some of it ships on the "
-    "App\n      Store. The rest ends up as prints.": (
-        "Ich bin Levi Foster. Ich baue iPhone-Apps und mache Dinge mit Code, meistens genau dort, "
-        "wo Fotografie aufhört, ein Bild zu sein, und anfängt, ein Verfahren zu sein. Ein Teil "
-        "davon erscheint im App Store. Der Rest endet als Druck.",
-        "Soy Levi Foster. Hago apps para iPhone y cosas con código, sobre todo en el punto en el "
-        "que la fotografía deja de ser una imagen y pasa a ser un proceso. Parte acaba en la App "
-        "Store. El resto acaba en papel.",
-        "Soy Levi Foster. Hago apps para iPhone y cosas con código, sobre todo en el punto en el "
-        "que la fotografía deja de ser una imagen y pasa a ser un proceso. Parte acaba en la App "
-        "Store. El resto acaba impreso.",
-        "Je suis Levi Foster. Je fais des apps iPhone et des choses avec du code, surtout à "
-        "l'endroit où la photographie cesse d'être une image et devient un procédé. Une partie "
-        "sort sur l'App Store. Le reste finit en tirages.",
-        "Sono Levi Foster. Faccio app per iPhone e cose con il codice, soprattutto nel punto in "
-        "cui la fotografia smette di essere un'immagine e diventa un processo. Una parte esce "
-        "sull'App Store. Il resto finisce in stampa.",
-        "Levi Foster です。iPhone アプリをつくり、コードでものをつくっています。多くは、"
-        "写真が「絵」であることをやめて「工程」になる、その境目のあたりで。"
-        "一部は App Store に出し、残りはプリントになります。",
-        "저는 Levi Foster입니다. iPhone 앱을 만들고 코드로 무언가를 만듭니다. 대부분은 사진이 "
-        "이미지이기를 그만두고 공정이 되는 지점에서요. 일부는 App Store에 내고, 나머지는 "
-        "프린트가 됩니다.",
-        "Ik ben Levi Foster. Ik bouw iPhone-apps en maak dingen met code, meestal precies daar "
-        "waar fotografie ophoudt een plaatje te zijn en een proces wordt. Een deel verschijnt in "
-        "de App Store. De rest wordt print.",
-        "Sou Levi Foster. Faço apps para iPhone e coisas com código, principalmente no ponto em "
-        "que a fotografia deixa de ser uma imagem e passa a ser um processo. Parte sai na App "
-        "Store. O resto vira impressão.",
-        "我是 Levi Foster。我做 iPhone 应用，也用代码做东西，大多集中在摄影不再是一张画面、"
-        "而开始成为一道工序的那个交界处。一部分会上架 App Store，其余的最后变成版画。"),
-    # The next four fragments are one sentence broken by inline links, in this fixed order:
-    #   [A] FRMT [B] CYANO [C] MODUL8 [D]
-    # The links cannot move, so each translation is written to read correctly once assembled. The
-    # verb-final languages carry the sentence differently and end on the shared clause.
-    "The apps share a bias. I would rather simulate the thing than approximate the look of it,\n"
-    "      which is slower and more awkward and gets results a preset cannot. That is the whole "
-    "idea\n      behind": (
-        "Die Apps teilen eine Neigung. Ich simuliere lieber die Sache selbst, als ihr Aussehen "
-        "anzunähern, was langsamer und umständlicher ist und Ergebnisse liefert, zu denen ein "
-        "Preset nicht kommt. Das ist der ganze Gedanke hinter",
-        "Las apps comparten un sesgo. Prefiero simular la cosa antes que aproximar su aspecto, lo "
-        "cual es más lento y más incómodo y da resultados a los que un preajuste no llega. Esa es "
-        "toda la idea detrás de",
-        "Las apps comparten un sesgo. Prefiero simular la cosa antes que aproximar su aspecto, lo "
-        "cual es más lento y más incómodo y da resultados a los que una predefinición no llega. "
-        "Esa es toda la idea detrás de",
-        "Les apps partagent un parti pris. Je préfère simuler la chose plutôt que d'approcher son "
-        "apparence, ce qui est plus lent et plus ingrat et donne des résultats qu'un préréglage "
-        "n'atteint pas. C'est toute l'idée derrière",
-        "Le app condividono un'inclinazione. Preferisco simulare la cosa piuttosto che "
-        "approssimarne l'aspetto, il che è più lento e più scomodo e dà risultati a cui un preset "
-        "non arriva. È tutta qui l'idea dietro",
-        "アプリにはひとつの傾き　があります。見た目を近似するより、そのもの自体を再現したい。"
-        "そのぶん遅く、面倒で、そしてプリセットには出せない結果になります。その考え方が",
-        "앱들은 하나의 편향을 공유합니다. 겉모습을 근사하기보다 그것 자체를 시뮬레이션하고 "
-        "싶습니다. 더 느리고 더 번거롭지만, 프리셋으로는 나오지 않는 결과가 나옵니다. 그 생각이",
-        "De apps delen een voorkeur. Ik simuleer liever het ding zelf dan dat ik de aanblik ervan "
-        "benader, wat trager en onhandiger is en resultaten geeft waar een preset niet komt. Dat "
-        "is het hele idee achter",
-        "Os apps compartilham um viés. Prefiro simular a coisa a aproximar a aparência dela, o que "
-        "é mais lento e mais desajeitado e dá resultados que uma predefinição não alcança. É essa "
-        "a ideia por trás de",
-        "这些应用有一个共同的偏向。比起去近似它的外观，我更愿意去模拟那件事本身，这更慢、更笨拙，"
-        "却能得到预设做不到的结果。这就是"),
-    "and": ("und", "y", "y", "et", "e", "と", "와", "en", "e", "和"),
-    ", and it is why": (
-        ", und darum bildet", ", y por eso", ", y por eso", ", et c'est pourquoi",
-        ", ed è il motivo per cui", "の根底にあり、", "의 밑바탕이고,", ", en daarom modelleert",
-        ", e é por isso que", "背后的全部想法；"),
-    "models broken\n      hardware instead of drawing coloured lines over your photo.": (
-        "kaputte Hardware nach, statt farbige Linien über dein Foto zu zeichnen.",
-        "modela hardware averiado en vez de dibujar líneas de color sobre tu foto.",
-        "modela hardware descompuesto en vez de dibujar líneas de color sobre tu foto.",
-        "modélise du matériel en panne au lieu de tracer des lignes colorées sur votre photo.",
-        "modella hardware guasto invece di disegnare righe colorate sopra la tua foto.",
-        "が写真の上に色の線を描くのではなく、壊れたハードウェアそのものを再現しているのも、"
-        "同じ理由です。",
-        "가 사진 위에 색 선을 그리는 대신 고장 난 하드웨어 자체를 모델링하는 이유이기도 합니다.",
-        "kapotte hardware in plaats van gekleurde lijnen over je foto te tekenen.",
-        "modela hardware quebrado em vez de desenhar linhas coloridas sobre a sua foto.",
-        "也是 MODUL8 去模拟坏掉的硬件、而不是在你的照片上画彩色线条的原因。"),
-    "Work": ("Arbeiten", "Trabajo", "Trabajo", "Travaux", "Lavori", "作品", "작업", "Werk",
-             "Trabalho", "作品"),
-    "FRMT: Film Simulation": (
-        "FRMT: Filmsimulation", "FRMT: simulación de película", "FRMT: simulación de película",
-        "FRMT : simulation argentique", "FRMT: simulazione di pellicola",
-        "FRMT｜フィルムシミュレーション", "FRMT｜필름 시뮬레이션", "FRMT: filmsimulatie",
-        "FRMT: simulação de filme", "FRMT｜胶片模拟"),
-    "A film simulation camera for iPhone. It models the photographic process itself rather than\n"
-    "          applying a colour filter: light scattering through the emulsion, dye layers holding "
-    "each\n          other back, grain forming where the light actually landed. Four stocks, built "
-    "from\n          published manufacturer measurements, developed from a RAW negative on the "
-    "device.": (
-        "Eine Filmsimulationskamera für iPhone. Sie bildet den fotografischen Prozess selbst nach, "
-        "statt einen Farbfilter anzuwenden: Licht, das durch die Emulsion streut, Farbschichten, "
-        "die einander zurückhalten, Korn, das dort entsteht, wo das Licht tatsächlich gelandet "
-        "ist. Vier Filme, gebaut aus veröffentlichten Herstellermessungen, auf dem Gerät aus einem "
-        "RAW-Negativ entwickelt.",
-        "Una cámara de simulación de película para iPhone. Modela el proceso fotográfico en sí en "
-        "vez de aplicar un filtro de color: la luz dispersándose por la emulsión, las capas de "
-        "colorante frenándose entre sí, el grano formándose donde la luz llegó de verdad. Cuatro "
-        "películas, construidas a partir de mediciones publicadas por los fabricantes, reveladas "
-        "en el dispositivo desde un negativo RAW.",
-        "Una cámara de simulación de película para iPhone. Modela el proceso fotográfico en sí en "
-        "vez de aplicar un filtro de color: la luz dispersándose por la emulsión, las capas de "
-        "colorante frenándose entre sí, el grano formándose donde la luz llegó de verdad. Cuatro "
-        "películas, construidas a partir de mediciones publicadas por los fabricantes, reveladas "
-        "en el dispositivo desde un negativo RAW.",
-        "Un appareil photo à simulation argentique pour iPhone. Il modélise le procédé "
-        "photographique lui-même au lieu d'appliquer un filtre coloré : la lumière qui diffuse "
-        "dans l'émulsion, les couches de colorant qui se retiennent, le grain qui se forme là où "
-        "la lumière est réellement tombée. Quatre pellicules, construites à partir de mesures "
-        "publiées par les fabricants, développées sur l'appareil depuis un négatif RAW.",
-        "Una fotocamera a simulazione di pellicola per iPhone. Modella il processo fotografico in "
-        "sé invece di applicare un filtro colore: la luce che diffonde nell'emulsione, gli strati "
-        "di colorante che si trattengono a vicenda, la grana che si forma dove la luce è davvero "
-        "arrivata. Quattro pellicole, costruite da misure pubblicate dai produttori, sviluppate "
-        "sul dispositivo da un negativo RAW.",
-        "iPhone 用のフィルムシミュレーションカメラ。カラーフィルターをかけるのではなく、"
-        "写真という工程そのものを再現します。乳剤の中で散乱する光、互いを抑え合う色素層、"
-        "光が実際に落ちた場所に生まれる粒子。メーカー公開の実測値から組み上げた四種のフィルムを、"
-        "端末上で RAW ネガから現像します。",
-        "iPhone용 필름 시뮬레이션 카메라. 컬러 필터를 씌우는 대신 사진이라는 공정 자체를 "
-        "모델링합니다. 유제 안에서 산란하는 빛, 서로를 붙잡는 염료층, 빛이 실제로 닿은 자리에 "
-        "생기는 입자. 제조사가 공개한 실측값으로 만든 네 가지 필름을, 기기 안에서 RAW "
-        "네거티브로부터 현상합니다.",
-        "Een filmsimulatiecamera voor iPhone. Hij modelleert het fotografische proces zelf in "
-        "plaats van een kleurfilter toe te passen: licht dat door de emulsie verstrooit, "
-        "kleurlagen die elkaar tegenhouden, korrel die ontstaat waar het licht echt is geland. "
-        "Vier films, gebouwd op gepubliceerde metingen van de fabrikanten, op het toestel "
-        "ontwikkeld vanuit een RAW-negatief.",
-        "Uma câmera de simulação de filme para iPhone. Ela modela o próprio processo fotográfico "
-        "em vez de aplicar um filtro de cor: a luz se espalhando pela emulsão, as camadas de "
-        "corante segurando umas às outras, o grão se formando onde a luz de fato caiu. Quatro "
-        "filmes, construídos a partir de medições publicadas pelos fabricantes, revelados no "
-        "aparelho a partir de um negativo RAW.",
-        "一款 iPhone 上的胶片模拟相机。它模拟的是摄影这道工序本身，而不是套一层颜色滤镜："
-        "光在乳剂中散射，染料层彼此拖住，颗粒生成在光真正落下的地方。四款胶片，依据厂商公开的"
-        "实测数据构建，在设备上从 RAW 底片完成显影。"),
-    "$14.99 once": ("14,99 $ einmalig", "14,99 $ una vez", "14,99 $ una vez",
-                    "14,99 $ une fois", "14,99 $ una volta", "14.99 ドル買い切り",
-                    "14.99달러 한 번", "$14,99 eenmalig", "US$ 14,99 uma vez", "14.99 美元买断"),
-    "MODUL8: Glitch Art Effects": (
-        "MODUL8: Glitch-Art-Effekte", "MODUL8: efectos de glitch art",
-        "MODUL8: efectos de glitch art", "MODUL8 : effets de glitch art",
-        "MODUL8: effetti glitch art", "MODUL8｜グリッチアートエフェクト",
-        "MODUL8｜글리치 아트 효과", "MODUL8: glitch-arteffecten",
-        "MODUL8: efeitos de glitch art", "MODUL8｜故障艺术特效"),
-    "A glitch art app for iPhone. Nineteen stackable effects, each modelled on a specific way\n"
-    "          real hardware used to fail: VHS tracking loss, CRT phosphor bloom, datamosh block\n"
-    "          corruption, pixel sorting, channel separation. Reorder the layers and the picture "
-    "changes.": (
-        "Eine Glitch-Art-App für iPhone. Neunzehn stapelbare Effekte, jeder einer bestimmten Art "
-        "nachgebildet, auf die echte Hardware früher versagte: VHS-Spurverlust, CRT-Phosphorblüte, "
-        "Datamosh-Blockfehler, Pixel Sorting, Kanaltrennung. Ordne die Ebenen um, und das Bild "
-        "ändert sich.",
-        "Una app de glitch art para iPhone. Diecinueve efectos apilables, cada uno modelado sobre "
-        "una forma concreta en que fallaba el hardware real: pérdida de tracking de VHS, floración "
-        "del fósforo del CRT, corrupción de bloques por datamosh, ordenación de píxeles, "
-        "separación de canales. Reordena las capas y la imagen cambia.",
-        "Una app de glitch art para iPhone. Diecinueve efectos apilables, cada uno modelado sobre "
-        "una forma concreta en que fallaba el hardware real: pérdida de tracking de VHS, floración "
-        "del fósforo del CRT, corrupción de bloques por datamosh, ordenación de píxeles, "
-        "separación de canales. Reordena las capas y la imagen cambia.",
-        "Une app de glitch art pour iPhone. Dix-neuf effets empilables, chacun modélisé sur une "
-        "façon précise dont le matériel tombait en panne : perte de piste VHS, floraison du "
-        "phosphore d'un CRT, corruption de blocs en datamosh, tri de pixels, séparation des "
-        "canaux. Réordonnez les couches et l'image change.",
-        "Un'app di glitch art per iPhone. Diciannove effetti impilabili, ognuno modellato su un "
-        "modo preciso in cui l'hardware vero si guastava: perdita di tracking VHS, fioritura del "
-        "fosforo CRT, corruzione a blocchi da datamosh, pixel sorting, separazione dei canali. "
-        "Riordina i livelli e l'immagine cambia.",
-        "iPhone 用のグリッチアートアプリ。積み重ねられる十九のエフェクトは、いずれも実在の"
-        "ハードウェアが壊れたときの特定の壊れ方を再現しています。VHS のトラッキング崩れ、"
-        "CRT の蛍光体のにじみ、データモッシュのブロック破損、ピクセルソート、チャンネル分離。"
-        "レイヤーの順序を変えれば絵も変わります。",
-        "iPhone용 글리치 아트 앱. 쌓아 올릴 수 있는 열아홉 가지 효과가 각각 실제 하드웨어가 "
-        "고장 나던 특정한 방식을 모델링합니다. VHS 트래킹 이탈, CRT 인광체 번짐, 데이터모시 블록 "
-        "손상, 픽셀 소팅, 채널 분리. 레이어 순서를 바꾸면 그림도 바뀝니다.",
-        "Een glitch-art-app voor iPhone. Negentien stapelbare effecten, elk gemodelleerd op een "
-        "specifieke manier waarop echte hardware kapotging: VHS-trackingverlies, CRT-fosforbloei, "
-        "datamosh-blokcorruptie, pixel sorting, kanaalscheiding. Herschik de lagen en het beeld "
-        "verandert.",
-        "Um app de glitch art para iPhone. Dezenove efeitos empilháveis, cada um modelado sobre um "
-        "jeito específico pelo qual o hardware de verdade falhava: perda de tracking do VHS, "
-        "floração do fósforo do CRT, corrupção de blocos por datamosh, ordenação de pixels, "
-        "separação de canais. Reordene as camadas e a imagem muda.",
-        "一款 iPhone 上的故障艺术应用。十九种可叠加的效果，每一种都对应真实硬件当年出错的某种"
-        "具体方式：VHS 循迹丢失、CRT 荧光粉晕开、datamosh 区块损坏、像素排序、通道分离。"
-        "调换图层顺序，画面就会改变。"),
-    "Free": ("Kostenlos", "Gratis", "Gratis", "Gratuit", "Gratis", "無料", "무료", "Gratis",
-             "Grátis", "免费"),
-    "Cyanotype Photos": (
-        "Cyanotypie-Fotos", "Fotos en cianotipia", "Fotos en cianotipia",
-        "Photos au cyanotype", "Foto in cianotipia", "サイアノタイプ写真", "사이아노타입 사진",
-        "Cyanotypiefoto's", "Fotos em cianotipia", "蓝晒照片"),
-    "A cyanotype app for iPhone. It runs the chemistry of the 1842 sunprint process instead of\n"
-    "          tinting the picture blue: the paper is blind to red and green, so two colours a "
-    "camera\n          recorded as equally bright come out at opposite ends of the print. No "
-    "darkroom, no\n          chemicals, no printer.": (
-        "Eine Cyanotypie-App für iPhone. Sie rechnet die Chemie des Sonnendruckverfahrens von 1842 "
-        "durch, statt das Bild blau einzufärben: Das Papier ist blind für Rot und Grün, also "
-        "kommen zwei Farben, die eine Kamera gleich hell aufgezeichnet hat, an entgegengesetzten "
-        "Enden des Drucks heraus. Keine Dunkelkammer, keine Chemikalien, kein Drucker.",
-        "Una app de cianotipia para iPhone. Ejecuta la química del proceso de impresión al sol de "
-        "1842 en vez de teñir la imagen de azul: el papel es ciego al rojo y al verde, así que dos "
-        "colores que la cámara registró igual de brillantes salen en extremos opuestos de la "
-        "copia. Sin cuarto oscuro, sin productos químicos, sin impresora.",
-        "Una app de cianotipia para iPhone. Ejecuta la química del proceso de impresión al sol de "
-        "1842 en vez de teñir la imagen de azul: el papel es ciego al rojo y al verde, así que dos "
-        "colores que la cámara registró igual de brillantes salen en extremos opuestos de la "
-        "copia. Sin cuarto oscuro, sin químicos, sin impresora.",
-        "Une app de cyanotype pour iPhone. Elle calcule la chimie du procédé d'insolation de 1842 "
-        "au lieu de teinter l'image en bleu : le papier est aveugle au rouge et au vert, si bien "
-        "que deux couleurs qu'un appareil a enregistrées aussi claires l'une que l'autre "
-        "ressortent aux extrémités opposées du tirage. Sans chambre noire, sans produits "
-        "chimiques, sans imprimante.",
-        "Un'app di cianotipia per iPhone. Esegue la chimica del procedimento di stampa al sole del "
-        "1842 invece di tingere di blu l'immagine: la carta è cieca al rosso e al verde, quindi "
-        "due colori che una fotocamera ha registrato ugualmente luminosi escono agli estremi "
-        "opposti della stampa. Niente camera oscura, niente prodotti chimici, niente stampante.",
-        "iPhone 用のサイアノタイプアプリ。写真を青く染めるのではなく、1842 年の日光写真の化学"
-        "そのものを計算します。この紙は赤と緑に対して盲目なので、カメラが同じ明るさとして記録した"
-        "二つの色が、プリントの上では正反対の端に出ます。暗室も薬品もプリンターも要りません。",
-        "iPhone용 사이아노타입 앱. 사진을 파랗게 물들이는 대신 1842년 태양광 인화 공정의 화학을 "
-        "그대로 계산합니다. 이 종이는 빨강과 초록에 눈이 멀어서, 카메라가 똑같은 밝기로 기록한 두 "
-        "색이 인화지 위에서는 정반대 끝에 놓입니다. 암실도, 약품도, 프린터도 필요 없습니다.",
-        "Een cyanotypie-app voor iPhone. Hij rekent de chemie van het zonnedrukproces uit 1842 "
-        "door in plaats van het beeld blauw te kleuren: het papier is blind voor rood en groen, "
-        "dus twee kleuren die een camera even helder vastlegde komen aan tegenovergestelde kanten "
-        "van de afdruk uit. Geen donkere kamer, geen chemicaliën, geen printer.",
-        "Um app de cianotipia para iPhone. Ele roda a química do processo de impressão ao sol de "
-        "1842 em vez de tingir a imagem de azul: o papel é cego ao vermelho e ao verde, então duas "
-        "cores que a câmera registrou igualmente claras saem em extremos opostos da cópia. Sem "
-        "câmara escura, sem produtos químicos, sem impressora.",
-        "一款 iPhone 上的蓝晒应用。它跑的是 1842 年日光晒印工艺的化学，而不是把画面染成蓝色："
-        "这种纸对红色和绿色是盲的，所以相机记录为同样明亮的两种颜色，在成品上会落到两个相反的"
-        "极端。不需要暗房、不需要药水、不需要打印机。"),
-    "On the App Store soon": (
-        "Bald im App Store", "Pronto en la App Store", "Pronto en la App Store",
-        "Bientôt sur l'App Store", "Presto sull'App Store", "まもなく App Store に登場",
-        "곧 App Store에 출시", "Binnenkort in de App Store", "Em breve na App Store",
-        "即将上架 App Store"),
-    "A colour harmony and design tool for iPhone and iPad.": (
-        "Ein Werkzeug für Farbharmonie und Gestaltung für iPhone und iPad.",
-        "Una herramienta de armonía de color y diseño para iPhone y iPad.",
-        "Una herramienta de armonía de color y diseño para iPhone y iPad.",
-        "Un outil d'harmonie colorée et de design pour iPhone et iPad.",
-        "Uno strumento di armonia cromatica e design per iPhone e iPad.",
-        "iPhone と iPad のための配色とデザインのツール。",
-        "iPhone과 iPad를 위한 색 조화와 디자인 도구.",
-        "Een tool voor kleurharmonie en ontwerp voor iPhone en iPad.",
-        "Uma ferramenta de harmonia de cor e design para iPhone e iPad.",
-        "一款面向 iPhone 和 iPad 的配色与设计工具。"),
-    "An art project about the line where human imagination meets machine generation. Generated\n"
-    "          visuals, experimental tools, and a print shop.": (
-        "Ein Kunstprojekt über die Linie, an der menschliche Vorstellungskraft auf maschinelle "
-        "Erzeugung trifft. Generierte Bilder, experimentelle Werkzeuge und ein Druckshop.",
-        "Un proyecto artístico sobre la línea donde la imaginación humana se encuentra con la "
-        "generación por máquina. Imágenes generadas, herramientas experimentales y una tienda de "
-        "impresiones.",
-        "Un proyecto artístico sobre la línea donde la imaginación humana se encuentra con la "
-        "generación por máquina. Imágenes generadas, herramientas experimentales y una tienda de "
-        "impresiones.",
-        "Un projet artistique sur la ligne où l'imagination humaine rencontre la génération par "
-        "machine. Visuels générés, outils expérimentaux et une boutique de tirages.",
-        "Un progetto artistico sulla linea dove l'immaginazione umana incontra la generazione "
-        "meccanica. Immagini generate, strumenti sperimentali e una bottega di stampe.",
-        "人間の想像力と機械による生成が接する線についてのアートプロジェクト。生成されたビジュアル、"
-        "実験的なツール、そしてプリントショップ。",
-        "인간의 상상력과 기계의 생성이 만나는 경계에 관한 아트 프로젝트. 생성된 비주얼, 실험적인 "
-        "도구, 그리고 프린트 숍.",
-        "Een kunstproject over de lijn waar menselijke verbeelding machinale generatie ontmoet. "
-        "Gegenereerde beelden, experimentele tools en een printshop.",
-        "Um projeto de arte sobre a linha onde a imaginação humana encontra a geração por máquina. "
-        "Visuais gerados, ferramentas experimentais e uma loja de impressões.",
-        "一个关于人的想象力与机器生成交界之处的艺术项目。生成的视觉、实验性的工具，以及一间版画店。"),
+    "State": ("Zustand", "Estado", "Estado", "État", "Stato", "状態", "상태", "Toestand", "Estado",
+              "状态"),
+    "Active": ("Aktiv", "Activo", "Activo", "Actif", "Attivo", "アクティブ", "활동 중", "Actief",
+               "Ativo", "活跃"),
+    "Director of operations and co-owner at Red Arrow Marketing. Co-owner of Crest Acquisitions, "
+    "where I work on research and AI integration. Developer of seven iPhone apps and two browser "
+    "games, Morterra and Carmeet. Artist behind Merge With The Machine.": (
+        "Leiter des operativen Geschäfts und Mitinhaber bei Red Arrow Marketing. Mitinhaber von "
+        "Crest Acquisitions, wo ich an Recherche und KI-Integration arbeite. Entwickler von "
+        "sieben iPhone-Apps und zwei Browserspielen, Morterra und Carmeet. Künstler hinter Merge "
+        "With The Machine.",
+        "Director de operaciones y socio en Red Arrow Marketing. Socio de Crest Acquisitions, "
+        "donde me ocupo de la investigación y la integración de IA. Desarrollador de siete apps "
+        "para iPhone y dos juegos de navegador, Morterra y Carmeet. Artista detrás de Merge With "
+        "The Machine.",
+        "Director de operaciones y socio en Red Arrow Marketing. Socio de Crest Acquisitions, "
+        "donde me ocupo de la investigación y la integración de IA. Desarrollador de siete apps "
+        "para iPhone y dos juegos de navegador, Morterra y Carmeet. Artista detrás de Merge With "
+        "The Machine.",
+        "Directeur des opérations et associé chez Red Arrow Marketing. Associé de Crest "
+        "Acquisitions, où je travaille sur la recherche et l'intégration de l'IA. Développeur de "
+        "sept apps iPhone et de deux jeux par navigateur, Morterra et Carmeet. Artiste derrière "
+        "Merge With The Machine.",
+        "Direttore operativo e socio di Red Arrow Marketing. Socio di Crest Acquisitions, dove "
+        "mi occupo di ricerca e integrazione dell'IA. Sviluppatore di sette app per iPhone e due "
+        "giochi per browser, Morterra e Carmeet. Artista dietro Merge With The Machine.",
+        "Red Arrow Marketing のオペレーション責任者、共同オーナー。Crest Acquisitions の"
+        "共同オーナーとして、リサーチと AI の導入を担当しています。7 本の iPhone アプリと、"
+        "Morterra と Carmeet の 2 本のブラウザゲームの開発者。Merge With The Machine の"
+        "アーティスト。",
+        "Red Arrow Marketing의 운영 이사이자 공동 소유주. Crest Acquisitions의 공동 소유주로 "
+        "리서치와 AI 도입을 맡고 있습니다. iPhone 앱 7개와 브라우저 게임 2개, Morterra와 "
+        "Carmeet의 개발자. Merge With The Machine의 아티스트.",
+        "Directeur operations en mede-eigenaar bij Red Arrow Marketing. Mede-eigenaar van Crest "
+        "Acquisitions, waar ik aan research en AI-integratie werk. Ontwikkelaar van zeven "
+        "iPhone-apps en twee browsergames, Morterra en Carmeet. Kunstenaar achter Merge With The "
+        "Machine.",
+        "Diretor de operações e sócio da Red Arrow Marketing. Sócio da Crest Acquisitions, onde "
+        "cuido de pesquisa e integração de IA. Desenvolvedor de sete apps para iPhone e dois "
+        "jogos de navegador, Morterra e Carmeet. Artista por trás do Merge With The Machine.",
+        "Red Arrow Marketing 运营总监、合伙人。Crest Acquisitions 合伙人，我在那里负责研究和 "
+        "AI 集成。七款 iPhone 应用和两款网页游戏 Morterra 与 Carmeet 的开发者。"
+        "Merge With The Machine 背后的艺术家。"),
+    "Profiles": ("Profile", "Perfiles", "Perfiles", "Profils", "Profili", "プロフィール",
+                 "프로필", "Profielen", "Perfis", "个人主页"),
+
+    # ------------------------------------------------------------------ table and readout
+    "12 elements": ("12 Elemente", "12 elementos", "12 elementos", "12 éléments", "12 elementi",
+                    "12 の元素", "원소 12개", "12 elementen", "12 elementos", "12 种元素"),
+    "Selected element": ("Ausgewähltes Element", "Elemento seleccionado", "Elemento seleccionado",
+                         "Élément sélectionné", "Elemento selezionato", "選択中の元素",
+                         "선택한 원소", "Geselecteerd element", "Elemento selecionado",
+                         "所选元素"),
+    "Role": ("Rolle", "Cargo", "Cargo", "Rôle", "Ruolo", "役割", "역할", "Rol", "Função", "角色"),
+    "Format": ("Format", "Formato", "Formato", "Format", "Formato", "形態", "형태", "Vorm",
+               "Formato", "形式"),
+    "Open": ("Öffnen", "Abrir", "Abrir", "Ouvrir", "Apri", "開く", "열기", "Openen", "Abrir",
+             "打开"),
+    "Every element in full: the companies, the apps and games, and the art.": (
+        "Jedes Element vollständig: die Firmen, die Apps und Spiele und die Kunst.",
+        "Cada elemento completo: las empresas, las apps y los juegos, y el arte.",
+        "Cada elemento completo: las empresas, las apps y los juegos, y el arte.",
+        "Chaque élément en entier : les entreprises, les apps et les jeux, et l'art.",
+        "Ogni elemento per intero: le aziende, le app e i giochi, e l'arte.",
+        "すべての元素を詳しく：会社、アプリとゲーム、そしてアート。",
+        "모든 원소를 자세히: 회사, 앱과 게임, 그리고 아트.",
+        "Elk element volledig: de bedrijven, de apps en games, en de kunst.",
+        "Cada elemento por inteiro: as empresas, os apps e jogos, e a arte.",
+        "每个元素的完整说明：公司、应用与游戏，以及艺术。"),
+
+    # Family labels, the periodic table's "alkali metal" and "noble gas".
+    "Venture": ("Unternehmen", "Empresa", "Empresa", "Entreprise", "Impresa", "事業", "사업",
+                "Onderneming", "Empresa", "企业"),
+    "Game": ("Spiel", "Juego", "Juego", "Jeu", "Gioco", "ゲーム", "게임", "Game", "Jogo", "游戏"),
+    # See the docstring: identical everywhere on purpose.
+    "App": ("App", "App", "App", "App", "App", "App", "App", "App", "App", "App"),
     "Art": ("Kunst", "Arte", "Arte", "Art", "Arte", "アート", "아트", "Kunst", "Arte", "艺术"),
-    "Prints": ("Drucke", "Impresiones", "Impresiones", "Tirages", "Stampe", "プリント", "프린트",
-               "Prints", "Impressões", "版画"),
+
+    # Roles and formats.
+    "Director of operations, co-owner": (
+        "Leiter des operativen Geschäfts, Mitinhaber",
+        "Director de operaciones, socio",
+        "Director de operaciones, socio",
+        "Directeur des opérations, associé",
+        "Direttore operativo, socio",
+        "オペレーション責任者、共同オーナー",
+        "운영 이사, 공동 소유주",
+        "Directeur operations, mede-eigenaar",
+        "Diretor de operações, sócio",
+        "运营总监，合伙人"),
+    "Agency, Fort Worth, Texas": (
+        "Agentur, Fort Worth, Texas", "Agencia, Fort Worth, Texas", "Agencia, Fort Worth, Texas",
+        "Agence, Fort Worth, Texas", "Agenzia, Fort Worth, Texas",
+        "エージェンシー、テキサス州フォートワース", "에이전시, 텍사스주 포트워스",
+        "Bureau, Fort Worth, Texas", "Agência, Fort Worth, Texas", "营销机构，美国得州沃斯堡"),
+    "Co-owner, research, AI integration": (
+        "Mitinhaber, Recherche, KI-Integration",
+        "Socio, investigación, integración de IA",
+        "Socio, investigación, integración de IA",
+        "Associé, recherche, intégration de l'IA",
+        "Socio, ricerca, integrazione dell'IA",
+        "共同オーナー、リサーチ、AI 導入",
+        "공동 소유주, 리서치, AI 도입",
+        "Mede-eigenaar, research, AI-integratie",
+        "Sócio, pesquisa, integração de IA",
+        "合伙人，研究，AI 集成"),
+    "Acquisitions, nationwide": (
+        "Ankäufe, landesweit", "Adquisiciones, en todo el país", "Adquisiciones, en todo el país",
+        "Acquisitions, dans tout le pays", "Acquisizioni, in tutto il paese", "買い取り、全米",
+        "매입, 미국 전역", "Acquisities, landelijk", "Aquisições, em todo o país", "收购，全美"),
+    "Graphics, developer": (
+        "Grafik, Entwickler", "Gráficos, desarrollador", "Gráficos, desarrollador",
+        "Graphismes, développeur", "Grafica, sviluppatore", "グラフィック、開発者",
+        "그래픽, 개발자", "Graphics, ontwikkelaar", "Gráficos, desenvolvedor", "图形，开发者"),
+    "Browser game, free": (
+        "Browserspiel, kostenlos", "Juego de navegador, gratis", "Juego de navegador, gratis",
+        "Jeu par navigateur, gratuit", "Gioco per browser, gratis", "ブラウザゲーム、無料",
+        "브라우저 게임, 무료", "Browsergame, gratis", "Jogo de navegador, grátis",
+        "网页游戏，免费"),
+    "Developer": ("Entwickler", "Desarrollador", "Desarrollador", "Développeur", "Sviluppatore",
+                  "開発者", "개발자", "Ontwikkelaar", "Desenvolvedor", "开发者"),
+    "iPhone, free, Pro from $2.99": (
+        "iPhone, kostenlos, Pro ab $2.99", "iPhone, gratis, Pro desde $2.99",
+        "iPhone, gratis, Pro desde $2.99", "iPhone, gratuit, Pro à partir de $2.99",
+        "iPhone, gratis, Pro da $2.99", "iPhone、無料、Pro は $2.99 から",
+        "iPhone, 무료, Pro는 $2.99부터", "iPhone, gratis, Pro vanaf $2.99",
+        "iPhone, grátis, Pro a partir de $2.99", "iPhone，免费，Pro $2.99 起"),
+    "iPhone, $14.99 once": (
+        "iPhone, $14.99 einmalig", "iPhone, pago único de $14.99", "iPhone, pago único de $14.99",
+        "iPhone, $14.99 en achat unique", "iPhone, $14.99 una tantum", "iPhone、$14.99 買い切り",
+        "iPhone, $14.99 일회 구매", "iPhone, $14.99 eenmalig", "iPhone, pagamento único de $14.99",
+        "iPhone，$14.99 买断"),
+    "iPhone, free, Premium": (
+        "iPhone, kostenlos, Premium", "iPhone, gratis, Premium", "iPhone, gratis, Premium",
+        "iPhone, gratuit, Premium", "iPhone, gratis, Premium", "iPhone、無料、Premium",
+        "iPhone, 무료, Premium", "iPhone, gratis, Premium", "iPhone, grátis, Premium",
+        "iPhone，免费，Premium"),
+    "iPhone, free": ("iPhone, kostenlos", "iPhone, gratis", "iPhone, gratis", "iPhone, gratuit",
+                     "iPhone, gratis", "iPhone、無料", "iPhone, 무료", "iPhone, gratis",
+                     "iPhone, grátis", "iPhone，免费"),
+    "iPhone game, free": ("iPhone-Spiel, kostenlos", "Juego para iPhone, gratis",
+                          "Juego para iPhone, gratis", "Jeu iPhone, gratuit",
+                          "Gioco per iPhone, gratis", "iPhone ゲーム、無料", "iPhone 게임, 무료",
+                          "iPhone-game, gratis", "Jogo para iPhone, grátis", "iPhone 游戏，免费"),
+    "iPhone and iPad, free": ("iPhone und iPad, kostenlos", "iPhone y iPad, gratis",
+                              "iPhone y iPad, gratis", "iPhone et iPad, gratuit",
+                              "iPhone e iPad, gratis", "iPhone と iPad、無料",
+                              "iPhone과 iPad, 무료", "iPhone en iPad, gratis",
+                              "iPhone e iPad, grátis", "iPhone 和 iPad，免费"),
+    "Reverse engineering, developer": (
+        "Reverse Engineering, Entwickler", "Ingeniería inversa, desarrollador",
+        "Ingeniería inversa, desarrollador", "Rétro-ingénierie, développeur",
+        "Reverse engineering, sviluppatore", "リバースエンジニアリング、開発者",
+        "리버스 엔지니어링, 개발자", "Reverse engineering, ontwikkelaar",
+        "Engenharia reversa, desenvolvedor", "逆向工程，开发者"),
+    "Artist": ("Künstler", "Artista", "Artista", "Artiste", "Artista", "アーティスト", "아티스트",
+               "Kunstenaar", "Artista", "艺术家"),
+    "Art project, prints": (
+        "Kunstprojekt, Drucke", "Proyecto artístico, impresiones",
+        "Proyecto artístico, impresiones", "Projet artistique, tirages",
+        "Progetto artistico, stampe", "アートプロジェクト、プリント", "아트 프로젝트, 프린트",
+        "Kunstproject, prints", "Projeto de arte, impressões", "艺术项目，版画"),
+
+    # ------------------------------------------------------------------ descriptions
+    # Each one is shown in the table's readout, in the specification and in the JSON-LD list.
+    "A Fort Worth web design and digital marketing agency. Websites, SEO, ads, social and "
+    "content, made in-house for clients nationwide.": (
+        "Eine Agentur für Webdesign und digitales Marketing aus Fort Worth. Websites, SEO, "
+        "Anzeigen, Social Media und Content, im eigenen Haus gemacht, für Kunden im ganzen Land.",
+        "Una agencia de diseño web y marketing digital de Fort Worth. Sitios web, SEO, anuncios, "
+        "redes sociales y contenido, hechos en casa para clientes de todo el país.",
+        "Una agencia de diseño web y marketing digital de Fort Worth. Sitios web, SEO, anuncios, "
+        "redes sociales y contenido, hechos en casa para clientes de todo el país.",
+        "Une agence de web design et de marketing digital de Fort Worth. Sites web, SEO, "
+        "publicité, réseaux sociaux et contenu, faits en interne pour des clients dans tout le "
+        "pays.",
+        "Un'agenzia di web design e marketing digitale di Fort Worth. Siti web, SEO, pubblicità, "
+        "social e contenuti, realizzati internamente per clienti in tutto il paese.",
+        "フォートワースのウェブデザインとデジタルマーケティングのエージェンシー。ウェブサイト、"
+        "SEO、広告、SNS、コンテンツを、全米のクライアントのために社内で制作しています。",
+        "포트워스의 웹 디자인·디지털 마케팅 에이전시. 웹사이트, SEO, 광고, 소셜 미디어, "
+        "콘텐츠를 미국 전역의 고객을 위해 사내에서 직접 만듭니다.",
+        "Een bureau voor webdesign en digitale marketing uit Fort Worth. Websites, SEO, "
+        "advertenties, social en content, in eigen huis gemaakt voor klanten in het hele land.",
+        "Uma agência de web design e marketing digital de Fort Worth. Sites, SEO, anúncios, "
+        "redes sociais e conteúdo, feitos internamente para clientes de todo o país.",
+        "一家位于沃斯堡的网页设计与数字营销机构。网站、SEO、广告、社交媒体和内容，全部由自己的"
+        "团队完成，服务全美客户。"),
+    "Buys liens, non-performing notes and distressed real estate for cash, anywhere in the "
+    "country. My side is research and AI integration.": (
+        "Kauft Pfandrechte, notleidende Kredite und Problemimmobilien gegen bar, überall im "
+        "Land. Mein Teil ist Recherche und KI-Integration.",
+        "Compra gravámenes, pagarés en mora e inmuebles en dificultades al contado, en cualquier "
+        "parte del país. Lo mío es la investigación y la integración de IA.",
+        "Compra gravámenes, pagarés vencidos y propiedades en problemas de contado, en cualquier "
+        "parte del país. Lo mío es la investigación y la integración de IA.",
+        "Rachète des privilèges, des créances non performantes et de l'immobilier en difficulté "
+        "au comptant, partout dans le pays. Ma partie, c'est la recherche et l'intégration de "
+        "l'IA.",
+        "Acquista privilegi, crediti deteriorati e immobili in difficoltà in contanti, ovunque "
+        "nel paese. La mia parte è la ricerca e l'integrazione dell'IA.",
+        "担保権、不良債権、ディストレス不動産を、全米どこでも現金で買い取ります。わたしの担当は"
+        "リサーチと AI の導入です。",
+        "담보권, 부실 채권, 부실 부동산을 미국 어디서든 현금으로 매입합니다. 제 담당은 리서치와 "
+        "AI 도입입니다.",
+        "Koopt pandrechten, probleemleningen en noodlijdend vastgoed tegen contante betaling, "
+        "overal in het land. Mijn deel is research en AI-integratie.",
+        "Compra gravames, créditos inadimplentes e imóveis em dificuldade à vista, em qualquer "
+        "lugar do país. Minha parte é pesquisa e integração de IA.",
+        "在全美任何地方以现金收购留置权、不良债权和困境房地产。我负责研究和 AI 集成。"),
+    "A free multiplayer survival sandbox that runs in the browser. Hunt, mine and build anywhere, "
+    "with no download and no sign-up.": (
+        "Ein kostenloses Multiplayer-Survival-Sandbox-Spiel, das im Browser läuft. Jagen, abbauen "
+        "und bauen, überall, ohne Download und ohne Anmeldung.",
+        "Un sandbox de supervivencia multijugador y gratuito que funciona en el navegador. Caza, "
+        "mina y construye en cualquier parte, sin descargas y sin registro.",
+        "Un sandbox de supervivencia multijugador y gratuito que funciona en el navegador. Caza, "
+        "mina y construye donde quieras, sin descargas y sin registro.",
+        "Un bac à sable de survie multijoueur et gratuit qui tourne dans le navigateur. Chassez, "
+        "minez et construisez n'importe où, sans téléchargement ni inscription.",
+        "Un sandbox di sopravvivenza multigiocatore e gratuito che gira nel browser. Caccia, "
+        "scava e costruisci ovunque, senza download e senza registrazione.",
+        "ブラウザで動く無料のマルチプレイヤー・サバイバルサンドボックス。ダウンロードも登録も"
+        "なしで、どこでも狩り、採掘し、建てられます。",
+        "브라우저에서 돌아가는 무료 멀티플레이 서바이벌 샌드박스. 다운로드도 가입도 없이 "
+        "어디서든 사냥하고, 채굴하고, 지을 수 있습니다.",
+        "Een gratis multiplayer-survivalsandbox die in de browser draait. Jaag, delf en bouw "
+        "overal, zonder download en zonder aanmelding.",
+        "Um sandbox de sobrevivência multijogador e gratuito que roda no navegador. Cace, "
+        "minere e construa em qualquer lugar, sem download e sem cadastro.",
+        "一款在浏览器里运行的免费多人生存沙盒游戏。无需下载，无需注册，随处狩猎、采矿和建造。"),
+    "A color harmony and palette tool. RGB and RYB wheels, eight harmony types, 160 curated "
+    "palettes, a WCAG contrast checker, and export to SwiftUI, CSS, Tailwind, SVG or PDF.": (
+        "Ein Werkzeug für Farbharmonien und Paletten. Farbkreise in RGB und RYB, acht "
+        "Harmonietypen, 160 kuratierte Paletten, ein WCAG-Kontrastprüfer und Export nach "
+        "SwiftUI, CSS, Tailwind, SVG oder PDF.",
+        "Una herramienta de armonía de color y paletas. Ruedas RGB y RYB, ocho tipos de armonía, "
+        "160 paletas seleccionadas, un comprobador de contraste WCAG y exportación a SwiftUI, "
+        "CSS, Tailwind, SVG o PDF.",
+        "Una herramienta de armonía de color y paletas. Ruedas RGB y RYB, ocho tipos de armonía, "
+        "160 paletas seleccionadas, un verificador de contraste WCAG y exportación a SwiftUI, "
+        "CSS, Tailwind, SVG o PDF.",
+        "Un outil d'harmonie des couleurs et de palettes. Roues RVB et RJB, huit types "
+        "d'harmonie, 160 palettes sélectionnées, un vérificateur de contraste WCAG et l'export "
+        "vers SwiftUI, CSS, Tailwind, SVG ou PDF.",
+        "Uno strumento di armonia cromatica e palette. Ruote RGB e RYB, otto tipi di armonia, "
+        "160 palette selezionate, un controllo del contrasto WCAG e l'esportazione in SwiftUI, "
+        "CSS, Tailwind, SVG o PDF.",
+        "配色とパレットのツール。RGB と RYB のカラーホイール、8 種類の調和、厳選された 160 の"
+        "パレット、WCAG コントラストチェッカー、そして SwiftUI、CSS、Tailwind、SVG、PDF への"
+        "書き出し。",
+        "색 조화와 팔레트 도구. RGB와 RYB 색상환, 8가지 조화, 엄선된 160개의 팔레트, WCAG 명도 "
+        "대비 검사기, 그리고 SwiftUI, CSS, Tailwind, SVG, PDF로 내보내기.",
+        "Een tool voor kleurharmonie en paletten. RGB- en RYB-wielen, acht harmonietypes, 160 "
+        "samengestelde paletten, een WCAG-contrastchecker en export naar SwiftUI, CSS, "
+        "Tailwind, SVG of PDF.",
+        "Uma ferramenta de harmonia de cores e paletas. Rodas RGB e RYB, oito tipos de harmonia, "
+        "160 paletas selecionadas, um verificador de contraste WCAG e exportação para SwiftUI, "
+        "CSS, Tailwind, SVG ou PDF.",
+        "一款配色与调色板工具。RGB 与 RYB 色轮、8 种配色关系、精选的 160 套调色板、WCAG 对比度"
+        "检查器，并可导出为 SwiftUI、CSS、Tailwind、SVG 或 PDF。"),
+    "A film simulation camera. Four film stocks built from published manufacturer data, "
+    "developed from a RAW negative on the phone.": (
+        "Eine Filmsimulationskamera. Vier Filme, gebaut aus veröffentlichten Herstellerdaten, "
+        "auf dem Handy aus einem RAW-Negativ entwickelt.",
+        "Una cámara de simulación de película. Cuatro películas construidas a partir de datos "
+        "publicados por los fabricantes, reveladas desde un negativo RAW en el teléfono.",
+        "Una cámara de simulación de película. Cuatro películas construidas a partir de datos "
+        "publicados por los fabricantes, reveladas desde un negativo RAW en el celular.",
+        "Un appareil photo à simulation argentique. Quatre pellicules construites à partir des "
+        "données publiées par les fabricants, développées depuis un négatif RAW sur le "
+        "téléphone.",
+        "Una fotocamera a simulazione di pellicola. Quattro pellicole costruite dai dati "
+        "pubblicati dai produttori, sviluppate da un negativo RAW sul telefono.",
+        "フィルムシミュレーションカメラ。メーカー公開のデータから組み上げた 4 種のフィルムを、"
+        "端末上で RAW ネガから現像します。",
+        "필름 시뮬레이션 카메라. 제조사가 공개한 데이터로 만든 네 가지 필름을, 휴대폰 안에서 "
+        "RAW 네거티브로부터 현상합니다.",
+        "Een filmsimulatiecamera. Vier films, gebouwd op gepubliceerde gegevens van de "
+        "fabrikanten, op de telefoon ontwikkeld vanuit een RAW-negatief.",
+        "Uma câmera de simulação de filme. Quatro filmes construídos a partir de dados "
+        "publicados pelos fabricantes, revelados de um negativo RAW no celular.",
+        "一款胶片模拟相机。四款胶片依据厂商公开的数据构建，在手机上从 RAW 底片完成显影。"),
+    "Glitch art for photos and video. 29 effects modeled on the ways real hardware failed, from "
+    "VHS tracking loss to a satellite feed losing lock, saved up to 4K.": (
+        "Glitch Art für Fotos und Video. 29 Effekte, nachgebildet nach den Arten, auf die echte "
+        "Hardware versagte, vom VHS-Spurverlust bis zum abreißenden Satellitensignal, "
+        "gespeichert in bis zu 4K.",
+        "Glitch art para fotos y vídeo. 29 efectos modelados sobre las formas en que fallaba el "
+        "hardware real, desde la pérdida de tracking del VHS hasta una señal de satélite que se "
+        "cae, guardados hasta en 4K.",
+        "Glitch art para fotos y video. 29 efectos modelados sobre las formas en que fallaba el "
+        "hardware real, desde la pérdida de tracking del VHS hasta una señal de satélite que se "
+        "cae, guardados hasta en 4K.",
+        "Du glitch art pour photos et vidéos. 29 effets modélisés sur les façons dont le vrai "
+        "matériel tombait en panne, de la perte de piste VHS au signal satellite qui décroche, "
+        "enregistrés jusqu'en 4K.",
+        "Glitch art per foto e video. 29 effetti modellati sui modi in cui l'hardware vero si "
+        "guastava, dalla perdita di tracking del VHS a un segnale satellitare che perde "
+        "l'aggancio, salvati fino in 4K.",
+        "写真と動画のためのグリッチアート。VHS のトラッキング崩れから受信が途切れた衛星放送まで、"
+        "実在のハードウェアの壊れ方を再現した 29 のエフェクトを、最大 4K で保存できます。",
+        "사진과 동영상을 위한 글리치 아트. VHS 트래킹 이탈부터 신호를 놓친 위성 방송까지, 실제 "
+        "하드웨어가 고장 나던 방식을 모델링한 29가지 효과를 최대 4K로 저장합니다.",
+        "Glitch art voor foto's en video. 29 effecten gemodelleerd op de manieren waarop echte "
+        "hardware kapotging, van VHS-trackingverlies tot een satellietsignaal dat wegvalt, "
+        "opgeslagen tot 4K.",
+        "Glitch art para fotos e vídeos. 29 efeitos modelados sobre os jeitos como o hardware de "
+        "verdade falhava, da perda de tracking do VHS a um sinal de satélite caindo, salvos em "
+        "até 4K.",
+        "为照片和视频打造的故障艺术。29 种效果，模拟真实硬件当年出错的方式，从 VHS 循迹丢失到"
+        "失锁的卫星信号，最高可保存为 4K。"),
+    "Cyanotype prints from your photos, following the chemistry of the 1842 sunprint. No "
+    "darkroom, no chemicals, no printer.": (
+        "Cyanotypie-Drucke aus deinen Fotos, nach der Chemie des Sonnendrucks von 1842. Keine "
+        "Dunkelkammer, keine Chemikalien, kein Drucker.",
+        "Cianotipias a partir de tus fotos, siguiendo la química de la impresión al sol de 1842. "
+        "Sin cuarto oscuro, sin productos químicos, sin impresora.",
+        "Cianotipias a partir de tus fotos, siguiendo la química de la impresión al sol de 1842. "
+        "Sin cuarto oscuro, sin químicos, sin impresora.",
+        "Des cyanotypes à partir de vos photos, selon la chimie du tirage au soleil de 1842. Sans "
+        "chambre noire, sans produits chimiques, sans imprimante.",
+        "Cianotipie dalle tue foto, seguendo la chimica della stampa al sole del 1842. Niente "
+        "camera oscura, niente prodotti chimici, niente stampante.",
+        "1842 年の日光写真の化学に沿って、手持ちの写真からサイアノタイプのプリントをつくります。"
+        "暗室も薬品もプリンターも要りません。",
+        "1842년 태양광 인화의 화학을 따라, 가진 사진으로 사이아노타입 인화를 만듭니다. 암실도, "
+        "약품도, 프린터도 필요 없습니다.",
+        "Cyanotypieën van je foto's, volgens de chemie van de zonnedruk uit 1842. Geen donkere "
+        "kamer, geen chemicaliën, geen printer.",
+        "Cianotipias a partir das suas fotos, seguindo a química da impressão ao sol de 1842. "
+        "Sem câmara escura, sem produtos químicos, sem impressora.",
+        "依照 1842 年日光晒印的化学，把你的照片做成蓝晒作品。不需要暗房、不需要药水、不需要"
+        "打印机。"),
+    "A slow color mixing game with paint that behaves like paint, so blue and yellow make green. "
+    "Five modes, and nothing that hurries you.": (
+        "Ein ruhiges Farbmischspiel mit Farbe, die sich wie Farbe verhält, also ergeben Blau und "
+        "Gelb Grün. Fünf Modi und nichts, das dich hetzt.",
+        "Un juego tranquilo de mezcla de colores con pintura que se comporta como pintura, así "
+        "que el azul y el amarillo dan verde. Cinco modos, y nada que te meta prisa.",
+        "Un juego tranquilo de mezcla de colores con pintura que se comporta como pintura, así "
+        "que el azul y el amarillo dan verde. Cinco modos, y nada que te apure.",
+        "Un jeu tranquille de mélange de couleurs avec de la peinture qui se comporte comme de la "
+        "peinture, alors le bleu et le jaune donnent du vert. Cinq modes, et rien qui vous "
+        "presse.",
+        "Un gioco tranquillo di mescolanza dei colori con vernice che si comporta come vernice, "
+        "quindi blu e giallo danno verde. Cinque modalità, e niente che ti metta fretta.",
+        "絵の具らしく振る舞う絵の具で色を混ぜる、ゆっくりしたゲーム。だから青と黄で緑になります。"
+        "五つのモード、そして急かすものは何もありません。",
+        "물감답게 움직이는 물감으로 색을 섞는 느긋한 게임. 그래서 파랑과 노랑은 초록이 됩니다. "
+        "다섯 가지 모드, 그리고 재촉하는 것은 하나도 없습니다.",
+        "Een rustig kleurmengspel met verf die zich als verf gedraagt, dus blauw en geel worden "
+        "groen. Vijf modi, en niets dat je opjaagt.",
+        "Um jogo calmo de mistura de cores com tinta que se comporta como tinta, então azul e "
+        "amarelo dão verde. Cinco modos, e nada que te apresse.",
+        "一款慢节奏的调色游戏，颜料表现得像真颜料，所以蓝加黄是绿色。五种模式，没有任何催着你的"
+        "东西。"),
+    "Japanese for a trip to Japan, with what the staff say back, then the whole JLPT N5: kana, "
+    "kanji, grammar, listening and a mock test.": (
+        "Japanisch für eine Reise nach Japan, mit dem, was das Personal antwortet, danach der "
+        "ganze JLPT N5: Kana, Kanji, Grammatik, Hören und ein Probetest.",
+        "Japonés para un viaje a Japón, con lo que responde el personal, y después el JLPT N5 "
+        "completo: kana, kanji, gramática, comprensión auditiva y un examen de prueba.",
+        "Japonés para un viaje a Japón, con lo que contesta el personal, y después el JLPT N5 "
+        "completo: kana, kanji, gramática, comprensión auditiva y un examen de prueba.",
+        "Le japonais pour un voyage au Japon, avec ce que le personnel répond, puis tout le "
+        "JLPT N5 : kana, kanji, grammaire, compréhension orale et un test blanc.",
+        "Giapponese per un viaggio in Giappone, con quello che risponde il personale, poi tutto "
+        "il JLPT N5: kana, kanji, grammatica, ascolto e un test di prova.",
+        "日本を旅するための日本語を、店員さんの返答つきで。そのあとは JLPT N5 の全範囲："
+        "かな、漢字、文法、聴解、模擬試験。",
+        "일본 여행을 위한 일본어를 직원의 답변과 함께, 그다음은 JLPT N5 전체: 가나, 한자, 문법, "
+        "듣기, 모의고사.",
+        "Japans voor een reis naar Japan, met wat het personeel terugzegt, daarna het hele "
+        "JLPT N5: kana, kanji, grammatica, luisteren en een proeftoets.",
+        "Japonês para uma viagem ao Japão, com o que o atendente responde, depois o JLPT N5 "
+        "inteiro: kana, kanji, gramática, compreensão auditiva e um simulado.",
+        "去日本旅行要用的日语，附有店员的回答，然后是完整的 JLPT N5：假名、汉字、语法、听力和"
+        "模拟考试。"),
+    "Photocopy, stipple, halftone and dither prints from your photos, layered in color inks, "
+    "drawn on, cut out and covered in stickers.": (
+        "Fotokopie-, Punkt-, Raster- und Dither-Drucke aus deinen Fotos, in farbigen Tinten "
+        "übereinandergelegt, bemalt, ausgeschnitten und mit Stickern beklebt.",
+        "Impresiones de fotocopia, puntillismo, trama y dither a partir de tus fotos, "
+        "superpuestas en tintas de color, dibujadas, recortadas y llenas de pegatinas.",
+        "Impresiones de fotocopia, puntillismo, trama y dither a partir de tus fotos, "
+        "superpuestas en tintas de color, dibujadas, recortadas y llenas de calcomanías.",
+        "Des tirages photocopie, pointillé, trame et tramage à partir de vos photos, superposés "
+        "en encres de couleur, dessinés, découpés et couverts d'autocollants.",
+        "Stampe a fotocopia, puntinato, retino e dither dalle tue foto, sovrapposte in "
+        "inchiostri colorati, disegnate, ritagliate e coperte di adesivi.",
+        "写真からつくるコピー、点描、網点、ディザのプリントを、カラーインクで重ね、描き込み、"
+        "切り抜き、シールで埋めつくします。",
+        "사진으로 만든 복사, 점묘, 망점, 디더 인쇄물을 컬러 잉크로 겹치고, 그리고, 오려내고, "
+        "스티커로 덮습니다.",
+        "Fotokopie-, stippel-, raster- en ditherafdrukken van je foto's, in kleurinkten over "
+        "elkaar gelegd, bekrabbeld, uitgeknipt en vol stickers geplakt.",
+        "Impressões de fotocópia, pontilhado, retícula e dither a partir das suas fotos, "
+        "sobrepostas em tintas coloridas, rabiscadas, recortadas e cobertas de adesivos.",
+        "把你的照片做成复印、点描、网点和抖动印刷品，用彩色墨叠印、涂鸦、抠图，再贴满贴纸。"),
+    "A 2004 street racing city, pulled off the game disc and rebuilt in the browser as a place to "
+    "hang out. Build a car, cruise with whoever is online, meet up, take photos.": (
+        "Eine Straßenrennen-Stadt von 2004, von der Spieldisc geholt und im Browser als Treffpunkt "
+        "neu gebaut. Bau ein Auto, cruise mit allen, die gerade online sind, triff dich mit "
+        "anderen, mach Fotos.",
+        "Una ciudad de carreras callejeras de 2004, sacada del disco del juego y reconstruida en "
+        "el navegador como un sitio donde pasar el rato. Monta un coche, sal a rodar con quien "
+        "esté conectado, queda con gente, haz fotos.",
+        "Una ciudad de carreras callejeras de 2004, sacada del disco del juego y reconstruida en "
+        "el navegador como un lugar para pasar el rato. Arma un auto, sal a pasear con quien "
+        "esté en línea, júntate con otros, toma fotos.",
+        "Une ville de courses de rue de 2004, extraite du disque du jeu et reconstruite dans le "
+        "navigateur comme un endroit où traîner. Construisez une voiture, roulez avec qui est en "
+        "ligne, retrouvez-vous, prenez des photos.",
+        "Una città di corse clandestine del 2004, estratta dal disco del gioco e ricostruita nel "
+        "browser come un posto dove ritrovarsi. Costruisci un'auto, gira con chiunque sia "
+        "online, incontra gli altri, scatta foto.",
+        "2004 年のストリートレースの街を、ゲームディスクから取り出し、たまり場としてブラウザに"
+        "作り直しました。クルマを組んで、オンラインの誰かと流して、集まって、写真を撮る。",
+        "2004년 스트리트 레이싱의 도시를 게임 디스크에서 꺼내, 모여 노는 곳으로 브라우저에 다시 "
+        "지었습니다. 차를 만들고, 접속한 누구와든 드라이브하고, 만나고, 사진을 찍으세요.",
+        "Een straatracestad uit 2004, van de gamedisc gehaald en in de browser herbouwd als plek "
+        "om rond te hangen. Bouw een auto, cruise met wie er online is, spreek af, maak foto's.",
+        "Uma cidade de rachas de rua de 2004, tirada do disco do jogo e reconstruída no "
+        "navegador como um ponto de encontro. Monte um carro, rode com quem estiver online, "
+        "encontre a galera, tire fotos.",
+        "一座 2004 年的街头赛车城市，从游戏光盘里取出，在浏览器里重建成一个闲逛的去处。组装一辆"
+        "车，和在线的任何人一起兜风、碰面、拍照。"),
+    "An art project about where human imagination meets machine generation. Generated visuals, "
+    "experimental tools and a print shop.": (
+        "Ein Kunstprojekt darüber, wo menschliche Vorstellungskraft auf maschinelle Erzeugung "
+        "trifft. Generierte Bilder, experimentelle Werkzeuge und ein Druckshop.",
+        "Un proyecto artístico sobre el lugar donde la imaginación humana se encuentra con la "
+        "generación por máquina. Imágenes generadas, herramientas experimentales y una tienda de "
+        "impresiones.",
+        "Un proyecto artístico sobre el lugar donde la imaginación humana se encuentra con la "
+        "generación por máquina. Imágenes generadas, herramientas experimentales y una tienda de "
+        "impresiones.",
+        "Un projet artistique sur l'endroit où l'imagination humaine rencontre la génération par "
+        "machine. Visuels générés, outils expérimentaux et une boutique de tirages.",
+        "Un progetto artistico su dove l'immaginazione umana incontra la generazione meccanica. "
+        "Immagini generate, strumenti sperimentali e una bottega di stampe.",
+        "人間の想像力と機械による生成が出会う場所についてのアートプロジェクト。生成された"
+        "ビジュアル、実験的なツール、そしてプリントショップ。",
+        "인간의 상상력과 기계의 생성이 만나는 곳에 관한 아트 프로젝트. 생성된 비주얼, 실험적인 "
+        "도구, 그리고 프린트 숍.",
+        "Een kunstproject over waar menselijke verbeelding machinale generatie ontmoet. "
+        "Gegenereerde beelden, experimentele tools en een printshop.",
+        "Um projeto de arte sobre onde a imaginação humana encontra a geração por máquina. "
+        "Visuais gerados, ferramentas experimentais e uma loja de impressões.",
+        "一个关于人的想象力与机器生成相遇之处的艺术项目。生成的视觉、实验性的工具，以及一间"
+        "版画店。"),
+
+    # ------------------------------------------------------------------ contact
+    "Email reaches me directly.": (
+        "E-Mails erreichen mich direkt.", "El correo me llega directamente.",
+        "El correo me llega directamente.", "Les e-mails me parviennent directement.",
+        "Le email arrivano direttamente a me.", "メールは直接わたしに届きます。",
+        "이메일은 저에게 바로 옵니다.", "E-mail komt rechtstreeks bij mij aan.",
+        "O e-mail chega direto para mim.", "邮件会直接到我这里。"),
     "Elsewhere": ("Anderswo", "En otros sitios", "En otros lados", "Ailleurs", "Altrove",
                   "そのほか", "다른 곳", "Elders", "Em outros lugares", "别处"),
-    "Contact": ("Kontakt", "Contacto", "Contacto", "Contact", "Contatti", "連絡先", "연락처",
-                "Contact", "Contato", "联系"),
-    "Email": ("E-Mail", "Correo", "Correo", "E-mail", "Email", "メール", "이메일", "E-mail",
-              "E-mail", "邮件"),
-    ". That reaches me directly.": (
-        ". Das erreicht mich direkt.", ". Eso me llega directamente.",
-        ". Eso me llega directamente.", ". Cela me parvient directement.",
-        ". Arriva direttamente a me.", "。直接わたしに届きます。", ". 저에게 바로 갑니다.",
-        ". Dat komt rechtstreeks bij mij aan.", ". Isso chega direto para mim.",
-        "。会直接到我这里。"),
-    "Levi Foster is an independent iPhone app developer and artist based in Fort Worth, Texas. He "
-    "builds photography and design tools including FRMT, MODUL8, CYANO and Harmony Palette, and "
-    "runs the art project Merge With The Machine.": (
-        "Levi Foster ist unabhängiger iPhone-App-Entwickler und Künstler mit Sitz in Fort Worth, "
-        "Texas. Er baut Foto- und Gestaltungswerkzeuge, darunter FRMT, MODUL8, CYANO und Harmony "
-        "Palette, und betreibt das Kunstprojekt Merge With The Machine.",
-        "Levi Foster es desarrollador independiente de apps para iPhone y artista, con base en "
-        "Fort Worth, Texas. Construye herramientas de fotografía y diseño como FRMT, MODUL8, CYANO "
-        "y Harmony Palette, y lleva el proyecto artístico Merge With The Machine.",
-        "Levi Foster es desarrollador independiente de apps para iPhone y artista, con base en "
-        "Fort Worth, Texas. Construye herramientas de fotografía y diseño como FRMT, MODUL8, CYANO "
-        "y Harmony Palette, y lleva el proyecto artístico Merge With The Machine.",
-        "Levi Foster est développeur indépendant d'apps iPhone et artiste, établi à Fort Worth, au "
-        "Texas. Il construit des outils de photographie et de design dont FRMT, MODUL8, CYANO et "
-        "Harmony Palette, et mène le projet artistique Merge With The Machine.",
-        "Levi Foster è sviluppatore indipendente di app per iPhone e artista, con base a Fort "
-        "Worth, Texas. Costruisce strumenti di fotografia e design fra cui FRMT, MODUL8, CYANO e "
-        "Harmony Palette, e porta avanti il progetto artistico Merge With The Machine.",
-        "Levi Foster はテキサス州フォートワースを拠点とする独立系の iPhone アプリ開発者であり、"
-        "アーティストです。FRMT、MODUL8、CYANO、Harmony Palette をはじめとする写真とデザインの"
-        "ツールをつくり、アートプロジェクト Merge With The Machine を運営しています。",
-        "Levi Foster는 텍사스주 포트워스를 기반으로 활동하는 독립 iPhone 앱 개발자이자 "
-        "아티스트입니다. FRMT, MODUL8, CYANO, Harmony Palette를 비롯한 사진과 디자인 도구를 "
-        "만들고, 아트 프로젝트 Merge With The Machine을 운영합니다.",
-        "Levi Foster is een onafhankelijke iPhone-app-ontwikkelaar en kunstenaar, gevestigd in "
-        "Fort Worth, Texas. Hij bouwt foto- en ontwerptools waaronder FRMT, MODUL8, CYANO en "
-        "Harmony Palette, en runt het kunstproject Merge With The Machine.",
-        "Levi Foster é desenvolvedor independente de apps para iPhone e artista, baseado em Fort "
-        "Worth, Texas. Ele constrói ferramentas de fotografia e design como FRMT, MODUL8, CYANO e "
-        "Harmony Palette, e toca o projeto de arte Merge With The Machine.",
-        "Levi Foster 是一位独立 iPhone 应用开发者与艺术家，常驻美国得州沃斯堡。他打造 FRMT、"
-        "MODUL8、CYANO、Harmony Palette 等摄影与设计工具，并经营艺术项目 "
-        "Merge With The Machine。"),
-    "A film simulation camera for iPhone that simulates the photographic process rather than "
-    "applying a colour filter.": (
-        "Eine Filmsimulationskamera für iPhone, die den fotografischen Prozess simuliert, statt "
-        "einen Farbfilter anzuwenden.",
-        "Una cámara de simulación de película para iPhone que simula el proceso fotográfico en vez "
-        "de aplicar un filtro de color.",
-        "Una cámara de simulación de película para iPhone que simula el proceso fotográfico en vez "
-        "de aplicar un filtro de color.",
-        "Un appareil photo à simulation argentique pour iPhone qui simule le procédé "
-        "photographique au lieu d'appliquer un filtre coloré.",
-        "Una fotocamera a simulazione di pellicola per iPhone che simula il processo fotografico "
-        "invece di applicare un filtro colore.",
-        "カラーフィルターをかけるのではなく、写真の工程そのものを再現する iPhone 用フィルム"
-        "シミュレーションカメラ。",
-        "컬러 필터를 씌우는 대신 사진의 공정 자체를 시뮬레이션하는 iPhone용 필름 시뮬레이션 "
-        "카메라.",
-        "Een filmsimulatiecamera voor iPhone die het fotografische proces simuleert in plaats van "
-        "een kleurfilter toe te passen.",
-        "Uma câmera de simulação de filme para iPhone que simula o processo fotográfico em vez de "
-        "aplicar um filtro de cor.",
-        "一款 iPhone 胶片模拟相机，模拟的是摄影工序本身，而不是套一层颜色滤镜。"),
-    "A glitch art app for iPhone with 19 stackable effects, each modelled on a specific way real "
-    "hardware used to fail.": (
-        "Eine Glitch-Art-App für iPhone mit 19 stapelbaren Effekten, jeder einer bestimmten Art "
-        "nachgebildet, auf die echte Hardware früher versagte.",
-        "Una app de glitch art para iPhone con 19 efectos apilables, cada uno modelado sobre una "
-        "forma concreta en que fallaba el hardware real.",
-        "Una app de glitch art para iPhone con 19 efectos apilables, cada uno modelado sobre una "
-        "forma concreta en que fallaba el hardware real.",
-        "Une app de glitch art pour iPhone avec 19 effets empilables, chacun modélisé sur une "
-        "façon précise dont le matériel tombait en panne.",
-        "Un'app di glitch art per iPhone con 19 effetti impilabili, ognuno modellato su un modo "
-        "preciso in cui l'hardware vero si guastava.",
-        "実在のハードウェアが壊れたときの特定の壊れ方を再現した、積み重ね可能な 19 の"
-        "エフェクトを備えた iPhone 用グリッチアートアプリ。",
-        "실제 하드웨어가 고장 나던 특정한 방식을 각각 모델링한, 쌓아 올릴 수 있는 19가지 효과의 "
-        "iPhone용 글리치 아트 앱.",
-        "Een glitch-art-app voor iPhone met 19 stapelbare effecten, elk gemodelleerd op een "
-        "specifieke manier waarop echte hardware kapotging.",
-        "Um app de glitch art para iPhone com 19 efeitos empilháveis, cada um modelado sobre um "
-        "jeito específico pelo qual o hardware de verdade falhava.",
-        "一款 iPhone 故障艺术应用，19 种可叠加效果，每一种都对应真实硬件当年出错的某种具体方式。"),
-    "A cyanotype app for iPhone that simulates the chemistry of the 1842 sunprint process rather "
-    "than tinting a photograph blue.": (
-        "Eine Cyanotypie-App für iPhone, die die Chemie des Sonnendruckverfahrens von 1842 "
-        "simuliert, statt ein Foto blau einzufärben.",
-        "Una app de cianotipia para iPhone que simula la química del proceso de impresión al sol "
-        "de 1842 en vez de teñir una foto de azul.",
-        "Una app de cianotipia para iPhone que simula la química del proceso de impresión al sol "
-        "de 1842 en vez de teñir una foto de azul.",
-        "Une app de cyanotype pour iPhone qui simule la chimie du procédé d'insolation de 1842 au "
-        "lieu de teinter une photo en bleu.",
-        "Un'app di cianotipia per iPhone che simula la chimica del procedimento di stampa al sole "
-        "del 1842 invece di tingere di blu una foto.",
-        "写真を青く染めるのではなく、1842 年の日光写真の化学を再現する iPhone 用サイアノタイプ"
-        "アプリ。",
-        "사진을 파랗게 물들이는 대신 1842년 태양광 인화 공정의 화학을 시뮬레이션하는 iPhone용 "
-        "사이아노타입 앱.",
-        "Een cyanotypie-app voor iPhone die de chemie van het zonnedrukproces uit 1842 simuleert "
-        "in plaats van een foto blauw te kleuren.",
-        "Um app de cianotipia para iPhone que simula a química do processo de impressão ao sol de "
-        "1842 em vez de tingir uma foto de azul.",
-        "一款 iPhone 蓝晒应用，模拟 1842 年日光晒印工艺的化学，而不是把照片染成蓝色。"),
-    "Apps and projects by Levi Foster": (
-        "Apps und Projekte von Levi Foster", "Apps y proyectos de Levi Foster",
-        "Apps y proyectos de Levi Foster", "Apps et projets de Levi Foster",
-        "App e progetti di Levi Foster", "Levi Foster のアプリとプロジェクト",
-        "Levi Foster의 앱과 프로젝트", "Apps en projecten van Levi Foster",
-        "Apps e projetos de Levi Foster", "Levi Foster 的应用与项目"),
+
+    # ------------------------------------------------------------------ JSON-LD
+    "Levi Foster is director of operations and co-owner at Red Arrow Marketing, a web design and "
+    "digital marketing agency in Fort Worth, Texas, and co-owner of Crest Acquisitions, where he "
+    "works on research and AI integration. He develops the iPhone apps FRMT, MODUL8, CYANO, "
+    "GRNGE, Harmony Palette, Dollop and Kippu, works on graphics and development for the browser "
+    "game Morterra, built the browser car meet Carmeet by reverse engineering a 2004 racing game, "
+    "and makes the art project Merge With The Machine.": (
+        "Levi Foster ist Leiter des operativen Geschäfts und Mitinhaber bei Red Arrow Marketing, "
+        "einer Agentur für Webdesign und digitales Marketing in Fort Worth, Texas, und "
+        "Mitinhaber von Crest Acquisitions, wo er an Recherche und KI-Integration arbeitet. Er "
+        "entwickelt die iPhone-Apps FRMT, MODUL8, CYANO, GRNGE, Harmony Palette, Dollop und "
+        "Kippu, arbeitet an Grafik und Entwicklung des Browserspiels Morterra, hat das "
+        "Browser-Autotreffen Carmeet gebaut, indem er ein Rennspiel von 2004 per Reverse "
+        "Engineering zerlegte, und macht das Kunstprojekt Merge With The Machine.",
+        "Levi Foster es director de operaciones y socio de Red Arrow Marketing, una agencia de "
+        "diseño web y marketing digital en Fort Worth, Texas, y socio de Crest Acquisitions, "
+        "donde se ocupa de la investigación y la integración de IA. Desarrolla las apps para "
+        "iPhone FRMT, MODUL8, CYANO, GRNGE, Harmony Palette, Dollop y Kippu, trabaja en los "
+        "gráficos y el desarrollo del juego de navegador Morterra, creó Carmeet, una quedada de "
+        "coches en el navegador, con ingeniería inversa de un juego de carreras de 2004, y hace "
+        "el proyecto artístico Merge With The Machine.",
+        "Levi Foster es director de operaciones y socio de Red Arrow Marketing, una agencia de "
+        "diseño web y marketing digital en Fort Worth, Texas, y socio de Crest Acquisitions, "
+        "donde se ocupa de la investigación y la integración de IA. Desarrolla las apps para "
+        "iPhone FRMT, MODUL8, CYANO, GRNGE, Harmony Palette, Dollop y Kippu, trabaja en los "
+        "gráficos y el desarrollo del juego de navegador Morterra, creó Carmeet, una reunión de "
+        "autos en el navegador, con ingeniería inversa de un juego de carreras de 2004, y hace "
+        "el proyecto artístico Merge With The Machine.",
+        "Levi Foster est directeur des opérations et associé chez Red Arrow Marketing, une "
+        "agence de web design et de marketing digital à Fort Worth, au Texas, et associé de "
+        "Crest Acquisitions, où il travaille sur la recherche et l'intégration de l'IA. Il "
+        "développe les apps iPhone FRMT, MODUL8, CYANO, GRNGE, Harmony Palette, Dollop et Kippu, "
+        "travaille sur les graphismes et le développement du jeu par navigateur Morterra, a créé "
+        "Carmeet, un rassemblement automobile dans le navigateur, par rétro-ingénierie d'un jeu "
+        "de course de 2004, et mène le projet artistique Merge With The Machine.",
+        "Levi Foster è direttore operativo e socio di Red Arrow Marketing, un'agenzia di web "
+        "design e marketing digitale a Fort Worth, Texas, e socio di Crest Acquisitions, dove si "
+        "occupa di ricerca e integrazione dell'IA. Sviluppa le app per iPhone FRMT, MODUL8, "
+        "CYANO, GRNGE, Harmony Palette, Dollop e Kippu, lavora alla grafica e allo sviluppo del "
+        "gioco per browser Morterra, ha creato Carmeet, un raduno d'auto nel browser, con il "
+        "reverse engineering di un gioco di corse del 2004, e porta avanti il progetto artistico "
+        "Merge With The Machine.",
+        "Levi Foster は、テキサス州フォートワースのウェブデザイン・デジタルマーケティング会社 "
+        "Red Arrow Marketing のオペレーション責任者兼共同オーナーであり、Crest Acquisitions の"
+        "共同オーナーとしてリサーチと AI の導入を担当しています。iPhone アプリ FRMT、MODUL8、"
+        "CYANO、GRNGE、Harmony Palette、Dollop、Kippu を開発し、ブラウザゲーム Morterra の"
+        "グラフィックと開発に携わり、2004 年のレースゲームをリバースエンジニアリングして"
+        "ブラウザのカーミート Carmeet をつくり、アートプロジェクト Merge With The Machine を"
+        "制作しています。",
+        "Levi Foster는 텍사스주 포트워스의 웹 디자인·디지털 마케팅 에이전시 Red Arrow "
+        "Marketing의 운영 이사이자 공동 소유주이며, Crest Acquisitions의 공동 소유주로서 "
+        "리서치와 AI 도입을 맡고 있습니다. iPhone 앱 FRMT, MODUL8, CYANO, GRNGE, Harmony "
+        "Palette, Dollop, Kippu를 개발하고, 브라우저 게임 Morterra의 그래픽과 개발에 참여하며, "
+        "2004년 레이싱 게임을 리버스 엔지니어링해 브라우저 카밋 Carmeet을 만들었고, 아트 "
+        "프로젝트 Merge With The Machine을 만듭니다.",
+        "Levi Foster is directeur operations en mede-eigenaar bij Red Arrow Marketing, een "
+        "bureau voor webdesign en digitale marketing in Fort Worth, Texas, en mede-eigenaar van "
+        "Crest Acquisitions, waar hij aan research en AI-integratie werkt. Hij ontwikkelt de "
+        "iPhone-apps FRMT, MODUL8, CYANO, GRNGE, Harmony Palette, Dollop en Kippu, werkt aan "
+        "graphics en ontwikkeling van de browsergame Morterra, bouwde de browser-carmeet Carmeet "
+        "door een racegame uit 2004 te reverse-engineeren, en maakt het kunstproject Merge With "
+        "The Machine.",
+        "Levi Foster é diretor de operações e sócio da Red Arrow Marketing, uma agência de web "
+        "design e marketing digital em Fort Worth, Texas, e sócio da Crest Acquisitions, onde "
+        "cuida de pesquisa e integração de IA. Ele desenvolve os apps para iPhone FRMT, MODUL8, "
+        "CYANO, GRNGE, Harmony Palette, Dollop e Kippu, trabalha nos gráficos e no "
+        "desenvolvimento do jogo de navegador Morterra, criou o Carmeet, um encontro de carros no "
+        "navegador, com engenharia reversa de um jogo de corrida de 2004, e faz o projeto de "
+        "arte Merge With The Machine.",
+        "Levi Foster 是美国得州沃斯堡网页设计与数字营销机构 Red Arrow Marketing 的运营总监和"
+        "合伙人，也是 Crest Acquisitions 的合伙人，在那里负责研究和 AI 集成。他开发了 iPhone "
+        "应用 FRMT、MODUL8、CYANO、GRNGE、Harmony Palette、Dollop 和 Kippu，参与网页游戏 "
+        "Morterra 的图形与开发，通过逆向工程一款 2004 年的赛车游戏打造了浏览器车友聚会 "
+        "Carmeet，并创作艺术项目 Merge With The Machine。"),
+    "Levi Foster: operations, iPhone apps and browser games": (
+        "Levi Foster: Operations, iPhone-Apps und Browserspiele",
+        "Levi Foster: operaciones, apps para iPhone y juegos de navegador",
+        "Levi Foster: operaciones, apps para iPhone y juegos de navegador",
+        "Levi Foster : opérations, apps iPhone et jeux par navigateur",
+        "Levi Foster: operations, app per iPhone e giochi per browser",
+        "Levi Foster｜オペレーション、iPhone アプリ、ブラウザゲーム",
+        "Levi Foster｜운영, iPhone 앱, 브라우저 게임",
+        "Levi Foster: operations, iPhone-apps en browsergames",
+        "Levi Foster: operações, apps para iPhone e jogos de navegador",
+        "Levi Foster｜运营、iPhone 应用与网页游戏"),
+    "Companies, apps, games and art by Levi Foster": (
+        "Firmen, Apps, Spiele und Kunst von Levi Foster",
+        "Empresas, apps, juegos y arte de Levi Foster",
+        "Empresas, apps, juegos y arte de Levi Foster",
+        "Entreprises, apps, jeux et art de Levi Foster",
+        "Aziende, app, giochi e arte di Levi Foster",
+        "Levi Foster の会社、アプリ、ゲーム、アート",
+        "Levi Foster의 회사, 앱, 게임, 아트",
+        "Bedrijven, apps, games en kunst van Levi Foster",
+        "Empresas, apps, jogos e arte de Levi Foster",
+        "Levi Foster 的公司、应用、游戏与艺术"),
 }
 
-# The link label used to be "CYANO &mdash; Cyanotype Photos", which the parser saw as two text
-# nodes either side of the entity. With a colon it is one node, so it needs its own entry.
-T["CYANO: Cyanotype Photos"] = tuple("CYANO: " + v for v in T["Cyanotype Photos"])
-
-# The Harmony Palette card grew from one line into a real entry when the app got its own page. The
-# card, its meta line and the JSON-LD description are three separate segments.
-T["A colour tool for iPhone and iPad. An interactive wheel in both the RGB model a screen\n          actually uses and the RYB model a painter was taught, eight harmony types, 160 curated\n          palettes, a contrast checker that tells you which pairs are legible, and export straight\n          to SwiftUI, CSS, Tailwind, SVG or PDF."] = (
-    "Ein Farbwerkzeug für iPhone und iPad. Ein interaktiver Kreis, sowohl im RGB-Modell, das ein "
-    "Bildschirm tatsächlich benutzt, als auch im RYB-Modell, das eine Malerin gelernt hat, acht "
-    "Harmonietypen, 160 kuratierte Paletten, ein Kontrastprüfer, der sagt, welche Paare lesbar "
-    "sind, und Export direkt nach SwiftUI, CSS, Tailwind, SVG oder PDF.",
-    "Una herramienta de color para iPhone y iPad. Una rueda interactiva tanto en el modelo RGB que "
-    "usa de verdad una pantalla como en el modelo RYB que le enseñaron a un pintor, ocho tipos de "
-    "armonía, 160 paletas seleccionadas, un comprobador de contraste que te dice qué pares se leen "
-    "bien, y exportación directa a SwiftUI, CSS, Tailwind, SVG o PDF.",
-    "Una herramienta de color para iPhone y iPad. Una rueda interactiva tanto en el modelo RGB que "
-    "usa de verdad una pantalla como en el modelo RYB que le enseñaron a un pintor, ocho tipos de "
-    "armonía, 160 paletas seleccionadas, un verificador de contraste que te dice qué pares se leen "
-    "bien, y exportación directa a SwiftUI, CSS, Tailwind, SVG o PDF.",
-    "Un outil de couleur pour iPhone et iPad. Une roue interactive à la fois dans le modèle RVB "
-    "qu'un écran utilise vraiment et dans le modèle RJB qu'on a enseigné à un peintre, huit types "
-    "d'harmonie, 160 palettes sélectionnées, un vérificateur de contraste qui vous dit quelles "
-    "paires sont lisibles, et l'export direct vers SwiftUI, CSS, Tailwind, SVG ou PDF.",
-    "Uno strumento di colore per iPhone e iPad. Una ruota interattiva sia nel modello RGB che uno "
-    "schermo usa davvero sia nel modello RYB che hanno insegnato a un pittore, otto tipi di "
-    "armonia, 160 palette selezionate, un controllo del contrasto che ti dice quali coppie si "
-    "leggono, e l'esportazione diretta in SwiftUI, CSS, Tailwind, SVG o PDF.",
-    "iPhone と iPad のための色の道具。画面が実際に使う RGB のモデルと、画家が教わった RYB の"
-    "モデルの両方による対話的なホイール、8 種類の調和、厳選された 160 のパレット、"
-    "どの組み合わせが読めるかを教えてくれるコントラストチェッカー、そして SwiftUI、CSS、"
-    "Tailwind、SVG、PDF への直接の書き出し。",
-    "iPhone과 iPad를 위한 색 도구. 화면이 실제로 쓰는 RGB 모델과 화가가 배운 RYB 모델을 모두 "
-    "지원하는 대화형 색상환, 8가지 조화, 엄선된 160개의 팔레트, 어떤 조합이 읽히는지 알려주는 "
-    "명도 대비 검사기, 그리고 SwiftUI, CSS, Tailwind, SVG, PDF로의 바로 내보내기.",
-    "Een kleurgereedschap voor iPhone en iPad. Een interactief wiel in zowel het RGB-model dat een "
-    "scherm echt gebruikt als het RYB-model dat een schilder is geleerd, acht harmonietypes, 160 "
-    "samengestelde paletten, een contrastchecker die je vertelt welke paren leesbaar zijn, en "
-    "export rechtstreeks naar SwiftUI, CSS, Tailwind, SVG of PDF.",
-    "Uma ferramenta de cor para iPhone e iPad. Uma roda interativa tanto no modelo RGB que uma "
-    "tela de fato usa quanto no modelo RYB que ensinaram a um pintor, oito tipos de harmonia, 160 "
-    "paletas selecionadas, um verificador de contraste que diz quais pares são legíveis, e "
-    "exportação direta para SwiftUI, CSS, Tailwind, SVG ou PDF.",
-    "一件为 iPhone 和 iPad 打造的颜色工具。可交互的色轮，既有屏幕真正使用的 RGB 模型，"
-    "也有画家学过的 RYB 模型；8 种配色关系、精选的 160 套调色板、"
-    "会告诉你哪些搭配读得清楚的对比度检查器，"
-    "以及直接导出为 SwiftUI、CSS、Tailwind、SVG 或 PDF。")
-
-T["Free, Pro from $2.99"] = (
-    "Kostenlos, Pro ab $2.99", "Gratis, Pro desde $2.99", "Gratis, Pro desde $2.99",
-    "Gratuit, Pro à partir de $2.99", "Gratis, Pro da $2.99", "無料、Pro は $2.99 から",
-    "무료, Pro는 $2.99부터", "Gratis, Pro vanaf $2.99", "Grátis, Pro a partir de $2.99",
-    "免费，Pro $2.99 起")
-
-T["A colour harmony and palette app for iPhone and iPad, with an interactive wheel in both the RGB and RYB models, eight harmony types, a WCAG contrast checker and export to code."] = (
-    "Eine App für Farbharmonie und Paletten für iPhone und iPad, mit einem interaktiven Kreis im "
-    "RGB- und im RYB-Modell, acht Harmonietypen, einem WCAG-Kontrastprüfer und Export als Code.",
-    "Una app de armonía de color y paletas para iPhone y iPad, con una rueda interactiva en los "
-    "modelos RGB y RYB, ocho tipos de armonía, un comprobador de contraste WCAG y exportación a "
-    "código.",
-    "Una app de armonía de color y paletas para iPhone y iPad, con una rueda interactiva en los "
-    "modelos RGB y RYB, ocho tipos de armonía, un verificador de contraste WCAG y exportación a "
-    "código.",
-    "Une application d'harmonie des couleurs et de palettes pour iPhone et iPad, avec une roue "
-    "interactive dans les modèles RVB et RJB, huit types d'harmonie, un vérificateur de contraste "
-    "WCAG et l'export vers du code.",
-    "Un'app di armonia cromatica e palette per iPhone e iPad, con una ruota interattiva nei "
-    "modelli RGB e RYB, otto tipi di armonia, un controllo del contrasto WCAG e l'esportazione in "
-    "codice.",
-    "iPhone と iPad のための配色とパレットのアプリ。RGB と RYB の両モデルによる対話的なホイール、"
-    "8 種類の調和、WCAG コントラストチェッカー、コードへの書き出し。",
-    "iPhone과 iPad를 위한 색 조화와 팔레트 앱. RGB와 RYB 두 모델을 지원하는 대화형 색상환, 8가지 "
-    "조화, WCAG 명도 대비 검사기, 코드로의 내보내기.",
-    "Een app voor kleurharmonie en paletten voor iPhone en iPad, met een interactief wiel in zowel "
-    "het RGB- als het RYB-model, acht harmonietypes, een WCAG-contrastchecker en export naar code.",
-    "Um app de harmonia de cores e paletas para iPhone e iPad, com uma roda interativa nos modelos "
-    "RGB e RYB, oito tipos de harmonia, um verificador de contraste WCAG e exportação para código.",
-    "一款为 iPhone 和 iPad 打造的配色与调色板应用，"
-    "带有支持 RGB 与 RYB 两种模型的交互式色轮、8 种配色关系、WCAG 对比度检查器，以及导出为代码。")
-
-
-# ------------------------------------------------------------------------ Dollop
-#: The card and its ItemList entry. The full page is at tools/lang/dollop.py; these two sentences
-#: are the only place the home page mentions the game, and they carry the same claim its hero does
-#: so that the two cannot drift apart.
-
-T["A color mixing game for iPhone. You are given a color and you mix it, out of paint that\n          behaves like paint: blue and yellow make green here, not the gray two screen colors would\n          average to. Five modes, a creature that hatches out of your first match, and nothing in it\n          that hurries you."] = (
-    "Ein Farbmischspiel fürs iPhone. Du bekommst einen Farbton und mischst ihn aus Farbe, die sich "
-    "wie Farbe verhält: Blau und Gelb ergeben hier Grün und nicht das Grau, zu dem zwei "
-    "Bildschirmfarben sich mitteln würden. Fünf Modi, ein Wesen, das aus deinem ersten Treffer "
-    "schlüpft, und nichts darin, das dich hetzt.",
-    "Un juego de mezcla de colores para iPhone. Te dan un color y lo mezclas con pintura que se "
-    "comporta como pintura: aquí el azul y el amarillo dan verde, no el gris al que se promediarían "
-    "dos colores de pantalla. Cinco modos, una criatura que nace de tu primer acierto, y nada "
-    "dentro que te meta prisa.",
-    "Un juego de mezcla de colores para iPhone. Te dan un color y lo mezclas con pintura que se "
-    "comporta como pintura: aquí el azul y el amarillo dan verde, no el gris al que se promediarían "
-    "dos colores de pantalla. Cinco modos, una criatura que nace de tu primer acierto, y nada "
-    "dentro que te apure.",
-    "Un jeu de mélange de couleurs pour iPhone. On vous donne une couleur et vous la mélangez avec "
-    "de la peinture qui se comporte comme de la peinture : ici le bleu et le jaune donnent du vert, "
-    "pas le gris qu'on obtiendrait en moyennant deux couleurs d'écran. Cinq modes, une créature qui "
-    "éclot de votre première réussite, et rien dedans qui vous presse.",
-    "Un gioco di mescolanza dei colori per iPhone. Ti viene dato un colore e lo mescoli con vernice "
-    "che si comporta come vernice: qui blu e giallo danno verde, non il grigio a cui si "
-    "mediarebbero due colori dello schermo. Cinque modalità, una creatura che nasce dal tuo primo "
-    "abbinamento, e niente che ti metta fretta.",
-    "iPhone のための色混ぜゲーム。示された色を、絵の具らしく振る舞う絵の具で混ぜてつくります。"
-    "ここでは青と黄が緑になります。画面の色を平均したときの灰色ではありません。五つのモード、"
-    "最初に合わせた色から孵る生きもの、そして急かすものは何もありません。",
-    "iPhone을 위한 색 혼합 게임. 주어진 색을, 물감답게 움직이는 물감으로 섞어 만듭니다. 여기서 "
-    "파랑과 노랑은 초록이 됩니다. 화면 색 두 개를 평균 낸 회색이 아닙니다. 다섯 가지 모드, 처음 "
-    "맞춘 색에서 부화하는 생물, 그리고 재촉하는 것은 하나도 없습니다.",
-    "Een kleurmengspel voor iPhone. Je krijgt een kleur en mengt die uit verf die zich als verf "
-    "gedraagt: blauw en geel worden hier groen, niet het grijs dat je krijgt door twee "
-    "schermkleuren te middelen. Vijf modi, een wezen dat uit je eerste treffer komt, en niets erin "
-    "dat je opjaagt.",
-    "Um jogo de mistura de cores para iPhone. Você recebe uma cor e a mistura com tinta que se "
-    "comporta como tinta: aqui azul e amarelo dão verde, não o cinza que sai da média de duas cores "
-    "de tela. Cinco modos, uma criatura que nasce do seu primeiro acerto, e nada ali dentro que te "
-    "apresse.",
-    "一款 iPhone 上的调色游戏。给你一个颜色，你用表现得像真颜料的颜料把它调出来：在这里蓝加黄"
-    "是绿色，而不是把两个屏幕颜色取平均后的灰。五种模式，一只从你配对的第一个颜色里孵出来的"
-    "小生物，以及没有任何催着你的东西。")
-
-T["Coming to the App Store"] = (
-    "Bald im App Store",
-    "Próximamente en el App Store",
-    "Próximamente en el App Store",
-    "Bientôt sur l'App Store",
-    "Presto sull'App Store",
-    "App Store にまもなく登場",
-    "곧 App Store에 출시",
-    "Binnenkort in de App Store",
-    "Em breve na App Store",
-    "即将上架 App Store")
-
-T["A slow color mixing game for iPhone, where blue and yellow make green the way they do on a palette rather than gray the way they do on a screen."] = (
-    "Ein ruhiges Farbmischspiel fürs iPhone, in dem Blau und Gelb Grün ergeben wie auf einer "
-    "Palette und nicht Grau wie auf einem Bildschirm.",
-    "Un juego de mezcla de colores tranquilo para iPhone, donde el azul y el amarillo dan verde "
-    "como en una paleta y no gris como en una pantalla.",
-    "Un juego de mezcla de colores tranquilo para iPhone, donde el azul y el amarillo dan verde "
-    "como en una paleta y no gris como en una pantalla.",
-    "Un jeu de mélange de couleurs tranquille pour iPhone, où le bleu et le jaune donnent du vert "
-    "comme sur une palette et non du gris comme sur un écran.",
-    "Un gioco di mescolanza dei colori tranquillo per iPhone, dove blu e giallo danno verde come su "
-    "una tavolozza e non grigio come su uno schermo.",
-    "iPhone のための静かな色混ぜゲーム。青と黄は、画面の上の灰色ではなく、パレットの上と同じ緑に"
-    "なります。",
-    "iPhone을 위한 차분한 색 혼합 게임. 파랑과 노랑이 화면에서처럼 회색이 아니라 팔레트에서처럼 "
-    "초록이 됩니다.",
-    "Een rustig kleurmengspel voor iPhone, waarin blauw en geel groen worden zoals op een palet en "
-    "niet grijs zoals op een scherm.",
-    "Um jogo de mistura de cores calmo para iPhone, onde azul e amarelo dão verde como numa paleta "
-    "e não cinza como numa tela.",
-    "一款安静的 iPhone 调色游戏，蓝加黄得到的是调色板上的绿，而不是屏幕上的灰。")
-
-
-# ------------------------------------------------------------------------ Kippu
-#: The card, its ItemList entry, and the three site descriptions that now name it. The full page
-#: is at tools/lang/kippu.py.
-
-T["Kippu: Learn Japanese"] = (
-    "Kippu: Japanisch lernen", "Kippu: Aprende japonés", "Kippu: Aprende japonés",
-    "Kippu : Apprendre le japonais", "Kippu: Impara il giapponese", "Kippu：日本語を学ぶ",
-    "Kippu: 일본어 배우기", "Kippu: Japans leren", "Kippu: Aprenda japonês", "Kippu：学日语")
-
-T["A Japanese learning app for iPhone and iPad. The Japanese you need for a trip to Japan,\n          with what the staff say back, and then the whole JLPT N5: both kana, kanji with stroke\n          order, grammar, listening and a mock test. Short sittings, a voice on every line, and\n          three games."] = (
-    "Eine App zum Japanischlernen für iPhone und iPad. Das Japanisch, das du für die Reise nach "
-    "Japan brauchst, mit dem, was das Personal antwortet, und danach der ganze JLPT N5: beide "
-    "Kana, Kanji mit Strichfolge, Grammatik, Hören und ein Probetest. Kurze Lektionen, eine "
-    "Stimme auf jeder Zeile und drei Spiele.",
-    "Una aplicación para aprender japonés en iPhone y iPad. El japonés que necesitas para un "
-    "viaje a Japón, con lo que responde el personal, y después el JLPT N5 completo: los dos "
-    "silabarios, kanji con orden de trazos, gramática, comprensión auditiva y un examen de "
-    "prueba. Sesiones cortas, una voz en cada línea y tres juegos.",
-    "Una aplicación para aprender japonés en iPhone y iPad. El japonés que necesitas para un "
-    "viaje a Japón, con lo que contesta el personal, y después el JLPT N5 completo: los dos "
-    "silabarios, kanji con orden de trazos, gramática, comprensión auditiva y un examen de "
-    "prueba. Sesiones cortas, una voz en cada línea y tres juegos.",
-    "Une application pour apprendre le japonais sur iPhone et iPad. Le japonais qu'il vous faut "
-    "pour un voyage au Japon, avec ce que le personnel répond, puis tout le JLPT N5 : les deux "
-    "kana, les kanji avec l'ordre des traits, la grammaire, la compréhension orale et un test "
-    "blanc. Des séances courtes, une voix sur chaque ligne et trois jeux.",
-    "Un'app per imparare il giapponese su iPhone e iPad. Il giapponese che ti serve per un "
-    "viaggio in Giappone, con quello che risponde il personale, e poi tutto il JLPT N5: "
-    "entrambi i kana, kanji con l'ordine dei tratti, grammatica, ascolto e un test di prova. "
-    "Sessioni brevi, una voce su ogni riga e tre giochi.",
-    "iPhone と iPad のための日本語学習アプリ。日本を旅するために必要な日本語を、店員さんの返答"
-    "つきで。そのあとは JLPT N5 の全範囲：ひらがなとカタカナ、筆順つきの漢字、文法、聴解、"
-    "模擬試験。短い学習、すべての行に音声、そして3つのゲーム。",
-    "iPhone과 iPad를 위한 일본어 학습 앱. 일본 여행에 필요한 일본어를 직원의 답변과 함께, "
-    "그다음은 JLPT N5 전체: 두 가나, 필순이 있는 한자, 문법, 듣기, 모의고사. 짧은 학습, 모든 "
-    "문장에 음성, 그리고 세 가지 게임.",
-    "Een app om Japans te leren voor iPhone en iPad. Het Japans dat je nodig hebt voor een reis "
-    "naar Japan, met wat het personeel terugzegt, en daarna het hele JLPT N5: beide kana, kanji "
-    "met streepvolgorde, grammatica, luisteren en een proeftoets. Korte sessies, een stem bij "
-    "elke regel en drie spellen.",
-    "Um app para aprender japonês no iPhone e iPad. O japonês que você precisa para uma viagem "
-    "ao Japão, com o que o atendente responde, e depois o JLPT N5 inteiro: os dois kana, kanji "
-    "com ordem dos traços, gramática, compreensão auditiva e um simulado. Sessões curtas, uma "
-    "voz em cada linha e três jogos.",
-    "一款 iPhone 和 iPad 上的日语学习应用。去日本旅行要用的日语，附有店员的回答，然后是完整的 "
-    "JLPT N5：两套假名、带笔顺的汉字、语法、听力和模拟考试。短时学习，每一句都有配音，还有三个游戏。")
-
-T["A Japanese learning app for iPhone and iPad: the Japanese for a trip to Japan, then the JLPT N5."] = (
-    "Eine App zum Japanischlernen für iPhone und iPad: das Japanisch für die Reise nach Japan, danach der JLPT N5.",
-    "Una aplicación para aprender japonés en iPhone y iPad: el japonés para un viaje a Japón, y luego el JLPT N5.",
-    "Una aplicación para aprender japonés en iPhone y iPad: el japonés para un viaje a Japón, y luego el JLPT N5.",
-    "Une application pour apprendre le japonais sur iPhone et iPad : le japonais pour un voyage au Japon, puis le JLPT N5.",
-    "Un'app per imparare il giapponese su iPhone e iPad: il giapponese per un viaggio in Giappone, poi il JLPT N5.",
-    "iPhone と iPad のための日本語学習アプリ：日本を旅するための日本語、そして JLPT N5。",
-    "iPhone과 iPad를 위한 일본어 학습 앱: 일본 여행을 위한 일본어, 그다음 JLPT N5.",
-    "Een app om Japans te leren voor iPhone en iPad: het Japans voor een reis naar Japan, daarna het JLPT N5.",
-    "Um app para aprender japonês no iPhone e iPad: o japonês para uma viagem ao Japão, depois o JLPT N5.",
-    "一款 iPhone 和 iPad 上的日语学习应用：去日本旅行要用的日语，然后是 JLPT N5。")
-
-T["Levi Foster is an independent app developer and artist in Fort Worth, Texas. He makes FRMT film simulation, MODUL8 glitch art, CYANO cyanotype, the color mixing game Dollop, the Japanese learning app Kippu and Harmony Palette for iPhone, and runs Merge With The Machine."] = (
-    "Levi Foster ist unabhängiger App-Entwickler und Künstler in Fort Worth, Texas. Er macht die Filmsimulation FRMT, die Glitch-Art-App MODUL8, die Cyanotypie-App CYANO, das Farbmischspiel Dollop, die Japanisch-Lern-App Kippu und Harmony Palette für iPhone und betreibt Merge With The Machine.",
-    "Levi Foster es desarrollador de apps y artista independiente en Fort Worth, Texas. Hace la simulación de película FRMT, la app de glitch art MODUL8, la de cianotipia CYANO, el juego de mezcla de colores Dollop, la app para aprender japonés Kippu y Harmony Palette para iPhone, y lleva Merge With The Machine.",
-    "Levi Foster es desarrollador de apps y artista independiente en Fort Worth, Texas. Hace la simulación de película FRMT, la app de glitch art MODUL8, la de cianotipia CYANO, el juego de mezcla de colores Dollop, la app para aprender japonés Kippu y Harmony Palette para iPhone, y lleva Merge With The Machine.",
-    "Levi Foster est développeur d'apps et artiste indépendant à Fort Worth, au Texas. Il fait la simulation argentique FRMT, l'app de glitch art MODUL8, l'app de cyanotype CYANO, le jeu de mélange de couleurs Dollop, l'app d'apprentissage du japonais Kippu et Harmony Palette pour iPhone, et mène Merge With The Machine.",
-    "Levi Foster è sviluppatore di app e artista indipendente a Fort Worth, Texas. Fa la simulazione di pellicola FRMT, l'app di glitch art MODUL8, quella di cianotipia CYANO, il gioco di mescolanza dei colori Dollop, l'app per imparare il giapponese Kippu e Harmony Palette per iPhone, e porta avanti Merge With The Machine.",
-    "Levi Foster はテキサス州フォートワースを拠点とする独立系のアプリ開発者であり、アーティストです。フィルムシミュレーション FRMT、グリッチアート MODUL8、サイアノタイプ CYANO、色混ぜゲーム Dollop、日本語学習アプリ Kippu、Harmony Palette を iPhone 向けに制作し、Merge With The Machine を運営しています。",
-    "Levi Foster는 텍사스주 포트워스에서 활동하는 독립 앱 개발자이자 아티스트입니다. 필름 시뮬레이션 FRMT, 글리치 아트 MODUL8, 사이아노타입 CYANO, 색 혼합 게임 Dollop, 일본어 학습 앱 Kippu, Harmony Palette를 iPhone용으로 만들고 Merge With The Machine을 운영합니다.",
-    "Levi Foster is een onafhankelijke app-ontwikkelaar en kunstenaar in Fort Worth, Texas. Hij maakt de filmsimulatie FRMT, de glitch-art-app MODUL8, de cyanotypie-app CYANO, het kleurmengspel Dollop, de Japans-leerapp Kippu en Harmony Palette voor iPhone, en runt Merge With The Machine.",
-    "Levi Foster é desenvolvedor de apps e artista independente em Fort Worth, Texas. Ele faz a simulação de filme FRMT, o app de glitch art MODUL8, o de cianotipia CYANO, o jogo de mistura de cores Dollop, o app para aprender japonês Kippu e o Harmony Palette para iPhone, e toca o Merge With The Machine.",
-    "Levi Foster 是一位独立 App 开发者和艺术家，常驻美国得州沃斯堡。他为 iPhone 制作胶片模拟 FRMT、故障艺术 MODUL8、蓝晒 CYANO、调色游戏 Dollop、日语学习应用 Kippu 和 Harmony Palette，并经营 Merge With The Machine。")
-
-T["Independent app developer and artist in Fort Worth, Texas. FRMT film simulation, MODUL8 glitch art, CYANO cyanotype, Dollop color mixing, Kippu Japanese learning, Harmony Palette, and Merge With The Machine."] = (
-    "Unabhängiger App-Entwickler und Künstler in Fort Worth, Texas. Filmsimulation FRMT, Glitch Art MODUL8, Cyanotypie CYANO, Farbmischspiel Dollop, Japanisch lernen mit Kippu, Harmony Palette und Merge With The Machine.",
-    "Desarrollador de apps y artista independiente en Fort Worth, Texas. Simulación de película FRMT, glitch art MODUL8, cianotipia CYANO, mezcla de colores Dollop, japonés con Kippu, Harmony Palette y Merge With The Machine.",
-    "Desarrollador de apps y artista independiente en Fort Worth, Texas. Simulación de película FRMT, glitch art MODUL8, cianotipia CYANO, mezcla de colores Dollop, japonés con Kippu, Harmony Palette y Merge With The Machine.",
-    "Développeur d'apps et artiste indépendant à Fort Worth, au Texas. Simulation argentique FRMT, glitch art MODUL8, cyanotype CYANO, mélange de couleurs Dollop, japonais avec Kippu, Harmony Palette et Merge With The Machine.",
-    "Sviluppatore di app e artista indipendente a Fort Worth, Texas. Simulazione di pellicola FRMT, glitch art MODUL8, cianotipia CYANO, mescolanza dei colori Dollop, giapponese con Kippu, Harmony Palette e Merge With The Machine.",
-    "テキサス州フォートワースの独立系アプリ開発者、アーティスト。フィルムシミュレーション FRMT、グリッチアート MODUL8、サイアノタイプ CYANO、色混ぜゲーム Dollop、日本語学習 Kippu、Harmony Palette、Merge With The Machine。",
-    "텍사스주 포트워스의 독립 앱 개발자이자 아티스트. 필름 시뮬레이션 FRMT, 글리치 아트 MODUL8, 사이아노타입 CYANO, 색 혼합 Dollop, 일본어 학습 Kippu, Harmony Palette, 그리고 Merge With The Machine.",
-    "Onafhankelijke app-ontwikkelaar en kunstenaar in Fort Worth, Texas. Filmsimulatie FRMT, glitch art MODUL8, cyanotypie CYANO, kleurmengen met Dollop, Japans leren met Kippu, Harmony Palette en Merge With The Machine.",
-    "Desenvolvedor de apps e artista independente em Fort Worth, Texas. Simulação de filme FRMT, glitch art MODUL8, cianotipia CYANO, mistura de cores Dollop, japonês com Kippu, Harmony Palette e Merge With The Machine.",
-    "独立 App 开发者和艺术家，常驻美国得州沃斯堡。胶片模拟 FRMT、故障艺术 MODUL8、蓝晒 CYANO、调色 Dollop、日语学习 Kippu、Harmony Palette，以及 Merge With The Machine。")
-
-T["Levi Foster is an independent iPhone app developer and artist based in Fort Worth, Texas. He builds photography and design tools including FRMT, MODUL8, CYANO and Harmony Palette, makes the color mixing game Dollop and the Japanese learning app Kippu, and runs the art project Merge With The Machine."] = (
-    "Levi Foster ist unabhängiger iPhone-App-Entwickler und Künstler mit Sitz in Fort Worth, Texas. Er baut Foto- und Gestaltungswerkzeuge, darunter FRMT, MODUL8, CYANO und Harmony Palette, macht das Farbmischspiel Dollop und die Japanisch-Lern-App Kippu und betreibt das Kunstprojekt Merge With The Machine.",
-    "Levi Foster es desarrollador independiente de apps para iPhone y artista, con base en Fort Worth, Texas. Construye herramientas de fotografía y diseño como FRMT, MODUL8, CYANO y Harmony Palette, hace el juego de mezcla de colores Dollop y la app para aprender japonés Kippu, y lleva el proyecto artístico Merge With The Machine.",
-    "Levi Foster es desarrollador independiente de apps para iPhone y artista, con base en Fort Worth, Texas. Construye herramientas de fotografía y diseño como FRMT, MODUL8, CYANO y Harmony Palette, hace el juego de mezcla de colores Dollop y la app para aprender japonés Kippu, y lleva el proyecto artístico Merge With The Machine.",
-    "Levi Foster est développeur indépendant d'apps iPhone et artiste, établi à Fort Worth, au Texas. Il construit des outils de photographie et de design dont FRMT, MODUL8, CYANO et Harmony Palette, fait le jeu de mélange de couleurs Dollop et l'app d'apprentissage du japonais Kippu, et mène le projet artistique Merge With The Machine.",
-    "Levi Foster è sviluppatore indipendente di app per iPhone e artista, con base a Fort Worth, Texas. Costruisce strumenti di fotografia e design fra cui FRMT, MODUL8, CYANO e Harmony Palette, fa il gioco di mescolanza dei colori Dollop e l'app per imparare il giapponese Kippu, e porta avanti il progetto artistico Merge With The Machine.",
-    "Levi Foster はテキサス州フォートワースを拠点とする独立系の iPhone アプリ開発者であり、アーティストです。FRMT、MODUL8、CYANO、Harmony Palette をはじめとする写真とデザインのツールをつくり、色混ぜゲーム Dollop と日本語学習アプリ Kippu を制作し、アートプロジェクト Merge With The Machine を運営しています。",
-    "Levi Foster는 텍사스주 포트워스를 기반으로 활동하는 독립 iPhone 앱 개발자이자 아티스트입니다. FRMT, MODUL8, CYANO, Harmony Palette를 비롯한 사진과 디자인 도구를 만들고, 색 혼합 게임 Dollop과 일본어 학습 앱 Kippu를 만들며, 아트 프로젝트 Merge With The Machine을 운영합니다.",
-    "Levi Foster is een onafhankelijke iPhone-app-ontwikkelaar en kunstenaar, gevestigd in Fort Worth, Texas. Hij bouwt foto- en ontwerptools waaronder FRMT, MODUL8, CYANO en Harmony Palette, maakt het kleurmengspel Dollop en de Japans-leerapp Kippu, en runt het kunstproject Merge With The Machine.",
-    "Levi Foster é desenvolvedor independente de apps para iPhone e artista, baseado em Fort Worth, Texas. Ele constrói ferramentas de fotografia e design como FRMT, MODUL8, CYANO e Harmony Palette, faz o jogo de mistura de cores Dollop e o app para aprender japonês Kippu, e toca o projeto artístico Merge With The Machine.",
-    "Levi Foster 是一位独立 iPhone App 开发者和艺术家，常驻美国得州沃斯堡。他构建 FRMT、MODUL8、CYANO 和 Harmony Palette 等摄影与设计工具，制作调色游戏 Dollop 和日语学习应用 Kippu，并经营艺术项目 Merge With The Machine。")
-
-
-# ------------------------------------------------------------------------ GRNGE
-#: The card, its ItemList entry, and the three site descriptions that now name it. The full page
-#: is at tools/lang/grnge.py. The descriptions are the Kippu versions with GRNGE added after CYANO.
-
-KEEP.add("GRNGE")
-
-T['Levi Foster is an independent app developer and artist in Fort Worth, Texas. He makes FRMT film simulation, MODUL8 glitch art, CYANO cyanotype, GRNGE photo effects, the color mixing game Dollop, the Japanese learning app Kippu and Harmony Palette for iPhone, and runs Merge With The Machine.'] = (
-    'Levi Foster ist unabhängiger App-Entwickler und Künstler in Fort Worth, Texas. Er macht die Filmsimulation FRMT, die Glitch-Art-App MODUL8, die Cyanotypie-App CYANO, die Fotoeffekt-App GRNGE, das Farbmischspiel Dollop, die Japanisch-Lern-App Kippu und Harmony Palette für iPhone und betreibt Merge With The Machine.',
-    'Levi Foster es desarrollador de apps y artista independiente en Fort Worth, Texas. Hace la simulación de película FRMT, la app de glitch art MODUL8, la de cianotipia CYANO, la de efectos de foto GRNGE, el juego de mezcla de colores Dollop, la app para aprender japonés Kippu y Harmony Palette para iPhone, y lleva Merge With The Machine.',
-    'Levi Foster es desarrollador de apps y artista independiente en Fort Worth, Texas. Hace la simulación de película FRMT, la app de glitch art MODUL8, la de cianotipia CYANO, la de efectos de foto GRNGE, el juego de mezcla de colores Dollop, la app para aprender japonés Kippu y Harmony Palette para iPhone, y lleva Merge With The Machine.',
-    "Levi Foster est développeur d'apps et artiste indépendant à Fort Worth, au Texas. Il fait la simulation argentique FRMT, l'app de glitch art MODUL8, l'app de cyanotype CYANO, l'app d'effets photo GRNGE, le jeu de mélange de couleurs Dollop, l'app d'apprentissage du japonais Kippu et Harmony Palette pour iPhone, et mène Merge With The Machine.",
-    "Levi Foster è sviluppatore di app e artista indipendente a Fort Worth, Texas. Fa la simulazione di pellicola FRMT, l'app di glitch art MODUL8, quella di cianotipia CYANO, quella di effetti foto GRNGE, il gioco di mescolanza dei colori Dollop, l'app per imparare il giapponese Kippu e Harmony Palette per iPhone, e porta avanti Merge With The Machine.",
-    'Levi Foster はテキサス州フォートワースを拠点とする独立系のアプリ開発者であり、アーティストです。フィルムシミュレーション FRMT、グリッチアート MODUL8、サイアノタイプ CYANO、写真エフェクト GRNGE、色混ぜゲーム Dollop、日本語学習アプリ Kippu、Harmony Palette を iPhone 向けに制作し、Merge With The Machine を運営しています。',
-    'Levi Foster는 텍사스주 포트워스에서 활동하는 독립 앱 개발자이자 아티스트입니다. 필름 시뮬레이션 FRMT, 글리치 아트 MODUL8, 사이아노타입 CYANO, 사진 효과 GRNGE, 색 혼합 게임 Dollop, 일본어 학습 앱 Kippu, Harmony Palette를 iPhone용으로 만들고 Merge With The Machine을 운영합니다.',
-    'Levi Foster is een onafhankelijke app-ontwikkelaar en kunstenaar in Fort Worth, Texas. Hij maakt de filmsimulatie FRMT, de glitch-art-app MODUL8, de cyanotypie-app CYANO, de foto-effectenapp GRNGE, het kleurmengspel Dollop, de Japans-leerapp Kippu en Harmony Palette voor iPhone, en runt Merge With The Machine.',
-    'Levi Foster é desenvolvedor de apps e artista independente em Fort Worth, Texas. Ele faz a simulação de filme FRMT, o app de glitch art MODUL8, o de cianotipia CYANO, o de efeitos de foto GRNGE, o jogo de mistura de cores Dollop, o app para aprender japonês Kippu e o Harmony Palette para iPhone, e toca o Merge With The Machine.',
-    'Levi Foster 是一位独立 App 开发者和艺术家，常驻美国得州沃斯堡。他为 iPhone 制作胶片模拟 FRMT、故障艺术 MODUL8、蓝晒 CYANO、照片效果 GRNGE、调色游戏 Dollop、日语学习应用 Kippu 和 Harmony Palette，并经营 Merge With The Machine。')
-
-T['Independent app developer and artist in Fort Worth, Texas. FRMT film simulation, MODUL8 glitch art, CYANO cyanotype, GRNGE photo effects, Dollop color mixing, Kippu Japanese learning, Harmony Palette, and Merge With The Machine.'] = (
-    'Unabhängiger App-Entwickler und Künstler in Fort Worth, Texas. Filmsimulation FRMT, Glitch Art MODUL8, Cyanotypie CYANO, Fotoeffekte GRNGE, Farbmischspiel Dollop, Japanisch lernen mit Kippu, Harmony Palette und Merge With The Machine.',
-    'Desarrollador de apps y artista independiente en Fort Worth, Texas. Simulación de película FRMT, glitch art MODUL8, cianotipia CYANO, efectos de foto GRNGE, mezcla de colores Dollop, japonés con Kippu, Harmony Palette y Merge With The Machine.',
-    'Desarrollador de apps y artista independiente en Fort Worth, Texas. Simulación de película FRMT, glitch art MODUL8, cianotipia CYANO, efectos de foto GRNGE, mezcla de colores Dollop, japonés con Kippu, Harmony Palette y Merge With The Machine.',
-    "Développeur d'apps et artiste indépendant à Fort Worth, au Texas. Simulation argentique FRMT, glitch art MODUL8, cyanotype CYANO, effets photo GRNGE, mélange de couleurs Dollop, japonais avec Kippu, Harmony Palette et Merge With The Machine.",
-    'Sviluppatore di app e artista indipendente a Fort Worth, Texas. Simulazione di pellicola FRMT, glitch art MODUL8, cianotipia CYANO, effetti foto GRNGE, mescolanza dei colori Dollop, giapponese con Kippu, Harmony Palette e Merge With The Machine.',
-    'テキサス州フォートワースの独立系アプリ開発者、アーティスト。フィルムシミュレーション FRMT、グリッチアート MODUL8、サイアノタイプ CYANO、写真エフェクト GRNGE、色混ぜゲーム Dollop、日本語学習 Kippu、Harmony Palette、Merge With The Machine。',
-    '텍사스주 포트워스의 독립 앱 개발자이자 아티스트. 필름 시뮬레이션 FRMT, 글리치 아트 MODUL8, 사이아노타입 CYANO, 사진 효과 GRNGE, 색 혼합 Dollop, 일본어 학습 Kippu, Harmony Palette, 그리고 Merge With The Machine.',
-    'Onafhankelijke app-ontwikkelaar en kunstenaar in Fort Worth, Texas. Filmsimulatie FRMT, glitch art MODUL8, cyanotypie CYANO, foto-effecten GRNGE, kleurmengen met Dollop, Japans leren met Kippu, Harmony Palette en Merge With The Machine.',
-    'Desenvolvedor de apps e artista independente em Fort Worth, Texas. Simulação de filme FRMT, glitch art MODUL8, cianotipia CYANO, efeitos de foto GRNGE, mistura de cores Dollop, japonês com Kippu, Harmony Palette e Merge With The Machine.',
-    '独立 App 开发者和艺术家，常驻美国得州沃斯堡。胶片模拟 FRMT、故障艺术 MODUL8、蓝晒 CYANO、照片效果 GRNGE、调色 Dollop、日语学习 Kippu、Harmony Palette，以及 Merge With The Machine。')
-
-T['Levi Foster is an independent iPhone app developer and artist based in Fort Worth, Texas. He builds photography and design tools including FRMT, MODUL8, CYANO, GRNGE and Harmony Palette, makes the color mixing game Dollop and the Japanese learning app Kippu, and runs the art project Merge With The Machine.'] = (
-    'Levi Foster ist unabhängiger iPhone-App-Entwickler und Künstler mit Sitz in Fort Worth, Texas. Er baut Foto- und Gestaltungswerkzeuge, darunter FRMT, MODUL8, CYANO, GRNGE und Harmony Palette, macht das Farbmischspiel Dollop und die Japanisch-Lern-App Kippu und betreibt das Kunstprojekt Merge With The Machine.',
-    'Levi Foster es desarrollador independiente de apps para iPhone y artista, con base en Fort Worth, Texas. Construye herramientas de fotografía y diseño como FRMT, MODUL8, CYANO, GRNGE y Harmony Palette, hace el juego de mezcla de colores Dollop y la app para aprender japonés Kippu, y lleva el proyecto artístico Merge With The Machine.',
-    'Levi Foster es desarrollador independiente de apps para iPhone y artista, con base en Fort Worth, Texas. Construye herramientas de fotografía y diseño como FRMT, MODUL8, CYANO, GRNGE y Harmony Palette, hace el juego de mezcla de colores Dollop y la app para aprender japonés Kippu, y lleva el proyecto artístico Merge With The Machine.',
-    "Levi Foster est développeur indépendant d'apps iPhone et artiste, établi à Fort Worth, au Texas. Il construit des outils de photographie et de design dont FRMT, MODUL8, CYANO, GRNGE et Harmony Palette, fait le jeu de mélange de couleurs Dollop et l'app d'apprentissage du japonais Kippu, et mène le projet artistique Merge With The Machine.",
-    "Levi Foster è sviluppatore indipendente di app per iPhone e artista, con base a Fort Worth, Texas. Costruisce strumenti di fotografia e design fra cui FRMT, MODUL8, CYANO, GRNGE e Harmony Palette, fa il gioco di mescolanza dei colori Dollop e l'app per imparare il giapponese Kippu, e porta avanti il progetto artistico Merge With The Machine.",
-    'Levi Foster はテキサス州フォートワースを拠点とする独立系の iPhone アプリ開発者であり、アーティストです。FRMT、MODUL8、CYANO、GRNGE、Harmony Palette をはじめとする写真とデザインのツールをつくり、色混ぜゲーム Dollop と日本語学習アプリ Kippu を制作し、アートプロジェクト Merge With The Machine を運営しています。',
-    'Levi Foster는 텍사스주 포트워스를 기반으로 활동하는 독립 iPhone 앱 개발자이자 아티스트입니다. FRMT, MODUL8, CYANO, GRNGE, Harmony Palette를 비롯한 사진과 디자인 도구를 만들고, 색 혼합 게임 Dollop과 일본어 학습 앱 Kippu를 만들며, 아트 프로젝트 Merge With The Machine을 운영합니다.',
-    'Levi Foster is een onafhankelijke iPhone-app-ontwikkelaar en kunstenaar, gevestigd in Fort Worth, Texas. Hij bouwt foto- en ontwerptools waaronder FRMT, MODUL8, CYANO, GRNGE en Harmony Palette, maakt het kleurmengspel Dollop en de Japans-leerapp Kippu, en runt het kunstproject Merge With The Machine.',
-    'Levi Foster é desenvolvedor independente de apps para iPhone e artista, baseado em Fort Worth, Texas. Ele constrói ferramentas de fotografia e design como FRMT, MODUL8, CYANO, GRNGE e Harmony Palette, faz o jogo de mistura de cores Dollop e o app para aprender japonês Kippu, e toca o projeto artístico Merge With The Machine.',
-    'Levi Foster 是一位独立 iPhone App 开发者和艺术家，常驻美国得州沃斯堡。他构建 FRMT、MODUL8、CYANO、GRNGE 和 Harmony Palette 等摄影与设计工具，制作调色游戏 Dollop 和日语学习应用 Kippu，并经营艺术项目 Merge With The Machine。')
-
-T["GRNGE: Grunge Photo Effects"] = (
-    "GRNGE: Grunge-Fotoeffekte", "GRNGE: Efectos de foto grunge", "GRNGE: Efectos de foto grunge",
-    "GRNGE : Effets photo grunge", "GRNGE: Effetti foto grunge", "GRNGE：グランジな写真エフェクト",
-    "GRNGE: 그런지 사진 효과", "GRNGE: Grunge-foto-effecten", "GRNGE: Efeitos de foto grunge",
-    "GRNGE：Grunge 风格照片效果")
-
-T["A photo effects app for iPhone. Photos become black-and-white photocopy, stipple, halftone and dither prints, then get layered in color inks, drawn on, cut out, covered in stickers, and saved at the size you post."] = (
-    "Eine Fotoeffekt-App fürs iPhone. Aus Fotos werden Schwarz-Weiß-Drucke in Fotokopie, Punktiert, "
-    "Raster und Dither, die du in farbigen Tinten übereinanderlegst, bemalst, ausschneidest, mit "
-    "Stickern beklebst und in der Größe sicherst, in der du postest.",
-    "Una app de efectos de foto para iPhone. Las fotos se vuelven impresiones en blanco y negro de "
-    "fotocopia, puntillismo, trama y dither, que luego se superponen en tintas de color, se dibujan, "
-    "se recortan, se llenan de pegatinas y se guardan al tamaño en que publicas.",
-    "Una app de efectos de foto para iPhone. Las fotos se vuelven impresiones en blanco y negro de "
-    "fotocopia, puntillismo, trama y dither, que luego se superponen en tintas de color, se dibujan, "
-    "se recortan, se llenan de calcomanías y se guardan al tamaño en que publicas.",
-    "Une app d'effets photo pour iPhone. Les photos deviennent des tirages noir et blanc en "
-    "photocopie, pointillé, trame et tramage, qu'on superpose en encres de couleur, qu'on dessine, "
-    "qu'on découpe, qu'on couvre d'autocollants et qu'on enregistre au format de ses publications.",
-    "Un'app di effetti foto per iPhone. Le foto diventano stampe in bianco e nero a fotocopia, "
-    "puntinato, retino e dither, poi si sovrappongono in inchiostri colorati, si disegnano, si "
-    "ritagliano, si coprono di adesivi e si salvano nel formato in cui pubblichi.",
-    "iPhone の写真エフェクトアプリ。写真を白黒のコピー、点描、網点、ディザのプリントにして、"
-    "カラーインクで重ね、描き込み、切り抜き、シールを貼って、投稿するサイズで保存します。",
-    "iPhone용 사진 효과 앱. 사진을 흑백 복사, 점묘, 망점, 디더 인쇄물로 바꾸고, 컬러 잉크로 "
-    "겹치고, 그리고, 오려내고, 스티커를 붙여서 올릴 크기로 저장합니다.",
-    "Een foto-effectenapp voor iPhone. Foto's worden zwart-witafdrukken in fotokopie, stippel, "
-    "raster en dither, die je in kleurinkten over elkaar legt, bekrabbelt, uitknipt, vol stickers "
-    "plakt en bewaart op het formaat waarop je post.",
-    "Um app de efeitos de foto para iPhone. As fotos viram impressões em preto e branco de "
-    "fotocópia, pontilhado, retícula e dither, que depois são sobrepostas em tintas coloridas, "
-    "rabiscadas, recortadas, cobertas de adesivos e salvas no tamanho em que você posta.",
-    "一款 iPhone 照片效果应用。照片变成复印、点描、网点和抖动的黑白印刷品，再用彩色墨叠印、"
-    "涂鸦、抠图、贴满贴纸，按你发帖的尺寸保存。")
-
-T["A photo effects app for iPhone: black-and-white photocopy, stipple, halftone and dither prints, layered in color, drawn on and cut out."] = (
-    "Eine Fotoeffekt-App fürs iPhone: Schwarz-Weiß-Drucke in Fotokopie, Punktiert, Raster und "
-    "Dither, in Farbe übereinandergelegt, bemalt und ausgeschnitten.",
-    "Una app de efectos de foto para iPhone: impresiones en blanco y negro de fotocopia, "
-    "puntillismo, trama y dither, superpuestas en color, dibujadas y recortadas.",
-    "Una app de efectos de foto para iPhone: impresiones en blanco y negro de fotocopia, "
-    "puntillismo, trama y dither, superpuestas en color, dibujadas y recortadas.",
-    "Une app d'effets photo pour iPhone : des tirages noir et blanc en photocopie, pointillé, trame "
-    "et tramage, superposés en couleur, dessinés et découpés.",
-    "Un'app di effetti foto per iPhone: stampe in bianco e nero a fotocopia, puntinato, retino e "
-    "dither, sovrapposte a colori, disegnate e ritagliate.",
-    "iPhone の写真エフェクトアプリ：コピー、点描、網点、ディザの白黒プリントを、色で重ね、描き込み、切り抜く。",
-    "iPhone용 사진 효과 앱: 복사, 점묘, 망점, 디더 흑백 인쇄물을 색으로 겹치고, 그리고, 오려낸다.",
-    "Een foto-effectenapp voor iPhone: zwart-witafdrukken in fotokopie, stippel, raster en dither, "
-    "in kleur over elkaar gelegd, bekrabbeld en uitgeknipt.",
-    "Um app de efeitos de foto para iPhone: impressões em preto e branco de fotocópia, pontilhado, "
-    "retícula e dither, sobrepostas em cores, rabiscadas e recortadas.",
-    "一款 iPhone 照片效果应用：复印、点描、网点和抖动的黑白印刷品，可以叠色、涂鸦和抠图。")
+# Column heads and the key tile, visible since the key and header row stopped being aria-hidden.
+T.update({
+    "No. · shell": ("Nr. · Schale", "N.º · capa", "N.º · capa", "N° · couche", "N. · guscio", "番号 · 殻", "번호 · 껍질",
+                    "Nr. · schil", "N.º · camada", "序号 · 层"),
+    "Name": ("Name", "Nombre", "Nombre", "Nom", "Nome", "名前", "이름", "Naam", "Nome", "名称"),
+    "No.": ("Nr.", "N.º", "N.º", "N°", "N.", "番号", "번호", "Nr.", "N.º", "序号"),
+    "Element": ("Element", "Elemento", "Elemento", "Élément", "Elemento", "元素", "원소", "Element", "Elemento", "元素"),
+    "Description": ("Beschreibung", "Descripción", "Descripción", "Description", "Descrizione", "説明", "설명",
+                    "Beschrijving", "Descrição", "说明"),
+    "Links": ("Links", "Enlaces", "Enlaces", "Liens", "Link", "リンク", "링크", "Links", "Links", "链接"),
+})

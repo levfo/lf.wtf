@@ -1013,18 +1013,18 @@
     "pt-BR": "MODUL8: Efeitos de glitch art",
     "zh-Hans": "MODUL8: 故障艺术特效"
   },
-  "Nineteen stackable effects, each modelled on a specific way real hardware used to fail.\n        Free.": {
+  "Twenty-nine stackable effects for photos and video, each modelled on a specific way real\n        hardware used to fail. Free, with optional Premium.": {
     "kind": "text:dd",
-    "de": "Neunzehn stapelbare Effekte, jeder einer bestimmten Art nachgebildet, auf die echte Hardware früher versagte. Kostenlos.",
-    "es": "Diecinueve efectos apilables, cada uno modelado sobre una forma concreta en que fallaba el hardware real. Gratis.",
-    "es-MX": "Diecinueve efectos apilables, cada uno modelado sobre una forma concreta en que fallaba el hardware real. Gratis.",
-    "fr": "Dix-neuf effets empilables, chacun modélisé sur une façon précise dont le matériel tombait en panne. Gratuit.",
-    "it": "Diciannove effetti impilabili, ognuno modellato su un modo preciso in cui l'hardware vero si guastava. Gratis.",
-    "ja": "積み重ねられる十九のエフェクト。いずれも実在のハードウェアが壊れたときの特定の壊れ方を再現しています。無料。",
-    "ko": "쌓아 올릴 수 있는 열아홉 가지 효과. 각각 실제 하드웨어가 고장 나던 특정한 방식을 모델링했습니다. 무료.",
-    "nl": "Negentien stapelbare effecten, elk gemodelleerd op een specifieke manier waarop echte hardware kapotging. Gratis.",
-    "pt-BR": "Dezenove efeitos empilháveis, cada um modelado sobre um jeito específico pelo qual o hardware de verdade falhava. Grátis.",
-    "zh-Hans": "十九种可叠加的效果，每一种都对应真实硬件当年出错的某种具体方式。免费。"
+    "de": "Neunundzwanzig stapelbare Effekte für Fotos und Video, jeder einer bestimmten Art nachgebildet, auf die echte Hardware früher versagte. Kostenlos, Premium optional.",
+    "es": "Veintinueve efectos apilables para fotos y vídeo, cada uno modelado sobre una forma concreta en que fallaba el hardware real. Gratis, con Premium opcional.",
+    "es-MX": "Veintinueve efectos apilables para fotos y video, cada uno modelado sobre una forma concreta en que fallaba el hardware real. Gratis, con Premium opcional.",
+    "fr": "Vingt-neuf effets empilables pour photos et vidéos, chacun modélisé sur une façon précise dont le matériel tombait en panne. Gratuit, avec Premium en option.",
+    "it": "Ventinove effetti impilabili per foto e video, ognuno modellato su un modo preciso in cui l'hardware vero si guastava. Gratis, con Premium opzionale.",
+    "ja": "写真と動画に使える、積み重ねられる二十九のエフェクト。いずれも実在のハードウェアが壊れたときの特定の壊れ方を再現しています。無料、Premium はオプション。",
+    "ko": "사진과 동영상에 쌓아 올릴 수 있는 스물아홉 가지 효과. 각각 실제 하드웨어가 고장 나던 특정한 방식을 모델링했습니다. 무료, Premium은 선택.",
+    "nl": "Negenentwintig stapelbare effecten voor foto's en video, elk gemodelleerd op een specifieke manier waarop echte hardware kapotging. Gratis, met optioneel Premium.",
+    "pt-BR": "Vinte e nove efeitos empilháveis para fotos e vídeos, cada um modelado sobre um jeito específico pelo qual o hardware de verdade falhava. Grátis, com Premium opcional.",
+    "zh-Hans": "二十九种可叠加的效果，适用于照片和视频，每一种都对应真实硬件当年出错的某种具体方式。免费，Premium 可选。"
   },
   "Levi Foster": {
     "kind": "text:a",

@@ -216,20 +216,17 @@ T = {
         "As paletas e as pastas seguem você entre os seus próprios dispositivos, pelo seu banco de "
         "dados privado.",
         "调色板和文件夹会通过你自己的私有数据库，在你的设备之间跟着你走。"),
-    "iPhone and iPad": (
-        "iPhone und iPad", "iPhone y iPad", "iPhone y iPad", "iPhone et iPad", "iPhone e iPad",
-        "iPhone と iPad", "iPhone과 iPad", "iPhone en iPad", "iPhone e iPad", "iPhone 和 iPad"),
-    "iOS 17.2 or later. One purchase covers both.": (
-        "iOS 17.2 oder neuer. Ein Kauf deckt beides ab.",
-        "iOS 17.2 o posterior. Una compra cubre los dos.",
-        "iOS 17.2 o posterior. Una compra cubre los dos.",
-        "iOS 17.2 ou version ultérieure. Un seul achat couvre les deux.",
-        "iOS 17.2 o successivo. Un solo acquisto copre entrambi.",
-        "iOS 17.2 以降。ひとつの購入で両方に使えます。",
-        "iOS 17.2 이상. 한 번의 구매로 둘 다 씁니다.",
-        "iOS 17.2 of nieuwer. Eén aankoop dekt beide.",
-        "iOS 17.2 ou posterior. Uma compra cobre os dois.",
-        "iOS 17.2 或更新版本。买一次，两边都能用。"),
+    "iOS 17.2 or later.": (
+        "iOS 17.2 oder neuer.",
+        "iOS 17.2 o posterior.",
+        "iOS 17.2 o posterior.",
+        "iOS 17.2 ou version ultérieure.",
+        "iOS 17.2 o successivo.",
+        "iOS 17.2 以降。",
+        "iOS 17.2 이상.",
+        "iOS 17.2 of nieuwer.",
+        "iOS 17.2 ou posterior.",
+        "iOS 17.2 或更新版本。"),
     "questions": (
         "Fragen", "Preguntas", "Preguntas", "Questions", "Domande", "よくある質問", "질문",
         "Vragen", "Perguntas", "常见问题"),
@@ -580,17 +577,27 @@ T = {
         "Cyanotypie-afdrukken, uitgerekend vanuit de chemie van het proces uit 1842.",
         "Cópias em cianotipia, calculadas a partir da química do processo de 1842.",
         "蓝晒印相，从 1842 年那套工艺的化学一步步算出来。"),
-    "Nineteen stackable glitch effects, layered and reordered. Free.": (
-        "Neunzehn stapelbare Glitch-Effekte, geschichtet und umsortiert. Kostenlos.",
-        "Diecinueve efectos glitch apilables, en capas y reordenables. Gratis.",
-        "Diecinueve efectos glitch apilables, en capas y reordenables. Gratis.",
-        "Dix-neuf effets glitch empilables, en couches et réordonnables. Gratuit.",
-        "Diciannove effetti glitch impilabili, a livelli e riordinabili. Gratis.",
-        "重ねられるグリッチ効果が 19 種類。層にして、並べ替えられます。無料。",
-        "쌓을 수 있는 글리치 효과 열아홉 가지. 층으로 겹치고 순서를 바꿉니다. 무료.",
-        "Negentien stapelbare glitch-effecten, gelaagd en herschikbaar. Gratis.",
-        "Dezenove efeitos glitch empilháveis, em camadas e reordenáveis. Grátis.",
-        "十九种可叠加的故障效果，分层并可重新排序。免费。"),
+    "Twenty-nine stackable glitch effects for photos and video, layered and reordered. Free, "
+    "with optional Premium.": (
+        "Neunundzwanzig stapelbare Glitch-Effekte für Fotos und Video, geschichtet und "
+        "umsortiert. Kostenlos, Premium optional.",
+        "Veintinueve efectos glitch apilables para fotos y vídeo, en capas y reordenables. Gratis, "
+        "con Premium opcional.",
+        "Veintinueve efectos glitch apilables para fotos y video, en capas y reordenables. Gratis, "
+        "con Premium opcional.",
+        "Vingt-neuf effets glitch empilables pour photos et vidéos, en couches et réordonnables. "
+        "Gratuit, avec Premium en option.",
+        "Ventinove effetti glitch impilabili per foto e video, a livelli e riordinabili. Gratis, "
+        "con Premium opzionale.",
+        "写真にも動画にも重ねられるグリッチ効果が 29 種類。層にして、並べ替えられます。"
+        "無料、Premium はオプション。",
+        "사진과 동영상에 쌓을 수 있는 글리치 효과 스물아홉 가지. 층으로 겹치고 순서를 바꿉니다. "
+        "무료, Premium은 선택.",
+        "Negenentwintig stapelbare glitch-effecten voor foto's en video, gelaagd en herschikbaar. "
+        "Gratis, met optioneel Premium.",
+        "Vinte e nove efeitos glitch empilháveis para fotos e vídeos, em camadas e reordenáveis. "
+        "Grátis, com Premium opcional.",
+        "二十九种可叠加的故障效果，适用于照片和视频，分层并可重新排序。免费，Premium 可选。"),
     "Privacy": (
         "Datenschutz", "Privacidad", "Privacidad", "Confidentialité", "Privacy",
         "プライバシー", "개인정보", "Privacy", "Privacidade", "隐私"),
@@ -617,48 +624,48 @@ T = {
         "Harmony Palette - Kleurharmonie en ontwerpgereedschap",
         "Harmony Palette - Harmonia de cores e ferramenta de design",
         "Harmony Palette - 配色与设计工具"),
-    "A color harmony and palette app for iPhone and iPad. An interactive color wheel in both the RGB and the traditional RYB model, eight harmony types, 160 curated palettes, a WCAG contrast checker, color blindness simulation, on-device color extraction from photos, and export to PDF, SVG, SwiftUI, UIKit, CSS and Tailwind.": (
-        "Eine App für Farbharmonie und Paletten für iPhone und iPad. Ein interaktiver Farbkreis im "
+    "A color harmony and palette app for iPhone. An interactive color wheel in both the RGB and the traditional RYB model, eight harmony types, 160 curated palettes, a WCAG contrast checker, color blindness simulation, on-device color extraction from photos, and export to PDF, SVG, SwiftUI, UIKit, CSS and Tailwind.": (
+        "Eine App für Farbharmonie und Paletten fürs iPhone. Ein interaktiver Farbkreis im "
         "RGB- und im traditionellen RYB-Modell, acht Harmonietypen, 160 kuratierte Paletten, ein "
         "WCAG-Kontrastprüfer, Farbenblindheitssimulation, Farbextraktion aus Fotos auf dem Gerät "
         "und Export nach PDF, SVG, SwiftUI, UIKit, CSS und Tailwind.",
-        "Una app de armonía de color y paletas para iPhone y iPad. Una rueda de color interactiva "
+        "Una app de armonía de color y paletas para iPhone. Una rueda de color interactiva "
         "en el modelo RGB y en el RYB tradicional, ocho tipos de armonía, 160 paletas "
         "seleccionadas, un comprobador de contraste WCAG, simulación de daltonismo, extracción de "
         "color de fotos en el dispositivo y exportación a PDF, SVG, SwiftUI, UIKit, CSS y "
         "Tailwind.",
-        "Una app de armonía de color y paletas para iPhone y iPad. Una rueda de color interactiva "
+        "Una app de armonía de color y paletas para iPhone. Una rueda de color interactiva "
         "en el modelo RGB y en el RYB tradicional, ocho tipos de armonía, 160 paletas "
         "seleccionadas, un verificador de contraste WCAG, simulación de daltonismo, extracción de "
         "color de fotos en el dispositivo y exportación a PDF, SVG, SwiftUI, UIKit, CSS y "
         "Tailwind.",
-        "Une application d'harmonie des couleurs et de palettes pour iPhone et iPad. Une roue "
+        "Une application d'harmonie des couleurs et de palettes pour iPhone. Une roue "
         "chromatique interactive dans le modèle RVB et dans le modèle RJB traditionnel, huit types "
         "d'harmonie, 160 palettes sélectionnées, un vérificateur de contraste WCAG, une simulation "
         "du daltonisme, l'extraction de couleurs depuis des photos sur l'appareil, et l'export "
         "vers PDF, SVG, SwiftUI, UIKit, CSS et Tailwind.",
-        "Un'app di armonia cromatica e palette per iPhone e iPad. Una ruota dei colori interattiva "
+        "Un'app di armonia cromatica e palette per iPhone. Una ruota dei colori interattiva "
         "nel modello RGB e in quello RYB tradizionale, otto tipi di armonia, 160 palette "
         "selezionate, un controllo del contrasto WCAG, la simulazione del daltonismo, l'estrazione "
         "dei colori dalle foto sul dispositivo e l'esportazione in PDF, SVG, SwiftUI, UIKit, CSS e "
         "Tailwind.",
-        "iPhone と iPad のための配色とパレットのアプリ。RGB と伝統的な RYB の両方のモデルによる"
+        "iPhone のための配色とパレットのアプリ。RGB と伝統的な RYB の両方のモデルによる"
         "対話的なカラーホイール、8 種類の調和、厳選された 160 のパレット、WCAG "
         "コントラストチェッカー、色覚シミュレーション、端末内での写真からの色の抽出、そして "
         "PDF、SVG、SwiftUI、UIKit、CSS、Tailwind への書き出し。",
-        "iPhone과 iPad를 위한 색 조화와 팔레트 앱. RGB와 전통적인 RYB 두 모델을 오가는 색상환, "
+        "iPhone을 위한 색 조화와 팔레트 앱. RGB와 전통적인 RYB 두 모델을 오가는 색상환, "
         "8가지 조화, 엄선된 160개의 팔레트, WCAG 명도 대비 검사기, 색각 이상 시뮬레이션, 기기 "
         "안에서 이뤄지는 사진 색 추출, 그리고 PDF, SVG, SwiftUI, UIKit, CSS, Tailwind로의 "
         "내보내기.",
-        "Een app voor kleurharmonie en paletten voor iPhone en iPad. Een interactief kleurenwiel "
+        "Een app voor kleurharmonie en paletten voor iPhone. Een interactief kleurenwiel "
         "in zowel het RGB- als het traditionele RYB-model, acht harmonietypes, 160 samengestelde "
         "paletten, een WCAG-contrastchecker, kleurenblindheidssimulatie, kleurextractie uit foto's "
         "op het apparaat, en export naar PDF, SVG, SwiftUI, UIKit, CSS en Tailwind.",
-        "Um app de harmonia de cores e paletas para iPhone e iPad. Uma roda de cores interativa no "
+        "Um app de harmonia de cores e paletas para iPhone. Uma roda de cores interativa no "
         "modelo RGB e no RYB tradicional, oito tipos de harmonia, 160 paletas selecionadas, um "
         "verificador de contraste WCAG, simulação de daltonismo, extração de cores de fotos no "
         "dispositivo, e exportação para PDF, SVG, SwiftUI, UIKit, CSS e Tailwind.",
-        "一款为 iPhone 和 iPad 打造的配色与调色板应用。"
+        "一款为 iPhone 打造的配色与调色板应用。"
         "可在 RGB 与传统 RYB 两种模型之间切换的交互式色轮、8 种配色关系、精选的 160 套调色板、"
         "WCAG 对比度检查器、色觉模拟、在设备上完成的照片取色，"
         "以及导出为 PDF、SVG、SwiftUI、UIKit、CSS 和 Tailwind。"),
@@ -795,15 +802,4 @@ T = {
     "Pro Lifetime": (
         "Pro auf Dauer", "Pro para siempre", "Pro para siempre", "Pro à vie", "Pro per sempre",
         "Pro 買い切り", "Pro 평생", "Pro voorgoed", "Pro para sempre", "Pro 永久"),
-    "Harmony Palette: Color Wheel & Palette App for iPhone and iPad": (
-        "Harmony Palette: Farbkreis- und Paletten-App für iPhone und iPad",
-        "Harmony Palette: rueda de color y app de paletas para iPhone y iPad",
-        "Harmony Palette: rueda de color y app de paletas para iPhone y iPad",
-        "Harmony Palette : roue chromatique et application de palettes pour iPhone et iPad",
-        "Harmony Palette: ruota dei colori e app di palette per iPhone e iPad",
-        "Harmony Palette: iPhone と iPad のためのカラーホイールとパレットアプリ",
-        "Harmony Palette: iPhone과 iPad를 위한 색상환과 팔레트 앱",
-        "Harmony Palette: kleurenwiel en palet-app voor iPhone en iPad",
-        "Harmony Palette: roda de cores e app de paletas para iPhone e iPad",
-        "Harmony Palette：为 iPhone 和 iPad 打造的色轮与调色板应用"),
 }

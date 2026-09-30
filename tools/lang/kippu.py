@@ -289,8 +289,8 @@ T = {
         "两套假名、每条路线的第一个模块和指南都是免费的。Kippu Plus 解锁两条路线的全部模块、三个游戏和全部七个主题。"),
 
     "a year": ("pro Jahr", "al año", "al año", "par an", "all'anno", "年額", "연간", "per jaar", "por ano", "每年"),
-    "Four months free": ("Vier Monate geschenkt", "Cuatro meses gratis", "Cuatro meses gratis", "Quatre mois offerts",
-                         "Quattro mesi gratis", "4か月分お得", "넉 달 무료", "Vier maanden gratis", "Quatro meses grátis", "省下四个月"),
+    "Seven months free": ("Sieben Monate geschenkt", "Siete meses gratis", "Siete meses gratis", "Sept mois offerts",
+                          "Sette mesi gratis", "7か月分お得", "일곱 달 무료", "Zeven maanden gratis", "Sete meses grátis", "省下七个月"),
     "a month": ("pro Monat", "al mes", "al mes", "par mois", "al mese", "月額", "월간", "per maand", "por mês", "每月"),
 
     "The first week is free on either plan. Cancel any time in your Apple account. Prices shown in US dollars; the App Store shows yours.": (

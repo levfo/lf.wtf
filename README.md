@@ -2,14 +2,15 @@
 
 Levi Foster's site. Plain static HTML, no build step, no framework.
 
-    /                 Levi Foster — bio, work, links (Person schema lives here)
+    /                 Levi Foster as element Lf: a periodic table of his work, a readout, and a full
+                      specification list (Person, ProfilePage and ItemList schema live here)
     /frmt/            FRMT, film simulation for iPhone
     /frmt/privacy     
     /modul8/          MODUL8, glitch art for iPhone
     /modul8/privacy   
     /cyano/           CYANO, cyanotype for iPhone
     /cyano/privacy    
-    /harmony/         Harmony Palette, colour harmony for iPhone and iPad
+    /harmony/         Harmony Palette, colour harmony for iPhone
     /harmony/privacy  
     /dollop/          Dollop, a colour mixing game for iPhone
     /dollop/privacy   
@@ -17,6 +18,7 @@ Levi Foster's site. Plain static HTML, no build step, no framework.
     /kippu/privacy    
     /grnge/           GRNGE, black-and-white photo prints for iPhone
     /grnge/privacy    
+    /carmeet/         Carmeet, the browser car meet (the game itself runs at carmeet.lf.wtf)
     robots.txt        
     sitemap.xml       every real URL; update lastmod when a page changes
     _headers          Cloudflare Pages: security headers + immutable asset caching
@@ -40,3 +42,18 @@ profiles that genuinely belong to Levi — a wrong one weakens the whole set.
 
 Images are committed at their final display size. There is no image pipeline, so resize
 before adding rather than relying on CSS to scale a large file down.
+
+## The home page
+
+The home page draws Levi as element Lf in a periodic table of twelve works. The table tiles are
+plain links, so it works without JavaScript; a small script fills the readout from the matching row
+of the specification list below it, which is also what search engines and the translation tool read.
+Change a work by editing its row in the specification list and its tile together.
+
+The faint falling glyphs in the Lf tile are drawn on a canvas. Their ink follows
+`assets/lf-rain-map-1.png`, a 216 x 200 brightness map made from Levi's portrait (subject cut out of
+the black backdrop, darker features carry more ink). Under the immutable asset rule a new map needs a
+new file name. With reduced motion the canvas draws one still frame.
+
+Fonts are self-hosted under `assets/fonts/` (Schibsted Grotesk and DM Mono for the home page, Saira
+for Carmeet), all SIL Open Font License, latin subset.

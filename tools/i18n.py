@@ -52,9 +52,7 @@ PAGES = {
     "modul8/index.html": "modul8/",
     "frmt/privacy/index.html": "frmt/privacy/",
     "cyano/privacy/index.html": "cyano/privacy/",
-    #: Back in the set. It was held out while it still described Google AdMob as current, which
-    #: 1.3 removes. It now states both positions with the version boundary explicit, because 1.2 is
-    #: what the App Store is serving until 1.3 clears review.
+    #: Describes 2.0 (September 2026): no advertising; 1.2 and earlier served AdMob ads in the free tier.
     "modul8/privacy/index.html": "modul8/privacy/",
     "harmony/index.html": "harmony/",
     "harmony/privacy/index.html": "harmony/privacy/",
@@ -64,6 +62,8 @@ PAGES = {
     "kippu/privacy/index.html": "kippu/privacy/",
     "grnge/index.html": "grnge/",
     "grnge/privacy/index.html": "grnge/privacy/",
+    #: Carmeet, the browser car meet. The game itself lives at carmeet.lf.wtf; this is its page.
+    "carmeet/index.html": "carmeet/",
 }
 
 ATTRS = {"content", "alt", "title", "aria-label", "placeholder"}
@@ -251,7 +251,7 @@ def _apply_text(source, pairs):
 
 
 #: Nodes that describe something a reader consumes, and so have a language.
-LD_LANGUAGE_TYPES = {"WebPage", "WebSite", "MobileApplication", "SoftwareApplication",
+LD_LANGUAGE_TYPES = {"WebPage", "ProfilePage", "WebSite", "MobileApplication", "SoftwareApplication",
                      "CollectionPage", "AboutPage", "Article", "FAQPage"}
 
 
