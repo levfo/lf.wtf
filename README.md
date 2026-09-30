@@ -51,9 +51,13 @@ of the specification list below it, which is also what search engines and the tr
 Change a work by editing its row in the specification list and its tile together.
 
 The faint falling glyphs in the Lf tile are drawn on a canvas. Their ink follows
-`assets/lf-rain-map-1.png`, a 216 x 200 brightness map made from Levi's portrait (subject cut out of
+`assets/lf-rain-map-2.png`, a 216 x 200 brightness map made from Levi's portrait (subject cut out of
 the black backdrop, darker features carry more ink). Under the immutable asset rule a new map needs a
 new file name. With reduced motion the canvas draws one still frame.
+
+`lf-rain-map-1.png` and `og-lf.png` are burned: they were requested while the deploy that added them was
+still propagating, so the edge cached the old home page under those names for a year. Do not reuse
+them, and do not fetch a new asset URL until the page that references it is live on lf.wtf.
 
 Fonts are self-hosted under `assets/fonts/` (Schibsted Grotesk and DM Mono for the home page, Saira
 for Carmeet), all SIL Open Font License, latin subset.
