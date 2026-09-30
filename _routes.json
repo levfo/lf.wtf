@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "description": "Only these paths run the function in functions/_middleware.js, which answers 404. Everything else is static.",
+  "include": ["/tools/*", "/content/*", "/functions/*", "/README.md", "/.gitignore", "/_routes.json"],
+  "exclude": []
+}
