@@ -30,6 +30,14 @@ Cloudflare Pages builds straight from this repo. There is no build command and n
 output directory — the repo root *is* the site. Push to `main` and it is live in
 about thirty seconds, with the previous deploy one click away in the Pages dashboard.
 
+### What is not served
+
+The repo root is the site, so everything in it would be public. `functions/_middleware.js` answers 404
+for the paths listed in `_routes.json` (`tools/`, `content/`, `functions/`, `README.md`, `.gitignore`,
+`_routes.json`) and only those paths run it, so it costs nothing on normal page views. Add a path there
+when you add a folder that is not part of the website. `404.html` is the not-found page, which also
+means an unknown URL gets a real 404 instead of the home page.
+
 ## Conventions worth keeping
 
 Each page carries its own JSON-LD. The Person node is defined once, on the home page,
