@@ -57,7 +57,7 @@ and all seven privacy policies.
 ## Detail pages
 
 - [FRMT privacy policy](https://lf.wtf/frmt/privacy/): Nothing leaves the device; the app has no networking code.
-- [MODUL8 privacy policy](https://lf.wtf/modul8/privacy/): Photos and videos are processed on device and never uploaded. From version 2.0 there is no advertising and no Google AdMob, and the App Store privacy label reads Data Not Collected; versions 1.2 and earlier served Google AdMob ads in the free tier.
+- [MODUL8 privacy policy](https://lf.wtf/modul8/privacy/): Photos and videos are processed on device and never uploaded. From version 1.3 there is no advertising and no Google AdMob, and the App Store privacy label reads Data Not Collected; versions 1.2 and earlier served Google AdMob ads in the free tier.
 - [CYANO privacy policy](https://lf.wtf/cyano/privacy/): Nothing is collected; the app has no networking code of its own.
 - [Harmony Palette privacy policy](https://lf.wtf/harmony/privacy/): Nothing is collected. Photos are analysed on device; palettes sync through the user's own private iCloud database, which Apple holds and the developer cannot read.
 - [Dollop privacy policy](https://lf.wtf/dollop/privacy/): Nothing is collected. The app has no networking code at all, and the daily colour is computed on the device rather than fetched.

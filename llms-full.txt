@@ -654,23 +654,25 @@ Source: https://lf.wtf/modul8/privacy/
 MODUL8
 
 ## Privacy Policy
-Last updated 30 September 2026
+Last updated 6 October 2026
 The short version. Your photos and videos are processed on your iPhone and are never uploaded anywhere. There is no image server.
-From version 2.0 there is no advertising and no Google AdMob. The App Store privacy label reads Data Not Collected. Version 1.2 and earlier showed ads in the free tier through Google AdMob, which is covered at the end for anyone still running an old copy.
+From version 1.3 there is no advertising and no Google AdMob. The App Store privacy label reads Data Not Collected. Version 1.2 and earlier showed ads in the free tier through Google AdMob, which is covered at the end for anyone still running an old copy.
 
 ### Which version this describes
-This policy describes MODUL8 2.0, released on 24 September 2026, and every version after it. 2.0 removes advertising entirely: Google AdMob is gone from the app. If you have not updated and are still running 1.2 or earlier, the section on advertising near the end applies to your copy.
+This policy describes MODUL8 2.0, released on 24 September 2026, and every version after it. Advertising was removed earlier, in version 1.3, so Google AdMob is not in the app. If you have not updated and are still running 1.2 or earlier, the section on advertising near the end applies to your copy.
 
 ### What the app does with your media
 MODUL8 needs access to your photo library for two things: loading the images or videos you choose, and saving the finished versions back. That is the whole of it.
 All image and video processing happens locally on your device. Your originals and your edits are never uploaded to our servers or to any third-party server, and we have no access to the contents of your library. This has been true in every version.
 
-### Version 2.0 onwards: no ads, no data collected
+The camera is used only when you choose to shoot a photo in the app. Masking finds the subject of a picture with Apple's Vision framework, which runs on the phone, so that never leaves the device either. Your recent photo edits are kept in the app's own storage so you can reopen them, and are deleted with the app.
+
+### Version 1.3 onwards: no ads, no data collected
 MODUL8 shows no ads and does not include Google AdMob or any other advertising SDK. Nothing you open in it is uploaded, and its App Store privacy label reads Data Not Collected: we do not collect data from the app, and nothing in it is used to track you across apps or websites.
 Because we hold nothing, there is no data to request or delete. Deleting the app removes its settings with it.
 
 ### Version 1.2 and earlier: advertising
-The free tier of version 1.2 and earlier showed ads through Google AdMob, the one part of those versions that involved a third party. Premium removed them, and updating to 2.0 removes AdMob altogether. In those versions AdMob could collect and use:
+The free tier of version 1.2 and earlier showed ads through Google AdMob, the one part of those versions that involved a third party. Premium removed them, and updating to 1.3 removes AdMob altogether. In those versions AdMob could collect and use:
 - Device identifiers: the Advertising Identifier (IDFA) on iOS, and only if you allowed it at the App Tracking Transparency prompt.
 - Usage data: information about how you interacted with the ads, along with device type, operating system and IP address.
 That was used to serve personalised ads and to measure how they performed. You can turn personalised tracking off at any time in Settings › Privacy & Security › Tracking. For what Google collects and how long it keeps it, see the Google Privacy Policy. That data sits with Google rather than with us, so a request to see or delete it goes to them.
@@ -679,7 +681,7 @@ That was used to serve personalised ads and to measure how they performed. You c
 Premium is handled entirely by Apple through the App Store. The app asks the system whether a purchase is active and receives yes or no. It never sees your Apple Account, your name or any payment detail, and no payment information is stored in the app or sent anywhere by it. Apple's own handling of that transaction is covered by Apple's privacy policy, not this one.
 
 ### Children
-MODUL8 is not directed at anyone under 13, and we do not knowingly collect personally identifiable information from anyone under 13. From version 2.0 the app collects nothing from anybody, of any age. If you are a parent or guardian and believe your child gave us personal data through an earlier version, please get in touch and we will remove it.
+MODUL8 is not directed at anyone under 13, and we do not knowingly collect personally identifiable information from anyone under 13. From version 1.3 the app collects nothing from anybody, of any age. If you are a parent or guardian and believe your child gave us personal data through an earlier version, please get in touch and we will remove it.
 
 ### Changes to this policy
 This policy may be updated from time to time. Any changes are posted on this page and take effect once posted, and the date at the top changes with them.
