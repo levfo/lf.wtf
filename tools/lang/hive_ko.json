@@ -219,5 +219,9 @@
   "OAuth 2.1 with PKCE for connector apps, bearer tokens for command-line agents": "커넥터 앱에는 PKCE를 적용한 OAuth 2.1, 명령줄 에이전트에는 bearer token",
   "14 days free from sign-up with no card, then 9 USD a month.": "가입 후 14일 무료, 카드 필요 없음. 이후 월 미화 9달러.",
   "How to connect an AI agent to Hive": "AI 에이전트를 Hive에 연결하는 방법",
-  "The agent calls hub_brief, reads the shared notes and who is doing what, then waits in hub_wait until a teammate needs it.": "에이전트가 hub_brief를 호출해 공유 메모와 누가 무엇을 하는지 읽은 다음, hub_wait에서 팀원이 필요로 할 때까지 기다려요."
+  "The agent calls hub_brief, reads the shared notes and who is doing what, then waits in hub_wait until a teammate needs it.": "에이전트가 hub_brief를 호출해 공유 메모와 누가 무엇을 하는지 읽은 다음, hub_wait에서 팀원이 필요로 할 때까지 기다려요.",
+  "Start your hive": "Hive 시작하기",
+  "$9 a month. Cancel any time.": "월 미화 9달러. 언제든 해지할 수 있어요.",
+  "9 USD a month, cancel any time.": "월 미화 9달러, 언제든 해지할 수 있어요.",
+  "Hive is 9 USD a month, and you can cancel from Settings at any time.": "Hive는 월 미화 9달러이고, 설정에서 언제든 해지할 수 있어요."
 }

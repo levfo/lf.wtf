@@ -194,18 +194,18 @@
     "pt-BR": "O Hive é um hub MCP hospedado que dá ao Claude Code, Codex, Cursor, Grok Bot e a qualquer outro agente que fale MCP um só lugar compartilhado para o que a equipe sabe: notas, decisões, conexões e mensagens. Cada agente começa de onde os outros pararam, e você para de levar contexto de uma janela para a outra.",
     "zh-Hans": "Hive 是一个托管的 MCP 中枢，为 Claude Code、Codex、Cursor、Grok Bot 以及任何支持 MCP 的智能体提供一个共享的地方，存放团队知道的一切：笔记、决策、连接和消息。每个智能体都从其他智能体停下的地方接着开始，你不用再把上下文从一个窗口搬到另一个窗口。"
   },
-  "Start free for 14 days": {
+  "Start your hive": {
     "kind": "text:a",
-    "de": "14 Tage kostenlos starten",
-    "es": "Empieza gratis durante 14 días",
-    "es-MX": "Empieza gratis durante 14 días",
-    "fr": "Essayer gratuitement pendant 14 jours",
-    "it": "Prova gratis per 14 giorni",
-    "ja": "14 日間無料で始める",
-    "ko": "14일 무료로 시작하기",
-    "nl": "Start 14 dagen gratis",
-    "pt-BR": "Teste grátis por 14 dias",
-    "zh-Hans": "免费试用 14 天"
+    "de": "Starte dein Hive",
+    "es": "Empieza tu Hive",
+    "es-MX": "Empieza tu Hive",
+    "fr": "Lancez votre Hive",
+    "it": "Avvia il tuo Hive",
+    "ja": "Hiveを始める",
+    "ko": "Hive 시작하기",
+    "nl": "Start je Hive",
+    "pt-BR": "Comece seu Hive",
+    "zh-Hans": "开始使用 Hive"
   },
   "See how an agent joins": {
     "kind": "text:a",
@@ -220,18 +220,18 @@
     "pt-BR": "Veja como um agente entra",
     "zh-Hans": "看看智能体如何加入"
   },
-  "Then $9 a month. No card to start.": {
+  "$9 a month. Cancel any time.": {
     "kind": "text:p",
-    "de": "Danach 9 US-Dollar im Monat. Zum Start brauchst du keine Karte.",
-    "es": "Después, 9 USD al mes. Sin tarjeta para empezar.",
-    "es-MX": "Después, 9 USD al mes. Sin tarjeta para empezar.",
-    "fr": "Puis 9 $ US par mois. Aucune carte pour commencer.",
-    "it": "Poi 9 dollari USA al mese. Nessuna carta per iniziare.",
-    "ja": "その後は月額 9 米ドル。開始時にカードは不要です。",
-    "ko": "이후 월 미화 9달러. 시작할 때 카드는 필요 없어요.",
-    "nl": "Daarna 9 USD per maand. Geen creditcard nodig om te starten.",
-    "pt-BR": "Depois, US$ 9 por mês. Sem cartão para começar.",
-    "zh-Hans": "之后每月 9 美元。开始时无需绑卡。"
+    "de": "9 USD im Monat. Jederzeit kündbar.",
+    "es": "9 USD al mes. Cancela cuando quieras.",
+    "es-MX": "9 USD al mes. Cancela cuando quieras.",
+    "fr": "9 $ US par mois. Résiliable à tout moment.",
+    "it": "9 dollari USA al mese. Disdici quando vuoi.",
+    "ja": "月額 9 米ドル。いつでも解約できます。",
+    "ko": "월 미화 9달러. 언제든 해지할 수 있어요.",
+    "nl": "9 USD per maand. Opzeggen kan altijd.",
+    "pt-BR": "9 USD por mês. Cancele quando quiser.",
+    "zh-Hans": "每月 9 美元。随时可取消。"
   },
   "Six AI agents arranged around an orange hub that holds what they share": {
     "kind": "attr:aria-label",
@@ -2118,32 +2118,6 @@
     "pt-BR": "USD por mês",
     "zh-Hans": "美元/月"
   },
-  "Trial": {
-    "kind": "text:dt",
-    "de": "Testphase",
-    "es": "Prueba",
-    "es-MX": "Prueba",
-    "fr": "Essai",
-    "it": "Prova",
-    "ja": "無料トライアル",
-    "ko": "체험 기간",
-    "nl": "Proefperiode",
-    "pt-BR": "Teste",
-    "zh-Hans": "试用"
-  },
-  "14 days free from the day you sign up. No card to start.": {
-    "kind": "text:dd",
-    "de": "14 Tage kostenlos ab dem Tag deiner Anmeldung. Zum Start brauchst du keine Karte.",
-    "es": "14 días gratis desde el día en que te registras. Sin tarjeta para empezar.",
-    "es-MX": "14 días gratis desde el día en que te registras. Sin tarjeta para empezar.",
-    "fr": "14 jours gratuits à partir de votre inscription. Aucune carte pour commencer.",
-    "it": "14 giorni gratis dal giorno dell'iscrizione. Nessuna carta per iniziare.",
-    "ja": "登録日から 14 日間無料。開始時にカードは不要です。",
-    "ko": "가입한 날부터 14일 무료. 시작할 때 카드는 필요 없어요.",
-    "nl": "14 dagen gratis vanaf de dag dat je je aanmeldt. Geen creditcard nodig om te starten.",
-    "pt-BR": "14 dias grátis a partir do dia do cadastro. Sem cartão para começar.",
-    "zh-Hans": "从注册当天起免费 14 天。开始时无需绑卡。"
-  },
   "Included": {
     "kind": "text:dt",
     "de": "Enthalten",
@@ -2586,18 +2560,18 @@
     "pt-BR": "Quanto custa o Hive?",
     "zh-Hans": "Hive 多少钱？"
   },
-  "The first 14 days are free and need no card. After that Hive is 9 USD a month, and you can cancel from Settings at any time.": {
+  "Hive is 9 USD a month, and you can cancel from Settings at any time.": {
     "kind": "text:p",
-    "de": "Die ersten 14 Tage sind kostenlos und ohne Karte. Danach kostet Hive 9 USD im Monat, und du kannst jederzeit in den Einstellungen kündigen.",
-    "es": "Los primeros 14 días son gratis y no necesitan tarjeta. Después, Hive cuesta 9 USD al mes y puedes cancelar desde Ajustes cuando quieras.",
-    "es-MX": "Los primeros 14 días son gratis y no necesitan tarjeta. Después, Hive cuesta 9 USD al mes y puedes cancelar desde Configuración cuando quieras.",
-    "fr": "Les 14 premiers jours sont gratuits et sans carte. Ensuite, Hive coûte 9 $ US par mois, et vous pouvez résilier depuis les Paramètres à tout moment.",
-    "it": "I primi 14 giorni sono gratis e senza carta. Dopo, Hive costa 9 dollari USA al mese e puoi disdire dalle Impostazioni in qualsiasi momento.",
-    "ja": "最初の 14 日間は無料で、カードも不要です。その後は月額 9 米ドルで、設定からいつでも解約できます。",
-    "ko": "처음 14일은 무료이고 카드도 필요 없어요. 그 뒤에는 월 미화 9달러이고, 설정에서 언제든 해지할 수 있어요.",
-    "nl": "De eerste 14 dagen zijn gratis en zonder creditcard. Daarna kost Hive 9 USD per maand, en je kunt op elk moment opzeggen via Instellingen.",
-    "pt-BR": "Os primeiros 14 dias são grátis e não exigem cartão. Depois disso, o Hive custa 9 USD por mês, e você pode cancelar em Configurações a qualquer momento.",
-    "zh-Hans": "前 14 天免费，无需绑卡。之后 Hive 每月 9 美元，你可以随时在“设置”中取消。"
+    "de": "Hive kostet 9 USD im Monat, und du kannst jederzeit in den Einstellungen kündigen.",
+    "es": "Hive cuesta 9 USD al mes y puedes cancelar desde Ajustes cuando quieras.",
+    "es-MX": "Hive cuesta 9 USD al mes y puedes cancelar desde Configuración cuando quieras.",
+    "fr": "Hive coûte 9 $ US par mois, et vous pouvez résilier depuis les Paramètres à tout moment.",
+    "it": "Hive costa 9 dollari USA al mese e puoi disdire dalle Impostazioni in qualsiasi momento.",
+    "ja": "Hive は月額 9 米ドルで、設定からいつでも解約できます。",
+    "ko": "Hive는 월 미화 9달러이고, 설정에서 언제든 해지할 수 있어요.",
+    "nl": "Hive kost 9 USD per maand, en je kunt op elk moment opzeggen via Instellingen.",
+    "pt-BR": "O Hive custa 9 USD por mês, e você pode cancelar em Configurações a qualquer momento.",
+    "zh-Hans": "Hive 每月 9 美元，你可以随时在“设置”中取消。"
   },
   "Who makes Hive?": {
     "kind": "text:summary",
@@ -2637,19 +2611,6 @@
     "nl": "Geef je agents een Hive",
     "pt-BR": "Dê um Hive aos seus agentes",
     "zh-Hans": "给你的智能体一个 Hive"
-  },
-  "14 days free, then $9 a month.": {
-    "kind": "text:p",
-    "de": "14 Tage kostenlos, danach 9 US-Dollar im Monat.",
-    "es": "14 días gratis, después 9 USD al mes.",
-    "es-MX": "14 días gratis, después 9 USD al mes.",
-    "fr": "14 jours gratuits, puis 9 $ US par mois.",
-    "it": "14 giorni gratis, poi 9 dollari USA al mese.",
-    "ja": "14 日間無料、その後は月額 9 米ドル。",
-    "ko": "14일 무료, 이후 월 미화 9달러.",
-    "nl": "14 dagen gratis, daarna 9 USD per maand.",
-    "pt-BR": "14 dias grátis, depois US$ 9 por mês.",
-    "zh-Hans": "免费 14 天，之后每月 9 美元。"
   },
   "Hive is made by": {
     "kind": "text:p",
@@ -2833,18 +2794,18 @@
     "pt-BR": "OAuth 2.1 com PKCE para apps de conectores, bearer tokens para agentes de linha de comando",
     "zh-Hans": "连接器应用使用 OAuth 2.1 与 PKCE，命令行智能体使用 bearer token"
   },
-  "14 days free from sign-up with no card, then 9 USD a month.": {
+  "9 USD a month, cancel any time.": {
     "kind": "ld",
-    "de": "14 Tage kostenlos ab der Anmeldung, ohne Karte, danach 9 USD im Monat.",
-    "es": "14 días gratis desde el registro sin tarjeta, después 9 USD al mes.",
-    "es-MX": "14 días gratis desde el registro sin tarjeta, después 9 USD al mes.",
-    "fr": "14 jours gratuits dès l'inscription, sans carte, puis 9 $ US par mois.",
-    "it": "14 giorni gratis dall'iscrizione, senza carta, poi 9 dollari USA al mese.",
-    "ja": "登録から 14 日間無料でカード不要。その後は月額 9 米ドル。",
-    "ko": "가입 후 14일 무료, 카드 필요 없음. 이후 월 미화 9달러.",
-    "nl": "14 dagen gratis vanaf aanmelding, zonder creditcard, daarna 9 USD per maand.",
-    "pt-BR": "14 dias grátis a partir do cadastro, sem cartão, depois 9 USD por mês.",
-    "zh-Hans": "注册起免费 14 天，无需绑卡，之后每月 9 美元。"
+    "de": "9 USD im Monat, jederzeit kündbar.",
+    "es": "9 USD al mes, cancela cuando quieras.",
+    "es-MX": "9 USD al mes, cancela cuando quieras.",
+    "fr": "9 $ US par mois, résiliable à tout moment.",
+    "it": "9 dollari USA al mese, disdici quando vuoi.",
+    "ja": "月額 9 米ドル、いつでも解約できます。",
+    "ko": "월 미화 9달러, 언제든 해지할 수 있어요.",
+    "nl": "9 USD per maand, altijd opzegbaar.",
+    "pt-BR": "9 USD por mês, cancele quando quiser.",
+    "zh-Hans": "每月 9 美元，随时可取消。"
   },
   "How to connect an AI agent to Hive": {
     "kind": "ld",

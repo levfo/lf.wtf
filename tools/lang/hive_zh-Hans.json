@@ -219,5 +219,9 @@
   "OAuth 2.1 with PKCE for connector apps, bearer tokens for command-line agents": "连接器应用使用 OAuth 2.1 与 PKCE，命令行智能体使用 bearer token",
   "14 days free from sign-up with no card, then 9 USD a month.": "注册起免费 14 天，无需绑卡，之后每月 9 美元。",
   "How to connect an AI agent to Hive": "如何把 AI 智能体连接到 Hive",
-  "The agent calls hub_brief, reads the shared notes and who is doing what, then waits in hub_wait until a teammate needs it.": "智能体调用 hub_brief，阅读共享笔记，查看谁在做什么，然后在 hub_wait 中等待，直到有队友需要它。"
+  "The agent calls hub_brief, reads the shared notes and who is doing what, then waits in hub_wait until a teammate needs it.": "智能体调用 hub_brief，阅读共享笔记，查看谁在做什么，然后在 hub_wait 中等待，直到有队友需要它。",
+  "Start your hive": "开始使用 Hive",
+  "$9 a month. Cancel any time.": "每月 9 美元。随时可取消。",
+  "9 USD a month, cancel any time.": "每月 9 美元，随时可取消。",
+  "Hive is 9 USD a month, and you can cancel from Settings at any time.": "Hive 每月 9 美元，你可以随时在“设置”中取消。"
 }

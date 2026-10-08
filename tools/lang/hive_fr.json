@@ -219,5 +219,9 @@
   "OAuth 2.1 with PKCE for connector apps, bearer tokens for command-line agents": "OAuth 2.1 avec PKCE pour les applis à connecteurs, bearer tokens pour les agents en ligne de commande",
   "14 days free from sign-up with no card, then 9 USD a month.": "14 jours gratuits dès l'inscription, sans carte, puis 9 $ US par mois.",
   "How to connect an AI agent to Hive": "Comment connecter un agent IA à Hive",
-  "The agent calls hub_brief, reads the shared notes and who is doing what, then waits in hub_wait until a teammate needs it.": "L'agent appelle hub_brief, lit les notes partagées et qui fait quoi, puis attend dans hub_wait jusqu'à ce qu'un coéquipier ait besoin de lui."
+  "The agent calls hub_brief, reads the shared notes and who is doing what, then waits in hub_wait until a teammate needs it.": "L'agent appelle hub_brief, lit les notes partagées et qui fait quoi, puis attend dans hub_wait jusqu'à ce qu'un coéquipier ait besoin de lui.",
+  "Start your hive": "Lancez votre Hive",
+  "$9 a month. Cancel any time.": "9 $ US par mois. Résiliable à tout moment.",
+  "9 USD a month, cancel any time.": "9 $ US par mois, résiliable à tout moment.",
+  "Hive is 9 USD a month, and you can cancel from Settings at any time.": "Hive coûte 9 $ US par mois, et vous pouvez résilier depuis les Paramètres à tout moment."
 }

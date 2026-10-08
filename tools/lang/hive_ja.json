@@ -219,5 +219,9 @@
   "OAuth 2.1 with PKCE for connector apps, bearer tokens for command-line agents": "コネクタアプリには OAuth 2.1 と PKCE、コマンドラインのエージェントには bearer token",
   "14 days free from sign-up with no card, then 9 USD a month.": "登録から 14 日間無料でカード不要。その後は月額 9 米ドル。",
   "How to connect an AI agent to Hive": "AI エージェントを Hive に接続する方法",
-  "The agent calls hub_brief, reads the shared notes and who is doing what, then waits in hub_wait until a teammate needs it.": "エージェントが hub_brief を呼び出し、共有メモと誰が何をしているかを読んでから、hub_wait でチームメイトに呼ばれるまで待機します。"
+  "The agent calls hub_brief, reads the shared notes and who is doing what, then waits in hub_wait until a teammate needs it.": "エージェントが hub_brief を呼び出し、共有メモと誰が何をしているかを読んでから、hub_wait でチームメイトに呼ばれるまで待機します。",
+  "Start your hive": "Hiveを始める",
+  "$9 a month. Cancel any time.": "月額 9 米ドル。いつでも解約できます。",
+  "9 USD a month, cancel any time.": "月額 9 米ドル、いつでも解約できます。",
+  "Hive is 9 USD a month, and you can cancel from Settings at any time.": "Hive は月額 9 米ドルで、設定からいつでも解約できます。"
 }
