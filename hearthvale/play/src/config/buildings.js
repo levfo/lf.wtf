@@ -1,0 +1,193 @@
+// owner: foundation
+// Section 5.2: the building table, build-menu order and build-menu tabs.
+// Footprints are w x h at rot 0 and 2; rot 1 and 3 swap them (footprintSize in world.js).
+// crewRole: 'adult' | 'adultOrElder' | 'militia' | 'none'. crewPriority: lower fills first.
+// produces: {resource, perDay} or null. recipe: {in, out, batchesPerDay} or null (workshop).
+// needs: placement requirement from 5.2 or null. amenity: counts toward the happiness amenity cause.
+
+export const BUILDINGS = {
+  townHall: {
+    key: 'townHall', name: 'Town Hall', category: 'civic', tier: 0, w: 3, h: 3,
+    cost: {}, days: 0, upkeep: 0, crew: 6, crewRole: 'adult', crewPriority: 90,
+    beds: 8, produces: null, recipe: null, needs: null, amenity: false,
+    readyText: 'Housing 8 people',
+    tooltip: 'The seat of the kingdom. Eight beds, the road root, and clerks who help build.',
+    needsText: 'Placed at the start. Cannot be demolished.',
+  },
+  cottage: {
+    key: 'cottage', name: 'Cottage', category: 'housing', tier: 0, w: 1, h: 1,
+    cost: { wood: 20, stone: 5 }, days: 2, upkeep: 0, crew: 0, crewRole: 'none', crewPriority: 0,
+    beds: 4, produces: null, recipe: null, needs: null, amenity: false,
+    readyText: 'Housing 4 people',
+    tooltip: 'A small house with 4 beds.',
+    needsText: 'Buildable land: grass, meadow or hill.',
+  },
+  townhouse: {
+    key: 'townhouse', name: 'Townhouse', category: 'housing', tier: 1, w: 2, h: 2,
+    cost: { wood: 40, stone: 15 }, days: 3, upkeep: 0.5, crew: 0, crewRole: 'none', crewPriority: 0,
+    beds: 6, produces: null, recipe: null, needs: null, amenity: false,
+    readyText: 'Housing 6 people',
+    tooltip: 'A larger house with 6 beds.',
+    needsText: 'Buildable land: grass, meadow or hill.',
+  },
+  farm: {
+    key: 'farm', name: 'Farm', category: 'food', tier: 0, w: 2, h: 2,
+    cost: { wood: 30 }, days: 3, upkeep: 0.5, crew: 2, crewRole: 'adult', crewPriority: 10,
+    beds: 0, produces: { resource: 'food', perDay: 10 }, recipe: null,
+    needs: { kind: 'farm', minMeadow: 2 }, amenity: false,
+    readyText: 'Ready to plant',
+    tooltip: 'Grows food on grass and meadow. Meadow grows more.',
+    needsText: 'Every tile grass or meadow, with at least 2 meadow tiles.',
+  },
+  fishery: {
+    key: 'fishery', name: 'Fishery', category: 'food', tier: 0, w: 2, h: 1,
+    cost: { wood: 30, stone: 5 }, days: 3, upkeep: 0.5, crew: 1, crewRole: 'adult', crewPriority: 11,
+    beds: 0, produces: { resource: 'food', perDay: 3 }, recipe: null,
+    needs: { kind: 'water', radius: 1 }, amenity: false,
+    readyText: 'Ready to fish',
+    tooltip: 'Catches food from a river or lake beside it.',
+    needsText: 'Buildable land, with river or lake water next to it.',
+  },
+  lumberCamp: {
+    key: 'lumberCamp', name: 'Lumber Camp', category: 'materials', tier: 0, w: 2, h: 2,
+    cost: { wood: 30 }, days: 3, upkeep: 0.5, crew: 2, crewRole: 'adult', crewPriority: 12,
+    beds: 0, produces: { resource: 'wood', perDay: 6 }, recipe: null,
+    needs: { kind: 'terrain', terrain: 'forest', radius: 3, min: 2 }, amenity: false,
+    readyText: 'Ready to cut',
+    tooltip: 'Cuts timber from the forest within 3 tiles.',
+    needsText: 'At least 2 forest tiles with timber within 3 tiles.',
+  },
+  quarry: {
+    key: 'quarry', name: 'Quarry', category: 'materials', tier: 0, w: 2, h: 2,
+    cost: { wood: 35 }, days: 3, upkeep: 0.5, crew: 2, crewRole: 'adult', crewPriority: 13,
+    beds: 0, produces: { resource: 'stone', perDay: 4 }, recipe: null,
+    needs: { kind: 'terrain', terrain: 'stone', radius: 2, min: 2 }, amenity: false,
+    readyText: 'Ready to cut',
+    tooltip: 'Cuts stone from the outcrops within 2 tiles.',
+    needsText: 'At least 2 stone tiles within 2 tiles.',
+  },
+  mine: {
+    key: 'mine', name: 'Iron Mine', category: 'materials', tier: 1, w: 2, h: 2,
+    cost: { wood: 40, stone: 30 }, days: 4, upkeep: 1, crew: 3, crewRole: 'adult', crewPriority: 14,
+    beds: 0, produces: { resource: 'iron', perDay: 3 }, recipe: null,
+    needs: { kind: 'terrain', terrain: 'iron', radius: 2, min: 2 }, amenity: false,
+    readyText: 'Ready to dig',
+    tooltip: 'Digs iron from the veins within 2 tiles.',
+    needsText: 'At least 2 iron tiles within 2 tiles.',
+  },
+  workshop: {
+    key: 'workshop', name: 'Workshop', category: 'crafts', tier: 1, w: 2, h: 2,
+    cost: { wood: 50, stone: 20 }, days: 4, upkeep: 1.5, crew: 3, crewRole: 'adult', crewPriority: 15,
+    beds: 0, produces: null, recipe: { in: { wood: 2, iron: 1 }, out: { goods: 2 }, batchesPerDay: 1 },
+    needs: null, amenity: false,
+    readyText: 'Ready to work',
+    tooltip: 'Makes goods from 2 wood and 1 iron per batch.',
+    needsText: 'Buildable land: grass, meadow or hill.',
+  },
+  market: {
+    key: 'market', name: 'Market', category: 'services', tier: 0, w: 2, h: 2,
+    cost: { wood: 60, stone: 20 }, days: 5, upkeep: 1.5, crew: 2, crewRole: 'adult', crewPriority: 18,
+    beds: 0, produces: null, recipe: null, needs: null, amenity: false,
+    readyText: 'Trading open',
+    tooltip: 'Trade stock for gold and accept caravan offers. Needs a worker.',
+    needsText: 'Buildable land: grass, meadow or hill.',
+  },
+  tavern: {
+    key: 'tavern', name: 'Tavern', category: 'services', tier: 1, w: 2, h: 2,
+    cost: { wood: 40, stone: 10 }, days: 3, upkeep: 1, crew: 2, crewRole: 'adultOrElder', crewPriority: 19,
+    beds: 0, produces: null, recipe: null, needs: null, amenity: true,
+    readyText: 'Lifting moods',
+    tooltip: 'Lifts moods while staffed. Hosts festivals.',
+    needsText: 'Buildable land: grass, meadow or hill.',
+  },
+  chapel: {
+    key: 'chapel', name: 'Chapel', category: 'services', tier: 1, w: 2, h: 2,
+    cost: { wood: 45, stone: 40 }, days: 5, upkeep: 1, crew: 1, crewRole: 'adultOrElder', crewPriority: 20,
+    beds: 0, produces: null, recipe: null, needs: null, amenity: true,
+    readyText: 'Blessing the valley',
+    tooltip: 'Lifts moods while staffed.',
+    needsText: 'Buildable land: grass, meadow or hill.',
+  },
+  storehouse: {
+    key: 'storehouse', name: 'Storehouse', category: 'materials', tier: 0, w: 2, h: 2,
+    cost: { wood: 40, stone: 30 }, days: 3, upkeep: 0.5, crew: 0, crewRole: 'none', crewPriority: 0,
+    beds: 0, produces: null, recipe: null, needs: null, amenity: false,
+    readyText: 'Holding extra stock',
+    tooltip: 'Raises the storage cap of every stock by 200. Four count.',
+    needsText: 'Buildable land: grass, meadow or hill.',
+  },
+  granary: {
+    key: 'granary', name: 'Granary', category: 'materials', tier: 1, w: 2, h: 2,
+    cost: { wood: 40, stone: 20 }, days: 3, upkeep: 0.5, crew: 0, crewRole: 'none', crewPriority: 0,
+    beds: 0, produces: null, recipe: null, needs: null, amenity: false,
+    readyText: 'Keeping food fresh',
+    tooltip: 'Raises the food cap by 600 and stops spoilage. Two count.',
+    needsText: 'Buildable land: grass, meadow or hill.',
+  },
+  well: {
+    key: 'well', name: 'Well', category: 'services', tier: 0, w: 1, h: 1,
+    cost: { wood: 10, stone: 15 }, days: 1, upkeep: 0, crew: 0, crewRole: 'none', crewPriority: 0,
+    beds: 0, produces: null, recipe: null, needs: null, amenity: false,
+    readyText: 'Water drawn',
+    tooltip: 'Reduces plague for homes within 4 tiles and contains most fires within 5 tiles.',
+    needsText: 'Buildable land: grass, meadow or hill.',
+  },
+  watchtower: {
+    key: 'watchtower', name: 'Watchtower', category: 'defence', tier: 0, w: 1, h: 1,
+    cost: { wood: 30, stone: 20 }, days: 3, upkeep: 0.5, crew: 1, crewRole: 'adult', crewPriority: 16,
+    beds: 0, produces: null, recipe: null, needs: null, amenity: false,
+    readyText: 'Watching the hills',
+    tooltip: 'Adds defence against raids and warns 2 days before one.',
+    needsText: 'Buildable land: grass, meadow or hill.',
+  },
+  barracks: {
+    key: 'barracks', name: 'Barracks', category: 'defence', tier: 1, w: 2, h: 2,
+    cost: { wood: 50, stone: 40 }, days: 4, upkeep: 1.5, crew: 2, crewRole: 'militia', crewPriority: 17,
+    beds: 0, produces: null, recipe: null, needs: null, amenity: false,
+    readyText: 'Drilling the militia',
+    tooltip: 'Adds defence when at least one militia is assigned.',
+    needsText: 'Buildable land: grass, meadow or hill.',
+  },
+  clinic: {
+    key: 'clinic', name: 'Clinic', category: 'services', tier: 2, w: 2, h: 2,
+    cost: { wood: 40, stone: 30 }, days: 4, upkeep: 1.5, crew: 2, crewRole: 'adult', crewPriority: 21,
+    beds: 0, produces: null, recipe: null, needs: null, amenity: false,
+    readyText: 'Treating the sick',
+    tooltip: 'Lowers plague deaths across the kingdom while staffed.',
+    needsText: 'Buildable land: grass, meadow or hill.',
+  },
+  royalCharter: {
+    key: 'royalCharter', name: 'Royal Charter', category: 'special', tier: 3, w: 3, h: 3,
+    cost: { wood: 200, stone: 240, iron: 60, goods: 80, gold: 400 }, days: 16, upkeep: 4,
+    crew: 0, crewRole: 'none', crewPriority: 0,
+    beds: 0, produces: null, recipe: null, needs: null, amenity: false,
+    readyText: 'The Crown is raised',
+    tooltip: 'Completing the Royal Charter wins the game.',
+    needsText: 'Buildable land. Only one may be built.',
+  },
+  road: {
+    key: 'road', name: 'Road', category: 'infra', tier: 0, w: 1, h: 1,
+    cost: { wood: 2 }, days: 0, upkeep: 0, crew: 0, crewRole: 'none', crewPriority: 0,
+    beds: 0, produces: null, recipe: null, needs: null, amenity: false,
+    readyText: 'Road',
+    tooltip: 'Connects buildings to the Town Hall.',
+    needsText: 'Laid with the road tool.',
+  },
+  bridge: {
+    key: 'bridge', name: 'Bridge', category: 'infra', tier: 0, w: 1, h: 1,
+    cost: { wood: 6, stone: 4 }, days: 0, upkeep: 0, crew: 0, crewRole: 'none', crewPriority: 0,
+    beds: 0, produces: null, recipe: null, needs: null, amenity: false,
+    readyText: 'Bridge',
+    tooltip: 'A road across a river.',
+    needsText: 'A road tile on a river.',
+  },
+};
+
+// Build-menu order (section 5.2). Roads, bridges and the Town Hall are not in the build menu.
+export const BUILDING_KEYS = [
+  'cottage', 'townhouse', 'farm', 'fishery', 'lumberCamp', 'quarry', 'mine', 'workshop', 'market',
+  'tavern', 'chapel', 'storehouse', 'granary', 'well', 'watchtower', 'barracks', 'clinic', 'royalCharter',
+];
+
+// Build-menu tabs and the categories of the building table.
+export const CATEGORIES = ['housing', 'food', 'materials', 'crafts', 'services', 'defence', 'special', 'civic', 'infra'];

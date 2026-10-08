@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hearthvale: Claude Haiku 5.5 AI 에이전트가 만든 3D 왕국 건설 게임</title>
+<meta name="description" content="Hearthvale은 브라우저에서 즐기는 무료 3D 왕국 건설 게임이자 하나의 실험이에요. Claude Haiku 5.5 기반 AI 에이전트 151개가 21시간 만에 설계하고, 만들고, 플레이테스트까지 했고, 사람은 코드를 한 줄도 쓰지 않았어요.">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#f3e6c8">
+<meta name="author" content="Levi Foster">
+<link rel="alternate" hreflang="en" href="https://lf.wtf/hearthvale/">
+<link rel="alternate" hreflang="de" href="https://lf.wtf/de/hearthvale/">
+<link rel="alternate" hreflang="es" href="https://lf.wtf/es/hearthvale/">
+<link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/hearthvale/">
+<link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/hearthvale/">
+<link rel="alternate" hreflang="it" href="https://lf.wtf/it/hearthvale/">
+<link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/hearthvale/">
+<link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/hearthvale/">
+<link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/hearthvale/">
+<link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/hearthvale/">
+<link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/hearthvale/">
+<link rel="alternate" hreflang="x-default" href="https://lf.wtf/hearthvale/">
+<link rel="canonical" href="https://lf.wtf/ko/hearthvale/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23e6a93a'/%3E%3Cpath d='M6 17 16 8l10 9v9H6z' fill='%23fbf3e2' stroke='%233b2a1a' stroke-width='2.5' stroke-linejoin='round'/%3E%3Cpath d='M13 26v-6h6v6' fill='%23c4493a'/%3E%3C/svg%3E">
+<link rel="preload" href="/hearthvale/assets/fredoka.woff2" as="font" type="font/woff2" crossorigin>
+
+<meta property="og:title" content="Hearthvale: AI 에이전트가 21시간 만에 만든 왕국 건설 게임">
+<meta property="og:description" content="브라우저에서 즐기는 무료 3D 왕국 건설 게임이에요. Claude Haiku 5.5 기반 AI 에이전트 151개가 설계하고, 만들고, 플레이테스트했어요. 코드를 쓴 사람은 없어요.">
+<meta property="og:url" content="https://lf.wtf/ko/hearthvale/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Levi Foster">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="es_MX">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:image" content="https://lf.wtf/hearthvale/assets/og-hearthvale.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Hearthvale 로고 아래, 빨간 지붕과 가을 나무가 있는 로우폴리 골짜기 마을">
+<meta property="og:video" content="https://lf.wtf/hearthvale/assets/hearthvale-trailer-720.mp4">
+<meta property="og:video:type" content="video/mp4">
+<meta property="og:video:width" content="1280">
+<meta property="og:video:height" content="720">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@cybermynd">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://lf.wtf/hearthvale/#webpage",
+      "url": "https://lf.wtf/hearthvale/",
+      "name": "Hearthvale: AI 에이전트가 만든 왕국 건설 게임",
+      "description": "Hearthvale을 만든 과정: Claude Haiku 5.5 기반 AI 에이전트 151개가 21시간 만에 설계하고, 만들고, 플레이테스트한 3D 왕국 건설 게임.",
+      "isPartOf": {
+        "@id": "https://lf.wtf/#website"
+      },
+      "about": {
+        "@id": "https://lf.wtf/hearthvale/#game"
+      },
+      "author": {
+        "@id": "https://lf.wtf/#levifoster"
+      },
+      "primaryImageOfPage": "https://lf.wtf/hearthvale/assets/og-hearthvale.jpg",
+      "breadcrumb": {
+        "@id": "https://lf.wtf/hearthvale/#breadcrumb"
+      },
+      "datePublished": "2026-10-08",
+      "dateModified": "2026-10-08",
+      "inLanguage": "ko"
+    },
+    {
+      "@type": "VideoGame",
+      "@id": "https://lf.wtf/hearthvale/#game",
+      "name": "Hearthvale",
+      "url": "https://lf.wtf/hearthvale/play/",
+      "description": "브라우저에서 즐기는 아늑한 3D 왕국 건설 게임이에요. 길을 놓고, 농장을 세우고, 주민이 살 집을 짓고, 사계절 내내 먹을 것을 챙기고, 시장에서 거래하고, 습격을 막아 내며 촌락을 왕국으로 키워요.",
+      "genre": [
+        "City builder",
+        "Strategy",
+        "Simulation"
+      ],
+      "gamePlatform": [
+        "Web browser",
+        "Desktop"
+      ],
+      "playMode": "SinglePlayer",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "Any modern desktop web browser",
+      "author": {
+        "@id": "https://lf.wtf/#levifoster"
+      },
+      "image": "https://lf.wtf/hearthvale/assets/town.jpg",
+      "screenshot": [
+        "https://lf.wtf/hearthvale/assets/first-minute.jpg",
+        "https://lf.wtf/hearthvale/assets/kingdom-panel.jpg",
+        "https://lf.wtf/hearthvale/assets/town.jpg"
+      ],
+      "trailer": {
+        "@id": "https://lf.wtf/hearthvale/#trailer"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://lf.wtf/hearthvale/play/"
+      }
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://lf.wtf/hearthvale/#trailer",
+      "name": "Hearthvale 트레일러",
+      "description": "48초짜리 Hearthvale 영상: 골짜기, 첫 길과 농장, 마을이 소도시로 커 가는 모습, 바뀌는 계절, 그리고 AI 에이전트가 만든 과정을 보여 주는 숫자.",
+      "thumbnailUrl": "https://lf.wtf/hearthvale/assets/poster.jpg",
+      "contentUrl": "https://lf.wtf/hearthvale/assets/hearthvale-trailer-720.mp4",
+      "uploadDate": "2026-10-08",
+      "duration": "PT48S",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://lf.wtf/hearthvale/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Levi Foster",
+          "item": "https://lf.wtf/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hearthvale",
+          "item": "https://lf.wtf/hearthvale/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://lf.wtf/hearthvale/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Hearthvale은 무료인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네. 브라우저에서 돌아가고, 비용도 없고, 계정도 필요 없어요. 왕국은 브라우저에 저장돼요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "사람이 쓴 코드가 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "아니요. Levi는 메시지 두 개짜리 요청만 썼어요. 설계 결정, 설계 문서, 코드, 테스트, 밸런스 조정, 플레이테스트는 모두 AI 에이전트가 했어요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "폰에서도 되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "마우스와 키보드를 쓰는 데스크톱 브라우저용으로 만들고 테스트했어요. 폰에서도 열릴 수는 있지만, 아무도 테스트해 보지 않았어요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "이길 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네. 왕국 단계에 오르고 왕실 헌장을 지으면 돼요. 하지만 어려워요. 밸런스 봇은 게임 속 240일 안에 한 번도 닿지 못했고, AI 플레이테스터도 제한 시간 안에 아무도 도달하지 못했어요. 승리한 뒤에도 샌드박스는 계속돼요."
+          }
+        }
+      ],
+      "inLanguage": "ko"
+    }
+  ]
+}
+</script>
+
+<style>
+@font-face{font-family:"Fredoka";src:url(/hearthvale/assets/fredoka.woff2) format("woff2");font-weight:300 700;font-display:swap}
+:root{--cream:#fbf3e2;--paper:#f3e6c8;--paper-2:#ead9b2;--ink:#3b2a1a;--ink-2:#6a5238;--gold:#e6a93a;--gold-d:#b97b19;--red:#c4493a;--leaf:#6f9e3c;--sky:#bfe3f5;
+--round:"Fredoka","Nunito","Segoe UI Rounded","Arial Rounded MT Bold",system-ui,sans-serif;--body:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--w:1180px;--r:28px}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;background:var(--paper)}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 18px/1.65 var(--body)}
+a{color:var(--red);text-decoration-thickness:2px;text-underline-offset:3px}
+a:hover{color:var(--ink)}
+:focus-visible{outline:4px solid var(--gold);outline-offset:3px;border-radius:8px}
+img,video{display:block;max-width:100%;height:auto}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--round);font-weight:700;line-height:1.05;letter-spacing:-.01em;margin:0}
+.btn{display:inline-flex;align-items:center;gap:12px;min-height:56px;padding:10px 30px;border:4px solid var(--ink);border-radius:999px;background:var(--cream);color:var(--ink);font:600 20px/1 var(--round);text-decoration:none;box-shadow:0 6px 0 var(--ink);transition:transform .1s,box-shadow .1s}
+.btn:hover{color:var(--ink);transform:translateY(2px);box-shadow:0 4px 0 var(--ink)}
+.btn:active{transform:translateY(6px);box-shadow:0 0 0 var(--ink)}
+.btn.go{background:var(--gold);font-size:23px;min-height:64px;padding:12px 38px}
+.chip{display:inline-block;background:var(--cream);border:3px solid var(--ink);border-radius:999px;padding:4px 16px;font:600 15px/1.4 var(--round)}
+
+/* top */
+.top{position:sticky;top:0;z-index:20;background:#f3e6c8e8;backdrop-filter:blur(8px);border-bottom:3px solid var(--ink)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:66px}
+.mark{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);font:700 26px/1 var(--round)}
+.mark svg{width:36px;height:36px}
+.top nav{display:flex;align-items:center;gap:24px}
+.top nav a:not(.btn){color:var(--ink-2);text-decoration:none;font:500 17px/1 var(--round);padding:12px 0}
+.top nav a:not(.btn):hover{color:var(--ink)}
+.top .btn{min-height:44px;padding:6px 22px;font-size:17px;box-shadow:0 4px 0 var(--ink)}
+
+/* hero */
+.hero{background:linear-gradient(180deg,var(--sky),#e8f1d6 55%,var(--paper));border-bottom:3px solid var(--ink)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:34px;padding-top:56px;padding-bottom:64px}
+.hero-copy{text-align:center}
+.kick{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--cream);border-radius:999px;padding:6px 18px 7px;font:600 15px/1.3 var(--round)}
+.kick i{width:12px;height:12px;border-radius:50%;background:var(--gold)}
+.hero h1{margin-top:22px;font-size:clamp(64px,11vw,148px);letter-spacing:-.03em;color:var(--cream);-webkit-text-stroke:clamp(6px,.9vw,11px) var(--ink);paint-order:stroke fill;text-shadow:0 8px 0 var(--ink)}
+.tag{margin:18px auto 0;font:600 clamp(24px,3vw,36px)/1.2 var(--round);max-width:820px}
+.tag em{font-style:normal;color:var(--red)}
+.lede{margin:16px auto 0;max-width:720px;color:var(--ink-2)}
+.cta{display:flex;flex-wrap:wrap;justify-content:center;gap:16px 18px;margin-top:28px}
+.screen{position:relative;margin:0;border:5px solid var(--ink);border-radius:var(--r);overflow:hidden;background:#2b2116;box-shadow:0 10px 0 var(--ink),0 30px 60px #3b2a1a40}
+.screen video{width:100%;aspect-ratio:16/9;object-fit:cover}
+.screen .sound{position:absolute;right:18px;bottom:18px;min-height:44px;padding:6px 20px;font-size:16px;box-shadow:0 4px 0 var(--ink);cursor:pointer}
+.screen .sound[aria-pressed="true"]{background:var(--gold)}
+.cap{margin:12px 0 0;text-align:center;font-size:14px;color:var(--ink-2)}
+
+/* numbers */
+.nums{padding:64px 0 24px}
+.nums ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.nums li{background:var(--cream);border:4px solid var(--ink);border-radius:24px;padding:18px 22px 20px;box-shadow:0 6px 0 var(--ink);display:flex;gap:16px;align-items:center}
+.nums .ic{flex:0 0 58px;height:58px;border:3px solid var(--ink);border-radius:18px;display:grid;place-items:center;font-size:30px}
+.nums b{display:block;font:700 40px/1 var(--round)}
+.nums span{display:block;font-size:15px;color:var(--ink-2);line-height:1.35;margin-top:4px}
+.nums .note{margin:16px 0 0;font-size:14px;color:var(--ink-2)}
+
+/* sections */
+section{scroll-margin-top:76px}
+.sec{padding:72px 0}
+.head{margin:0 0 30px}
+.head h2{font-size:clamp(38px,5vw,60px)}
+.head p{margin:12px 0 0;max-width:760px;color:var(--ink-2)}
+.prompt{margin:0 0 34px;background:var(--ink);color:var(--cream);border-radius:var(--r);padding:30px 36px;font:500 21px/1.5 var(--round);position:relative}
+.prompt::before{content:"The request";display:block;margin-bottom:10px;font:600 13px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.prompt p{margin:0}
+.prompt p+p{margin-top:14px;padding-top:14px;border-top:2px dashed #ffffff33;font-size:18px}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}
+.two p{margin:0 0 14px}
+
+/* steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:16px;counter-reset:s}
+.step{display:grid;grid-template-columns:86px minmax(0,1fr) minmax(0,.85fr);gap:24px;align-items:start;background:var(--cream);border:4px solid var(--ink);border-radius:24px;padding:22px 26px;box-shadow:0 6px 0 var(--ink)}
+.step .n{width:72px;height:72px;border:4px solid var(--ink);border-radius:20px;display:grid;place-items:center;font:700 34px/1 var(--round);background:var(--gold)}
+.step:nth-child(2) .n{background:#f6c9bf}.step:nth-child(3) .n{background:#d9efb5}.step:nth-child(4) .n{background:#bfe3f5}.step:nth-child(5) .n{background:#e6d6f5}.step:nth-child(6) .n{background:#ffe4a8}
+.step h3{font-size:28px;margin-bottom:6px}
+.step p{margin:0;color:var(--ink-2)}
+.step code{display:block;font:500 14px/1.6 ui-monospace,"Cascadia Mono",Consolas,monospace;color:var(--ink);background:var(--paper);border:3px dashed var(--ink-2);border-radius:14px;padding:12px 14px;white-space:normal}
+
+/* gallery */
+.shots{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px}
+.shots figure{margin:0}
+.shots img{width:100%;aspect-ratio:16/9;object-fit:cover;border:4px solid var(--ink);border-radius:22px;box-shadow:0 6px 0 var(--ink)}
+.shots figcaption{margin-top:12px;font-size:15px;color:var(--ink-2)}
+.shots .wide{grid-column:1/-1}
+.lapse{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.lapse img{aspect-ratio:4/3}
+
+/* features */
+.feats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.feat{background:var(--cream);border:4px solid var(--ink);border-radius:24px;padding:22px 24px 24px;box-shadow:0 6px 0 var(--ink)}
+.feat h3{font-size:25px;margin-bottom:8px}
+.feat p{margin:0;font-size:16px;color:var(--ink-2)}
+
+/* honest */
+.honest{background:var(--paper-2);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+.honest ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.honest li{background:var(--cream);border:3px solid var(--ink);border-radius:20px;padding:16px 22px}
+.honest li b{font-family:var(--round);font-weight:600;font-size:19px}
+
+/* play */
+.play-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:28px;align-items:start}
+.panel{background:var(--cream);border:4px solid var(--ink);border-radius:var(--r);padding:28px 30px;box-shadow:0 6px 0 var(--ink)}
+.panel p{margin:0 0 18px}
+.keys{margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 18px}
+.keys dt{font:600 17px/1.3 var(--round)}
+.keys dd{margin:0 0 6px;font-size:15px;color:var(--ink-2)}
+kbd{display:inline-block;min-width:26px;padding:0 7px;margin:0 2px 3px 0;border:2px solid var(--ink);border-bottom-width:4px;border-radius:8px;font:600 13px/22px ui-monospace,Consolas,monospace;text-align:center;background:#fff}
+
+/* faq */
+.faq details{background:var(--cream);border:4px solid var(--ink);border-radius:22px;margin-bottom:12px}
+.faq summary{cursor:pointer;list-style:none;padding:18px 24px;font:600 20px/1.3 var(--round)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";float:right;font-size:26px;line-height:1}
+.faq details[open] summary::after{content:"\2212"}
+.faq details p{margin:0;padding:0 24px 20px;color:var(--ink-2)}
+
+.final{padding:72px 0 84px;text-align:center;background:linear-gradient(180deg,var(--paper),#e8f1d6)}
+.final h2{font-size:clamp(48px,8vw,96px);color:var(--cream);-webkit-text-stroke:8px var(--ink);paint-order:stroke fill;text-shadow:0 6px 0 var(--ink)}
+.final p{margin:16px auto 26px;max-width:560px;color:var(--ink-2)}
+
+footer{border-top:3px solid var(--ink);padding:26px 0 8px;color:var(--ink-2);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 28px}
+footer p{margin:0;max-width:760px}
+
+@media (max-width:900px){
+.nums ul,.feats{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.two,.play-grid,.shots{grid-template-columns:minmax(0,1fr)}
+.step{grid-template-columns:72px minmax(0,1fr);gap:10px 18px}
+.step .n{width:60px;height:60px;font-size:28px;grid-row:span 2}
+.step code{grid-column:2}
+}
+@media (max-width:600px){
+body{font-size:17px}
+.wrap{padding:0 16px}
+.top nav a:not(.btn){display:none}
+.nums ul,.feats,.keys{grid-template-columns:minmax(0,1fr)}
+.lapse{grid-template-columns:repeat(2,minmax(0,1fr))}
+.btn.go{width:100%;justify-content:center}
+.prompt{padding:24px 22px;font-size:18px}
+.step{grid-template-columns:minmax(0,1fr)}
+.step .n{grid-row:auto}
+.step code{grid-column:1}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+
+/* i18n:start */
+.i18n{max-width:var(--w,initial);margin:0 auto;padding:26px 22px 40px;display:flex;flex-wrap:wrap;
+gap:6px 14px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.55;
+justify-content:center}
+.i18n a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+.i18n a:hover{border-bottom-color:currentColor}
+.i18n span[aria-current]{opacity:.5;cursor:default}
+/* i18n:end */
+
+html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: normal !important; }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#e6a93a"/><path d="M6 17 16 8l10 9v9H6z" fill="#fbf3e2" stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round"/><path d="M13 26v-6h6v6" fill="#c4493a"/></svg>Hearthvale</a>
+    <nav aria-label="섹션">
+      <a href="#experiment">실험</a>
+      <a href="#made">만든 과정</a>
+      <a href="https://lf.wtf/">lf.wtf</a>
+      <a class="btn go" href="/hearthvale/play/">플레이</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="title">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="kick"><i aria-hidden="true"></i>Claude Haiku 5.5로 한 실험</p>
+      <h1 id="title">Hearthvale</h1>
+      <p class="tag">아늑한 3D 왕국 건설 게임, <em>전부 AI 에이전트가 만들었어요.</em></p>
+      <p class="lede">길을 놓고, 농장을 세우고, 주민이 살 집을 지어요. 사계절 내내 먹을 것을 챙기고, 시장에서 거래하고, 도적을 막아 내며 촌락을 왕국으로 키워요. AI 에이전트 151개가 21시간 만에 설계, 제작, 밸런스 조정, 플레이테스트까지 해냈고, 코드는 사람이 한 줄도 쓰지 않았어요.</p>
+      <div class="cta">
+        <a class="btn go" href="/hearthvale/play/">브라우저에서 무료로 플레이 <span aria-hidden="true">&#8594;</span></a>
+        <a class="btn" href="#experiment">실험 이야기 읽기</a>
+      </div>
+    </div>
+    <figure class="screen">
+      <video id="trailer" autoplay muted loop playsinline preload="metadata" poster="/hearthvale/assets/poster.jpg" width="1280" height="720" aria-label="Hearthvale 트레일러: 골짜기, 마을이 소도시로 커 가는 모습, 바뀌는 계절, 그리고 AI 에이전트가 만든 과정을 보여 주는 숫자">
+        <source src="/hearthvale/assets/hearthvale-trailer-720.mp4" type="video/mp4">
+      </video>
+      <button class="btn sound" type="button" aria-pressed="false" aria-controls="trailer">소리</button>
+    </figure>
+    <p class="cap">트레일러는 게임 안에서 녹화했어요. 음악과 효과음도 생성한 거예요.</p>
+  </div>
+</section>
+
+<section class="nums wrap" aria-label="숫자로 보기">
+  <ul>
+    <li><span class="ic" style="background:#ffd98a" aria-hidden="true">&#9201;&#65039;</span><div><b>21시간</b><span>첫 프롬프트부터 최종 빌드까지, 그중 에이전트가 실제로 돌아간 시간은 약 13.5시간이에요</span></div></li>
+    <li><span class="ic" style="background:#bfe3f5" aria-hidden="true">&#129302;</span><div><b>에이전트 151개</b><span>디자이너, 빌더, 테스터, 프로듀서. 조율된 워크플로 17개로 움직였어요</span></div></li>
+    <li><span class="ic" style="background:#d9efb5" aria-hidden="true">&#127918;</span><div><b>AI 플레이테스터 8명</b><span>스크린샷만 보고 4라운드에 걸쳐 플레이</span></div></li>
+    <li><span class="ic" style="background:#f6c9bf" aria-hidden="true">&#128220;</span><div><b>14,251줄</b><span>코드와 테스트, 게임 모듈 45개</span></div></li>
+    <li><span class="ic" style="background:#e6d6f5" aria-hidden="true">&#9989;</span><div><b>테스트 117개</b><span>모두 통과, 여기에 밸런스 게이트 21개짜리 봇까지</span></div></li>
+    <li><span class="ic" style="background:#ffe4a8" aria-hidden="true">&#129689;</span><div><b>약 5달러(미화)</b><span>Haiku 5.5 정가 기준 모델 토큰 비용이에요. 3,960만 토큰으로 낸 추정치예요</span></div></li>
+  </ul>
+  <p class="note">숫자는 이번 실행의 로그에서 가져왔어요. 금액은 추정치예요. 로그에는 토큰 합계만 있고 입력, 출력, 캐시 읽기의 비율은 나와 있지 않아요.</p>
+</section>
+
+<section class="sec wrap" id="experiment" aria-labelledby="experiment-title">
+  <div class="head">
+    <h2 id="experiment-title">실험</h2>
+    <p>질문은 하나였어요. 작고 빠른 모델에게 필요한 만큼 오래, 원하는 만큼 자기 복제본을 쓰게 하면 큰 창작 작업을 어디까지 해낼 수 있을까요?</p>
+  </div>
+  <div class="prompt">
+    <p>&#8220;Please spin up multiple agents, create a 3d web browser kingdom management game. It should be a complete game with resources, economy, population management, etc.&#8221;</p>
+    <p>그리고 한 시간쯤 지나서 이렇게 덧붙였어요: &#8220;during your development, use even more subagents to play the game as isolated players, suggest changes / features that would make the game more complete, then implement its suggestions.&#8221;</p>
+  </div>
+  <div class="two">
+    <div>
+      <p>요청은 이게 전부였어요. Claude Code에서 <strong>Claude Haiku 5.5</strong>로 돌렸어요. Anthropic의 현재 모델 중 가장 작은 모델이고, 추론 강도는 최고로 올리고 ultracode는 켜 둔 채였어요. ultracode를 켜면 모델이 멀티 에이전트 워크플로를 스스로 계획하고 실행할 수 있어서, 대화 하나가 수십 개의 에이전트로 갈라져 동시에 일하고 다시 하나로 모일 수 있었어요.</p>
+      <p>Levi는 이 두 메시지만 쓰고 나머지는 손대지 않았어요. 새 왕국을 일시정지 상태로 시작할지 같은 설계 문제가 생기면, 리드 에이전트가 직접 결정하고 그렇게 했다고 알렸어요.</p>
+    </div>
+    <div>
+      <p>에이전트들은 작은 스튜디오처럼 일했어요. 하나가 규칙을 쓰면 다른 에이전트들이 그에 맞춰 만들었고, 봇은 게임 속 수천 일을 플레이하며 숫자를 조정했어요. 그리고 성격이 저마다 다른 AI 플레이테스터 8명이 사람처럼 게임을 했어요. 스크린샷과 화면 속 글자만 보고, 코드는 절대 보지 않았어요.</p>
+      <p>라운드가 끝날 때마다 프로듀서 에이전트가 보고서를 읽고, 바꿀 것의 우선순위를 정해 빌더에게 다시 넘겼어요. 그러면 플레이테스터들이 다시 플레이했어요.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec wrap" id="made" aria-labelledby="made-title" style="padding-top:0">
+  <div class="head">
+    <h2 id="made-title">만든 과정</h2>
+    <p>여섯 단계로 진행했고, 각 단계는 모델이 스스로 작성하고, 실행하고, 점검한 에이전트 워크플로였어요.</p>
+  </div>
+  <ol class="steps">
+    <li class="step">
+      <span class="n" aria-hidden="true">1</span>
+      <div><h3>설계</h3><p>디자이너 세 명이 서로 경쟁하는 제안서를 썼어요. 하나는 시뮬레이션, 하나는 플레이어, 하나는 엔지니어링 관점이었어요. 아키텍트가 그중 좋은 점을 모아 설계 문서와 기술 명세로 합쳤고, 명세는 1,657줄까지 늘어났어요. 감수자가 그 안의 이름과 숫자를 전부 확인해, 코드가 생기기도 전에 문제 46개를 고쳤어요.</p></div>
+      <code>3 제안 · 1 아키텍트 · 1 감수자 · 46 수정</code>
+    </li>
+    <li class="step">
+      <span class="n" aria-hidden="true">2</span>
+      <div><h3>제작</h3><p>에이전트 14개가 세 차례에 걸쳐 게임을 만들었어요. 각자 자기 파일을 맡고 명세대로만 썼기 때문에 서로의 작업을 건드리지 않았어요. 맡은 부분은 시뮬레이션, 3D 월드, 건물과 주민, 인터페이스, 컨트롤러, 그리고 테스트용 브라우저 하네스였어요.</p></div>
+      <code>14 담당 · 3 웨이브 · 45 모듈 · three.js</code>
+    </li>
+    <li class="step">
+      <span class="n" aria-hidden="true">3</span>
+      <div><h3>밸런스 조정</h3><p>봇이 화면 없이 게임을 플레이했어요. 한 번에 왕국 20개를, 각각 게임 속 240일 동안, 밸런스 게이트 21개에 비춰 돌렸어요. 기근이 없을 것, 버틸 만한 습격, 공정한 경제, 깰 수 있는 게임 같은 조건이에요. 게이트 결과가 움직일 때까지 숫자를 조정했고, 봇이 좀 더 상식적인 사람처럼 플레이하도록 가르쳤어요.</p></div>
+      <code>4 봇 · 20 시드 × 240일 · 21 게이트</code>
+    </li>
+    <li class="step">
+      <span class="n" aria-hidden="true">4</span>
+      <div><h3>플레이테스트</h3><p>AI 플레이어 8명은 도시 건설 게임을 한 번도 해 본 적 없는 초보부터 스피드러너, 느긋하게 짓는 사람, 성격 급한 아이, 키보드만 쓰는 플레이어까지 다양했고, 각자 받은 건 자기 브라우저뿐이었어요. 무엇이 헷갈렸는지, 무엇이 재미있었는지, 무엇을 원하는지 보고했어요.</p></div>
+      <code>8 페르소나 · 4 라운드 · 스크린샷만</code>
+    </li>
+    <li class="step">
+      <span class="n" aria-hidden="true">5</span>
+      <div><h3>수정</h3><p>라운드마다 프로듀서가 발견된 문제의 우선순위를 정하고 빌더가 고쳤어요. 멈춰서 기다려 주는 튜토리얼도, 뭘 지어야 할지 알려 주는 경고도, 카운트다운이 붙은 습격 알림도, 스스로 이유를 설명하는 숫자도 모두 여기서 나왔어요.</p></div>
+      <code>프로듀서 · 담당 · 골든 해시 회귀 테스트</code>
+    </li>
+    <li class="step">
+      <span class="n" aria-hidden="true">6</span>
+      <div><h3>검증</h3><p>모든 변경은 전체 테스트, 밸런스 게이트, 실제 브라우저 확인으로 마무리했어요. 결정론적인 365일 리플레이를 실행할 때마다 해시로 만들어 비교하기 때문에, 시뮬레이션을 바꾸는 변경이 모르는 사이에 통과할 수 없어요.</p></div>
+      <code>117 테스트 · 21 밸런스 게이트 · 실제 브라우저 확인</code>
+    </li>
+  </ol>
+</section>
+
+<section class="sec wrap" aria-labelledby="shots-title" style="padding-top:0">
+  <div class="head"><h2 id="shots-title">게임 화면</h2></div>
+  <div class="shots">
+    <figure class="wide"><img src="/hearthvale/assets/town.jpg" width="1600" height="900" alt="가을의 로우폴리 소도시: 시청을 둘러싼 빨간 지붕과 파란 지붕, 풍차, 길 위의 주민들, 주황빛 나무" loading="lazy"><figcaption>네 번째 가을을 맞은 소도시예요. 밸런스 봇이 키운 뒤 게임에 불러왔어요.</figcaption></figure>
+    <figure><img src="/hearthvale/assets/first-minute.jpg" width="1280" height="720" alt="새 왕국의 첫 1분: 튜토리얼 배너, 자원이 표시된 상단 바, 지을 곳을 표시하는 금색 고리" loading="lazy"><figcaption>첫 1분. 첫 길을 놓을 때까지 시계는 멈춰 있어요.</figcaption></figure>
+    <figure><img src="/hearthvale/assets/kingdom-panel.jpg" width="1280" height="720" alt="소도시 위에 열린 왕국 패널. 인구, 일자리, 행복도의 원인이 표시돼 있어요" loading="lazy"><figcaption>왕국 패널: 주민, 경제, 시장, 그리고 정책.</figcaption></figure>
+    <figure class="wide"><div class="lapse">
+      <img src="/hearthvale/assets/lapse-1.jpg" width="640" height="480" alt="첫째 날: 골짜기에 홀로 선 시청" loading="lazy">
+      <img src="/hearthvale/assets/lapse-2.jpg" width="640" height="480" alt="몇 주 뒤: 농장, 오두막, 첫 길" loading="lazy">
+      <img src="/hearthvale/assets/lapse-3.jpg" width="640" height="480" alt="시장과 벌목장이 생긴, 커 가는 마을" loading="lazy">
+      <img src="/hearthvale/assets/lapse-4.jpg" width="640" height="480" alt="골짜기를 가득 채운 북적이는 소도시" loading="lazy">
+    </div><figcaption>한 왕국이 첫날부터 소도시가 되기까지, 봇이 실시간으로 플레이했어요.</figcaption></figure>
+  </div>
+</section>
+
+<section class="sec wrap" id="game" aria-labelledby="game-title" style="padding-top:0">
+  <div class="head"><h2 id="game-title">게임에 담긴 것</h2><p>요청은 자원, 경제, 인구 관리를 갖춘 완성된 게임이었어요. 에이전트들은 그걸 이렇게 해석했어요.</p></div>
+  <div class="feats">
+    <div class="feat"><h3>자원 여섯 가지</h3><p>식량, 목재, 돌, 철, 물품, 금. 농장, 벌목장, 채석장, 광산, 작업장에서 만들어요. 모두 일꾼과 시청까지 이어지는 길이 필요해요.</p></div>
+    <div class="feat"><h3>살아 있는 경제</h3><p>가득 차는 창고, 때가 되면 내야 하는 유지비, 직접 정하는 세금, 판 만큼 가격이 움직이는 시장. 캐러밴이 거래를 제안하며 지나가요.</p></div>
+    <div class="feat"><h3>진짜 주민들</h3><p>주민마다 나이와 집이 있고, 자리가 있으면 일자리도 있어요. 아이는 자라고, 노인은 나이 들고, 가족에게 아기가 생겨요. 골짜기가 얼마나 행복한지에 따라 새 주민이 오기도 하고 떠나기도 해요.</p></div>
+    <div class="feat"><h3>행복도, 이유까지</h3><p>음식, 집, 세금, 일, 선술집, 예배당, 계절, 최근 습격이 모두 분위기를 바꾸고, 게임은 각각이 얼마나 영향을 주는지 알려 줘요.</p></div>
+    <div class="feat"><h3>사계절</h3><p>수확은 가을에 늘고 겨울에 줄어요. 비축하지 않으면 굶게 돼요. 비, 폭풍, 눈, 홍수, 가뭄, 화재, 역병이 왔다가 지나가요.</p></div>
+    <div class="feat"><h3>약탈자</h3><p>규모가 커질수록 도적이 더 자주 쳐들어와요. 망루, 병영, 민병 징집으로 막아 내고, 경고가 남은 날짜를 알려 줘요.</p></div>
+    <div class="feat"><h3>목표</h3><p>6단계 튜토리얼, 마일스톤, 그리고 촌락부터 왕국까지 네 단계. 왕실 헌장을 지으면 승리하고, 그 뒤에도 샌드박스에서 계속 플레이할 수 있어요.</p></div>
+    <div class="feat"><h3>나만의 골짜기</h3><p>모든 맵은 시드로 생성돼요. 강, 호수, 숲, 돌, 철광 언덕, 산까지요. 3D 아트는 전부 코드로 만들었고, 모델 파일은 하나도 없어요.</p></div>
+    <div class="feat"><h3>저장</h3><p>1분마다 자동 저장, 수동 저장, 그리고 마지막 저장의 백업까지. 모두 브라우저에 보관돼요.</p></div>
+  </div>
+</section>
+
+<section class="sec honest" aria-labelledby="honest-title">
+  <div class="wrap">
+    <div class="head"><h2 id="honest-title">잘 안 된 것</h2><p>실험이니까, 나머지 이야기도 할게요.</p></div>
+    <ul>
+      <li><b>이기기 어려워요.</b> 밸런스 봇은 게임 속 240일 안에 마을 단계와 소도시 단계까지는 가지만, 왕국 단계에는 한 번도 닿지 못해요. 밸런스 게이트 21개 중 17개는 통과하고, 실패한 4개는 모두 끝까지 가거나 겨울을 나는 것과 관련돼 있어요.</li>
+      <li><b>왕관에 닿은 플레이테스터는 없었어요.</b> AI 플레이어마다 정해진 행동 횟수가 있었고, 대부분 60일째에서 164일째 사이에 다 써 버렸어요.</li>
+      <li><b>첫 플레이테스트에서 망가진 건 게임이 아니라 테스트 장비였어요.</b> 브라우저 8개가 한꺼번에 켜지면서 서로 엉켜, 플레이어 8명 중 6명은 아예 들어가지 못했어요. 하네스를 다시 짜고 그 라운드를 다시 돌렸어요.</li>
+      <li><b>수정 하나가 저장을 망가뜨렸어요.</b> 게임 상태에 새 필드를 추가했는데 저장 파일에는 넣지 않아서 불러오기가 실패했어요. 테스트가 같은 시간 안에 잡아냈어요.</li>
+      <li><b>재미있는지는 에이전트가 판단할 수 없어요.</b> AI 플레이테스터들이 점수를 매기긴 했지만, 진짜 테스트는 사람이 직접 해 보는 거예요. 그건 여러분 몫이에요.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec wrap" id="play" aria-labelledby="play-title">
+  <div class="head"><h2 id="play-title">플레이</h2></div>
+  <div class="play-grid">
+    <div class="panel">
+      <p>게임을 열고 <strong>New kingdom</strong>을 누르세요. 튜토리얼이 첫 길, 농장, 오두막, 벌목장, 시장, 망루까지 차근차근 안내해 줘요. 마우스를 쓰는 데스크톱 브라우저용으로 만들었어요.</p>
+      <a class="btn go" href="/hearthvale/play/">브라우저에서 무료로 플레이 <span aria-hidden="true">&#8594;</span></a>
+    </div>
+    <dl class="keys panel">
+      <div><dt>카메라</dt><dd>드래그로 이동, 오른쪽 드래그로 회전, 휠로 확대/축소. <kbd>Q</kbd><kbd>E</kbd> 회전.</dd></div>
+      <div><dt>건설</dt><dd><kbd>B</kbd> 건설 메뉴, <kbd>R</kbd> 도로, <kbd>G</kbd> 회전, <kbd>Esc</kbd> 취소.</dd></div>
+      <div><dt>시간</dt><dd><kbd>Space</kbd> 일시정지, <kbd>1</kbd><kbd>2</kbd><kbd>3</kbd> 속도.</dd></div>
+      <div><dt>왕국</dt><dd><kbd>K</kbd> 주민, 경제, 정책, <kbd>H</kbd> 도움말.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="sec wrap faq" id="faq" aria-labelledby="faq-title" style="padding-top:0">
+  <div class="head"><h2 id="faq-title">자주 묻는 질문</h2></div>
+  <details><summary>Hearthvale은 무료인가요?</summary><p>네. 브라우저에서 돌아가고, 비용도 없고, 계정도 필요 없어요. 왕국은 브라우저에 저장돼요.</p></details>
+  <details><summary>사람이 쓴 코드가 있나요?</summary><p>아니요. Levi는 메시지 두 개짜리 요청만 썼어요. 설계 결정, 설계 문서, 코드, 테스트, 밸런스 조정, 플레이테스트는 모두 AI 에이전트가 했어요.</p></details>
+  <details><summary>폰에서도 되나요?</summary><p>마우스와 키보드를 쓰는 데스크톱 브라우저용으로 만들고 테스트했어요. 폰에서도 열릴 수는 있지만, 아무도 테스트해 보지 않았어요.</p></details>
+  <details><summary>이길 수 있나요?</summary><p>네. 왕국 단계에 오르고 왕실 헌장을 지으면 돼요. 하지만 어려워요. 밸런스 봇은 게임 속 240일 안에 한 번도 닿지 못했고, AI 플레이테스터도 제한 시간 안에 아무도 도달하지 못했어요. 승리한 뒤에도 샌드박스는 계속돼요.</p></details>
+</section>
+
+<section class="final" aria-label="Hearthvale 플레이">
+  <h2>Hearthvale</h2>
+  <p>골짜기가 기다려요. 여러분의 첫 길도요.</p>
+  <a class="btn go" href="/hearthvale/play/">브라우저에서 무료로 플레이 <span aria-hidden="true">&#8594;</span></a>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Hearthvale은 <a href="https://lf.wtf/">Levi Foster</a>의 실험이에요. Claude Code에서 Claude Haiku 5.5로 만들었어요. Claude는 Anthropic의 상표예요. Fredoka 서체는 다음 라이선스에 따라 사용해요: <a href="/hearthvale/assets/fredoka-OFL.txt">SIL Open Font License</a>.</p>
+    <a href="https://lf.wtf/">lf.wtf</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var v = document.getElementById('trailer');
+  var b = document.querySelector('.screen .sound');
+  if (!v || !b) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { v.removeAttribute('autoplay'); v.pause(); v.controls = true; }
+  b.addEventListener('click', function () {
+    v.muted = !v.muted;
+    b.setAttribute('aria-pressed', String(!v.muted));
+    if (!v.muted && v.paused) v.play();
+  });
+})();
+</script>
+
+<nav class="i18n" aria-label="Language">
+  <a href="/hearthvale/" hreflang="en" lang="en">English</a>
+  <a href="/de/hearthvale/" hreflang="de" lang="de">Deutsch</a>
+  <a href="/es/hearthvale/" hreflang="es" lang="es">Español</a>
+  <a href="/es-mx/hearthvale/" hreflang="es-MX" lang="es-MX">Español (MX)</a>
+  <a href="/fr/hearthvale/" hreflang="fr" lang="fr">Français</a>
+  <a href="/it/hearthvale/" hreflang="it" lang="it">Italiano</a>
+  <a href="/ja/hearthvale/" hreflang="ja" lang="ja">日本語</a>
+  <span aria-current="true" lang="ko">한국어</span>
+  <a href="/nl/hearthvale/" hreflang="nl" lang="nl">Nederlands</a>
+  <a href="/pt-br/hearthvale/" hreflang="pt-BR" lang="pt-BR">Português (BR)</a>
+  <a href="/zh-hans/hearthvale/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+</nav>
+</body>
+</html>

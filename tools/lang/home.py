@@ -830,3 +830,56 @@ T.update({
         '一个托管的 MCP 中枢，Claude Code、Codex、Cursor 等 AI 智能体在这里共享笔记、决定、连接和消息，让每个智能体都从团队当前的进度开始。',
     ),
 })
+
+# Sub-projects, added 2026-10-08: a smaller section under the table for experiments, starting with Hearthvale.
+KEEP |= {"Hearthvale", "lf.wtf/hearthvale"}
+T.update({
+    'Sub-projects': (
+        'Nebenprojekte',
+        'Subproyectos',
+        'Subproyectos',
+        'Sous-projets',
+        'Sottoprogetti',
+        'サブプロジェクト',
+        '서브 프로젝트',
+        'Nevenprojecten',
+        'Subprojetos',
+        '子项目',
+    ),
+    'Experiments and side builds. Smaller than an element, and kept off the table.': (
+        'Experimente und Nebenbauten. Kleiner als ein Element, und deshalb nicht im Periodensystem.',
+        'Experimentos y proyectos paralelos. Más pequeños que un elemento, y fuera de la tabla.',
+        'Experimentos y proyectos paralelos. Más chicos que un elemento, y fuera de la tabla.',
+        "Expériences et projets annexes. Plus petits qu'un élément, et gardés hors du tableau.",
+        'Esperimenti e progetti collaterali. Più piccoli di un elemento, e tenuti fuori dalla tavola.',
+        '実験とサイドプロジェクト。元素より小さいので、周期表には載せていません。',
+        '실험과 사이드 프로젝트예요. 원소보다 작아서 주기율표에는 넣지 않았어요.',
+        'Experimenten en zijprojecten. Kleiner dan een element, en buiten de tabel gehouden.',
+        'Experimentos e projetos paralelos. Menores que um elemento, e fora da tabela.',
+        '实验和副业项目。比元素小，所以没有放进周期表。',
+    ),
+    'Browser game, free · AI experiment': (
+        'Browserspiel, kostenlos · KI-Experiment',
+        'Juego de navegador, gratis · Experimento de IA',
+        'Juego de navegador, gratis · Experimento de IA',
+        'Jeu par navigateur, gratuit · Expérience IA',
+        'Gioco per browser, gratuito · Esperimento IA',
+        'ブラウザゲーム、無料 · AI の実験',
+        '브라우저 게임, 무료 · AI 실험',
+        'Browsergame, gratis · AI-experiment',
+        'Jogo de navegador, grátis · Experimento de IA',
+        '浏览器游戏，免费 · AI 实验',
+    ),
+    'A cozy 3D kingdom builder, designed, built and playtested by 151 AI agents on Claude Haiku 5.5 in 21 hours. No person wrote the code.': (
+        'Ein gemütliches 3D-Königreichsspiel, in 21 Stunden von 151 KI-Agenten auf Claude Haiku 5.5 entworfen, gebaut und getestet. Kein Mensch hat den Code geschrieben.',
+        'Un acogedor constructor de reinos en 3D, diseñado, construido y probado por 151 agentes de IA con Claude Haiku 5.5 en 21 horas. Ninguna persona escribió el código.',
+        'Un acogedor constructor de reinos en 3D, diseñado, construido y probado por 151 agentes de IA con Claude Haiku 5.5 en 21 horas. Ninguna persona escribió el código.',
+        "Un jeu de construction de royaume en 3D tout doux, conçu, construit et testé par 151 agents IA sur Claude Haiku 5.5 en 21 heures. Aucun humain n'a écrit le code.",
+        'Un accogliente gestionale di regni in 3D, progettato, costruito e testato da 151 agenti IA su Claude Haiku 5.5 in 21 ore. Nessuna persona ha scritto il codice.',
+        'Claude Haiku 5.5 で動く 151 の AI エージェントが、21 時間で設計・開発・テストプレイまで行った、のんびり遊べる 3D 王国づくりゲーム。コードは一行も人が書いていません。',
+        'Claude Haiku 5.5 기반 AI 에이전트 151개가 21시간 만에 설계하고 만들고 플레이 테스트까지 한 아늑한 3D 왕국 건설 게임이에요. 코드는 사람이 한 줄도 쓰지 않았어요.',
+        'Een gezellige 3D-koninkrijkbouwer, in 21 uur ontworpen, gebouwd en getest door 151 AI-agents op Claude Haiku 5.5. Geen mens schreef de code.',
+        'Um aconchegante construtor de reinos em 3D, projetado, construído e testado por 151 agentes de IA no Claude Haiku 5.5 em 21 horas. Nenhuma pessoa escreveu o código.',
+        '一款温馨的 3D 王国建造游戏，由 151 个基于 Claude Haiku 5.5 的 AI 智能体在 21 小时内完成设计、开发和试玩。代码没有一行是人写的。',
+    ),
+})

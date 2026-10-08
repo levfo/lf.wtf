@@ -1,0 +1,230 @@
+<!-- owner: ui-shell -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Play Hearthvale: a 3D Kingdom Builder in Your Browser</title>
+<meta name="description" content="Play Hearthvale free in your browser: a cozy 3D kingdom builder designed, built and playtested by AI agents on Claude Haiku 5.5.">
+<link rel="canonical" href="https://lf.wtf/hearthvale/play/">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="styles/app.css">
+<script type="importmap">
+{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.module.js" } }
+</script>
+</head>
+<body>
+<div id="game-stage" class="stage">
+  <canvas id="game-canvas" class="game-canvas" title="Drag with the left button to pan. Right-drag to turn. Mouse wheel to zoom." aria-label="The valley, a 3D view of your kingdom. Drag to pan, right-drag to turn, use the wheel to zoom."></canvas>
+  <div id="world-markers" class="world-markers"></div>
+
+  <header id="hud-top" class="hud-top" aria-label="Kingdom status">
+    <div class="hud-left">
+      <span id="hud-date" class="hud-date"></span>
+      <span id="hud-tier" class="hud-tier"></span>
+    </div>
+    <div class="hud-res" role="group" aria-label="Stock: stored amount over capacity, and the change over the last day">
+      <div id="res-food" class="chip" title="Food"><span class="chip-name">Food</span><span class="chip-row"><span class="chip-val"></span><span class="chip-rate"><span class="chip-num"></span><span class="chip-unit">/day</span></span></span></div>
+      <div id="res-wood" class="chip" title="Wood"><span class="chip-name">Wood</span><span class="chip-row"><span class="chip-val"></span><span class="chip-rate"><span class="chip-num"></span><span class="chip-unit">/day</span></span></span></div>
+      <div id="res-stone" class="chip" title="Stone"><span class="chip-name">Stone</span><span class="chip-row"><span class="chip-val"></span><span class="chip-rate"><span class="chip-num"></span><span class="chip-unit">/day</span></span></span></div>
+      <div id="res-iron" class="chip" title="Iron"><span class="chip-name">Iron</span><span class="chip-row"><span class="chip-val"></span><span class="chip-rate"><span class="chip-num"></span><span class="chip-unit">/day</span></span></span></div>
+      <div id="res-goods" class="chip" title="Goods"><span class="chip-name">Goods</span><span class="chip-row"><span class="chip-val"></span><span class="chip-rate"><span class="chip-num"></span><span class="chip-unit">/day</span></span></span></div>
+      <div id="res-gold" class="chip" title="Gold"><span class="chip-name">Gold</span><span class="chip-row"><span class="chip-val"></span><span class="chip-rate"><span class="chip-num"></span><span class="chip-unit">/day</span></span></span></div>
+    </div>
+    <div class="hud-right">
+      <span id="hud-pop" class="stat"></span>
+      <span id="hud-happy" class="stat"></span>
+      <div class="speed" role="group" aria-label="Game speed">
+        <button id="speed-0" type="button" class="speed-btn" title="Pause (Space)" aria-label="Pause" aria-pressed="false">II</button>
+        <button id="speed-1" type="button" class="speed-btn" title="Speed 1x (key 1)" aria-label="Speed 1x" aria-pressed="false">1x</button>
+        <button id="speed-2" type="button" class="speed-btn" title="Speed 2x (key 2)" aria-label="Speed 2x" aria-pressed="false">2x</button>
+        <button id="speed-3" type="button" class="speed-btn" title="Speed 3x (key 3)" aria-label="Speed 3x" aria-pressed="false">3x</button>
+      </div>
+      <button id="btn-help" type="button" class="top-btn" title="How to play: controls, goals and terms (H)" aria-label="Help"><span class="ico" aria-hidden="true">?</span><span class="lbl">Help</span></button>
+      <button id="btn-mute" type="button" class="top-btn" title="Sound on or off (M)" aria-label="Sound on"><span class="ico" aria-hidden="true">&#9834;</span><span class="lbl">Sound on</span></button>
+      <button id="btn-menu" type="button" class="top-btn" title="Pause menu (Escape)" aria-label="Menu"><span class="ico" aria-hidden="true">&#8801;</span><span class="lbl">Menu</span></button>
+    </div>
+  </header>
+  <div id="hud-status" class="hud-status" hidden></div>
+
+  <div id="toolbar" class="toolbar" role="toolbar" aria-label="Tools" aria-orientation="vertical">
+    <button id="btn-build" type="button" class="tool-btn" title="Build: open the build panel and choose a building (B)" aria-label="Build" aria-pressed="false">Build</button>
+    <button id="btn-road" type="button" class="tool-btn" title="Road: drag a path of road out from the network (R)" aria-label="Road" aria-pressed="false">Road</button>
+    <button id="btn-scout" type="button" class="tool-btn" title="Scout: reveal the fog beyond your land (V)" aria-label="Scout" aria-pressed="false">Scout</button>
+    <button id="btn-demolish" type="button" class="tool-btn" title="Demolish: remove a building for a partial refund (X)" aria-label="Demolish" aria-pressed="false">Demolish</button>
+    <button id="btn-kingdom" type="button" class="tool-btn" title="Kingdom panel: tiers, people, economy, market, policies, goals and log (K)" aria-label="Kingdom">Kingdom</button>
+    <button id="btn-save" type="button" class="tool-btn" title="Save the kingdom (Ctrl+S)" aria-label="Save">Save</button>
+    <button id="btn-load" type="button" class="tool-btn" title="Load the saved kingdom (Ctrl+L)" aria-label="Load">Load</button>
+  </div>
+
+  <section id="objective" class="objective" aria-label="Objective">
+    <div class="objective-top">
+      <span id="objective-step" class="objective-step"></span>
+      <span id="objective-text" class="objective-text"></span>
+    </div>
+    <div class="objective-bottom">
+      <span id="objective-next" class="objective-next"></span>
+      <button id="objective-show" type="button" class="btn small" title="Fly the camera to the next objective (F)" aria-label="Show me the objective">Show me</button>
+    </div>
+    <div class="objective-track" aria-hidden="true"><div id="objective-bar" class="objective-fill" style="width: 0%"></div></div>
+  </section>
+
+  <div id="tool-hint" class="tool-hint" role="status" aria-live="polite" hidden></div>
+
+  <div id="cam-pad" class="cam-pad" role="group" aria-label="Camera">
+    <button id="cam-rotate-left" type="button" class="cam-btn" title="Rotate the camera left (Q)" aria-label="Rotate camera left">&#8634; Left</button>
+    <button id="cam-rotate-right" type="button" class="cam-btn" title="Rotate the camera right (E)" aria-label="Rotate camera right">Right &#8635;</button>
+    <button id="cam-zoom-in" type="button" class="cam-btn" title="Zoom in (+)" aria-label="Zoom in">Zoom +</button>
+    <button id="cam-zoom-out" type="button" class="cam-btn" title="Zoom out (-)" aria-label="Zoom out">Zoom &minus;</button>
+    <button id="cam-home" type="button" class="cam-btn cam-home" title="Recentre on the Town Hall (Home)" aria-label="Recentre on the Town Hall">&#8962; Home</button>
+  </div>
+
+  <section id="panel-build" class="panel panel-build" aria-label="Build" hidden>
+    <header class="panel-head">
+      <h2 class="panel-title">Build</h2>
+      <div class="panel-actions">
+        <button id="build-rotate" type="button" class="btn small" title="Rotate the building ghost (G)" aria-label="Rotate the building">Rotate</button>
+        <button id="build-close" type="button" class="btn small icon-btn" title="Close the build panel (Escape)" aria-label="Close the build panel">&#10005;</button>
+      </div>
+    </header>
+    <div id="build-tabs" class="tabs"></div>
+    <div id="build-grid" class="build-grid"></div>
+  </section>
+
+  <section id="panel-info" class="panel panel-info" aria-label="Selection" hidden>
+    <header class="panel-head">
+      <h2 id="info-title" class="panel-title"></h2>
+      <button id="info-close" type="button" class="btn small icon-btn" title="Clear the selection (Escape)" aria-label="Close the info card">&#10005;</button>
+    </header>
+    <div id="info-body" class="panel-body"></div>
+    <div class="panel-foot">
+      <button id="info-priority" type="button" class="btn small" title="Staffing: cycles Normal, Priority and Paused" aria-label="Staffing priority">Normal</button>
+      <button id="info-focus" type="button" class="btn small" title="Fly the camera to this building" aria-label="Show this building">Show</button>
+      <button id="info-demolish" type="button" class="btn small danger" title="Demolish this building (X). Part of its cost is refunded." aria-label="Demolish this building">Demolish</button>
+    </div>
+  </section>
+
+  <section id="panel-kingdom" class="panel panel-kingdom" aria-label="Kingdom" hidden>
+    <header class="panel-head">
+      <h2 class="panel-title">Kingdom</h2>
+      <button id="kingdom-close" type="button" class="btn small icon-btn" title="Close the Kingdom panel (K)" aria-label="Close the Kingdom panel">&#10005;</button>
+    </header>
+    <div id="kingdom-tabs" class="tabs" role="group" aria-label="Kingdom tabs">
+      <button id="tab-overview" type="button" class="tab" title="Overview: tiers, threats and recent news" aria-label="Overview tab">Overview</button>
+      <button id="tab-people" type="button" class="tab" title="People: jobs, homes and the causes of happiness" aria-label="People tab">People</button>
+      <button id="tab-economy" type="button" class="tab" title="Economy: stock, income, winter reserve and upgrades" aria-label="Economy tab">Economy</button>
+      <button id="tab-market" type="button" class="tab" title="Market: prices, trades and caravans (T)" aria-label="Market tab">Market</button>
+      <button id="tab-policies" type="button" class="tab" title="Policies: taxes, rations, the draft and festivals (P)" aria-label="Policies tab">Policies</button>
+      <button id="tab-goals" type="button" class="tab" title="Goals: milestones, tiers and the sandbox goal" aria-label="Goals tab">Goals</button>
+      <button id="tab-log" type="button" class="tab" title="Log: the latest events, newest first" aria-label="Log tab">Log</button>
+    </div>
+    <div id="kingdom-body" class="panel-body kingdom-body"></div>
+  </section>
+
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+  <div id="controls-strip" class="controls-strip">Drag: road. Right-drag: turn. Wheel: zoom. H Help: all keys.</div>
+  <div id="debug-line" class="debug-line" hidden></div>
+  <div id="tooltip" class="tooltip" role="tooltip" hidden></div>
+</div>
+
+<div id="overlay-start" class="overlay overlay-start" role="dialog" aria-modal="true" aria-label="Hearthvale title">
+  <div class="card card-start">
+    <h1 class="title">Hearthvale</h1>
+    <p class="tagline">A kingdom builder in a valley you must keep alive.</p>
+    <div class="menu-stack">
+      <div class="seed-row">
+        <label class="field-label" for="seed-input">Seed (leave empty for a random valley)</label>
+        <div class="seed-fields">
+          <input id="seed-input" type="text" inputmode="numeric" autocomplete="off" maxlength="10" title="A whole number. The same seed always gives the same valley." aria-label="Seed number">
+          <button id="seed-random" type="button" class="btn" title="Fill in a random seed" aria-label="Fill in a random seed">Random</button>
+        </div>
+      </div>
+      <button id="btn-new" type="button" class="btn primary" title="Start a new kingdom (Enter in the seed box also starts it)" aria-label="New kingdom">New kingdom</button>
+      <button id="btn-continue" type="button" class="btn" title="Load the latest saved kingdom" aria-label="Continue">Continue</button>
+      <button id="btn-howto" type="button" class="btn" title="Controls, goals and terms" aria-label="How to play">How to play</button>
+      <button id="btn-settings-start" type="button" class="btn" title="Sound on or off" aria-label="Settings">Settings</button>
+    </div>
+    <p class="menu-note" hidden></p>
+    <p class="menu-status" role="status" aria-live="polite"></p>
+  </div>
+</div>
+
+<div id="overlay-pause" class="overlay" role="dialog" aria-modal="true" aria-label="Paused" hidden>
+  <div class="card">
+    <h2 class="card-title">Paused</h2>
+    <p class="card-text">The game is paused. Nothing advances until you resume.</p>
+    <div class="menu-grid">
+      <button id="btn-resume" type="button" class="btn primary" title="Resume (Space)" aria-label="Resume">Resume</button>
+      <button id="btn-pause-save" type="button" class="btn" title="Save the kingdom (Ctrl+S)" aria-label="Save">Save</button>
+      <button id="btn-pause-load" type="button" class="btn" title="Load the saved kingdom (Ctrl+L)" aria-label="Load">Load</button>
+      <button id="btn-pause-help" type="button" class="btn" title="Controls, goals and terms (H)" aria-label="Help">Help</button>
+      <button id="btn-pause-settings" type="button" class="btn" title="Sound on or off" aria-label="Settings">Settings</button>
+      <button id="btn-pause-skip" type="button" class="btn" title="Skip the tutorial. Your goals stay in the Kingdom panel's Goals tab." aria-label="Skip tutorial" hidden>Skip tutorial</button>
+      <button id="btn-pause-restart" type="button" class="btn" title="Start a new kingdom. The current one is not saved." aria-label="Restart with a new kingdom">Restart</button>
+      <button id="btn-pause-title" type="button" class="btn" title="Back to the title screen. The game stays paused." aria-label="Title screen">Title</button>
+    </div>
+  </div>
+</div>
+
+<div id="overlay-end" class="overlay" role="dialog" aria-modal="true" aria-label="Kingdom result" hidden>
+  <div class="card card-end">
+    <h2 id="end-title" class="card-title"></h2>
+    <div id="end-body" class="card-text"></div>
+    <div class="menu-grid">
+      <button id="btn-end-sandbox" type="button" class="btn primary" title="Keep playing in sandbox mode, with no loss checks" aria-label="Keep playing">Keep playing</button>
+      <button id="btn-end-new" type="button" class="btn" title="Start a new kingdom" aria-label="New kingdom">New kingdom</button>
+      <button id="btn-end-load" type="button" class="btn" title="Load the last save" aria-label="Load last save">Load last save</button>
+      <button id="btn-end-title" type="button" class="btn" title="Back to the title screen" aria-label="Title screen">Title</button>
+    </div>
+  </div>
+</div>
+
+<div id="overlay-help" class="overlay" role="dialog" aria-modal="true" aria-label="How to play" hidden>
+  <div class="card card-wide">
+    <div class="card-head">
+      <h2 class="card-title">How to play</h2>
+      <button id="help-close" type="button" class="btn small" title="Close help (Escape)" aria-label="Close help">Close</button>
+    </div>
+    <div class="help-scroll">
+      <h3 class="help-h">Controls</h3>
+      <div id="help-controls"></div>
+      <h3 class="help-h">Goals</h3>
+      <div id="help-goals"></div>
+      <h3 class="help-h">Terms</h3>
+      <div id="help-terms"></div>
+    </div>
+  </div>
+</div>
+
+<div id="overlay-settings" class="overlay" role="dialog" aria-modal="true" aria-label="Settings" hidden>
+  <div class="card card-small">
+    <h2 class="card-title">Settings</h2>
+    <label class="check-row"><input id="setting-sound" type="checkbox" title="Sound on or off (M)" aria-label="Sound on"><span>Sound on</span></label>
+    <!-- Developer only, hidden from players: F3 (input.js) still shows or hides the performance line. -->
+    <label class="check-row" hidden><input id="setting-debug" type="checkbox" title="Developer only: F3 shows or hides the performance line" aria-label="Developer: show the performance line"><span>Developer: show the performance line (F3)</span></label>
+    <div class="menu-grid one">
+      <button id="settings-close" type="button" class="btn primary" title="Close settings" aria-label="Close settings">Close</button>
+    </div>
+  </div>
+</div>
+
+<div id="overlay-confirm" class="overlay" role="alertdialog" aria-modal="true" aria-label="Please confirm" hidden>
+  <div class="card card-small">
+    <p id="confirm-text" class="card-text"></p>
+    <div class="menu-grid">
+      <button id="confirm-yes" type="button" class="btn primary" title="Yes, go ahead" aria-label="Yes">Yes</button>
+      <button id="confirm-no" type="button" class="btn" title="No, keep the current game" aria-label="No">No</button>
+    </div>
+  </div>
+</div>
+
+<div id="overlay-boot" class="overlay overlay-boot" role="alert" hidden>
+  <div class="card card-small">
+    <h2 class="card-title">Hearthvale cannot start</h2>
+    <p id="boot-message" class="card-text"></p>
+  </div>
+</div>
+
+<script type="module" src="src/main.js"></script>
+</body>
+</html>

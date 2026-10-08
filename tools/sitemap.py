@@ -17,13 +17,13 @@ ROOT = Path(__file__).resolve().parent.parent
 #: Pages that exist only in English, with why. Kept in the sitemap so they are still indexed.
 #: Empty again: Harmony Palette's two pages moved into `PAGES` once their copy was signed off and
 #: translated, so they carry eleven entries each like everything else.
-ENGLISH_ONLY = {}
+ENGLISH_ONLY = {"hearthvale/play/": "the Hearthvale game itself; its interface exists only in English"}
 
 WEIGHT = {"": ("weekly", "1.0"), "frmt/": ("monthly", "0.9"), "modul8/": ("monthly", "0.9"),
           "cyano/": ("monthly", "0.9"), "harmony/": ("monthly", "0.9"),
           "dollop/": ("monthly", "0.9"), "kippu/": ("monthly", "0.9"),
           "grnge/": ("monthly", "0.9"), "carmeet/": ("monthly", "0.9"),
-          "hive/": ("monthly", "0.9")}
+          "hive/": ("monthly", "0.9"), "hearthvale/": ("monthly", "0.8")}
 
 
 def main(lastmod):

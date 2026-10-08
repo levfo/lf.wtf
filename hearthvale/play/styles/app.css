@@ -1,0 +1,247 @@
+/* owner: ui-shell */
+/* Zones at 1600 x 900 (ARCHITECTURE 9.12): top bar 0-56; debug line x 12-380, y 64-90; status line x 12-388, y 94-146;
+   objective x 400-1200, y 64-136;
+   tool hint y 140-172; toolbar x 12-72, y 150-470; build panel x 84-380, y 150-620; info card bottom-left, above y 648;
+   kingdom panel x 1000-1584, y 180-720; toasts x 420-980, y 700-850; controls strip y 858-888; camera pad x 1440-1584, y 740-888. */
+
+:root {
+  color-scheme: light dark;
+  --parchment: #f4ecd8;
+  --parchment-2: #ebdfc2;
+  --card: #fbf6ea;
+  --ink: #2b2622;
+  --ink-soft: #5b5047;
+  --line: rgba(43, 38, 34, 0.22);
+  --amber: #e0a23b;
+  --amber-deep: #b7791f;
+  --on-amber: #2b2622;
+  --good: #5fa055;
+  --good-ink: #2f6a2a;
+  --warn: #e09a2b;
+  --warn-ink: #7d4f07;
+  --bad: #c8483b;
+  --bad-ink: #9b2c20;
+  --hud: rgba(34, 28, 24, 0.9);
+  --hud-ink: #f4ecd8;
+  --hud-soft: #cdbf9f;
+  --hud-line: rgba(255, 255, 255, 0.2);
+  --scrim: rgba(24, 19, 15, 0.5);
+  --focus: #ffd36b;
+  --shadow: 0 8px 24px rgba(20, 15, 10, 0.28);
+  --radius: 8px;
+  --sky: #8ccbe8;
+  --font-text: "Segoe UI", system-ui, sans-serif;
+  --font-head: Georgia, serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --parchment: #2a241f; --parchment-2: #37302a; --card: #322b25;
+    --ink: #f2e9d6; --ink-soft: #c9bba1; --line: rgba(242, 233, 214, 0.2);
+    --amber: #efb653; --amber-deep: #f2c66f; --good: #7cc56f; --good-ink: #a5e295;
+    --warn: #f0b048; --warn-ink: #f6c46b; --bad: #e46e5f; --bad-ink: #f29c8f;
+    --hud: rgba(14, 11, 9, 0.9); --hud-soft: #bfb08f; --scrim: rgba(0, 0, 0, 0.6);
+    --shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  }
+}
+:root[data-theme="dark"] {
+  --parchment: #2a241f; --parchment-2: #37302a; --card: #322b25;
+  --ink: #f2e9d6; --ink-soft: #c9bba1; --line: rgba(242, 233, 214, 0.2);
+  --amber: #efb653; --amber-deep: #f2c66f; --good: #7cc56f; --good-ink: #a5e295;
+  --warn: #f0b048; --warn-ink: #f6c46b; --bad: #e46e5f; --bad-ink: #f29c8f;
+  --hud: rgba(14, 11, 9, 0.9); --hud-soft: #bfb08f; --scrim: rgba(0, 0, 0, 0.6);
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body { background: #1d2a33; color: var(--ink); font: 14px/1.4 var(--font-text); overflow: hidden; }
+[hidden] { display: none !important; }
+button, input { font: inherit; color: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; opacity: 0.55; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.good, .up { color: var(--good-ink); }
+.warn { color: var(--warn-ink); }
+.bad, .down { color: var(--bad-ink); }
+.muted { color: var(--ink-soft); }
+
+/* Shared buttons */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 36px; padding: 6px 12px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); color: var(--ink); }
+.btn:hover:not(:disabled) { border-color: var(--amber-deep); background: var(--parchment-2); }
+.btn:active:not(:disabled) { transform: translateY(1px); }
+.btn.small { min-height: 30px; padding: 3px 9px; }
+.btn.primary { background: var(--amber); border-color: var(--amber-deep); color: var(--on-amber); font-weight: 600; }
+.btn.primary:hover:not(:disabled) { background: var(--amber); filter: brightness(1.06); }
+.btn.danger { color: var(--bad-ink); }
+.btn[aria-pressed="true"] { background: var(--amber); color: var(--on-amber); }
+
+/* Stage and canvas */
+.stage { position: fixed; inset: 0; overflow: hidden; background: var(--sky); }
+.game-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; outline: none; touch-action: none; }
+.world-markers { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
+
+/* Top bar (0-56) */
+.hud-top { position: absolute; top: 0; left: 0; right: 0; height: 56px; z-index: 10; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 10px; padding: 0 12px; background: var(--hud); color: var(--hud-ink); box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25); }
+.hud-left { display: flex; flex-direction: column; min-width: 0; line-height: 18px; white-space: nowrap; }
+.hud-date { font-weight: 600; }
+.hud-tier { color: var(--hud-soft); }
+.hud-res { display: flex; justify-content: center; gap: 5px; min-width: 0; overflow: hidden; }
+/* A chip: the name and the net for the last day on the top line (hud.js), the stock over its cap below. The top line is
+   the same at every width, so six chips fit between the two groups at 1280 and 1600 wide. */
+.chip { display: grid; grid-template-columns: auto auto; column-gap: 6px; align-items: baseline; flex: none; padding: 3px 8px; border-radius: 6px; background: rgba(255, 255, 255, 0.07); line-height: 18px; }
+.chip.full .chip-val { color: #f6c46b; }
+.chip-name { grid-area: 1 / 1; color: var(--hud-soft); white-space: nowrap; }
+.chip-row { display: contents; }
+.chip-rate { grid-area: 1 / 2; justify-self: end; font-weight: 600; white-space: nowrap; }
+.chip-val { grid-area: 2 / 1 / 3 / 3; font-weight: 600; white-space: nowrap; }
+.hud-top .chip-rate.up { color: #a5e295; }
+.hud-top .chip-rate.down { color: #f29c8f; }
+.hud-top .chip-rate.flat { color: var(--hud-soft); }
+.hud-right { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+.stat { font-weight: 600; }
+/* Happiness: the value and the trend word on the first line, the largest negative cause on the second (hud.js), so a
+   long cause name wraps under the number and never widens the top bar. */
+#hud-happy { display: flex; flex-direction: column; line-height: 16px; }
+.hud-cause { color: #f29c8f; font-weight: 600; }
+.speed { display: flex; gap: 4px; }
+.speed-btn, .top-btn { height: 32px; border: 1px solid var(--hud-line); border-radius: 6px; background: rgba(255, 255, 255, 0.08); color: var(--hud-ink); }
+.speed-btn { min-width: 38px; font-weight: 600; }
+.top-btn { display: inline-flex; align-items: center; gap: 6px; padding: 0 10px; }
+.speed-btn:hover, .top-btn:hover { background: rgba(255, 255, 255, 0.18); }
+.speed-btn[aria-pressed="true"] { background: var(--amber); border-color: var(--amber); color: var(--on-amber); }
+.ico { font-size: 16px; line-height: 1; }
+/* Below 1460 px the top bar is tight. The "/day" unit is hidden and the full per-day text is in each chip's title (hud.js),
+   and the gaps shrink. At 1460 px and wider the unit shows after each net, for example "-12/day". */
+@media (max-width: 1459px) {
+  .hud-res { gap: 4px; }
+  .chip { column-gap: 4px; padding: 3px 6px; }
+  .chip-unit { display: none; }
+  .hud-right { gap: 6px; }
+  .speed { gap: 3px; }
+  .speed-btn { min-width: 34px; }
+  .top-btn { padding: 0 8px; }
+}
+/* Below 1600 px the three top buttons show only their icons (Help, Sound, Menu); their words stay in the title and the
+   aria-label. The words return at the 1600 by 900 test size and wider, where the room allows them. */
+@media (max-width: 1599px) {
+  .top-btn .lbl { display: none; }
+}
+
+/* Toolbar (x 12-72, y 150-470) */
+.toolbar { position: absolute; left: 12px; top: 150px; z-index: 10; width: 60px; display: flex; flex-direction: column; gap: 6px; }
+.tool-btn { width: 60px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); color: var(--ink); letter-spacing: -0.02em; white-space: nowrap; box-shadow: var(--shadow); }
+.tool-btn:hover:not(:disabled) { border-color: var(--amber-deep); }
+.tool-btn[aria-pressed="true"] { background: var(--amber); border-color: var(--amber-deep); color: var(--on-amber); }
+
+/* Objective banner (x 400-1200, y 64-136) and tool hint (y 140-172) */
+.objective { position: absolute; top: 64px; left: max(400px, calc(50% - 400px)); z-index: 10; width: 800px; height: 72px; overflow: hidden; display: flex; flex-direction: column; justify-content: center; gap: 2px; padding: 8px 14px 10px; border-radius: var(--radius); background: var(--hud); color: var(--hud-ink); box-shadow: var(--shadow); }
+.objective-top, .objective-bottom { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.objective-bottom { justify-content: space-between; }
+.objective-step { flex: none; color: var(--amber); font-weight: 700; white-space: nowrap; }
+.objective-text { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 16px; font-weight: 600; }
+.objective-next { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: var(--hud-soft); }
+.objective-track { position: absolute; left: 0; right: 0; bottom: 0; height: 4px; background: rgba(255, 255, 255, 0.12); }
+.objective-fill { height: 100%; background: var(--amber); transition: width 0.4s ease; }
+.tool-hint { position: absolute; top: 140px; left: max(400px, calc(50% - 400px)); z-index: 10; width: 800px; height: 32px; display: flex; align-items: center; justify-content: center; padding: 0 12px; overflow: hidden; border-radius: var(--radius); background: var(--hud); color: var(--hud-ink); white-space: nowrap; pointer-events: none; }
+
+/* Status line under the debug line (x 12-388, y 94-146): the next raid, food cover and plague. Three lines of 16 px with
+   2 px padding each side end at y 146, above the toolbar (y 150). A longer text ends in an ellipsis, and it never reaches
+   the toolbar or the build panel. */
+.hud-status { position: absolute; left: 12px; top: 94px; z-index: 10; width: 376px; padding: 2px 9px; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; border-radius: 6px; background: var(--hud); color: var(--hud-ink); font: 14px/16px var(--font-text); pointer-events: none; }
+
+/* Camera pad (x 1440-1584, y 740-888 at 1600 x 900) */
+.cam-pad { position: absolute; right: 16px; bottom: 12px; z-index: 10; width: 144px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 6px; border-radius: var(--radius); background: var(--hud); }
+.cam-btn { height: 40px; padding: 0 4px; border: 1px solid var(--hud-line); border-radius: 6px; background: rgba(255, 255, 255, 0.1); color: var(--hud-ink); white-space: nowrap; }
+.cam-btn:hover { background: rgba(255, 255, 255, 0.2); }
+.cam-home { grid-column: 1 / span 2; }
+
+/* Side panels: build (x 84-380), info (bottom-left), kingdom (right) */
+.panel { position: absolute; z-index: 10; display: flex; flex-direction: column; min-height: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 10px; background: var(--parchment); color: var(--ink); box-shadow: var(--shadow); }
+.panel-build { top: 150px; left: 84px; width: 296px; height: min(470px, calc(100vh - 370px)); }
+.panel-info { left: 12px; bottom: 12px; width: 348px; max-height: max(200px, calc(100vh - 660px)); }
+.panel-kingdom { top: 180px; right: 16px; width: clamp(360px, 36.5vw, 584px); height: max(260px, calc(100vh - 360px)); }
+.panel-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 12px 4px; }
+.panel-title { margin: 0; font: 700 18px/1.2 var(--font-head); }
+.panel-actions { display: flex; gap: 6px; }
+.panel-body { flex: 1 1 auto; min-height: 0; padding: 6px 12px 10px; overflow: auto; }
+.panel-foot { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px 12px 10px; border-top: 1px solid var(--line); }
+.icon-btn { width: 32px; min-width: 32px; padding: 0; }
+.tabs { display: flex; flex-wrap: wrap; gap: 4px; padding: 4px 12px 8px; }
+.tab, #build-tabs button { height: 30px; padding: 0 9px; border: 1px solid var(--line); border-radius: 6px; background: var(--card); color: var(--ink); }
+.tab:hover, #build-tabs button:hover { border-color: var(--amber-deep); }
+.tab[aria-selected="true"], #build-tabs button[aria-selected="true"], #build-tabs button[aria-pressed="true"] { background: var(--amber); border-color: var(--amber-deep); color: var(--on-amber); }
+.build-grid, #build-grid { flex: 1 1 auto; min-height: 0; display: grid; gap: 8px; padding: 6px 12px 12px; overflow: auto; align-content: start; }
+#build-grid > button, #build-grid button { display: block; width: 100%; padding: 8px 10px; text-align: left; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--ink); }
+#build-grid button:hover:not(:disabled) { border-color: var(--amber-deep); }
+#info-body h3, #kingdom-body h3 { margin: 10px 0 6px; font: 700 16px/1.3 var(--font-head); }
+#info-body table, #kingdom-body table { width: 100%; border-collapse: collapse; }
+#info-body th, #info-body td, #kingdom-body th, #kingdom-body td { padding: 4px 6px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+#kingdom-body td.num, #kingdom-body th.num { text-align: right; font-variant-numeric: tabular-nums; }
+#info-body button, #kingdom-body button { min-height: 28px; padding: 3px 9px; border: 1px solid var(--line); border-radius: 6px; background: var(--card); color: var(--ink); }
+#info-body button:hover:not(:disabled), #kingdom-body button:hover:not(:disabled) { border-color: var(--amber-deep); }
+#info-body button[aria-pressed="true"], #kingdom-body button[aria-pressed="true"] { background: var(--amber); color: var(--on-amber); }
+
+/* Toasts (x 420-980, y 700-850) and the controls strip (y 858-888) */
+.toasts { position: absolute; left: 420px; bottom: 50px; z-index: 20; width: min(560px, calc(63.5vw - 448px)); height: 150px; display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; overflow: hidden; pointer-events: none; }
+.toast { pointer-events: auto; width: 100%; display: flex; align-items: flex-start; gap: 8px; padding: 6px 10px; border: 1px solid var(--line); border-left: 5px solid var(--ink-soft); border-radius: 8px; background: var(--card); color: var(--ink); box-shadow: var(--shadow); text-align: left; line-height: 18px; }
+.toast-good { border-left-color: var(--good); }
+.toast-warn { border-left-color: var(--warn); }
+.toast-bad { border-left-color: var(--bad); }
+.toast-icon { flex: none; width: 14px; font-weight: 700; }
+.toast-text { flex: 1 1 auto; min-width: 0; overflow-wrap: anywhere; }
+.toast-count { flex: none; font-weight: 700; color: var(--ink-soft); }
+.controls-strip { position: absolute; left: 420px; bottom: 12px; z-index: 5; width: min(560px, calc(100vw - 880px)); height: 30px; display: flex; align-items: center; justify-content: center; padding: 0 6px; overflow: hidden; border-radius: 8px; background: var(--hud); color: var(--hud-ink); white-space: nowrap; pointer-events: none; }
+.debug-line { position: absolute; left: 12px; top: 64px; z-index: 10; width: 368px; height: 26px; padding: 4px 8px; overflow: hidden; border-radius: 6px; background: rgba(0, 0, 0, 0.65); color: #e4ffd8; font: 14px/18px Consolas, "Cascadia Mono", monospace; white-space: nowrap; pointer-events: none; }
+.tooltip { position: fixed; z-index: 40; max-width: 320px; padding: 6px 9px; border-radius: 6px; background: var(--ink); color: var(--parchment); line-height: 18px; box-shadow: var(--shadow); pointer-events: none; }
+
+/* Overlays: start, pause, end, help, settings, confirm, boot */
+.overlay { position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center; padding: 16px; background: var(--scrim); }
+.overlay-start { justify-content: flex-start; padding-left: 7vw; background: linear-gradient(90deg, rgba(20, 16, 12, 0.6), rgba(20, 16, 12, 0.12) 65%, rgba(20, 16, 12, 0)); }
+#overlay-end { z-index: 55; }
+#overlay-help, #overlay-settings { z-index: 52; }
+#overlay-confirm { z-index: 70; }
+#overlay-boot { z-index: 90; background: #1d2a33; }
+.card { width: min(440px, 100%); max-height: 100%; overflow: auto; padding: 20px 22px; border: 1px solid var(--line); border-radius: 12px; background: var(--parchment); color: var(--ink); box-shadow: var(--shadow); }
+.card-start { width: min(400px, 100%); }
+.card-wide { width: min(760px, 100%); }
+.card-small { width: min(420px, 100%); }
+.card-end { width: min(520px, 100%); }
+.card-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.title { margin: 0 0 4px; font: 700 40px/1.1 var(--font-head); }
+.tagline { margin: 0 0 16px; color: var(--ink-soft); }
+.card-title { margin: 0 0 8px; font: 700 24px/1.2 var(--font-head); }
+.card-text { margin: 0 0 12px; }
+.menu-stack, .menu-grid { display: grid; gap: 8px; }
+.menu-grid { grid-template-columns: 1fr 1fr; }
+.menu-grid.one { grid-template-columns: 1fr; }
+.menu-stack .btn, .menu-grid .btn { width: 100%; }
+.seed-row { display: grid; gap: 4px; margin-bottom: 6px; }
+.field-label { font-weight: 600; }
+.seed-fields { display: flex; gap: 8px; }
+#seed-input { flex: 1 1 auto; min-width: 0; height: 36px; padding: 0 10px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); color: var(--ink); }
+#seed-random { flex: none; width: auto; }
+.menu-note { margin: 8px 0 0; color: var(--ink-soft); }
+.menu-status { min-height: 20px; margin: 8px 0 0; color: var(--bad-ink); }
+.check-row { display: flex; align-items: center; gap: 10px; padding: 8px 0; }
+.check-row input { width: 18px; height: 18px; margin: 0; accent-color: var(--amber-deep); }
+.help-scroll { max-height: 62vh; overflow: auto; padding-right: 6px; }
+.help-h { margin: 14px 0 6px; font: 700 18px/1.2 var(--font-head); }
+.help-h:first-child { margin-top: 4px; }
+.help-table { width: 100%; border-collapse: collapse; }
+.help-table th, .help-table td { padding: 5px 6px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+dl.pairs { margin: 0; display: grid; grid-template-columns: minmax(120px, auto) 1fr; gap: 6px 12px; }
+dl.pairs dt { font-weight: 700; }
+dl.pairs dd { margin: 0; }
+.end-sub { margin: 10px 0 4px; font-weight: 700; }
+
+/* Title screen: menus.js sets data-title on body while the start overlay is open. Only the title panel, the controls
+   strip (the hint) and Help, Sound and Menu stay on screen; the top bar keeps its right-hand group in grid column 3. */
+body[data-title] .hud-left, body[data-title] .hud-res, body[data-title] .speed, body[data-title] .stat,
+body[data-title] .toolbar, body[data-title] .objective, body[data-title] .cam-pad, body[data-title] .world-markers,
+body[data-title] .hud-status, body[data-title] .debug-line, body[data-title] .tool-hint,
+body[data-title] .panel { display: none !important; }
+body[data-title] .hud-right { grid-column: 3; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}

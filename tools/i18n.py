@@ -66,6 +66,8 @@ PAGES = {
     "carmeet/index.html": "carmeet/",
     #: Hive, the hosted MCP hub for AI agents. The product runs at hive.lf.wtf; this is its page.
     "hive/index.html": "hive/",
+    #: Hearthvale, a sub-project: a kingdom builder made by AI agents. The game itself is /hearthvale/play/, English only.
+    "hearthvale/index.html": "hearthvale/",
 }
 
 ATTRS = {"content", "alt", "title", "aria-label", "placeholder"}

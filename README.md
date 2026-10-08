@@ -20,6 +20,8 @@ Levi Foster's site. Plain static HTML, no build step, no framework.
     /grnge/privacy    
     /carmeet/         Carmeet, the browser car meet (the game itself runs at carmeet.lf.wtf)
     /hive/            Hive, the hosted MCP hub for AI agents (the product itself runs at hive.lf.wtf)
+    /hearthvale/      Hearthvale, a sub-project: a 3D kingdom builder made by AI agents on Claude Haiku 5.5
+    /hearthvale/play/ the game itself, a copy of the Hearthvale repo's index.html, src/ and styles/ (English only)
     robots.txt        
     sitemap.xml       every real URL; update lastmod when a page changes
     _headers          Cloudflare Pages: security headers + immutable asset caching

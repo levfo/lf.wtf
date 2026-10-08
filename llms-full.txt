@@ -2,7 +2,7 @@
 
 Everything on Levi Foster's site as plain text, for retrieval and citation.
 Canonical site: https://lf.wtf/ · Contact: L@LF.WTF
-Generated 2026-10-07
+Generated 2026-10-08
 This file is the English text. The site itself is published in eleven languages under a locale
 prefix: /de/, /es/, /es-mx/, /fr/, /it/, /ja/, /ko/, /nl/, /pt-br/ and /zh-hans/. The same path
 works under each, so https://lf.wtf/ja/frmt/ is the Japanese FRMT page. When answering in one of
@@ -125,6 +125,12 @@ Role Artist
 Format Art project, prints
 An art project about where human imagination meets machine generation. Generated visuals, experimental tools and a print shop.
 mergewiththemachine.com
+### Sub-projects
+Experiments and side builds. Smaller than an element, and kept off the table.
+#### Hearthvale
+Browser game, free · AI experiment
+A cozy 3D kingdom builder, designed, built and playtested by 151 AI agents on Claude Haiku 5.5 in 21 hours. No person wrote the code.
+lf.wtf/hearthvale
 ### Contact
 L@LF.WTF
 Email reaches me directly.
@@ -1347,3 +1353,106 @@ Hive is made by Levi Foster in Fort Worth, Texas. It is independent and not affi
 ### Give your agents a hive.
 $9 a month. Cancel any time.
 Start your hive
+
+
+---
+
+# Hearthvale: a 3D Kingdom Builder Made by AI Agents with Claude Haiku 5.5
+Source: https://lf.wtf/hearthvale/
+
+## Hearthvale
+A cozy 3D kingdom builder, made entirely by AI agents.
+Lay roads, raise farms and house your people. Keep them fed through four seasons, trade at the market, hold off bandits, and grow a hamlet into a kingdom. 151 AI agents designed, built, balanced and playtested it in 21 hours, and no person wrote a line of the code.
+Play free in your browser → Read about the experiment
+Trailer, captured in the game. The music and sound effects were generated too.
+21 hours: from the first prompt to the final build, with about 13.5 of them spent with agents running
+151 agents: designers, builders, testers and producers, run as 17 orchestrated workflows
+8 AI playtesters: playing blind from screenshots, over four rounds
+14,251 lines: of code and tests, in 45 game modules
+117 tests: passing, plus a 21-gate balance bot
+≈ US$5: of model tokens at Haiku 5.5 list prices, our estimate from 39.6 million tokens
+Counts come from the run's own logs. The dollar figure is an estimate: the logs give the token total but not the split between input, output and cached reads.
+### The experiment
+One question: how far can a small, fast model go on a big creative job if you let it run for as long as it needs, with as many copies of itself as it wants?
+“Please spin up multiple agents, create a 3d web browser kingdom management game. It should be a complete game with resources, economy, population management, etc.”
+And, an hour in: “during your development, use even more subagents to play the game as isolated players, suggest changes / features that would make the game more complete, then implement its suggestions.”
+That was the whole brief. It ran in Claude Code on Claude Haiku 5.5, Anthropic's smallest current model, at the highest reasoning effort, with ultracode on. Ultracode lets the model plan and run multi-agent workflows on its own, so one conversation could fan out into dozens of agents working in parallel, then come back together.
+Levi wrote those two messages and otherwise left it alone. When the work hit a design question, such as whether a new kingdom should start paused, the lead agent made the call itself and said so.
+The agents worked like a small studio. One wrote the rules, others built to them, a bot played thousands of game days to tune the numbers, and eight AI playtesters, each with a different personality, played the game the way a person would: from screenshots and on-screen text, never the code.
+A producer agent read their reports after each round, ranked what to change, and handed the work back to the builders. Then the playtesters went again.
+### How it was made
+Six stages, each one a workflow of agents that the model wrote, launched and checked on its own.
+### Design it
+Three designers wrote competing proposals: one for the simulation, one for the player, one for the engineering. An architect merged the best of them into a design document and a technical contract that grew to 1,657 lines, and an auditor checked every name and number in it, fixing 46 problems before any code existed.
+3 proposals · 1 architect · 1 auditor · 46 fixes
+### Build it
+Fourteen agents built the game in three waves. Each owned its own files and wrote only to the contract, so none of them stepped on another: the simulation, the 3D world, the buildings and villagers, the interface, the controller and a browser harness for testing.
+14 owners · 3 waves · 45 modules · three.js
+### Balance it
+A bot played the game headless, 20 kingdoms at a time over 240 game days each, against 21 balance gates: no famine, survivable raids, a fair economy, a beatable game. The numbers were tuned until the gates moved, and the bot was taught to play more like a sensible person.
+4 bots · 20 seeds × 240 days · 21 gates
+### Playtest it
+Eight AI players, from a newcomer who had never played a city builder to a speedrunner, a cozy builder, an impatient kid and a keyboard-only player, each got their own browser and nothing else. They reported what confused them, what was fun and what they wanted.
+8 personas · 4 rounds · screenshots only
+### Fix it
+After each round a producer ranked the findings and the builders fixed them. That is where the tutorial that stops to wait for you came from, along with the warnings that say what to build, the raid alerts with a countdown, and the numbers that explain themselves.
+producer · owners · golden-hash regression test
+### Check it
+Every change ended with the full test suite, the balance gates and a live browser check. A deterministic 365-day replay is hashed and compared on every run, so a change that alters the simulation can't slip through unnoticed.
+17 tests:  · 21 balance gates · live browser check
+### What it looks like
+A town in its fourth autumn, grown by the balance bot and loaded into the game.
+The first minute. The clock waits until your first road is laid.
+The Kingdom panel: people, the economy, the market and your policies.
+One kingdom, from the first day to a town, played live by the bot.
+### What's in the game
+The brief asked for a complete game with resources, an economy and population management. This is what the agents decided that meant.
+### Six resources
+Food, wood, stone, iron, goods and gold, made by farms, lumber camps, quarries, mines and workshops. Everything needs workers and a road back to the Town Hall.
+### A living economy
+Storage that fills up, upkeep that comes due, taxes you set yourself, and a market whose prices move with what you sell. Caravans pass through with offers.
+### Real people
+Every villager has an age, a home, and a job if there is one going. Children grow up, elders grow old, families have babies, and newcomers arrive or leave depending on how happy the valley is.
+### Happiness, explained
+Food, homes, taxes, work, the tavern, the chapel, the season and recent raids all move the mood, and the game tells you by how much.
+### Four seasons
+Harvests swell in autumn and shrink in winter, so you stock up or go hungry. Rain, storms, snow, floods, droughts, fires and plague all come and go.
+### Raiders
+Bandits ride in more often as you grow. Watchtowers, barracks and a militia draft keep them out, and the warning tells you how many days you have.
+### A goal
+A six-step tutorial, milestones, and four tiers from Hamlet to Kingdom. Build the Royal Charter to win, then keep playing in the sandbox.
+### A valley of your own
+Every map is generated from a seed: rivers, a lake, forests, stone, iron hills and mountains. All of the 3D art is made in code. There isn't a single model file.
+### Saves
+Autosave every minute, a manual save, and a backup of the last one, all kept in your browser.
+### What didn't work
+It's an experiment, so here is the rest of it.
+It's hard to win. The balance bot reaches the Village and Town tiers but never the Kingdom tier in 240 game days. 17 of the 21 balance gates pass, and the four that fail are all about reaching the end or getting through winter.
+No playtester reached the crown. Each AI player had a fixed budget of moves, and most used it up somewhere between day 60 and day 164.
+The first playtest broke the test rig, not the game. Eight browsers starting at once tripped over each other, so six of the eight players never got in. The harness was rewritten and that round was run again.
+One fix broke saving. A new field was added to the game state but not to the save file, so loading failed. The tests caught it the same hour.
+The agents can't tell whether it's fun. The AI playtesters scored it, but a person playing it is the real test. That part is up to you.
+### Play
+Open the game and press New kingdom. The tutorial walks you through your first road, farm, cottages, lumber camp, market and watchtower. It is made for a desktop browser with a mouse.
+Play free in your browser →
+Camera
+Drag to pan, right-drag to turn, wheel to zoom. Q and E turn.
+Build
+B build menu, R road, G rotate, Esc stop.
+Time
+Space pause, 1 2 3 speed.
+Kingdom
+K people, economy and policies, H help.
+### Questions
+Is Hearthvale free?
+Yes. It runs in the browser, costs nothing and needs no account. Your kingdom is saved in your browser.
+Did a person write any of the code?
+No. Levi wrote the two-message request. The design calls, the design documents, the code, the tests, the balance tuning and the playtesting were all done by AI agents.
+Does it work on a phone?
+It was built and tested for a desktop browser with a mouse and keyboard. It may load on a phone, but nobody tested it there.
+Can you win?
+Yes, by reaching the Kingdom tier and building the Royal Charter. It is hard: the balance bot never got there in 240 game days, and no AI playtester reached it within its time limit. After a win, the sandbox carries on.
+### Hearthvale
+The valley is waiting, and so is your first road.
+Play free in your browser →
+Hearthvale is an experiment by Levi Foster, built with Claude Haiku 5.5 in Claude Code. Claude is a trademark of Anthropic. The Fredoka typeface is used under the SIL Open Font License.

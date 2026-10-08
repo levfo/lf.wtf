@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hearthvale: un gioco di costruzione di regni in 3D creato da agenti IA con Claude Haiku 5.5</title>
+<meta name="description" content="Hearthvale è un gioco gratuito di costruzione di regni in 3D che gira nel tuo browser, e un esperimento: 151 agenti IA su Claude Haiku 5.5 lo hanno progettato, costruito e testato in 21 ore, senza che nessun essere umano scrivesse codice.">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#f3e6c8">
+<meta name="author" content="Levi Foster">
+<link rel="alternate" hreflang="en" href="https://lf.wtf/hearthvale/">
+<link rel="alternate" hreflang="de" href="https://lf.wtf/de/hearthvale/">
+<link rel="alternate" hreflang="es" href="https://lf.wtf/es/hearthvale/">
+<link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/hearthvale/">
+<link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/hearthvale/">
+<link rel="alternate" hreflang="it" href="https://lf.wtf/it/hearthvale/">
+<link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/hearthvale/">
+<link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/hearthvale/">
+<link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/hearthvale/">
+<link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/hearthvale/">
+<link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/hearthvale/">
+<link rel="alternate" hreflang="x-default" href="https://lf.wtf/hearthvale/">
+<link rel="canonical" href="https://lf.wtf/it/hearthvale/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23e6a93a'/%3E%3Cpath d='M6 17 16 8l10 9v9H6z' fill='%23fbf3e2' stroke='%233b2a1a' stroke-width='2.5' stroke-linejoin='round'/%3E%3Cpath d='M13 26v-6h6v6' fill='%23c4493a'/%3E%3C/svg%3E">
+<link rel="preload" href="/hearthvale/assets/fredoka.woff2" as="font" type="font/woff2" crossorigin>
+
+<meta property="og:title" content="Hearthvale: un gioco di costruzione di regni creato da agenti IA in 21 ore">
+<meta property="og:description" content="Un gioco gratuito di costruzione di regni in 3D per il browser, progettato, costruito e testato da 151 agenti IA su Claude Haiku 5.5. Nessun essere umano ha scritto il codice.">
+<meta property="og:url" content="https://lf.wtf/it/hearthvale/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Levi Foster">
+<meta property="og:locale" content="it_IT">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="es_MX">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:image" content="https://lf.wtf/hearthvale/assets/og-hearthvale.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Una cittadina low-poly in una valle, con tetti rossi e alberi autunnali, sotto il logotipo di Hearthvale">
+<meta property="og:video" content="https://lf.wtf/hearthvale/assets/hearthvale-trailer-720.mp4">
+<meta property="og:video:type" content="video/mp4">
+<meta property="og:video:width" content="1280">
+<meta property="og:video:height" content="720">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@cybermynd">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://lf.wtf/hearthvale/#webpage",
+      "url": "https://lf.wtf/hearthvale/",
+      "name": "Hearthvale: un gioco di costruzione di regni creato da agenti IA",
+      "description": "Come è stato fatto Hearthvale: un gioco di costruzione di regni in 3D progettato, costruito e testato da 151 agenti IA su Claude Haiku 5.5 in 21 ore.",
+      "isPartOf": {
+        "@id": "https://lf.wtf/#website"
+      },
+      "about": {
+        "@id": "https://lf.wtf/hearthvale/#game"
+      },
+      "author": {
+        "@id": "https://lf.wtf/#levifoster"
+      },
+      "primaryImageOfPage": "https://lf.wtf/hearthvale/assets/og-hearthvale.jpg",
+      "breadcrumb": {
+        "@id": "https://lf.wtf/hearthvale/#breadcrumb"
+      },
+      "datePublished": "2026-10-08",
+      "dateModified": "2026-10-08",
+      "inLanguage": "it"
+    },
+    {
+      "@type": "VideoGame",
+      "@id": "https://lf.wtf/hearthvale/#game",
+      "name": "Hearthvale",
+      "url": "https://lf.wtf/hearthvale/play/",
+      "description": "Un accogliente gioco di costruzione di regni in 3D per il browser. Traccia strade, costruisci fattorie e dai una casa alla tua gente, sfamala per quattro stagioni, commercia al mercato, difenditi dalle razzie e trasforma un borgo in un regno.",
+      "genre": [
+        "City builder",
+        "Strategy",
+        "Simulation"
+      ],
+      "gamePlatform": [
+        "Web browser",
+        "Desktop"
+      ],
+      "playMode": "SinglePlayer",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "Any modern desktop web browser",
+      "author": {
+        "@id": "https://lf.wtf/#levifoster"
+      },
+      "image": "https://lf.wtf/hearthvale/assets/town.jpg",
+      "screenshot": [
+        "https://lf.wtf/hearthvale/assets/first-minute.jpg",
+        "https://lf.wtf/hearthvale/assets/kingdom-panel.jpg",
+        "https://lf.wtf/hearthvale/assets/town.jpg"
+      ],
+      "trailer": {
+        "@id": "https://lf.wtf/hearthvale/#trailer"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://lf.wtf/hearthvale/play/"
+      }
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://lf.wtf/hearthvale/#trailer",
+      "name": "Trailer di Hearthvale",
+      "description": "Quarantotto secondi di Hearthvale: la valle, le prime strade e fattorie, un villaggio che diventa una cittadina, le stagioni che cambiano e i numeri di come lo hanno costruito gli agenti IA.",
+      "thumbnailUrl": "https://lf.wtf/hearthvale/assets/poster.jpg",
+      "contentUrl": "https://lf.wtf/hearthvale/assets/hearthvale-trailer-720.mp4",
+      "uploadDate": "2026-10-08",
+      "duration": "PT48S",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://lf.wtf/hearthvale/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Levi Foster",
+          "item": "https://lf.wtf/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hearthvale",
+          "item": "https://lf.wtf/hearthvale/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://lf.wtf/hearthvale/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Hearthvale è gratuito?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì. Gira nel browser, non costa nulla e non serve un account. Il tuo regno viene salvato nel tuo browser."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Una persona ha scritto almeno una parte del codice?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Levi ha scritto la richiesta in due messaggi. Le scelte di design, i documenti di design, il codice, i test, la calibrazione del bilanciamento e i playtest sono stati fatti tutti da agenti IA."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Funziona sul telefono?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "È stato costruito e testato per un browser desktop con mouse e tastiera. Forse si carica anche su un telefono, ma nessuno l'ha provato lì."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Si può vincere?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì, raggiungendo il livello regno e costruendo la Carta Reale. È difficile: il bot di bilanciamento non ci è mai arrivato in 240 giornate di gioco, e nessun playtester IA l'ha raggiunto entro il suo limite di tempo. Dopo la vittoria, la modalità sandbox continua."
+          }
+        }
+      ],
+      "inLanguage": "it"
+    }
+  ]
+}
+</script>
+
+<style>
+@font-face{font-family:"Fredoka";src:url(/hearthvale/assets/fredoka.woff2) format("woff2");font-weight:300 700;font-display:swap}
+:root{--cream:#fbf3e2;--paper:#f3e6c8;--paper-2:#ead9b2;--ink:#3b2a1a;--ink-2:#6a5238;--gold:#e6a93a;--gold-d:#b97b19;--red:#c4493a;--leaf:#6f9e3c;--sky:#bfe3f5;
+--round:"Fredoka","Nunito","Segoe UI Rounded","Arial Rounded MT Bold",system-ui,sans-serif;--body:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--w:1180px;--r:28px}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;background:var(--paper)}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 18px/1.65 var(--body)}
+a{color:var(--red);text-decoration-thickness:2px;text-underline-offset:3px}
+a:hover{color:var(--ink)}
+:focus-visible{outline:4px solid var(--gold);outline-offset:3px;border-radius:8px}
+img,video{display:block;max-width:100%;height:auto}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--round);font-weight:700;line-height:1.05;letter-spacing:-.01em;margin:0}
+.btn{display:inline-flex;align-items:center;gap:12px;min-height:56px;padding:10px 30px;border:4px solid var(--ink);border-radius:999px;background:var(--cream);color:var(--ink);font:600 20px/1 var(--round);text-decoration:none;box-shadow:0 6px 0 var(--ink);transition:transform .1s,box-shadow .1s}
+.btn:hover{color:var(--ink);transform:translateY(2px);box-shadow:0 4px 0 var(--ink)}
+.btn:active{transform:translateY(6px);box-shadow:0 0 0 var(--ink)}
+.btn.go{background:var(--gold);font-size:23px;min-height:64px;padding:12px 38px}
+.chip{display:inline-block;background:var(--cream);border:3px solid var(--ink);border-radius:999px;padding:4px 16px;font:600 15px/1.4 var(--round)}
+
+/* top */
+.top{position:sticky;top:0;z-index:20;background:#f3e6c8e8;backdrop-filter:blur(8px);border-bottom:3px solid var(--ink)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:66px}
+.mark{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);font:700 26px/1 var(--round)}
+.mark svg{width:36px;height:36px}
+.top nav{display:flex;align-items:center;gap:24px}
+.top nav a:not(.btn){color:var(--ink-2);text-decoration:none;font:500 17px/1 var(--round);padding:12px 0}
+.top nav a:not(.btn):hover{color:var(--ink)}
+.top .btn{min-height:44px;padding:6px 22px;font-size:17px;box-shadow:0 4px 0 var(--ink)}
+
+/* hero */
+.hero{background:linear-gradient(180deg,var(--sky),#e8f1d6 55%,var(--paper));border-bottom:3px solid var(--ink)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:34px;padding-top:56px;padding-bottom:64px}
+.hero-copy{text-align:center}
+.kick{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--cream);border-radius:999px;padding:6px 18px 7px;font:600 15px/1.3 var(--round)}
+.kick i{width:12px;height:12px;border-radius:50%;background:var(--gold)}
+.hero h1{margin-top:22px;font-size:clamp(64px,11vw,148px);letter-spacing:-.03em;color:var(--cream);-webkit-text-stroke:clamp(6px,.9vw,11px) var(--ink);paint-order:stroke fill;text-shadow:0 8px 0 var(--ink)}
+.tag{margin:18px auto 0;font:600 clamp(24px,3vw,36px)/1.2 var(--round);max-width:820px}
+.tag em{font-style:normal;color:var(--red)}
+.lede{margin:16px auto 0;max-width:720px;color:var(--ink-2)}
+.cta{display:flex;flex-wrap:wrap;justify-content:center;gap:16px 18px;margin-top:28px}
+.screen{position:relative;margin:0;border:5px solid var(--ink);border-radius:var(--r);overflow:hidden;background:#2b2116;box-shadow:0 10px 0 var(--ink),0 30px 60px #3b2a1a40}
+.screen video{width:100%;aspect-ratio:16/9;object-fit:cover}
+.screen .sound{position:absolute;right:18px;bottom:18px;min-height:44px;padding:6px 20px;font-size:16px;box-shadow:0 4px 0 var(--ink);cursor:pointer}
+.screen .sound[aria-pressed="true"]{background:var(--gold)}
+.cap{margin:12px 0 0;text-align:center;font-size:14px;color:var(--ink-2)}
+
+/* numbers */
+.nums{padding:64px 0 24px}
+.nums ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.nums li{background:var(--cream);border:4px solid var(--ink);border-radius:24px;padding:18px 22px 20px;box-shadow:0 6px 0 var(--ink);display:flex;gap:16px;align-items:center}
+.nums .ic{flex:0 0 58px;height:58px;border:3px solid var(--ink);border-radius:18px;display:grid;place-items:center;font-size:30px}
+.nums b{display:block;font:700 40px/1 var(--round)}
+.nums span{display:block;font-size:15px;color:var(--ink-2);line-height:1.35;margin-top:4px}
+.nums .note{margin:16px 0 0;font-size:14px;color:var(--ink-2)}
+
+/* sections */
+section{scroll-margin-top:76px}
+.sec{padding:72px 0}
+.head{margin:0 0 30px}
+.head h2{font-size:clamp(38px,5vw,60px)}
+.head p{margin:12px 0 0;max-width:760px;color:var(--ink-2)}
+.prompt{margin:0 0 34px;background:var(--ink);color:var(--cream);border-radius:var(--r);padding:30px 36px;font:500 21px/1.5 var(--round);position:relative}
+.prompt::before{content:"The request";display:block;margin-bottom:10px;font:600 13px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.prompt p{margin:0}
+.prompt p+p{margin-top:14px;padding-top:14px;border-top:2px dashed #ffffff33;font-size:18px}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}
+.two p{margin:0 0 14px}
+
+/* steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:16px;counter-reset:s}
+.step{display:grid;grid-template-columns:86px minmax(0,1fr) minmax(0,.85fr);gap:24px;align-items:start;background:var(--cream);border:4px solid var(--ink);border-radius:24px;padding:22px 26px;box-shadow:0 6px 0 var(--ink)}
+.step .n{width:72px;height:72px;border:4px solid var(--ink);border-radius:20px;display:grid;place-items:center;font:700 34px/1 var(--round);background:var(--gold)}
+.step:nth-child(2) .n{background:#f6c9bf}.step:nth-child(3) .n{background:#d9efb5}.step:nth-child(4) .n{background:#bfe3f5}.step:nth-child(5) .n{background:#e6d6f5}.step:nth-child(6) .n{background:#ffe4a8}
+.step h3{font-size:28px;margin-bottom:6px}
+.step p{margin:0;color:var(--ink-2)}
+.step code{display:block;font:500 14px/1.6 ui-monospace,"Cascadia Mono",Consolas,monospace;color:var(--ink);background:var(--paper);border:3px dashed var(--ink-2);border-radius:14px;padding:12px 14px;white-space:normal}
+
+/* gallery */
+.shots{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px}
+.shots figure{margin:0}
+.shots img{width:100%;aspect-ratio:16/9;object-fit:cover;border:4px solid var(--ink);border-radius:22px;box-shadow:0 6px 0 var(--ink)}
+.shots figcaption{margin-top:12px;font-size:15px;color:var(--ink-2)}
+.shots .wide{grid-column:1/-1}
+.lapse{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.lapse img{aspect-ratio:4/3}
+
+/* features */
+.feats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.feat{background:var(--cream);border:4px solid var(--ink);border-radius:24px;padding:22px 24px 24px;box-shadow:0 6px 0 var(--ink)}
+.feat h3{font-size:25px;margin-bottom:8px}
+.feat p{margin:0;font-size:16px;color:var(--ink-2)}
+
+/* honest */
+.honest{background:var(--paper-2);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+.honest ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.honest li{background:var(--cream);border:3px solid var(--ink);border-radius:20px;padding:16px 22px}
+.honest li b{font-family:var(--round);font-weight:600;font-size:19px}
+
+/* play */
+.play-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:28px;align-items:start}
+.panel{background:var(--cream);border:4px solid var(--ink);border-radius:var(--r);padding:28px 30px;box-shadow:0 6px 0 var(--ink)}
+.panel p{margin:0 0 18px}
+.keys{margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 18px}
+.keys dt{font:600 17px/1.3 var(--round)}
+.keys dd{margin:0 0 6px;font-size:15px;color:var(--ink-2)}
+kbd{display:inline-block;min-width:26px;padding:0 7px;margin:0 2px 3px 0;border:2px solid var(--ink);border-bottom-width:4px;border-radius:8px;font:600 13px/22px ui-monospace,Consolas,monospace;text-align:center;background:#fff}
+
+/* faq */
+.faq details{background:var(--cream);border:4px solid var(--ink);border-radius:22px;margin-bottom:12px}
+.faq summary{cursor:pointer;list-style:none;padding:18px 24px;font:600 20px/1.3 var(--round)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";float:right;font-size:26px;line-height:1}
+.faq details[open] summary::after{content:"\2212"}
+.faq details p{margin:0;padding:0 24px 20px;color:var(--ink-2)}
+
+.final{padding:72px 0 84px;text-align:center;background:linear-gradient(180deg,var(--paper),#e8f1d6)}
+.final h2{font-size:clamp(48px,8vw,96px);color:var(--cream);-webkit-text-stroke:8px var(--ink);paint-order:stroke fill;text-shadow:0 6px 0 var(--ink)}
+.final p{margin:16px auto 26px;max-width:560px;color:var(--ink-2)}
+
+footer{border-top:3px solid var(--ink);padding:26px 0 8px;color:var(--ink-2);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 28px}
+footer p{margin:0;max-width:760px}
+
+@media (max-width:900px){
+.nums ul,.feats{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.two,.play-grid,.shots{grid-template-columns:minmax(0,1fr)}
+.step{grid-template-columns:72px minmax(0,1fr);gap:10px 18px}
+.step .n{width:60px;height:60px;font-size:28px;grid-row:span 2}
+.step code{grid-column:2}
+}
+@media (max-width:600px){
+body{font-size:17px}
+.wrap{padding:0 16px}
+.top nav a:not(.btn){display:none}
+.nums ul,.feats,.keys{grid-template-columns:minmax(0,1fr)}
+.lapse{grid-template-columns:repeat(2,minmax(0,1fr))}
+.btn.go{width:100%;justify-content:center}
+.prompt{padding:24px 22px;font-size:18px}
+.step{grid-template-columns:minmax(0,1fr)}
+.step .n{grid-row:auto}
+.step code{grid-column:1}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+
+/* i18n:start */
+.i18n{max-width:var(--w,initial);margin:0 auto;padding:26px 22px 40px;display:flex;flex-wrap:wrap;
+gap:6px 14px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.55;
+justify-content:center}
+.i18n a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+.i18n a:hover{border-bottom-color:currentColor}
+.i18n span[aria-current]{opacity:.5;cursor:default}
+/* i18n:end */
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#e6a93a"/><path d="M6 17 16 8l10 9v9H6z" fill="#fbf3e2" stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round"/><path d="M13 26v-6h6v6" fill="#c4493a"/></svg>Hearthvale</a>
+    <nav aria-label="Sezioni">
+      <a href="#experiment">L'esperimento</a>
+      <a href="#made">Come è stato fatto</a>
+      <a href="https://lf.wtf/">lf.wtf</a>
+      <a class="btn go" href="/hearthvale/play/">Gioca</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="title">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="kick"><i aria-hidden="true"></i>Un esperimento con Claude Haiku 5.5</p>
+      <h1 id="title">Hearthvale</h1>
+      <p class="tag">Un accogliente gioco di costruzione di regni in 3D, <em>creato interamente da agenti IA.</em></p>
+      <p class="lede">Traccia strade, costruisci fattorie e dai una casa alla tua gente. Sfamala per quattro stagioni, commercia al mercato, tieni lontani i banditi e trasforma un borgo in un regno. 151 agenti IA lo hanno progettato, costruito, bilanciato e testato in 21 ore, e nessuna persona ha scritto una sola riga del codice.</p>
+      <div class="cta">
+        <a class="btn go" href="/hearthvale/play/">Gioca gratis nel tuo browser <span aria-hidden="true">&#8594;</span></a>
+        <a class="btn" href="#experiment">Scopri l'esperimento</a>
+      </div>
+    </div>
+    <figure class="screen">
+      <video id="trailer" autoplay muted loop playsinline preload="metadata" poster="/hearthvale/assets/poster.jpg" width="1280" height="720" aria-label="Trailer di Hearthvale: la valle, un villaggio che diventa una cittadina, le stagioni che cambiano e i numeri di come lo hanno costruito gli agenti IA">
+        <source src="/hearthvale/assets/hearthvale-trailer-720.mp4" type="video/mp4">
+      </video>
+      <button class="btn sound" type="button" aria-pressed="false" aria-controls="trailer">Audio</button>
+    </figure>
+    <p class="cap">Trailer registrato nel gioco. Anche la musica e gli effetti sonori sono stati generati.</p>
+  </div>
+</section>
+
+<section class="nums wrap" aria-label="In numeri">
+  <ul>
+    <li><span class="ic" style="background:#ffd98a" aria-hidden="true">&#9201;&#65039;</span><div><b>21 ore</b><span>dal primo prompt alla build finale, di cui circa 13,5 con gli agenti al lavoro</span></div></li>
+    <li><span class="ic" style="background:#bfe3f5" aria-hidden="true">&#129302;</span><div><b>151 agenti</b><span>designer, costruttori, tester e producer, organizzati in 17 workflow orchestrati</span></div></li>
+    <li><span class="ic" style="background:#d9efb5" aria-hidden="true">&#127918;</span><div><b>8 playtester IA</b><span>che giocano alla cieca dagli screenshot, in quattro round</span></div></li>
+    <li><span class="ic" style="background:#f6c9bf" aria-hidden="true">&#128220;</span><div><b>14.251 righe</b><span>di codice e test, in 45 moduli di gioco</span></div></li>
+    <li><span class="ic" style="background:#e6d6f5" aria-hidden="true">&#9989;</span><div><b>117 test</b><span>superati, più un bot di bilanciamento con 21 soglie</span></div></li>
+    <li><span class="ic" style="background:#ffe4a8" aria-hidden="true">&#129689;</span><div><b>≈ 5 dollari statunitensi</b><span>di token del modello ai prezzi di listino di Haiku 5.5, una nostra stima su 39,6 milioni di token</span></div></li>
+  </ul>
+  <p class="note">I conteggi vengono dai log della sessione stessa. La cifra in dollari è una stima: i log danno il totale dei token, ma non la ripartizione tra input, output e letture dalla cache.</p>
+</section>
+
+<section class="sec wrap" id="experiment" aria-labelledby="experiment-title">
+  <div class="head">
+    <h2 id="experiment-title">L'esperimento</h2>
+    <p>Una sola domanda: fin dove può arrivare un modello piccolo e veloce su un grande lavoro creativo, se lo lasci andare per tutto il tempo che gli serve, con tutte le copie di sé che vuole?</p>
+  </div>
+  <div class="prompt">
+    <p>&#8220;Please spin up multiple agents, create a 3d web browser kingdom management game. It should be a complete game with resources, economy, population management, etc.&#8221;</p>
+    <p>E, dopo un'ora: &#8220;during your development, use even more subagents to play the game as isolated players, suggest changes / features that would make the game more complete, then implement its suggestions.&#8221;</p>
+  </div>
+  <div class="two">
+    <div>
+      <p>Questo era tutto il brief. Il lavoro è girato in Claude Code su <strong>Claude Haiku 5.5</strong>, il modello attuale più piccolo di Anthropic, al massimo livello di ragionamento e con ultracode attivo. Ultracode permette al modello di pianificare ed eseguire da solo workflow multi-agente, così una conversazione poteva aprirsi in decine di agenti al lavoro in parallelo e poi ricomporsi.</p>
+      <p>Levi ha scritto quei due messaggi e per il resto lo ha lasciato fare. Quando il lavoro arrivava a una questione di design, per esempio se un nuovo regno dovesse partire in pausa, l'agente principale decideva da solo e lo diceva.</p>
+    </div>
+    <div>
+      <p>Gli agenti hanno lavorato come un piccolo studio. Uno ha scritto le regole, altri hanno costruito seguendole, un bot ha giocato migliaia di giornate di gioco per calibrare i numeri, e otto playtester IA, ognuno con una personalità diversa, hanno giocato come farebbe una persona: dagli screenshot e dal testo a schermo, mai dal codice.</p>
+      <p>Dopo ogni round, un agente producer leggeva i loro report, ordinava per priorità cosa cambiare e restituiva il lavoro ai costruttori. Poi i playtester ricominciavano.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec wrap" id="made" aria-labelledby="made-title" style="padding-top:0">
+  <div class="head">
+    <h2 id="made-title">Come è stato fatto</h2>
+    <p>Sei fasi, ognuna un workflow di agenti che il modello ha scritto, avviato e controllato da solo.</p>
+  </div>
+  <ol class="steps">
+    <li class="step">
+      <span class="n" aria-hidden="true">1</span>
+      <div><h3>Progettare</h3><p>Tre designer hanno scritto proposte in competizione: una per la simulazione, una per il giocatore, una per l'ingegneria. Un architetto ha unito il meglio di ciascuna in un documento di design e in un contratto tecnico cresciuto fino a 1.657 righe, e un revisore ne ha controllato ogni nome e ogni numero, correggendo 46 problemi prima che esistesse una riga di codice.</p></div>
+      <code>3 proposte · 1 architetto · 1 revisore · 46 correzioni</code>
+    </li>
+    <li class="step">
+      <span class="n" aria-hidden="true">2</span>
+      <div><h3>Costruire</h3><p>Quattordici agenti hanno costruito il gioco in tre ondate. Ognuno aveva i propri file e scriveva solo secondo il contratto, così nessuno pestava i piedi agli altri: la simulazione, il mondo 3D, gli edifici e gli abitanti, l'interfaccia, il controller e un banco di prova nel browser per i test.</p></div>
+      <code>14 responsabili · 3 ondate · 45 moduli · three.js</code>
+    </li>
+    <li class="step">
+      <span class="n" aria-hidden="true">3</span>
+      <div><h3>Bilanciare</h3><p>Un bot ha giocato senza interfaccia, 20 regni alla volta per 240 giornate di gioco ciascuno, contro 21 soglie di bilanciamento: niente carestie, razzie a cui si sopravvive, un'economia equa, un gioco che si può vincere. I numeri sono stati calibrati finché le soglie non si sono mosse, e al bot è stato insegnato a giocare più come una persona assennata.</p></div>
+      <code>4 bot · 20 seed × 240 giorni · 21 soglie</code>
+    </li>
+    <li class="step">
+      <span class="n" aria-hidden="true">4</span>
+      <div><h3>Testare</h3><p>Otto giocatori IA, da un principiante che non aveva mai giocato a un city builder a uno speedrunner, passando per un costruttore rilassato, un bambino impaziente e un giocatore solo da tastiera, hanno ricevuto ciascuno il proprio browser e nient'altro. Hanno riferito cosa li confondeva, cosa era divertente e cosa volevano.</p></div>
+      <code>8 profili · 4 round · solo screenshot</code>
+    </li>
+    <li class="step">
+      <span class="n" aria-hidden="true">5</span>
+      <div><h3>Correggere</h3><p>Dopo ogni round un producer metteva in ordine i risultati e i costruttori li sistemavano. Da lì vengono il tutorial che si ferma ad aspettarti, gli avvisi che dicono cosa costruire, gli allarmi per le razzie con il conto alla rovescia e i numeri che si spiegano da soli.</p></div>
+      <code>producer · responsabili · test di regressione golden-hash</code>
+    </li>
+    <li class="step">
+      <span class="n" aria-hidden="true">6</span>
+      <div><h3>Verificare</h3><p>Ogni modifica si chiudeva con la suite di test completa, le soglie di bilanciamento e un controllo dal vivo nel browser. Un replay deterministico di 365 giorni viene trasformato in hash e confrontato a ogni esecuzione, così una modifica che altera la simulazione non può passare inosservata.</p></div>
+      <code>117 test · 21 soglie di bilanciamento · controllo dal vivo nel browser</code>
+    </li>
+  </ol>
+</section>
+
+<section class="sec wrap" aria-labelledby="shots-title" style="padding-top:0">
+  <div class="head"><h2 id="shots-title">Che aspetto ha</h2></div>
+  <div class="shots">
+    <figure class="wide"><img src="/hearthvale/assets/town.jpg" width="1600" height="900" alt="Una cittadina low-poly in autunno: tetti rossi e blu intorno a un municipio, un mulino a vento, abitanti per le strade e alberi arancioni" loading="lazy"><figcaption>Una cittadina al suo quarto autunno, fatta crescere dal bot di bilanciamento e caricata nel gioco.</figcaption></figure>
+    <figure><img src="/hearthvale/assets/first-minute.jpg" width="1280" height="720" alt="Il primo minuto di un nuovo regno: il banner del tutorial, la barra delle risorse in alto e gli anelli dorati che indicano dove costruire" loading="lazy"><figcaption>Il primo minuto. L'orologio aspetta che tu abbia tracciato la prima strada.</figcaption></figure>
+    <figure><img src="/hearthvale/assets/kingdom-panel.jpg" width="1280" height="720" alt="Il pannello Regno aperto sopra la cittadina, con popolazione, lavori e cause della felicità" loading="lazy"><figcaption>Il pannello Regno: la gente, l'economia, il mercato e le tue politiche.</figcaption></figure>
+    <figure class="wide"><div class="lapse">
+      <img src="/hearthvale/assets/lapse-1.jpg" width="640" height="480" alt="Primo giorno: un municipio solitario nella valle" loading="lazy">
+      <img src="/hearthvale/assets/lapse-2.jpg" width="640" height="480" alt="Dopo qualche settimana: fattorie, casette e le prime strade" loading="lazy">
+      <img src="/hearthvale/assets/lapse-3.jpg" width="640" height="480" alt="Un villaggio in crescita con un mercato e campi di taglialegna" loading="lazy">
+      <img src="/hearthvale/assets/lapse-4.jpg" width="640" height="480" alt="Una cittadina vivace sparsa per la valle" loading="lazy">
+    </div><figcaption>Un regno, dal primo giorno fino alla cittadina, giocato dal vivo dal bot.</figcaption></figure>
+  </div>
+</section>
+
+<section class="sec wrap" id="game" aria-labelledby="game-title" style="padding-top:0">
+  <div class="head"><h2 id="game-title">Cosa c'è nel gioco</h2><p>Il brief chiedeva un gioco completo con risorse, economia e gestione della popolazione. Ecco cosa hanno deciso gli agenti che volesse dire.</p></div>
+  <div class="feats">
+    <div class="feat"><h3>Sei risorse</h3><p>Cibo, legno, pietra, ferro, merci e oro, prodotti da fattorie, campi di taglialegna, cave, miniere e laboratori. Tutto ha bisogno di lavoratori e di una strada che riporti al municipio.</p></div>
+    <div class="feat"><h3>Un'economia viva</h3><p>Magazzini che si riempiono, spese di manutenzione da pagare, tasse che decidi tu e un mercato i cui prezzi si muovono in base a quello che vendi. Le carovane passano con le loro offerte.</p></div>
+    <div class="feat"><h3>Persone vere</h3><p>Ogni abitante ha un'età, una casa e un lavoro, se ce n'è uno libero. I bambini crescono, gli anziani invecchiano, le famiglie hanno figli e i nuovi arrivati vengono o se ne vanno a seconda di quanto è felice la valle.</p></div>
+    <div class="feat"><h3>La felicità, spiegata</h3><p>Cibo, case, tasse, lavoro, la taverna, la cappella, la stagione e le razzie recenti influenzano l'umore, e il gioco ti dice di quanto.</p></div>
+    <div class="feat"><h3>Quattro stagioni</h3><p>I raccolti crescono in autunno e calano in inverno, quindi fai scorte o patisci la fame. Pioggia, tempeste, neve, alluvioni, siccità, incendi e peste vanno e vengono.</p></div>
+    <div class="feat"><h3>Predoni</h3><p>I banditi arrivano più spesso man mano che cresci. Torri di guardia, caserme e una leva della milizia li tengono fuori, e l'avviso ti dice quanti giorni hai.</p></div>
+    <div class="feat"><h3>Un obiettivo</h3><p>Un tutorial in sei passi, traguardi e quattro livelli, da borgo a regno. Costruisci la Carta Reale per vincere, poi continua a giocare in modalità sandbox.</p></div>
+    <div class="feat"><h3>Una valle tutta tua</h3><p>Ogni mappa è generata da un seed: fiumi, un lago, foreste, pietra, colline ricche di ferro e montagne. Tutta la grafica 3D è fatta con il codice. Non c'è un solo file di modello.</p></div>
+    <div class="feat"><h3>Salvataggi</h3><p>Salvataggio automatico ogni minuto, salvataggio manuale e una copia dell'ultimo, tutto conservato nel tuo browser.</p></div>
+  </div>
+</section>
+
+<section class="sec honest" aria-labelledby="honest-title">
+  <div class="wrap">
+    <div class="head"><h2 id="honest-title">Cosa non ha funzionato</h2><p>È un esperimento, quindi ecco il resto.</p></div>
+    <ul>
+      <li><b>È difficile vincere.</b> Il bot di bilanciamento raggiunge i livelli villaggio e cittadina, ma mai il livello regno in 240 giornate di gioco. 17 delle 21 soglie di bilanciamento sono superate, e le quattro che falliscono riguardano tutte l'arrivo alla fine o il superamento dell'inverno.</li>
+      <li><b>Nessun playtester è arrivato alla corona.</b> Ogni giocatore IA aveva un numero fisso di mosse, e la maggior parte lo ha esaurito tra il giorno 60 e il giorno 164.</li>
+      <li><b>Il primo playtest ha rotto il banco di prova, non il gioco.</b> Otto browser avviati insieme si sono intralciati a vicenda, così sei degli otto giocatori non sono mai entrati. Il banco di prova è stato riscritto e quel round è stato rifatto.</li>
+      <li><b>Una correzione ha rotto i salvataggi.</b> Un nuovo campo è stato aggiunto allo stato del gioco ma non al file di salvataggio, così il caricamento falliva. I test se ne sono accorti nella stessa ora.</li>
+      <li><b>Gli agenti non sanno dire se è divertente.</b> I playtester IA gli hanno dato un voto, ma la vera prova è una persona che ci gioca. Questa parte tocca a te.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec wrap" id="play" aria-labelledby="play-title">
+  <div class="head"><h2 id="play-title">Gioca</h2></div>
+  <div class="play-grid">
+    <div class="panel">
+      <p>Apri il gioco e premi <strong>New kingdom</strong>. Il tutorial ti guida nella tua prima strada, fattoria, casette, campo di taglialegna, mercato e torre di guardia. È pensato per un browser desktop con il mouse.</p>
+      <a class="btn go" href="/hearthvale/play/">Gioca gratis nel tuo browser <span aria-hidden="true">&#8594;</span></a>
+    </div>
+    <dl class="keys panel">
+      <div><dt>Visuale</dt><dd>Trascina per spostarti, trascina col tasto destro per ruotare, rotella per lo zoom. <kbd>Q</kbd><kbd>E</kbd> ruota.</dd></div>
+      <div><dt>Costruire</dt><dd><kbd>B</kbd> menu costruzione, <kbd>R</kbd> strada, <kbd>G</kbd> gira, <kbd>Esc</kbd> stop.</dd></div>
+      <div><dt>Tempo</dt><dd><kbd>Space</kbd> pausa, <kbd>1</kbd><kbd>2</kbd><kbd>3</kbd> velocità.</dd></div>
+      <div><dt>Regno</dt><dd><kbd>K</kbd> gente, economia e politiche, <kbd>H</kbd> aiuto.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="sec wrap faq" id="faq" aria-labelledby="faq-title" style="padding-top:0">
+  <div class="head"><h2 id="faq-title">Domande</h2></div>
+  <details><summary>Hearthvale è gratuito?</summary><p>Sì. Gira nel browser, non costa nulla e non serve un account. Il tuo regno viene salvato nel tuo browser.</p></details>
+  <details><summary>Una persona ha scritto almeno una parte del codice?</summary><p>No. Levi ha scritto la richiesta in due messaggi. Le scelte di design, i documenti di design, il codice, i test, la calibrazione del bilanciamento e i playtest sono stati fatti tutti da agenti IA.</p></details>
+  <details><summary>Funziona sul telefono?</summary><p>È stato costruito e testato per un browser desktop con mouse e tastiera. Forse si carica anche su un telefono, ma nessuno l'ha provato lì.</p></details>
+  <details><summary>Si può vincere?</summary><p>Sì, raggiungendo il livello regno e costruendo la Carta Reale. È difficile: il bot di bilanciamento non ci è mai arrivato in 240 giornate di gioco, e nessun playtester IA l'ha raggiunto entro il suo limite di tempo. Dopo la vittoria, la modalità sandbox continua.</p></details>
+</section>
+
+<section class="final" aria-label="Gioca a Hearthvale">
+  <h2>Hearthvale</h2>
+  <p>La valle ti aspetta, e anche la tua prima strada.</p>
+  <a class="btn go" href="/hearthvale/play/">Gioca gratis nel tuo browser <span aria-hidden="true">&#8594;</span></a>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Hearthvale è un esperimento di <a href="https://lf.wtf/">Levi Foster</a>, realizzato con Claude Haiku 5.5 in Claude Code. Claude è un marchio di Anthropic. Il carattere Fredoka è usato secondo la licenza <a href="/hearthvale/assets/fredoka-OFL.txt">SIL Open Font License</a>.</p>
+    <a href="https://lf.wtf/">lf.wtf</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var v = document.getElementById('trailer');
+  var b = document.querySelector('.screen .sound');
+  if (!v || !b) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { v.removeAttribute('autoplay'); v.pause(); v.controls = true; }
+  b.addEventListener('click', function () {
+    v.muted = !v.muted;
+    b.setAttribute('aria-pressed', String(!v.muted));
+    if (!v.muted && v.paused) v.play();
+  });
+})();
+</script>
+
+<nav class="i18n" aria-label="Language">
+  <a href="/hearthvale/" hreflang="en" lang="en">English</a>
+  <a href="/de/hearthvale/" hreflang="de" lang="de">Deutsch</a>
+  <a href="/es/hearthvale/" hreflang="es" lang="es">Español</a>
+  <a href="/es-mx/hearthvale/" hreflang="es-MX" lang="es-MX">Español (MX)</a>
+  <a href="/fr/hearthvale/" hreflang="fr" lang="fr">Français</a>
+  <span aria-current="true" lang="it">Italiano</span>
+  <a href="/ja/hearthvale/" hreflang="ja" lang="ja">日本語</a>
+  <a href="/ko/hearthvale/" hreflang="ko" lang="ko">한국어</a>
+  <a href="/nl/hearthvale/" hreflang="nl" lang="nl">Nederlands</a>
+  <a href="/pt-br/hearthvale/" hreflang="pt-BR" lang="pt-BR">Português (BR)</a>
+  <a href="/zh-hans/hearthvale/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+</nav>
+</body>
+</html>
