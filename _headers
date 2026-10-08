@@ -42,3 +42,6 @@
 
 /carmeet/assets/*
   Cache-Control: public, max-age=31536000, immutable
+
+/hive/assets/*
+  Cache-Control: public, max-age=31536000, immutable

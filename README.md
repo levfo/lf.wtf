@@ -19,6 +19,7 @@ Levi Foster's site. Plain static HTML, no build step, no framework.
     /grnge/           GRNGE, black-and-white photo prints for iPhone
     /grnge/privacy    
     /carmeet/         Carmeet, the browser car meet (the game itself runs at carmeet.lf.wtf)
+    /hive/            Hive, the hosted MCP hub for AI agents (the product itself runs at hive.lf.wtf)
     robots.txt        
     sitemap.xml       every real URL; update lastmod when a page changes
     _headers          Cloudflare Pages: security headers + immutable asset caching
@@ -68,4 +69,15 @@ still propagating, so the edge cached the old home page under those names for a 
 them, and do not fetch a new asset URL until the page that references it is live on lf.wtf.
 
 Fonts are self-hosted under `assets/fonts/` (Schibsted Grotesk and DM Mono for the home page, Saira
-for Carmeet), all SIL Open Font License, latin subset.
+for Carmeet, Archivo, Space Grotesk and IBM Plex Mono for Hive, the same three faces the Hive app uses), all SIL Open
+Font License, latin subset.
+
+## The Hive page
+
+`/hive/` borrows the Hive app's identity rather than the site's: its sage, ink and orange tokens, the
+seven-cell lattice mark, and the three-part rule under the header, so a visitor arriving from
+hive.lf.wtf recognises the product. The hero lattice is that mark scaled up into six agents around an
+orange hub; a small script sends a message through it every few seconds, pauses off screen, and does
+nothing at all under reduced motion. The message log beside it is ordinary list markup, so the
+translations reach it. Its translations come from one JSON file per locale in `tools/lang/hive_*.json`,
+folded together by `tools/lang/hive.py`.

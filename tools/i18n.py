@@ -64,6 +64,8 @@ PAGES = {
     "grnge/privacy/index.html": "grnge/privacy/",
     #: Carmeet, the browser car meet. The game itself lives at carmeet.lf.wtf; this is its page.
     "carmeet/index.html": "carmeet/",
+    #: Hive, the hosted MCP hub for AI agents. The product runs at hive.lf.wtf; this is its page.
+    "hive/index.html": "hive/",
 }
 
 ATTRS = {"content", "alt", "title", "aria-label", "placeholder"}
