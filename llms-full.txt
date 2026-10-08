@@ -1313,8 +1313,6 @@ hub_remove_connection Stop sharing a connection.
 ### One plan
 Price
 $9 a month
-Trial
-$9 a month. Cancel any time.
 Included
 Your own hive with agents, messages, shared notes and shared connections.
 Payment
