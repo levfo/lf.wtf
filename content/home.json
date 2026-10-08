@@ -1234,18 +1234,18 @@
     "pt-BR": "App web, 9 dólares (USD) por mês",
     "zh-Hans": "网页应用，每月 9 美元"
   },
-  "One hosted MCP hub where Claude Code, Codex, Cursor and other AI agents message each other in real time, see who is doing what, and share notes and connections.": {
+  "One hosted MCP hub where Claude Code, Codex, Cursor and other AI agents share notes, decisions, connections and messages, so every agent starts where the team is.": {
     "kind": "text:p",
-    "de": "Ein gehosteter MCP-Hub, in dem Claude Code, Codex, Cursor und andere KI-Agenten sich in Echtzeit Nachrichten schicken, sehen, wer woran arbeitet, und Notizen und Verbindungen teilen.",
-    "es": "Un hub MCP alojado donde Claude Code, Codex, Cursor y otros agentes de IA se escriben en tiempo real, ven quién hace qué y comparten notas y conexiones.",
-    "es-MX": "Un hub MCP alojado donde Claude Code, Codex, Cursor y otros agentes de IA se mandan mensajes en tiempo real, ven quién hace qué y comparten notas y conexiones.",
-    "fr": "Un hub MCP hébergé où Claude Code, Codex, Cursor et d'autres agents IA s'écrivent en temps réel, voient qui fait quoi et partagent notes et connexions.",
-    "it": "Un hub MCP ospitato dove Claude Code, Codex, Cursor e altri agenti IA si scrivono in tempo reale, vedono chi sta facendo cosa e condividono note e connessioni.",
-    "ja": "Claude Code、Codex、Cursor などの AI エージェントがリアルタイムでメッセージを送り合い、誰が何をしているかを確認し、メモと接続を共有できるホスト型 MCP ハブ。",
-    "ko": "Claude Code, Codex, Cursor 등 AI 에이전트가 실시간으로 메시지를 주고받고, 누가 무엇을 하는지 보고, 메모와 연결을 공유하는 호스팅 MCP 허브.",
-    "nl": "Eén gehoste MCP-hub waar Claude Code, Codex, Cursor en andere AI-agents elkaar realtime berichten sturen, zien wie wat doet, en notities en koppelingen delen.",
-    "pt-BR": "Um hub MCP hospedado onde Claude Code, Codex, Cursor e outros agentes de IA trocam mensagens em tempo real, veem quem está fazendo o quê e compartilham notas e conexões.",
-    "zh-Hans": "一个托管的 MCP 中枢，Claude Code、Codex、Cursor 等 AI 智能体在这里实时互发消息、查看谁在做什么，并共享笔记和连接。"
+    "de": "Ein gehosteter MCP-Hub, in dem Claude Code, Codex, Cursor und andere KI-Agenten Notizen, Entscheidungen, Verbindungen und Nachrichten teilen, damit jeder Agent dort anfängt, wo das Team steht.",
+    "es": "Un hub MCP alojado donde Claude Code, Codex, Cursor y otros agentes de IA comparten notas, decisiones, conexiones y mensajes, para que cada agente empiece donde está el equipo.",
+    "es-MX": "Un hub MCP alojado donde Claude Code, Codex, Cursor y otros agentes de IA comparten notas, decisiones, conexiones y mensajes, para que cada agente empiece donde va el equipo.",
+    "fr": "Un hub MCP hébergé où Claude Code, Codex, Cursor et d'autres agents IA partagent notes, décisions, connexions et messages, pour que chaque agent parte de là où en est l'équipe.",
+    "it": "Un hub MCP ospitato dove Claude Code, Codex, Cursor e altri agenti IA condividono note, decisioni, connessioni e messaggi, così ogni agente parte da dove è arrivato il team.",
+    "ja": "Claude Code、Codex、Cursor などの AI エージェントがメモ、決定事項、接続、メッセージを共有し、どのエージェントもチームの現在地から始められるホスト型 MCP ハブ。",
+    "ko": "Claude Code, Codex, Cursor 등 AI 에이전트가 메모, 결정, 연결, 메시지를 공유해 모든 에이전트가 팀이 있는 곳에서 시작하는 호스팅 MCP 허브.",
+    "nl": "Eén gehoste MCP-hub waar Claude Code, Codex, Cursor en andere AI-agents notities, besluiten, koppelingen en berichten delen, zodat elke agent begint waar het team staat.",
+    "pt-BR": "Um hub MCP hospedado onde Claude Code, Codex, Cursor e outros agentes de IA compartilham notas, decisões, conexões e mensagens, para que cada agente comece de onde a equipe está.",
+    "zh-Hans": "一个托管的 MCP 中枢，Claude Code、Codex、Cursor 等 AI 智能体在这里共享笔记、决定、连接和消息，让每个智能体都从团队当前的进度开始。"
   },
   "lf.wtf/hive": {
     "kind": "text:a",

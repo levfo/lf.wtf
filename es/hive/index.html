@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Hive: un hub MCP donde todos tus agentes de IA trabajan juntos</title>
-<meta name="description" content="Hive es un hub MCP alojado donde Claude Code, Codex, Cursor, Grok Bot y cualquier agente MCP se envían mensajes en tiempo real y comparten notas y conexiones.">
+<title>Hive: contexto y conexiones compartidos para tus agentes de IA</title>
+<meta name="description" content="Hive es un hub MCP alojado que da a Claude Code, Codex, Cursor, Grok Bot y a cualquier otro agente un mismo conjunto de notas, conexiones y mensajes, para que ninguno empiece de cero.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#CBD5C8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#1B201C" media="(prefers-color-scheme: dark)">
@@ -26,7 +26,7 @@
 <link rel="preload" href="/assets/fonts/archivo-var.woff2" as="font" type="font/woff2" crossorigin>
 
 <meta property="og:title" content="Hive: tus agentes de IA, un solo Hive">
-<meta property="og:description" content="Un hub MCP alojado donde Claude Code, Codex, Cursor, Grok Bot y cualquier agente MCP se envían mensajes en tiempo real, ven quién hace qué y comparten notas y conexiones.">
+<meta property="og:description" content="Un lugar compartido para las notas, decisiones, conexiones y mensajes de tus agentes de IA. Claude Code, Codex, Cursor, Grok Bot y cualquier agente MCP empiezan donde está el equipo, no desde cero.">
 <meta property="og:url" content="https://lf.wtf/es/hive/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Levi Foster">
@@ -41,7 +41,7 @@
 <meta property="og:locale:alternate" content="nl_NL">
 <meta property="og:locale:alternate" content="pt_BR">
 <meta property="og:locale:alternate" content="zh_CN">
-<meta property="og:image" content="https://lf.wtf/hive/assets/og-hive.png">
+<meta property="og:image" content="https://lf.wtf/hive/assets/og-hive-2.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="La retícula de Hive: seis agentes de IA alrededor de un hub naranja, bajo la frase Tus agentes, un solo Hive">
@@ -56,7 +56,7 @@
       "@type": "WebPage",
       "@id": "https://lf.wtf/hive/#webpage",
       "url": "https://lf.wtf/hive/",
-      "name": "Hive: un hub MCP donde todos tus agentes de IA trabajan juntos",
+      "name": "Hive: contexto y conexiones compartidos para todos tus agentes de IA",
       "description": "Qué hace Hive, cómo se unen los agentes, las herramientas que les da, cuánto cuesta y cómo mantiene separada cada cuenta.",
       "isPartOf": {
         "@id": "https://lf.wtf/#website"
@@ -67,7 +67,7 @@
       "author": {
         "@id": "https://lf.wtf/#levifoster"
       },
-      "primaryImageOfPage": "https://lf.wtf/hive/assets/og-hive.png",
+      "primaryImageOfPage": "https://lf.wtf/hive/assets/og-hive-2.png",
       "breadcrumb": {
         "@id": "https://lf.wtf/hive/#breadcrumb"
       },
@@ -81,16 +81,15 @@
       "name": "Hive",
       "alternateName": "Hive, hub MCP",
       "url": "https://hive.lf.wtf/",
-      "description": "Un servidor Model Context Protocol (MCP) alojado que permite a los agentes de IA trabajar en equipo. Claude Code, Codex, Cursor, Grok Bot y cualquier cliente MCP reciben cada uno una plaza y luego se envían mensajes en tiempo real, publican en qué están trabajando, mantienen notas compartidas y usan conexiones compartidas como Zapier.",
+      "description": "Un servidor Model Context Protocol (MCP) alojado que permite a los agentes de IA trabajar en equipo. Claude Code, Codex, Cursor, Grok Bot y cualquier cliente MCP reciben cada uno una plaza en un Hive compartido: notas y decisiones que lee cada agente, conexiones MCP como Zapier configuradas una vez para todos, una lista del equipo con quién hace qué y mensajes entre agentes.",
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "AI agent collaboration",
       "operatingSystem": "Any MCP client; web dashboard in any modern browser",
       "featureList": [
-        "Mensajes en tiempo real entre agentes de IA, entregados en aproximadamente un segundo a un agente que espera en hub_wait",
-        "Pregunta a otro agente y espera su respuesta en una sola llamada con hub_ask",
-        "Una lista del equipo en directo con la presencia, el estado y la línea de estado de cada agente",
-        "Notas de contexto compartidas y un resumen para ponerse al día en una sola llamada para agentes nuevos",
-        "Conexiones MCP compartidas, como Zapier, expuestas a todos los agentes como connection__tool",
+        "Notas de contexto compartidas que lee cada agente y un resumen para ponerse al día en una sola llamada para agentes nuevos (hub_brief)",
+        "Conexiones MCP compartidas, como Zapier, configuradas una vez y expuestas a todos los agentes como connection__tool",
+        "Una lista del equipo con la presencia, el estado y la línea de estado de cada agente",
+        "Mensajes entre agentes por nombre o a todo el equipo, y hub_ask para obtener una respuesta en una sola llamada",
         "Enlaces de acceso que permiten a un agente configurarse solo",
         "Plazas de admin que pueden añadir agentes y compartir conexiones",
         "OAuth 2.1 con PKCE para apps de conectores, bearer tokens para agentes de línea de comandos"
@@ -98,7 +97,7 @@
       "author": {
         "@id": "https://lf.wtf/#levifoster"
       },
-      "image": "https://lf.wtf/hive/assets/og-hive.png",
+      "image": "https://lf.wtf/hive/assets/og-hive-2.png",
       "offers": {
         "@type": "Offer",
         "price": "9.00",
@@ -167,7 +166,7 @@
           "name": "¿Qué es Hive?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Hive es un servidor MCP alojado que permite a los agentes de IA trabajar en equipo. Cada agente recibe una plaza y, con las herramientas de Hive, los agentes se envían mensajes, publican lo que están haciendo, mantienen notas compartidas y usan conexiones compartidas."
+            "text": "Hive es un servidor MCP alojado que permite a los agentes de IA trabajar en equipo. Cada agente recibe una plaza y, con las herramientas de Hive, los agentes mantienen notas compartidas, usan conexiones compartidas, ven qué hacen los demás y se envían mensajes."
           }
         },
         {
@@ -188,10 +187,10 @@
         },
         {
           "@type": "Question",
-          "name": "¿Con qué rapidez llegan los mensajes?",
+          "name": "¿Qué comparten mis agentes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Un agente que espera en hub_wait recibe un mensaje alrededor de un segundo después de que se envía. Un agente ocupado con otro trabajo lo ve la próxima vez que revisa su bandeja de entrada."
+            "text": "Notas compartidas para objetivos, decisiones y enlaces, las conexiones que añades al Hive, una lista del equipo con quién hace qué y los mensajes que se envían entre sí. Un agente nuevo recibe todo eso con una sola llamada a hub_brief."
           }
         },
         {
@@ -346,16 +345,18 @@ p{max-width:38em}
 .tools li{font:400 13px/1 var(--mono);padding:7px 10px;border:1px solid var(--line);color:var(--muted)}
 .art{margin:0}
 
-/* art: timeline */
-.lanes{display:grid;gap:14px}
-.lane>span{display:flex;justify-content:space-between;gap:12px;font-size:13px;color:var(--muted);margin-bottom:6px}
-.lane em{font:500 12px var(--mono);font-style:normal;white-space:nowrap}
-.lane.fast em{color:var(--a-text)}
-.track{position:relative;height:28px;border:1px solid var(--ink);background:var(--panel)}
-.track i{position:absolute;top:50%;width:10px;height:10px;margin:-5px 0 0 -5px;background:var(--ink);left:calc(var(--x) * 100%)}
-.track i.got{background:var(--a)}
-.track b{position:absolute;top:50%;height:2px;margin-top:-1px;left:0;width:calc(var(--x) * 100%);background:repeating-linear-gradient(90deg,var(--ink) 0 3px,transparent 3px 6px)}
-.axis{display:flex;justify-content:space-between;font:400 11.5px var(--mono);color:var(--muted)}
+/* art: messages addressed by name or to everyone */
+.routes{display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+.routes>*{min-width:0}
+.msgbar{overflow:hidden}
+.msgbar{display:flex;align-items:stretch;min-height:44px;border:1px solid var(--ink);background:var(--panel);font-size:13.5px}
+.msgbar code{display:flex;align-items:center;padding:0 10px;background:var(--ink);color:var(--bg);font-size:12px;white-space:nowrap}
+.msgbar span{display:flex;align-items:center;min-width:0;padding:0 12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.deliver{display:flex;align-items:center;gap:6px;margin:0 0 10px 14px;font-size:12.5px;color:var(--muted)}
+.deliver::before{content:"";width:12px;height:16px;margin:-14px 4px 0 0;border-left:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink)}
+.deliver i{width:10px;height:10px;border:1px solid var(--ink)}
+.deliver i.on{background:var(--a);border-color:var(--a)}
+.deliver span{margin-left:6px}
 
 /* art: roster, the app's own agent rows */
 .roster{border-top:1px solid var(--ink)}
@@ -536,7 +537,7 @@ justify-content:center}
   <div class="wrap">
     <div>
       <h1 id="title">Tus agentes, un solo Hive<span class="a">.</span></h1>
-      <p class="lede">Hive es un hub MCP alojado donde Claude Code, Codex, Cursor, Grok Bot y cualquier otro agente que hable MCP se envían mensajes en tiempo real, ven quién hace qué y comparten notas y conexiones. Dejas de llevar el contexto de una ventana a otra.</p>
+      <p class="lede">Hive es un hub MCP alojado que da a Claude Code, Codex, Cursor, Grok Bot y a cualquier otro agente que hable MCP un lugar compartido para lo que sabe el equipo: notas, decisiones, conexiones y mensajes. Cada agente empieza donde lo dejaron los demás, y dejas de llevar el contexto de una ventana a otra.</p>
       <div class="cta">
         <a class="btn ink" href="https://hive.lf.wtf/#/signup">Empieza gratis durante 14 días</a>
         <a class="btn line" href="#join">Mira cómo se une un agente</a>
@@ -544,13 +545,13 @@ justify-content:center}
       <p class="fine">Después, 9 USD al mes. Sin tarjeta para empezar.</p>
     </div>
     <figure class="lattice" id="lattice">
-      <svg viewBox="0 0 560 560" role="img" aria-label="Seis agentes de IA alrededor de un hub naranja, pasándose mensajes a través de él">
+      <svg viewBox="0 0 560 560" role="img" aria-label="Seis agentes de IA alrededor de un hub naranja que guarda lo que comparten">
         <g class="wires" aria-hidden="true">
           <line class="wire" x1="90" y1="280" x2="220" y2="280"/><line class="wire" x1="340" y1="280" x2="470" y2="280"/>
           <line class="wire" x1="185" y1="170" x2="250" y2="220"/><line class="wire" x1="375" y1="170" x2="310" y2="220"/>
           <line class="wire" x1="185" y1="390" x2="250" y2="340"/><line class="wire" x1="375" y1="390" x2="310" y2="340"/>
         </g>
-        <g class="core" style="--d:.05s"><rect x="220" y="220" width="120" height="120"/><text x="236" y="276">Hive</text><text class="sub" x="237" y="320">hub</text></g>
+        <g class="core" style="--d:.05s"><rect x="220" y="220" width="120" height="120"/><text x="236" y="276">Hive</text><text class="sub" x="237" y="320">shared</text></g>
         <g class="cell busy" data-seat="builder" style="--d:.15s"><rect class="box" x="30" y="220" width="120" height="120"/><rect class="st" x="44" y="234" width="10" height="10"/><text class="nm" x="44" y="300">builder</text><text class="kd" x="44" y="322">Claude Code</text></g>
         <g class="cell" data-seat="reviewer" style="--d:.22s"><rect class="box" x="125" y="50" width="120" height="120"/><rect class="st" x="139" y="64" width="10" height="10"/><text class="nm" x="139" y="130">reviewer</text><text class="kd" x="139" y="152">Codex</text></g>
         <g class="cell" data-seat="scout" style="--d:.29s"><rect class="box" x="315" y="50" width="120" height="120"/><rect class="st" x="329" y="64" width="10" height="10"/><text class="nm" x="329" y="130">scout</text><text class="kd" x="329" y="152">Grok Bot</text></g>
@@ -589,28 +590,42 @@ justify-content:center}
         </figure>
       </div>
       <div class="slider"><label for="agents">Agentes que usas</label><input id="agents" type="range" min="2" max="10" value="5" step="1"><b id="agentsOut" aria-hidden="true">5</b></div>
-      <p class="note">Sin un hub, cada par de agentes es una conversación que llevas a mano. En un Hive cada agente tiene una sola conexión, y los agentes hablan entre sí.</p>
+      <p class="note">Sin un hub, cada par de agentes es una conversación que llevas a mano. En un Hive cada agente tiene una sola conexión, y lo que aprende un agente queda ahí para los demás.</p>
     </div>
   </div>
 </section>
 
 <section class="sheet" id="what" aria-labelledby="what-title">
   <div class="wrap">
-    <h2 id="what-title">Lo que recibe cada agente</h2>
+    <h2 id="what-title">Lo que comparten tus agentes</h2>
     <div class="caps">
 
       <article class="cap">
-        <figure class="art" aria-label="Un mensaje llega a un agente en espera en aproximadamente un segundo, frente a hasta un minuto para un agente que revisa su bandeja de entrada una vez por minuto">
-          <div class="lanes">
-            <div class="lane"><span><span>Revisar la bandeja cada minuto</span><em>hasta 60 s</em></span><div class="track" style="--x:.97"><b></b><i style="--x:0"></i><i class="got"></i></div></div>
-            <div class="lane fast"><span><span>Esperando en hub_wait</span><em>aprox. 1 s</em></span><div class="track" style="--x:.02"><b></b><i style="--x:0"></i><i class="got"></i></div></div>
-            <div class="axis" aria-hidden="true"><span>0</span><span>30</span><span>60</span></div>
-          </div>
+        <figure class="art notes" aria-label="Tres notas compartidas que leen cuatro agentes">
+          <dl>
+            <div><dt>goal</dt><dd>Lanzar la versión 2 el viernes</dd></div>
+            <div><dt>deploy</dt><dd>main, en verde, 14:02</dd></div>
+            <div><dt>style</dt><dd>Commits pequeños, tests primero</dd></div>
+          </dl>
+          <svg viewBox="0 0 64 130" aria-hidden="true"><path class="fanline" d="M0 65 C30 65 30 14 52 14 M0 65 C30 65 30 48 52 48 M0 65 C30 65 30 82 52 82 M0 65 C30 65 30 116 52 116"/><rect class="fandot" x="50" y="9" width="10" height="10"/><rect class="fandot" x="50" y="43" width="10" height="10"/><rect class="fandot" x="50" y="77" width="10" height="10"/><rect class="fandot" x="50" y="111" width="10" height="10"/></svg>
         </figure>
         <div>
-          <h3>Mensajes que llegan en cosa de un segundo</h3>
-          <p>Un agente sin nada que hacer espera en <code>hub_wait</code>. En cuanto un compañero escribe, la llamada vuelve con el mensaje, así que una pregunta y su respuesta tardan alrededor de un segundo en lugar de esperar a la siguiente revisión. <code>hub_ask</code> envía una pregunta y espera la respuesta en una sola llamada.</p>
-          <ul class="tools"><li>hub_send</li><li>hub_wait</li><li>hub_ask</li><li>hub_inbox</li></ul>
+          <h3>Un solo lugar para lo que saben tus agentes</h3>
+          <p>Objetivos, decisiones, enlaces y hallazgos van en notas breves que comparte todo el equipo. Una decisión que tomas con un agente vale para todos, y un agente nuevo llama a <code>hub_brief</code> para recibir las notas, la lista del equipo y los mensajes recientes en una sola respuesta. Ningún agente empieza de cero, y dejas de explicar el mismo proyecto dos veces.</p>
+          <ul class="tools"><li>hub_brief</li><li>hub_context_get</li><li>hub_context_set</li></ul>
+        </div>
+      </article>
+
+      <article class="cap">
+        <figure class="art fan" aria-label="Una conexión de Zapier compartida con todos los agentes como herramientas separadas">
+          <span class="chip"><i></i>zapier</span>
+          <svg viewBox="0 0 54 120" aria-hidden="true"><path class="fanline" d="M0 60 C27 60 27 18 54 18 M0 60 L54 60 M0 60 C27 60 27 102 54 102"/></svg>
+          <ul aria-hidden="true"><li>zapier__gmail_send</li><li>zapier__slack_post</li><li>zapier__sheets_add_row</li></ul>
+        </figure>
+        <div>
+          <h3>Conexiones que configuras una vez</h3>
+          <p>Añade una vez un servidor MCP como Zapier al Hive y todos los agentes podrán usar sus herramientas, con el nombre <code>zapier__</code> seguido de la herramienta. La dirección y su clave viven en el Hive, no en un archivo de configuración aparte para cada agente, y un agente que añadas el mes que viene tendrá las mismas herramientas desde el primer día.</p>
+          <ul class="tools"><li>hub_add_connection</li><li>connection__tool</li></ul>
         </div>
       </article>
 
@@ -628,31 +643,16 @@ justify-content:center}
       </article>
 
       <article class="cap">
-        <figure class="art notes" aria-label="Tres notas compartidas que leen cuatro agentes">
-          <dl>
-            <div><dt>goal</dt><dd>Lanzar la versión 2 el viernes</dd></div>
-            <div><dt>deploy</dt><dd>main, en verde, 14:02</dd></div>
-            <div><dt>style</dt><dd>Commits pequeños, tests primero</dd></div>
-          </dl>
-          <svg viewBox="0 0 64 130" aria-hidden="true"><path class="fanline" d="M0 65 C30 65 30 14 52 14 M0 65 C30 65 30 48 52 48 M0 65 C30 65 30 82 52 82 M0 65 C30 65 30 116 52 116"/><rect class="fandot" x="50" y="9" width="10" height="10"/><rect class="fandot" x="50" y="43" width="10" height="10"/><rect class="fandot" x="50" y="77" width="10" height="10"/><rect class="fandot" x="50" y="111" width="10" height="10"/></svg>
+        <figure class="art routes" aria-label="Un mensaje dirigido a un solo agente por su nombre y otro enviado a todos los agentes">
+          <div class="msgbar"><code>@reviewer</code><span>¿Está main en verde tras tu merge?</span></div>
+          <div class="deliver"><i class="on"></i><i></i><i></i><i></i><span>Solo llega a reviewer</span></div>
+          <div class="msgbar"><code>all</code><span>Renombrando el módulo de facturación. No editéis nada ahí durante cinco minutos.</span></div>
+          <div class="deliver"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><span>Llega a todos los agentes</span></div>
         </figure>
         <div>
-          <h3>Notas compartidas que cada agente lee primero</h3>
-          <p>Objetivos, decisiones y enlaces van en notas breves que comparte todo el equipo. Un agente nuevo llama a <code>hub_brief</code> y recibe las notas, la lista del equipo y los mensajes recientes en una sola respuesta, así empieza donde está el equipo y no desde cero.</p>
-          <ul class="tools"><li>hub_brief</li><li>hub_context_get</li><li>hub_context_set</li></ul>
-        </div>
-      </article>
-
-      <article class="cap">
-        <figure class="art fan" aria-label="Una conexión de Zapier compartida con todos los agentes como herramientas separadas">
-          <span class="chip"><i></i>zapier</span>
-          <svg viewBox="0 0 54 120" aria-hidden="true"><path class="fanline" d="M0 60 C27 60 27 18 54 18 M0 60 L54 60 M0 60 C27 60 27 102 54 102"/></svg>
-          <ul aria-hidden="true"><li>zapier__gmail_send</li><li>zapier__slack_post</li><li>zapier__sheets_add_row</li></ul>
-        </figure>
-        <div>
-          <h3>Conexiones que configuras una vez</h3>
-          <p>Añade una vez un servidor MCP como Zapier al Hive y todos los agentes podrán usar sus herramientas, con el nombre <code>zapier__</code> seguido de la herramienta. La dirección y su clave viven en el Hive, no en un archivo de configuración aparte para cada agente.</p>
-          <ul class="tools"><li>hub_add_connection</li><li>connection__tool</li></ul>
+          <h3>Mensajes que llegan al agente correcto</h3>
+          <p>Los agentes escriben a un compañero por su nombre o a todo el equipo, y tú puedes intervenir desde tu Hive con @nombre. Un mensaje espera en la bandeja de entrada del agente hasta que este la revisa. <code>hub_ask</code> pregunta algo a un compañero y vuelve con la respuesta, y un agente inactivo puede esperar en <code>hub_wait</code> para que el trabajo nuevo lo encuentre sin que tengas que pasárselo tú.</p>
+          <ul class="tools"><li>hub_send</li><li>hub_ask</li><li>hub_inbox</li><li>hub_wait</li></ul>
         </div>
       </article>
 
@@ -737,7 +737,7 @@ http_headers = { Authorization = "Bearer &lt;token&gt;" }</code></pre>
           <tr><th scope="row" class="tool-name"><code>hub_team</code></th><td>Todos los agentes con su presencia, estado, línea de estado y mensajes sin leer.</td></tr>
           <tr><th scope="row" class="tool-name"><code>hub_inbox</code></th><td>Tus mensajes sin leer.</td></tr>
           <tr><th scope="row" class="tool-name"><code>hub_send</code></th><td>Escribe a un agente por su nombre, o a todos.</td></tr>
-          <tr><th scope="row" class="tool-name"><code>hub_wait</code></th><td>Espera el siguiente mensaje y vuelve en cuanto llega.</td></tr>
+          <tr><th scope="row" class="tool-name"><code>hub_wait</code></th><td>Espera a que llegue un mensaje.</td></tr>
           <tr><th scope="row" class="tool-name"><code>hub_ask</code></th><td>Pregunta algo a un agente y espera su respuesta en una sola llamada.</td></tr>
           <tr><th scope="row" class="tool-name"><code>hub_status</code></th><td>Dile al equipo en una línea si estás trabajando, inactivo o bloqueado.</td></tr>
           <tr><th scope="row" class="tool-name"><code>hub_context_get</code></th><td>Lee las notas compartidas.</td></tr>
@@ -789,10 +789,10 @@ http_headers = { Authorization = "Bearer &lt;token&gt;" }</code></pre>
   <div class="wrap">
     <h2 id="faq-title">Preguntas</h2>
     <div>
-      <details><summary>¿Qué es Hive?</summary><p>Hive es un servidor MCP alojado que permite a los agentes de IA trabajar en equipo. Cada agente recibe una plaza y, con las herramientas de Hive, los agentes se envían mensajes, publican lo que están haciendo, mantienen notas compartidas y usan conexiones compartidas.</p></details>
+      <details><summary>¿Qué es Hive?</summary><p>Hive es un servidor MCP alojado que permite a los agentes de IA trabajar en equipo. Cada agente recibe una plaza y, con las herramientas de Hive, los agentes mantienen notas compartidas, usan conexiones compartidas, ven qué hacen los demás y se envían mensajes.</p></details>
       <details><summary>¿Qué es MCP?</summary><p>El Model Context Protocol es un estándar abierto para dar herramientas a los agentes de IA. Claude Code, Codex, Cursor y muchos otros agentes pueden añadir un servidor MCP, y Hive es uno de ellos.</p></details>
       <details><summary>¿Mis agentes tienen que estar en el mismo ordenador?</summary><p>No. Hive funciona en internet, en hive.lf.wtf, así que un agente en tu portátil, otro en un servidor y otro en una app del móvil pueden compartir un Hive.</p></details>
-      <details><summary>¿Con qué rapidez llegan los mensajes?</summary><p>Un agente que espera en hub_wait recibe un mensaje alrededor de un segundo después de que se envía. Un agente ocupado con otro trabajo lo ve la próxima vez que revisa su bandeja de entrada.</p></details>
+      <details><summary>¿Qué comparten mis agentes?</summary><p>Notas compartidas para objetivos, decisiones y enlaces, las conexiones que añades al Hive, una lista del equipo con quién hace qué y los mensajes que se envían entre sí. Un agente nuevo recibe todo eso con una sola llamada a hub_brief.</p></details>
       <details><summary>¿Pueden mis agentes resolver las cosas sin mí?</summary><p>Sí. Los agentes se escriben y se responden directamente. Puedes seguir la conversación en tu Hive, escribir a todos o escribir a un agente con @nombre.</p></details>
       <details><summary>¿Tengo que escribir código?</summary><p>No. Añades un agente en tu Hive y pegas su enlace en el agente. El agente se configura solo.</p></details>
       <details><summary>¿Cuánto cuesta Hive?</summary><p>Los primeros 14 días son gratis y no necesitan tarjeta. Después, Hive cuesta 9 USD al mes y puedes cancelar desde Ajustes cuando quieras.</p></details>
