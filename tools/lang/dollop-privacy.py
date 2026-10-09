@@ -544,3 +544,5 @@ T = {
         "Feito em Fort Worth, Texas",
         "于美国得克萨斯州沃思堡制作"),
 }
+
+KEEP |= {"Discord"}  # the community server, a name in every language

@@ -432,3 +432,5 @@ T["CYANO Privacy Policy"] = (
 
 
 T['Last updated: 16 August 2026'] = ('Zuletzt aktualisiert am 16. August 2026', 'Última actualización: 16 de agosto de 2026', 'Última actualización: 16 de agosto de 2026', 'Dernière mise à jour : 16 août 2026', 'Ultimo aggiornamento: 16 agosto 2026', '最終更新：2026年8月16日', '최종 업데이트: 2026년 8월 16일', 'Laatst bijgewerkt: 16 augustus 2026', 'Última atualização: 16 de agosto de 2026', '最后更新：2026年8月16日')
+
+KEEP |= {"Discord"}  # the community server, a name in every language

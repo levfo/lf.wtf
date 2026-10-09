@@ -774,3 +774,5 @@ T = {
         "Grátis para baixar, com Fotocópia e Pontilhado, duas camadas, marcador e caneta, e impressões de 1080 px com o carimbo GRNGE. O GRNGE Pro libera todo o resto por 5,99 dólares americanos por mês ou 29,99 por ano, e o plano anual começa com uma semana grátis.",
         "免费下载，可免费使用复印和点描、两层叠层、马克笔和钢笔，以及带 GRNGE 印记的 1080 px 输出。GRNGE Pro 解锁其余全部，每月 5.99 美元或每年 29.99 美元，年度方案首周免费。"),
 }
+
+KEEP |= {"Discord"}  # the community server, a name in every language

@@ -440,5 +440,18 @@
     "nl": "lf.wtf",
     "pt-BR": "lf.wtf",
     "zh-Hans": "lf.wtf"
+  },
+  "Discord": {
+    "kind": "text:a",
+    "de": "Discord",
+    "es": "Discord",
+    "es-MX": "Discord",
+    "fr": "Discord",
+    "it": "Discord",
+    "ja": "Discord",
+    "ko": "Discord",
+    "nl": "Discord",
+    "pt-BR": "Discord",
+    "zh-Hans": "Discord"
   }
 }

@@ -1862,3 +1862,5 @@ T.update({
         "Waarom duurt het ontwikkelen van een foto zo lang?",
         "Por que revelar uma foto demora tanto?", "显影一张照片为什么要这么久？"),
 })
+
+KEEP |= {"Discord"}  # the community server, a name in every language

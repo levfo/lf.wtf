@@ -1065,6 +1065,19 @@
     "pt-BR": "L@LF.WTF",
     "zh-Hans": "L@LF.WTF"
   },
+  "Discord": {
+    "kind": "text:a",
+    "de": "Discord",
+    "es": "Discord",
+    "es-MX": "Discord",
+    "fr": "Discord",
+    "it": "Discord",
+    "ja": "Discord",
+    "ko": "Discord",
+    "nl": "Discord",
+    "pt-BR": "Discord",
+    "zh-Hans": "Discord"
+  },
   "Also here:": {
     "kind": "text:p",
     "de": "Auch hier:",

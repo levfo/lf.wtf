@@ -1091,6 +1091,19 @@
     "pt-BR": "Suporte",
     "zh-Hans": "支持"
   },
+  "Discord": {
+    "kind": "text:a",
+    "de": "Discord",
+    "es": "Discord",
+    "es-MX": "Discord",
+    "fr": "Discord",
+    "it": "Discord",
+    "ja": "Discord",
+    "ko": "Discord",
+    "nl": "Discord",
+    "pt-BR": "Discord",
+    "zh-Hans": "Discord"
+  },
   "CYANO is built by Levi Foster in Fort Worth, Texas": {
     "kind": "text:p",
     "de": "CYANO wird von Levi Foster in Fort Worth, Texas gebaut",

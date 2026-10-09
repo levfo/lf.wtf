@@ -21,5 +21,5 @@ HERE = Path(__file__).resolve().parent
 _parts = {loc: json.loads((HERE / f"system-memory_{loc}.json").read_text(encoding="utf-8")) for loc in LOCALES}
 _english = json.loads((HERE.parent.parent / "content" / "system-memory.json").read_text(encoding="utf-8"))
 
-KEEP = set()
-T = {en: tuple(_parts[loc][en] for loc in LOCALES) for en in _english}
+KEEP = {"Discord"}  # the community server, a name in every language
+T = {en: tuple(_parts[loc][en] for loc in LOCALES) for en in _english if en not in KEEP}

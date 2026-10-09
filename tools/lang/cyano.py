@@ -1402,3 +1402,5 @@ T["No. No account, no analytics, no server, and no networking code of its own. P
         T["No. No account, no analytics, no server, and no networking code of its own. "
           "Photographs never\n      leave your phone. The"],
         T["privacy policy"], T["is one page and says so."]))
+
+KEEP |= {"Discord"}  # the community server, a name in every language

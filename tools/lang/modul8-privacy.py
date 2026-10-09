@@ -696,3 +696,5 @@ T.update({
         "自 1.3 版起，应用不会从任何年龄的任何人那里收集任何东西。如果你是家长或监护人，"
         "并认为你的孩子通过更早的版本向我们提供了个人数据，请与我们联系，我们会将其删除。"),
 })
+
+KEEP |= {"Discord"}  # the community server, a name in every language

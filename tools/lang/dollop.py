@@ -33,3 +33,5 @@ for part in (dollop_a, dollop_b):
     overlap = set(T) & set(part.T)
     assert not overlap, f"duplicated between parts: {sorted(overlap)[:3]}"
     T.update(part.T)
+
+KEEP |= {"Discord"}  # the community server, a name in every language

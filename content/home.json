@@ -376,6 +376,19 @@
     "pt-BR": "GitHub",
     "zh-Hans": "GitHub"
   },
+  "Discord": {
+    "kind": "text:a",
+    "de": "Discord",
+    "es": "Discord",
+    "es-MX": "Discord",
+    "fr": "Discord",
+    "it": "Discord",
+    "ja": "Discord",
+    "ko": "Discord",
+    "nl": "Discord",
+    "pt-BR": "Discord",
+    "zh-Hans": "Discord"
+  },
   "13 elements": {
     "kind": "text:span",
     "de": "13 Elemente",
@@ -1467,6 +1480,19 @@
     "nl": "E-mail komt rechtstreeks bij mij aan.",
     "pt-BR": "O e-mail chega direto para mim.",
     "zh-Hans": "邮件会直接到我这里。"
+  },
+  "Community and support on Discord": {
+    "kind": "text:a",
+    "de": "Community und Support auf Discord",
+    "es": "Comunidad y soporte en Discord",
+    "es-MX": "Comunidad y soporte en Discord",
+    "fr": "Communauté et assistance sur Discord",
+    "it": "Community e supporto su Discord",
+    "ja": "コミュニティとサポートは Discord で",
+    "ko": "커뮤니티와 지원은 Discord에서",
+    "nl": "Community en support op Discord",
+    "pt-BR": "Comunidade e suporte no Discord",
+    "zh-Hans": "Discord 社区与支持"
   },
   "Elsewhere": {
     "kind": "text:h2",

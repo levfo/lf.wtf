@@ -306,3 +306,5 @@ T = {
         "텍사스 포트워스에서 만듦", "Gemaakt in Fort Worth, Texas", "Feito em Fort Worth, Texas",
         "于德克萨斯州沃斯堡制作"),
 }
+
+KEEP |= {"Discord"}  # the community server, a name in every language

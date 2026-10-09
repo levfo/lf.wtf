@@ -981,3 +981,5 @@ T = {
         "Trailer di Carmeet", "Carmeet トレーラー", "Carmeet 트레일러", "Carmeet-trailer",
         "Trailer do Carmeet", "Carmeet 预告片"),
 }
+
+KEEP |= {"Discord"}  # the community server, a name in every language

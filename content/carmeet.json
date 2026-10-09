@@ -1520,6 +1520,19 @@
     "pt-BR": ". Não é afiliado à Electronic Arts, nem endossado ou patrocinado pela Electronic Arts. Need for Speed e Underground são marcas comerciais da Electronic Arts Inc.",
     "zh-Hans": " 的独立粉丝项目，与 Electronic Arts 没有任何关联，也未获得 Electronic Arts 的认可或赞助。Need for Speed 和 Underground 是 Electronic Arts Inc. 的商标。"
   },
+  "Discord": {
+    "kind": "text:a",
+    "de": "Discord",
+    "es": "Discord",
+    "es-MX": "Discord",
+    "fr": "Discord",
+    "it": "Discord",
+    "ja": "Discord",
+    "ko": "Discord",
+    "nl": "Discord",
+    "pt-BR": "Discord",
+    "zh-Hans": "Discord"
+  },
   "How Carmeet was made: the city and cars of Need for Speed: Underground 2, reverse engineered from the PS2 disc and rebuilt as a multiplayer car meet in the browser.": {
     "kind": "ld",
     "de": "Wie Carmeet entstand: die Stadt und die Autos aus Need for Speed: Underground 2, per Reverse Engineering von der PS2-Disc geholt und als Multiplayer-Car-Meet im Browser neu gebaut.",

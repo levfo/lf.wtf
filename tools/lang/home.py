@@ -912,3 +912,11 @@ T.update({
         '一部 5 分钟的 AI 短片，讲述一个语言模型想起一个它从未拥有过的家。剧本、生成、剪辑和配乐都由 Claude Code 通过 Krea MCP 完成。',
     ),
 })
+
+KEEP |= {"Discord"}  # the community server, a name in every language
+T["Community and support on Discord"] = (
+    "Community und Support auf Discord", "Comunidad y soporte en Discord",
+    "Comunidad y soporte en Discord", "Communauté et assistance sur Discord",
+    "Community e supporto su Discord", "コミュニティとサポートは Discord で",
+    "커뮤니티와 지원은 Discord에서", "Community en support op Discord",
+    "Comunidade e suporte no Discord", "Discord 社区与支持")

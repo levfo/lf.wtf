@@ -1793,6 +1793,19 @@
     "pt-BR": "CYANO cianotipia",
     "zh-Hans": "CYANO 蓝晒"
   },
+  "Discord": {
+    "kind": "text:a",
+    "de": "Discord",
+    "es": "Discord",
+    "es-MX": "Discord",
+    "fr": "Discord",
+    "it": "Discord",
+    "ja": "Discord",
+    "ko": "Discord",
+    "nl": "Discord",
+    "pt-BR": "Discord",
+    "zh-Hans": "Discord"
+  },
   "MODUL8 - Glitch Art Effects": {
     "kind": "ld",
     "de": "MODUL8 - Glitch Art Effects",

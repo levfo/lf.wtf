@@ -1936,6 +1936,19 @@
     "pt-BR": "SIL Open Font License",
     "zh-Hans": "SIL Open Font License"
   },
+  "Discord": {
+    "kind": "text:a",
+    "de": "Discord",
+    "es": "Discord",
+    "es-MX": "Discord",
+    "fr": "Discord",
+    "it": "Discord",
+    "ja": "Discord",
+    "ko": "Discord",
+    "nl": "Discord",
+    "pt-BR": "Discord",
+    "zh-Hans": "Discord"
+  },
   "How Hearthvale was made: a 3D kingdom builder designed, built and playtested by 151 AI agents on Claude Haiku 5.5 in 21 hours.": {
     "kind": "ld",
     "de": "So ist Hearthvale entstanden: ein 3D-Königreich-Aufbauspiel, in 21 Stunden entworfen, gebaut und probegespielt von 151 KI-Agenten auf Claude Haiku 5.5.",

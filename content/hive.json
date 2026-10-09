@@ -2638,6 +2638,19 @@
     "pt-BR": ". Claude Code, Codex, Cursor, Grok e Sesame são marcas de seus respectivos donos, citadas aqui só para dizer que o Hive funciona com elas.",
     "zh-Hans": "制作。Claude Code、Codex、Cursor、Grok 和 Sesame 是其各自所有者的商标，此处提及仅为说明 Hive 可与它们配合使用。"
   },
+  "Discord": {
+    "kind": "text:a",
+    "de": "Discord",
+    "es": "Discord",
+    "es-MX": "Discord",
+    "fr": "Discord",
+    "it": "Discord",
+    "ja": "Discord",
+    "ko": "Discord",
+    "nl": "Discord",
+    "pt-BR": "Discord",
+    "zh-Hans": "Discord"
+  },
   "hive.lf.wtf": {
     "kind": "text:a",
     "de": "hive.lf.wtf",

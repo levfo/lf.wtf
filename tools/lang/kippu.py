@@ -606,3 +606,5 @@ T = {
         "Grátis para começar: os dois kana, o primeiro módulo de cada trilha e o Guia de viagem. O Kippu Plus abre todos os módulos, os três jogos e os sete temas, por 9,99 dólares americanos por mês ou 49,99 por ano, com a primeira semana grátis.",
         "免费开始：两套假名、每条路线的第一个模块和旅行指南。Kippu Plus 解锁全部模块、三个游戏和全部七个主题，每月 9.99 美元或每年 49.99 美元，第一周免费。"),
 }
+
+KEEP |= {"Discord"}  # the community server, a name in every language

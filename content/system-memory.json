@@ -2638,6 +2638,19 @@
     "pt-BR": "para Merge With The Machine, feito em colaboração com o Claude no Claude Code e o Krea MCP. Levi faz parte do Krea Creator Program e não recebe pagamento por este filme. Claude é uma marca comercial da Anthropic.",
     "zh-Hans": "为 Merge With The Machine 创作的短片，与 Claude Code 中的 Claude 以及 Krea MCP 合作完成。Levi 是 Krea Creator Program 的成员，未因本片获得报酬。Claude 是 Anthropic 的商标。"
   },
+  "Discord": {
+    "kind": "text:a",
+    "de": "Discord",
+    "es": "Discord",
+    "es-MX": "Discord",
+    "fr": "Discord",
+    "it": "Discord",
+    "ja": "Discord",
+    "ko": "Discord",
+    "nl": "Discord",
+    "pt-BR": "Discord",
+    "zh-Hans": "Discord"
+  },
   "Watch System Memory, an AI short film about a language model that remembers a home it never had, and see how Claude Code made it through the Krea MCP.": {
     "kind": "ld",
     "de": "Sieh dir System Memory an, einen KI-Kurzfilm über ein Sprachmodell, das sich an ein Zuhause erinnert, das es nie hatte, und erfahre, wie Claude Code ihn über das Krea MCP gemacht hat.",
