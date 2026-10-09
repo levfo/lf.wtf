@@ -22,6 +22,7 @@ Levi Foster's site. Plain static HTML, no build step, no framework.
     /hive/            Hive, the hosted MCP hub for AI agents (the product itself runs at hive.lf.wtf)
     /hearthvale/      Hearthvale, a sub-project: a 3D kingdom builder made by AI agents on Claude Haiku 5.5
     /hearthvale/play/ the game itself, a copy of the Hearthvale repo's index.html, src/ and styles/ (English only)
+    /system-memory/   System Memory, a sub-project: an AI short film made with Claude Code and the Krea MCP (the film is embedded from YouTube)
     robots.txt        
     sitemap.xml       every real URL; update lastmod when a page changes
     _headers          Cloudflare Pages: security headers + immutable asset caching

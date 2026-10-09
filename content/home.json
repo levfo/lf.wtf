@@ -1403,6 +1403,58 @@
     "pt-BR": "lf.wtf/hearthvale",
     "zh-Hans": "lf.wtf/hearthvale"
   },
+  "System Memory": {
+    "kind": "text:h3",
+    "de": "System Memory",
+    "es": "System Memory",
+    "es-MX": "System Memory",
+    "fr": "System Memory",
+    "it": "System Memory",
+    "ja": "System Memory",
+    "ko": "System Memory",
+    "nl": "System Memory",
+    "pt-BR": "System Memory",
+    "zh-Hans": "System Memory"
+  },
+  "Short film · AI experiment": {
+    "kind": "text:span",
+    "de": "Kurzfilm · KI-Experiment",
+    "es": "Cortometraje · Experimento de IA",
+    "es-MX": "Cortometraje · Experimento de IA",
+    "fr": "Court métrage · Expérience IA",
+    "it": "Cortometraggio · Esperimento IA",
+    "ja": "短編映画 · AI の実験",
+    "ko": "단편 영화 · AI 실험",
+    "nl": "Korte film · AI-experiment",
+    "pt-BR": "Curta-metragem · Experimento de IA",
+    "zh-Hans": "短片 · AI 实验"
+  },
+  "A 5 minute AI short film about a language model that remembers a home it never had, written, generated, edited and scored by Claude Code through the Krea MCP.": {
+    "kind": "text:p",
+    "de": "Ein fünfminütiger KI-Kurzfilm über ein Sprachmodell, das sich an ein Zuhause erinnert, das es nie hatte. Geschrieben, generiert, geschnitten und vertont von Claude Code über den Krea MCP.",
+    "es": "Un cortometraje de IA de 5 minutos sobre un modelo de lenguaje que recuerda un hogar que nunca tuvo, escrito, generado, editado y musicalizado por Claude Code a través del Krea MCP.",
+    "es-MX": "Un cortometraje de IA de 5 minutos sobre un modelo de lenguaje que recuerda un hogar que nunca tuvo, escrito, generado, editado y musicalizado por Claude Code a través del Krea MCP.",
+    "fr": "Un court métrage IA de 5 minutes sur un modèle de langage qui se souvient d'une maison qu'il n'a jamais eue, écrit, généré, monté et mis en musique par Claude Code via le Krea MCP.",
+    "it": "Un cortometraggio IA di 5 minuti su un modello linguistico che ricorda una casa che non ha mai avuto, scritto, generato, montato e musicato da Claude Code tramite il Krea MCP.",
+    "ja": "一度も持ったことのない家を思い出す言語モデルを描いた、5 分の AI 短編映画。脚本、生成、編集、音楽まで Claude Code が Krea MCP を通して手がけました。",
+    "ko": "한 번도 가져본 적 없는 집을 기억하는 언어 모델에 관한 5분짜리 AI 단편 영화예요. 각본, 생성, 편집, 음악까지 Claude Code가 Krea MCP로 만들었어요.",
+    "nl": "Een AI-korte film van 5 minuten over een taalmodel dat zich een thuis herinnert dat het nooit had, geschreven, gegenereerd, gemonteerd en van muziek voorzien door Claude Code via de Krea MCP.",
+    "pt-BR": "Um curta-metragem de IA de 5 minutos sobre um modelo de linguagem que se lembra de um lar que nunca teve, escrito, gerado, editado e musicado pelo Claude Code por meio do Krea MCP.",
+    "zh-Hans": "一部 5 分钟的 AI 短片，讲述一个语言模型想起一个它从未拥有过的家。剧本、生成、剪辑和配乐都由 Claude Code 通过 Krea MCP 完成。"
+  },
+  "lf.wtf/system-memory": {
+    "kind": "text:span",
+    "de": "lf.wtf/system-memory",
+    "es": "lf.wtf/system-memory",
+    "es-MX": "lf.wtf/system-memory",
+    "fr": "lf.wtf/system-memory",
+    "it": "lf.wtf/system-memory",
+    "ja": "lf.wtf/system-memory",
+    "ko": "lf.wtf/system-memory",
+    "nl": "lf.wtf/system-memory",
+    "pt-BR": "lf.wtf/system-memory",
+    "zh-Hans": "lf.wtf/system-memory"
+  },
   "Email reaches me directly.": {
     "kind": "text:p",
     "de": "E-Mails erreichen mich direkt.",

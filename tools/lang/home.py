@@ -883,3 +883,32 @@ T.update({
         '一款温馨的 3D 王国建造游戏，由 151 个基于 Claude Haiku 5.5 的 AI 智能体在 21 小时内完成设计、开发和试玩。代码没有一行是人写的。',
     ),
 })
+
+# Sub-projects, added 2026-10-09: System Memory, an AI short film.
+KEEP |= {"System Memory", "lf.wtf/system-memory"}
+T.update({
+    'Short film · AI experiment': (
+        'Kurzfilm · KI-Experiment',
+        'Cortometraje · Experimento de IA',
+        'Cortometraje · Experimento de IA',
+        'Court métrage · Expérience IA',
+        'Cortometraggio · Esperimento IA',
+        '短編映画 · AI の実験',
+        '단편 영화 · AI 실험',
+        'Korte film · AI-experiment',
+        'Curta-metragem · Experimento de IA',
+        '短片 · AI 实验',
+    ),
+    'A 5 minute AI short film about a language model that remembers a home it never had, written, generated, edited and scored by Claude Code through the Krea MCP.': (
+        'Ein fünfminütiger KI-Kurzfilm über ein Sprachmodell, das sich an ein Zuhause erinnert, das es nie hatte. Geschrieben, generiert, geschnitten und vertont von Claude Code über den Krea MCP.',
+        'Un cortometraje de IA de 5 minutos sobre un modelo de lenguaje que recuerda un hogar que nunca tuvo, escrito, generado, editado y musicalizado por Claude Code a través del Krea MCP.',
+        'Un cortometraje de IA de 5 minutos sobre un modelo de lenguaje que recuerda un hogar que nunca tuvo, escrito, generado, editado y musicalizado por Claude Code a través del Krea MCP.',
+        "Un court métrage IA de 5 minutes sur un modèle de langage qui se souvient d'une maison qu'il n'a jamais eue, écrit, généré, monté et mis en musique par Claude Code via le Krea MCP.",
+        'Un cortometraggio IA di 5 minuti su un modello linguistico che ricorda una casa che non ha mai avuto, scritto, generato, montato e musicato da Claude Code tramite il Krea MCP.',
+        '一度も持ったことのない家を思い出す言語モデルを描いた、5 分の AI 短編映画。脚本、生成、編集、音楽まで Claude Code が Krea MCP を通して手がけました。',
+        '한 번도 가져본 적 없는 집을 기억하는 언어 모델에 관한 5분짜리 AI 단편 영화예요. 각본, 생성, 편집, 음악까지 Claude Code가 Krea MCP로 만들었어요.',
+        'Een AI-korte film van 5 minuten over een taalmodel dat zich een thuis herinnert dat het nooit had, geschreven, gegenereerd, gemonteerd en van muziek voorzien door Claude Code via de Krea MCP.',
+        'Um curta-metragem de IA de 5 minutos sobre um modelo de linguagem que se lembra de um lar que nunca teve, escrito, gerado, editado e musicado pelo Claude Code por meio do Krea MCP.',
+        '一部 5 分钟的 AI 短片，讲述一个语言模型想起一个它从未拥有过的家。剧本、生成、剪辑和配乐都由 Claude Code 通过 Krea MCP 完成。',
+    ),
+})

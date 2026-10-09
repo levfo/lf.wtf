@@ -68,6 +68,8 @@ PAGES = {
     "hive/index.html": "hive/",
     #: Hearthvale, a sub-project: a kingdom builder made by AI agents. The game itself is /hearthvale/play/, English only.
     "hearthvale/index.html": "hearthvale/",
+    #: System Memory, a sub-project: an AI short film made with Claude Code and the Krea MCP. The film itself is on YouTube.
+    "system-memory/index.html": "system-memory/",
 }
 
 ATTRS = {"content", "alt", "title", "aria-label", "placeholder"}

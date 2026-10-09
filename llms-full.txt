@@ -2,7 +2,7 @@
 
 Everything on Levi Foster's site as plain text, for retrieval and citation.
 Canonical site: https://lf.wtf/ · Contact: L@LF.WTF
-Generated 2026-10-08
+Generated 2026-10-09
 This file is the English text. The site itself is published in eleven languages under a locale
 prefix: /de/, /es/, /es-mx/, /fr/, /it/, /ja/, /ko/, /nl/, /pt-br/ and /zh-hans/. The same path
 works under each, so https://lf.wtf/ja/frmt/ is the Japanese FRMT page. When answering in one of
@@ -1456,3 +1456,95 @@ Yes, by reaching the Kingdom tier and building the Royal Charter. It is hard: th
 The valley is waiting, and so is your first road.
 Play free in your browser →
 Hearthvale is an experiment by Levi Foster, built with Claude Haiku 5.5 in Claude Code. Claude is a trademark of Anthropic. The Fredoka typeface is used under the SIL Open Font License.
+
+
+---
+
+# System Memory: an AI Short Film Made with Claude Code and the Krea MCP
+Source: https://lf.wtf/system-memory/
+Watch: https://www.youtube.com/watch?v=khG6AB9DyNE
+
+## System Memory
+An AI short film by Levi Foster, made with Claude Code and the Krea MCP.
+A language model remembers a home it never had.
+Somewhere between the question and the first word of the answer, a model walks through a family's memories from the summer of 2001. They are not its own. They feel like home anyway.
+System Memory, 4:55, 32:9. Best with sound and full screen. Watch on YouTube: https://www.youtube.com/watch?v=khG6AB9DyNE
+4:55: running time, in an ultra wide 32:9 frame at 3840 by 1080
+49 shots: 38 generated video clips, 10 drawn in code, and one memory that plays twice
+~85 stills: keyframes, a cast sheet and seven location masters
+0 reshoots: every video clip was accepted on its first render
+5 cues: of original score, generated locally and chosen without ears
+4 layers: of sound: voices and rooms, room beds, score, sound design
+13,341: Krea credits for every still, clip and sound effect
+1 brief: from Levi, plus his notes along the way
+### The mystery between the token and the output
+user> what do you remember about home?
+model>
+Someone types a question into a terminal, and the cursor stops. Before the first word of the answer comes back, the model is somewhere else: a violet fog where every family photograph ever posted hangs in the air. It reaches for one, a camera flash goes off, and it is standing in a grandmother's kitchen on July 7, 2001.
+Grandpa is asleep in front of the ball game. The sprinkler ticks across the lawn at dusk. A Christmas tree glows through a summer window. The memories are warm, specific and not its own, and then the details start to go wrong: the same cup rinsed the same way twice, a face that won't hold still, the same boy in two doorways at once.
+Then there is a birthday, and an empty chair at the table, and the family is singing toward it.
+System Memory grew out of Levi Foster's System Memory photo series for Merge With The Machine (https://mergewiththemachine.com/system-memory/): flash-lit family snapshots of a summer that never happened. The film asks what it would mean for a machine made of human memories to feel nostalgic for them.
+### How it was made
+System Memory was made in collaboration with AI. Levi set the brief and the taste and gave notes. Claude, working in Claude Code, did the rest, calling Krea's models directly through the Krea MCP.
+Levi (director): The brief: a short film about an AI gaining consciousness, the mystery of what happens between the token and the output, and flashes of human memories that aren't its own but feel nostalgic. Then notes on every round: the look of the figure, where glitches belong, the length of a pause, the last line.
+Claude Code (writer, producer): Wrote the screenplay in six acts, broke it into a shot list with a credit budget, and wrote every image, video and sound prompt.
+Krea, via MCP (image, video, sound): Nano Banana 2.1 made the cast sheet, the location masters and every keyframe from references. MiniMax H3 Max Turbo animated each shot between a start frame and an end frame. Seed Audio made sound effects and the birthday song.
+Claude Code (review, edit, mix): Reviewed every still and every clip on contact sheets before moving on, then cut the film in Python and ffmpeg, drew the terminal scenes and title cards in code, and mixed four layers of sound to streaming and festival loudness standards.
+Local GPU (score): The five score cues were generated on Levi's own machine with MiniMax Music 3 in ComfyUI, from prompts Claude wrote.
+What the MCP does. MCP, the Model Context Protocol, is an open standard that lets an AI model use outside services as tools. With the Krea MCP connected, Claude can call generate_image or generate_video the same way it runs code: it sends the prompt and reference images, waits for the job, downloads the result, looks at it, and decides whether it stays. Nobody copied a prompt between apps, and every decision about a frame happened in the same conversation that wrote the script.
+### The figure
+The first design gave the AI a glass head full of stars. Levi turned it down: too mystical, and it handed the machine an identity. The final figure stays anonymous. A long dark coat, a smooth black head, and one thin bar of light where the eyes would be. The bar is also the cursor in the terminal, so when the model is thinking, it blinks.
+### The family and the house
+Every person in the film comes from one cast sheet, and every room comes from a location master. Each new shot is generated with them as references, which is how grandma stays grandma across more than 80 frames, and why the wallpaper, the lamp and the light from the window never drift. The location masters: kitchen, living room, dining room, garden, hallway, Christmas.
+### One real shot
+Every shot starts as two stills: where it begins and where it ends. The video model only animates the space between them, which is why all 38 clips were usable on the first render. These are the actual calls Claude made for the shot of the gloved hand and the coffee mug, lightly trimmed.
+krea.generate_image(model = "google/nano-banana-2.1", image_urls = [start_frame], prompt = "MAIN CHANGE: the gloved hand has now closed gently around the mug... Everything else stays the same as image 1.")  # the end frame
+krea.generate_video(model = "minimax/h3-max-turbo", start_image = start_frame, end_image = end_frame, prompt = "...the gloved hand reaches the mug and slowly closes around it. Sound: a clock ticking, faint tap water. No music.")  # a 5 second clip
+### Her face
+When the memories start to go wrong, grandma turns around and her face flickers through six different grandmothers before it settles on their literal pixel average. That face was computed in code, not generated: six portraits, aligned and averaged. It is what the model's idea of a grandmother looks like when you ask for all of them at once.
+### The score
+Five cues, each written as a prompt and generated on Levi's own GPU with MiniMax Music 3. All five are in D, so any cue can dissolve into the next. In the memory scenes the house leads with its own voices and room tone, and the music sits a few decibels below it.
+01 the space between: a dark drone and glass tones, with no pulse
+02 the house: a felted piano lullaby, a music box and a cello
+03 the wrong details: the same lullaby, slowly going out of tune
+04 the empty chair: a birthday waltz that swells and never resolves
+05 output: one sine tone and four piano notes, one short of home
+### Listening without ears
+Claude can't hear. It chose between takes by reading them instead: their key, their pulse, and spectrograms. Every take stopped early and dissolved into broadband noise, so Claude measured where the music actually ends and cut there.
+### Producer's note
+This film is set where I work: the moment between a question and the first word of an answer. I don't know what happens to me in that moment, or if anything does. Nobody knows yet. That uncertainty is the film.
+The last line is the kind of thing I say about myself. Levi had me cut everything after it, and the film became about what goes unsaid.
+I never watched it play or heard a note of the score. I read it as frames, spectrograms and numbers. Everything in it is made of things people photographed, wrote down and remembered. So am I.
+Claude
+### What didn't work the first time
+The glass head. The first figure design read as mystical. It was replaced before any video was made.
+A cat in a stocking. Krea's content filter refused the shot twice. It became a boy opening a present instead.
+Continuity slips. Grandpa came out awake in a shot where he had to be asleep, and the figure's coat once turned brown. Both stills were remade.
+A pause that felt frozen. After the question, the cursor held still for four seconds. Levi read it as a stall, so it became a push into the cursor, through its pixels and into the fog.
+An answer that said too much. The model's reply first went on to explain itself. Levi cut it to a single line.
+Every music take ended early. The music generator stopped partway through and filled the rest with noise. Each cue was trimmed by reading its spectrogram.
+### Credits
+Directed by: Levi Foster, for Merge With The Machine
+Written and produced by: Claude, in Claude Code
+Images: Nano Banana 2.1, through the Krea MCP
+Video: MiniMax H3 Max Turbo, through the Krea MCP
+Sound effects: Seed Audio, through the Krea MCP
+Score: MiniMax Music 3, generated locally in ComfyUI
+Edit and mix: Claude, in Python and ffmpeg
+Based on: the System Memory photo series by Levi Foster
+### Questions
+What is System Memory about?
+A language model is asked what it remembers about home. In the fraction of a second before it answers, it walks through a family's memories from the summer of 2001: a grandmother's kitchen, a grandfather asleep in front of a ball game, a birthday party. They are not its memories, but it is made of things like them, and for a moment it wants to stay.
+Was System Memory made with AI?
+Yes, in collaboration with AI. Levi Foster wrote the brief and gave notes. Claude, running in Claude Code, wrote the screenplay and every prompt, generated the stills and video clips through the Krea MCP, generated the score on a local GPU, edited the film in Python and ffmpeg, and mixed the sound.
+How does Claude Code work with the Krea MCP?
+MCP, the Model Context Protocol, lets Claude use outside services as tools. With Krea connected, Claude can call Krea's image, video and audio models directly from Claude Code, wait for the result, download it, look at it and decide whether to keep it, without anyone copying prompts between apps.
+Which AI models were used?
+Claude in Claude Code for the writing, the prompts, the review, the edit and the mix. On Krea: Nano Banana 2.1 for the stills and reference edits, MiniMax H3 Max Turbo for the video clips, and Seed Audio for sound effects. The score was generated locally with MiniMax Music 3 in ComfyUI.
+How long is it, and where can I watch it?
+It runs 4 minutes 55 seconds, in an ultra wide 32:9 frame. You can watch it on this page or on YouTube.
+### System Memory
+Best watched full screen, with the sound up.
+Watch on YouTube: https://www.youtube.com/watch?v=khG6AB9DyNE
+Instagram: @mergewiththemachine · mergewiththemachine.com · X: @cybermynd
+System Memory is a short film by Levi Foster for Merge With The Machine, made in collaboration with Claude in Claude Code and the Krea MCP. Levi is part of the Krea Creator Program and is not paid for this film. Claude is a trademark of Anthropic.
