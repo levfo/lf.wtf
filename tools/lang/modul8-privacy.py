@@ -697,4 +697,4 @@ T.update({
         "并认为你的孩子通过更早的版本向我们提供了个人数据，请与我们联系，我们会将其删除。"),
 })
 
-KEEP |= {"Discord"}  # the community server, a name in every language
+KEEP |= {"Discord", "X", "Instagram"}  # names, the same in every language

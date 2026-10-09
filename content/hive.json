@@ -2638,6 +2638,32 @@
     "pt-BR": ". Claude Code, Codex, Cursor, Grok e Sesame são marcas de seus respectivos donos, citadas aqui só para dizer que o Hive funciona com elas.",
     "zh-Hans": "制作。Claude Code、Codex、Cursor、Grok 和 Sesame 是其各自所有者的商标，此处提及仅为说明 Hive 可与它们配合使用。"
   },
+  "X": {
+    "kind": "text:a",
+    "de": "X",
+    "es": "X",
+    "es-MX": "X",
+    "fr": "X",
+    "it": "X",
+    "ja": "X",
+    "ko": "X",
+    "nl": "X",
+    "pt-BR": "X",
+    "zh-Hans": "X"
+  },
+  "Instagram": {
+    "kind": "text:a",
+    "de": "Instagram",
+    "es": "Instagram",
+    "es-MX": "Instagram",
+    "fr": "Instagram",
+    "it": "Instagram",
+    "ja": "Instagram",
+    "ko": "Instagram",
+    "nl": "Instagram",
+    "pt-BR": "Instagram",
+    "zh-Hans": "Instagram"
+  },
   "Discord": {
     "kind": "text:a",
     "de": "Discord",

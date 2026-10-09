@@ -307,4 +307,4 @@ T = {
         "于德克萨斯州沃斯堡制作"),
 }
 
-KEEP |= {"Discord"}  # the community server, a name in every language
+KEEP |= {"Discord", "X", "Instagram"}  # names, the same in every language

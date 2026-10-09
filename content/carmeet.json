@@ -1520,6 +1520,32 @@
     "pt-BR": ". Não é afiliado à Electronic Arts, nem endossado ou patrocinado pela Electronic Arts. Need for Speed e Underground são marcas comerciais da Electronic Arts Inc.",
     "zh-Hans": " 的独立粉丝项目，与 Electronic Arts 没有任何关联，也未获得 Electronic Arts 的认可或赞助。Need for Speed 和 Underground 是 Electronic Arts Inc. 的商标。"
   },
+  "X": {
+    "kind": "text:a",
+    "de": "X",
+    "es": "X",
+    "es-MX": "X",
+    "fr": "X",
+    "it": "X",
+    "ja": "X",
+    "ko": "X",
+    "nl": "X",
+    "pt-BR": "X",
+    "zh-Hans": "X"
+  },
+  "Instagram": {
+    "kind": "text:a",
+    "de": "Instagram",
+    "es": "Instagram",
+    "es-MX": "Instagram",
+    "fr": "Instagram",
+    "it": "Instagram",
+    "ja": "Instagram",
+    "ko": "Instagram",
+    "nl": "Instagram",
+    "pt-BR": "Instagram",
+    "zh-Hans": "Instagram"
+  },
   "Discord": {
     "kind": "text:a",
     "de": "Discord",

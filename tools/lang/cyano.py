@@ -1403,4 +1403,4 @@ T["No. No account, no analytics, no server, and no networking code of its own. P
           "Photographs never\n      leave your phone. The"],
         T["privacy policy"], T["is one page and says so."]))
 
-KEEP |= {"Discord"}  # the community server, a name in every language
+KEEP |= {"Discord", "X", "Instagram"}  # names, the same in every language

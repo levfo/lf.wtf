@@ -428,6 +428,32 @@
     "pt-BR": "lf.wtf",
     "zh-Hans": "lf.wtf"
   },
+  "X": {
+    "kind": "text:a",
+    "de": "X",
+    "es": "X",
+    "es-MX": "X",
+    "fr": "X",
+    "it": "X",
+    "ja": "X",
+    "ko": "X",
+    "nl": "X",
+    "pt-BR": "X",
+    "zh-Hans": "X"
+  },
+  "Instagram": {
+    "kind": "text:a",
+    "de": "Instagram",
+    "es": "Instagram",
+    "es-MX": "Instagram",
+    "fr": "Instagram",
+    "it": "Instagram",
+    "ja": "Instagram",
+    "ko": "Instagram",
+    "nl": "Instagram",
+    "pt-BR": "Instagram",
+    "zh-Hans": "Instagram"
+  },
   "Discord": {
     "kind": "text:a",
     "de": "Discord",

@@ -411,4 +411,4 @@ T["FRMT Privacy Policy"] = (
 
 T['Last updated: 4 August 2026'] = ('Zuletzt aktualisiert am 4. August 2026', 'Última actualización: 4 de agosto de 2026', 'Última actualización: 4 de agosto de 2026', 'Dernière mise à jour : 4 août 2026', 'Ultimo aggiornamento: 4 agosto 2026', '最終更新：2026年8月4日', '최종 업데이트: 2026년 8월 4일', 'Laatst bijgewerkt: 4 augustus 2026', 'Última atualização: 4 de agosto de 2026', '最后更新：2026年8月4日')
 
-KEEP |= {"Discord"}  # the community server, a name in every language
+KEEP |= {"Discord", "X", "Instagram"}  # names, the same in every language

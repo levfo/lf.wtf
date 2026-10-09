@@ -1836,4 +1836,4 @@ T.update({
         "GPU 渲染，设备端处理，不上传，无广告"),
 })
 
-KEEP |= {"Discord"}  # the community server, a name in every language
+KEEP |= {"Discord", "X", "Instagram"}  # names, the same in every language

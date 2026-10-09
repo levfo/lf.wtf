@@ -982,4 +982,4 @@ T = {
         "Trailer do Carmeet", "Carmeet 预告片"),
 }
 
-KEEP |= {"Discord"}  # the community server, a name in every language
+KEEP |= {"Discord", "X", "Instagram"}  # names, the same in every language

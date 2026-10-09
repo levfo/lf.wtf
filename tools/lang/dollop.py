@@ -34,4 +34,4 @@ for part in (dollop_a, dollop_b):
     assert not overlap, f"duplicated between parts: {sorted(overlap)[:3]}"
     T.update(part.T)
 
-KEEP |= {"Discord"}  # the community server, a name in every language
+KEEP |= {"Discord", "X", "Instagram"}  # names, the same in every language

@@ -2638,6 +2638,32 @@
     "pt-BR": "para Merge With The Machine, feito em colaboração com o Claude no Claude Code e o Krea MCP. Levi faz parte do Krea Creator Program e não recebe pagamento por este filme. Claude é uma marca comercial da Anthropic.",
     "zh-Hans": "为 Merge With The Machine 创作的短片，与 Claude Code 中的 Claude 以及 Krea MCP 合作完成。Levi 是 Krea Creator Program 的成员，未因本片获得报酬。Claude 是 Anthropic 的商标。"
   },
+  "X": {
+    "kind": "text:a",
+    "de": "X",
+    "es": "X",
+    "es-MX": "X",
+    "fr": "X",
+    "it": "X",
+    "ja": "X",
+    "ko": "X",
+    "nl": "X",
+    "pt-BR": "X",
+    "zh-Hans": "X"
+  },
+  "Instagram": {
+    "kind": "text:a",
+    "de": "Instagram",
+    "es": "Instagram",
+    "es-MX": "Instagram",
+    "fr": "Instagram",
+    "it": "Instagram",
+    "ja": "Instagram",
+    "ko": "Instagram",
+    "nl": "Instagram",
+    "pt-BR": "Instagram",
+    "zh-Hans": "Instagram"
+  },
   "Discord": {
     "kind": "text:a",
     "de": "Discord",

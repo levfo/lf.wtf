@@ -913,7 +913,7 @@ T.update({
     ),
 })
 
-KEEP |= {"Discord"}  # the community server, a name in every language
+KEEP |= {"Discord", "X", "Instagram"}  # names, the same in every language
 T["Community and support on Discord"] = (
     "Community und Support auf Discord", "Comunidad y soporte en Discord",
     "Comunidad y soporte en Discord", "Communauté et assistance sur Discord",
