@@ -51,3 +51,6 @@
 
 /system-memory/assets/*
   Cache-Control: public, max-age=31536000, immutable
+
+/riposte/assets/*
+  Cache-Control: public, max-age=31536000, immutable

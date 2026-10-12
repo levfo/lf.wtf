@@ -920,3 +920,13 @@ T["Community and support on Discord"] = (
     "Community e supporto su Discord", "コミュニティとサポートは Discord で",
     "커뮤니티와 지원은 Discord에서", "Community en support op Discord",
     "Comunidade e suporte no Discord", "Discord 社区与支持")
+
+
+# RIPOSTE, added 2026-10-12: element 14; keep existing element numbers stable.
+KEEP |= {"RIPOSTE", "lf.wtf/riposte", "riposte.lf.wtf"}
+T["14, one per work"] = tuple(v.replace("13", "14") for v in T["13, one per work"])
+T["14 elements"] = tuple(v.replace("13", "14") for v in T["13 elements"])
+import json as _riposte_json
+from pathlib import Path as _RipostePath
+_riposte_desc = "A free first-person sword fighting game. Online 1v1 duels in a low-poly dark fantasy arena."
+T[_riposte_desc] = tuple(_riposte_json.loads((_RipostePath(__file__).parent / f"riposte_{loc}.json").read_text(encoding="utf-8"))[_riposte_desc] for loc in ["de", "es", "es-MX", "fr", "it", "ja", "ko", "nl", "pt-BR", "zh-Hans"])

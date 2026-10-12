@@ -18,6 +18,7 @@ Levi Foster's site. Plain static HTML, no build step, no framework.
     /kippu/privacy    
     /grnge/           GRNGE, black-and-white photo prints for iPhone
     /grnge/privacy    
+    /riposte/        RIPOSTE, first-person 1v1 sword fighting (the game runs at riposte.lf.wtf)
     /carmeet/         Carmeet, the browser car meet (the game itself runs at carmeet.lf.wtf)
     /hive/            Hive, the hosted MCP hub for AI agents (the product itself runs at hive.lf.wtf)
     /hearthvale/      Hearthvale, a sub-project: a 3D kingdom builder made by AI agents on Claude Haiku 5.5

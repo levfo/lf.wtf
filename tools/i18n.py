@@ -64,6 +64,7 @@ PAGES = {
     "grnge/privacy/index.html": "grnge/privacy/",
     #: Carmeet, the browser car meet. The game itself lives at carmeet.lf.wtf; this is its page.
     "carmeet/index.html": "carmeet/",
+    "riposte/index.html": "riposte/",
     #: Hive, the hosted MCP hub for AI agents. The product runs at hive.lf.wtf; this is its page.
     "hive/index.html": "hive/",
     #: Hearthvale, a sub-project: a kingdom builder made by AI agents. The game itself is /hearthvale/play/, English only.
@@ -377,6 +378,15 @@ def build_page(source, locale, page_url, table):
     pairs = [(v, lookup[v]) for v in occurrences(source) if lookup.get(v, v) != v]
     out, misses = _apply_text(source, pairs)
     out = _apply_ld(out, dict(table), hreflang)
+
+    # Keep the new game's portfolio journey in the language the visitor chose.
+    # Only anchors change; the shared VideoGame entity keeps its stable English @id.
+    if locale != "en" and page_url in {"", "riposte/"}:
+        out = out.replace('href="https://lf.wtf/riposte/"',
+                          f'href="{_canonical(locale, "riposte/")}"')
+        if page_url == "riposte/":
+            out = out.replace('href="https://lf.wtf/"',
+                              f'href="{_canonical(locale, "")}"')
 
     out = re.sub(r'<html lang="[^"]*"', f'<html lang="{hreflang}"', out, count=1)
     out = re.sub(r'<link rel="canonical" href="[^"]*">',

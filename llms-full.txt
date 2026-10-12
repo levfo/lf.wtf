@@ -1549,3 +1549,8 @@ Best watched full screen, with the sound up.
 Watch on YouTube: https://www.youtube.com/watch?v=khG6AB9DyNE
 Instagram: @mergewiththemachine · mergewiththemachine.com · X: @cybermynd
 System Memory is a short film by Levi Foster for Merge With The Machine, made in collaboration with Claude in Claude Code and the Krea MCP. Levi is part of the Krea Creator Program and is not paid for this film. Claude is a trademark of Anthropic.
+
+
+## RIPOSTE
+
+[RIPOSTE](https://lf.wtf/riposte/): A free first-person online sword fighting game for desktop browsers, played at https://riposte.lf.wtf/. Two players duel, first to three round wins. Low-poly dark fantasy graphics inspired by the PS1 era. Combat includes slash, stab, overhead, parry, counter, feint, alternate swing, kick and punch. Public matchmaking, Elo ranks, match statistics, levels and achievement cosmetics. Private lobbies use shareable links and do not award ranked progression. A short old-man trainer introduction teaches the controls. Keyboard and mouse; no download. Guests can try the game; an account saves progression. Built by Levi Foster.
