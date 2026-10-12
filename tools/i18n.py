@@ -387,6 +387,11 @@ def build_page(source, locale, page_url, table):
         if page_url == "riposte/":
             out = out.replace('href="https://lf.wtf/"',
                               f'href="{_canonical(locale, "")}"')
+    if page_url == "riposte/":
+        # An explicit site-language choice travels into the game. Its own picker
+        # remains available, and visits to the bare game URL still autodetect.
+        out = re.sub(r'href="https://riposte\.lf\.wtf/(?:\?lang=[^"&]+)?"',
+                     f'href="https://riposte.lf.wtf/?lang={locale}"', out)
 
     out = re.sub(r'<html lang="[^"]*"', f'<html lang="{hreflang}"', out, count=1)
     out = re.sub(r'<link rel="canonical" href="[^"]*">',
