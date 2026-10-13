@@ -277,13 +277,13 @@ It is also why the settings feel live: you are dragging the real image on your o
 Video too
 
 ### Clips and loops, not just stills.
-Open a video clip and watch it play through your effects, then trim up to a minute and save it at 1080p or 4K with its sound. Or turn a still into a three-second loop. Any setting can drift, step or sweep on its own, and loops and videos carry the movement: the tracking drifts, the channels breathe. Video and loops come with Premium.
+Open a video clip and watch it play through your effects, then trim it to any length and save it at 1080p, or in 4K when the clip is 4K, with its sound. Turn on Sync to Audio and the effects hit with the beat, a clap, a slammed door. Or turn a still into a three-second loop. Any setting can drift, step or sweep on its own, and loops and videos carry the movement: the tracking drifts, the channels breathe. Video and loops come with Premium.
 The deal
 
 ### Free. Premium is optional.
 The nineteen classic effects, the layers and the built-in presets work without a subscription, and there are no ads. Premium adds everything new in 2.0 and bigger exports. You can try any Premium feature on your own photo first: only saving asks.
 - Free 19 classic effects, layers, the built-in presets, saves at 1024 pixels, no ads
-- Premium Video, the ten new effects, settings that move, date stamps, masks, the Dead Air and Y2K preset packs, exports at 2048 pixels and 4K, three-second loops
+- Premium Video with Sync to Audio, the ten new effects, settings that move, date stamps, masks, the Dead Air and Y2K preset packs, exports at 2048 pixels and 4K, three-second loops
 - Plans Monthly or yearly. The yearly plan starts with a 7-day free trial, and the app shows prices in your own currency.
 Questions
 
@@ -302,7 +302,7 @@ Most of them lay a fixed pattern over whatever you give them, so every photo com
 No. Everything is processed on your iPhone and nothing is uploaded. There is no render queue and no server holding your images, and there are no ads.
 
 ### Can it make glitch videos?
-Yes. Open a clip, trim it to a minute or less and save it at 1080p or 4K with its sound. You can also turn a still into a three-second loop, with any setting drifting, stepping or sweeping across it. Video and loops come with Premium.
+Yes. Open a clip, trim it to any length and save it at 1080p, or in 4K when the clip is 4K, with its sound. Sync to Audio makes the effects pulse with the beat. You can also turn a still into a three-second loop, with any setting drifting, stepping or sweeping across it. Video and loops come with Premium.
 
 ### Which iPhones does it work on?
 Any iPhone running iOS 17 or later. The app is about 4 MB.

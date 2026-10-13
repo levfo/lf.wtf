@@ -1837,3 +1837,173 @@ T.update({
 })
 
 KEEP |= {"Discord", "X", "Instagram"}  # names, the same in every language
+
+
+# ---------------------------------------------------------------- 2.1
+#
+# Video of any length, 4K only from a 4K clip, and Sync to Audio. The feature is named with the
+# app's own label in each language (Im Takt, Al ritmo, Au rythme, A tempo, 音に合わせる,
+# 소리에 맞추기, Op het ritme, No ritmo, 跟随声音), as on the App Store listing.
+T.update({
+    "Video of any length, saved at 1080p, or in 4K when the clip is 4K, with its sound": (
+        "Video in jeder Länge, gesichert in 1080p, oder in 4K, wenn der Clip 4K ist, mit Ton",
+        "Vídeo de cualquier duración, guardado en 1080p, o en 4K si el clip es 4K, con su sonido",
+        "Video de cualquier duración, guardado en 1080p, o en 4K si el clip es 4K, con su sonido",
+        "Vidéo de n'importe quelle durée, enregistrée en 1080p, ou en 4K si le clip est en 4K, avec le son",
+        "Video di qualsiasi durata, salvato in 1080p, o in 4K se la clip è in 4K, con il suo audio",
+        "長さ無制限の動画を、音声付きのまま 1080p で保存。4K のクリップなら 4K でも",
+        "길이 제한 없는 동영상을 소리와 함께 1080p로 저장. 4K 클립이라면 4K로도",
+        "Video van elke lengte, bewaard in 1080p, of in 4K als de clip 4K is, met geluid",
+        "Vídeo de qualquer duração, salvo em 1080p, ou em 4K se o clipe for 4K, com o som",
+        "任意长度的视频，连同声音以 1080p 保存；4K 片段还能以 4K 保存"),
+    "Sync to Audio: effects that pulse with the beat of the clip's sound": (
+        "„Im Takt“: Effekte, die mit dem Beat im Ton des Clips pulsieren",
+        "«Al ritmo»: efectos que laten con el ritmo del sonido del clip",
+        "“Al ritmo”: efectos que laten con el ritmo del sonido del clip",
+        "« Au rythme » : des effets qui pulsent avec le beat du son du clip",
+        "«A tempo»: effetti che pulsano con il ritmo dell'audio della clip",
+        "「音に合わせる」：クリップの音のビートに合わせて弾けるエフェクト",
+        "‘소리에 맞추기’: 클립 소리의 비트에 맞춰 튀는 효과",
+        "‘Op het ritme’: effecten die meepulseren met de beat in het geluid van de clip",
+        "“No ritmo”: efeitos que pulsam com a batida do som do clipe",
+        "“跟随声音”：随片段声音的节拍跳动的效果"),
+    "Open a video clip and watch it play through your effects, then trim it to any length and "
+    "save it at 1080p, or in 4K when the clip is 4K, with its sound. Turn on Sync to Audio and "
+    "the effects hit with the beat, a clap, a slammed door. Or turn a still into a three-second "
+    "loop. Any setting can drift, step or sweep on its own, and loops and videos carry the "
+    "movement: the tracking drifts, the channels breathe. Video and loops come with Premium.": (
+        "Öffne einen Videoclip und sieh zu, wie er durch deine Effekte läuft, dann kürze ihn auf "
+        "jede beliebige Länge und sichere ihn mit Ton in 1080p, oder in 4K, wenn der Clip 4K ist. "
+        "Schalte „Im Takt“ ein, und die Effekte schlagen mit dem Beat zu, mit einem Klatschen, "
+        "einer zuschlagenden Tür. Oder mach aus einem Standbild einen Loop von drei Sekunden. "
+        "Jeder Regler kann von selbst driften, springen oder schwingen, und Loops und Videos "
+        "nehmen die Bewegung mit: Die Spur driftet, die Kanäle atmen. Video und Loops gibt es mit "
+        "Premium.",
+        "Abre un clip de vídeo y míralo reproducirse a través de tus efectos, luego recórtalo al "
+        "largo que quieras y guárdalo con su sonido en 1080p, o en 4K si el clip es 4K. Activa "
+        "«Al ritmo» y los efectos golpean con el beat, una palmada, un portazo. O convierte una "
+        "foto fija en un bucle de tres segundos. Cualquier control puede derivar, saltar o barrer "
+        "por sí solo, y los bucles y los vídeos conservan el movimiento: el tracking deriva, los "
+        "canales respiran. El vídeo y los bucles vienen con Premium.",
+        "Abre un clip de video y míralo reproducirse a través de tus efectos, luego recórtalo al "
+        "largo que quieras y guárdalo con su sonido en 1080p, o en 4K si el clip es 4K. Activa "
+        "“Al ritmo” y los efectos golpean con el beat, un aplauso, un portazo. O convierte una "
+        "foto fija en un bucle de tres segundos. Cualquier control puede derivar, saltar o barrer "
+        "por sí solo, y los bucles y los videos conservan el movimiento: el tracking deriva, los "
+        "canales respiran. El video y los bucles vienen con Premium.",
+        "Ouvrez un clip vidéo et regardez-le passer à travers vos effets, puis coupez-le à la "
+        "longueur voulue et enregistrez-le avec le son en 1080p, ou en 4K si le clip est en 4K. "
+        "Activez « Au rythme » et les effets frappent avec le beat, un clap, une porte qui "
+        "claque. Ou transformez une image fixe en boucle de trois secondes. N'importe quel réglage "
+        "peut dériver, sauter ou balayer tout seul, et les boucles comme les vidéos gardent le "
+        "mouvement : la piste dérive, les canaux respirent. La vidéo et les boucles viennent avec "
+        "Premium.",
+        "Apri una clip video e guardala scorrere attraverso i tuoi effetti, poi tagliala della "
+        "lunghezza che vuoi e salvala con il suo audio in 1080p, o in 4K se la clip è in 4K. "
+        "Attiva «A tempo» e gli effetti battono con il ritmo, un applauso, una porta sbattuta. "
+        "Oppure trasforma una foto in un loop di tre secondi. Qualsiasi controllo può oscillare, "
+        "andare a scatti o spazzare da solo, e loop e video si portano dietro il movimento: il "
+        "tracking deriva, i canali respirano. Video e loop arrivano con Premium.",
+        "動画のクリップを開くと、エフェクトを通した映像がそのまま再生されます。好きな長さに"
+        "トリミングして、音声付きのまま 1080p で保存できます。4K のクリップなら 4K でも。"
+        "「音に合わせる」をオンにすると、ビートや手拍子、ドアの音に合わせてエフェクトが弾けます。"
+        "あるいは静止画を 3 秒のループにすることも。どのパラメータもゆらぎ、ステップ、スイープで"
+        "ひとりでに動かせて、ループにも動画にもその動きが残ります。トラッキングは漂い、"
+        "チャンネルは呼吸します。動画とループは Premium の機能です。",
+        "동영상 클립을 열면 효과를 거친 영상이 그대로 재생되고, 원하는 길이로 잘라 소리와 함께 "
+        "1080p로 저장할 수 있습니다. 4K 클립이라면 4K로도 저장됩니다. ‘소리에 맞추기’를 켜면 "
+        "비트, 박수, 문 닫히는 소리에 맞춰 효과가 튑니다. 또는 정지 사진을 3초 루프로 만들 수도 "
+        "있습니다. 어떤 설정이든 스스로 흔들리고, 계단처럼 바뀌고, 쓸고 지나가게 할 수 있으며, "
+        "루프와 동영상에는 그 움직임이 그대로 담깁니다. 트래킹은 흘러가고, 채널은 숨을 쉽니다. "
+        "동영상과 루프는 Premium 기능입니다.",
+        "Open een videoclip en zie hem door je effecten spelen, knip hem dan op elke gewenste "
+        "lengte en bewaar hem met geluid in 1080p, of in 4K als de clip 4K is. Zet ‘Op het ritme’ "
+        "aan en de effecten slaan mee met de beat, een klap, een dichtslaande deur. Of maak van "
+        "een stilstaand beeld een loop van drie seconden. Elke regelaar kan vanzelf zweven, "
+        "verspringen of zwaaien, en loops en video's nemen de beweging mee: de tracking zweeft, "
+        "de kanalen ademen. Video en loops komen met Premium.",
+        "Abra um clipe de vídeo e veja ele rodar através dos seus efeitos, depois corte do "
+        "tamanho que quiser e salve com o som em 1080p, ou em 4K se o clipe for 4K. Ative “No "
+        "ritmo” e os efeitos batem junto com a música, uma palma, uma porta batendo. Ou "
+        "transforme uma foto parada num loop de três segundos. Qualquer controle pode oscilar, "
+        "pular ou varrer sozinho, e loops e vídeos levam o movimento junto: o tracking deriva, os "
+        "canais respiram. Vídeo e loops vêm com o Premium.",
+        "打开一段视频，就能看着它穿过你的效果实时播放。可以剪成任意长度，连同声音以 1080p "
+        "保存；4K 片段还能以 4K 保存。打开“跟随声音”，效果会随着节拍、拍手、关门声跳动。也可以"
+        "把一张静态图做成三秒循环动画。任何参数都能自己漂移、跳变或扫动，循环动画和视频都会"
+        "带着这种运动：跟踪在漂，通道在呼吸。视频和循环动画随 Premium 提供。"),
+    "Video with Sync to Audio, the ten new effects, settings that move, date stamps, masks, the "
+    "Dead Air and Y2K preset packs, exports at 2048 pixels and 4K, three-second loops": (
+        "Video mit „Im Takt“, die zehn neuen Effekte, Regler, die sich von selbst bewegen, "
+        "Datumsstempel, Masken, die Preset-Pakete Sendepause und Y2K, Export in 2048 Pixeln und "
+        "4K, Loops von drei Sekunden",
+        "Vídeo con «Al ritmo», los diez efectos nuevos, controles que se mueven solos, marcas de "
+        "fecha, máscaras, los paquetes de preajustes Fin de emisión e Y2K, exportación a 2048 "
+        "píxeles y 4K, bucles de tres segundos",
+        "Video con “Al ritmo”, los diez efectos nuevos, controles que se mueven solos, marcas de "
+        "fecha, máscaras, los paquetes de preajustes Fuera del aire y Y2K, exportación a 2048 "
+        "píxeles y 4K, bucles de tres segundos",
+        "La vidéo avec « Au rythme », les dix nouveaux effets, des réglages qui bougent tout "
+        "seuls, les dates incrustées, les masques, les packs de préréglages Blanc d'antenne et "
+        "Y2K, l'export en 2048 pixels et en 4K, les boucles de trois secondes",
+        "Video con «A tempo», i dieci nuovi effetti, controlli che si muovono da soli, date "
+        "impresse, maschere, i pack di preset Fuori onda e Y2K, esportazione a 2048 pixel e 4K, "
+        "loop di tre secondi",
+        "「音に合わせる」付きの動画、新しい 10 のエフェクト、ひとりでに動くパラメータ、日付"
+        "スタンプ、マスク、プリセットパック「放送事故」と「Y2K」、2048 ピクセルと 4K での書き"
+        "出し、3 秒のループ",
+        "‘소리에 맞추기’가 있는 동영상, 새 효과 10가지, 스스로 움직이는 설정, 날짜 스탬프, "
+        "마스킹, 방송 사고와 Y2K 프리셋 팩, 2048픽셀과 4K 내보내기, 3초 루프",
+        "Video met ‘Op het ritme’, de tien nieuwe effecten, regelaars die vanzelf bewegen, "
+        "datumstempels, maskers, de presetpakketten Storing en Y2K, export in 2048 pixels en 4K, "
+        "loops van drie seconden",
+        "Vídeo com “No ritmo”, os dez efeitos novos, controles que se mexem sozinhos, carimbos de "
+        "data, máscaras, os pacotes de presets Fora do ar e Y2K, exportação em 2048 pixels e 4K, "
+        "loops de três segundos",
+        "带“跟随声音”的视频、十种新效果、会自己动的参数、日期水印、蒙版、“停播”和“千禧”预设"
+        "合集、2048 像素与 4K 导出、三秒循环动画"),
+    "Yes. Open a clip, trim it to any length and save it at 1080p, or in 4K when the clip is 4K, "
+    "with its sound. Sync to Audio makes the effects pulse with the beat. You can also turn a "
+    "still into a three-second loop, with any setting drifting, stepping or sweeping across it. "
+    "Video and loops come with Premium.": (
+        "Ja. Öffne einen Clip, kürze ihn auf jede beliebige Länge und sichere ihn mit Ton in "
+        "1080p, oder in 4K, wenn der Clip 4K ist. Mit „Im Takt“ pulsieren die Effekte mit dem "
+        "Beat. Du kannst auch aus einem Standbild einen Loop von drei Sekunden machen, in dem "
+        "jeder Regler driftet, springt oder schwingt. Video und Loops gibt es mit Premium.",
+        "Sí. Abre un clip, recórtalo al largo que quieras y guárdalo con su sonido en 1080p, o en "
+        "4K si el clip es 4K. Con «Al ritmo» los efectos laten con el beat. También puedes "
+        "convertir una foto fija en un bucle de tres segundos, con cualquier control derivando, "
+        "saltando o barriendo a lo largo de él. El vídeo y los bucles vienen con Premium.",
+        "Sí. Abre un clip, recórtalo al largo que quieras y guárdalo con su sonido en 1080p, o en "
+        "4K si el clip es 4K. Con “Al ritmo” los efectos laten con el beat. También puedes "
+        "convertir una foto fija en un bucle de tres segundos, con cualquier control derivando, "
+        "saltando o barriendo a lo largo de él. El video y los bucles vienen con Premium.",
+        "Oui. Ouvrez un clip, coupez-le à la longueur voulue et enregistrez-le avec le son en "
+        "1080p, ou en 4K si le clip est en 4K. Avec « Au rythme », les effets pulsent avec le "
+        "beat. Vous pouvez aussi transformer une image fixe en boucle de trois secondes, avec "
+        "n'importe quel réglage qui dérive, saute ou balaie tout du long. La vidéo et les boucles "
+        "viennent avec Premium.",
+        "Sì. Apri una clip, tagliala della lunghezza che vuoi e salvala con il suo audio in "
+        "1080p, o in 4K se la clip è in 4K. Con «A tempo» gli effetti pulsano con il ritmo. Puoi "
+        "anche trasformare una foto in un loop di tre secondi, con qualsiasi controllo che "
+        "oscilla, va a scatti o spazza lungo tutto il loop. Video e loop arrivano con Premium.",
+        "はい。クリップを開き、好きな長さにトリミングして、音声付きのまま 1080p で保存できます。"
+        "4K のクリップなら 4K でも。「音に合わせる」をオンにすると、エフェクトがビートに合わせて"
+        "弾けます。静止画を 3 秒のループにして、どのパラメータもそのあいだゆらぎ、ステップ、"
+        "スイープさせることもできます。動画とループは Premium の機能です。",
+        "네. 클립을 열어 원하는 길이로 자르고 소리와 함께 1080p로 저장할 수 있습니다. 4K "
+        "클립이라면 4K로도 저장됩니다. ‘소리에 맞추기’를 켜면 효과가 비트에 맞춰 튑니다. 정지 "
+        "사진을 3초 루프로 만들어, 어떤 설정이든 그 동안 흔들리고, 계단처럼 바뀌고, 쓸고 "
+        "지나가게 할 수도 있습니다. 동영상과 루프는 Premium 기능입니다.",
+        "Ja. Open een clip, knip hem op elke gewenste lengte en bewaar hem met geluid in 1080p, of "
+        "in 4K als de clip 4K is. Met ‘Op het ritme’ pulseren de effecten mee met de beat. Je kunt "
+        "ook van een stilstaand beeld een loop van drie seconden maken, waarin elke regelaar "
+        "zweeft, verspringt of zwaait. Video en loops komen met Premium.",
+        "Sim. Abra um clipe, corte do tamanho que quiser e salve com o som em 1080p, ou em 4K se "
+        "o clipe for 4K. Com “No ritmo” os efeitos pulsam com a batida. Você também pode "
+        "transformar uma foto parada num loop de três segundos, com qualquer controle oscilando, "
+        "pulando ou varrendo ao longo dele. Vídeo e loops vêm com o Premium.",
+        "可以。打开一段视频，剪成任意长度，连同声音以 1080p 保存；4K 片段还能以 4K 保存。打开"
+        "“跟随声音”，效果会随着节拍跳动。也可以把一张静态图做成三秒循环动画，让任意参数在其中"
+        "漂移、跳变或扫动。视频和循环动画随 Premium 提供。"),
+})
