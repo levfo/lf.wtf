@@ -94,5 +94,7 @@
   "H.264 MP4 with GPU encoding": "GPU エンコード対応の H.264 MP4",
   "No watermark": "透かしなし",
   "Open the download page and enter the email you paid with. The link will be sent to that address again.": "ダウンロードページを開き、支払いに使ったメールアドレスを入力してください。そのアドレスにリンクがもう一度送られます。",
-  "Your email is used to send your download link and to answer you if you write in.": "メールアドレスは、ダウンロードリンクの送信と、お問い合わせへの返信に使います。"
+  "Your email is used to send your download link and to answer you if you write in.": "メールアドレスは、ダウンロードリンクの送信と、お問い合わせへの返信に使います。",
+  "Your email is used to send your download link, to answer you if you write in, and for occasional emails about new products I release that relate to Teleframe. You can unsubscribe from those at any time.": "メールアドレスは、ダウンロードリンクの送信、お問い合わせへの返信、そして Teleframe に関連する新製品のお知らせ（ときどき）に使います。お知らせはいつでも配信停止できます。",
+  "By buying Teleframe, you agree to the purchase terms below.": "Teleframe を購入すると、下記の購入条件に同意したことになります。"
 }

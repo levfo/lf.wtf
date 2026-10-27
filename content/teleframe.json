@@ -194,6 +194,19 @@
     "pt-BR": "Windows 10 e 11. Compra única. Download logo após o pagamento.",
     "zh-Hans": "支持 Windows 10 和 11。一次性购买。付款后立即下载。"
   },
+  "By buying Teleframe, you agree to the purchase terms below.": {
+    "kind": "text:p",
+    "de": "Mit dem Kauf von Teleframe stimmst du den Kaufbedingungen unten zu.",
+    "es": "Al comprar Teleframe, aceptas las condiciones de compra que aparecen abajo.",
+    "es-MX": "Al comprar Teleframe, aceptas los términos de compra que aparecen abajo.",
+    "fr": "En achetant Teleframe, vous acceptez les conditions d'achat ci-dessous.",
+    "it": "Acquistando Teleframe accetti le condizioni di acquisto qui sotto.",
+    "ja": "Teleframe を購入すると、下記の購入条件に同意したことになります。",
+    "ko": "Teleframe을 구매하면 아래 구매 조건에 동의하게 돼요.",
+    "nl": "Door Teleframe te kopen ga je akkoord met de aankoopvoorwaarden hieronder.",
+    "pt-BR": "Ao comprar o Teleframe, você concorda com os termos de compra abaixo.",
+    "zh-Hans": "购买 Teleframe 即表示你同意下方的购买条款。"
+  },
   "Teleframe recording a dashboard: a red frame marks the recorded area and a thin control strip sits under it": {
     "kind": "attr:alt",
     "de": "Teleframe nimmt ein Dashboard auf: Ein roter Rahmen markiert den Aufnahmebereich, darunter sitzt eine schmale Steuerleiste",
@@ -1000,18 +1013,18 @@
     "pt-BR": "Ao comprar o Teleframe, você recebe uma licença para instalar nos computadores que usa, para trabalho pessoal ou comercial. Os pagamentos são processados pela Stripe, e o lf.wtf nunca vê o número do seu cartão.",
     "zh-Hans": "购买 Teleframe 后，你可以把它安装在自己使用的电脑上，用于个人或商业用途。付款由 Stripe 处理，lf.wtf 不会看到你的卡号。"
   },
-  "Your email is used to send your download link and to answer you if you write in.": {
+  "Your email is used to send your download link, to answer you if you write in, and for occasional emails about new products I release that relate to Teleframe. You can unsubscribe from those at any time.": {
     "kind": "text:p",
-    "de": "Deine E-Mail-Adresse wird genutzt, um dir den Download-Link zu schicken und dir zu antworten, wenn du schreibst.",
-    "es": "Tu correo se usa para enviarte el enlace de descarga y para contestarte si nos escribes.",
-    "es-MX": "Tu correo se usa para mandarte tu link de descarga y para responderte si nos escribes.",
-    "fr": "Votre adresse e-mail sert à vous envoyer le lien de téléchargement et à vous répondre si vous nous écrivez.",
-    "it": "La tua email serve per mandarti il link per il download e per risponderti se ci scrivi.",
-    "ja": "メールアドレスは、ダウンロードリンクの送信と、お問い合わせへの返信に使います。",
-    "ko": "이메일은 다운로드 링크를 보내고, 문의에 답장하는 데 쓰여요.",
-    "nl": "Je e-mailadres wordt gebruikt om je downloadlink te sturen en om je te antwoorden als je mailt.",
-    "pt-BR": "Seu e-mail é usado para enviar o link de download e para responder se você escrever.",
-    "zh-Hans": "你的邮箱只用于发送下载链接，以及在你来信时回复你。"
+    "de": "Deine E-Mail-Adresse wird genutzt, um dir den Download-Link zu schicken, dir zu antworten, wenn du schreibst, und dir gelegentlich von neuen Produkten zu erzählen, die ich passend zu Teleframe veröffentliche. Davon kannst du dich jederzeit abmelden.",
+    "es": "Tu correo se usa para enviarte el enlace de descarga, para contestarte si nos escribes y para avisarte de vez en cuando de nuevos productos míos relacionados con Teleframe. Puedes darte de baja de esos correos cuando quieras.",
+    "es-MX": "Tu correo se usa para mandarte tu link de descarga, para responderte si nos escribes y para avisarte de vez en cuando de nuevos productos míos relacionados con Teleframe. Puedes darte de baja de esos correos cuando quieras.",
+    "fr": "Votre adresse e-mail sert à vous envoyer le lien de téléchargement, à vous répondre si vous nous écrivez et à vous prévenir de temps en temps des nouveaux produits que je publie en lien avec Teleframe. Vous pouvez vous désabonner de ces e-mails à tout moment.",
+    "it": "La tua email serve per mandarti il link per il download, per risponderti se ci scrivi e, ogni tanto, per avvisarti dei nuovi prodotti che pubblico legati a Teleframe. Puoi annullare l'iscrizione a queste email quando vuoi.",
+    "ja": "メールアドレスは、ダウンロードリンクの送信、お問い合わせへの返信、そして Teleframe に関連する新製品のお知らせ（ときどき）に使います。お知らせはいつでも配信停止できます。",
+    "ko": "이메일은 다운로드 링크를 보내고, 문의에 답장하고, 가끔 Teleframe과 관련된 새 제품 소식을 알리는 데 쓰여요. 소식 메일은 언제든 수신 거부할 수 있어요.",
+    "nl": "Je e-mailadres wordt gebruikt om je downloadlink te sturen, om je te antwoorden als je mailt en af en toe om je te laten weten dat ik een nieuw product heb uitgebracht dat bij Teleframe past. Je kunt je daar altijd voor afmelden.",
+    "pt-BR": "Seu e-mail é usado para enviar o link de download, para responder se você escrever e, de vez em quando, para avisar sobre novos produtos meus relacionados ao Teleframe. Você pode cancelar a inscrição nesses e-mails quando quiser.",
+    "zh-Hans": "你的邮箱用于发送下载链接、在你来信时回复你，以及偶尔通知你我发布的与 Teleframe 相关的新产品。这类邮件你可以随时退订。"
   },
   "Made by": {
     "kind": "text:span",

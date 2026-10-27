@@ -94,5 +94,7 @@
   "H.264 MP4 with GPU encoding": "GPU 인코딩을 쓰는 H.264 MP4",
   "No watermark": "워터마크 없음",
   "Open the download page and enter the email you paid with. The link will be sent to that address again.": "다운로드 페이지를 열고 결제할 때 쓴 이메일을 입력하세요. 그 주소로 링크를 다시 보내 드려요.",
-  "Your email is used to send your download link and to answer you if you write in.": "이메일은 다운로드 링크를 보내고, 문의에 답장하는 데 쓰여요."
+  "Your email is used to send your download link and to answer you if you write in.": "이메일은 다운로드 링크를 보내고, 문의에 답장하는 데 쓰여요.",
+  "Your email is used to send your download link, to answer you if you write in, and for occasional emails about new products I release that relate to Teleframe. You can unsubscribe from those at any time.": "이메일은 다운로드 링크를 보내고, 문의에 답장하고, 가끔 Teleframe과 관련된 새 제품 소식을 알리는 데 쓰여요. 소식 메일은 언제든 수신 거부할 수 있어요.",
+  "By buying Teleframe, you agree to the purchase terms below.": "Teleframe을 구매하면 아래 구매 조건에 동의하게 돼요."
 }

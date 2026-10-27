@@ -94,5 +94,7 @@
   "H.264 MP4 with GPU encoding": "H.264 MP4，GPU 编码",
   "No watermark": "无水印",
   "Open the download page and enter the email you paid with. The link will be sent to that address again.": "打开下载页面并输入你付款时用的邮箱。链接会重新发送到这个地址。",
-  "Your email is used to send your download link and to answer you if you write in.": "你的邮箱只用于发送下载链接，以及在你来信时回复你。"
+  "Your email is used to send your download link and to answer you if you write in.": "你的邮箱只用于发送下载链接，以及在你来信时回复你。",
+  "Your email is used to send your download link, to answer you if you write in, and for occasional emails about new products I release that relate to Teleframe. You can unsubscribe from those at any time.": "你的邮箱用于发送下载链接、在你来信时回复你，以及偶尔通知你我发布的与 Teleframe 相关的新产品。这类邮件你可以随时退订。",
+  "By buying Teleframe, you agree to the purchase terms below.": "购买 Teleframe 即表示你同意下方的购买条款。"
 }
