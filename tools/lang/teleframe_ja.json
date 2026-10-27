@@ -93,5 +93,6 @@
   "Global hotkeys": "グローバルショートカットキー",
   "H.264 MP4 with GPU encoding": "GPU エンコード対応の H.264 MP4",
   "No watermark": "透かしなし",
-  "Open the download page and enter the email you paid with. The link will be sent to that address again.": "ダウンロードページを開き、支払いに使ったメールアドレスを入力してください。そのアドレスにリンクがもう一度送られます。"
+  "Open the download page and enter the email you paid with. The link will be sent to that address again.": "ダウンロードページを開き、支払いに使ったメールアドレスを入力してください。そのアドレスにリンクがもう一度送られます。",
+  "Your email is used to send your download link and to answer you if you write in.": "メールアドレスは、ダウンロードリンクの送信と、お問い合わせへの返信に使います。"
 }

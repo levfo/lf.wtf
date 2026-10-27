@@ -974,32 +974,6 @@
     "pt-BR": "e digite o e-mail que você usou no pagamento. O link será enviado de novo para esse endereço.",
     "zh-Hans": "并输入你付款时用的邮箱。链接会重新发送到这个地址。"
   },
-  "Can I get a refund?": {
-    "kind": "text:summary",
-    "de": "Kann ich mein Geld zurückbekommen?",
-    "es": "¿Puedo pedir la devolución?",
-    "es-MX": "¿Puedo pedir un reembolso?",
-    "fr": "Puis-je être remboursé ?",
-    "it": "Posso avere un rimborso?",
-    "ja": "返金はできますか？",
-    "ko": "환불받을 수 있나요?",
-    "nl": "Kan ik mijn geld terugkrijgen?",
-    "pt-BR": "Posso pedir reembolso?",
-    "zh-Hans": "可以退款吗？"
-  },
-  "Yes. If Teleframe doesn't work for you, email teleframe@lf.wtf within 14 days of buying and you'll get your money back.": {
-    "kind": "text:p",
-    "de": "Ja. Wenn Teleframe für dich nicht funktioniert, schreib innerhalb von 14 Tagen nach dem Kauf an teleframe@lf.wtf, und du bekommst dein Geld zurück.",
-    "es": "Sí. Si Teleframe no te sirve, escribe a teleframe@lf.wtf en los 14 días siguientes a la compra y te devolvemos el dinero.",
-    "es-MX": "Sí. Si Teleframe no te funciona, escribe a teleframe@lf.wtf dentro de los 14 días posteriores a tu compra y te regresamos tu dinero.",
-    "fr": "Oui. Si Teleframe ne vous convient pas, écrivez à teleframe@lf.wtf dans les 14 jours suivant l'achat et vous serez remboursé.",
-    "it": "Sì. Se Teleframe non fa per te, scrivi a teleframe@lf.wtf entro 14 giorni dall'acquisto e ti restituiremo i soldi.",
-    "ja": "はい。Teleframe が合わなかった場合は、購入から 14 日以内に teleframe@lf.wtf へメールしてください。代金をお返しします。",
-    "ko": "네. Teleframe이 맞지 않으면 구매 후 14일 이내에 teleframe@lf.wtf로 메일을 보내 주세요. 환불해 드려요.",
-    "nl": "Ja. Als Teleframe niet voor je werkt, mail dan binnen 14 dagen na aankoop naar teleframe@lf.wtf en je krijgt je geld terug.",
-    "pt-BR": "Sim. Se o Teleframe não servir para você, mande um e-mail para teleframe@lf.wtf em até 14 dias após a compra e você recebe seu dinheiro de volta.",
-    "zh-Hans": "可以。如果 Teleframe 不适合你，在购买后 14 天内发邮件到 teleframe@lf.wtf，就能拿回你的钱。"
-  },
   "Purchase terms": {
     "kind": "text:h2",
     "de": "Kaufbedingungen",
@@ -1026,18 +1000,18 @@
     "pt-BR": "Ao comprar o Teleframe, você recebe uma licença para instalar nos computadores que usa, para trabalho pessoal ou comercial. Os pagamentos são processados pela Stripe, e o lf.wtf nunca vê o número do seu cartão.",
     "zh-Hans": "购买 Teleframe 后，你可以把它安装在自己使用的电脑上，用于个人或商业用途。付款由 Stripe 处理，lf.wtf 不会看到你的卡号。"
   },
-  "Your email is used to send your download link and to answer you if you write in. Refunds are available for 14 days after purchase at teleframe@lf.wtf.": {
+  "Your email is used to send your download link and to answer you if you write in.": {
     "kind": "text:p",
-    "de": "Deine E-Mail-Adresse wird genutzt, um dir den Download-Link zu schicken und dir zu antworten, wenn du schreibst. Rückerstattungen gibt es 14 Tage lang nach dem Kauf über teleframe@lf.wtf.",
-    "es": "Tu correo se usa para enviarte el enlace de descarga y para contestarte si nos escribes. Puedes pedir la devolución durante 14 días tras la compra en teleframe@lf.wtf.",
-    "es-MX": "Tu correo se usa para mandarte tu link de descarga y para responderte si nos escribes. Puedes pedir un reembolso en teleframe@lf.wtf durante los 14 días posteriores a la compra.",
-    "fr": "Votre adresse e-mail sert à vous envoyer le lien de téléchargement et à vous répondre si vous nous écrivez. Les remboursements sont possibles pendant 14 jours après l'achat via teleframe@lf.wtf.",
-    "it": "La tua email serve per mandarti il link per il download e per risponderti se ci scrivi. I rimborsi sono disponibili per 14 giorni dall'acquisto scrivendo a teleframe@lf.wtf.",
-    "ja": "メールアドレスは、ダウンロードリンクの送信と、お問い合わせへの返信に使います。返金は購入後 14 日間、teleframe@lf.wtf で受け付けています。",
-    "ko": "이메일은 다운로드 링크를 보내고, 문의에 답장하는 데 쓰여요. 환불은 구매 후 14일 동안 teleframe@lf.wtf에서 받아요.",
-    "nl": "Je e-mailadres wordt gebruikt om je downloadlink te sturen en om je te antwoorden als je mailt. Terugbetaling is mogelijk tot 14 dagen na aankoop via teleframe@lf.wtf.",
-    "pt-BR": "Seu e-mail é usado para enviar o link de download e para responder se você escrever. O reembolso pode ser pedido em até 14 dias após a compra pelo teleframe@lf.wtf.",
-    "zh-Hans": "你的邮箱只用于发送下载链接，以及在你来信时回复你。购买后 14 天内可通过 teleframe@lf.wtf 申请退款。"
+    "de": "Deine E-Mail-Adresse wird genutzt, um dir den Download-Link zu schicken und dir zu antworten, wenn du schreibst.",
+    "es": "Tu correo se usa para enviarte el enlace de descarga y para contestarte si nos escribes.",
+    "es-MX": "Tu correo se usa para mandarte tu link de descarga y para responderte si nos escribes.",
+    "fr": "Votre adresse e-mail sert à vous envoyer le lien de téléchargement et à vous répondre si vous nous écrivez.",
+    "it": "La tua email serve per mandarti il link per il download e per risponderti se ci scrivi.",
+    "ja": "メールアドレスは、ダウンロードリンクの送信と、お問い合わせへの返信に使います。",
+    "ko": "이메일은 다운로드 링크를 보내고, 문의에 답장하는 데 쓰여요.",
+    "nl": "Je e-mailadres wordt gebruikt om je downloadlink te sturen en om je te antwoorden als je mailt.",
+    "pt-BR": "Seu e-mail é usado para enviar o link de download e para responder se você escrever.",
+    "zh-Hans": "你的邮箱只用于发送下载链接，以及在你来信时回复你。"
   },
   "Made by": {
     "kind": "text:span",
