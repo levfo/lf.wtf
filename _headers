@@ -54,3 +54,15 @@
 
 /riposte/assets/*
   Cache-Control: public, max-age=31536000, immutable
+
+/teleframe/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# The download page reads a Stripe session id from its URL; keep it out of other sites' logs.
+/teleframe/thanks/*
+  Referrer-Policy: no-referrer
+  Cache-Control: no-store
+
+/*/teleframe/thanks/*
+  Referrer-Policy: no-referrer
+  Cache-Control: no-store

@@ -69,6 +69,11 @@ PAGES = {
     "hive/index.html": "hive/",
     #: Hearthvale, a sub-project: a kingdom builder made by AI agents. The game itself is /hearthvale/play/, English only.
     "hearthvale/index.html": "hearthvale/",
+    #: Teleframe, the first paid download sold on lf.wtf (Windows screen recorder). Checkout and
+    #: downloads are the lf-store Worker on lf.wtf/api/store/*; see C:/Users/leviq/Projects/lf-store.
+    "teleframe/index.html": "teleframe/",
+    #: Where Stripe returns buyers. noindex, and left out of the sitemap.
+    "teleframe/thanks/index.html": "teleframe/thanks/",
     #: System Memory, a sub-project: an AI short film made with Claude Code and the Krea MCP. The film itself is on YouTube.
     "system-memory/index.html": "system-memory/",
 }
@@ -77,7 +82,7 @@ ATTRS = {"content", "alt", "title", "aria-label", "placeholder"}
 #: Values that are machine-read or are URLs, and must survive untouched.
 SKIP_META = {"og:image", "og:url", "og:type", "og:site_name", "twitter:card", "twitter:creator",
              "viewport", "color-scheme", "author", "og:locale", "og:locale:alternate",
-             "theme-color", "charset"}
+             "theme-color", "charset", "robots"}
 SKIP_TAGS = {"script", "style"}
 #: JSON-LD keys worth translating. Everything else in the graph is an identifier, a URL or a number.
 LD_KEYS = {"name", "description", "alternateName", "featureList", "headline", "abstract",
@@ -392,6 +397,12 @@ def build_page(source, locale, page_url, table):
         # remains available, and visits to the bare game URL still autodetect.
         out = re.sub(r'href="https://riposte\.lf\.wtf/(?:\?lang=[^"&]+)?"',
                      f'href="https://riposte.lf.wtf/?lang={locale}"', out)
+
+    if page_url.startswith("teleframe/") and locale != "en":
+        # The store pages link to each other with root-relative paths; keep buyers in their language.
+        prefix = "/" + LOCALES[locale][0]
+        out = out.replace('href="/teleframe/thanks/"', f'href="{prefix}/teleframe/thanks/"')
+        out = out.replace('href="/teleframe/"', f'href="{prefix}/teleframe/"')
 
     out = re.sub(r'<html lang="[^"]*"', f'<html lang="{hreflang}"', out, count=1)
     out = re.sub(r'<link rel="canonical" href="[^"]*">',

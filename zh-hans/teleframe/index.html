@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teleframe | Windows 录屏软件，录制屏幕任意区域</title>
+<meta name="description" content="Teleframe 是一款 Windows 录屏软件，支持 Windows 10 和 11。把录制框拖到屏幕任意位置，按 16:9、9:16 或任意形状录制，保存为带声音的 MP4。一次付费 $9.99，无需订阅，没有水印。">
+<link rel="alternate" hreflang="en" href="https://lf.wtf/teleframe/">
+<link rel="alternate" hreflang="de" href="https://lf.wtf/de/teleframe/">
+<link rel="alternate" hreflang="es" href="https://lf.wtf/es/teleframe/">
+<link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/teleframe/">
+<link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/teleframe/">
+<link rel="alternate" hreflang="it" href="https://lf.wtf/it/teleframe/">
+<link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/teleframe/">
+<link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/teleframe/">
+<link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/teleframe/">
+<link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/teleframe/">
+<link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/teleframe/">
+<link rel="alternate" hreflang="x-default" href="https://lf.wtf/teleframe/">
+<link rel="canonical" href="https://lf.wtf/zh-hans/teleframe/">
+<link rel="icon" href="/teleframe/assets/icon-v1.png">
+<meta name="theme-color" content="#020c05">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="lf.wtf">
+<meta property="og:title" content="Teleframe | Windows 录屏软件，录制屏幕任意区域">
+<meta property="og:description" content="电脑录屏只需把录制框拖到屏幕任意位置，按下 REC，保存为 MP4。录屏软件自己的控件不会出现在视频里。一次付费 $9.99。">
+<meta property="og:url" content="https://lf.wtf/zh-hans/teleframe/">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="es_MX">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://lf.wtf/teleframe/assets/og-v1.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/teleframe/assets/sharetechmono-v1.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/teleframe/assets/archivoblack-v1.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/teleframe/assets/hero-mobile-v1.webp" as="image" media="(max-width: 700px)">
+<link rel="preload" href="/teleframe/assets/hero-v1.webp" as="image" media="(min-width: 701px)">
+<style>
+@font-face{font-family:'Share Tech Mono';src:url('/teleframe/assets/sharetechmono-v1.woff2') format('woff2');font-display:swap}
+@font-face{font-family:'Archivo Black';src:url('/teleframe/assets/archivoblack-v1.woff2') format('woff2');font-display:swap}
+:root{--ink:#020c05;--ink2:#06160d;--ph:#3be584;--text:#9cf2bf;--dim:#1f8a4d;--line:#2fa05c;--neon:#10e060;--cream:#dcedcb;--blue:#0250c0;--deep:#013ca4;--cyan:#278ea2;--pale:#aeddce;--red:#c62a1e;--amber:#e8cf4a;--w:1080px;
+--mono:'Share Tech Mono','Consolas','MS Gothic','Malgun Gothic','Microsoft YaHei',monospace;--head:Arial,'Helvetica Neue',Helvetica,'Yu Gothic','Malgun Gothic','Microsoft YaHei',sans-serif;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--text);font:18px/1.65 var(--mono)}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;background:repeating-linear-gradient(to bottom,transparent 0 2px,rgba(0,0,0,.22) 2px 3px),radial-gradient(120% 100% at 50% 40%,transparent 60%,rgba(0,0,0,.45))}
+a{color:var(--ph)}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid var(--amber);outline-offset:4px}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 28px}
+.glow{text-shadow:0 0 8px rgba(59,229,132,.5)}
+.nav{display:flex;justify-content:space-between;align-items:center;height:68px}
+.nav a{text-decoration:none;color:var(--ph);font-size:16px;letter-spacing:.06em}
+.nav .buy-mini{border:2px solid var(--line);padding:6px 14px}
+.nav .buy-mini:hover{background:var(--ph);color:var(--ink)}
+.top{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-top:10px}
+.eyebrow{font:700 20px/1.2 var(--head);color:var(--cream);letter-spacing:.02em;text-transform:uppercase;margin:0;text-shadow:0 0 6px rgba(220,237,203,.35)}
+.plate{color:var(--ph);font-size:16px;white-space:nowrap}
+.rule{height:3px;background:var(--red);margin:10px 0 22px}
+.panel{background:var(--blue);border:3px solid var(--pale);padding:28px 34px 26px;position:relative;overflow:hidden}
+.logo{display:flex;align-items:center;gap:22px;color:var(--cream);font:clamp(32px,9.4vw,96px)/1 'Archivo Black',Arial Black,sans-serif;letter-spacing:-.01em;text-shadow:0 0 14px rgba(220,237,203,.35)}
+.logo{gap:clamp(12px,2vw,22px)}.logo svg{width:clamp(40px,9vw,96px);height:auto;flex:none}
+.stripes{display:block;width:100%;height:96px;margin-top:22px}
+.row{display:grid;grid-template-columns:auto 1fr auto;gap:26px;align-items:start;margin-top:24px}
+.chip{width:78px;height:78px;background:var(--blue);border:3px solid var(--cream);display:grid;place-items:center;align-content:center;gap:6px;text-decoration:none;color:var(--cream);font:700 15px var(--head)}
+.chip i{width:22px;height:22px;border-radius:50%;background:var(--red);border:2px solid var(--cream);animation:blink 1.06s steps(1) infinite}
+.chip:hover{outline:2px solid var(--ph);outline-offset:4px}
+.label{color:var(--ph);font-size:19px;margin:0}
+.label u{display:block;width:260px;max-width:100%;height:2px;background:var(--line);margin:4px 0 8px;text-decoration:none}
+.tokens{color:var(--ph);font-size:19px;margin:0}
+.rate{margin:6px 0 0;color:var(--ph);font-size:19px}
+.badge{background:var(--red);color:#0a0201;font:15px 'Archivo Black',sans-serif;padding:3px 7px}
+.term{position:relative;border:2px solid var(--line);border-bottom:0;margin-top:30px;padding:30px 30px 34px}
+.term::after{content:"";position:absolute;left:-2px;bottom:-2px;width:calc(100% - 300px);height:2px;background:var(--line)}
+h1{font:400 clamp(34px,5.4vw,56px)/1.08 var(--mono);color:var(--ph);margin:0 0 18px;text-transform:uppercase;text-shadow:0 0 12px rgba(59,229,132,.45)}
+.lead{max-width:44em;margin:0 0 26px;color:var(--text)}
+.buyrow{display:flex;flex-wrap:wrap;align-items:center;gap:18px 26px}
+.buy{appearance:none;cursor:pointer;background:var(--blue);color:var(--cream);border:3px solid var(--cream);font:700 19px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;padding:18px 26px}
+.buy:hover{background:var(--deep);outline:2px solid var(--ph);outline-offset:4px}
+.price{font-size:34px;color:var(--cream);text-shadow:0 0 10px rgba(220,237,203,.35)}
+.fine{color:var(--dim);font-size:15px;margin:14px 0 0}
+.bar{position:absolute;right:-2px;bottom:-14px;width:290px}
+.bar span{display:block;color:var(--cream);font-size:16px;text-align:center;margin-bottom:6px;text-shadow:-1px 0 rgba(230,40,60,.55),1px 0 rgba(40,120,255,.55)}
+.bar b{display:block;height:24px;border:2px solid var(--cream);padding:3px;background:var(--ink)}
+.bar b::before{content:"";display:block;height:100%;width:62%;background:linear-gradient(90deg,#9a9ca0 calc(100% - 4px),var(--amber) 0);animation:fill 4s steps(24) infinite}
+figure{margin:44px 0 0}
+figure img{display:block;width:100%;height:auto;border:2px solid var(--line);background:var(--ink2)}
+figcaption{color:var(--dim);font-size:14px;margin-top:8px}
+section{padding-top:88px}
+h2{font:700 clamp(22px,3vw,30px)/1.2 var(--head);color:var(--cream);text-transform:uppercase;margin:0;letter-spacing:.02em;text-shadow:0 0 6px rgba(220,237,203,.3)}
+h2+.rule{margin:10px 0 22px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}
+p{margin:0 0 16px}
+.spec{border:2px solid var(--line);padding:22px 26px;margin:0}
+.spec div{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:10px 0;border-bottom:1px dashed rgba(47,160,92,.35)}
+.spec div:last-child{border-bottom:0}
+.spec dt{color:var(--ph);margin:0}.spec dd{margin:0}
+kbd{font:inherit;color:var(--cream);border:1px solid var(--dim);padding:0 6px}
+.cta{border:2px solid var(--line);padding:34px 30px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}
+.cta p{margin:0}
+details{border-bottom:1px dashed rgba(47,160,92,.45);padding:14px 0}
+summary{cursor:pointer;color:var(--ph);font-size:19px;list-style:none}
+summary::before{content:"> ";color:var(--dim)}
+details[open] summary::before{content:"v ";color:var(--neon)}
+details p{margin:10px 0 4px 22px}
+.terms{font-size:15px;color:var(--dim)}
+.terms p{margin:0 0 10px}
+footer.wrap{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:space-between;margin-top:90px;padding-top:20px;padding-bottom:10px;border-top:2px solid var(--line);font-size:15px;color:var(--dim)}
+footer a{color:var(--ph)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@keyframes blink{50%{opacity:0}}
+@keyframes fill{0%{width:8%}100%{width:96%}}
+@media(max-width:820px){.cols,.cta{grid-template-columns:1fr}.term::after{width:calc(100% - 210px)}.bar{width:200px}}
+@media(max-width:700px){body{font-size:17px}.wrap{padding:0 18px}.plate{display:none}.row{grid-template-columns:auto 1fr;gap:18px}.row .badge{display:none}.panel{padding:20px 20px 18px}.stripes{height:70px}.term{padding:24px 18px 40px}.spec div{grid-template-columns:1fr;gap:2px}.chip{width:66px;height:66px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.chip i,.bar b::before{animation:none}}
+
+/* i18n:start */
+.i18n{max-width:var(--w,initial);margin:0 auto;padding:26px 22px 40px;display:flex;flex-wrap:wrap;
+gap:6px 14px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.55;
+justify-content:center}
+.i18n a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+.i18n a:hover{border-bottom-color:currentColor}
+.i18n span[aria-current]{opacity:.5;cursor:default}
+/* i18n:end */
+
+html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: normal !important; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://lf.wtf/teleframe/#page",
+      "url": "https://lf.wtf/teleframe/",
+      "name": "Teleframe | Windows 录屏软件，录制屏幕任意区域",
+      "description": "Teleframe 是一款 Windows 录屏软件，支持 Windows 10 和 11。把录制框拖到屏幕任意位置，按 16:9、9:16 或任意形状录制，保存为带声音的 MP4。一次付费 $9.99，无需订阅，没有水印。",
+      "inLanguage": "zh-Hans",
+      "primaryImageOfPage": "https://lf.wtf/teleframe/assets/hero-v1.webp",
+      "breadcrumb": {
+        "@id": "https://lf.wtf/teleframe/#crumbs"
+      },
+      "mainEntity": {
+        "@id": "https://lf.wtf/teleframe/#app"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://lf.wtf/teleframe/#app",
+      "name": "Teleframe",
+      "description": "一款 Windows 录屏软件，只录制录制框内的内容，录制框可以在屏幕上随意移动和调整大小。可以暂停、删除最后一个片段，最后保存为一个 MP4。",
+      "url": "https://lf.wtf/teleframe/",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "Screen recorder",
+      "operatingSystem": "Windows 10, Windows 11",
+      "softwareVersion": "1.0.0",
+      "fileSize": "45MB",
+      "image": "https://lf.wtf/teleframe/assets/icon-256-v1.png",
+      "screenshot": [
+        "https://lf.wtf/teleframe/assets/hero-v1.webp",
+        "https://lf.wtf/teleframe/assets/frames-v1.webp",
+        "https://lf.wtf/teleframe/assets/strip-v1.webp",
+        "https://lf.wtf/teleframe/assets/settings-v1.webp"
+      ],
+      "featureList": [
+        "用可移动、可调整大小的录制框录制屏幕任意区域",
+        "16:9、9:16、1:1、4:3、4:5、21:9、自由形状和全屏",
+        "暂停、删除最后一个片段、保存为一个 MP4",
+        "录屏软件自己的窗口不会出现在视频里",
+        "系统声音、麦克风或两者",
+        "全局快捷键",
+        "H.264 MP4，GPU 编码",
+        "无水印"
+      ],
+      "author": {
+        "@id": "https://lf.wtf/#levifoster"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "9.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://lf.wtf/teleframe/#buy"
+        },
+        {
+          "@type": "Offer",
+          "price": "9.99",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/InStock",
+          "url": "https://lf.wtf/teleframe/#buy"
+        },
+        {
+          "@type": "Offer",
+          "price": "8.99",
+          "priceCurrency": "GBP",
+          "availability": "https://schema.org/InStock",
+          "url": "https://lf.wtf/teleframe/#buy"
+        },
+        {
+          "@type": "Offer",
+          "price": "1500",
+          "priceCurrency": "JPY",
+          "availability": "https://schema.org/InStock",
+          "url": "https://lf.wtf/teleframe/#buy"
+        },
+        {
+          "@type": "Offer",
+          "price": "14000",
+          "priceCurrency": "KRW",
+          "availability": "https://schema.org/InStock",
+          "url": "https://lf.wtf/teleframe/#buy"
+        },
+        {
+          "@type": "Offer",
+          "price": "54.90",
+          "priceCurrency": "BRL",
+          "availability": "https://schema.org/InStock",
+          "url": "https://lf.wtf/teleframe/#buy"
+        },
+        {
+          "@type": "Offer",
+          "price": "189.00",
+          "priceCurrency": "MXN",
+          "availability": "https://schema.org/InStock",
+          "url": "https://lf.wtf/teleframe/#buy"
+        },
+        {
+          "@type": "Offer",
+          "price": "72.00",
+          "priceCurrency": "CNY",
+          "availability": "https://schema.org/InStock",
+          "url": "https://lf.wtf/teleframe/#buy"
+        }
+      ],
+      "inLanguage": "zh-Hans"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://lf.wtf/teleframe/#crumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "lf.wtf",
+          "item": "https://lf.wtf/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Teleframe",
+          "item": "https://lf.wtf/teleframe/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://lf.wtf/teleframe/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Teleframe 是订阅制吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不是。只需付一次钱，下载的软件一直归你所有。也不用注册账号。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Teleframe 会加水印吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不会。视频里只有录制框内的内容，别的什么都没有。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "能录声音吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "能。在设置里选择系统声音、麦克风，或两者混合。声音保存为 192 kbps 的 AAC，每分钟约 1.4 MB。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "能用电脑录屏做 TikTok、Reels 和 Shorts 的竖屏视频吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "能。选择 9:16，录制框就会变成竖长的矩形。把它放到你想录的屏幕区域上，按 REC 即可。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "录像保存在哪里？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "保存在你在设置里选择的文件夹，默认是 Videos\\Teleframe。每段录像都是一个以日期和时间命名的 MP4。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "文件有多大？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "这取决于录制框的大小和画质设置。在 HIGH、60 fps 下，一分钟 1080p 视频约 113 MB。开始录制前，设置里会显示当前录制框的预估大小。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Windows 提示“已保护你的电脑”，怎么办？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "安装程序没有代码签名，所以第一次运行时 Windows SmartScreen 可能会发出警告。点击“更多信息”，再点击“仍要运行”。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Teleframe 能在 Mac 上用吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不能。Teleframe 支持 64 位 Windows 10（2004 或更高版本）和 Windows 11。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "我的下载链接丢了。",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "打开下载页面并输入你付款时用的邮箱。链接会重新发送到这个地址。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "可以退款吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。如果 Teleframe 不适合你，在购买后 14 天内发邮件到 teleframe@lf.wtf，就能拿回你的钱。"
+          }
+        }
+      ],
+      "inLanguage": "zh-Hans"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<nav class="nav wrap" aria-label="主导航"><a href="https://lf.wtf/">lf.wtf</a><a class="buy-mini" href="#buy">购买 Teleframe</a></nav>
+<main>
+<header class="wrap">
+  <div class="top"><p class="eyebrow">Windows 录屏软件</p><span class="plate">画面録画機 2026年製</span></div>
+  <div class="rule"></div>
+  <div class="panel">
+    <div class="logo" role="img" aria-label="Teleframe"><svg viewBox="0 0 62 62" aria-hidden="true"><circle cx="31" cy="31" r="28" fill="none" stroke="#dcedcb" stroke-width="4"/><path fill="#dcedcb" d="M15,27V15H27V20H20V27Z M47,27V15H35V20H42V27Z M15,35V47H27V42H20V35Z M47,35V47H35V42H42V35Z"/><circle cx="31" cy="31" r="6" fill="#c62a1e"/></svg><span aria-hidden="true">Teleframe</span></div>
+    <svg class="stripes" viewBox="0 0 1000 96" preserveAspectRatio="none" aria-hidden="true"><g id="st"></g></svg>
+  </div>
+  <div class="row">
+    <a class="chip" href="#buy" aria-label="购买 Teleframe"><i></i>REC</a>
+    <div>
+      <p class="label">选择录制框：<u></u></p>
+      <p class="tokens glow" aria-hidden="true">[16:9],<wbr>9:16,<wbr>1:1,<wbr>4:3,<wbr>4:5,<wbr>21:9,<wbr>FREE,<wbr>FULL</p>
+      <p class="rate glow">价格： <b data-price>$9.99</b> 一次付清，无需订阅。</p>
+    </div>
+    <span class="badge" aria-hidden="true">TF</span>
+  </div>
+  <div class="term">
+    <h1>电脑录屏，任选区域</h1>
+    <p class="lead">Teleframe 会在桌面上放一个录制框。把它拖到你想要的位置，调成任意形状，然后按 REC。只有框内的内容会录进视频，录屏软件自己的控件也不会出现在画面里。</p>
+    <div class="buyrow">
+      <form method="post" action="/api/store/checkout"><input type="hidden" name="product" value="teleframe"><input type="hidden" name="lang" value="en"><button class="buy" type="submit">购买 Teleframe</button></form>
+      <span class="price" data-price>$9.99</span>
+    </div>
+    <p class="fine">支持 Windows 10 和 11。一次性购买。付款后立即下载。</p>
+    <div class="bar" aria-hidden="true"><span>READY...</span><b></b></div>
+  </div>
+  <figure><picture><source media="(max-width: 700px)" srcset="/teleframe/assets/hero-mobile-v1.webp"><img src="/teleframe/assets/hero-v1.webp" width="1600" height="1000" alt="Teleframe 正在录制一个仪表盘：红框标出录制区域，下方是一条细长的控制栏" fetchpriority="high"></picture></figure>
+</header>
+
+<section class="wrap" id="frame">
+  <h2>放在哪里都行的录制框</h2><div class="rule"></div>
+  <div class="cols">
+    <div>
+      <p>在控制栏里选择形状：16:9 适合 YouTube，9:16 适合 Reels、TikTok 和 Shorts，也可以选 1:1、4:3、4:5、21:9、自由形状或整个显示器。</p>
+      <p>拖动一角即可调整大小，比例保持不变。录制时也可以移动录制框，视频画面会跟着它走。</p>
+    </div>
+    <figure style="margin:0"><picture><source media="(max-width: 700px)" srcset="/teleframe/assets/frames-mobile-v1.webp"><img src="/teleframe/assets/frames-v1.webp" width="1600" height="900" alt="Teleframe 形状菜单旁的一个 16:9 录制框和一个 9:16 录制框" loading="lazy"></picture></figure>
+  </div>
+</section>
+
+<section class="wrap" id="clips">
+  <h2>暂停，删掉录坏的片段，保存</h2><div class="rule"></div>
+  <div class="cols">
+    <figure style="margin:0"><picture><source media="(max-width: 700px)" srcset="/teleframe/assets/strip-mobile-v1.webp"><img src="/teleframe/assets/strip-v1.webp" width="1600" height="760" alt="Teleframe 控制栏的几种状态：就绪、录制中、已暂停、已保存和已收起" loading="lazy"></picture></figure>
+    <div>
+      <p>每次从 REC 到暂停之间录下的内容都是一个片段。说错了？删掉最后一个片段，重新录一遍。</p>
+      <p>按下停止后，Teleframe 会在几秒内把所有片段合并成一个 MP4。视频按原样复制，不会重新编码。</p>
+      <p>控件排成细细的一行，位于录制框下方。想让屏幕干净一些时，可以把它们收成一个按钮。</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="hidden">
+  <h2>录屏软件本身不会出现在视频里</h2><div class="rule"></div>
+  <p>Windows 可以让窗口不被屏幕捕获。Teleframe 为自己的所有窗口都开启了这一功能：录制框、控制栏和设置窗口。即使全屏录制、控件就盖在画面上，它们也不会出现在文件里。</p>
+  <p>鼠标指针会照常录进去。</p>
+</section>
+
+<section class="wrap" id="specs">
+  <h2>功能一览</h2><div class="rule"></div>
+  <div class="cols">
+    <dl class="spec">
+      <div><dt>画质</dt><dd>从 LOW 到 MAX 共五档预设，30 或 60 fps。录制前，设置里会显示每分钟的文件大小。</dd></div>
+      <div><dt>声音</dt><dd>关闭、系统声音、麦克风，或两者混合。</dd></div>
+      <div><dt>快捷键</dt><dd><kbd>Ctrl+Alt+R</kbd> 录制， <kbd>Ctrl+Alt+P</kbd> 暂停， <kbd>Ctrl+Alt+D</kbd> 删除最后一个片段， <kbd>Ctrl+Alt+S</kbd> 保存， <kbd>Ctrl+Alt+H</kbd> 隐藏控件。快捷键可以自行修改。</dd></div>
+      <div><dt>输出</dt><dd>H.264 MP4，条件允许时用显卡编码。保存到你选择的文件夹。</dd></div>
+      <div><dt>水印</dt><dd>无。</dd></div>
+      <div><dt>系统</dt><dd>64 位 Windows 10（2004 或更高版本）或 Windows 11。软件界面为英文。</dd></div>
+    </dl>
+    <figure style="margin:0"><picture><source media="(max-width: 700px)" srcset="/teleframe/assets/settings-mobile-v1.webp"><img src="/teleframe/assets/settings-v1.webp" width="1600" height="1000" alt="Teleframe 设置：保存文件夹、带文件大小的画质选项、声音来源和快捷键" loading="lazy"></picture></figure>
+  </div>
+</section>
+
+<section class="wrap" id="buy">
+  <h2>一个价格，一次付清</h2><div class="rule"></div>
+  <div class="cta">
+    <div>
+      <p class="price" data-price>$9.99</p>
+      <p>无需订阅，也不用注册账号。付款后会直接进入下载页面，下载链接也会发到你的邮箱。</p>
+      <p class="fine">通过 Stripe 结账。在支持的地区，价格会以当地货币显示。</p>
+    </div>
+    <form method="post" action="/api/store/checkout"><input type="hidden" name="product" value="teleframe"><input type="hidden" name="lang" value="en"><button class="buy" type="submit">购买 Teleframe</button></form>
+  </div>
+</section>
+
+<section class="wrap" id="faq">
+  <h2>常见问题</h2><div class="rule"></div>
+  <details><summary>Teleframe 是订阅制吗？</summary><p>不是。只需付一次钱，下载的软件一直归你所有。也不用注册账号。</p></details>
+  <details><summary>Teleframe 会加水印吗？</summary><p>不会。视频里只有录制框内的内容，别的什么都没有。</p></details>
+  <details><summary>能录声音吗？</summary><p>能。在设置里选择系统声音、麦克风，或两者混合。声音保存为 192 kbps 的 AAC，每分钟约 1.4 MB。</p></details>
+  <details><summary>能用电脑录屏做 TikTok、Reels 和 Shorts 的竖屏视频吗？</summary><p>能。选择 9:16，录制框就会变成竖长的矩形。把它放到你想录的屏幕区域上，按 REC 即可。</p></details>
+  <details><summary>录像保存在哪里？</summary><p>保存在你在设置里选择的文件夹，默认是 Videos\Teleframe。每段录像都是一个以日期和时间命名的 MP4。</p></details>
+  <details><summary>文件有多大？</summary><p>这取决于录制框的大小和画质设置。在 HIGH、60 fps 下，一分钟 1080p 视频约 113 MB。开始录制前，设置里会显示当前录制框的预估大小。</p></details>
+  <details><summary>Windows 提示“已保护你的电脑”，怎么办？</summary><p>安装程序没有代码签名，所以第一次运行时 Windows SmartScreen 可能会发出警告。点击“更多信息”，再点击“仍要运行”。</p></details>
+  <details><summary>Teleframe 能在 Mac 上用吗？</summary><p>不能。Teleframe 支持 64 位 Windows 10（2004 或更高版本）和 Windows 11。</p></details>
+  <details><summary>我的下载链接丢了。</summary><p>打开 <a href="/zh-hans/teleframe/thanks/">下载页面</a> 并输入你付款时用的邮箱。链接会重新发送到这个地址。</p></details>
+  <details><summary>可以退款吗？</summary><p>可以。如果 Teleframe 不适合你，在购买后 14 天内发邮件到 teleframe@lf.wtf，就能拿回你的钱。</p></details>
+</section>
+
+<section class="wrap terms" id="terms">
+  <h2>购买条款</h2><div class="rule"></div>
+  <p>购买 Teleframe 后，你可以把它安装在自己使用的电脑上，用于个人或商业用途。付款由 Stripe 处理，lf.wtf 不会看到你的卡号。</p>
+  <p>你的邮箱只用于发送下载链接，以及在你来信时回复你。购买后 14 天内可通过 teleframe@lf.wtf 申请退款。</p>
+</section>
+</main>
+<footer class="wrap"><span>作者 <a href="https://lf.wtf/">Levi Foster</a></span><a href="mailto:teleframe@lf.wtf">teleframe@lf.wtf</a><a href="https://discord.gg/SQ47u6zybs">Discord</a></footer>
+<script>
+(function(){
+  // Stripe bars under the logo, like a broadcast ident. Seeded so every visit draws the same field.
+  var g=document.getElementById('st'),s=7,r=function(){s=(s*9301+49297)%233280;return s/233280},h='';
+  for(var y=0;y<96;y+=8){var x=0;while(x<1000){var L=20+r()*110,G=8+r()*46;h+='<rect x="'+x.toFixed(0)+'" y="'+y+'" width="'+L.toFixed(0)+'" height="5" fill="'+(r()<.4?'#aeddce':'#278ea2')+'"/>';x+=L+G}}
+  g.innerHTML=h;
+  var lang=document.documentElement.lang||'en';
+  document.querySelectorAll('input[name=lang]').forEach(function(i){i.value=lang});
+  fetch('/api/store/price?product=teleframe&lang='+encodeURIComponent(lang)).then(function(r){return r.ok?r.json():null}).then(function(p){
+    if(p&&p.display)document.querySelectorAll('[data-price]').forEach(function(e){e.textContent=p.display});
+  }).catch(function(){});
+})();
+</script>
+
+<nav class="i18n" aria-label="Language">
+  <a href="/teleframe/" hreflang="en" lang="en">English</a>
+  <a href="/de/teleframe/" hreflang="de" lang="de">Deutsch</a>
+  <a href="/es/teleframe/" hreflang="es" lang="es">Español</a>
+  <a href="/es-mx/teleframe/" hreflang="es-MX" lang="es-MX">Español (MX)</a>
+  <a href="/fr/teleframe/" hreflang="fr" lang="fr">Français</a>
+  <a href="/it/teleframe/" hreflang="it" lang="it">Italiano</a>
+  <a href="/ja/teleframe/" hreflang="ja" lang="ja">日本語</a>
+  <a href="/ko/teleframe/" hreflang="ko" lang="ko">한국어</a>
+  <a href="/nl/teleframe/" hreflang="nl" lang="nl">Nederlands</a>
+  <a href="/pt-br/teleframe/" hreflang="pt-BR" lang="pt-BR">Português (BR)</a>
+  <span aria-current="true" lang="zh-Hans">简体中文</span>
+</nav>
+</body>
+</html>

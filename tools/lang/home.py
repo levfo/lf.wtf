@@ -930,3 +930,33 @@ import json as _riposte_json
 from pathlib import Path as _RipostePath
 _riposte_desc = "A free first-person sword fighting game. Online 1v1 duels in a low-poly dark fantasy arena."
 T[_riposte_desc] = tuple(_riposte_json.loads((_RipostePath(__file__).parent / f"riposte_{loc}.json").read_text(encoding="utf-8"))[_riposte_desc] for loc in ["de", "es", "es-MX", "fr", "it", "ja", "ko", "nl", "pt-BR", "zh-Hans"])
+
+
+# Teleframe, added 2026-10-27: element 15, the first paid download; keep existing element numbers stable.
+KEEP |= {"Teleframe", "lf.wtf/teleframe"}
+T["15, one per work"] = tuple(v.replace("14", "15") for v in T["14, one per work"])
+T["15 elements"] = tuple(v.replace("14", "15") for v in T["14 elements"])
+T["Windows app, 9.99 USD once"] = (
+    "Windows-App, einmalig 9,99 US-Dollar",
+    "App para Windows, 9,99 USD una vez",
+    "App para Windows, 9.99 USD un solo pago",
+    "App Windows, 9,99 $ US une fois",
+    "App per Windows, 9,99 USD una tantum",
+    "Windows アプリ、買い切り 9.99 米ドル",
+    "Windows 앱, 미화 9.99달러 한 번 결제",
+    "Windows-app, eenmalig 9,99 USD",
+    "App para Windows, 9,99 USD pagamento único",
+    "Windows 应用，一次性 9.99 美元",
+)
+T["A screen recorder for Windows. Drag a frame over any part of the screen, press REC, and save one MP4. The recorder's own controls never show up in the video."] = (
+    "Ein Bildschirmrekorder für Windows. Zieh einen Rahmen über einen beliebigen Teil des Bildschirms, drück REC und speichere eine MP4. Die Bedienelemente des Rekorders tauchen im Video nie auf.",
+    "Un grabador de pantalla para Windows. Arrastra un marco sobre cualquier parte de la pantalla, pulsa REC y guarda un MP4. Los controles del grabador nunca salen en el vídeo.",
+    "Un grabador de pantalla para Windows. Arrastra un marco sobre cualquier parte de la pantalla, presiona REC y guarda un MP4. Los controles del grabador nunca aparecen en el video.",
+    "Un enregistreur d'écran pour Windows. Placez un cadre sur n'importe quelle partie de l'écran, appuyez sur REC et enregistrez un seul MP4. Les commandes de l'enregistreur n'apparaissent jamais dans la vidéo.",
+    "Un registratore dello schermo per Windows. Trascina una cornice su qualsiasi parte dello schermo, premi REC e salva un unico MP4. I controlli del registratore non compaiono mai nel video.",
+    "Windows 用の画面録画ソフト。画面の好きな場所に枠を置いて REC を押すと、1 本の MP4 として保存できます。録画ソフト自体の操作パネルは動画に映りません。",
+    "Windows용 화면 녹화 프로그램. 화면의 원하는 곳에 프레임을 놓고 REC를 누르면 MP4 하나로 저장돼요. 녹화 프로그램의 조작 버튼은 영상에 찍히지 않아요.",
+    "Een schermrecorder voor Windows. Sleep een kader over elk deel van je scherm, druk op REC en sla één MP4 op. De bediening van de recorder komt nooit in de video.",
+    "Um gravador de tela para Windows. Arraste um quadro sobre qualquer parte da tela, aperte REC e salve um único MP4. Os controles do gravador nunca aparecem no vídeo.",
+    "一款 Windows 录屏软件。把取景框拖到屏幕上任意位置，按下 REC，保存为一个 MP4。录屏软件自己的控件永远不会出现在视频里。",
+)

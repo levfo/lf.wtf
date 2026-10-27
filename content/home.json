@@ -207,18 +207,18 @@
     "pt-BR": "Elétrons",
     "zh-Hans": "电子"
   },
-  "14, one per work": {
+  "15, one per work": {
     "kind": "text:dd",
-    "de": "14, eins pro Werk",
-    "es": "14, uno por obra",
-    "es-MX": "14, uno por obra",
-    "fr": "14, un par œuvre",
-    "it": "14, uno per opera",
-    "ja": "14、作品ごとに 1 つ",
-    "ko": "14, 작품마다 하나",
-    "nl": "14, één per werk",
-    "pt-BR": "14, um por obra",
-    "zh-Hans": "14，每件作品一个"
+    "de": "15, eins pro Werk",
+    "es": "15, uno por obra",
+    "es-MX": "15, uno por obra",
+    "fr": "15, un par œuvre",
+    "it": "15, uno per opera",
+    "ja": "15、作品ごとに 1 つ",
+    "ko": "15, 작품마다 하나",
+    "nl": "15, één per werk",
+    "pt-BR": "15, um por obra",
+    "zh-Hans": "15，每件作品一个"
   },
   "Shells": {
     "kind": "text:dt",
@@ -389,18 +389,18 @@
     "pt-BR": "Discord",
     "zh-Hans": "Discord"
   },
-  "14 elements": {
+  "15 elements": {
     "kind": "text:span",
-    "de": "14 Elemente",
-    "es": "14 elementos",
-    "es-MX": "14 elementos",
-    "fr": "14 éléments",
-    "it": "14 elementi",
-    "ja": "14 の元素",
-    "ko": "원소 14개",
-    "nl": "14 elementen",
-    "pt-BR": "14 elementos",
-    "zh-Hans": "14 种元素"
+    "de": "15 Elemente",
+    "es": "15 elementos",
+    "es-MX": "15 elementos",
+    "fr": "15 éléments",
+    "it": "15 elementi",
+    "ja": "15 の元素",
+    "ko": "원소 15개",
+    "nl": "15 elementen",
+    "pt-BR": "15 elementos",
+    "zh-Hans": "15 种元素"
   },
   "No. · shell": {
     "kind": "text:span",
@@ -661,6 +661,19 @@
     "nl": "RIPOSTE",
     "pt-BR": "RIPOSTE",
     "zh-Hans": "RIPOSTE"
+  },
+  "Teleframe": {
+    "kind": "text:span",
+    "de": "Teleframe",
+    "es": "Teleframe",
+    "es-MX": "Teleframe",
+    "fr": "Teleframe",
+    "it": "Teleframe",
+    "ja": "Teleframe",
+    "ko": "Teleframe",
+    "nl": "Teleframe",
+    "pt-BR": "Teleframe",
+    "zh-Hans": "Teleframe"
   },
   "Selected element": {
     "kind": "attr:aria-label",
@@ -1389,6 +1402,45 @@
     "nl": "riposte.lf.wtf",
     "pt-BR": "riposte.lf.wtf",
     "zh-Hans": "riposte.lf.wtf"
+  },
+  "Windows app, 9.99 USD once": {
+    "kind": "text:span",
+    "de": "Windows-App, einmalig 9,99 US-Dollar",
+    "es": "App para Windows, 9,99 USD una vez",
+    "es-MX": "App para Windows, 9.99 USD un solo pago",
+    "fr": "App Windows, 9,99 $ US une fois",
+    "it": "App per Windows, 9,99 USD una tantum",
+    "ja": "Windows アプリ、買い切り 9.99 米ドル",
+    "ko": "Windows 앱, 미화 9.99달러 한 번 결제",
+    "nl": "Windows-app, eenmalig 9,99 USD",
+    "pt-BR": "App para Windows, 9,99 USD pagamento único",
+    "zh-Hans": "Windows 应用，一次性 9.99 美元"
+  },
+  "A screen recorder for Windows. Drag a frame over any part of the screen, press REC, and save one MP4. The recorder's own controls never show up in the video.": {
+    "kind": "text:p",
+    "de": "Ein Bildschirmrekorder für Windows. Zieh einen Rahmen über einen beliebigen Teil des Bildschirms, drück REC und speichere eine MP4. Die Bedienelemente des Rekorders tauchen im Video nie auf.",
+    "es": "Un grabador de pantalla para Windows. Arrastra un marco sobre cualquier parte de la pantalla, pulsa REC y guarda un MP4. Los controles del grabador nunca salen en el vídeo.",
+    "es-MX": "Un grabador de pantalla para Windows. Arrastra un marco sobre cualquier parte de la pantalla, presiona REC y guarda un MP4. Los controles del grabador nunca aparecen en el video.",
+    "fr": "Un enregistreur d'écran pour Windows. Placez un cadre sur n'importe quelle partie de l'écran, appuyez sur REC et enregistrez un seul MP4. Les commandes de l'enregistreur n'apparaissent jamais dans la vidéo.",
+    "it": "Un registratore dello schermo per Windows. Trascina una cornice su qualsiasi parte dello schermo, premi REC e salva un unico MP4. I controlli del registratore non compaiono mai nel video.",
+    "ja": "Windows 用の画面録画ソフト。画面の好きな場所に枠を置いて REC を押すと、1 本の MP4 として保存できます。録画ソフト自体の操作パネルは動画に映りません。",
+    "ko": "Windows용 화면 녹화 프로그램. 화면의 원하는 곳에 프레임을 놓고 REC를 누르면 MP4 하나로 저장돼요. 녹화 프로그램의 조작 버튼은 영상에 찍히지 않아요.",
+    "nl": "Een schermrecorder voor Windows. Sleep een kader over elk deel van je scherm, druk op REC en sla één MP4 op. De bediening van de recorder komt nooit in de video.",
+    "pt-BR": "Um gravador de tela para Windows. Arraste um quadro sobre qualquer parte da tela, aperte REC e salve um único MP4. Os controles do gravador nunca aparecem no vídeo.",
+    "zh-Hans": "一款 Windows 录屏软件。把取景框拖到屏幕上任意位置，按下 REC，保存为一个 MP4。录屏软件自己的控件永远不会出现在视频里。"
+  },
+  "lf.wtf/teleframe": {
+    "kind": "text:a",
+    "de": "lf.wtf/teleframe",
+    "es": "lf.wtf/teleframe",
+    "es-MX": "lf.wtf/teleframe",
+    "fr": "lf.wtf/teleframe",
+    "it": "lf.wtf/teleframe",
+    "ja": "lf.wtf/teleframe",
+    "ko": "lf.wtf/teleframe",
+    "nl": "lf.wtf/teleframe",
+    "pt-BR": "lf.wtf/teleframe",
+    "zh-Hans": "lf.wtf/teleframe"
   },
   "Sub-projects": {
     "kind": "text:h2",

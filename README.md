@@ -18,6 +18,7 @@ Levi Foster's site. Plain static HTML, no build step, no framework.
     /kippu/privacy    
     /grnge/           GRNGE, black-and-white photo prints for iPhone
     /grnge/privacy    
+    /teleframe/      Teleframe, Windows screen recorder sold for 9.99 USD; /teleframe/thanks/ is the noindex download page
     /riposte/        RIPOSTE, first-person 1v1 sword fighting (the game runs at riposte.lf.wtf)
     /carmeet/         Carmeet, the browser car meet (the game itself runs at carmeet.lf.wtf)
     /hive/            Hive, the hosted MCP hub for AI agents (the product itself runs at hive.lf.wtf)
@@ -85,3 +86,18 @@ orange hub; a small script sends a message through it every few seconds, pauses 
 nothing at all under reduced motion. The message log beside it is ordinary list markup, so the
 translations reach it. Its translations come from one JSON file per locale in `tools/lang/hive_*.json`,
 folded together by `tools/lang/hive.py`.
+
+## The Teleframe page and the store
+
+`/teleframe/` is the first thing sold on lf.wtf. Its look comes from the app itself, which was designed from
+an 80s payphone/CRT kiosk image: phosphor green Share Tech Mono on near-black, the kiosk-blue panel with cream
+Archivo Black and stripe bars, a red rule, bracketed tokens. The mockups under `teleframe/assets/` are real
+screenshots of the app over a made-up desktop (sources in `C:/Users/leviq/Projects/ScreenRecorder/marketing`).
+
+Buying goes through the `lf-store` Worker (`C:/Users/leviq/Projects/lf-store`), routed on `lf.wtf/api/store/*`
+ahead of Pages. It creates Stripe Checkout Sessions with inline local prices (`src/prices.js`, by the visitor's
+country), returns buyers to `/<locale>/teleframe/thanks/?session_id=...`, checks the session with Stripe on every
+download, and streams the installer out of Workers KV in 20 MB chunks. No database. The thanks page's states
+(checking, ready, pending, lost link, sent, error) are all plain HTML so they translate like everything else.
+The buy forms carry a hidden `lang` that the page's script fills in; without JavaScript the Worker reads the
+locale from the Referer. Translations: `tools/lang/teleframe_<locale>.json` and `teleframe-thanks_<locale>.json`.

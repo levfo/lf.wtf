@@ -24,7 +24,10 @@ WEIGHT = {"": ("weekly", "1.0"), "frmt/": ("monthly", "0.9"), "modul8/": ("month
           "dollop/": ("monthly", "0.9"), "kippu/": ("monthly", "0.9"),
           "grnge/": ("monthly", "0.9"), "carmeet/": ("monthly", "0.9"),
           "riposte/": ("weekly", "0.9"), "hive/": ("monthly", "0.9"), "hearthvale/": ("monthly", "0.8"),
-          "system-memory/": ("monthly", "0.8")}
+          "system-memory/": ("monthly", "0.8"), "teleframe/": ("weekly", "0.9")}
+
+#: Translated, but noindex: the page Stripe returns buyers to.
+NOINDEX = {"teleframe/thanks/"}
 
 
 def main(lastmod):
@@ -32,7 +35,7 @@ def main(lastmod):
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
            '        xmlns:xhtml="http://www.w3.org/1999/xhtml">']
     count = 0
-    for page_url in list(PAGES.values()):
+    for page_url in [u for u in PAGES.values() if u not in NOINDEX]:
         freq, priority = WEIGHT.get(page_url, ("yearly", "0.2"))
         alternates = "".join(
             f'\n    <xhtml:link rel="alternate" hreflang="{h}" href="{_canonical(loc, page_url)}"/>'
