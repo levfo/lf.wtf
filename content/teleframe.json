@@ -116,19 +116,6 @@
     "pt-BR": "Teleframe",
     "zh-Hans": "Teleframe"
   },
-  "REC": {
-    "kind": "text:a",
-    "de": "REC",
-    "es": "REC",
-    "es-MX": "REC",
-    "fr": "REC",
-    "it": "REC",
-    "ja": "REC",
-    "ko": "REC",
-    "nl": "REC",
-    "pt-BR": "REC",
-    "zh-Hans": "REC"
-  },
   "Select frame:": {
     "kind": "text:p",
     "de": "Rahmen wählen:",

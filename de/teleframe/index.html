@@ -113,6 +113,7 @@ details p{margin:10px 0 4px 22px}
 .terms p{margin:0 0 10px}
 footer.wrap{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:space-between;margin-top:90px;padding-top:20px;padding-bottom:10px;border-top:2px solid var(--line);font-size:15px;color:var(--dim)}
 footer a{color:var(--ph)}
+nav.i18n{opacity:1;color:var(--dim)}nav.i18n a{color:var(--ph)}nav.i18n span[aria-current]{opacity:1;color:var(--cream)}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 @keyframes blink{50%{opacity:0}}
 @keyframes fill{0%{width:8%}100%{width:96%}}
@@ -361,7 +362,7 @@ html[lang="de"] h1, html[lang="de"] h2, html[lang="de"] .sub { text-transform: n
     <svg class="stripes" viewBox="0 0 1000 96" preserveAspectRatio="none" aria-hidden="true"><g id="st"></g></svg>
   </div>
   <div class="row">
-    <a class="chip" href="#buy" aria-label="Teleframe kaufen"><i></i>REC</a>
+    <a class="chip" href="#buy" aria-hidden="true" tabindex="-1"><i></i>REC</a>
     <div>
       <p class="label">Rahmen wählen:<u></u></p>
       <p class="tokens glow" aria-hidden="true">[16:9],<wbr>9:16,<wbr>1:1,<wbr>4:3,<wbr>4:5,<wbr>21:9,<wbr>FREE,<wbr>FULL</p>
