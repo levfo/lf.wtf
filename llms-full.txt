@@ -762,11 +762,11 @@ Source: https://lf.wtf/harmony/privacy/
 
 ## privacy policy
 
-Last updated 27 August 2026
+Last updated 27 October 2026
 
 Harmony Palette does not collect any data.
 
-There is no account to create, no analytics, no advertising, no tracking, and no third-party code of any kind in the app. This is not a policy about how carefully we handle your information. There is no information to handle.
+There is no account to create, no analytics, no advertising, no tracking, and no third-party code of any kind in the app.
 
 ### Your photographs
 
@@ -794,7 +794,7 @@ If this ever changes, the change will appear here with a new date, and any versi
 
 ### Getting in touch
 
-Questions go to support. An email sent there is an email, and is handled like one: read, replied to, and not fed into anything.
+Questions go to support.
 
 Harmony Palette · lf.wtf · Built in Fort Worth, Texas
 
@@ -892,9 +892,9 @@ Source: https://lf.wtf/dollop/privacy/
 
 ## privacy policy
 
-Last updated 29 August 2026
+Last updated 27 October 2026
 
-Dollop does not collect any data. There is no account to create, no analytics, no advertising, no tracking, and no third-party code of any kind in the app. This is not a policy about how carefully your information is handled. There is no information to handle.
+Dollop does not collect any data. There is no account to create, no analytics, no advertising, no tracking, and no third-party code of any kind in the app.
 
 ### What leaves your phone
 
@@ -910,7 +910,7 @@ The From Life mode asks the camera or your photo library for one picture so you 
 
 ### What is saved, and where
 
-Your creature, its DNA, whether you have played today, your daily streak, the sound setting and the fact that you have seen the introduction are all stored on the device in the app's own settings. They stay on that phone. Deleting the app deletes them, which is the only way to erase them and does not require asking anybody.
+Your creature, its DNA, whether you have played today, your daily streak, the sound setting and the fact that you have seen the introduction are all stored on the device in the app's own settings. They stay on that phone. Deleting the app deletes them, which is the only way to erase them.
 
 ### Purchases
 
@@ -926,7 +926,7 @@ If this ever changes, the change will appear here with a new date, and any versi
 
 ### Getting in touch
 
-Questions go to L@LF.WTF, which reaches me directly. An email sent there is an email, and is handled like one: read, replied to, and not fed into anything.
+Questions go to L@LF.WTF.
 
 Dollop · lf.wtf · Built in Fort Worth, Texas
 

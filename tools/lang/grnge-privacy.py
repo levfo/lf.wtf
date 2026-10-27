@@ -44,12 +44,17 @@ T = {
         "Politique de confidentialité", "Informativa sulla privacy", "プライバシーポリシー",
         "개인정보 처리방침", "Privacybeleid", "Política de privacidade", "隐私政策"),
 
-    "Last updated 23 September 2026": (
-        "Zuletzt aktualisiert am 23. September 2026", "Última actualización: 23 de septiembre de 2026",
-        "Última actualización: 23 de septiembre de 2026", "Dernière mise à jour le 23 septembre 2026",
-        "Ultimo aggiornamento: 23 settembre 2026", "最終更新日：2026年9月23日", "최종 업데이트: 2026년 9월 23일",
-        "Laatst bijgewerkt op 23 september 2026", "Última atualização: 23 de setembro de 2026",
-        "最后更新：2026年9月23日"),
+    'Last updated 27 October 2026': (
+        'Zuletzt aktualisiert am 27. Oktober 2026',
+        'Última actualización: 27 de octubre de 2026',
+        'Última actualización: 27 de octubre de 2026',
+        'Dernière mise à jour le 27 octobre 2026',
+        'Ultimo aggiornamento: 27 ottobre 2026',
+        '最終更新日：2026年10月27日',
+        '최종 업데이트: 2026년 10월 27일',
+        'Laatst bijgewerkt op 27 oktober 2026',
+        'Última atualização: 27 de outubro de 2026',
+        '最后更新：2026年10月27日'),
 
     "GRNGE does not collect any data.": (
         "GRNGE erfasst keinerlei Daten.", "GRNGE no recopila ningún dato.",
@@ -58,17 +63,17 @@ T = {
         "GRNGE는 어떤 데이터도 수집하지 않습니다.", "GRNGE verzamelt geen enkele gegevens.",
         "O GRNGE não coleta nenhum dado.", "GRNGE 不收集任何数据。"),
 
-    "There is no account to create, no analytics, no advertising, no tracking, and no third-party code of any kind in the app. This is not a policy about how carefully your information is handled. There is no information on this side to handle.": (
-        "Es gibt kein Konto anzulegen, keine Analyse, keine Werbung, kein Tracking und keinerlei Code von Dritten in der App. Dies ist keine Erklärung darüber, wie sorgfältig mit deinen Informationen umgegangen wird. Auf dieser Seite gibt es keine Informationen, mit denen umzugehen wäre.",
-        "No hay ninguna cuenta que crear, ni analítica, ni publicidad, ni rastreo, ni código de terceros de ningún tipo en la aplicación. Esto no es una política sobre el cuidado con el que se maneja tu información. De este lado no hay información que manejar.",
-        "No hay ninguna cuenta que crear, ni analítica, ni publicidad, ni rastreo, ni código de terceros de ningún tipo en la aplicación. Esto no es una política sobre el cuidado con el que se maneja tu información. De este lado no hay información que manejar.",
-        "Il n'y a aucun compte à créer, pas d'analyse d'audience, pas de publicité, pas de pistage, et aucun code tiers d'aucune sorte dans l'application. Ce n'est pas une politique sur le soin apporté à tes informations. De ce côté-ci, il n'y a aucune information à traiter.",
-        "Non c'è nessun account da creare, nessuna analisi, nessuna pubblicità, nessun tracciamento e nessun codice di terze parti di alcun tipo nell'app. Questa non è un'informativa su quanta cura si presta alle tue informazioni. Da questa parte non c'è alcuna informazione da trattare.",
-        "作成するアカウントはなく、解析も、広告も、トラッキングも、第三者のコードも一切アプリに含まれていません。これは、あなたの情報をどれだけ慎重に扱うかについての方針ではありません。こちら側には扱う情報そのものがありません。",
-        "만들 계정도 없고, 분석도, 광고도, 추적도, 어떤 종류의 제3자 코드도 앱에 없습니다. 이 문서는 당신의 정보를 얼마나 조심스럽게 다루는지에 관한 방침이 아닙니다. 이쪽에는 다룰 정보 자체가 없습니다.",
-        "Er is geen account om aan te maken, geen analytics, geen advertenties, geen tracking en geen enkele code van derden in de app. Dit is geen beleid over hoe zorgvuldig er met je gegevens wordt omgegaan. Aan deze kant zijn er geen gegevens om mee om te gaan.",
-        "Não há conta para criar, nem análise, nem publicidade, nem rastreamento, nem código de terceiros de qualquer tipo no app. Isto não é uma política sobre o cuidado com que suas informações são tratadas. Deste lado não há informação nenhuma para tratar.",
-        "没有需要创建的账户，没有分析，没有广告，没有追踪，应用中也没有任何第三方代码。这不是一份关于如何谨慎处理你信息的政策。这一边根本没有信息可处理。"),
+    'There is no account to create, no analytics, no advertising, no tracking, and no third-party code of any kind in the app.': (
+        'Es gibt kein Konto anzulegen, keine Analyse, keine Werbung, kein Tracking und keinerlei Code von Dritten in der App.',
+        'No hay ninguna cuenta que crear, ni analítica, ni publicidad, ni rastreo, ni código de terceros de ningún tipo en la aplicación.',
+        'No hay ninguna cuenta que crear, ni analítica, ni publicidad, ni rastreo, ni código de terceros de ningún tipo en la aplicación.',
+        "Il n'y a aucun compte à créer, pas d'analyse d'audience, pas de publicité, pas de pistage, et aucun code tiers d'aucune sorte dans l'application.",
+        "Non c'è nessun account da creare, nessuna analisi, nessuna pubblicità, nessun tracciamento e nessun codice di terze parti di alcun tipo nell'app.",
+        '作成するアカウントはなく、解析も、広告も、トラッキングも、第三者のコードも一切アプリに含まれていません。',
+        '만들 계정도 없고, 분석도, 광고도, 추적도, 어떤 종류의 제3자 코드도 앱에 없습니다.',
+        'Er is geen account om aan te maken, geen analytics, geen advertenties, geen tracking en geen enkele code van derden in de app.',
+        'Não há conta para criar, nem análise, nem publicidade, nem rastreamento, nem código de terceiros de qualquer tipo no app.',
+        '没有需要创建的账户，没有分析，没有广告，没有追踪，应用中也没有任何第三方代码。'),
 
     "What leaves your phone": (
         "Was dein Telefon verlässt", "Qué sale de tu teléfono", "Qué sale de tu teléfono",
@@ -196,17 +201,17 @@ T = {
         "무엇이, 어디에 저장되는가", "Wat er wordt bewaard, en waar", "O que é salvo, e onde",
         "保存了什么，保存在哪里"),
 
-    "Your prints, their settings and the app's preferences are stored on the phone, in the app's own storage. The app does not sync them anywhere and nothing else can read them. Deleting the app deletes them, which does not require asking anybody.": (
-        "Deine Drucke, ihre Einstellungen und die Voreinstellungen der App werden auf dem Telefon gespeichert, im eigenen Speicher der App. Die App synchronisiert sie nirgendwohin, und nichts anderes kann sie lesen. Die App zu löschen löscht sie, und dafür musst du niemanden fragen.",
-        "Tus impresiones, sus ajustes y las preferencias de la app se guardan en el teléfono, en el almacenamiento propio de la app. La app no las sincroniza con ningún sitio y nada más puede leerlas. Borrar la app las borra, y para eso no hace falta pedírselo a nadie.",
-        "Tus impresiones, sus ajustes y las preferencias de la app se guardan en el teléfono, en el almacenamiento propio de la app. La app no las sincroniza con ningún lado y nada más puede leerlas. Borrar la app las borra, y para eso no hace falta pedírselo a nadie.",
-        "Tes tirages, leurs réglages et les préférences de l'app sont stockés sur le téléphone, dans l'espace propre à l'app. L'app ne les synchronise nulle part et rien d'autre ne peut les lire. Supprimer l'app les supprime, sans avoir à le demander à personne.",
-        "Le tue stampe, le loro impostazioni e le preferenze dell'app sono salvate sul telefono, nello spazio dell'app. L'app non le sincronizza da nessuna parte e nient'altro può leggerle. Eliminare l'app le elimina, e non serve chiederlo a nessuno.",
-        "プリント、その設定、アプリの環境設定は、端末の中のアプリ専用の領域に保存されます。アプリがそれをどこかに同期することはなく、ほかのものが読むこともできません。アプリを削除すれば消え、誰かに頼む必要はありません。",
-        "인쇄물과 그 설정, 앱의 환경설정은 휴대폰 안, 앱 전용 저장 공간에 저장됩니다. 앱은 이를 어디에도 동기화하지 않으며, 다른 무엇도 읽을 수 없습니다. 앱을 삭제하면 함께 삭제되고, 누구에게 요청할 필요도 없습니다.",
-        "Je afdrukken, hun instellingen en de voorkeuren van de app worden op de telefoon bewaard, in de eigen opslag van de app. De app synchroniseert ze nergens heen en niets anders kan ze lezen. De app verwijderen verwijdert ze, en daarvoor hoef je niemand iets te vragen.",
-        "Suas impressões, os ajustes delas e as preferências do app ficam no telefone, no armazenamento do próprio app. O app não as sincroniza com lugar nenhum e nada mais consegue lê-las. Apagar o app apaga tudo isso, sem precisar pedir a ninguém.",
-        "你的作品、它们的设置以及应用的偏好设置都保存在手机上，应用自己的存储空间里。应用不会把它们同步到任何地方，别的东西也读不到。删除应用就会删除它们，不需要找任何人。"),
+    "Your prints, their settings and the app's preferences are stored on the phone, in the app's own storage. The app does not sync them anywhere and nothing else can read them. Deleting the app deletes them.": (
+        'Deine Drucke, ihre Einstellungen und die Voreinstellungen der App werden auf dem Telefon gespeichert, im eigenen Speicher der App. Die App synchronisiert sie nirgendwohin, und nichts anderes kann sie lesen. Die App zu löschen löscht sie.',
+        'Tus impresiones, sus ajustes y las preferencias de la app se guardan en el teléfono, en el almacenamiento propio de la app. La app no las sincroniza con ningún sitio y nada más puede leerlas. Borrar la app las borra.',
+        'Tus impresiones, sus ajustes y las preferencias de la app se guardan en el teléfono, en el almacenamiento propio de la app. La app no las sincroniza con ningún lado y nada más puede leerlas. Borrar la app las borra.',
+        "Tes tirages, leurs réglages et les préférences de l'app sont stockés sur le téléphone, dans l'espace propre à l'app. L'app ne les synchronise nulle part et rien d'autre ne peut les lire. Supprimer l'app les supprime.",
+        "Le tue stampe, le loro impostazioni e le preferenze dell'app sono salvate sul telefono, nello spazio dell'app. L'app non le sincronizza da nessuna parte e nient'altro può leggerle. Eliminare l'app le elimina.",
+        'プリント、その設定、アプリの環境設定は、端末の中のアプリ専用の領域に保存されます。アプリがそれをどこかに同期することはなく、ほかのものが読むこともできません。アプリを削除すれば消えます。',
+        '인쇄물과 그 설정, 앱의 환경설정은 휴대폰 안, 앱 전용 저장 공간에 저장됩니다. 앱은 이를 어디에도 동기화하지 않으며, 다른 무엇도 읽을 수 없습니다. 앱을 삭제하면 함께 삭제됩니다.',
+        'Je afdrukken, hun instellingen en de voorkeuren van de app worden op de telefoon bewaard, in de eigen opslag van de app. De app synchroniseert ze nergens heen en niets anders kan ze lezen. De app verwijderen verwijdert ze.',
+        'Suas impressões, os ajustes delas e as preferências do app ficam no telefone, no armazenamento do próprio app. O app não as sincroniza com lugar nenhum e nada mais consegue lê-las. Apagar o app apaga tudo isso.',
+        '你的作品、它们的设置以及应用的偏好设置都保存在手机上，应用自己的存储空间里。应用不会把它们同步到任何地方，别的东西也读不到。删除应用就会删除它们。'),
 
     "Purchases": (
         "Käufe", "Compras", "Compras", "Achats", "Acquisti", "購入", "구매", "Aankopen", "Compras", "购买"),
@@ -283,22 +288,18 @@ T = {
         "Kontakt", "Contacto", "Contacto", "Contact", "Contatti", "お問い合わせ", "연락처", "Contact",
         "Contato", "联系方式"),
 
-    "Questions go to": (
-        "Fragen gehen an", "Las preguntas van a", "Las preguntas van a", "Les questions vont à",
-        "Le domande vanno a", "質問は", "질문은", "Vragen gaan naar", "Perguntas vão para",
-        "有问题请发到"),
+    'Questions go to': (
+        'Fragen gehen an',
+        'Las preguntas van a',
+        'Las preguntas van a',
+        'Les questions vont à',
+        'Le domande vanno a',
+        'ご質問はこちらへ:',
+        '질문은 이 주소로 보내 주세요:',
+        'Vragen gaan naar',
+        'Perguntas vão para',
+        '有问题请发到'),
 
-    ", which reaches me directly. An email sent there is an email, and is handled like one: read, replied to, and not fed into anything.": (
-        ", das mich direkt erreicht. Eine E-Mail dorthin ist eine E-Mail und wird auch so behandelt: gelesen, beantwortet und in nichts eingespeist.",
-        ", que me llega directamente. Un correo enviado ahí es un correo, y se trata como tal: se lee, se responde y no se mete en nada.",
-        ", que me llega directamente. Un correo enviado ahí es un correo, y se trata como tal: se lee, se responde y no se mete en nada.",
-        ", qui me parvient directement. Un e-mail envoyé là est un e-mail, et traité comme tel : lu, répondu, et versé dans rien.",
-        ", che mi arriva direttamente. Un'email inviata lì è un'email, e viene trattata come tale: letta, risposta e non inserita in nulla.",
-        "へ。私に直接届きます。そこに送られたメールはメールとして扱われます。読んで、返事をして、他の何かに流し込むことはありません。",
-        "으로 보내 주세요. 제게 직접 닿습니다. 그곳으로 보낸 이메일은 이메일로 다뤄집니다. 읽고, 답장하고, 다른 어디에도 넣지 않습니다.",
-        ", dat mij rechtstreeks bereikt. Een e-mail daarheen is een e-mail en wordt zo behandeld: gelezen, beantwoord en nergens in gestopt.",
-        ", que chega direto a mim. Um e-mail enviado para lá é um e-mail, e é tratado como tal: lido, respondido e não jogado em nada.",
-        "，它直接到我这里。发到那里的邮件就是一封邮件，也按邮件处理：阅读、回复，不会被喂进任何系统。"),
 
     "Built in Fort Worth, Texas": (
         "Gebaut in Fort Worth, Texas", "Hecho en Fort Worth, Texas", "Hecho en Fort Worth, Texas",

@@ -30,17 +30,17 @@ T = {
         "datenschutzerklärung", "política de privacidad", "política de privacidad",
         "politique de confidentialité", "informativa sulla privacy", "プライバシーポリシー",
         "개인정보 처리방침", "privacybeleid", "política de privacidade", "隐私政策"),
-    "Last updated 27 August 2026": (
-        "Zuletzt aktualisiert am 27. August 2026",
-        "Última actualización: 27 de agosto de 2026",
-        "Última actualización: 27 de agosto de 2026",
-        "Dernière mise à jour le 27 août 2026",
-        "Ultimo aggiornamento 27 agosto 2026",
-        "最終更新 2026 年 8 月 27 日",
-        "최종 업데이트 2026년 8월 27일",
-        "Laatst bijgewerkt op 27 augustus 2026",
-        "Última atualização em 27 de agosto de 2026",
-        "最后更新于 2026 年 8 月 27 日"),
+    'Last updated 27 October 2026': (
+        'Zuletzt aktualisiert am 27. Oktober 2026',
+        'Última actualización: 27 de octubre de 2026',
+        'Última actualización: 27 de octubre de 2026',
+        'Dernière mise à jour le 27 octobre 2026',
+        'Ultimo aggiornamento 27 ottobre 2026',
+        '最終更新 2026 年 10 月 27 日',
+        '최종 업데이트 2026년 10월 27일',
+        'Laatst bijgewerkt op 27 oktober 2026',
+        'Última atualização em 27 de outubro de 2026',
+        '最后更新于 2026 年 10 月 27 日'),
     "Harmony Palette collects nothing. There is no account, no analytics and no advertising. Photos are analysed on your device, and iCloud sync goes to your own private database, not to us.": (
         "Harmony Palette erhebt nichts. Es gibt kein Konto, keine Analyse und keine Werbung. Fotos "
         "werden auf Ihrem Gerät ausgewertet, und der iCloud-Abgleich geht in Ihre eigene private "
@@ -82,38 +82,17 @@ T = {
         "Harmony Palette verzamelt geen enkel gegeven.",
         "O Harmony Palette não coleta nenhum dado.",
         "Harmony Palette 不收集任何数据。"),
-    "There is no account to\n    create, no analytics, no advertising, no tracking, and no third-party code of any kind in the\n    app. This is not a policy about how carefully we handle your information. There is no\n    information to handle.": (
-        "Es gibt kein Konto anzulegen, keine Analyse, keine Werbung, kein Tracking und keinerlei "
-        "Fremdcode in der App. Dies ist keine Erklärung darüber, wie sorgfältig wir mit Ihren "
-        "Daten umgehen. Es gibt keine Daten, mit denen umzugehen wäre.",
-        "No hay cuenta que crear, ni analíticas, ni publicidad, ni rastreo, ni código de terceros "
-        "de ningún tipo en la app. Esta no es una política sobre con cuánto cuidado tratamos tu "
-        "información. No hay información que tratar.",
-        "No hay cuenta que crear, ni analíticas, ni publicidad, ni rastreo, ni código de terceros "
-        "de ningún tipo en la app. Esta no es una política sobre con cuánto cuidado tratamos tu "
-        "información. No hay información que tratar.",
-        "Il n'y a pas de compte à créer, pas d'analytique, pas de publicité, pas de pistage, et "
-        "aucun code tiers d'aucune sorte dans l'application. Ce n'est pas une politique sur le "
-        "soin avec lequel nous traitons vos informations. Il n'y a pas d'informations à traiter.",
-        "Non c'è nessun account da creare, nessuna analisi, nessuna pubblicità, nessun "
-        "tracciamento e nessun codice di terze parti di alcun tipo nell'app. Questa non è "
-        "un'informativa su quanta cura mettiamo nel trattare i tuoi dati. Non ci sono dati da "
-        "trattare.",
-        "作成するアカウントもなく、解析も、広告も、追跡も、いかなる第三者のコードもアプリには"
-        "ありません。これは私たちがあなたの情報をどれだけ慎重に扱うかについての方針ではありません。"
-        "扱う情報がそもそもないのです。",
-        "만들 계정도, 분석도, 광고도, 추적도, 어떤 종류의 서드파티 코드도 앱에 없습니다. 이것은 "
-        "우리가 당신의 정보를 얼마나 조심스럽게 다루는지에 관한 방침이 아닙니다. 다룰 정보 자체가 "
-        "없습니다.",
-        "Er is geen account aan te maken, geen analytics, geen reclame, geen tracking en geen enkele "
-        "code van derden in de app. Dit is geen beleid over hoe zorgvuldig we met je gegevens "
-        "omgaan. Er zijn geen gegevens om mee om te gaan.",
-        "Não há conta a criar, nem analytics, nem publicidade, nem rastreamento, nem código de "
-        "terceiros de nenhum tipo no app. Esta não é uma política sobre o cuidado com que tratamos "
-        "as suas informações. Não há informação a tratar.",
-        "没有账号要建，没有分析统计，没有广告，没有追踪，"
-        "应用里也没有任何第三方代码。这不是一份关于我们如何小心处理你的信息的政策。"
-        "根本没有信息需要处理。"),
+    'There is no account to\n    create, no analytics, no advertising, no tracking, and no third-party code of any kind in the\n    app.': (
+        'Es gibt kein Konto anzulegen, keine Analyse, keine Werbung, kein Tracking und keinerlei Fremdcode in der App.',
+        'No hay cuenta que crear, ni analíticas, ni publicidad, ni rastreo, ni código de terceros de ningún tipo en la app.',
+        'No hay cuenta que crear, ni analíticas, ni publicidad, ni rastreo, ni código de terceros de ningún tipo en la app.',
+        "Il n'y a pas de compte à créer, pas d'analytique, pas de publicité, pas de pistage, et aucun code tiers d'aucune sorte dans l'application.",
+        "Non c'è nessun account da creare, nessuna analisi, nessuna pubblicità, nessun tracciamento e nessun codice di terze parti di alcun tipo nell'app.",
+        '作成するアカウントもなく、解析も、広告も、追跡も、いかなる第三者のコードもアプリにはありません。',
+        '만들 계정도, 분석도, 광고도, 추적도, 어떤 종류의 서드파티 코드도 앱에 없습니다.',
+        'Er is geen account aan te maken, geen analytics, geen reclame, geen tracking en geen enkele code van derden in de app.',
+        'Não há conta a criar, nem analytics, nem publicidade, nem rastreamento, nem código de terceiros de nenhum tipo no app.',
+        '没有账号要建，没有分析统计，没有广告，没有追踪，应用里也没有任何第三方代码。'),
     "Your photographs": (
         "Ihre Fotos", "Tus fotos", "Tus fotos", "Vos photos", "Le tue foto", "あなたの写真",
         "당신의 사진", "Je foto's", "Suas fotos", "你的照片"),
@@ -410,33 +389,20 @@ T = {
     "Getting in touch": (
         "Kontakt", "Ponerse en contacto", "Ponerse en contacto", "Nous contacter", "Contatti",
         "お問い合わせ", "연락하기", "Contact opnemen", "Entrar em contato", "联系我们"),
-    "Questions go to": (
-        "Fragen gehen an den", "Las preguntas van a", "Las preguntas van a",
-        "Les questions vont à l'", "Le domande vanno all'", "ご質問は",
-        "질문은", "Vragen gaan naar", "As perguntas vão para o", "问题请发给"),
+    'Questions go to': (
+        'Fragen gehen an den',
+        'Las preguntas van a',
+        'Las preguntas van a',
+        "Les questions vont à l'",
+        "Le domande vanno all'",
+        'ご質問はこちらへ:',
+        '질문은 이 주소로 보내 주세요:',
+        'Vragen gaan naar',
+        'As perguntas vão para o',
+        '问题请发给'),
     "support": (
         "Support", "soporte", "soporte", "assistance", "assistenza", "サポート", "지원",
         "ondersteuning", "suporte", "支持"),
-    ". An email sent\n    there is an email, and is handled like one: read, replied to, and not fed into anything.": (
-        ". Eine dorthin geschickte E-Mail ist eine E-Mail und wird auch so behandelt: gelesen, "
-        "beantwortet und in nichts weiter eingespeist.",
-        ". Un correo enviado ahí es un correo, y se trata como tal: se lee, se responde y no se "
-        "mete en nada.",
-        ". Un correo enviado ahí es un correo, y se trata como tal: se lee, se responde y no se "
-        "mete en nada.",
-        ". Un e-mail envoyé là est un e-mail, et il est traité comme tel : lu, répondu, et versé "
-        "dans rien du tout.",
-        ". Un'email mandata lì è un'email, e viene trattata come tale: letta, a cui si risponde, e "
-        "non data in pasto a niente.",
-        "。そこへ送られたメールはメールであり、メールとして扱われます。読まれ、返事が書かれ、"
-        "それ以外の何かに流し込まれることはありません。",
-        ". 그리로 보낸 이메일은 이메일이고, 이메일로 다뤄집니다. 읽고, 답장하고, 다른 무엇에도 "
-        "집어넣지 않습니다.",
-        ". Een mail die daarheen gaat is een mail, en wordt ook zo behandeld: gelezen, beantwoord, "
-        "en nergens in gestopt.",
-        ". Um e-mail mandado para lá é um e-mail, e é tratado como tal: lido, respondido, e não "
-        "jogado dentro de nada.",
-        "。发到那里的邮件就是一封邮件，也按邮件来对待：读，回，不喂给任何别的东西。"),
     "Built in Fort Worth, Texas": (
         "Gebaut in Fort Worth, Texas", "Hecho en Fort Worth, Texas",
         "Hecho en Fort Worth, Texas", "Fait à Fort Worth, Texas", "Fatto a Fort Worth, Texas",

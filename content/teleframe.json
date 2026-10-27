@@ -1078,18 +1078,18 @@
     "pt-BR": "Ao comprar o Teleframe, você recebe uma chave de licença para até 3 PCs, para trabalho pessoal ou comercial. Os pagamentos são processados pela Stripe, e o lf.wtf nunca vê o número do seu cartão.",
     "zh-Hans": "购买 Teleframe 后，你会获得一个许可证密钥，最多可用于 3 台电脑，用于个人或商业用途均可。付款由 Stripe 处理，lf.wtf 不会看到你的卡号。"
   },
-  "Your email is used to send your download link, to answer you if you write in, and for occasional emails about new products I release that relate to Teleframe. You can unsubscribe from those at any time.": {
+  "By buying Teleframe, you agree to occasional emails about related products. You can unsubscribe at any time.": {
     "kind": "text:p",
-    "de": "Deine E-Mail-Adresse wird genutzt, um dir den Download-Link zu schicken, dir zu antworten, wenn du schreibst, und dir gelegentlich von neuen Produkten zu erzählen, die ich passend zu Teleframe veröffentliche. Davon kannst du dich jederzeit abmelden.",
-    "es": "Tu correo se usa para enviarte el enlace de descarga, para contestarte si nos escribes y para avisarte de vez en cuando de nuevos productos míos relacionados con Teleframe. Puedes darte de baja de esos correos cuando quieras.",
-    "es-MX": "Tu correo se usa para mandarte tu link de descarga, para responderte si nos escribes y para avisarte de vez en cuando de nuevos productos míos relacionados con Teleframe. Puedes darte de baja de esos correos cuando quieras.",
-    "fr": "Votre adresse e-mail sert à vous envoyer le lien de téléchargement, à vous répondre si vous nous écrivez et à vous prévenir de temps en temps des nouveaux produits que je publie en lien avec Teleframe. Vous pouvez vous désabonner de ces e-mails à tout moment.",
-    "it": "La tua email serve per mandarti il link per il download, per risponderti se ci scrivi e, ogni tanto, per avvisarti dei nuovi prodotti che pubblico legati a Teleframe. Puoi annullare l'iscrizione a queste email quando vuoi.",
-    "ja": "メールアドレスは、ダウンロードリンクの送信、お問い合わせへの返信、そして Teleframe に関連する新製品のお知らせ（ときどき）に使います。お知らせはいつでも配信停止できます。",
-    "ko": "이메일은 다운로드 링크를 보내고, 문의에 답장하고, 가끔 Teleframe과 관련된 새 제품 소식을 알리는 데 쓰여요. 소식 메일은 언제든 수신 거부할 수 있어요.",
-    "nl": "Je e-mailadres wordt gebruikt om je downloadlink te sturen, om je te antwoorden als je mailt en af en toe om je te laten weten dat ik een nieuw product heb uitgebracht dat bij Teleframe past. Je kunt je daar altijd voor afmelden.",
-    "pt-BR": "Seu e-mail é usado para enviar o link de download, para responder se você escrever e, de vez em quando, para avisar sobre novos produtos meus relacionados ao Teleframe. Você pode cancelar a inscrição nesses e-mails quando quiser.",
-    "zh-Hans": "你的邮箱用于发送下载链接、在你来信时回复你，以及偶尔通知你我发布的与 Teleframe 相关的新产品。这类邮件你可以随时退订。"
+    "de": "Mit dem Kauf von Teleframe stimmst du gelegentlichen E-Mails über verwandte Produkte zu. Du kannst sie jederzeit abbestellen.",
+    "es": "Al comprar Teleframe, aceptas recibir de vez en cuando correos sobre productos relacionados. Puedes darte de baja cuando quieras.",
+    "es-MX": "Al comprar Teleframe, aceptas recibir de vez en cuando correos sobre productos relacionados. Puedes darte de baja cuando quieras.",
+    "fr": "En achetant Teleframe, vous acceptez de recevoir de temps en temps des e-mails sur des produits liés. Vous pouvez vous désabonner à tout moment.",
+    "it": "Acquistando Teleframe, accetti di ricevere ogni tanto email su prodotti correlati. Puoi annullare l'iscrizione in qualsiasi momento.",
+    "ja": "Teleframe を購入すると、関連製品についてのメールをときどき受け取ることに同意したことになります。配信はいつでも停止できます。",
+    "ko": "Teleframe을 구매하면 관련 제품에 관한 이메일을 가끔 받는 데 동의하게 돼요. 수신은 언제든지 거부할 수 있어요.",
+    "nl": "Door Teleframe te kopen, ga je akkoord met af en toe een e-mail over verwante producten. Je kunt je op elk moment afmelden.",
+    "pt-BR": "Ao comprar o Teleframe, você concorda em receber de vez em quando e-mails sobre produtos relacionados. Você pode cancelar a inscrição quando quiser.",
+    "zh-Hans": "购买 Teleframe 即表示你同意偶尔收到相关产品的邮件。你可以随时退订。"
   },
   "Made by": {
     "kind": "text:span",

@@ -40,11 +40,17 @@ T = {
         "Politique de confidentialité", "Informativa sulla privacy", "プライバシーポリシー",
         "개인정보 처리방침", "Privacybeleid", "Política de privacidade", "隐私政策"),
 
-    "Last updated 21 September 2026": (
-        "Zuletzt aktualisiert am 21. September 2026", "Última actualización: 21 de septiembre de 2026",
-        "Última actualización: 21 de septiembre de 2026", "Dernière mise à jour le 21 septembre 2026",
-        "Ultimo aggiornamento: 21 settembre 2026", "最終更新日：2026年9月21日", "최종 업데이트: 2026년 9월 21일",
-        "Laatst bijgewerkt op 21 september 2026", "Última atualização: 21 de setembro de 2026", "最后更新：2026年9月21日"),
+    'Last updated 27 October 2026': (
+        'Zuletzt aktualisiert am 27. Oktober 2026',
+        'Última actualización: 27 de octubre de 2026',
+        'Última actualización: 27 de octubre de 2026',
+        'Dernière mise à jour le 27 octobre 2026',
+        'Ultimo aggiornamento: 27 ottobre 2026',
+        '最終更新日：2026年10月27日',
+        '최종 업데이트: 2026년 10월 27일',
+        'Laatst bijgewerkt op 27 oktober 2026',
+        'Última atualização: 27 de outubro de 2026',
+        '最后更新：2026年10月27日'),
 
     "Kippu does not collect any data.": (
         "Kippu erfasst keinerlei Daten.", "Kippu no recopila ningún dato.", "Kippu no recopila ningún dato.",
@@ -52,17 +58,17 @@ T = {
         "Kippu는 어떤 데이터도 수집하지 않습니다.", "Kippu verzamelt geen enkele gegevens.",
         "O Kippu não coleta nenhum dado.", "Kippu 不收集任何数据。"),
 
-    "There is no account to create, no analytics, no advertising, no tracking, and no third-party code of any kind in the app. This is not a policy about how carefully your information is handled. There is no information on this side to handle.": (
-        "Es gibt kein Konto anzulegen, keine Analyse, keine Werbung, kein Tracking und keinerlei Code von Dritten in der App. Dies ist keine Erklärung darüber, wie sorgfältig mit deinen Informationen umgegangen wird. Auf dieser Seite gibt es keine Informationen, mit denen umzugehen wäre.",
-        "No hay ninguna cuenta que crear, ni analítica, ni publicidad, ni rastreo, ni código de terceros de ningún tipo en la aplicación. Esto no es una política sobre el cuidado con el que se maneja tu información. De este lado no hay información que manejar.",
-        "No hay ninguna cuenta que crear, ni analítica, ni publicidad, ni rastreo, ni código de terceros de ningún tipo en la aplicación. Esto no es una política sobre el cuidado con el que se maneja tu información. De este lado no hay información que manejar.",
-        "Il n'y a aucun compte à créer, pas d'analyse d'audience, pas de publicité, pas de pistage, et aucun code tiers d'aucune sorte dans l'application. Ce n'est pas une politique sur le soin apporté à vos informations. De ce côté-ci, il n'y a aucune information à traiter.",
-        "Non c'è nessun account da creare, nessuna analisi, nessuna pubblicità, nessun tracciamento e nessun codice di terze parti di alcun tipo nell'app. Questa non è un'informativa su quanta cura si presta alle tue informazioni. Da questa parte non c'è alcuna informazione da trattare.",
-        "作成するアカウントはなく、解析も、広告も、トラッキングも、第三者のコードも一切アプリに含まれていません。これは、あなたの情報をどれだけ慎重に扱うかについての方針ではありません。こちら側には扱う情報そのものがありません。",
-        "만들 계정도 없고, 분석도, 광고도, 추적도, 어떤 종류의 제3자 코드도 앱에 없습니다. 이 문서는 당신의 정보를 얼마나 조심스럽게 다루는지에 관한 방침이 아닙니다. 이쪽에는 다룰 정보 자체가 없습니다.",
-        "Er is geen account om aan te maken, geen analytics, geen advertenties, geen tracking en geen enkele code van derden in de app. Dit is geen beleid over hoe zorgvuldig er met je gegevens wordt omgegaan. Aan deze kant zijn er geen gegevens om mee om te gaan.",
-        "Não há conta para criar, nem análise, nem publicidade, nem rastreamento, nem código de terceiros de qualquer tipo no app. Isto não é uma política sobre o cuidado com que suas informações são tratadas. Deste lado não há informação nenhuma para tratar.",
-        "没有需要创建的账户，没有分析，没有广告，没有追踪，应用中也没有任何第三方代码。这不是一份关于如何谨慎处理你信息的政策。这一边根本没有信息可处理。"),
+    'There is no account to create, no analytics, no advertising, no tracking, and no third-party code of any kind in the app.': (
+        'Es gibt kein Konto anzulegen, keine Analyse, keine Werbung, kein Tracking und keinerlei Code von Dritten in der App.',
+        'No hay ninguna cuenta que crear, ni analítica, ni publicidad, ni rastreo, ni código de terceros de ningún tipo en la aplicación.',
+        'No hay ninguna cuenta que crear, ni analítica, ni publicidad, ni rastreo, ni código de terceros de ningún tipo en la aplicación.',
+        "Il n'y a aucun compte à créer, pas d'analyse d'audience, pas de publicité, pas de pistage, et aucun code tiers d'aucune sorte dans l'application.",
+        "Non c'è nessun account da creare, nessuna analisi, nessuna pubblicità, nessun tracciamento e nessun codice di terze parti di alcun tipo nell'app.",
+        '作成するアカウントはなく、解析も、広告も、トラッキングも、第三者のコードも一切アプリに含まれていません。',
+        '만들 계정도 없고, 분석도, 광고도, 추적도, 어떤 종류의 제3자 코드도 앱에 없습니다.',
+        'Er is geen account om aan te maken, geen analytics, geen advertenties, geen tracking en geen enkele code van derden in de app.',
+        'Não há conta para criar, nem análise, nem publicidade, nem rastreamento, nem código de terceiros de qualquer tipo no app.',
+        '没有需要创建的账户，没有分析，没有广告，没有追踪，应用中也没有任何第三方代码。'),
 
     "What leaves your device": (
         "Was dein Gerät verlässt", "Qué sale de tu dispositivo", "Qué sale de tu dispositivo",
@@ -251,21 +257,18 @@ T = {
     "Getting in touch": (
         "Kontakt", "Contacto", "Contacto", "Contact", "Contatti", "お問い合わせ", "연락처", "Contact", "Contato", "联系方式"),
 
-    "Questions go to": (
-        "Fragen gehen an", "Las preguntas van a", "Las preguntas van a", "Les questions vont à",
-        "Le domande vanno a", "質問は", "질문은", "Vragen gaan naar", "Perguntas vão para", "有问题请发到"),
+    'Questions go to': (
+        'Fragen gehen an',
+        'Las preguntas van a',
+        'Las preguntas van a',
+        'Les questions vont à',
+        'Le domande vanno a',
+        'ご質問はこちらへ:',
+        '질문은 이 주소로 보내 주세요:',
+        'Vragen gaan naar',
+        'Perguntas vão para',
+        '有问题请发到'),
 
-    ", which reaches me directly. An email sent there is an email, and is handled like one: read, replied to, and not fed into anything.": (
-        ", das mich direkt erreicht. Eine E-Mail dorthin ist eine E-Mail und wird auch so behandelt: gelesen, beantwortet und in nichts eingespeist.",
-        ", que me llega directamente. Un correo enviado ahí es un correo, y se trata como tal: se lee, se responde y no se mete en nada.",
-        ", que me llega directamente. Un correo enviado ahí es un correo, y se trata como tal: se lee, se responde y no se mete en nada.",
-        ", qui me parvient directement. Un e-mail envoyé là est un e-mail, et traité comme tel : lu, répondu, et versé dans rien.",
-        ", che mi arriva direttamente. Un'email inviata lì è un'email, e viene trattata come tale: letta, risposta e non inserita in nulla.",
-        "へ。私に直接届きます。そこに送られたメールはメールとして扱われます。読んで、返事をして、他の何かに流し込むことはありません。",
-        "으로 보내 주세요. 제게 직접 닿습니다. 그곳으로 보낸 이메일은 이메일로 다뤄집니다. 읽고, 답장하고, 다른 어디에도 넣지 않습니다.",
-        ", dat mij rechtstreeks bereikt. Een e-mail daarheen is een e-mail en wordt zo behandeld: gelezen, beantwoord en nergens in gestopt.",
-        ", que chega direto a mim. Um e-mail enviado para lá é um e-mail, e é tratado como tal: lido, respondido e não jogado em nada.",
-        "，它直接到我这里。发到那里的邮件就是一封邮件，也按邮件处理：阅读、回复，不会被喂进任何系统。"),
 
     "Built in Fort Worth, Texas": (
         "Gebaut in Fort Worth, Texas", "Hecho en Fort Worth, Texas", "Hecho en Fort Worth, Texas",

@@ -62,17 +62,17 @@ T = {
         "politique de confidentialité", "informativa sulla privacy", "プライバシーポリシー",
         "개인정보 처리방침", "privacybeleid", "política de privacidade", "隐私政策"),
 
-    "Last updated 29 August 2026": (
-        "Zuletzt aktualisiert am 29. August 2026",
-        "Última actualización: 29 de agosto de 2026",
-        "Última actualización: 29 de agosto de 2026",
-        "Dernière mise à jour le 29 août 2026",
-        "Ultimo aggiornamento 29 agosto 2026",
-        "最終更新 2026 年 8 月 29 日",
-        "최종 업데이트 2026년 8월 29일",
-        "Laatst bijgewerkt op 29 augustus 2026",
-        "Última atualização em 29 de agosto de 2026",
-        "最后更新于 2026 年 8 月 29 日"),
+    'Last updated 27 October 2026': (
+        'Zuletzt aktualisiert am 27. Oktober 2026',
+        'Última actualización: 27 de octubre de 2026',
+        'Última actualización: 27 de octubre de 2026',
+        'Dernière mise à jour le 27 octobre 2026',
+        'Ultimo aggiornamento 27 ottobre 2026',
+        '最終更新 2026 年 10 月 27 日',
+        '최종 업데이트 2026년 10월 27일',
+        'Laatst bijgewerkt op 27 oktober 2026',
+        'Última atualização em 27 de outubro de 2026',
+        '最后更新于 2026 年 10 月 27 日'),
 
     "Dollop does not collect any data.": (
         "Dollop erfasst keinerlei Daten.",
@@ -86,39 +86,17 @@ T = {
         "O Dollop não coleta nenhum dado.",
         "Dollop 不收集任何数据。"),
 
-    "There is no account to create, no\n    analytics, no advertising, no tracking, and no "
-    "third-party code of any kind in the app. This is\n    not a policy about how carefully your "
-    "information is handled. There is no information to\n    handle.": (
-        "Es gibt kein Konto anzulegen, keine Analyse, keine Werbung, kein Tracking und keinerlei "
-        "Fremdcode in der App. Das hier ist keine Erklärung darüber, wie sorgfältig mit deinen "
-        "Daten umgegangen wird. Es gibt keine Daten, mit denen umzugehen wäre.",
-        "No hay cuenta que crear, ni analítica, ni publicidad, ni seguimiento, ni código de "
-        "terceros de ningún tipo en la app. Esto no es una política sobre con cuánto cuidado se "
-        "tratan tus datos. No hay datos que tratar.",
-        "No hay cuenta que crear, ni analítica, ni publicidad, ni rastreo, ni código de terceros de "
-        "ningún tipo en la app. Esto no es una política sobre con cuánto cuidado se tratan tus "
-        "datos. No hay datos que tratar.",
-        "Il n'y a pas de compte à créer, pas d'analytique, pas de publicité, pas de pistage, et "
-        "aucun code tiers d'aucune sorte dans l'app. Ceci n'est pas une politique sur le soin avec "
-        "lequel vos informations sont traitées. Il n'y a pas d'informations à traiter.",
-        "Non c'è un account da creare, non c'è analitica, non c'è pubblicità, non c'è "
-        "tracciamento e non c'è codice di terze parti di alcun tipo nell'app. Questa non è "
-        "un'informativa su quanta cura si mette nel trattare i tuoi dati. Non ci sono dati da "
-        "trattare.",
-        "作成するアカウントはなく、解析も広告もトラッキングもなく、第三者のコードも一切"
-        "入っていません。これは、あなたの情報がどれだけ丁寧に扱われるかについての方針では"
-        "ありません。扱う情報がそもそもありません。",
-        "만들 계정도 없고, 분석도 광고도 추적도 없으며, 어떤 종류의 서드파티 코드도 앱에 들어 있지 "
-        "않습니다. 이것은 당신의 정보를 얼마나 조심스럽게 다루는지에 대한 방침이 아닙니다. 다룰 "
-        "정보 자체가 없습니다.",
-        "Er is geen account aan te maken, geen analytics, geen advertenties, geen tracking, en geen "
-        "code van derden van welke aard dan ook in de app. Dit is geen beleid over hoe zorgvuldig "
-        "je gegevens worden behandeld. Er zijn geen gegevens om te behandelen.",
-        "Não há conta a criar, nem analytics, nem publicidade, nem rastreamento, nem código de "
-        "terceiros de qualquer tipo no app. Esta não é uma política sobre com quanto cuidado suas "
-        "informações são tratadas. Não há informação nenhuma a tratar.",
-        "没有需要注册的账号，没有统计分析，没有广告，没有追踪，App 里也没有任何第三方代码。"
-        "这不是一份关于你的信息被如何小心处理的说明。这里根本没有信息需要处理。"),
+    'There is no account to create, no\n    analytics, no advertising, no tracking, and no third-party code of any kind in the app.': (
+        'Es gibt kein Konto anzulegen, keine Analyse, keine Werbung, kein Tracking und keinerlei Fremdcode in der App.',
+        'No hay cuenta que crear, ni analítica, ni publicidad, ni seguimiento, ni código de terceros de ningún tipo en la app.',
+        'No hay cuenta que crear, ni analítica, ni publicidad, ni rastreo, ni código de terceros de ningún tipo en la app.',
+        "Il n'y a pas de compte à créer, pas d'analytique, pas de publicité, pas de pistage, et aucun code tiers d'aucune sorte dans l'app.",
+        "Non c'è un account da creare, non c'è analitica, non c'è pubblicità, non c'è tracciamento e non c'è codice di terze parti di alcun tipo nell'app.",
+        '作成するアカウントはなく、解析も広告もトラッキングもなく、第三者のコードも一切入っていません。',
+        '만들 계정도 없고, 분석도 광고도 추적도 없으며, 어떤 종류의 서드파티 코드도 앱에 들어 있지 않습니다.',
+        'Er is geen account aan te maken, geen analytics, geen advertenties, geen tracking, en geen code van derden van welke aard dan ook in de app.',
+        'Não há conta a criar, nem analytics, nem publicidade, nem rastreamento, nem código de terceiros de qualquer tipo no app.',
+        '没有需要注册的账号，没有统计分析，没有广告，没有追踪，App 里也没有任何第三方代码。'),
 
     "What leaves your phone": (
         "Was dein Telefon verlässt",
@@ -318,50 +296,17 @@ T = {
         "O que é salvo, e onde",
         "保存了什么，保存在哪里"),
 
-    "Your creature, its DNA, whether you have played today, your daily streak, the sound setting "
-    "and\n    the fact that you have seen the introduction are all stored on the device in the "
-    "app's own\n    settings. They stay on that phone. Deleting the app deletes them, which is the "
-    "only way to erase\n    them and does not require asking anybody.": (
-        "Dein Wesen, seine DNA, ob du heute gespielt hast, deine tägliche Serie, die "
-        "Toneinstellung und die Tatsache, dass du die Einführung gesehen hast, liegen alle auf dem "
-        "Gerät in den eigenen Einstellungen der App. Sie bleiben auf diesem Telefon. Wer die App "
-        "löscht, löscht sie mit, und das ist der einzige Weg, sie zu entfernen, und dafür muss "
-        "niemand gefragt werden.",
-        "Tu criatura, su ADN, si has jugado hoy, tu racha diaria, el ajuste de sonido y el hecho de "
-        "que has visto la introducción se guardan todos en el dispositivo, en los ajustes propios "
-        "de la app. Se quedan en ese teléfono. Borrar la app los borra, que es la única manera de "
-        "eliminarlos y no requiere pedírselo a nadie.",
-        "Tu criatura, su ADN, si has jugado hoy, tu racha diaria, el ajuste de sonido y el hecho de "
-        "que has visto la introducción se guardan todos en el dispositivo, en los ajustes propios "
-        "de la app. Se quedan en ese teléfono. Borrar la app los borra, que es la única manera de "
-        "eliminarlos y no requiere pedírselo a nadie.",
-        "Votre créature, son ADN, le fait que vous ayez joué aujourd'hui, votre série quotidienne, "
-        "le réglage du son et le fait que vous ayez vu l'introduction sont tous enregistrés sur "
-        "l'appareil, dans les réglages propres à l'app. Ils restent sur ce téléphone. Supprimer "
-        "l'app les supprime, ce qui est la seule façon de les effacer et ne demande de le "
-        "demander à personne.",
-        "La tua creatura, il suo DNA, se hai giocato oggi, la tua serie quotidiana, "
-        "l'impostazione del suono e il fatto che hai visto l'introduzione sono tutti salvati sul "
-        "dispositivo, nelle impostazioni proprie dell'app. Restano su quel telefono. Eliminare "
-        "l'app li elimina, ed è l'unico modo per cancellarli, senza doverlo chiedere a nessuno.",
-        "あなたの生きもの、その DNA、今日遊んだかどうか、連続日数、サウンドの設定、そして"
-        "はじめの説明を見たかどうかは、すべて端末の中のアプリ自身の設定に保存されます。その"
-        "端末から出ません。アプリを削除すればまとめて消え、それが唯一の消し方で、誰かに頼む"
-        "必要はありません。",
-        "당신의 생물, 그 DNA, 오늘 플레이했는지 여부, 연속 일수, 소리 설정, 그리고 소개를 봤다는 "
-        "사실은 모두 기기 안의 앱 자체 설정에 저장됩니다. 그 휴대폰에서 나가지 않습니다. 앱을 "
-        "지우면 함께 지워지고, 그것이 유일한 삭제 방법이며 누구에게 요청할 필요도 없습니다.",
-        "Je wezen, zijn DNA, of je vandaag hebt gespeeld, je dagelijkse reeks, de geluidsinstelling "
-        "en het feit dat je de introductie hebt gezien staan allemaal op het toestel, in de eigen "
-        "instellingen van de app. Ze blijven op die telefoon. De app verwijderen verwijdert ze, en "
-        "dat is de enige manier om ze te wissen, en daar hoef je niemand voor te vragen.",
-        "Sua criatura, o DNA dela, se você jogou hoje, sua sequência diária, o ajuste de som e o "
-        "fato de você ter visto a introdução ficam todos no aparelho, nos ajustes do próprio app. "
-        "Eles ficam naquele telefone. Apagar o app apaga tudo isso, que é a única forma de "
-        "eliminá-los e não exige pedir a ninguém.",
-        "你的小生物、它的 DNA、你今天是否玩过、你的连续天数、声音开关，以及你已经看过引导这件事，"
-        "全都保存在设备上、App 自己的设置里。它们不会离开那台手机。删除 App 就会把它们一起删掉，"
-        "那也是唯一的清除方式，而且不需要向任何人申请。"),
+    "Your creature, its DNA, whether you have played today, your daily streak, the sound setting and\n    the fact that you have seen the introduction are all stored on the device in the app's own\n    settings. They stay on that phone. Deleting the app deletes them, which is the only way to erase\n    them.": (
+        'Dein Wesen, seine DNA, ob du heute gespielt hast, deine tägliche Serie, die Toneinstellung und die Tatsache, dass du die Einführung gesehen hast, liegen alle auf dem Gerät in den eigenen Einstellungen der App. Sie bleiben auf diesem Telefon. Wer die App löscht, löscht sie mit, und das ist der einzige Weg, sie zu entfernen.',
+        'Tu criatura, su ADN, si has jugado hoy, tu racha diaria, el ajuste de sonido y el hecho de que has visto la introducción se guardan todos en el dispositivo, en los ajustes propios de la app. Se quedan en ese teléfono. Borrar la app los borra, que es la única manera de eliminarlos.',
+        'Tu criatura, su ADN, si has jugado hoy, tu racha diaria, el ajuste de sonido y el hecho de que has visto la introducción se guardan todos en el dispositivo, en los ajustes propios de la app. Se quedan en ese teléfono. Borrar la app los borra, que es la única manera de eliminarlos.',
+        "Votre créature, son ADN, le fait que vous ayez joué aujourd'hui, votre série quotidienne, le réglage du son et le fait que vous ayez vu l'introduction sont tous enregistrés sur l'appareil, dans les réglages propres à l'app. Ils restent sur ce téléphone. Supprimer l'app les supprime, ce qui est la seule façon de les effacer.",
+        "La tua creatura, il suo DNA, se hai giocato oggi, la tua serie quotidiana, l'impostazione del suono e il fatto che hai visto l'introduzione sono tutti salvati sul dispositivo, nelle impostazioni proprie dell'app. Restano su quel telefono. Eliminare l'app li elimina, ed è l'unico modo per cancellarli.",
+        'あなたの生きもの、その DNA、今日遊んだかどうか、連続日数、サウンドの設定、そしてはじめの説明を見たかどうかは、すべて端末の中のアプリ自身の設定に保存されます。その端末から出ません。アプリを削除すればまとめて消え、それが唯一の消し方です。',
+        '당신의 생물, 그 DNA, 오늘 플레이했는지 여부, 연속 일수, 소리 설정, 그리고 소개를 봤다는 사실은 모두 기기 안의 앱 자체 설정에 저장됩니다. 그 휴대폰에서 나가지 않습니다. 앱을 지우면 함께 지워지고, 그것이 유일한 삭제 방법입니다.',
+        'Je wezen, zijn DNA, of je vandaag hebt gespeeld, je dagelijkse reeks, de geluidsinstelling en het feit dat je de introductie hebt gezien staan allemaal op het toestel, in de eigen instellingen van de app. Ze blijven op die telefoon. De app verwijderen verwijdert ze, en dat is de enige manier om ze te wissen.',
+        'Sua criatura, o DNA dela, se você jogou hoje, sua sequência diária, o ajuste de som e o fato de você ter visto a introdução ficam todos no aparelho, nos ajustes do próprio app. Eles ficam naquele telefone. Apagar o app apaga tudo isso, que é a única forma de eliminá-los.',
+        '你的小生物、它的 DNA、你今天是否玩过、你的连续天数、声音开关，以及你已经看过引导这件事，全都保存在设备上、App 自己的设置里。它们不会离开那台手机。删除 App 就会把它们一起删掉，那也是唯一的清除方式。'),
 
     "Purchases": (
         "Käufe", "Compras", "Compras", "Achats", "Acquisti",
@@ -504,33 +449,18 @@ T = {
         "Kontakt", "Contacto", "Contacto", "Nous écrire", "Contatti",
         "連絡", "문의", "Contact", "Fale comigo", "联系"),
 
-    "Questions go to": (
-        "Fragen gehen an", "Las preguntas van a", "Las preguntas van a",
-        "Les questions vont à", "Le domande vanno a",
-        "質問の宛先は", "질문은", "Vragen gaan naar", "Perguntas vão para", "问题请发到"),
+    'Questions go to': (
+        'Fragen gehen an',
+        'Las preguntas van a',
+        'Las preguntas van a',
+        'Les questions vont à',
+        'Le domande vanno a',
+        'ご質問はこちらへ:',
+        '질문은 이 주소로 보내 주세요:',
+        'Vragen gaan naar',
+        'Perguntas vão para',
+        '问题请发到'),
 
-    ", which reaches me directly. An email sent\n    there is an email, and is handled like one: "
-    "read, replied to, and not fed into anything.": (
-        ", das mich direkt erreicht. Eine E-Mail dorthin ist eine E-Mail und wird auch so "
-        "behandelt: gelesen, beantwortet und in nichts weiter eingespeist.",
-        ", que me llega directamente. Un correo enviado ahí es un correo, y se trata como tal: se "
-        "lee, se responde y no se mete en nada más.",
-        ", que me llega directamente. Un correo enviado ahí es un correo, y se trata como tal: se "
-        "lee, se responde y no se mete en nada más.",
-        ", qui m'arrive directement. Un e-mail envoyé là est un e-mail, et il est traité comme "
-        "tel : lu, auquel on répond, et versé dans rien du tout.",
-        ", che arriva direttamente a me. Un'email mandata lì è un'email, e viene trattata come "
-        "tale: letta, a cui si risponde, e non data in pasto a nulla.",
-        "。私に直接届きます。そこに届いたメールはただのメールで、そのとおりに扱われます。"
-        "読んで、返事をして、それ以外の何かに流し込むことはありません。",
-        "로 보내 주세요. 저에게 바로 옵니다. 거기로 온 메일은 그냥 메일이고, 그렇게 다뤄집니다. "
-        "읽고, 답장하고, 다른 무엇에도 집어넣지 않습니다.",
-        ", dat mij direct bereikt. Een mail die daarheen gaat is een mail, en wordt ook zo "
-        "behandeld: gelezen, beantwoord, en nergens in gestopt.",
-        ", que chega direto a mim. Um e-mail enviado para lá é um e-mail, e é tratado como tal: "
-        "lido, respondido, e não jogado dentro de mais nada.",
-        "，这会直接到我这里。发到那里的邮件就是邮件，也会被当作邮件对待：读，回复，"
-        "不会被拿去喂给任何别的东西。"),
 
     "Built in Fort Worth, Texas": (
         "Gebaut in Fort Worth, Texas",

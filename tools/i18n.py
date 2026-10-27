@@ -232,6 +232,14 @@ def _inside(spans, i):
     return any(a <= i < b for a, b in spans)
 
 
+def _inside_value(source, i, n):
+    """True when source[i:i+n] lands inside a tag without being a whole attribute value. A short
+    segment like "support" otherwise matches inside an href ("harmony-support") and breaks the URL."""
+    if source.rfind("<", 0, i) <= source.rfind(">", 0, i):
+        return False
+    return not (source[i - 1:i] == '"' and source[i + n:i + n + 1] == '"')
+
+
 def _apply_text(source, pairs):
     """Replace each English string with its translation, scanning forward and never backtracking.
 
@@ -248,7 +256,7 @@ def _apply_text(source, pairs):
                                     (english.replace("&", "&amp;"),
                                      translated.replace("&", "&amp;"))):
             i = source.find(needle, cursor)
-            while i != -1 and _inside(spans, i):
+            while i != -1 and (_inside(spans, i) or _inside_value(source, i, len(needle))):
                 i = source.find(needle, i + 1)
             if i != -1:
                 break
