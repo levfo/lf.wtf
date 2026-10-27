@@ -103,3 +103,10 @@ download, and streams the installer out of Workers KV in 20 MB chunks. No databa
 (checking, ready, pending, lost link, sent, error) are all plain HTML so they translate like everything else.
 The buy forms carry a hidden `lang` that the page's script fills in; without JavaScript the Worker reads the
 locale from the Referer. Translations: `tools/lang/teleframe_<locale>.json` and `teleframe-thanks_<locale>.json`.
+
+## Google Analytics
+
+Every page carries the GA4 tag for property "lf.wtf" (measurement ID `G-66ZSZNSB3X`, account under
+leviqfoster@gmail.com), two lines right after `<meta charset>`. The English pages are the source; `i18n.py build`
+copies the tag to the ten locales like any other script. A new page needs the same two lines. `/hearthvale/play/`
+is a copy of the Hearthvale repo, so recopying it from there drops the tag unless that repo has it too.
