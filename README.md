@@ -69,7 +69,9 @@ The faint falling glyphs in the Lf tile are drawn on a canvas. Their ink follows
 the black backdrop, darker features carry more ink). Under the immutable asset rule a new map needs a
 new file name. With reduced motion the canvas draws one still frame.
 
-`lf-rain-map-1.png` and `og-lf.png` are burned: they were requested while the deploy that added them was
+The share image `og-lf-3.png` is rendered from `tools/og/og-lf.html` with headless Edge (command at the top of that file).
+
+`lf-rain-map-1.png`, `og-lf.png` are burned: they were requested while the deploy that added them was
 still propagating, so the edge cached the old home page under those names for a year. Do not reuse
 them, and do not fetch a new asset URL until the page that references it is live on lf.wtf.
 

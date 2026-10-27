@@ -722,6 +722,31 @@ T = {
         "Bedrijven, apps, games en kunst van Levi Foster",
         "Empresas, apps, jogos e arte de Levi Foster",
         "Levi Foster 的公司、应用、游戏与艺术"),
+
+    # 27 October 2026: title and description aimed at the name, set by Levi.
+    'Levi Foster: Entrepreneur, Developer and Artist': (
+        'Levi Foster: Unternehmer, Entwickler und Künstler',
+        'Levi Foster: emprendedor, desarrollador y artista',
+        'Levi Foster: emprendedor, desarrollador y artista',
+        'Levi Foster : entrepreneur, développeur et artiste',
+        'Levi Foster: imprenditore, sviluppatore e artista',
+        'Levi Foster｜起業家、開発者、アーティスト',
+        'Levi Foster｜기업가, 개발자, 아티스트',
+        'Levi Foster: ondernemer, ontwikkelaar en kunstenaar',
+        'Levi Foster: empreendedor, desenvolvedor e artista',
+        'Levi Foster｜创业者、开发者、艺术家'),
+
+    'Entrepreneur, artist and part-time cyborg in Fort Worth. Levi Foster co-owns Red Arrow Marketing and Crest Acquisitions and builds apps, games and AI tools.': (
+        'Unternehmer, Künstler und Teilzeit-Cyborg in Fort Worth. Levi Foster ist Mitinhaber von Red Arrow Marketing und Crest Acquisitions und baut Apps, Spiele und KI-Tools.',
+        'Emprendedor, artista y cíborg a tiempo parcial en Fort Worth. Levi Foster es socio de Red Arrow Marketing y Crest Acquisitions y crea apps, juegos y herramientas de IA.',
+        'Emprendedor, artista y cíborg de medio tiempo en Fort Worth. Levi Foster es socio de Red Arrow Marketing y Crest Acquisitions y crea apps, juegos y herramientas de IA.',
+        "Entrepreneur, artiste et cyborg à temps partiel à Fort Worth. Levi Foster est associé de Red Arrow Marketing et de Crest Acquisitions et crée des apps, des jeux et des outils d'IA.",
+        'Imprenditore, artista e cyborg part-time a Fort Worth. Levi Foster è socio di Red Arrow Marketing e Crest Acquisitions e crea app, giochi e strumenti di IA.',
+        'フォートワースの起業家、アーティスト、そしてパートタイムのサイボーグ。Levi Foster は Red Arrow Marketing と Crest Acquisitions の共同オーナーで、アプリ、ゲーム、AI ツールをつくっています。',
+        '포트워스의 기업가, 아티스트, 그리고 파트타임 사이보그. Levi Foster는 Red Arrow Marketing과 Crest Acquisitions의 공동 소유주이며 앱, 게임, AI 도구를 만듭니다.',
+        'Ondernemer, kunstenaar en parttime cyborg in Fort Worth. Levi Foster is mede-eigenaar van Red Arrow Marketing en Crest Acquisitions en bouwt apps, games en AI-tools.',
+        'Empreendedor, artista e ciborgue de meio período em Fort Worth. Levi Foster é sócio da Red Arrow Marketing e da Crest Acquisitions e cria apps, jogos e ferramentas de IA.',
+        '沃斯堡的创业者、艺术家，兼职赛博格。Levi Foster 是 Red Arrow Marketing 和 Crest Acquisitions 的合伙人，开发应用、游戏和 AI 工具。'),
 }
 
 # Column heads and the key tile, visible since the key and header row stopped being aria-hidden.
