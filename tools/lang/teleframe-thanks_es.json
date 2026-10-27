@@ -29,5 +29,20 @@
   "The download page couldn't reach the store. Reload to try again, or write to teleframe@lf.wtf.": "La página de descarga no ha podido conectar con la tienda. Recarga para volver a intentarlo o escribe a teleframe@lf.wtf.",
   "Made by": "Hecho por",
   "Levi Foster": "Levi Foster",
-  "teleframe@lf.wtf": "teleframe@lf.wtf"
+  "teleframe@lf.wtf": "teleframe@lf.wtf",
+  "Your Teleframe license": "Tu licencia de Teleframe",
+  "License key page for Teleframe customers.": "Página de la clave de licencia para clientes de Teleframe.",
+  "Your license key": "Tu clave de licencia",
+  "Copy": "Copiar",
+  "Copied.": "Copiada.",
+  "Activate in Teleframe": "Activar en Teleframe",
+  "Don't have Teleframe yet? Download it, run the installer, then come back here.": "¿Aún no tienes Teleframe? Descárgalo, ejecuta el instalador y luego vuelve aquí.",
+  "Click Activate in Teleframe, or open Teleframe, click the gear, choose LICENSE and paste the key.": "Haz clic en Activar en Teleframe, o abre Teleframe, haz clic en el engranaje, elige LICENSE y pega la clave.",
+  "One key works on up to 3 PCs. Activation needs the internet once.": "Una clave sirve para hasta 3 ordenadores. La activación necesita internet una sola vez.",
+  "A copy of the key is on its way to": "Te hemos enviado una copia de la clave a",
+  ". Keep that email, you'll need the key if you reinstall.": ". Guarda ese correo, porque necesitarás la clave si reinstalas.",
+  "Get your license key again": "Vuelve a recibir tu clave de licencia",
+  "Enter the email you used at checkout and your key will be sent there.": "Introduce el correo que usaste al pagar y te enviaremos ahí la clave.",
+  "Send my key": "Enviar mi clave",
+  "If that address bought Teleframe, your key is on its way. It can take a minute, and it may land in spam.": "Si esa dirección compró Teleframe, te llegará tu clave. Puede tardar un minuto y quizá acabe en la carpeta de spam."
 }

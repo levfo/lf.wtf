@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>下载 Teleframe</title>
-<meta name="description" content="Teleframe 用户的下载页面。">
+<title>你的 Teleframe 许可证</title>
+<meta name="description" content="Teleframe 用户的许可证密钥页面。">
 <meta name="robots" content="noindex">
 <link rel="alternate" hreflang="en" href="https://lf.wtf/teleframe/thanks/">
 <link rel="alternate" hreflang="de" href="https://lf.wtf/de/teleframe/thanks/">
@@ -59,6 +59,11 @@ p{margin:0 0 14px}
 .bar b::before{content:"";display:block;height:100%;background:linear-gradient(90deg,#9a9ca0 calc(100% - 4px),var(--amber) 0);animation:fill 2.4s steps(20) infinite}
 .btn{display:inline-block;cursor:pointer;background:var(--blue);color:var(--cream);border:3px solid var(--cream);font:700 19px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;padding:18px 26px;text-decoration:none}
 .btn:hover{background:var(--deep);outline:2px solid var(--ph);outline-offset:4px}
+.btn.alt{background:transparent;color:var(--ph);border-color:var(--line)}.btn.alt:hover{background:var(--ph);color:var(--ink);outline:none}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0 22px}
+.keybox{display:flex;flex-wrap:wrap;align-items:center;gap:12px;border:2px solid var(--cream);background:#06160d;padding:14px 16px;margin:6px 0 6px}
+.keybox code{font:clamp(18px,3.6vw,28px)/1.2 var(--mono);color:var(--cream);letter-spacing:.04em;word-break:break-all;text-shadow:0 0 8px rgba(220,237,203,.35)}
+.copy{cursor:pointer;background:transparent;color:var(--ph);border:2px solid var(--line);font:15px var(--mono);padding:6px 12px;margin-left:auto}.copy:hover{background:var(--ph);color:var(--ink)}
 .file{color:var(--dim);font-size:15px;margin:12px 0 22px}
 ol{margin:0 0 18px;padding-left:1.4em}ol li{margin-bottom:8px}
 .email{color:var(--cream)}
@@ -97,15 +102,17 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
     </div>
 
     <div id="ready" hidden>
-      <h1>可以下载了</h1>
-      <a class="btn" id="dl" href="#">下载 Teleframe</a>
-      <p class="file">Teleframe-Setup-1.0.0.exe，45 MB</p>
+      <h1>你的许可证密钥</h1>
+      <div class="keybox"><code id="key"></code><button class="copy" id="copy" type="button">复制</button></div>
+      <p class="note" id="copied" hidden>已复制。</p>
+      <div class="actions"><a class="btn" id="act" href="#">在 Teleframe 中激活</a><a class="btn alt" href="/api/store/installer">下载 Teleframe</a></div>
       <ol>
-        <li>运行安装程序。它会安装到你当前的 Windows 账户下，不需要管理员权限。</li>
+        <li>还没有 Teleframe？先下载并运行安装程序，然后回到这里。</li>
+        <li>点击“在 Teleframe 中激活”，或者打开 Teleframe，点击齿轮图标，选择 LICENSE 并粘贴密钥。</li>
         <li>如果 Windows SmartScreen 提示已保护你的电脑，点击“更多信息”，再点击“仍要运行”。安装程序没有代码签名，所以 Windows 会这样询问。</li>
-        <li>Teleframe 打开后，屏幕上会出现一个绿色录制框。把它移到你想要的位置，然后按 REC。</li>
       </ol>
-      <p>链接的副本正在发往 <span class="email" id="email"></span>这个邮箱。请保留这封邮件，以后需要重新安装时，链接随时可用。</p>
+      <p>一个密钥最多可用于 3 台电脑。激活时需要联网一次。</p>
+      <p>密钥的副本正在发往 <span class="email" id="email"></span>这个邮箱。请保留这封邮件，以后重新安装时会用到这个密钥。</p>
       <p class="note">有疑问或遇到问题？请写信到 teleframe@lf.wtf。</p>
     </div>
 
@@ -116,15 +123,15 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
     </div>
 
     <div id="lost" hidden>
-      <h1>重新获取下载链接</h1>
-      <p>输入你结账时用的邮箱，链接会发送到这个邮箱。</p>
-      <form id="resend"><label class="note" for="em">邮箱地址</label><br><input id="em" type="email" name="email" required autocomplete="email"><button class="btn" type="submit">发送链接</button></form>
+      <h1>重新获取许可证密钥</h1>
+      <p>输入你结账时用的邮箱，密钥会发送到这个邮箱。</p>
+      <form id="resend"><label class="note" for="em">邮箱地址</label><br><input id="em" type="email" name="email" required autocomplete="email"><button class="btn" type="submit">发送我的密钥</button></form>
       <p class="note">还没有购买 Teleframe？ <a href="/zh-hans/teleframe/">了解 Teleframe</a></p>
     </div>
 
     <div id="sent" hidden>
       <h1>请查收邮件</h1>
-      <p>如果这个地址购买过 Teleframe，新的链接已经在路上。可能要等一分钟，也可能被归入垃圾邮件。</p>
+      <p>如果这个地址购买过 Teleframe，密钥已经在路上。可能要等一分钟，也可能被归入垃圾邮件。</p>
     </div>
 
     <div id="error" hidden>
@@ -146,11 +153,17 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
     }).then(function(d){
       if(d.missing){show('lost');return}
       if(!d.paid){show('pending');return}
-      document.getElementById('dl').href=d.download;
+      document.getElementById('key').textContent=d.key||'';
+      document.getElementById('act').href=d.activate||'#';
       document.getElementById('email').textContent=d.email||'';
       show('ready');
     }).catch(function(){show('error')});
   }
+  document.getElementById('copy').addEventListener('click',function(){
+    var k=document.getElementById('key').textContent;
+    (navigator.clipboard?navigator.clipboard.writeText(k):Promise.reject()).then(function(){document.getElementById('copied').hidden=false}).catch(function(){
+      var r=document.createRange();r.selectNodeContents(document.getElementById('key'));var s=getSelection();s.removeAllRanges();s.addRange(r);});
+  });
   document.getElementById('resend').addEventListener('submit',function(e){
     e.preventDefault();
     fetch('/api/store/resend',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({email:document.getElementById('em').value,lang:lang})})

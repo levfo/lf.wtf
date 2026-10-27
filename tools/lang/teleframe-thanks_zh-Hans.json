@@ -29,5 +29,20 @@
   "The download page couldn't reach the store. Reload to try again, or write to teleframe@lf.wtf.": "下载页面无法连接到商店。请刷新重试，或写信到 teleframe@lf.wtf。",
   "Made by": "作者",
   "Levi Foster": "Levi Foster",
-  "teleframe@lf.wtf": "teleframe@lf.wtf"
+  "teleframe@lf.wtf": "teleframe@lf.wtf",
+  "Your Teleframe license": "你的 Teleframe 许可证",
+  "License key page for Teleframe customers.": "Teleframe 用户的许可证密钥页面。",
+  "Your license key": "你的许可证密钥",
+  "Copy": "复制",
+  "Copied.": "已复制。",
+  "Activate in Teleframe": "在 Teleframe 中激活",
+  "Don't have Teleframe yet? Download it, run the installer, then come back here.": "还没有 Teleframe？先下载并运行安装程序，然后回到这里。",
+  "Click Activate in Teleframe, or open Teleframe, click the gear, choose LICENSE and paste the key.": "点击“在 Teleframe 中激活”，或者打开 Teleframe，点击齿轮图标，选择 LICENSE 并粘贴密钥。",
+  "One key works on up to 3 PCs. Activation needs the internet once.": "一个密钥最多可用于 3 台电脑。激活时需要联网一次。",
+  "A copy of the key is on its way to": "密钥的副本正在发往",
+  ". Keep that email, you'll need the key if you reinstall.": "这个邮箱。请保留这封邮件，以后重新安装时会用到这个密钥。",
+  "Get your license key again": "重新获取许可证密钥",
+  "Enter the email you used at checkout and your key will be sent there.": "输入你结账时用的邮箱，密钥会发送到这个邮箱。",
+  "Send my key": "发送我的密钥",
+  "If that address bought Teleframe, your key is on its way. It can take a minute, and it may land in spam.": "如果这个地址购买过 Teleframe，密钥已经在路上。可能要等一分钟，也可能被归入垃圾邮件。"
 }

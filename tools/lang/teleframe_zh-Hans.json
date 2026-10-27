@@ -96,5 +96,19 @@
   "Open the download page and enter the email you paid with. The link will be sent to that address again.": "打开下载页面并输入你付款时用的邮箱。链接会重新发送到这个地址。",
   "Your email is used to send your download link and to answer you if you write in.": "你的邮箱只用于发送下载链接，以及在你来信时回复你。",
   "Your email is used to send your download link, to answer you if you write in, and for occasional emails about new products I release that relate to Teleframe. You can unsubscribe from those at any time.": "你的邮箱用于发送下载链接、在你来信时回复你，以及偶尔通知你我发布的与 Teleframe 相关的新产品。这类邮件你可以随时退订。",
-  "By buying Teleframe, you agree to the purchase terms below.": "购买 Teleframe 即表示你同意下方的购买条款。"
+  "By buying Teleframe, you agree to the purchase terms below.": "购买 Teleframe 即表示你同意下方的购买条款。",
+  "Teleframe is a screen recorder for Windows 10 and 11. Drag a frame over any part of your screen, record in 16:9, 9:16 or any shape, and save an MP4 with sound. Free 7-day trial, then $9.99 once, no subscription, no watermark.": "Teleframe 是一款 Windows 录屏软件，支持 Windows 10 和 11。把录制框拖到屏幕任意位置，按 16:9、9:16 或任意形状录制，保存为带声音的 MP4。免费试用 7 天，之后一次付费 $9.99，无需订阅，没有水印。",
+  "Teleframe puts a frame on your desktop. Drag it where you want it, size it to any shape and press REC. Only what's inside the frame goes into the video, and the recorder's own controls never appear in it. Try it free for 7 days.": "Teleframe 会在桌面上放一个录制框。把它拖到你想要的位置，调成任意形状，然后按 REC。只有框内的内容会录进视频，录屏软件自己的控件也不会出现在画面里。可以免费试用 7 天。",
+  "Download free trial": "下载免费试用版",
+  "Free for 7 days with every feature. Windows 10 and 11. One-time purchase.": "7 天内免费使用全部功能。支持 Windows 10 和 11。一次性购买。",
+  "No subscription and no account. After paying, your license key appears on screen and is emailed to you. One key works on up to 3 PCs.": "无需订阅，也不用注册账号。付款后，许可证密钥会显示在屏幕上，同时发到你的邮箱。一个密钥最多可用于 3 台电脑。",
+  "Is there a free trial?": "有免费试用吗？",
+  "Yes. Download Teleframe and use every feature free for 7 days. When the trial ends, enter a license key to keep recording.": "有。下载 Teleframe，7 天内免费使用全部功能。试用期结束后，输入许可证密钥即可继续录制。",
+  "How does the license key work?": "许可证密钥怎么用？",
+  "I lost my license key.": "我的许可证密钥丢了。",
+  "and enter the email you paid with. Your key will be sent to that address again.": "并输入你付款时用的邮箱。密钥会重新发送到这个地址。",
+  "Buying Teleframe gets you a license key for up to 3 PCs, for personal or commercial work. Payments are handled by Stripe, and lf.wtf never sees your card number.": "购买 Teleframe 后，你会获得一个许可证密钥，最多可用于 3 台电脑，用于个人或商业用途均可。付款由 Stripe 处理，lf.wtf 不会看到你的卡号。",
+  "Free 7-day trial; one license key works on up to 3 PCs": "免费试用 7 天；一个许可证密钥最多可用于 3 台电脑",
+  "Open the download page and enter the email you paid with. Your key will be sent to that address again.": "打开下载页面并输入你付款时用的邮箱。密钥会重新发送到这个地址。",
+  "After you buy, you get a key that starts with TELE-. In Teleframe, click the gear, choose LICENSE and paste it. One key works on up to 3 PCs. Activation needs the internet once, and after that Teleframe works offline.": "购买后，你会收到一个以 TELE- 开头的密钥。在 Teleframe 里点击齿轮图标，选择 LICENSE，然后粘贴密钥。一个密钥最多可用于 3 台电脑。激活时需要联网一次，之后 Teleframe 可以离线使用。"
 }

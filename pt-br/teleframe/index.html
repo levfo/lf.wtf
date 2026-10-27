@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Teleframe | Gravador de tela para Windows, grave qualquer área</title>
-<meta name="description" content="O Teleframe é um gravador de tela para Windows 10 e 11. Arraste um quadro sobre qualquer parte da tela, grave em 16:9, 9:16 ou qualquer formato e salve um MP4 com som. $9.99 pagos uma vez, sem assinatura, sem marca d'água.">
+<meta name="description" content="O Teleframe é um gravador de tela para Windows 10 e 11. Arraste um quadro sobre qualquer parte da tela, grave em 16:9, 9:16 ou qualquer formato e salve um MP4 com som. Teste grátis de 7 dias, depois $9.99 pagos uma vez, sem assinatura, sem marca d'água.">
 <link rel="alternate" hreflang="en" href="https://lf.wtf/teleframe/">
 <link rel="alternate" hreflang="de" href="https://lf.wtf/de/teleframe/">
 <link rel="alternate" hreflang="es" href="https://lf.wtf/es/teleframe/">
@@ -83,6 +83,9 @@ h1{font:400 clamp(34px,5.4vw,56px)/1.08 var(--mono);color:var(--ph);margin:0 0 1
 .buyrow{display:flex;flex-wrap:wrap;align-items:center;gap:18px 26px}
 .buy{appearance:none;cursor:pointer;background:var(--blue);color:var(--cream);border:3px solid var(--cream);font:700 19px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;padding:18px 26px}
 .buy:hover{background:var(--deep);outline:2px solid var(--ph);outline-offset:4px}
+.buy.alt{background:transparent;color:var(--ph);border-color:var(--line);text-decoration:none;display:inline-block}
+.buy.alt:hover{background:var(--ph);color:var(--ink);outline:none}
+.ctas{display:flex;flex-direction:column;gap:12px;align-items:stretch}.ctas .buy{width:100%;text-align:center}
 .price{font-size:34px;color:var(--cream);text-shadow:0 0 10px rgba(220,237,203,.35)}
 .fine{color:var(--dim);font-size:15px;margin:14px 0 0}
 .bar{position:absolute;right:-2px;bottom:-14px;width:290px}
@@ -139,7 +142,7 @@ justify-content:center}
       "@id": "https://lf.wtf/teleframe/#page",
       "url": "https://lf.wtf/teleframe/",
       "name": "Teleframe | Gravador de tela para Windows, grave qualquer área",
-      "description": "O Teleframe é um gravador de tela para Windows 10 e 11. Arraste um quadro sobre qualquer parte da tela, grave em 16:9, 9:16 ou qualquer formato e salve um MP4 com som. $9.99 pagos uma vez, sem assinatura, sem marca d'água.",
+      "description": "O Teleframe é um gravador de tela para Windows 10 e 11. Arraste um quadro sobre qualquer parte da tela, grave em 16:9, 9:16 ou qualquer formato e salve um MP4 com som. Teste grátis de 7 dias, depois $9.99 pagos uma vez, sem assinatura, sem marca d'água.",
       "inLanguage": "pt-BR",
       "primaryImageOfPage": "https://lf.wtf/teleframe/assets/hero-v1.webp",
       "breadcrumb": {
@@ -175,7 +178,8 @@ justify-content:center}
         "Som do sistema, microfone ou os dois",
         "Atalhos globais",
         "MP4 H.264 com codificação na GPU",
-        "Sem marca d'água"
+        "Sem marca d'água",
+        "Teste grátis de 7 dias; uma chave de licença funciona em até 3 PCs"
       ],
       "author": {
         "@id": "https://lf.wtf/#levifoster"
@@ -264,6 +268,22 @@ justify-content:center}
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Tem teste grátis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Baixe o Teleframe e use todos os recursos de graça por 7 dias. Quando o teste acabar, digite uma chave de licença para continuar gravando."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como funciona a chave de licença?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depois da compra, você recebe uma chave que começa com TELE-. No Teleframe, clique na engrenagem, escolha LICENSE e cole a chave. Uma chave funciona em até 3 PCs. A ativação precisa de internet uma vez, e depois disso o Teleframe funciona offline."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "O Teleframe é uma assinatura?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -328,10 +348,10 @@ justify-content:center}
         },
         {
           "@type": "Question",
-          "name": "Perdi meu link de download.",
+          "name": "Perdi minha chave de licença.",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Abra a página de download e digite o e-mail que você usou no pagamento. O link será enviado de novo para esse endereço."
+            "text": "Abra a página de download e digite o e-mail que você usou no pagamento. Sua chave será enviada de novo para esse endereço."
           }
         }
       ],
@@ -362,12 +382,13 @@ justify-content:center}
   </div>
   <div class="term">
     <h1>Grave qualquer parte da tela do PC</h1>
-    <p class="lead">O Teleframe coloca um quadro na sua área de trabalho. Arraste para onde quiser, ajuste para qualquer formato e aperte REC. Só o que está dentro do quadro entra no vídeo, e os controles do próprio gravador nunca aparecem nele.</p>
+    <p class="lead">O Teleframe coloca um quadro na sua área de trabalho. Arraste para onde quiser, ajuste para qualquer formato e aperte REC. Só o que está dentro do quadro entra no vídeo, e os controles do próprio gravador nunca aparecem nele. Experimente grátis por 7 dias.</p>
     <div class="buyrow">
+      <a class="buy alt" href="/api/store/installer">Baixar teste grátis</a>
       <form method="post" action="/api/store/checkout"><input type="hidden" name="product" value="teleframe"><input type="hidden" name="lang" value="en"><button class="buy" type="submit">Comprar o Teleframe</button></form>
       <span class="price" data-price>$9.99</span>
     </div>
-    <p class="fine">Windows 10 e 11. Compra única. Download logo após o pagamento.</p>
+    <p class="fine">Grátis por 7 dias com todos os recursos. Windows 10 e 11. Compra única.</p>
     <p class="fine">Ao comprar o Teleframe, você concorda com os termos de compra abaixo.</p>
     <div class="bar" aria-hidden="true"><span>READY...</span><b></b></div>
   </div>
@@ -423,16 +444,18 @@ justify-content:center}
   <div class="cta">
     <div>
       <p class="price" data-price>$9.99</p>
-      <p>Sem assinatura e sem conta. Depois de pagar, você vai direto para a página de download, e o link também é enviado para o seu e-mail.</p>
+      <p>Sem assinatura e sem conta. Depois de pagar, sua chave de licença aparece na tela e também é enviada para o seu e-mail. Uma chave funciona em até 3 PCs.</p>
       <p class="fine">Pagamento pela Stripe. Os preços aparecem na sua moeda local quando disponível.</p>
       <p class="fine">Ao comprar o Teleframe, você concorda com os termos de compra abaixo.</p>
     </div>
-    <form method="post" action="/api/store/checkout"><input type="hidden" name="product" value="teleframe"><input type="hidden" name="lang" value="en"><button class="buy" type="submit">Comprar o Teleframe</button></form>
+    <div class="ctas"><form method="post" action="/api/store/checkout"><input type="hidden" name="product" value="teleframe"><input type="hidden" name="lang" value="en"><button class="buy" type="submit">Comprar o Teleframe</button></form><a class="buy alt" href="/api/store/installer">Baixar teste grátis</a></div>
   </div>
 </section>
 
 <section class="wrap" id="faq">
   <h2>Perguntas</h2><div class="rule"></div>
+  <details><summary>Tem teste grátis?</summary><p>Sim. Baixe o Teleframe e use todos os recursos de graça por 7 dias. Quando o teste acabar, digite uma chave de licença para continuar gravando.</p></details>
+  <details><summary>Como funciona a chave de licença?</summary><p>Depois da compra, você recebe uma chave que começa com TELE-. No Teleframe, clique na engrenagem, escolha LICENSE e cole a chave. Uma chave funciona em até 3 PCs. A ativação precisa de internet uma vez, e depois disso o Teleframe funciona offline.</p></details>
   <details><summary>O Teleframe é uma assinatura?</summary><p>Não. Você paga uma vez, e a cópia que baixar é sua para sempre. Não precisa criar conta.</p></details>
   <details><summary>O Teleframe coloca marca d'água?</summary><p>Não. O vídeo tem o que estava dentro do quadro e mais nada.</p></details>
   <details><summary>Ele grava som?</summary><p>Sim. Nas configurações, escolha som do sistema, seu microfone ou os dois misturados. O som é salvo em AAC a 192 kbps, cerca de 1,4 MB por minuto.</p></details>
@@ -441,12 +464,12 @@ justify-content:center}
   <details><summary>Qual o tamanho dos arquivos?</summary><p>Depende do tamanho do quadro e da qualidade escolhida. Em HIGH e 60 fps, um minuto de vídeo 1080p tem cerca de 113 MB. As configurações mostram a estimativa para o seu quadro antes de você começar.</p></details>
   <details><summary>O Windows diz que protegeu meu PC. O que eu faço?</summary><p>O instalador não tem assinatura de código, então o Windows SmartScreen pode avisar na primeira vez que você executar. Clique em Mais informações e depois em Executar assim mesmo.</p></details>
   <details><summary>O Teleframe funciona no Mac?</summary><p>Não. O Teleframe roda no Windows 10 de 64 bits (versão 2004 ou mais recente) e no Windows 11.</p></details>
-  <details><summary>Perdi meu link de download.</summary><p>Abra a <a href="/pt-br/teleframe/thanks/">página de download</a> e digite o e-mail que você usou no pagamento. O link será enviado de novo para esse endereço.</p></details>
+  <details><summary>Perdi minha chave de licença.</summary><p>Abra a <a href="/pt-br/teleframe/thanks/">página de download</a> e digite o e-mail que você usou no pagamento. Sua chave será enviada de novo para esse endereço.</p></details>
 </section>
 
 <section class="wrap terms" id="terms">
   <h2>Termos de compra</h2><div class="rule"></div>
-  <p>Ao comprar o Teleframe, você recebe uma licença para instalar nos computadores que usa, para trabalho pessoal ou comercial. Os pagamentos são processados pela Stripe, e o lf.wtf nunca vê o número do seu cartão.</p>
+  <p>Ao comprar o Teleframe, você recebe uma chave de licença para até 3 PCs, para trabalho pessoal ou comercial. Os pagamentos são processados pela Stripe, e o lf.wtf nunca vê o número do seu cartão.</p>
   <p>Seu e-mail é usado para enviar o link de download, para responder se você escrever e, de vez em quando, para avisar sobre novos produtos meus relacionados ao Teleframe. Você pode cancelar a inscrição nesses e-mails quando quiser.</p>
 </section>
 </main>

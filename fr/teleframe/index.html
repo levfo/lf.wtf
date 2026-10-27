@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Teleframe | Enregistreur d'écran pour Windows, zone au choix</title>
-<meta name="description" content="Teleframe est un enregistreur d'écran pour Windows 10 et 11. Placez un cadre sur n'importe quelle zone, enregistrez l'écran en 16:9, 9:16 ou toute autre forme et obtenez un MP4 avec le son. $9.99 une seule fois, sans abonnement ni filigrane.">
+<meta name="description" content="Teleframe est un enregistreur d'écran pour Windows 10 et 11. Placez un cadre sur n'importe quelle zone, enregistrez l'écran en 16:9, 9:16 ou toute autre forme et obtenez un MP4 avec le son. Essai gratuit de 7 jours, puis $9.99 une seule fois, sans abonnement ni filigrane.">
 <link rel="alternate" hreflang="en" href="https://lf.wtf/teleframe/">
 <link rel="alternate" hreflang="de" href="https://lf.wtf/de/teleframe/">
 <link rel="alternate" hreflang="es" href="https://lf.wtf/es/teleframe/">
@@ -83,6 +83,9 @@ h1{font:400 clamp(34px,5.4vw,56px)/1.08 var(--mono);color:var(--ph);margin:0 0 1
 .buyrow{display:flex;flex-wrap:wrap;align-items:center;gap:18px 26px}
 .buy{appearance:none;cursor:pointer;background:var(--blue);color:var(--cream);border:3px solid var(--cream);font:700 19px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;padding:18px 26px}
 .buy:hover{background:var(--deep);outline:2px solid var(--ph);outline-offset:4px}
+.buy.alt{background:transparent;color:var(--ph);border-color:var(--line);text-decoration:none;display:inline-block}
+.buy.alt:hover{background:var(--ph);color:var(--ink);outline:none}
+.ctas{display:flex;flex-direction:column;gap:12px;align-items:stretch}.ctas .buy{width:100%;text-align:center}
 .price{font-size:34px;color:var(--cream);text-shadow:0 0 10px rgba(220,237,203,.35)}
 .fine{color:var(--dim);font-size:15px;margin:14px 0 0}
 .bar{position:absolute;right:-2px;bottom:-14px;width:290px}
@@ -139,7 +142,7 @@ justify-content:center}
       "@id": "https://lf.wtf/teleframe/#page",
       "url": "https://lf.wtf/teleframe/",
       "name": "Teleframe | Enregistreur d'écran pour Windows, zone au choix",
-      "description": "Teleframe est un enregistreur d'écran pour Windows 10 et 11. Placez un cadre sur n'importe quelle zone, enregistrez l'écran en 16:9, 9:16 ou toute autre forme et obtenez un MP4 avec le son. $9.99 une seule fois, sans abonnement ni filigrane.",
+      "description": "Teleframe est un enregistreur d'écran pour Windows 10 et 11. Placez un cadre sur n'importe quelle zone, enregistrez l'écran en 16:9, 9:16 ou toute autre forme et obtenez un MP4 avec le son. Essai gratuit de 7 jours, puis $9.99 une seule fois, sans abonnement ni filigrane.",
       "inLanguage": "fr",
       "primaryImageOfPage": "https://lf.wtf/teleframe/assets/hero-v1.webp",
       "breadcrumb": {
@@ -175,7 +178,8 @@ justify-content:center}
         "Son du système, micro ou les deux",
         "Raccourcis clavier globaux",
         "MP4 H.264 avec encodage GPU",
-        "Sans filigrane"
+        "Sans filigrane",
+        "Essai gratuit de 7 jours ; une clé de licence fonctionne sur 3 PC maximum"
       ],
       "author": {
         "@id": "https://lf.wtf/#levifoster"
@@ -264,6 +268,22 @@ justify-content:center}
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Existe-t-il un essai gratuit ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Téléchargez Teleframe et utilisez toutes les fonctionnalités gratuitement pendant 7 jours. À la fin de l'essai, saisissez une clé de licence pour continuer à enregistrer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment fonctionne la clé de licence ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Après l'achat, vous recevez une clé qui commence par TELE-. Dans Teleframe, cliquez sur la roue dentée, choisissez LICENSE et collez la clé. Une clé fonctionne sur 3 PC maximum. L'activation nécessite Internet une seule fois, puis Teleframe fonctionne hors ligne."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Teleframe est-il un abonnement ?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -328,10 +348,10 @@ justify-content:center}
         },
         {
           "@type": "Question",
-          "name": "J'ai perdu mon lien de téléchargement.",
+          "name": "J'ai perdu ma clé de licence.",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Ouvrez la page de téléchargement et saisissez l'adresse e-mail utilisée pour le paiement. Le lien vous sera renvoyé à cette adresse."
+            "text": "Ouvrez la page de téléchargement et saisissez l'adresse e-mail utilisée pour le paiement. Votre clé vous sera renvoyée à cette adresse."
           }
         }
       ],
@@ -362,12 +382,13 @@ justify-content:center}
   </div>
   <div class="term">
     <h1>Enregistrez n'importe quelle zone de l'écran</h1>
-    <p class="lead">Teleframe pose un cadre sur votre bureau. Placez-le où vous voulez, donnez-lui la forme de votre choix et appuyez sur REC. Seul ce qui se trouve dans le cadre est enregistré, et les commandes de l'enregistreur n'apparaissent jamais dans la vidéo.</p>
+    <p class="lead">Teleframe pose un cadre sur votre bureau. Placez-le où vous voulez, donnez-lui la forme de votre choix et appuyez sur REC. Seul ce qui se trouve dans le cadre est enregistré, et les commandes de l'enregistreur n'apparaissent jamais dans la vidéo. Essayez-le gratuitement pendant 7 jours.</p>
     <div class="buyrow">
+      <a class="buy alt" href="/api/store/installer">Télécharger l'essai gratuit</a>
       <form method="post" action="/api/store/checkout"><input type="hidden" name="product" value="teleframe"><input type="hidden" name="lang" value="en"><button class="buy" type="submit">Acheter Teleframe</button></form>
       <span class="price" data-price>$9.99</span>
     </div>
-    <p class="fine">Windows 10 et 11. Achat unique. Téléchargement juste après le paiement.</p>
+    <p class="fine">Gratuit pendant 7 jours, avec toutes les fonctionnalités. Windows 10 et 11. Achat unique.</p>
     <p class="fine">En achetant Teleframe, vous acceptez les conditions d'achat ci-dessous.</p>
     <div class="bar" aria-hidden="true"><span>READY...</span><b></b></div>
   </div>
@@ -423,16 +444,18 @@ justify-content:center}
   <div class="cta">
     <div>
       <p class="price" data-price>$9.99</p>
-      <p>Sans abonnement ni compte. Après le paiement, vous arrivez sur la page de téléchargement, et le lien vous est aussi envoyé par e-mail.</p>
+      <p>Sans abonnement ni compte. Après le paiement, votre clé de licence s'affiche à l'écran et vous est aussi envoyée par e-mail. Une clé fonctionne sur 3 PC maximum.</p>
       <p class="fine">Paiement par Stripe. Les prix sont affichés dans votre devise locale quand c'est possible.</p>
       <p class="fine">En achetant Teleframe, vous acceptez les conditions d'achat ci-dessous.</p>
     </div>
-    <form method="post" action="/api/store/checkout"><input type="hidden" name="product" value="teleframe"><input type="hidden" name="lang" value="en"><button class="buy" type="submit">Acheter Teleframe</button></form>
+    <div class="ctas"><form method="post" action="/api/store/checkout"><input type="hidden" name="product" value="teleframe"><input type="hidden" name="lang" value="en"><button class="buy" type="submit">Acheter Teleframe</button></form><a class="buy alt" href="/api/store/installer">Télécharger l'essai gratuit</a></div>
   </div>
 </section>
 
 <section class="wrap" id="faq">
   <h2>Questions</h2><div class="rule"></div>
+  <details><summary>Existe-t-il un essai gratuit ?</summary><p>Oui. Téléchargez Teleframe et utilisez toutes les fonctionnalités gratuitement pendant 7 jours. À la fin de l'essai, saisissez une clé de licence pour continuer à enregistrer.</p></details>
+  <details><summary>Comment fonctionne la clé de licence ?</summary><p>Après l'achat, vous recevez une clé qui commence par TELE-. Dans Teleframe, cliquez sur la roue dentée, choisissez LICENSE et collez la clé. Une clé fonctionne sur 3 PC maximum. L'activation nécessite Internet une seule fois, puis Teleframe fonctionne hors ligne.</p></details>
   <details><summary>Teleframe est-il un abonnement ?</summary><p>Non. Vous payez une fois, et la copie que vous téléchargez vous appartient. Aucun compte à créer.</p></details>
   <details><summary>Teleframe ajoute-t-il un filigrane ?</summary><p>Non. La vidéo contient ce qui se trouvait dans le cadre, rien d'autre.</p></details>
   <details><summary>Peut-on enregistrer l'écran avec le son ?</summary><p>Oui. Dans les paramètres, choisissez le son du système, votre micro, ou les deux mixés ensemble. Le son est enregistré en AAC à 192 kbps, soit environ 1,4 Mo par minute.</p></details>
@@ -441,12 +464,12 @@ justify-content:center}
   <details><summary>Quelle est la taille des fichiers ?</summary><p>Cela dépend de la taille du cadre et du réglage de qualité. En HIGH à 60 fps, une minute de vidéo 1080p pèse environ 113 Mo. Les paramètres affichent l'estimation pour votre cadre avant de commencer.</p></details>
   <details><summary>Windows dit avoir protégé mon PC. Que faire ?</summary><p>Le programme d'installation n'est pas signé numériquement, donc Windows SmartScreen peut afficher un avertissement au premier lancement. Cliquez sur Informations complémentaires, puis sur Exécuter quand même.</p></details>
   <details><summary>Teleframe fonctionne-t-il sur Mac ?</summary><p>Non. Teleframe est un enregistreur d'écran pour Windows 10 64 bits (version 2004 ou ultérieure) et Windows 11.</p></details>
-  <details><summary>J'ai perdu mon lien de téléchargement.</summary><p>Ouvrez la <a href="/fr/teleframe/thanks/">page de téléchargement</a> et saisissez l'adresse e-mail utilisée pour le paiement. Le lien vous sera renvoyé à cette adresse.</p></details>
+  <details><summary>J'ai perdu ma clé de licence.</summary><p>Ouvrez la <a href="/fr/teleframe/thanks/">page de téléchargement</a> et saisissez l'adresse e-mail utilisée pour le paiement. Votre clé vous sera renvoyée à cette adresse.</p></details>
 </section>
 
 <section class="wrap terms" id="terms">
   <h2>Conditions d'achat</h2><div class="rule"></div>
-  <p>L'achat de Teleframe vous donne une licence pour l'installer sur les ordinateurs que vous utilisez, pour un usage personnel ou commercial. Les paiements sont gérés par Stripe, et lf.wtf ne voit jamais votre numéro de carte.</p>
+  <p>L'achat de Teleframe vous donne une clé de licence pour 3 PC maximum, pour un usage personnel ou commercial. Les paiements sont gérés par Stripe, et lf.wtf ne voit jamais votre numéro de carte.</p>
   <p>Votre adresse e-mail sert à vous envoyer le lien de téléchargement, à vous répondre si vous nous écrivez et à vous prévenir de temps en temps des nouveaux produits que je publie en lien avec Teleframe. Vous pouvez vous désabonner de ces e-mails à tout moment.</p>
 </section>
 </main>

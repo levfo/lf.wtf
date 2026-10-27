@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Teleframe | Windows 录屏软件，录制屏幕任意区域</title>
-<meta name="description" content="Teleframe 是一款 Windows 录屏软件，支持 Windows 10 和 11。把录制框拖到屏幕任意位置，按 16:9、9:16 或任意形状录制，保存为带声音的 MP4。一次付费 $9.99，无需订阅，没有水印。">
+<meta name="description" content="Teleframe 是一款 Windows 录屏软件，支持 Windows 10 和 11。把录制框拖到屏幕任意位置，按 16:9、9:16 或任意形状录制，保存为带声音的 MP4。免费试用 7 天，之后一次付费 $9.99，无需订阅，没有水印。">
 <link rel="alternate" hreflang="en" href="https://lf.wtf/teleframe/">
 <link rel="alternate" hreflang="de" href="https://lf.wtf/de/teleframe/">
 <link rel="alternate" hreflang="es" href="https://lf.wtf/es/teleframe/">
@@ -83,6 +83,9 @@ h1{font:400 clamp(34px,5.4vw,56px)/1.08 var(--mono);color:var(--ph);margin:0 0 1
 .buyrow{display:flex;flex-wrap:wrap;align-items:center;gap:18px 26px}
 .buy{appearance:none;cursor:pointer;background:var(--blue);color:var(--cream);border:3px solid var(--cream);font:700 19px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;padding:18px 26px}
 .buy:hover{background:var(--deep);outline:2px solid var(--ph);outline-offset:4px}
+.buy.alt{background:transparent;color:var(--ph);border-color:var(--line);text-decoration:none;display:inline-block}
+.buy.alt:hover{background:var(--ph);color:var(--ink);outline:none}
+.ctas{display:flex;flex-direction:column;gap:12px;align-items:stretch}.ctas .buy{width:100%;text-align:center}
 .price{font-size:34px;color:var(--cream);text-shadow:0 0 10px rgba(220,237,203,.35)}
 .fine{color:var(--dim);font-size:15px;margin:14px 0 0}
 .bar{position:absolute;right:-2px;bottom:-14px;width:290px}
@@ -141,7 +144,7 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
       "@id": "https://lf.wtf/teleframe/#page",
       "url": "https://lf.wtf/teleframe/",
       "name": "Teleframe | Windows 录屏软件，录制屏幕任意区域",
-      "description": "Teleframe 是一款 Windows 录屏软件，支持 Windows 10 和 11。把录制框拖到屏幕任意位置，按 16:9、9:16 或任意形状录制，保存为带声音的 MP4。一次付费 $9.99，无需订阅，没有水印。",
+      "description": "Teleframe 是一款 Windows 录屏软件，支持 Windows 10 和 11。把录制框拖到屏幕任意位置，按 16:9、9:16 或任意形状录制，保存为带声音的 MP4。免费试用 7 天，之后一次付费 $9.99，无需订阅，没有水印。",
       "inLanguage": "zh-Hans",
       "primaryImageOfPage": "https://lf.wtf/teleframe/assets/hero-v1.webp",
       "breadcrumb": {
@@ -177,7 +180,8 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
         "系统声音、麦克风或两者",
         "全局快捷键",
         "H.264 MP4，GPU 编码",
-        "无水印"
+        "无水印",
+        "免费试用 7 天；一个许可证密钥最多可用于 3 台电脑"
       ],
       "author": {
         "@id": "https://lf.wtf/#levifoster"
@@ -266,6 +270,22 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "有免费试用吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "有。下载 Teleframe，7 天内免费使用全部功能。试用期结束后，输入许可证密钥即可继续录制。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "许可证密钥怎么用？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "购买后，你会收到一个以 TELE- 开头的密钥。在 Teleframe 里点击齿轮图标，选择 LICENSE，然后粘贴密钥。一个密钥最多可用于 3 台电脑。激活时需要联网一次，之后 Teleframe 可以离线使用。"
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Teleframe 是订阅制吗？",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -330,10 +350,10 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
         },
         {
           "@type": "Question",
-          "name": "我的下载链接丢了。",
+          "name": "我的许可证密钥丢了。",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "打开下载页面并输入你付款时用的邮箱。链接会重新发送到这个地址。"
+            "text": "打开下载页面并输入你付款时用的邮箱。密钥会重新发送到这个地址。"
           }
         }
       ],
@@ -364,12 +384,13 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
   </div>
   <div class="term">
     <h1>电脑录屏，任选区域</h1>
-    <p class="lead">Teleframe 会在桌面上放一个录制框。把它拖到你想要的位置，调成任意形状，然后按 REC。只有框内的内容会录进视频，录屏软件自己的控件也不会出现在画面里。</p>
+    <p class="lead">Teleframe 会在桌面上放一个录制框。把它拖到你想要的位置，调成任意形状，然后按 REC。只有框内的内容会录进视频，录屏软件自己的控件也不会出现在画面里。可以免费试用 7 天。</p>
     <div class="buyrow">
+      <a class="buy alt" href="/api/store/installer">下载免费试用版</a>
       <form method="post" action="/api/store/checkout"><input type="hidden" name="product" value="teleframe"><input type="hidden" name="lang" value="en"><button class="buy" type="submit">购买 Teleframe</button></form>
       <span class="price" data-price>$9.99</span>
     </div>
-    <p class="fine">支持 Windows 10 和 11。一次性购买。付款后立即下载。</p>
+    <p class="fine">7 天内免费使用全部功能。支持 Windows 10 和 11。一次性购买。</p>
     <p class="fine">购买 Teleframe 即表示你同意下方的购买条款。</p>
     <div class="bar" aria-hidden="true"><span>READY...</span><b></b></div>
   </div>
@@ -425,16 +446,18 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
   <div class="cta">
     <div>
       <p class="price" data-price>$9.99</p>
-      <p>无需订阅，也不用注册账号。付款后会直接进入下载页面，下载链接也会发到你的邮箱。</p>
+      <p>无需订阅，也不用注册账号。付款后，许可证密钥会显示在屏幕上，同时发到你的邮箱。一个密钥最多可用于 3 台电脑。</p>
       <p class="fine">通过 Stripe 结账。在支持的地区，价格会以当地货币显示。</p>
       <p class="fine">购买 Teleframe 即表示你同意下方的购买条款。</p>
     </div>
-    <form method="post" action="/api/store/checkout"><input type="hidden" name="product" value="teleframe"><input type="hidden" name="lang" value="en"><button class="buy" type="submit">购买 Teleframe</button></form>
+    <div class="ctas"><form method="post" action="/api/store/checkout"><input type="hidden" name="product" value="teleframe"><input type="hidden" name="lang" value="en"><button class="buy" type="submit">购买 Teleframe</button></form><a class="buy alt" href="/api/store/installer">下载免费试用版</a></div>
   </div>
 </section>
 
 <section class="wrap" id="faq">
   <h2>常见问题</h2><div class="rule"></div>
+  <details><summary>有免费试用吗？</summary><p>有。下载 Teleframe，7 天内免费使用全部功能。试用期结束后，输入许可证密钥即可继续录制。</p></details>
+  <details><summary>许可证密钥怎么用？</summary><p>购买后，你会收到一个以 TELE- 开头的密钥。在 Teleframe 里点击齿轮图标，选择 LICENSE，然后粘贴密钥。一个密钥最多可用于 3 台电脑。激活时需要联网一次，之后 Teleframe 可以离线使用。</p></details>
   <details><summary>Teleframe 是订阅制吗？</summary><p>不是。只需付一次钱，下载的软件一直归你所有。也不用注册账号。</p></details>
   <details><summary>Teleframe 会加水印吗？</summary><p>不会。视频里只有录制框内的内容，别的什么都没有。</p></details>
   <details><summary>能录声音吗？</summary><p>能。在设置里选择系统声音、麦克风，或两者混合。声音保存为 192 kbps 的 AAC，每分钟约 1.4 MB。</p></details>
@@ -443,12 +466,12 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
   <details><summary>文件有多大？</summary><p>这取决于录制框的大小和画质设置。在 HIGH、60 fps 下，一分钟 1080p 视频约 113 MB。开始录制前，设置里会显示当前录制框的预估大小。</p></details>
   <details><summary>Windows 提示“已保护你的电脑”，怎么办？</summary><p>安装程序没有代码签名，所以第一次运行时 Windows SmartScreen 可能会发出警告。点击“更多信息”，再点击“仍要运行”。</p></details>
   <details><summary>Teleframe 能在 Mac 上用吗？</summary><p>不能。Teleframe 支持 64 位 Windows 10（2004 或更高版本）和 Windows 11。</p></details>
-  <details><summary>我的下载链接丢了。</summary><p>打开 <a href="/zh-hans/teleframe/thanks/">下载页面</a> 并输入你付款时用的邮箱。链接会重新发送到这个地址。</p></details>
+  <details><summary>我的许可证密钥丢了。</summary><p>打开 <a href="/zh-hans/teleframe/thanks/">下载页面</a> 并输入你付款时用的邮箱。密钥会重新发送到这个地址。</p></details>
 </section>
 
 <section class="wrap terms" id="terms">
   <h2>购买条款</h2><div class="rule"></div>
-  <p>购买 Teleframe 后，你可以把它安装在自己使用的电脑上，用于个人或商业用途。付款由 Stripe 处理，lf.wtf 不会看到你的卡号。</p>
+  <p>购买 Teleframe 后，你会获得一个许可证密钥，最多可用于 3 台电脑，用于个人或商业用途均可。付款由 Stripe 处理，lf.wtf 不会看到你的卡号。</p>
   <p>你的邮箱用于发送下载链接、在你来信时回复你，以及偶尔通知你我发布的与 Teleframe 相关的新产品。这类邮件你可以随时退订。</p>
 </section>
 </main>

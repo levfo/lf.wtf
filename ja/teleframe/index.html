@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Teleframe | 好きな範囲を録画できる画面録画ソフト（Windows）</title>
-<meta name="description" content="Teleframe は Windows 10/11 用の画面録画ソフトです。画面の好きな部分をフレームで囲み、16:9 や 9:16 など自由な形で録画して、音声付きの MP4 で保存できます。$9.99 の買い切りで、サブスクリプションも透かしもありません。">
+<meta name="description" content="Teleframe は Windows 10/11 用の画面録画ソフトです。画面の好きな部分をフレームで囲み、16:9 や 9:16 など自由な形で録画して、音声付きの MP4 で保存できます。7 日間無料で試せて、その後は $9.99 の買い切り。サブスクリプションも透かしもありません。">
 <link rel="alternate" hreflang="en" href="https://lf.wtf/teleframe/">
 <link rel="alternate" hreflang="de" href="https://lf.wtf/de/teleframe/">
 <link rel="alternate" hreflang="es" href="https://lf.wtf/es/teleframe/">
@@ -83,6 +83,9 @@ h1{font:400 clamp(34px,5.4vw,56px)/1.08 var(--mono);color:var(--ph);margin:0 0 1
 .buyrow{display:flex;flex-wrap:wrap;align-items:center;gap:18px 26px}
 .buy{appearance:none;cursor:pointer;background:var(--blue);color:var(--cream);border:3px solid var(--cream);font:700 19px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;padding:18px 26px}
 .buy:hover{background:var(--deep);outline:2px solid var(--ph);outline-offset:4px}
+.buy.alt{background:transparent;color:var(--ph);border-color:var(--line);text-decoration:none;display:inline-block}
+.buy.alt:hover{background:var(--ph);color:var(--ink);outline:none}
+.ctas{display:flex;flex-direction:column;gap:12px;align-items:stretch}.ctas .buy{width:100%;text-align:center}
 .price{font-size:34px;color:var(--cream);text-shadow:0 0 10px rgba(220,237,203,.35)}
 .fine{color:var(--dim);font-size:15px;margin:14px 0 0}
 .bar{position:absolute;right:-2px;bottom:-14px;width:290px}
@@ -141,7 +144,7 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
       "@id": "https://lf.wtf/teleframe/#page",
       "url": "https://lf.wtf/teleframe/",
       "name": "Teleframe | 好きな範囲を録画できる画面録画ソフト（Windows）",
-      "description": "Teleframe は Windows 10/11 用の画面録画ソフトです。画面の好きな部分をフレームで囲み、16:9 や 9:16 など自由な形で録画して、音声付きの MP4 で保存できます。$9.99 の買い切りで、サブスクリプションも透かしもありません。",
+      "description": "Teleframe は Windows 10/11 用の画面録画ソフトです。画面の好きな部分をフレームで囲み、16:9 や 9:16 など自由な形で録画して、音声付きの MP4 で保存できます。7 日間無料で試せて、その後は $9.99 の買い切り。サブスクリプションも透かしもありません。",
       "inLanguage": "ja",
       "primaryImageOfPage": "https://lf.wtf/teleframe/assets/hero-v1.webp",
       "breadcrumb": {
@@ -177,7 +180,8 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
         "システム音、マイク、またはその両方",
         "グローバルショートカットキー",
         "GPU エンコード対応の H.264 MP4",
-        "透かしなし"
+        "透かしなし",
+        "7 日間の無料体験。1 つのライセンスキーで最大 3 台の PC に対応"
       ],
       "author": {
         "@id": "https://lf.wtf/#levifoster"
@@ -266,6 +270,22 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "無料体験はありますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい。Teleframe をダウンロードすれば、すべての機能を 7 日間無料で使えます。無料体験が終わったら、ライセンスキーを入力すると引き続き録画できます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ライセンスキーはどのように使いますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "購入すると、TELE- で始まるキーが届きます。Teleframe で歯車アイコンをクリックし、LICENSE を選んでキーを貼り付けてください。1 つのキーで最大 3 台の PC で使えます。ライセンス認証には一度だけインターネット接続が必要で、その後はオフラインで動作します。"
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Teleframe はサブスクリプションですか？",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -330,10 +350,10 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
         },
         {
           "@type": "Question",
-          "name": "ダウンロードリンクをなくしました。",
+          "name": "ライセンスキーをなくしました。",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ダウンロードページを開き、支払いに使ったメールアドレスを入力してください。そのアドレスにリンクがもう一度送られます。"
+            "text": "ダウンロードページを開き、支払いに使ったメールアドレスを入力してください。そのアドレスにキーがもう一度送られます。"
           }
         }
       ],
@@ -364,12 +384,13 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
   </div>
   <div class="term">
     <h1>PCの画面を好きな範囲だけ録画</h1>
-    <p class="lead">Teleframe はデスクトップにフレームを表示します。好きな場所にドラッグし、好きな形にサイズを変えて REC を押してください。動画に入るのはフレームの内側だけで、録画ソフト自体の操作バーは映りません。</p>
+    <p class="lead">Teleframe はデスクトップにフレームを表示します。好きな場所にドラッグし、好きな形にサイズを変えて REC を押してください。動画に入るのはフレームの内側だけで、録画ソフト自体の操作バーは映りません。7 日間無料で試せます。</p>
     <div class="buyrow">
+      <a class="buy alt" href="/api/store/installer">無料体験版をダウンロード</a>
       <form method="post" action="/api/store/checkout"><input type="hidden" name="product" value="teleframe"><input type="hidden" name="lang" value="en"><button class="buy" type="submit">Teleframe を購入</button></form>
       <span class="price" data-price>$9.99</span>
     </div>
-    <p class="fine">Windows 10 と 11 に対応。買い切りです。支払い後すぐにダウンロードできます。</p>
+    <p class="fine">7 日間、すべての機能を無料で使えます。Windows 10 と 11 に対応。買い切りです。</p>
     <p class="fine">Teleframe を購入すると、下記の購入条件に同意したことになります。</p>
     <div class="bar" aria-hidden="true"><span>READY...</span><b></b></div>
   </div>
@@ -425,16 +446,18 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
   <div class="cta">
     <div>
       <p class="price" data-price>$9.99</p>
-      <p>サブスクリプションもアカウントもありません。支払い後はダウンロードページが開き、リンクはメールでも届きます。</p>
+      <p>サブスクリプションもアカウントもありません。支払い後はライセンスキーが画面に表示され、メールでも届きます。1 つのキーで最大 3 台の PC で使えます。</p>
       <p class="fine">決済は Stripe で行います。対応している地域では、価格が現地通貨で表示されます。</p>
       <p class="fine">Teleframe を購入すると、下記の購入条件に同意したことになります。</p>
     </div>
-    <form method="post" action="/api/store/checkout"><input type="hidden" name="product" value="teleframe"><input type="hidden" name="lang" value="en"><button class="buy" type="submit">Teleframe を購入</button></form>
+    <div class="ctas"><form method="post" action="/api/store/checkout"><input type="hidden" name="product" value="teleframe"><input type="hidden" name="lang" value="en"><button class="buy" type="submit">Teleframe を購入</button></form><a class="buy alt" href="/api/store/installer">無料体験版をダウンロード</a></div>
   </div>
 </section>
 
 <section class="wrap" id="faq">
   <h2>よくある質問</h2><div class="rule"></div>
+  <details><summary>無料体験はありますか？</summary><p>はい。Teleframe をダウンロードすれば、すべての機能を 7 日間無料で使えます。無料体験が終わったら、ライセンスキーを入力すると引き続き録画できます。</p></details>
+  <details><summary>ライセンスキーはどのように使いますか？</summary><p>購入すると、TELE- で始まるキーが届きます。Teleframe で歯車アイコンをクリックし、LICENSE を選んでキーを貼り付けてください。1 つのキーで最大 3 台の PC で使えます。ライセンス認証には一度だけインターネット接続が必要で、その後はオフラインで動作します。</p></details>
   <details><summary>Teleframe はサブスクリプションですか？</summary><p>いいえ。支払いは一度だけで、ダウンロードしたものはずっと手元に残せます。アカウントを作る必要もありません。</p></details>
   <details><summary>Teleframe は透かしを入れますか？</summary><p>いいえ。動画に入るのは、フレームの内側にあったものだけです。</p></details>
   <details><summary>画面録画と一緒に音声も録音できますか？</summary><p>はい。設定で、システム音、マイク、または両方のミックスを選べます。音声は 192 kbps の AAC で保存され、1 分あたり約 1.4 MB です。</p></details>
@@ -443,12 +466,12 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
   <details><summary>ファイルサイズはどのくらいですか？</summary><p>フレームの大きさと画質設定によって変わります。HIGH・60 fps の場合、1080p の動画 1 分で約 113 MB です。設定画面で、録画を始める前にそのフレームでの目安を確認できます。</p></details>
   <details><summary>「Windows によって PC が保護されました」と表示されます。どうすればいいですか？</summary><p>インストーラーにはコード署名がないため、初回の実行時に Windows SmartScreen の警告が出ることがあります。「詳細情報」をクリックし、次に「実行」をクリックしてください。</p></details>
   <details><summary>Teleframe は Mac で使えますか？</summary><p>いいえ。Teleframe は 64 ビット版 Windows 10（バージョン 2004 以降）と Windows 11 で動作します。</p></details>
-  <details><summary>ダウンロードリンクをなくしました。</summary><p>まず <a href="/ja/teleframe/thanks/">ダウンロードページ</a> を開き、支払いに使ったメールアドレスを入力してください。そのアドレスにリンクがもう一度送られます。</p></details>
+  <details><summary>ライセンスキーをなくしました。</summary><p>まず <a href="/ja/teleframe/thanks/">ダウンロードページ</a> を開き、支払いに使ったメールアドレスを入力してください。そのアドレスにキーがもう一度送られます。</p></details>
 </section>
 
 <section class="wrap terms" id="terms">
   <h2>購入条件</h2><div class="rule"></div>
-  <p>Teleframe を購入すると、ご自身が使うコンピューターにインストールできるライセンスが付与されます。個人の作業にも仕事にも使えます。支払いは Stripe が処理し、lf.wtf がカード番号を見ることはありません。</p>
+  <p>Teleframe を購入すると、最大 3 台の PC で使えるライセンスキーが付与されます。個人の作業にも仕事にも使えます。支払いは Stripe が処理し、lf.wtf がカード番号を見ることはありません。</p>
   <p>メールアドレスは、ダウンロードリンクの送信、お問い合わせへの返信、そして Teleframe に関連する新製品のお知らせ（ときどき）に使います。お知らせはいつでも配信停止できます。</p>
 </section>
 </main>

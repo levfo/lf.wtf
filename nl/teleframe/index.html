@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Teleframe | Schermrecorder voor Windows: elk deel van je scherm opnemen</title>
-<meta name="description" content="Teleframe is een schermrecorder voor Windows 10 en 11. Sleep een kader over elk deel van je scherm, neem op in 16:9, 9:16 of elke vorm en sla een MP4 met geluid op. $9.99 eenmalig, geen abonnement, geen watermerk.">
+<meta name="description" content="Teleframe is een schermrecorder voor Windows 10 en 11. Sleep een kader over elk deel van je scherm, neem op in 16:9, 9:16 of elke vorm en sla een MP4 met geluid op. 7 dagen gratis proberen, daarna $9.99 eenmalig, geen abonnement, geen watermerk.">
 <link rel="alternate" hreflang="en" href="https://lf.wtf/teleframe/">
 <link rel="alternate" hreflang="de" href="https://lf.wtf/de/teleframe/">
 <link rel="alternate" hreflang="es" href="https://lf.wtf/es/teleframe/">
@@ -83,6 +83,9 @@ h1{font:400 clamp(34px,5.4vw,56px)/1.08 var(--mono);color:var(--ph);margin:0 0 1
 .buyrow{display:flex;flex-wrap:wrap;align-items:center;gap:18px 26px}
 .buy{appearance:none;cursor:pointer;background:var(--blue);color:var(--cream);border:3px solid var(--cream);font:700 19px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;padding:18px 26px}
 .buy:hover{background:var(--deep);outline:2px solid var(--ph);outline-offset:4px}
+.buy.alt{background:transparent;color:var(--ph);border-color:var(--line);text-decoration:none;display:inline-block}
+.buy.alt:hover{background:var(--ph);color:var(--ink);outline:none}
+.ctas{display:flex;flex-direction:column;gap:12px;align-items:stretch}.ctas .buy{width:100%;text-align:center}
 .price{font-size:34px;color:var(--cream);text-shadow:0 0 10px rgba(220,237,203,.35)}
 .fine{color:var(--dim);font-size:15px;margin:14px 0 0}
 .bar{position:absolute;right:-2px;bottom:-14px;width:290px}
@@ -139,7 +142,7 @@ justify-content:center}
       "@id": "https://lf.wtf/teleframe/#page",
       "url": "https://lf.wtf/teleframe/",
       "name": "Teleframe | Schermrecorder voor Windows: elk deel van je scherm opnemen",
-      "description": "Teleframe is een schermrecorder voor Windows 10 en 11. Sleep een kader over elk deel van je scherm, neem op in 16:9, 9:16 of elke vorm en sla een MP4 met geluid op. $9.99 eenmalig, geen abonnement, geen watermerk.",
+      "description": "Teleframe is een schermrecorder voor Windows 10 en 11. Sleep een kader over elk deel van je scherm, neem op in 16:9, 9:16 of elke vorm en sla een MP4 met geluid op. 7 dagen gratis proberen, daarna $9.99 eenmalig, geen abonnement, geen watermerk.",
       "inLanguage": "nl",
       "primaryImageOfPage": "https://lf.wtf/teleframe/assets/hero-v1.webp",
       "breadcrumb": {
@@ -175,7 +178,8 @@ justify-content:center}
         "Systeemgeluid, microfoon of beide",
         "Globale sneltoetsen",
         "H.264 MP4 met GPU-codering",
-        "Geen watermerk"
+        "Geen watermerk",
+        "7 dagen gratis proberen; één licentiesleutel werkt op maximaal 3 pc's"
       ],
       "author": {
         "@id": "https://lf.wtf/#levifoster"
@@ -264,6 +268,22 @@ justify-content:center}
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Is er een gratis proefversie?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Download Teleframe en gebruik alle functies 7 dagen gratis. Als de proefperiode voorbij is, vul je een licentiesleutel in om te blijven opnemen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hoe werkt de licentiesleutel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Na je aankoop krijg je een sleutel die begint met TELE-. Klik in Teleframe op het tandwiel, kies LICENSE en plak de sleutel. Eén sleutel werkt op maximaal 3 pc's. Voor het activeren is één keer internet nodig, daarna werkt Teleframe offline."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Is Teleframe een abonnement?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -328,10 +348,10 @@ justify-content:center}
         },
         {
           "@type": "Question",
-          "name": "Ik ben mijn downloadlink kwijt.",
+          "name": "Ik ben mijn licentiesleutel kwijt.",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Open de downloadpagina en vul het e-mailadres in waarmee je hebt betaald. De link wordt dan opnieuw naar dat adres gestuurd."
+            "text": "Open de downloadpagina en vul het e-mailadres in waarmee je hebt betaald. Je sleutel wordt dan opnieuw naar dat adres gestuurd."
           }
         }
       ],
@@ -362,12 +382,13 @@ justify-content:center}
   </div>
   <div class="term">
     <h1>Neem elk deel van je scherm op</h1>
-    <p class="lead">Teleframe zet een kader op je bureaublad. Sleep het waar je het wilt hebben, geef het elke vorm die je wilt en druk op REC. Alleen wat binnen het kader valt komt in de video, en de bediening van de recorder verschijnt er nooit in.</p>
+    <p class="lead">Teleframe zet een kader op je bureaublad. Sleep het waar je het wilt hebben, geef het elke vorm die je wilt en druk op REC. Alleen wat binnen het kader valt komt in de video, en de bediening van de recorder verschijnt er nooit in. Probeer het 7 dagen gratis.</p>
     <div class="buyrow">
+      <a class="buy alt" href="/api/store/installer">Gratis proefversie downloaden</a>
       <form method="post" action="/api/store/checkout"><input type="hidden" name="product" value="teleframe"><input type="hidden" name="lang" value="en"><button class="buy" type="submit">Teleframe kopen</button></form>
       <span class="price" data-price>$9.99</span>
     </div>
-    <p class="fine">Windows 10 en 11. Eenmalige aankoop. Direct na betaling downloaden.</p>
+    <p class="fine">7 dagen gratis met alle functies. Windows 10 en 11. Eenmalige aankoop.</p>
     <p class="fine">Door Teleframe te kopen ga je akkoord met de aankoopvoorwaarden hieronder.</p>
     <div class="bar" aria-hidden="true"><span>READY...</span><b></b></div>
   </div>
@@ -423,16 +444,18 @@ justify-content:center}
   <div class="cta">
     <div>
       <p class="price" data-price>$9.99</p>
-      <p>Geen abonnement en geen account. Na het betalen kom je op de downloadpagina, en de link wordt je ook gemaild.</p>
+      <p>Geen abonnement en geen account. Na het betalen verschijnt je licentiesleutel op het scherm en krijg je hem ook per mail. Eén sleutel werkt op maximaal 3 pc's.</p>
       <p class="fine">Afrekenen via Stripe. Prijzen worden waar mogelijk in je eigen valuta getoond.</p>
       <p class="fine">Door Teleframe te kopen ga je akkoord met de aankoopvoorwaarden hieronder.</p>
     </div>
-    <form method="post" action="/api/store/checkout"><input type="hidden" name="product" value="teleframe"><input type="hidden" name="lang" value="en"><button class="buy" type="submit">Teleframe kopen</button></form>
+    <div class="ctas"><form method="post" action="/api/store/checkout"><input type="hidden" name="product" value="teleframe"><input type="hidden" name="lang" value="en"><button class="buy" type="submit">Teleframe kopen</button></form><a class="buy alt" href="/api/store/installer">Gratis proefversie downloaden</a></div>
   </div>
 </section>
 
 <section class="wrap" id="faq">
   <h2>Vragen</h2><div class="rule"></div>
+  <details><summary>Is er een gratis proefversie?</summary><p>Ja. Download Teleframe en gebruik alle functies 7 dagen gratis. Als de proefperiode voorbij is, vul je een licentiesleutel in om te blijven opnemen.</p></details>
+  <details><summary>Hoe werkt de licentiesleutel?</summary><p>Na je aankoop krijg je een sleutel die begint met TELE-. Klik in Teleframe op het tandwiel, kies LICENSE en plak de sleutel. Eén sleutel werkt op maximaal 3 pc's. Voor het activeren is één keer internet nodig, daarna werkt Teleframe offline.</p></details>
   <details><summary>Is Teleframe een abonnement?</summary><p>Nee. Je betaalt één keer, en de versie die je downloadt mag je houden. Je hoeft geen account aan te maken.</p></details>
   <details><summary>Zet Teleframe een watermerk in de video?</summary><p>Nee. De video bevat wat er binnen het kader was en verder niets.</p></details>
   <details><summary>Kan het geluid opnemen?</summary><p>Ja. Kies in de instellingen systeemgeluid, je microfoon of die twee samen gemengd. Geluid wordt opgeslagen als AAC op 192 kbps, ongeveer 1,4 MB per minuut.</p></details>
@@ -441,12 +464,12 @@ justify-content:center}
   <details><summary>Hoe groot zijn de bestanden?</summary><p>Dat hangt af van de grootte van het kader en de kwaliteitsinstelling. Op HIGH en 60 fps is een minuut 1080p-video ongeveer 113 MB. De instellingen tonen de schatting voor jouw kader voordat je begint.</p></details>
   <details><summary>Windows zegt dat het mijn pc heeft beschermd. Wat moet ik doen?</summary><p>Het installatieprogramma heeft geen codesignatuur, dus Windows SmartScreen kan je de eerste keer waarschuwen. Klik op Meer informatie en daarna op Toch uitvoeren.</p></details>
   <details><summary>Werkt Teleframe op een Mac?</summary><p>Nee. Teleframe werkt op 64-bit Windows 10 (versie 2004 of nieuwer) en Windows 11.</p></details>
-  <details><summary>Ik ben mijn downloadlink kwijt.</summary><p>Open de <a href="/nl/teleframe/thanks/">downloadpagina</a> en vul het e-mailadres in waarmee je hebt betaald. De link wordt dan opnieuw naar dat adres gestuurd.</p></details>
+  <details><summary>Ik ben mijn licentiesleutel kwijt.</summary><p>Open de <a href="/nl/teleframe/thanks/">downloadpagina</a> en vul het e-mailadres in waarmee je hebt betaald. Je sleutel wordt dan opnieuw naar dat adres gestuurd.</p></details>
 </section>
 
 <section class="wrap terms" id="terms">
   <h2>Aankoopvoorwaarden</h2><div class="rule"></div>
-  <p>Met de aankoop van Teleframe krijg je een licentie om het te installeren op de computers die je gebruikt, voor privé of zakelijk werk. Betalingen lopen via Stripe, en lf.wtf ziet je kaartnummer nooit.</p>
+  <p>Met de aankoop van Teleframe krijg je een licentiesleutel voor maximaal 3 pc's, voor privé of zakelijk werk. Betalingen lopen via Stripe, en lf.wtf ziet je kaartnummer nooit.</p>
   <p>Je e-mailadres wordt gebruikt om je downloadlink te sturen, om je te antwoorden als je mailt en af en toe om je te laten weten dat ik een nieuw product heb uitgebracht dat bij Teleframe past. Je kunt je daar altijd voor afmelden.</p>
 </section>
 </main>

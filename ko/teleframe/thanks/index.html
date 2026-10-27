@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Teleframe 다운로드</title>
-<meta name="description" content="Teleframe 구매자를 위한 다운로드 페이지예요.">
+<title>Teleframe 라이선스</title>
+<meta name="description" content="Teleframe 구매자를 위한 라이선스 키 페이지예요.">
 <meta name="robots" content="noindex">
 <link rel="alternate" hreflang="en" href="https://lf.wtf/teleframe/thanks/">
 <link rel="alternate" hreflang="de" href="https://lf.wtf/de/teleframe/thanks/">
@@ -59,6 +59,11 @@ p{margin:0 0 14px}
 .bar b::before{content:"";display:block;height:100%;background:linear-gradient(90deg,#9a9ca0 calc(100% - 4px),var(--amber) 0);animation:fill 2.4s steps(20) infinite}
 .btn{display:inline-block;cursor:pointer;background:var(--blue);color:var(--cream);border:3px solid var(--cream);font:700 19px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;padding:18px 26px;text-decoration:none}
 .btn:hover{background:var(--deep);outline:2px solid var(--ph);outline-offset:4px}
+.btn.alt{background:transparent;color:var(--ph);border-color:var(--line)}.btn.alt:hover{background:var(--ph);color:var(--ink);outline:none}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0 22px}
+.keybox{display:flex;flex-wrap:wrap;align-items:center;gap:12px;border:2px solid var(--cream);background:#06160d;padding:14px 16px;margin:6px 0 6px}
+.keybox code{font:clamp(18px,3.6vw,28px)/1.2 var(--mono);color:var(--cream);letter-spacing:.04em;word-break:break-all;text-shadow:0 0 8px rgba(220,237,203,.35)}
+.copy{cursor:pointer;background:transparent;color:var(--ph);border:2px solid var(--line);font:15px var(--mono);padding:6px 12px;margin-left:auto}.copy:hover{background:var(--ph);color:var(--ink)}
 .file{color:var(--dim);font-size:15px;margin:12px 0 22px}
 ol{margin:0 0 18px;padding-left:1.4em}ol li{margin-bottom:8px}
 .email{color:var(--cream)}
@@ -97,15 +102,17 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
     </div>
 
     <div id="ready" hidden>
-      <h1>다운로드 준비가 끝났어요</h1>
-      <a class="btn" id="dl" href="#">Teleframe 다운로드</a>
-      <p class="file">Teleframe-Setup-1.0.0.exe, 45 MB</p>
+      <h1>내 라이선스 키</h1>
+      <div class="keybox"><code id="key"></code><button class="copy" id="copy" type="button">복사</button></div>
+      <p class="note" id="copied" hidden>복사했어요.</p>
+      <div class="actions"><a class="btn" id="act" href="#">Teleframe에서 활성화</a><a class="btn alt" href="/api/store/installer">Teleframe 다운로드</a></div>
       <ol>
-        <li>설치 파일을 실행하세요. 지금 쓰는 Windows 계정에 설치되고, 관리자 권한은 필요 없어요.</li>
+        <li>아직 Teleframe이 없나요? 다운로드해서 설치 파일을 실행한 다음 이 페이지로 돌아오세요.</li>
+        <li>'Teleframe에서 활성화'를 누르거나, Teleframe을 열고 톱니바퀴를 누른 다음 LICENSE를 골라 키를 붙여 넣으세요.</li>
         <li>Windows SmartScreen에 'Windows의 PC 보호'가 뜨면 '추가 정보'를 누른 다음 '실행'을 누르세요. 설치 파일에 코드 서명이 없어서 Windows가 확인하는 거예요.</li>
-        <li>Teleframe을 열면 화면에 초록색 프레임이 나타나요. 원하는 곳으로 옮긴 다음 REC를 누르세요.</li>
       </ol>
-      <p>링크 사본을 다음 주소로 보내고 있어요: <span class="email" id="email"></span>. 이 메일은 보관해 두세요. 다시 설치해야 할 때 언제든 이 링크를 쓸 수 있어요.</p>
+      <p>키 하나로 PC 최대 3대에서 쓸 수 있어요. 활성화할 때 한 번만 인터넷이 필요해요.</p>
+      <p>키 사본을 다음 주소로 보내고 있어요: <span class="email" id="email"></span>. 이 메일은 보관해 두세요. 다시 설치할 때 키가 필요해요.</p>
       <p class="note">질문이나 문제가 있으면 teleframe@lf.wtf로 메일을 보내 주세요.</p>
     </div>
 
@@ -116,15 +123,15 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
     </div>
 
     <div id="lost" hidden>
-      <h1>다운로드 링크 다시 받기</h1>
-      <p>결제할 때 쓴 이메일을 입력하면 그 주소로 링크를 보내 드려요.</p>
-      <form id="resend"><label class="note" for="em">이메일 주소</label><br><input id="em" type="email" name="email" required autocomplete="email"><button class="btn" type="submit">링크 보내기</button></form>
+      <h1>라이선스 키 다시 받기</h1>
+      <p>결제할 때 쓴 이메일을 입력하면 그 주소로 키를 보내 드려요.</p>
+      <form id="resend"><label class="note" for="em">이메일 주소</label><br><input id="em" type="email" name="email" required autocomplete="email"><button class="btn" type="submit">키 보내기</button></form>
       <p class="note">아직 Teleframe을 구매하지 않으셨나요? <a href="/ko/teleframe/">Teleframe 살펴보기</a></p>
     </div>
 
     <div id="sent" hidden>
       <h1>받은편지함을 확인하세요</h1>
-      <p>그 주소로 Teleframe을 구매했다면 새 링크를 보내고 있어요. 1분쯤 걸릴 수 있고, 스팸함에 들어갈 수도 있어요.</p>
+      <p>그 주소로 Teleframe을 구매했다면 키를 보내고 있어요. 1분쯤 걸릴 수 있고, 스팸함에 들어갈 수도 있어요.</p>
     </div>
 
     <div id="error" hidden>
@@ -146,11 +153,17 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
     }).then(function(d){
       if(d.missing){show('lost');return}
       if(!d.paid){show('pending');return}
-      document.getElementById('dl').href=d.download;
+      document.getElementById('key').textContent=d.key||'';
+      document.getElementById('act').href=d.activate||'#';
       document.getElementById('email').textContent=d.email||'';
       show('ready');
     }).catch(function(){show('error')});
   }
+  document.getElementById('copy').addEventListener('click',function(){
+    var k=document.getElementById('key').textContent;
+    (navigator.clipboard?navigator.clipboard.writeText(k):Promise.reject()).then(function(){document.getElementById('copied').hidden=false}).catch(function(){
+      var r=document.createRange();r.selectNodeContents(document.getElementById('key'));var s=getSelection();s.removeAllRanges();s.addRange(r);});
+  });
   document.getElementById('resend').addEventListener('submit',function(e){
     e.preventDefault();
     fetch('/api/store/resend',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({email:document.getElementById('em').value,lang:lang})})

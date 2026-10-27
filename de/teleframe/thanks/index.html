@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Teleframe herunterladen</title>
-<meta name="description" content="Download-Seite für Teleframe-Kunden.">
+<title>Deine Teleframe-Lizenz</title>
+<meta name="description" content="Lizenzschlüssel-Seite für Teleframe-Kunden.">
 <meta name="robots" content="noindex">
 <link rel="alternate" hreflang="en" href="https://lf.wtf/teleframe/thanks/">
 <link rel="alternate" hreflang="de" href="https://lf.wtf/de/teleframe/thanks/">
@@ -59,6 +59,11 @@ p{margin:0 0 14px}
 .bar b::before{content:"";display:block;height:100%;background:linear-gradient(90deg,#9a9ca0 calc(100% - 4px),var(--amber) 0);animation:fill 2.4s steps(20) infinite}
 .btn{display:inline-block;cursor:pointer;background:var(--blue);color:var(--cream);border:3px solid var(--cream);font:700 19px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;padding:18px 26px;text-decoration:none}
 .btn:hover{background:var(--deep);outline:2px solid var(--ph);outline-offset:4px}
+.btn.alt{background:transparent;color:var(--ph);border-color:var(--line)}.btn.alt:hover{background:var(--ph);color:var(--ink);outline:none}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0 22px}
+.keybox{display:flex;flex-wrap:wrap;align-items:center;gap:12px;border:2px solid var(--cream);background:#06160d;padding:14px 16px;margin:6px 0 6px}
+.keybox code{font:clamp(18px,3.6vw,28px)/1.2 var(--mono);color:var(--cream);letter-spacing:.04em;word-break:break-all;text-shadow:0 0 8px rgba(220,237,203,.35)}
+.copy{cursor:pointer;background:transparent;color:var(--ph);border:2px solid var(--line);font:15px var(--mono);padding:6px 12px;margin-left:auto}.copy:hover{background:var(--ph);color:var(--ink)}
 .file{color:var(--dim);font-size:15px;margin:12px 0 22px}
 ol{margin:0 0 18px;padding-left:1.4em}ol li{margin-bottom:8px}
 .email{color:var(--cream)}
@@ -97,15 +102,17 @@ html[lang="de"] h1, html[lang="de"] h2, html[lang="de"] .sub { text-transform: n
     </div>
 
     <div id="ready" hidden>
-      <h1>Dein Download ist bereit</h1>
-      <a class="btn" id="dl" href="#">Teleframe herunterladen</a>
-      <p class="file">Teleframe-Setup-1.0.0.exe, 45 MB</p>
+      <h1>Dein Lizenzschlüssel</h1>
+      <div class="keybox"><code id="key"></code><button class="copy" id="copy" type="button">Kopieren</button></div>
+      <p class="note" id="copied" hidden>Kopiert.</p>
+      <div class="actions"><a class="btn" id="act" href="#">In Teleframe aktivieren</a><a class="btn alt" href="/api/store/installer">Teleframe herunterladen</a></div>
       <ol>
-        <li>Starte den Installer. Er installiert für dein Windows-Konto und braucht keine Administratorrechte.</li>
+        <li>Du hast Teleframe noch nicht? Lade es herunter, starte den Installer und komm dann hierher zurück.</li>
+        <li>Klick auf „In Teleframe aktivieren“ oder öffne Teleframe, klick auf das Zahnrad, wähl LICENSE und füg den Schlüssel ein.</li>
         <li>Wenn Windows SmartScreen meldet, dass es deinen PC geschützt hat, klick auf Weitere Informationen und dann auf Trotzdem ausführen. Der Installer ist nicht codesigniert, deshalb fragt Windows nach.</li>
-        <li>Teleframe öffnet sich mit einem grünen Rahmen auf deinem Bildschirm. Schieb ihn an die gewünschte Stelle und drück dann REC.</li>
       </ol>
-      <p>Eine Kopie des Links ist unterwegs an <span class="email" id="email"></span>. Bewahr diese E-Mail auf, der Link funktioniert jedes Mal, wenn du neu installieren musst.</p>
+      <p>Ein Schlüssel funktioniert auf bis zu 3 PCs. Die Aktivierung braucht einmal eine Internetverbindung.</p>
+      <p>Eine Kopie des Schlüssels ist unterwegs an <span class="email" id="email"></span>. Bewahr diese E-Mail auf, du brauchst den Schlüssel, wenn du neu installierst.</p>
       <p class="note">Fragen oder Probleme? Schreib an teleframe@lf.wtf.</p>
     </div>
 
@@ -116,15 +123,15 @@ html[lang="de"] h1, html[lang="de"] h2, html[lang="de"] .sub { text-transform: n
     </div>
 
     <div id="lost" hidden>
-      <h1>Download-Link erneut anfordern</h1>
-      <p>Gib die E-Mail-Adresse ein, die du beim Bezahlen verwendet hast, dann wird der Link dorthin geschickt.</p>
-      <form id="resend"><label class="note" for="em">E-Mail-Adresse</label><br><input id="em" type="email" name="email" required autocomplete="email"><button class="btn" type="submit">Link senden</button></form>
+      <h1>Lizenzschlüssel erneut anfordern</h1>
+      <p>Gib die E-Mail-Adresse ein, die du beim Bezahlen verwendet hast, dann wird dein Schlüssel dorthin geschickt.</p>
+      <form id="resend"><label class="note" for="em">E-Mail-Adresse</label><br><input id="em" type="email" name="email" required autocomplete="email"><button class="btn" type="submit">Schlüssel senden</button></form>
       <p class="note">Noch kein Teleframe gekauft? <a href="/de/teleframe/">Teleframe ansehen</a></p>
     </div>
 
     <div id="sent" hidden>
       <h1>Schau in dein Postfach</h1>
-      <p>Wenn mit dieser Adresse Teleframe gekauft wurde, ist ein neuer Link unterwegs. Das kann eine Minute dauern, und er landet vielleicht im Spam.</p>
+      <p>Wenn mit dieser Adresse Teleframe gekauft wurde, ist dein Schlüssel unterwegs. Das kann eine Minute dauern, und er landet vielleicht im Spam.</p>
     </div>
 
     <div id="error" hidden>
@@ -146,11 +153,17 @@ html[lang="de"] h1, html[lang="de"] h2, html[lang="de"] .sub { text-transform: n
     }).then(function(d){
       if(d.missing){show('lost');return}
       if(!d.paid){show('pending');return}
-      document.getElementById('dl').href=d.download;
+      document.getElementById('key').textContent=d.key||'';
+      document.getElementById('act').href=d.activate||'#';
       document.getElementById('email').textContent=d.email||'';
       show('ready');
     }).catch(function(){show('error')});
   }
+  document.getElementById('copy').addEventListener('click',function(){
+    var k=document.getElementById('key').textContent;
+    (navigator.clipboard?navigator.clipboard.writeText(k):Promise.reject()).then(function(){document.getElementById('copied').hidden=false}).catch(function(){
+      var r=document.createRange();r.selectNodeContents(document.getElementById('key'));var s=getSelection();s.removeAllRanges();s.addRange(r);});
+  });
   document.getElementById('resend').addEventListener('submit',function(e){
     e.preventDefault();
     fetch('/api/store/resend',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({email:document.getElementById('em').value,lang:lang})})

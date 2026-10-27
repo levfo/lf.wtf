@@ -96,5 +96,19 @@
   "Open the download page and enter the email you paid with. The link will be sent to that address again.": "ダウンロードページを開き、支払いに使ったメールアドレスを入力してください。そのアドレスにリンクがもう一度送られます。",
   "Your email is used to send your download link and to answer you if you write in.": "メールアドレスは、ダウンロードリンクの送信と、お問い合わせへの返信に使います。",
   "Your email is used to send your download link, to answer you if you write in, and for occasional emails about new products I release that relate to Teleframe. You can unsubscribe from those at any time.": "メールアドレスは、ダウンロードリンクの送信、お問い合わせへの返信、そして Teleframe に関連する新製品のお知らせ（ときどき）に使います。お知らせはいつでも配信停止できます。",
-  "By buying Teleframe, you agree to the purchase terms below.": "Teleframe を購入すると、下記の購入条件に同意したことになります。"
+  "By buying Teleframe, you agree to the purchase terms below.": "Teleframe を購入すると、下記の購入条件に同意したことになります。",
+  "Teleframe is a screen recorder for Windows 10 and 11. Drag a frame over any part of your screen, record in 16:9, 9:16 or any shape, and save an MP4 with sound. Free 7-day trial, then $9.99 once, no subscription, no watermark.": "Teleframe は Windows 10/11 用の画面録画ソフトです。画面の好きな部分をフレームで囲み、16:9 や 9:16 など自由な形で録画して、音声付きの MP4 で保存できます。7 日間無料で試せて、その後は $9.99 の買い切り。サブスクリプションも透かしもありません。",
+  "Teleframe puts a frame on your desktop. Drag it where you want it, size it to any shape and press REC. Only what's inside the frame goes into the video, and the recorder's own controls never appear in it. Try it free for 7 days.": "Teleframe はデスクトップにフレームを表示します。好きな場所にドラッグし、好きな形にサイズを変えて REC を押してください。動画に入るのはフレームの内側だけで、録画ソフト自体の操作バーは映りません。7 日間無料で試せます。",
+  "Download free trial": "無料体験版をダウンロード",
+  "Free for 7 days with every feature. Windows 10 and 11. One-time purchase.": "7 日間、すべての機能を無料で使えます。Windows 10 と 11 に対応。買い切りです。",
+  "No subscription and no account. After paying, your license key appears on screen and is emailed to you. One key works on up to 3 PCs.": "サブスクリプションもアカウントもありません。支払い後はライセンスキーが画面に表示され、メールでも届きます。1 つのキーで最大 3 台の PC で使えます。",
+  "Is there a free trial?": "無料体験はありますか？",
+  "Yes. Download Teleframe and use every feature free for 7 days. When the trial ends, enter a license key to keep recording.": "はい。Teleframe をダウンロードすれば、すべての機能を 7 日間無料で使えます。無料体験が終わったら、ライセンスキーを入力すると引き続き録画できます。",
+  "How does the license key work?": "ライセンスキーはどのように使いますか？",
+  "I lost my license key.": "ライセンスキーをなくしました。",
+  "and enter the email you paid with. Your key will be sent to that address again.": "を開き、支払いに使ったメールアドレスを入力してください。そのアドレスにキーがもう一度送られます。",
+  "Buying Teleframe gets you a license key for up to 3 PCs, for personal or commercial work. Payments are handled by Stripe, and lf.wtf never sees your card number.": "Teleframe を購入すると、最大 3 台の PC で使えるライセンスキーが付与されます。個人の作業にも仕事にも使えます。支払いは Stripe が処理し、lf.wtf がカード番号を見ることはありません。",
+  "Free 7-day trial; one license key works on up to 3 PCs": "7 日間の無料体験。1 つのライセンスキーで最大 3 台の PC に対応",
+  "Open the download page and enter the email you paid with. Your key will be sent to that address again.": "ダウンロードページを開き、支払いに使ったメールアドレスを入力してください。そのアドレスにキーがもう一度送られます。",
+  "After you buy, you get a key that starts with TELE-. In Teleframe, click the gear, choose LICENSE and paste it. One key works on up to 3 PCs. Activation needs the internet once, and after that Teleframe works offline.": "購入すると、TELE- で始まるキーが届きます。Teleframe で歯車アイコンをクリックし、LICENSE を選んでキーを貼り付けてください。1 つのキーで最大 3 台の PC で使えます。ライセンス認証には一度だけインターネット接続が必要で、その後はオフラインで動作します。"
 }

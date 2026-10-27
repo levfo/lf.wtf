@@ -29,5 +29,20 @@
   "The download page couldn't reach the store. Reload to try again, or write to teleframe@lf.wtf.": "다운로드 페이지가 스토어에 연결하지 못했어요. 새로고침해서 다시 시도하거나 teleframe@lf.wtf로 메일을 보내 주세요.",
   "Made by": "제작:",
   "Levi Foster": "Levi Foster",
-  "teleframe@lf.wtf": "teleframe@lf.wtf"
+  "teleframe@lf.wtf": "teleframe@lf.wtf",
+  "Your Teleframe license": "Teleframe 라이선스",
+  "License key page for Teleframe customers.": "Teleframe 구매자를 위한 라이선스 키 페이지예요.",
+  "Your license key": "내 라이선스 키",
+  "Copy": "복사",
+  "Copied.": "복사했어요.",
+  "Activate in Teleframe": "Teleframe에서 활성화",
+  "Don't have Teleframe yet? Download it, run the installer, then come back here.": "아직 Teleframe이 없나요? 다운로드해서 설치 파일을 실행한 다음 이 페이지로 돌아오세요.",
+  "Click Activate in Teleframe, or open Teleframe, click the gear, choose LICENSE and paste the key.": "'Teleframe에서 활성화'를 누르거나, Teleframe을 열고 톱니바퀴를 누른 다음 LICENSE를 골라 키를 붙여 넣으세요.",
+  "One key works on up to 3 PCs. Activation needs the internet once.": "키 하나로 PC 최대 3대에서 쓸 수 있어요. 활성화할 때 한 번만 인터넷이 필요해요.",
+  "A copy of the key is on its way to": "키 사본을 다음 주소로 보내고 있어요:",
+  ". Keep that email, you'll need the key if you reinstall.": ". 이 메일은 보관해 두세요. 다시 설치할 때 키가 필요해요.",
+  "Get your license key again": "라이선스 키 다시 받기",
+  "Enter the email you used at checkout and your key will be sent there.": "결제할 때 쓴 이메일을 입력하면 그 주소로 키를 보내 드려요.",
+  "Send my key": "키 보내기",
+  "If that address bought Teleframe, your key is on its way. It can take a minute, and it may land in spam.": "그 주소로 Teleframe을 구매했다면 키를 보내고 있어요. 1분쯤 걸릴 수 있고, 스팸함에 들어갈 수도 있어요."
 }

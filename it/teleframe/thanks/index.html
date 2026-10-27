@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Scarica Teleframe</title>
-<meta name="description" content="Pagina di download per i clienti di Teleframe.">
+<title>La tua licenza Teleframe</title>
+<meta name="description" content="Pagina della chiave di licenza per i clienti di Teleframe.">
 <meta name="robots" content="noindex">
 <link rel="alternate" hreflang="en" href="https://lf.wtf/teleframe/thanks/">
 <link rel="alternate" hreflang="de" href="https://lf.wtf/de/teleframe/thanks/">
@@ -59,6 +59,11 @@ p{margin:0 0 14px}
 .bar b::before{content:"";display:block;height:100%;background:linear-gradient(90deg,#9a9ca0 calc(100% - 4px),var(--amber) 0);animation:fill 2.4s steps(20) infinite}
 .btn{display:inline-block;cursor:pointer;background:var(--blue);color:var(--cream);border:3px solid var(--cream);font:700 19px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;padding:18px 26px;text-decoration:none}
 .btn:hover{background:var(--deep);outline:2px solid var(--ph);outline-offset:4px}
+.btn.alt{background:transparent;color:var(--ph);border-color:var(--line)}.btn.alt:hover{background:var(--ph);color:var(--ink);outline:none}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0 22px}
+.keybox{display:flex;flex-wrap:wrap;align-items:center;gap:12px;border:2px solid var(--cream);background:#06160d;padding:14px 16px;margin:6px 0 6px}
+.keybox code{font:clamp(18px,3.6vw,28px)/1.2 var(--mono);color:var(--cream);letter-spacing:.04em;word-break:break-all;text-shadow:0 0 8px rgba(220,237,203,.35)}
+.copy{cursor:pointer;background:transparent;color:var(--ph);border:2px solid var(--line);font:15px var(--mono);padding:6px 12px;margin-left:auto}.copy:hover{background:var(--ph);color:var(--ink)}
 .file{color:var(--dim);font-size:15px;margin:12px 0 22px}
 ol{margin:0 0 18px;padding-left:1.4em}ol li{margin-bottom:8px}
 .email{color:var(--cream)}
@@ -95,15 +100,17 @@ justify-content:center}
     </div>
 
     <div id="ready" hidden>
-      <h1>Il tuo download è pronto</h1>
-      <a class="btn" id="dl" href="#">Scarica Teleframe</a>
-      <p class="file">Teleframe-Setup-1.0.0.exe, 45 MB</p>
+      <h1>La tua chiave di licenza</h1>
+      <div class="keybox"><code id="key"></code><button class="copy" id="copy" type="button">Copia</button></div>
+      <p class="note" id="copied" hidden>Copiato.</p>
+      <div class="actions"><a class="btn" id="act" href="#">Attiva in Teleframe</a><a class="btn alt" href="/api/store/installer">Scarica Teleframe</a></div>
       <ol>
-        <li>Avvia il programma di installazione. Si installa per il tuo account Windows e non servono i permessi di amministratore.</li>
+        <li>Non hai ancora Teleframe? Scaricalo, avvia il programma di installazione e poi torna qui.</li>
+        <li>Fai clic su Attiva in Teleframe, oppure apri Teleframe, fai clic sull'ingranaggio, scegli LICENSE e incolla la chiave.</li>
         <li>Se Windows SmartScreen dice di aver protetto il PC, fai clic su Ulteriori informazioni, poi su Esegui comunque. Il programma di installazione non ha la firma digitale, ed è per questo che Windows te lo chiede.</li>
-        <li>Teleframe si apre con una cornice verde sullo schermo. Spostala dove vuoi, poi premi REC.</li>
       </ol>
-      <p>Una copia del link sta arrivando a <span class="email" id="email"></span>. Conserva quell'email, il link funziona ogni volta che devi reinstallare.</p>
+      <p>Una chiave funziona su un massimo di 3 PC. L'attivazione richiede internet una sola volta.</p>
+      <p>Una copia della chiave sta arrivando a <span class="email" id="email"></span>. Conserva quell'email, ti servirà la chiave se reinstalli.</p>
       <p class="note">Domande o problemi? Scrivi a teleframe@lf.wtf.</p>
     </div>
 
@@ -114,15 +121,15 @@ justify-content:center}
     </div>
 
     <div id="lost" hidden>
-      <h1>Ricevi di nuovo il link per il download</h1>
-      <p>Inserisci l'email che hai usato per il pagamento e il link ti verrà mandato lì.</p>
-      <form id="resend"><label class="note" for="em">Indirizzo email</label><br><input id="em" type="email" name="email" required autocomplete="email"><button class="btn" type="submit">Invia il link</button></form>
+      <h1>Ricevi di nuovo la chiave di licenza</h1>
+      <p>Inserisci l'email che hai usato per il pagamento e la chiave ti verrà mandata lì.</p>
+      <form id="resend"><label class="note" for="em">Indirizzo email</label><br><input id="em" type="email" name="email" required autocomplete="email"><button class="btn" type="submit">Invia la mia chiave</button></form>
       <p class="note">Non hai ancora acquistato Teleframe? <a href="/it/teleframe/">Scopri Teleframe</a></p>
     </div>
 
     <div id="sent" hidden>
       <h1>Controlla la tua casella di posta</h1>
-      <p>Se quell'indirizzo ha acquistato Teleframe, un nuovo link sta arrivando. Può volerci un minuto, e potrebbe finire nello spam.</p>
+      <p>Se quell'indirizzo ha acquistato Teleframe, la chiave sta arrivando. Può volerci un minuto, e potrebbe finire nello spam.</p>
     </div>
 
     <div id="error" hidden>
@@ -144,11 +151,17 @@ justify-content:center}
     }).then(function(d){
       if(d.missing){show('lost');return}
       if(!d.paid){show('pending');return}
-      document.getElementById('dl').href=d.download;
+      document.getElementById('key').textContent=d.key||'';
+      document.getElementById('act').href=d.activate||'#';
       document.getElementById('email').textContent=d.email||'';
       show('ready');
     }).catch(function(){show('error')});
   }
+  document.getElementById('copy').addEventListener('click',function(){
+    var k=document.getElementById('key').textContent;
+    (navigator.clipboard?navigator.clipboard.writeText(k):Promise.reject()).then(function(){document.getElementById('copied').hidden=false}).catch(function(){
+      var r=document.createRange();r.selectNodeContents(document.getElementById('key'));var s=getSelection();s.removeAllRanges();s.addRange(r);});
+  });
   document.getElementById('resend').addEventListener('submit',function(e){
     e.preventDefault();
     fetch('/api/store/resend',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({email:document.getElementById('em').value,lang:lang})})
