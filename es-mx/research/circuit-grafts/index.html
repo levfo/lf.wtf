@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-66ZSZNSB3X"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-66ZSZNSB3X');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Injertos de circuitos: la multiplicación de SmolLM2-135M pasa del 21.3% al 83.1% sin entrenamiento por gradiente</title>
+<meta name="description" content="Pequeños circuitos de reglas injertados en SmolLM2-135M subieron entre 37 y 62 puntos cinco pruebas de matemáticas con problemas reservados. Ningún peso original cambiado, sin entrenamiento por gradiente y como máximo un 0.09% de pesos agregados. Un reporte de laboratorio de Levi Foster.">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#F3F2EE">
+<meta name="author" content="Levi Foster">
+<link rel="alternate" hreflang="en" href="https://lf.wtf/research/circuit-grafts/">
+<link rel="alternate" hreflang="de" href="https://lf.wtf/de/research/circuit-grafts/">
+<link rel="alternate" hreflang="es" href="https://lf.wtf/es/research/circuit-grafts/">
+<link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/research/circuit-grafts/">
+<link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/research/circuit-grafts/">
+<link rel="alternate" hreflang="it" href="https://lf.wtf/it/research/circuit-grafts/">
+<link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/research/circuit-grafts/">
+<link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/research/circuit-grafts/">
+<link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/research/circuit-grafts/">
+<link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/research/circuit-grafts/">
+<link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/research/circuit-grafts/">
+<link rel="alternate" hreflang="x-default" href="https://lf.wtf/research/circuit-grafts/">
+<link rel="canonical" href="https://lf.wtf/es-mx/research/circuit-grafts/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/dm-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+
+<meta property="og:title" content="Injertos de circuitos: SmolLM2-135M del 21.3% al 83.1% en problemas reservados de multiplicación">
+<meta property="og:description" content="Pequeños circuitos de reglas injertados en un modelo de lenguaje de 135M. Ningún peso original cambiado, sin entrenamiento por gradiente y como máximo un 0.09% de pesos agregados.">
+<meta property="og:url" content="https://lf.wtf/es-mx/research/circuit-grafts/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Levi Foster">
+<meta property="og:locale" content="es_MX">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:image" content="https://lf.wtf/research/assets/og-circuit-grafts-1.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Injertos de circuitos en SmolLM2-135M: cinco pruebas de matemáticas con problemas reservados, antes y después">
+<meta property="article:published_time" content="2026-11-07">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@cybermynd">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://lf.wtf/research/circuit-grafts/#webpage",
+      "url": "https://lf.wtf/research/circuit-grafts/",
+      "name": "Injertos de circuitos en SmolLM2-135M",
+      "isPartOf": {
+        "@id": "https://lf.wtf/#website"
+      },
+      "mainEntity": {
+        "@id": "https://lf.wtf/research/circuit-grafts/#post"
+      },
+      "breadcrumb": {
+        "@id": "https://lf.wtf/research/circuit-grafts/#breadcrumb"
+      },
+      "primaryImageOfPage": "https://lf.wtf/research/assets/og-circuit-grafts-1.png",
+      "inLanguage": "es-MX"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://lf.wtf/research/circuit-grafts/#post",
+      "url": "https://lf.wtf/research/circuit-grafts/",
+      "headline": "Injertos de circuitos: SmolLM2-135M pasa del 21.3% al 83.1% en problemas reservados de multiplicación sin entrenamiento por gradiente",
+      "description": "Pequeños circuitos de reglas injertados en SmolLM2-135M subieron entre 37 y 62 puntos cinco pruebas de matemáticas con problemas reservados. Ningún peso original cambiado, sin entrenamiento por gradiente y como máximo un 0.09% de pesos agregados.",
+      "image": "https://lf.wtf/research/assets/og-circuit-grafts-1.png",
+      "datePublished": "2026-11-07",
+      "dateModified": "2026-11-07",
+      "author": {
+        "@id": "https://lf.wtf/#levifoster"
+      },
+      "publisher": {
+        "@id": "https://lf.wtf/#levifoster"
+      },
+      "isPartOf": {
+        "@id": "https://lf.wtf/research/#blog"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Edición de pesos en modelos de lenguaje"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "SmolLM2-135M",
+          "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct",
+          "inLanguage": "es-MX"
+        }
+      ],
+      "inLanguage": "es-MX"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://lf.wtf/research/circuit-grafts/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Levi Foster",
+          "item": "https://lf.wtf/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Investigación en IA",
+          "item": "https://lf.wtf/research/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Injertos de circuitos",
+          "item": "https://lf.wtf/research/circuit-grafts/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+@font-face{font-family:"Schibsted Grotesk";src:url(/assets/fonts/schibsted-grotesk.woff2) format("woff2");font-weight:400 900;font-display:swap}
+@font-face{font-family:"DM Mono";src:url(/assets/fonts/dm-mono-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"DM Mono";src:url(/assets/fonts/dm-mono-500.woff2) format("woff2");font-weight:500;font-display:swap}
+:root{--paper:#F3F2EE;--ink:#111;--white:#fff;--blue:#2F3BFF;--blue-lit:#8C95FF;--grey:#CFCDC6;--lab:#D9DCFF;--muted:#5B5953;
+--alone:#6F6C64;--other:#B3B0A7;
+--sans:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"DM Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;--w:1180px;--text:720px}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:14px/1.6 var(--mono)}
+a{color:inherit}
+a:hover{color:var(--blue)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 32px}
+
+/* bar */
+.bar{border-bottom:2px solid var(--ink)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:56px}
+.brand{font:800 20px/1 var(--sans);text-decoration:none;letter-spacing:-.01em}
+.bar nav{display:flex;gap:22px}
+.bar nav a{font-size:11px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:14px 0}
+
+.crumbs{padding-top:18px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.crumbs a{text-decoration:none;border-bottom:1px solid var(--grey)}
+.crumbs span[aria-current]{color:var(--ink)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:200px minmax(0,1fr);gap:40px;align-items:end;padding-top:28px;padding-bottom:32px}
+.h-tile{container-type:inline-size;aspect-ratio:1;border:4px solid var(--ink);background:var(--lab);padding:9%;display:flex;flex-direction:column;justify-content:space-between}
+.ht-top{display:flex;justify-content:space-between;font-size:max(11px,8cqi);line-height:1}
+.ht-sym{margin:0;font:800 46cqi/.85 var(--sans);letter-spacing:-.03em}
+.ht-name{font-size:max(9px,7.4cqi);letter-spacing:.06em;text-transform:uppercase;line-height:1.25}
+.kicker{margin:0 0 14px;font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+h1{margin:0;font:800 clamp(48px,8vw,104px)/.9 var(--sans);letter-spacing:-.035em;text-transform:uppercase}
+.dek{margin:18px 0 0;max-width:680px;font:400 clamp(18px,1.9vw,22px)/1.4 var(--sans)}
+.byline{margin:18px 0 0;display:flex;flex-wrap:wrap;gap:4px 18px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.byline a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--ink)}
+
+/* stat strip */
+.stats{margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;border-top:4px solid var(--ink);border-bottom:2px solid var(--ink);padding:0}
+.stats div{padding:18px 18px 18px 0;display:flex;flex-direction:column;gap:6px;min-width:0}
+.stats div+div{padding-left:18px;border-left:1px solid var(--ink)}
+.stats dd{order:-1;margin:0;font:800 clamp(28px,3.4vw,44px)/1 var(--sans);letter-spacing:-.02em;white-space:nowrap}
+.stats dd.hi{color:var(--blue)}
+.stats dt{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);line-height:1.45}
+
+/* article */
+.post{padding-top:40px;padding-bottom:24px}
+.post section{max-width:var(--text);margin:0 0 48px;scroll-margin-top:16px}
+.post section.wide{max-width:none}
+.post section.wide>h2,.post section.wide>p,.post section.wide>ol,.post section.wide>ul,.post section.wide>.label{max-width:var(--text)}
+.label{margin:0 0 8px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.post h2{margin:0 0 16px;font:800 clamp(28px,3.6vw,40px)/1.02 var(--sans);letter-spacing:-.02em}
+.post h3{margin:28px 0 10px;font:700 20px/1.2 var(--sans);letter-spacing:-.01em}
+.post p,.post li{font:400 18px/1.62 var(--sans)}
+.post p{margin:0 0 16px}
+.post ol,.post ul{margin:0 0 16px;padding-left:22px}
+.post li{margin:0 0 10px;padding-left:4px}
+.post li::marker{font:500 13px var(--mono)}
+.quote{margin:8px 0 20px;padding:4px 0 4px 18px;border-left:4px solid var(--blue);font:500 20px/1.45 var(--sans)}
+.steps{list-style:none;padding:0!important;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:48px minmax(0,1fr);gap:14px;padding:14px 0 14px;margin:0;border-top:1px solid var(--ink)}
+.steps li:last-child{border-bottom:1px solid var(--ink)}
+.steps li::before{content:counter(s,decimal-leading-zero);font:500 13px/1.9 var(--mono);color:var(--muted)}
+.steps b{display:block;font:700 19px/1.3 var(--sans);margin-bottom:4px}
+.note{font:400 13px/1.6 var(--mono)!important;color:var(--muted)}
+.post .label{font:400 11px/1.6 var(--mono);letter-spacing:.16em}
+.post .chart .sub{font:400 12px/1.5 var(--mono);margin:0 0 16px}
+.post .chart .verdict{font:500 13px/1.5 var(--mono);margin:14px 0 0}
+.post .key li{font:400 11px/1.4 var(--mono);margin:0;padding:0}
+
+/* charts */
+.chart{margin:24px 0 20px;border:4px solid var(--ink);background:var(--white);padding:22px 24px 18px}
+.chart figcaption{margin:0 0 4px;font:800 22px/1.15 var(--sans);letter-spacing:-.01em}
+.chart .sub{margin:0 0 16px;font-size:12px;color:var(--muted)}
+.key{display:flex;flex-wrap:wrap;gap:6px 22px;margin:0 0 14px;padding:0;list-style:none;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.key li{display:flex;align-items:center;gap:8px}
+.k{display:inline-block;width:12px;height:12px;border-radius:50%}
+.k-alone{background:var(--alone)}.k-graft{background:var(--blue)}.k-scr{border:2px solid var(--ink);background:var(--white)}
+
+.dumb{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr) 150px;column-gap:20px}
+.d-row{display:contents}
+.d-label,.d-track,.d-val{border-top:1px solid var(--grey);padding:12px 0;min-width:0}
+.d-label b{display:block;font:700 16px/1.25 var(--sans)}
+.d-label span{font-size:12px;color:var(--muted)}
+.d-track{position:relative;min-height:56px;background:linear-gradient(90deg,var(--grey) 1px,transparent 1px) 0 0/25% 100% repeat-x;background-position:-.5px 0}
+.d-track::after{content:"";position:absolute;right:0;top:12px;bottom:12px;width:1px;background:var(--grey)}
+.d-track i{position:absolute;top:50%;display:block}
+.d-line{left:calc(var(--a)*1%);width:calc((var(--b) - var(--a))*1%);height:3px;margin-top:-1.5px;background:var(--blue);opacity:.35}
+.d-a,.d-b,.d-s{width:16px;height:16px;margin:-8px 0 0 -8px;border-radius:50%;box-shadow:0 0 0 2px var(--white)}
+.d-a{left:calc(var(--a)*1%);background:var(--alone)}
+.d-b{left:calc(var(--b)*1%);background:var(--blue);width:18px;height:18px;margin:-9px 0 0 -9px}
+.d-s{left:calc(var(--s)*1%);width:12px;height:12px;margin:-6px 0 0 -6px;border:2px solid var(--ink);background:var(--white);box-shadow:none}
+.d-val{text-align:right;font-size:13px;line-height:1.45}
+.d-val b{display:block;font:700 17px/1.3 var(--mono);color:var(--blue)}
+.d-val span{color:var(--muted);font-size:12px}
+.d-axis{display:contents}
+.d-axis>span:first-child,.d-axis>span:last-child{border-top:1px solid var(--ink)}
+.d-ticks{position:relative;height:24px;border-top:1px solid var(--ink);font-size:11px;color:var(--muted)}
+.d-ticks span{position:absolute;top:4px;transform:translateX(-50%)}
+.d-ticks span:first-child{transform:none}.d-ticks span:last-child{transform:translateX(-100%)}
+
+.bars{display:grid;grid-template-columns:minmax(0,250px) minmax(0,1fr) 64px;column-gap:16px;row-gap:0}
+.b-row{display:contents}
+.b-label,.b-track,.b-val{padding:9px 0;border-top:1px solid var(--grey);min-width:0}
+.b-label{font-size:13px;line-height:1.35}
+.b-label small{display:block;font-size:11px;color:var(--muted)}
+.b-track{position:relative;background:linear-gradient(90deg,var(--grey) 1px,transparent 1px) 0 0/25% 100% repeat-x}
+.b-track i{position:absolute;left:0;top:50%;height:20px;margin-top:-10px;width:calc(var(--v)*1%);background:var(--other)}
+.b-row.base i{background:var(--alone)}
+.b-row.win i{background:var(--blue)}
+.b-row.win .b-label{font-weight:500}
+.b-val{text-align:right;font:500 14px/1.6 var(--mono)}
+.b-row.win .b-val{color:var(--blue)}
+.b-scale{grid-column:2;display:flex;justify-content:space-between;border-top:1px solid var(--ink);padding-top:4px;font-size:11px;color:var(--muted)}
+.chart .verdict{margin:14px 0 0;font:500 13px/1.5 var(--mono)}
+
+.table-wrap{margin:8px 0 20px;overflow-x:auto;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:13px}
+caption{text-align:left;padding:12px 0 8px;font:700 16px/1.3 var(--sans)}
+th,td{padding:10px 12px 10px 0;text-align:right;vertical-align:top;border-top:1px solid var(--grey)}
+th:first-child,td:first-child{text-align:left}
+thead th{font-weight:400;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);border-top:0;vertical-align:bottom}
+td small{display:block;color:var(--muted);font-size:11px}
+td.hi{color:var(--blue);font-weight:500}
+
+.next{border-top:4px solid var(--ink);padding-top:22px;margin-top:8px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.next a{display:inline-flex;align-items:center;min-height:48px;padding:0 20px;background:var(--ink);color:var(--paper);text-decoration:none;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.next a:hover{background:var(--blue);color:#fff}
+footer.wrap{margin-top:40px;padding-top:20px;padding-bottom:8px;border-top:2px solid var(--ink);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* Kana, hangul and hanzi run wider and taller than the Latin caps this was tuned on. */
+html[lang="ja"] h1,html[lang="ko"] h1,html[lang="zh-Hans"] h1{font-size:clamp(40px,6.4vw,84px);line-height:1.08;letter-spacing:0}
+@media (max-width:860px){
+.dumb{grid-template-columns:minmax(0,1fr) auto;grid-auto-flow:row dense}
+.d-label{grid-column:1;padding-bottom:4px}
+.d-val{grid-column:2;padding-bottom:4px}
+.d-track{grid-column:1/3;border-top:0;padding-top:0;min-height:40px}
+.d-axis>span:first-child,.d-axis>span:last-child{display:none}
+.d-ticks{grid-column:1/3}
+.bars{grid-template-columns:minmax(0,1fr) 60px}
+.b-label{grid-column:1/3;padding-bottom:2px}
+.b-track{grid-column:1;border-top:0;min-height:30px;padding:0}
+.b-val{grid-column:2;border-top:0;padding-top:2px}
+.b-scale{grid-column:1}
+}
+@media (max-width:760px){
+.wrap{padding-left:16px;padding-right:16px}
+.bar nav a:not(.to-lang){display:none}
+.hero{grid-template-columns:96px minmax(0,1fr);gap:18px;align-items:start;padding-top:18px}
+.h-tile{border-width:3px}
+.hero .h-text{display:contents}
+.kicker{grid-column:2;align-self:end;margin:0}
+h1{grid-column:1/3;font-size:clamp(40px,13vw,64px)}
+.dek,.byline{grid-column:1/3;margin-top:0}
+.stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+.stats div{padding:14px 12px 14px 0!important;border-left:0!important}
+.stats div:first-child,.stats div:nth-child(4){grid-column:1/3}
+.stats div+div{border-top:1px solid var(--ink)}
+.stats div:nth-child(3){padding-left:12px!important;border-left:1px solid var(--ink)!important}
+.post{padding-top:28px}
+.post p,.post li{font-size:17px}
+.chart{padding:16px 14px 14px;border-width:3px;margin-left:-4px;margin-right:-4px}
+.steps li{grid-template-columns:34px minmax(0,1fr)}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* i18n:start */
+.i18n{max-width:var(--w,initial);margin:0 auto;padding:26px 22px 40px;display:flex;flex-wrap:wrap;
+gap:6px 14px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.55;
+justify-content:center}
+.i18n a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+.i18n a:hover{border-bottom-color:currentColor}
+.i18n span[aria-current]{opacity:.5;cursor:default}
+/* i18n:end */
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="https://lf.wtf/es-mx/">lf.wtf</a>
+    <nav aria-label="Secciones">
+      <a href="https://lf.wtf/es-mx/research/">Investigación en IA</a>
+      <a href="#results">Resultados</a>
+      <a href="#gradient">Contra el gradiente</a>
+      <a class="to-lang" href="#language">Idioma</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<nav class="crumbs wrap" aria-label="Ruta de navegación"><a href="https://lf.wtf/es-mx/">Levi Foster</a> / <a href="https://lf.wtf/es-mx/research/">Investigación en IA</a> / <span aria-current="page">Injertos de circuitos</span></nav>
+
+<header class="hero wrap">
+  <div class="h-tile">
+    <span class="ht-top" aria-hidden="true"><span>16.01</span><span>lab</span></span>
+    <span class="ht-sym" aria-hidden="true">Cg</span>
+    <span class="ht-name">Reporte de laboratorio 01</span>
+  </div>
+  <div class="h-text">
+    <p class="kicker">Investigación en IA · SmolLM2-135M</p>
+    <h1>Injertos de circuitos</h1>
+    <p class="dek">Conectamos pequeños circuitos de reglas a SmolLM2-135M, un modelo de lenguaje de 135 millones de parámetros. En problemas reservados y sellados, su puntaje en multiplicación pasó del 21.3% al 83.1%. No cambió ningún peso original y no se entrenó nada por descenso de gradiente.</p>
+    <p class="byline"><a rel="author" href="https://lf.wtf/es-mx/">Levi Foster</a><time datetime="2026-11-07">7 de noviembre de 2026</time></p>
+  </div>
+</header>
+
+<div class="wrap">
+<dl class="stats">
+  <div><dt>Multiplicación, problemas reservados</dt><dd class="hi">21.3% → 83.1%</dd></div>
+  <div><dt>Pesos originales cambiados</dt><dd>0</dd></div>
+  <div><dt>Injerto más grande, proporción del modelo</dt><dd>0.09%</dd></div>
+  <div><dt>Puntos de ventaja sobre un injerto por gradiente del mismo tamaño</dt><dd>+57.9</dd></div>
+</dl>
+</div>
+
+<article class="post wrap">
+
+<section id="theory">
+  <p class="label">Cómo empezó</p>
+  <h2>Una regla puede servir para muchos hechos</h2>
+  <p>Quiero averiguar hasta dónde se puede llevar un modelo abierto pequeño hacia el nivel de los modelos de frontera editando sus pesos directamente e injertándole piezas nuevas, sin un entrenamiento pesado. Lo usual es entrenar. Pasas miles de millones de preguntas y respuestas por un modelo y el descenso de gradiente encuentra las reglas por sí solo. Pero también podemos abrir un modelo, leer lo que contiene a mitad de un problema y cambiarlo. Entonces, ¿se pueden escribir algunas de esas reglas a mano?</p>
+  <p>Mi hipótesis de trabajo es que buena parte del razonamiento funciona con conjuntos de reglas, donde una regla sirve para muchos hechos. El "llevo uno" de las sumas es el caso más simple. Nadie memoriza todas las sumas, porque una sola regla de acarreo las cubre todas, en cada posición de dígito. En mis notas lo escribí así:</p>
+  <p class="quote">Tal vez la regla de un hecho coincidiría con la regla de otro.</p>
+  <p>A un modelo pequeño le cuesta mucho almacenar hechos, y las reglas son baratas. El primer circuito de multiplicación de este reporte está hecho para todos los problemas desde 2 × 10 hasta 9 × 99, y tiene 25,270 pesos.</p>
+  <p>Las mismas conversaciones sacaron a la luz una segunda idea que va de la mano con la primera: un conjunto de reglas de aprendizaje para aprender algo nuevo, junto con reglas lógicas para aplicar lo que ya sabes. Este reporte trata de la parte lógica.</p>
+</section>
+
+<section id="digits">
+  <p class="label">Lo que el modelo ya tiene</p>
+  <h2>Los dígitos están ahí dentro</h2>
+  <p>Antes de construir cualquier cosa, revisamos qué contiene SmolLM2 en el momento en que empieza a escribir una respuesta. Una lectura lineal de su estado oculto en la posición de la respuesta, ajustada por mínimos cuadrados, extrae los dígitos de ambos números casi a la perfección. Para la suma de tres dígitos no bastaba con una capa, pero al unir las capas 14, 20 y 21 se lee cada dígito con un 99% de acierto en problemas nuevos.</p>
+  <p>Entonces el modelo sí leyó la pregunta. Lo que no logra hacer de forma confiable es combinar los dígitos: el acarreo, el préstamo, las tablas de multiplicar. Ese paso de combinación es la parte que ponemos nosotros.</p>
+</section>
+
+<section id="how">
+  <p class="label">Cómo funciona un injerto</p>
+  <h2>Cuatro piezas, ninguna entrenada por descenso de gradiente</h2>
+  <ol class="steps">
+    <li><div><b>Lectura</b>Una lectura lineal para cada dígito de los dos números, tomada del propio estado oculto del modelo.</div></li>
+    <li><div><b>Reglas</b>Una pequeña tabla de consulta para cada dígito de la respuesta. El dígito de las unidades sale de los dos dígitos de las unidades; el de las decenas sale de los dígitos de las decenas más el acarreo, y así hacia arriba.</div></li>
+    <li><div><b>Escritura</b>Un empujón hacia el token del dígito correcto en la última capa del modelo. El modelo sigue escribiendo su propia respuesta. El injerto solo inclina la balanza sobre qué dígito viene después.</div></li>
+    <li><div><b>Interruptores</b>Dos interruptores ajustados deciden cuándo está encendido el injerto. Se ajustan para que se activen solo mientras el modelo escribe la respuesta a este tipo de problema, y para que se queden apagados con otras matemáticas, problemas razonados, código y texto normal.</div></li>
+  </ol>
+  <p>Las lecturas y los interruptores se ajustan por mínimos cuadrados con solución cerrada, y las tablas de reglas las escribe un programa (a mano, en el primer injerto de multiplicación). El archivo del modelo base nunca se toca. Cada injerto se agrega junto a él.</p>
+</section>
+
+<section id="evolution">
+  <p class="label">Cómo fue creciendo</p>
+  <h2>De un injerto a un flujo de trabajo</h2>
+  <ol class="steps">
+    <li><div><b>Injerto de neuronas</b>El primer intento agregó 24 neuronas nuevas a la última capa para aportar el acarreo en la suma de dos dígitos. Se sostuvo en problemas sellados, +19.7 puntos. Funcionaba retocando la propia aritmética del modelo, así que el siguiente paso fue hacer la aritmética directamente.</div></li>
+    <li><div><b>Circuito cableado a mano</b>Para la multiplicación escribimos las tablas de reglas a mano y les pasamos las lecturas de dígitos del propio modelo. La primera versión obtuvo 83.5% en problemas reservados y sellados, contra el 21.3% de partida. Una segunda versión con mejores interruptores obtuvo 83.1%, y su peor cambio en otras matemáticas fue de −0.75 puntos.</div></li>
+    <li><div><b>Reglas encontradas por un programa</b>Un programa buscador de reglas recibió 340 problemas resueltos, en forma de dígitos y respuestas. Para cada dígito de la respuesta, buscó el conjunto de entradas más pequeño que lo determina. Encontró por sí solo el acarreo de la suma, el préstamo de la resta y la cadena de acarreos de la multiplicación. También encontró que el dígito de las decenas es la regla de las unidades reutilizada sobre los dígitos de las decenas, más un paso de acarreo: una regla que sirve para varios dígitos, que es la idea de la que partió todo esto. Su circuito de multiplicación obtuvo 82.7% en problemas reservados, a menos de medio punto del cableado a mano.</div></li>
+    <li><div><b>El mismo flujo, habilidades nuevas</b>La resta y la suma de dos dígitos pasaron por el mismo script, con la configuración copiada de la multiplicación y sin afinar nada. La suma de tres dígitos necesitó tres arreglos, cada uno probado antes de abrir su conjunto reservado: la lectura unida a partir de tres capas, un segundo interruptor y una fuerza de empujón fijada para cada posición de dígito.</div></li>
+  </ol>
+</section>
+
+<section id="results" class="wide">
+  <p class="label">Resultados</p>
+  <h2>Cinco habilidades, medidas en problemas que nadie usó para afinar</h2>
+  <p>Los problemas reservados de cada habilidad se apartaron antes de construir cualquier cosa, y no se afinó nada con ellos. Cada puntaje sale de dos semillas y cuatro corridas por problema, con la misma configuración de muestreo para el modelo solo y con el injerto. El conjunto de multiplicación se abrió una vez para la primera versión cableada a mano y una vez más para las dos finales.</p>
+
+  <figure class="chart">
+    <figcaption>Acierto en problemas reservados, SmolLM2-135M</figcaption>
+    <p class="sub">Proporción de problemas con la respuesta exactamente correcta. 140 problemas en multiplicación, 500 en el resto.</p>
+    <ul class="key">
+      <li><span class="k k-alone" aria-hidden="true"></span>SmolLM2 solo</li>
+      <li><span class="k k-graft" aria-hidden="true"></span>Con el injerto</li>
+      <li><span class="k k-scr" aria-hidden="true"></span>Mismo injerto, cableado mezclado</li>
+    </ul>
+    <div class="dumb">
+      <div class="d-row">
+        <div class="d-label"><b>Multiplicación</b><span>7 × 48, reglas cableadas a mano</span></div>
+        <div class="d-track" aria-hidden="true" style="--a:21.3;--b:83.1;--s:2.4"><i class="d-line"></i><i class="d-s"></i><i class="d-a"></i><i class="d-b"></i></div>
+        <div class="d-val"><b>21.3% → 83.1%</b><span>+61.8</span></div>
+      </div>
+      <div class="d-row">
+        <div class="d-label"><b>Multiplicación</b><span>7 × 48, reglas encontradas por un programa</span></div>
+        <div class="d-track" aria-hidden="true" style="--a:21.3;--b:82.7;--s:6.3"><i class="d-line"></i><i class="d-s"></i><i class="d-a"></i><i class="d-b"></i></div>
+        <div class="d-val"><b>21.3% → 82.7%</b><span>+61.3</span></div>
+      </div>
+      <div class="d-row">
+        <div class="d-label"><b>Resta, dos dígitos</b><span>83 − 27, reglas encontradas por un programa</span></div>
+        <div class="d-track" aria-hidden="true" style="--a:11.3;--b:68.3;--s:7.8"><i class="d-line"></i><i class="d-s"></i><i class="d-a"></i><i class="d-b"></i></div>
+        <div class="d-val"><b>11.3% → 68.3%</b><span>+57.1</span></div>
+      </div>
+      <div class="d-row">
+        <div class="d-label"><b>Suma, dos dígitos</b><span>38 + 47, reglas encontradas por un programa</span></div>
+        <div class="d-track" aria-hidden="true" style="--a:49.7;--b:86.5;--s:16.7"><i class="d-line"></i><i class="d-s"></i><i class="d-a"></i><i class="d-b"></i></div>
+        <div class="d-val"><b>49.7% → 86.5%</b><span>+36.8</span></div>
+      </div>
+      <div class="d-row">
+        <div class="d-label"><b>Suma, tres dígitos</b><span>347 + 285, reglas encontradas por un programa</span></div>
+        <div class="d-track" aria-hidden="true" style="--a:26.1;--b:83.7;--s:21.4"><i class="d-line"></i><i class="d-s"></i><i class="d-a"></i><i class="d-b"></i></div>
+        <div class="d-val"><b>26.1% → 83.7%</b><span>+57.6</span></div>
+      </div>
+      <div class="d-axis" aria-hidden="true"><span></span><div class="d-ticks"><span style="left:0">0%</span><span style="left:25%">25%</span><span style="left:50%">50%</span><span style="left:75%">75%</span><span style="left:100%">100%</span></div><span></span></div>
+    </div>
+  </figure>
+
+  <div class="table-wrap" tabindex="0" role="region" aria-labelledby="t-results">
+    <table>
+      <caption id="t-results">Los mismos resultados en una tabla</caption>
+      <thead>
+        <tr><th scope="col">Habilidad</th><th scope="col">Problemas</th><th scope="col">SmolLM2 solo</th><th scope="col">Con el injerto</th><th scope="col">Mejora, puntos (cota inferior del 95%)</th><th scope="col">Cableado mezclado</th><th scope="col">Pesos agregados</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Multiplicación, reglas cableadas a mano<small>7 × 48</small></td><td>140</td><td>21.3%</td><td class="hi">83.1%</td><td>+61.8 (+56.1)</td><td>2.4%</td><td>25,270<small>0.019%</small></td></tr>
+        <tr><td>Multiplicación, reglas encontradas por un programa<small>7 × 48</small></td><td>140</td><td>21.3%</td><td class="hi">82.7%</td><td>+61.3 (+55.5)</td><td>6.3%</td><td>32,519<small>0.024%</small></td></tr>
+        <tr><td>Resta, dos dígitos<small>83 − 27</small></td><td>500</td><td>11.3%</td><td class="hi">68.3%</td><td>+57.1 (+54.0)</td><td>7.8%</td><td>32,446<small>0.024%</small></td></tr>
+        <tr><td>Suma, dos dígitos<small>38 + 47</small></td><td>500</td><td>49.7%</td><td class="hi">86.5%</td><td>+36.8 (+33.8)</td><td>16.7%</td><td>32,476<small>0.024%</small></td></tr>
+        <tr><td>Suma, tres dígitos<small>347 + 285</small></td><td>500</td><td>26.1%</td><td class="hi">83.7%</td><td>+57.6 (+54.6)</td><td>21.4%</td><td>121,198<small>0.090%</small></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <ul>
+    <li>No cambió ningún peso original y no hubo entrenamiento por gradiente. Cada injerto agrega entre 25,270 y 121,198 pesos, entre el 0.019% y el 0.090% del modelo. El límite que nos pusimos fue el 0.1%.</li>
+    <li>El control con cableado mezclado es el mismo injerto con las conexiones revueltas. En todas las habilidades obtuvo lo mismo o menos que el modelo solo, entre el 2.4% y el 21.4%, así que los pesos extra no hacen nada sin las reglas correctas.</li>
+    <li>Los tres injertos de dos dígitos (multiplicación, resta y suma) también funcionan juntos en un mismo modelo, con 92,496 pesos en total. Cada uno mantuvo su mejora en los problemas de desarrollo. El peor cambio en otras matemáticas fue de −0.25 puntos, y 200 de 200 prompts no relacionados dieron la misma respuesta que antes.</li>
+  </ul>
+  <p class="note">Las mejoras se emparejan por problema, con una cota inferior bootstrap unilateral del 95%. La verificación de efectos secundarios abarca otros ocho conjuntos de aritmética y de problemas razonados, además de GSM8K y código. Los prompts no relacionados son 200 prompts de IFEval, respondidos con decodificación voraz. Las reglas y las predicciones de cada corrida se dejaron por escrito antes de conocer su resultado.</p>
+</section>
+
+<section id="gradient" class="wide">
+  <p class="label">Contra el entrenamiento por gradiente</p>
+  <h2>Tres enfrentamientos directos</h2>
+  <p>El entrenamiento por gradiente es la forma estándar de agregar una habilidad, así que lo usamos como rival. Cada injerto por gradiente se afinó probando una cuadrícula de configuraciones antes de su prueba.</p>
+
+  <figure class="chart">
+    <figcaption>Multiplicación, problemas reservados y sellados</figcaption>
+    <p class="sub">140 problemas, 2 semillas, 4 corridas en cada caso. El primer circuito cableado a mano contra dos injertos entrenados por gradiente y afinados.</p>
+    <div class="bars">
+      <div class="b-row base"><div class="b-label">SmolLM2 solo</div><div class="b-track" aria-hidden="true"><i style="--v:21.3"></i></div><div class="b-val">21.3%</div></div>
+      <div class="b-row"><div class="b-label">Injerto por gradiente, mismo tamaño<small>14 neuronas</small></div><div class="b-track" aria-hidden="true"><i style="--v:25.6"></i></div><div class="b-val">25.6%</div></div>
+      <div class="b-row"><div class="b-label">Injerto por gradiente en el límite del 0.1%<small>77 neuronas</small></div><div class="b-track" aria-hidden="true"><i style="--v:23.7"></i></div><div class="b-val">23.7%</div></div>
+      <div class="b-row win"><div class="b-label">Injerto de circuito<small>25,270 pesos, sin gradiente</small></div><div class="b-track" aria-hidden="true"><i style="--v:83.5"></i></div><div class="b-val">83.5%</div></div>
+      <div class="b-scale" aria-hidden="true"><span>0%</span><span>50%</span><span>100%</span></div>
+    </div>
+    <p class="verdict">El circuito les sacó 57.9 y 59.8 puntos de ventaja.</p>
+  </figure>
+
+  <figure class="chart">
+    <figcaption>Multiplicación contra un ajuste fino con LoRA</figcaption>
+    <p class="sub">140 problemas de desarrollo, 2 semillas, 4 corridas en cada caso. LoRA usó la mejor configuración de una búsqueda en cuadrícula.</p>
+    <div class="bars">
+      <div class="b-row base"><div class="b-label">SmolLM2 solo</div><div class="b-track" aria-hidden="true"><i style="--v:28.5"></i></div><div class="b-val">28.5%</div></div>
+      <div class="b-row"><div class="b-label">Ajuste fino con LoRA<small>115,200 pesos entrenados</small></div><div class="b-track" aria-hidden="true"><i style="--v:39.4"></i></div><div class="b-val">39.4%</div></div>
+      <div class="b-row win"><div class="b-label">Injerto de circuito<small>25,270 pesos, sin gradiente</small></div><div class="b-track" aria-hidden="true"><i style="--v:88.7"></i></div><div class="b-val">88.7%</div></div>
+      <div class="b-scale" aria-hidden="true"><span>0%</span><span>50%</span><span>100%</span></div>
+    </div>
+    <p class="verdict">49.3 puntos por delante, con una cota inferior del 95% de +42.8, usando menos de una cuarta parte de los pesos.</p>
+  </figure>
+
+  <figure class="chart">
+    <figcaption>Resta de dos dígitos</figcaption>
+    <p class="sub">500 problemas de desarrollo, 2 semillas, 4 corridas en cada caso. La configuración del circuito se copió de la multiplicación, sin afinar.</p>
+    <div class="bars">
+      <div class="b-row base"><div class="b-label">SmolLM2 solo</div><div class="b-track" aria-hidden="true"><i style="--v:11.35"></i></div><div class="b-val">11.35%</div></div>
+      <div class="b-row"><div class="b-label">Injerto por gradiente, 14 neuronas</div><div class="b-track" aria-hidden="true"><i style="--v:48.15"></i></div><div class="b-val">48.15%</div></div>
+      <div class="b-row"><div class="b-label">Injerto por gradiente, 77 neuronas<small>133,056 pesos, afinado</small></div><div class="b-track" aria-hidden="true"><i style="--v:65.0"></i></div><div class="b-val">65.0%</div></div>
+      <div class="b-row win"><div class="b-label">Injerto de circuito<small>32,446 pesos, sin afinar</small></div><div class="b-track" aria-hidden="true"><i style="--v:64.98"></i></div><div class="b-val">64.98%</div></div>
+      <div class="b-scale" aria-hidden="true"><span>0%</span><span>50%</span><span>100%</span></div>
+    </div>
+    <p class="verdict">Empate con un injerto por gradiente cuatro veces más grande, y unos 17 puntos por delante del de 14 neuronas.</p>
+  </figure>
+  <p>Las reglas de resta del circuito salieron de 340 problemas. Los injertos por gradiente se entrenaron con 1,500, los mismos 1,500 con los que se ajustaron las lecturas de dígitos del circuito.</p>
+</section>
+
+<section id="transplants">
+  <p class="label">Todavía en proceso</p>
+  <h2>Trasplantes desde modelos más grandes</h2>
+  <p>También estamos intentando pasar habilidades desde modelos más grandes. Qwen3.5-4B acertó 300 de 300 de estos problemas de multiplicación en nuestra verificación, así que intentamos traducir un conjunto de sus neuronas a SmolLM2. Por otro lado, mapeamos una señal de corrección de Qwen3.5-4B a Qwen3.5-0.8B en problemas razonados de primaria. Ninguna de las dos cosas ha funcionado todavía, y las dos siguen abiertas. Por ahora, el modelo grande ha sido más útil como guía de dónde falla el pequeño.</p>
+</section>
+
+<section id="scope">
+  <p class="label">Qué es un injerto</p>
+  <h2>Una calculadora alimentada por la propia lectura del modelo</h2>
+  <p>La aritmética la hace el propio injerto, a partir de números que el modelo ya contiene. SmolLM2 no aprende a multiplicar. El injerto funciona con la forma simple de la pregunta ("¿Cuánto es 347 + 285?"), y los interruptores lo mantienen apagado a propósito en los problemas razonados. Por ahora, todo esto es en un solo modelo.</p>
+  <p>El método sirve para habilidades nuevas. Un programa encuentra las reglas a partir de 340 ejemplos, se compilan en tablas y se colocan con la misma configuración en cada habilidad. Lo siguiente es la parte del aprendizaje: lograr que SmolLM2 use un hecho que se le da en el prompt.</p>
+</section>
+
+<div class="next">
+  <span class="label">Investigación en IA, reporte 01</span>
+  <a href="https://lf.wtf/es-mx/research/">Toda la investigación</a>
+</div>
+</article>
+</main>
+
+<footer class="wrap"><span>© Levi Foster</span><span>Fort Worth, Texas</span></footer>
+<div id="language"></div>
+
+<nav class="i18n" aria-label="Language">
+  <a href="/research/circuit-grafts/" hreflang="en" lang="en">English</a>
+  <a href="/de/research/circuit-grafts/" hreflang="de" lang="de">Deutsch</a>
+  <a href="/es/research/circuit-grafts/" hreflang="es" lang="es">Español</a>
+  <span aria-current="true" lang="es-MX">Español (MX)</span>
+  <a href="/fr/research/circuit-grafts/" hreflang="fr" lang="fr">Français</a>
+  <a href="/it/research/circuit-grafts/" hreflang="it" lang="it">Italiano</a>
+  <a href="/ja/research/circuit-grafts/" hreflang="ja" lang="ja">日本語</a>
+  <a href="/ko/research/circuit-grafts/" hreflang="ko" lang="ko">한국어</a>
+  <a href="/nl/research/circuit-grafts/" hreflang="nl" lang="nl">Nederlands</a>
+  <a href="/pt-br/research/circuit-grafts/" hreflang="pt-BR" lang="pt-BR">Português (BR)</a>
+  <a href="/zh-hans/research/circuit-grafts/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+</nav>
+</body>
+</html>

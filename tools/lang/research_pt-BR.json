@@ -1,0 +1,20 @@
+{
+  "AI Research: Lab Write-ups on Editing Language Models by Levi Foster": "Pesquisa em IA: relatórios de laboratório sobre edição de modelos de linguagem, por Levi Foster",
+  "Lab write-ups by Levi Foster on editing language models directly: reading what a small model already holds, and grafting in parts that use it. First up: circuit grafts on SmolLM2-135M.": "Relatórios de laboratório de Levi Foster sobre a edição direta de modelos de linguagem: ler o que um modelo pequeno já contém e enxertar partes que usam isso. O primeiro: enxertos de circuito no SmolLM2-135M.",
+  "AI Research by Levi Foster": "Pesquisa em IA, por Levi Foster",
+  "Lab write-ups on editing language models directly. First up: circuit grafts on SmolLM2-135M.": "Relatórios de laboratório sobre a edição direta de modelos de linguagem. O primeiro: enxertos de circuito no SmolLM2-135M.",
+  "Circuit grafts on SmolLM2-135M: five held-out math tests, before and after": "Enxertos de circuito no SmolLM2-135M: cinco testes de matemática com problemas reservados, antes e depois",
+  "Sections": "Seções",
+  "Table of works": "Tabela de obras",
+  "Write-ups": "Relatórios",
+  "Language": "Idioma",
+  "AI Research": "Pesquisa em IA",
+  "Lab write-ups from my work on editing language models directly: reading what a small model already holds, then grafting in parts that use it. Results are on problems that were sealed before any building started.": "Relatórios de laboratório do meu trabalho com a edição direta de modelos de linguagem: ler o que um modelo pequeno já contém e depois enxertar partes que usam isso. Os resultados são de problemas que foram selados antes de qualquer construção começar.",
+  "Circuit grafts": "Enxertos de circuito",
+  "Small rule circuits took SmolLM2-135M from 21.3% to 83.1% on held-out multiplication. Five math skills went up by 37 to 62 points, with no original weight changed and no gradient training.": "Pequenos circuitos de regras levaram o SmolLM2-135M de 21.3% para 83.1% na multiplicação com problemas reservados. Cinco habilidades de matemática subiram de 37 a 62 pontos, sem mudar nenhum peso original e sem treino por gradiente.",
+  "November 7, 2026": "7 de novembro de 2026",
+  "Read the write-up": "Leia o relatório",
+  "Fort Worth, Texas": "Fort Worth, Texas",
+  "Circuit grafts: SmolLM2-135M from 21.3% to 83.1% on held-out multiplication without gradient training": "Enxertos de circuito: SmolLM2-135M de 21.3% para 83.1% na multiplicação com problemas reservados, sem treino por gradiente",
+  "Lab write-ups on editing language models directly. First up: circuit grafts that took SmolLM2-135M from 21.3% to 83.1% on held-out multiplication, with no gradient training.": "Relatórios de laboratório sobre a edição direta de modelos de linguagem. O primeiro: enxertos de circuito que levaram o SmolLM2-135M de 21.3% para 83.1% na multiplicação com problemas reservados, sem treino por gradiente."
+}

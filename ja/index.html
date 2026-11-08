@@ -123,7 +123,7 @@
       "mainEntity": {
         "@id": "https://lf.wtf/#levifoster"
       },
-      "dateModified": "2026-09-30",
+      "dateModified": "2026-11-07",
       "inLanguage": "ja"
     },
     {
@@ -131,7 +131,7 @@
       "@id": "https://lf.wtf/#work",
       "name": "Levi Foster の会社、アプリ、ゲーム、アート",
       "itemListOrder": "https://schema.org/ItemListOrderAscending",
-      "numberOfItems": 14,
+      "numberOfItems": 16,
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -407,6 +407,21 @@
             },
             "inLanguage": "ja"
           }
+        },
+        {
+          "@type": "ListItem",
+          "position": 16,
+          "item": {
+            "@type": "Blog",
+            "@id": "https://lf.wtf/research/#blog",
+            "name": "AI研究",
+            "url": "https://lf.wtf/research/",
+            "description": "言語モデルを直接編集するラボレポート。第1弾は、勾配学習なしでSmolLM2-135Mのホールドアウトの掛け算を21.3%から83.1%に上げた回路グラフトです。",
+            "author": {
+              "@id": "https://lf.wtf/#levifoster"
+            },
+            "inLanguage": "ja"
+          }
         }
       ]
     }
@@ -418,7 +433,7 @@
 @font-face{font-family:"Schibsted Grotesk";src:url(/assets/fonts/schibsted-grotesk.woff2) format("woff2");font-weight:400 900;font-display:swap}
 @font-face{font-family:"DM Mono";src:url(/assets/fonts/dm-mono-400.woff2) format("woff2");font-weight:400;font-display:swap}
 @font-face{font-family:"DM Mono";src:url(/assets/fonts/dm-mono-500.woff2) format("woff2");font-weight:500;font-display:swap}
-:root{--paper:#F3F2EE;--ink:#111;--white:#fff;--blue:#2F3BFF;--blue-lit:#8C95FF;--grey:#CFCDC6;--art:#6B6A66;--muted:#5B5953;
+:root{--paper:#F3F2EE;--ink:#111;--white:#fff;--blue:#2F3BFF;--blue-lit:#8C95FF;--grey:#CFCDC6;--art:#6B6A66;--lab:#D9DCFF;--muted:#5B5953;
 --sans:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"DM Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;--w:1440px}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
@@ -455,7 +470,7 @@ h1{margin:0;font:800 8.5cqi/1 var(--sans);letter-spacing:-.02em;text-transform:u
 .t-config sup{font-size:.7em}
 
 .shells{display:flex;background:#0B0B0D;color:var(--paper);min-height:120px}
-.orbit{width:120px;height:120px;flex-shrink:0}
+.orbit{width:120px;height:120px;flex-shrink:0;overflow:visible}
 .orbit .ring{fill:none;stroke:rgba(243,242,238,.35);stroke-width:1}
 .orbit .nucleus{fill:#fff;filter:drop-shadow(0 0 4px var(--blue)) drop-shadow(0 0 8px var(--blue))}
 .orbit .e{fill:var(--paper);transition:r .2s,fill .2s}
@@ -464,6 +479,7 @@ h1{margin:0;font:800 8.5cqi/1 var(--sans);letter-spacing:-.02em;text-transform:u
 .orbit .s-ops{animation:spin 26s linear infinite}
 .orbit .s-dev{animation:spin 48s linear infinite reverse}
 .orbit .s-art{animation:spin 70s linear infinite}
+.orbit .s-lab{animation:spin 90s linear infinite reverse}
 @keyframes spin{to{transform:rotate(360deg)}}
 .shells dl{margin:0;flex:1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-left:1px solid rgba(243,242,238,.2)}
 .shells dl div{padding:13px 16px}
@@ -492,6 +508,7 @@ transition:background .15s,color .15s,box-shadow .15s}
 .f-game.el{background:var(--grey)}
 .f-app.el{background:var(--white)}
 .f-art.el{background:var(--art);color:#fff}
+.f-research.el{background:var(--lab)}
 .el:hover,.el.on{background:var(--blue);color:#fff;box-shadow:0 0 0 2px #fff,0 0 28px 6px rgba(47,59,255,.55);position:relative;z-index:1}
 .key{grid-row:1;grid-column:2/7;border:1.5px dashed var(--ink);padding:10px 14px;display:flex;gap:22px;align-items:center;min-width:0}
 .key-tile{width:70px;height:70px;flex-shrink:0;border:1.5px solid var(--ink);padding:5px;display:flex;flex-direction:column;justify-content:space-between;font-size:8px;letter-spacing:.06em;text-transform:uppercase}
@@ -499,7 +516,7 @@ transition:background .15s,color .15s,box-shadow .15s}
 .legend{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(2,auto);gap:8px 22px;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
 .legend li{display:flex;align-items:center;gap:8px}
 .legend i{width:14px;height:14px;border:1.5px solid var(--ink);display:inline-block}
-.legend .f-venture i{background:var(--ink)}.legend .f-game i{background:var(--grey)}.legend .f-app i{background:#fff}.legend .f-art i{background:var(--art)}
+.legend .f-venture i{background:var(--ink)}.legend .f-game i{background:var(--grey)}.legend .f-app i{background:#fff}.legend .f-art i{background:var(--art)}.legend .f-research i{background:var(--lab)}
 
 .readout{flex:1;border:4px solid var(--ink);background:#fff;padding:24px;display:grid;grid-template-columns:180px minmax(0,1fr);gap:28px;min-height:300px}
 .ro-tile{width:180px;height:180px;border:2px solid var(--ink);background:var(--blue);color:#fff;box-shadow:0 0 40px 6px rgba(47,59,255,.42);
@@ -532,7 +549,7 @@ padding:12px;display:flex;flex-direction:column;justify-content:space-between}
 .s-mark{display:flex;flex-direction:column;gap:2px}
 .s-num{font-size:11px}
 .s-sym{font:800 30px/1 var(--sans);display:inline-block;padding:4px 6px 5px;border:2px solid var(--ink);align-self:flex-start;min-width:52px}
-.f-venture .s-sym{background:var(--ink);color:var(--paper)}.f-game .s-sym{background:var(--grey)}.f-app .s-sym{background:#fff}.f-art .s-sym{background:var(--art);color:#fff}
+.f-venture .s-sym{background:var(--ink);color:var(--paper)}.f-game .s-sym{background:var(--grey)}.f-app .s-sym{background:#fff}.f-art .s-sym{background:var(--art);color:#fff}.f-research .s-sym{background:var(--lab)}
 .s-name{margin:0;font:800 22px/1.1 var(--sans);letter-spacing:-.01em}
 .s-name a{text-decoration:none}
 .s-fam{display:block;margin-top:6px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
@@ -644,19 +661,20 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
       <p class="t-sym" aria-hidden="true">Lf</p>
       <div class="t-foot">
         <h1>Levi Foster</h1>
-        <span class="t-config" aria-hidden="true">[Fort Worth] ops<sup>2</sup> dev<sup>12</sup> art<sup>1</sup></span>
+        <span class="t-config" aria-hidden="true">[Fort Worth] ops<sup>2</sup> dev<sup>12</sup> art<sup>1</sup> lab<sup>1</sup></span>
       </div>
     </div>
     <div class="shells">
       <svg class="orbit" viewBox="0 0 120 120" aria-hidden="true">
 <circle class="nucleus" cx="60" cy="60" r="6"/>
-<g class="shell s-ops"><circle class="ring" cx="60" cy="60" r="20"/><circle class="e" data-id="redarrow" cx="60.0" cy="40.0" r="3.5"/><circle class="e" data-id="crest" cx="60.0" cy="80.0" r="3.5"/></g>
-<g class="shell s-dev"><circle class="ring" cx="60" cy="60" r="34"/><circle class="e" data-id="morterra" cx="60.0" cy="26.0" r="3.5"/><circle class="e" data-id="harmony" cx="77.0" cy="30.6" r="3.5"/><circle class="e" data-id="frmt" cx="89.4" cy="43.0" r="3.5"/><circle class="e" data-id="modul8" cx="94.0" cy="60.0" r="3.5"/><circle class="e" data-id="cyano" cx="89.4" cy="77.0" r="3.5"/><circle class="e" data-id="dollop" cx="77.0" cy="89.4" r="3.5"/><circle class="e" data-id="kippu" cx="60.0" cy="94.0" r="3.5"/><circle class="e" data-id="grnge" cx="43.0" cy="89.4" r="3.5"/><circle class="e" data-id="carmeet" cx="30.6" cy="77.0" r="3.5"/><circle class="e" data-id="hive" cx="26.0" cy="60.0" r="3.5"/><circle class="e" data-id="riposte" cx="30.6" cy="43.0" r="3.5"/><circle class="e" data-id="teleframe" cx="43.0" cy="30.6" r="3.5"/></g>
-<g class="shell s-art"><circle class="ring" cx="60" cy="60" r="48"/><circle class="e" data-id="merge" cx="60.0" cy="12.0" r="3.5"/></g>
+<g class="shell s-ops"><circle class="ring" cx="60" cy="60" r="16"/><circle class="e" data-id="redarrow" cx="60.0" cy="44.0" r="3.5"/><circle class="e" data-id="crest" cx="60.0" cy="76.0" r="3.5"/></g>
+<g class="shell s-dev"><circle class="ring" cx="60" cy="60" r="29"/><circle class="e" data-id="morterra" cx="60.0" cy="31.0" r="3.5"/><circle class="e" data-id="harmony" cx="74.5" cy="34.9" r="3.5"/><circle class="e" data-id="frmt" cx="85.1" cy="45.5" r="3.5"/><circle class="e" data-id="modul8" cx="89.0" cy="60.0" r="3.5"/><circle class="e" data-id="cyano" cx="85.1" cy="74.5" r="3.5"/><circle class="e" data-id="dollop" cx="74.5" cy="85.1" r="3.5"/><circle class="e" data-id="kippu" cx="60.0" cy="89.0" r="3.5"/><circle class="e" data-id="grnge" cx="45.5" cy="85.1" r="3.5"/><circle class="e" data-id="carmeet" cx="34.9" cy="74.5" r="3.5"/><circle class="e" data-id="hive" cx="31.0" cy="60.0" r="3.5"/><circle class="e" data-id="riposte" cx="34.9" cy="45.5" r="3.5"/><circle class="e" data-id="teleframe" cx="45.5" cy="34.9" r="3.5"/></g>
+<g class="shell s-art"><circle class="ring" cx="60" cy="60" r="42"/><circle class="e" data-id="merge" cx="60.0" cy="18.0" r="3.5"/></g>
+<g class="shell s-lab"><circle class="ring" cx="60" cy="60" r="55"/><circle class="e" data-id="research" cx="60.0" cy="115.0" r="3.5"/></g>
       </svg>
       <dl>
-        <div><dt>電子</dt><dd>15、作品ごとに 1 つ</dd></div>
-        <div><dt>電子殻</dt><dd>2 · 12 · 1</dd></div>
+        <div><dt>電子</dt><dd>16、作品ごとに 1 つ</dd></div>
+        <div><dt>電子殻</dt><dd>2 · 12 · 1 · 1</dd></div>
         <div><dt>出身</dt><dd>テキサス州フォートワース</dd></div>
         <div><dt>状態</dt><dd class="live">アクティブ</dd></div>
       </dl>
@@ -675,7 +693,7 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
   </div>
 
   <div class="right" id="works">
-    <div class="r-head"><h2>作品表</h2><span>15 の元素</span></div>
+    <div class="r-head"><h2>作品表</h2><span>16 の元素</span></div>
     <div class="ptable">
       <div class="key">
         <div class="key-tile"><span>番号 · 殻</span><b aria-hidden="true">Sy</b><span>名前</span></div>
@@ -684,6 +702,7 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
           <li class="f-game"><i></i>ゲーム</li>
           <li class="f-app"><i></i>App</li>
           <li class="f-art"><i></i>アート</li>
+          <li class="f-research"><i></i>リサーチ</li>
         </ul>
       </div>
 <a class="el f-venture" href="https://redarrowmarketing.com/" data-id="redarrow" style="--r:1;--c:1"><span class="el-top" aria-hidden="true"><span>1</span><span>ops</span></span><span class="el-sym" aria-hidden="true">Ra</span><span class="el-name">Red Arrow Marketing</span></a>
@@ -701,6 +720,7 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
 <a class="el f-art" href="https://mergewiththemachine.com/" data-id="merge" style="--r:1;--c:7"><span class="el-top" aria-hidden="true"><span>13</span><span>art</span></span><span class="el-sym" aria-hidden="true">Mw</span><span class="el-name">Merge With The Machine</span></a>
 <a class="el f-game" href="https://lf.wtf/ja/riposte/" data-id="riposte" style="--r:3;--c:7"><span class="el-top" aria-hidden="true"><span>14</span><span>dev</span></span><span class="el-sym" aria-hidden="true">Rp</span><span class="el-name">RIPOSTE</span></a>
 <a class="el f-app" href="https://lf.wtf/teleframe/" data-id="teleframe" style="--r:3;--c:2"><span class="el-top" aria-hidden="true"><span>15</span><span>dev</span></span><span class="el-sym" aria-hidden="true">Tf</span><span class="el-name">Teleframe</span></a>
+<a class="el f-research" href="https://lf.wtf/ja/research/" data-id="research" style="--r:3;--c:1"><span class="el-top" aria-hidden="true"><span>16</span><span>lab</span></span><span class="el-sym" aria-hidden="true">Ai</span><span class="el-name">AI研究</span></a>
     </div>
     <section class="readout" aria-live="polite" aria-label="選択中の元素">
       <div class="ro-tile" aria-hidden="true"><span class="ro-n">1</span><span class="ro-sym">Ra</span><span class="ro-fam">Venture</span></div>
@@ -720,7 +740,7 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
 <section class="spec wrap" id="spec" aria-labelledby="spec-title">
   <div class="spec-head">
     <h2 id="spec-title">仕様</h2>
-    <p>すべての元素を詳しく：会社、アプリとゲーム、そしてアート。</p>
+    <p>すべての元素を詳しく：会社、アプリとゲーム、アート、そしてリサーチ。</p>
   </div>
   <div class="spec-cols"><span>番号</span><span>元素</span><span>役割</span><span>形態</span><span>説明</span><span>リンク</span></div>
   <article class="spec-row f-venture" data-id="redarrow" id="redarrow">
@@ -863,6 +883,14 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
     <div class="s-cell"><span class="s-label">形態</span><span class="s-format">Windows アプリ、買い切り 9.99 米ドル</span></div>
     <p class="s-cell s-desc">Windows 用の画面録画ソフト。画面の好きな場所に枠を置いて REC を押すと、1 本の MP4 として保存できます。録画ソフト自体の操作パネルは動画に映りません。</p>
     <div class="s-cell s-links"><a class="s-link" href="https://lf.wtf/teleframe/">lf.wtf/teleframe</a></div>
+  </article>
+  <article class="spec-row f-research" data-id="research" id="research">
+    <div class="s-cell s-mark" aria-hidden="true"><span class="s-num">16</span><span class="s-sym">Ai</span></div>
+    <div class="s-cell s-title"><h3 class="s-name"><a href="https://lf.wtf/ja/research/">AI研究</a></h3><span class="s-fam">リサーチ</span></div>
+    <div class="s-cell"><span class="s-label">役割</span><span class="s-role">研究者</span></div>
+    <div class="s-cell"><span class="s-label">形態</span><span class="s-format">ラボレポート</span></div>
+    <p class="s-cell s-desc">言語モデルを直接編集するラボレポート。第1弾は、勾配学習なしでSmolLM2-135Mのホールドアウトの掛け算を21.3%から83.1%に上げた回路グラフトです。</p>
+    <div class="s-cell s-links"><a class="s-link" href="https://lf.wtf/ja/research/">lf.wtf/research</a></div>
   </article>
 </section>
 

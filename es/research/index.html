@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-66ZSZNSB3X"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-66ZSZNSB3X');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Investigación en IA: informes de laboratorio sobre la edición de modelos de lenguaje, por Levi Foster</title>
+<meta name="description" content="Informes de laboratorio de Levi Foster sobre la edición directa de modelos de lenguaje: leer lo que un modelo pequeño ya contiene e injertarle piezas que lo usen. El primero: injertos de circuitos en SmolLM2-135M.">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#F3F2EE">
+<meta name="author" content="Levi Foster">
+<link rel="alternate" hreflang="en" href="https://lf.wtf/research/">
+<link rel="alternate" hreflang="de" href="https://lf.wtf/de/research/">
+<link rel="alternate" hreflang="es" href="https://lf.wtf/es/research/">
+<link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/research/">
+<link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/research/">
+<link rel="alternate" hreflang="it" href="https://lf.wtf/it/research/">
+<link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/research/">
+<link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/research/">
+<link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/research/">
+<link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/research/">
+<link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/research/">
+<link rel="alternate" hreflang="x-default" href="https://lf.wtf/research/">
+<link rel="canonical" href="https://lf.wtf/es/research/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/dm-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+
+<meta property="og:title" content="Investigación en IA de Levi Foster">
+<meta property="og:description" content="Informes de laboratorio sobre la edición directa de modelos de lenguaje. El primero: injertos de circuitos en SmolLM2-135M.">
+<meta property="og:url" content="https://lf.wtf/es/research/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Levi Foster">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_MX">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:image" content="https://lf.wtf/research/assets/og-circuit-grafts-1.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Injertos de circuitos en SmolLM2-135M: cinco pruebas de matemáticas con problemas reservados, antes y después">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@cybermynd">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://lf.wtf/research/#webpage",
+      "url": "https://lf.wtf/research/",
+      "name": "Investigación en IA",
+      "isPartOf": {
+        "@id": "https://lf.wtf/#website"
+      },
+      "mainEntity": {
+        "@id": "https://lf.wtf/research/#blog"
+      },
+      "breadcrumb": {
+        "@id": "https://lf.wtf/research/#breadcrumb"
+      },
+      "inLanguage": "es"
+    },
+    {
+      "@type": "Blog",
+      "@id": "https://lf.wtf/research/#blog",
+      "url": "https://lf.wtf/research/",
+      "name": "Investigación en IA",
+      "description": "Informes de laboratorio sobre la edición directa de modelos de lenguaje. El primero: injertos de circuitos que llevaron a SmolLM2-135M del 21.3% al 83.1% en problemas reservados de multiplicación, sin entrenamiento por gradiente.",
+      "author": {
+        "@id": "https://lf.wtf/#levifoster"
+      },
+      "publisher": {
+        "@id": "https://lf.wtf/#levifoster"
+      },
+      "blogPost": [
+        {
+          "@type": "BlogPosting",
+          "@id": "https://lf.wtf/research/circuit-grafts/#post",
+          "url": "https://lf.wtf/research/circuit-grafts/",
+          "headline": "Injertos de circuitos: SmolLM2-135M pasa del 21.3% al 83.1% en problemas reservados de multiplicación sin entrenamiento por gradiente",
+          "datePublished": "2026-11-07",
+          "author": {
+            "@id": "https://lf.wtf/#levifoster"
+          },
+          "inLanguage": "es"
+        }
+      ],
+      "inLanguage": "es"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://lf.wtf/research/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Levi Foster",
+          "item": "https://lf.wtf/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Investigación en IA",
+          "item": "https://lf.wtf/research/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+@font-face{font-family:"Schibsted Grotesk";src:url(/assets/fonts/schibsted-grotesk.woff2) format("woff2");font-weight:400 900;font-display:swap}
+@font-face{font-family:"DM Mono";src:url(/assets/fonts/dm-mono-400.woff2) format("woff2");font-weight:400;font-display:swap}
+:root{--paper:#F3F2EE;--ink:#111;--white:#fff;--blue:#2F3BFF;--grey:#CFCDC6;--lab:#D9DCFF;--muted:#5B5953;
+--sans:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"DM Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;--w:1180px}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:14px/1.6 var(--mono)}
+a{color:inherit}
+a:hover{color:var(--blue)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 32px}
+.bar{border-bottom:2px solid var(--ink)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:56px}
+.brand{font:800 20px/1 var(--sans);text-decoration:none;letter-spacing:-.01em}
+.bar nav{display:flex;gap:22px}
+.bar nav a{font-size:11px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:14px 0}
+
+.head{display:grid;grid-template-columns:220px minmax(0,1fr);gap:40px;align-items:end;padding-top:36px;padding-bottom:36px}
+.tile{container-type:inline-size;aspect-ratio:1;border:4px solid var(--ink);background:var(--lab);padding:9%;display:flex;flex-direction:column;justify-content:space-between}
+.t-top{display:flex;justify-content:space-between;font-size:max(11px,8cqi);line-height:1}
+.t-sym{margin:0;font:800 50cqi/.85 var(--sans);letter-spacing:-.03em}
+.t-name{font-size:max(9px,7.6cqi);letter-spacing:.06em;text-transform:uppercase;line-height:1.25}
+h1{margin:0;font:800 clamp(52px,9vw,120px)/.88 var(--sans);letter-spacing:-.035em;text-transform:uppercase}
+.intro{margin:18px 0 0;max-width:640px;font:400 clamp(18px,1.9vw,21px)/1.45 var(--sans)}
+
+.list{border-top:4px solid var(--ink);padding-top:22px;padding-bottom:56px}
+.list h2{margin:0 0 14px;font:500 12px/1.4 var(--mono);letter-spacing:.16em;text-transform:uppercase}
+.posts{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.post{display:grid;grid-template-columns:84px minmax(0,1fr) 200px;gap:0 24px;padding:22px 0;border-bottom:1px solid var(--ink);text-decoration:none;color:var(--ink)}
+.post:hover{background:var(--white);color:var(--ink)}
+.p-num{display:inline-block;align-self:start;font:800 30px/1 var(--sans);padding:4px 6px 5px;border:2px solid var(--ink);background:var(--lab);min-width:56px;text-align:center}
+.p-title{margin:0;font:800 clamp(26px,3vw,36px)/1.05 var(--sans);letter-spacing:-.02em}
+.p-desc{margin:10px 0 0;max-width:640px;font:400 17px/1.55 var(--sans)}
+.p-meta{display:flex;flex-direction:column;gap:6px;font-size:12px;color:var(--muted)}
+.p-meta b{font-weight:400;color:var(--ink)}
+.p-go{margin-top:6px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);border-bottom:1px solid var(--ink);align-self:flex-start}
+.post:hover .p-go{color:var(--blue);border-color:var(--blue)}
+footer.wrap{padding-top:20px;padding-bottom:8px;border-top:2px solid var(--ink);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* Kana, hangul and hanzi run wider and taller than the Latin caps this was tuned on. */
+html[lang="ja"] h1,html[lang="ko"] h1,html[lang="zh-Hans"] h1{font-size:clamp(40px,6.4vw,84px);line-height:1.08;letter-spacing:0}
+@media (max-width:860px){
+.post{grid-template-columns:72px minmax(0,1fr)}
+.p-meta{grid-column:2;margin-top:12px}
+}
+@media (max-width:760px){
+.wrap{padding-left:16px;padding-right:16px}
+.bar nav a:not(.to-lang){display:none}
+.head{grid-template-columns:110px minmax(0,1fr);gap:18px;padding-top:20px;padding-bottom:28px}
+.tile{border-width:3px}
+.head .h-text{display:contents}
+h1{grid-column:2;align-self:end;font-size:clamp(36px,11vw,60px)}
+.intro{grid-column:1/3;margin-top:0}
+.post{grid-template-columns:minmax(0,1fr);gap:10px}
+.p-num{justify-self:start}
+.p-meta{grid-column:1;margin-top:4px}
+}
+
+/* i18n:start */
+.i18n{max-width:var(--w,initial);margin:0 auto;padding:26px 22px 40px;display:flex;flex-wrap:wrap;
+gap:6px 14px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.55;
+justify-content:center}
+.i18n a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+.i18n a:hover{border-bottom-color:currentColor}
+.i18n span[aria-current]{opacity:.5;cursor:default}
+/* i18n:end */
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="https://lf.wtf/es/">lf.wtf</a>
+    <nav aria-label="Secciones">
+      <a href="https://lf.wtf/es/#works">Tabla de obras</a>
+      <a href="#posts">Informes</a>
+      <a class="to-lang" href="#language">Idioma</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<header class="head wrap">
+  <div class="tile">
+    <span class="t-top" aria-hidden="true"><span>16</span><span>lab</span></span>
+    <span class="t-sym" aria-hidden="true">Ai</span>
+    <span class="t-name">Levi Foster</span>
+  </div>
+  <div class="h-text">
+    <h1>Investigación en IA</h1>
+    <p class="intro">Informes de laboratorio de mi trabajo sobre la edición directa de modelos de lenguaje: leer lo que un modelo pequeño ya contiene y luego injertarle piezas que lo usen. Los resultados se miden en problemas que quedaron sellados antes de empezar a construir nada.</p>
+  </div>
+</header>
+
+<section class="list wrap" id="posts" aria-labelledby="posts-title">
+  <h2 id="posts-title">Informes</h2>
+  <ol class="posts">
+    <li><a class="post" href="https://lf.wtf/es/research/circuit-grafts/">
+      <span class="p-num" aria-hidden="true">01</span>
+      <div>
+        <h3 class="p-title">Injertos de circuitos</h3>
+        <p class="p-desc">Unos pequeños circuitos de reglas llevaron a SmolLM2-135M del 21.3% al 83.1% en problemas reservados de multiplicación. Cinco habilidades matemáticas subieron entre 37 y 62 puntos, sin cambiar ningún peso original y sin entrenamiento por gradiente.</p>
+      </div>
+      <div class="p-meta">
+        <time datetime="2026-11-07">7 de noviembre de 2026</time>
+        <b>SmolLM2-135M</b>
+        <span class="p-go">Leer el informe</span>
+      </div>
+    </a></li>
+  </ol>
+</section>
+</main>
+
+<footer class="wrap"><span>© Levi Foster</span><span>Fort Worth, Texas</span></footer>
+<div id="language"></div>
+
+<nav class="i18n" aria-label="Language">
+  <a href="/research/" hreflang="en" lang="en">English</a>
+  <a href="/de/research/" hreflang="de" lang="de">Deutsch</a>
+  <span aria-current="true" lang="es">Español</span>
+  <a href="/es-mx/research/" hreflang="es-MX" lang="es-MX">Español (MX)</a>
+  <a href="/fr/research/" hreflang="fr" lang="fr">Français</a>
+  <a href="/it/research/" hreflang="it" lang="it">Italiano</a>
+  <a href="/ja/research/" hreflang="ja" lang="ja">日本語</a>
+  <a href="/ko/research/" hreflang="ko" lang="ko">한국어</a>
+  <a href="/nl/research/" hreflang="nl" lang="nl">Nederlands</a>
+  <a href="/pt-br/research/" hreflang="pt-BR" lang="pt-BR">Português (BR)</a>
+  <a href="/zh-hans/research/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+</nav>
+</body>
+</html>

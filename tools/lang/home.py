@@ -985,3 +985,48 @@ T["A screen recorder for Windows. Drag a frame over any part of the screen, pres
     "Um gravador de tela para Windows. Arraste um quadro sobre qualquer parte da tela, aperte REC e salve um único MP4. Os controles do gravador nunca aparecem no vídeo.",
     "一款 Windows 录屏软件。把取景框拖到屏幕上任意位置，按下 REC，保存为一个 MP4。录屏软件自己的控件永远不会出现在视频里。",
 )
+
+# AI Research, element 16 (added 2026-11-07). "AI Research" uses the same section name as tools/lang/research_*.json.
+KEEP.add("lf.wtf/research")
+T["16, one per work"] = tuple(v.replace("15", "16") for v in T["15, one per work"])
+T["16 elements"] = tuple(v.replace("15", "16") for v in T["15 elements"])
+T["Every element in full: the companies, the apps and games, the art and the research."] = (
+    "Jedes Element vollständig: die Firmen, die Apps und Spiele, die Kunst und die Forschung.",
+    "Cada elemento completo: las empresas, las apps y los juegos, el arte y la investigación.",
+    "Cada elemento completo: las empresas, las apps y los juegos, el arte y la investigación.",
+    "Chaque élément en entier : les entreprises, les apps et les jeux, l'art et la recherche.",
+    "Ogni elemento per intero: le aziende, le app e i giochi, l'arte e la ricerca.",
+    "すべての元素を詳しく：会社、アプリとゲーム、アート、そしてリサーチ。",
+    "모든 원소를 자세히: 회사, 앱과 게임, 아트, 그리고 연구.",
+    "Elk element volledig: de bedrijven, de apps en games, de kunst en het onderzoek.",
+    "Cada elemento por inteiro: as empresas, os apps e jogos, a arte e a pesquisa.",
+    "每个元素的完整说明：公司、应用与游戏、艺术，以及研究。",
+)
+T["Research"] = ("Forschung", "Investigación", "Investigación", "Recherche", "Ricerca",
+                 "リサーチ", "연구", "Onderzoek", "Pesquisa", "研究")
+T["Researcher"] = ("Forscher", "Investigador", "Investigador", "Chercheur", "Ricercatore",
+                   "研究者", "연구자", "Onderzoeker", "Pesquisador", "研究者")
+T["Lab write-ups"] = ("Laborberichte", "Informes de laboratorio", "Reportes de laboratorio",
+                      "Comptes rendus de labo", "Resoconti di laboratorio", "ラボレポート", "연구 노트",
+                      "Labverslagen", "Relatórios de laboratório", "实验报告")
+T["Lab write-ups on editing language models directly. First up: circuit grafts that took SmolLM2-135M from 21.3% to 83.1% on held-out multiplication, with no gradient training."] = (
+    "Laborberichte darüber, Sprachmodelle direkt zu bearbeiten. Zuerst: Schaltkreis-Transplantate, die SmolLM2-135M bei zurückgehaltenen Multiplikationsaufgaben von 21.3% auf 83.1% brachten, ohne Gradiententraining.",
+    "Informes de laboratorio sobre cómo editar modelos de lenguaje directamente. El primero: injertos de circuito que llevaron a SmolLM2-135M del 21.3% al 83.1% en multiplicaciones reservadas, sin entrenamiento por gradiente.",
+    "Reportes de laboratorio sobre cómo editar modelos de lenguaje directamente. El primero: injertos de circuito que llevaron a SmolLM2-135M del 21.3% al 83.1% en multiplicaciones reservadas, sin entrenamiento por gradiente.",
+    "Comptes rendus de labo sur l'édition directe des modèles de langage. Premier sujet : des greffes de circuits qui ont fait passer SmolLM2-135M de 21.3% à 83.1% en multiplication sur des problèmes mis de côté, sans entraînement par gradient.",
+    "Resoconti di laboratorio sulla modifica diretta dei modelli linguistici. Il primo: innesti di circuiti che hanno portato SmolLM2-135M dal 21.3% all'83.1% sulle moltiplicazioni tenute da parte, senza addestramento a gradiente.",
+    "言語モデルを直接編集する研究のラボレポート。第 1 回は回路グラフト。SmolLM2-135M の未使用テスト問題でのかけ算の正答率を、勾配学習なしで 21.3% から 83.1% に上げました。",
+    "언어 모델을 직접 편집하는 연구 노트. 첫 번째는 회로 이식으로, 기울기 학습 없이 SmolLM2-135M의 보류 곱셈 문제 정답률을 21.3%에서 83.1%로 올렸어요.",
+    "Labverslagen over het direct bewerken van taalmodellen. Als eerste: circuittransplantaten die SmolLM2-135M op achtergehouden vermenigvuldigingen van 21.3% naar 83.1% brachten, zonder gradiënttraining.",
+    "Relatórios de laboratório sobre editar modelos de linguagem diretamente. O primeiro: enxertos de circuito que levaram o SmolLM2-135M de 21.3% para 83.1% em multiplicações reservadas, sem treinamento por gradiente.",
+    "直接编辑语言模型的实验报告。第一篇：电路嫁接，在没有梯度训练的情况下，把 SmolLM2-135M 在留出乘法题上的正确率从 21.3% 提高到 83.1%。",
+)
+# Element 16's name and description reuse the research index translations, so the home page and
+# /research/ use the same words (KI-Forschung, AI研究, Schaltkreis-Implantate ...).
+import json as _json
+from pathlib import Path as _Path
+_R = {loc: _json.loads((_Path(__file__).parent / f"research_{loc}.json").read_text(encoding="utf-8"))
+      for loc in ("de", "es", "es-MX", "fr", "it", "ja", "ko", "nl", "pt-BR", "zh-Hans")}
+for _k in ("AI Research", "Lab write-ups on editing language models directly. First up: circuit grafts that took "
+           "SmolLM2-135M from 21.3% to 83.1% on held-out multiplication, with no gradient training."):
+    T[_k] = tuple(_R[loc][_k] for loc in _R)

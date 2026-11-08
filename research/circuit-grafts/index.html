@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-66ZSZNSB3X"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-66ZSZNSB3X');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Circuit Grafts: SmolLM2-135M Multiplication from 21.3% to 83.1% Without Gradient Training</title>
+<meta name="description" content="Small rule circuits grafted into SmolLM2-135M raised five held-out math tests by 37 to 62 points. No original weight changed, no gradient training, at most 0.09% added weights. A lab write-up by Levi Foster.">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#F3F2EE">
+<meta name="author" content="Levi Foster">
+<link rel="alternate" hreflang="en" href="https://lf.wtf/research/circuit-grafts/">
+<link rel="alternate" hreflang="de" href="https://lf.wtf/de/research/circuit-grafts/">
+<link rel="alternate" hreflang="es" href="https://lf.wtf/es/research/circuit-grafts/">
+<link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/research/circuit-grafts/">
+<link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/research/circuit-grafts/">
+<link rel="alternate" hreflang="it" href="https://lf.wtf/it/research/circuit-grafts/">
+<link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/research/circuit-grafts/">
+<link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/research/circuit-grafts/">
+<link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/research/circuit-grafts/">
+<link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/research/circuit-grafts/">
+<link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/research/circuit-grafts/">
+<link rel="alternate" hreflang="x-default" href="https://lf.wtf/research/circuit-grafts/">
+<link rel="canonical" href="https://lf.wtf/research/circuit-grafts/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/dm-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+
+<meta property="og:title" content="Circuit grafts: SmolLM2-135M from 21.3% to 83.1% on held-out multiplication">
+<meta property="og:description" content="Small rule circuits grafted into a 135M language model. No original weight changed, no gradient training, at most 0.09% added weights.">
+<meta property="og:url" content="https://lf.wtf/research/circuit-grafts/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Levi Foster">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="es_MX">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:image" content="https://lf.wtf/research/assets/og-circuit-grafts-1.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Circuit grafts on SmolLM2-135M: five held-out math tests, before and after">
+<meta property="article:published_time" content="2026-11-07">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@cybermynd">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://lf.wtf/research/circuit-grafts/#webpage",
+      "url": "https://lf.wtf/research/circuit-grafts/",
+      "name": "Circuit grafts on SmolLM2-135M",
+      "isPartOf": {
+        "@id": "https://lf.wtf/#website"
+      },
+      "mainEntity": {
+        "@id": "https://lf.wtf/research/circuit-grafts/#post"
+      },
+      "breadcrumb": {
+        "@id": "https://lf.wtf/research/circuit-grafts/#breadcrumb"
+      },
+      "primaryImageOfPage": "https://lf.wtf/research/assets/og-circuit-grafts-1.png",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://lf.wtf/research/circuit-grafts/#post",
+      "url": "https://lf.wtf/research/circuit-grafts/",
+      "headline": "Circuit grafts: SmolLM2-135M from 21.3% to 83.1% on held-out multiplication without gradient training",
+      "description": "Small rule circuits grafted into SmolLM2-135M raised five held-out math tests by 37 to 62 points. No original weight changed, no gradient training, at most 0.09% added weights.",
+      "image": "https://lf.wtf/research/assets/og-circuit-grafts-1.png",
+      "datePublished": "2026-11-07",
+      "dateModified": "2026-11-07",
+      "author": {
+        "@id": "https://lf.wtf/#levifoster"
+      },
+      "publisher": {
+        "@id": "https://lf.wtf/#levifoster"
+      },
+      "isPartOf": {
+        "@id": "https://lf.wtf/research/#blog"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Weight editing in language models"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "SmolLM2-135M",
+          "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct",
+          "inLanguage": "en"
+        }
+      ],
+      "inLanguage": "en"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://lf.wtf/research/circuit-grafts/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Levi Foster",
+          "item": "https://lf.wtf/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AI Research",
+          "item": "https://lf.wtf/research/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Circuit grafts",
+          "item": "https://lf.wtf/research/circuit-grafts/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+@font-face{font-family:"Schibsted Grotesk";src:url(/assets/fonts/schibsted-grotesk.woff2) format("woff2");font-weight:400 900;font-display:swap}
+@font-face{font-family:"DM Mono";src:url(/assets/fonts/dm-mono-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"DM Mono";src:url(/assets/fonts/dm-mono-500.woff2) format("woff2");font-weight:500;font-display:swap}
+:root{--paper:#F3F2EE;--ink:#111;--white:#fff;--blue:#2F3BFF;--blue-lit:#8C95FF;--grey:#CFCDC6;--lab:#D9DCFF;--muted:#5B5953;
+--alone:#6F6C64;--other:#B3B0A7;
+--sans:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"DM Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;--w:1180px;--text:720px}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:14px/1.6 var(--mono)}
+a{color:inherit}
+a:hover{color:var(--blue)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 32px}
+
+/* bar */
+.bar{border-bottom:2px solid var(--ink)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:56px}
+.brand{font:800 20px/1 var(--sans);text-decoration:none;letter-spacing:-.01em}
+.bar nav{display:flex;gap:22px}
+.bar nav a{font-size:11px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:14px 0}
+
+.crumbs{padding-top:18px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.crumbs a{text-decoration:none;border-bottom:1px solid var(--grey)}
+.crumbs span[aria-current]{color:var(--ink)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:200px minmax(0,1fr);gap:40px;align-items:end;padding-top:28px;padding-bottom:32px}
+.h-tile{container-type:inline-size;aspect-ratio:1;border:4px solid var(--ink);background:var(--lab);padding:9%;display:flex;flex-direction:column;justify-content:space-between}
+.ht-top{display:flex;justify-content:space-between;font-size:max(11px,8cqi);line-height:1}
+.ht-sym{margin:0;font:800 46cqi/.85 var(--sans);letter-spacing:-.03em}
+.ht-name{font-size:max(9px,7.4cqi);letter-spacing:.06em;text-transform:uppercase;line-height:1.25}
+.kicker{margin:0 0 14px;font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+h1{margin:0;font:800 clamp(48px,8vw,104px)/.9 var(--sans);letter-spacing:-.035em;text-transform:uppercase}
+.dek{margin:18px 0 0;max-width:680px;font:400 clamp(18px,1.9vw,22px)/1.4 var(--sans)}
+.byline{margin:18px 0 0;display:flex;flex-wrap:wrap;gap:4px 18px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.byline a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--ink)}
+
+/* stat strip */
+.stats{margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;border-top:4px solid var(--ink);border-bottom:2px solid var(--ink);padding:0}
+.stats div{padding:18px 18px 18px 0;display:flex;flex-direction:column;gap:6px;min-width:0}
+.stats div+div{padding-left:18px;border-left:1px solid var(--ink)}
+.stats dd{order:-1;margin:0;font:800 clamp(28px,3.4vw,44px)/1 var(--sans);letter-spacing:-.02em;white-space:nowrap}
+.stats dd.hi{color:var(--blue)}
+.stats dt{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);line-height:1.45}
+
+/* article */
+.post{padding-top:40px;padding-bottom:24px}
+.post section{max-width:var(--text);margin:0 0 48px;scroll-margin-top:16px}
+.post section.wide{max-width:none}
+.post section.wide>h2,.post section.wide>p,.post section.wide>ol,.post section.wide>ul,.post section.wide>.label{max-width:var(--text)}
+.label{margin:0 0 8px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.post h2{margin:0 0 16px;font:800 clamp(28px,3.6vw,40px)/1.02 var(--sans);letter-spacing:-.02em}
+.post h3{margin:28px 0 10px;font:700 20px/1.2 var(--sans);letter-spacing:-.01em}
+.post p,.post li{font:400 18px/1.62 var(--sans)}
+.post p{margin:0 0 16px}
+.post ol,.post ul{margin:0 0 16px;padding-left:22px}
+.post li{margin:0 0 10px;padding-left:4px}
+.post li::marker{font:500 13px var(--mono)}
+.quote{margin:8px 0 20px;padding:4px 0 4px 18px;border-left:4px solid var(--blue);font:500 20px/1.45 var(--sans)}
+.steps{list-style:none;padding:0!important;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:48px minmax(0,1fr);gap:14px;padding:14px 0 14px;margin:0;border-top:1px solid var(--ink)}
+.steps li:last-child{border-bottom:1px solid var(--ink)}
+.steps li::before{content:counter(s,decimal-leading-zero);font:500 13px/1.9 var(--mono);color:var(--muted)}
+.steps b{display:block;font:700 19px/1.3 var(--sans);margin-bottom:4px}
+.note{font:400 13px/1.6 var(--mono)!important;color:var(--muted)}
+.post .label{font:400 11px/1.6 var(--mono);letter-spacing:.16em}
+.post .chart .sub{font:400 12px/1.5 var(--mono);margin:0 0 16px}
+.post .chart .verdict{font:500 13px/1.5 var(--mono);margin:14px 0 0}
+.post .key li{font:400 11px/1.4 var(--mono);margin:0;padding:0}
+
+/* charts */
+.chart{margin:24px 0 20px;border:4px solid var(--ink);background:var(--white);padding:22px 24px 18px}
+.chart figcaption{margin:0 0 4px;font:800 22px/1.15 var(--sans);letter-spacing:-.01em}
+.chart .sub{margin:0 0 16px;font-size:12px;color:var(--muted)}
+.key{display:flex;flex-wrap:wrap;gap:6px 22px;margin:0 0 14px;padding:0;list-style:none;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.key li{display:flex;align-items:center;gap:8px}
+.k{display:inline-block;width:12px;height:12px;border-radius:50%}
+.k-alone{background:var(--alone)}.k-graft{background:var(--blue)}.k-scr{border:2px solid var(--ink);background:var(--white)}
+
+.dumb{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr) 150px;column-gap:20px}
+.d-row{display:contents}
+.d-label,.d-track,.d-val{border-top:1px solid var(--grey);padding:12px 0;min-width:0}
+.d-label b{display:block;font:700 16px/1.25 var(--sans)}
+.d-label span{font-size:12px;color:var(--muted)}
+.d-track{position:relative;min-height:56px;background:linear-gradient(90deg,var(--grey) 1px,transparent 1px) 0 0/25% 100% repeat-x;background-position:-.5px 0}
+.d-track::after{content:"";position:absolute;right:0;top:12px;bottom:12px;width:1px;background:var(--grey)}
+.d-track i{position:absolute;top:50%;display:block}
+.d-line{left:calc(var(--a)*1%);width:calc((var(--b) - var(--a))*1%);height:3px;margin-top:-1.5px;background:var(--blue);opacity:.35}
+.d-a,.d-b,.d-s{width:16px;height:16px;margin:-8px 0 0 -8px;border-radius:50%;box-shadow:0 0 0 2px var(--white)}
+.d-a{left:calc(var(--a)*1%);background:var(--alone)}
+.d-b{left:calc(var(--b)*1%);background:var(--blue);width:18px;height:18px;margin:-9px 0 0 -9px}
+.d-s{left:calc(var(--s)*1%);width:12px;height:12px;margin:-6px 0 0 -6px;border:2px solid var(--ink);background:var(--white);box-shadow:none}
+.d-val{text-align:right;font-size:13px;line-height:1.45}
+.d-val b{display:block;font:700 17px/1.3 var(--mono);color:var(--blue)}
+.d-val span{color:var(--muted);font-size:12px}
+.d-axis{display:contents}
+.d-axis>span:first-child,.d-axis>span:last-child{border-top:1px solid var(--ink)}
+.d-ticks{position:relative;height:24px;border-top:1px solid var(--ink);font-size:11px;color:var(--muted)}
+.d-ticks span{position:absolute;top:4px;transform:translateX(-50%)}
+.d-ticks span:first-child{transform:none}.d-ticks span:last-child{transform:translateX(-100%)}
+
+.bars{display:grid;grid-template-columns:minmax(0,250px) minmax(0,1fr) 64px;column-gap:16px;row-gap:0}
+.b-row{display:contents}
+.b-label,.b-track,.b-val{padding:9px 0;border-top:1px solid var(--grey);min-width:0}
+.b-label{font-size:13px;line-height:1.35}
+.b-label small{display:block;font-size:11px;color:var(--muted)}
+.b-track{position:relative;background:linear-gradient(90deg,var(--grey) 1px,transparent 1px) 0 0/25% 100% repeat-x}
+.b-track i{position:absolute;left:0;top:50%;height:20px;margin-top:-10px;width:calc(var(--v)*1%);background:var(--other)}
+.b-row.base i{background:var(--alone)}
+.b-row.win i{background:var(--blue)}
+.b-row.win .b-label{font-weight:500}
+.b-val{text-align:right;font:500 14px/1.6 var(--mono)}
+.b-row.win .b-val{color:var(--blue)}
+.b-scale{grid-column:2;display:flex;justify-content:space-between;border-top:1px solid var(--ink);padding-top:4px;font-size:11px;color:var(--muted)}
+.chart .verdict{margin:14px 0 0;font:500 13px/1.5 var(--mono)}
+
+.table-wrap{margin:8px 0 20px;overflow-x:auto;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:13px}
+caption{text-align:left;padding:12px 0 8px;font:700 16px/1.3 var(--sans)}
+th,td{padding:10px 12px 10px 0;text-align:right;vertical-align:top;border-top:1px solid var(--grey)}
+th:first-child,td:first-child{text-align:left}
+thead th{font-weight:400;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);border-top:0;vertical-align:bottom}
+td small{display:block;color:var(--muted);font-size:11px}
+td.hi{color:var(--blue);font-weight:500}
+
+.next{border-top:4px solid var(--ink);padding-top:22px;margin-top:8px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.next a{display:inline-flex;align-items:center;min-height:48px;padding:0 20px;background:var(--ink);color:var(--paper);text-decoration:none;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.next a:hover{background:var(--blue);color:#fff}
+footer.wrap{margin-top:40px;padding-top:20px;padding-bottom:8px;border-top:2px solid var(--ink);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* Kana, hangul and hanzi run wider and taller than the Latin caps this was tuned on. */
+html[lang="ja"] h1,html[lang="ko"] h1,html[lang="zh-Hans"] h1{font-size:clamp(40px,6.4vw,84px);line-height:1.08;letter-spacing:0}
+@media (max-width:860px){
+.dumb{grid-template-columns:minmax(0,1fr) auto;grid-auto-flow:row dense}
+.d-label{grid-column:1;padding-bottom:4px}
+.d-val{grid-column:2;padding-bottom:4px}
+.d-track{grid-column:1/3;border-top:0;padding-top:0;min-height:40px}
+.d-axis>span:first-child,.d-axis>span:last-child{display:none}
+.d-ticks{grid-column:1/3}
+.bars{grid-template-columns:minmax(0,1fr) 60px}
+.b-label{grid-column:1/3;padding-bottom:2px}
+.b-track{grid-column:1;border-top:0;min-height:30px;padding:0}
+.b-val{grid-column:2;border-top:0;padding-top:2px}
+.b-scale{grid-column:1}
+}
+@media (max-width:760px){
+.wrap{padding-left:16px;padding-right:16px}
+.bar nav a:not(.to-lang){display:none}
+.hero{grid-template-columns:96px minmax(0,1fr);gap:18px;align-items:start;padding-top:18px}
+.h-tile{border-width:3px}
+.hero .h-text{display:contents}
+.kicker{grid-column:2;align-self:end;margin:0}
+h1{grid-column:1/3;font-size:clamp(40px,13vw,64px)}
+.dek,.byline{grid-column:1/3;margin-top:0}
+.stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+.stats div{padding:14px 12px 14px 0!important;border-left:0!important}
+.stats div:first-child,.stats div:nth-child(4){grid-column:1/3}
+.stats div+div{border-top:1px solid var(--ink)}
+.stats div:nth-child(3){padding-left:12px!important;border-left:1px solid var(--ink)!important}
+.post{padding-top:28px}
+.post p,.post li{font-size:17px}
+.chart{padding:16px 14px 14px;border-width:3px;margin-left:-4px;margin-right:-4px}
+.steps li{grid-template-columns:34px minmax(0,1fr)}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* i18n:start */
+.i18n{max-width:var(--w,initial);margin:0 auto;padding:26px 22px 40px;display:flex;flex-wrap:wrap;
+gap:6px 14px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.55;
+justify-content:center}
+.i18n a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+.i18n a:hover{border-bottom-color:currentColor}
+.i18n span[aria-current]{opacity:.5;cursor:default}
+/* i18n:end */
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="https://lf.wtf/">lf.wtf</a>
+    <nav aria-label="Sections">
+      <a href="https://lf.wtf/research/">AI Research</a>
+      <a href="#results">Results</a>
+      <a href="#gradient">Against gradient</a>
+      <a class="to-lang" href="#language">Language</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<nav class="crumbs wrap" aria-label="Breadcrumb"><a href="https://lf.wtf/">Levi Foster</a> / <a href="https://lf.wtf/research/">AI Research</a> / <span aria-current="page">Circuit grafts</span></nav>
+
+<header class="hero wrap">
+  <div class="h-tile">
+    <span class="ht-top" aria-hidden="true"><span>16.01</span><span>lab</span></span>
+    <span class="ht-sym" aria-hidden="true">Cg</span>
+    <span class="ht-name">Lab write-up 01</span>
+  </div>
+  <div class="h-text">
+    <p class="kicker">AI Research · SmolLM2-135M</p>
+    <h1>Circuit grafts</h1>
+    <p class="dek">We wired small rule circuits into SmolLM2-135M, a 135-million-parameter language model. On sealed held-out problems, its multiplication score went from 21.3% to 83.1%. No original weight changed, and nothing was trained by gradient descent.</p>
+    <p class="byline"><a rel="author" href="https://lf.wtf/">Levi Foster</a><time datetime="2026-11-07">November 7, 2026</time></p>
+  </div>
+</header>
+
+<div class="wrap">
+<dl class="stats">
+  <div><dt>Multiplication, held-out</dt><dd class="hi">21.3% → 83.1%</dd></div>
+  <div><dt>Original weights changed</dt><dd>0</dd></div>
+  <div><dt>Largest graft, share of the model</dt><dd>0.09%</dd></div>
+  <div><dt>Points ahead of a same-size gradient graft</dt><dd>+57.9</dd></div>
+</dl>
+</div>
+
+<article class="post wrap">
+
+<section id="theory">
+  <p class="label">Where this started</p>
+  <h2>One rule can serve many facts</h2>
+  <p>I want to find out how far a small open model can be pushed toward frontier level by editing its weights directly and grafting in new parts, without a heavy training run. Training is the usual route. You push billions of questions and answers through a model and gradient descent works out the rules on its own. But we can also open a model up, read what it holds partway through a problem, and change it. So can some of those rules be written in by hand?</p>
+  <p>My working theory is that a lot of reasoning runs on rule sets, where one rule serves many facts. Carrying the one is the simplest case. Nobody memorizes every sum, because one carry rule covers all of them, at every digit place. In my notes I put it this way:</p>
+  <p class="quote">Maybe a rule from one fact would coincide with the rule for another.</p>
+  <p>Facts are expensive for a small model to store, and rules are cheap. The first multiplication circuit in this write-up is built for every problem from 2 × 10 up to 9 × 99, and it's 25,270 weights.</p>
+  <p>The same conversations turned up a second idea that pairs with the first: a learning ruleset for picking up something new, alongside logic rules for applying what you already know. This write-up is about the logic side.</p>
+</section>
+
+<section id="digits">
+  <p class="label">What the model already has</p>
+  <h2>The digits are in there</h2>
+  <p>Before building anything, we looked at what SmolLM2 holds at the moment it starts writing an answer. A linear read of its hidden state at the answer position, fit by least squares, pulls out the digits of both numbers almost perfectly. For three-digit addition one layer wasn't enough, but joining layers 14, 20 and 21 reads every digit at 99% on fresh problems.</p>
+  <p>So the model has read the question. What it can't do reliably is combine the digits: the carry, the borrow, the times table. That combining step is the part we supply.</p>
+</section>
+
+<section id="how">
+  <p class="label">How a graft works</p>
+  <h2>Four parts, none trained by gradient descent</h2>
+  <ol class="steps">
+    <li><div><b>Read</b>A linear read for each digit of the two numbers, taken from the model's own hidden state.</div></li>
+    <li><div><b>Rules</b>A small lookup table for each digit of the answer. The units digit comes from the two units digits; the tens digit comes from the tens digits plus the carry, and so on up.</div></li>
+    <li><div><b>Write</b>A push toward the right digit token at the model's last layer. The model still writes its own reply. The graft only tips which digit comes next.</div></li>
+    <li><div><b>Switches</b>Two fitted switches decide when the graft is on. They are fit to fire only while the model writes the answer to this kind of problem, and to stay off on other math, word problems, code and ordinary text.</div></li>
+  </ol>
+  <p>The reads and switches are fit by closed-form least squares, and the rule tables are written out by a program (by hand, for the first multiplication graft). The base model file is never touched. Each graft is added alongside it.</p>
+</section>
+
+<section id="evolution">
+  <p class="label">How it grew</p>
+  <h2>From one graft to a pipeline</h2>
+  <ol class="steps">
+    <li><div><b>Neuron graft</b>The first try added 24 new neurons to the last layer to supply the carry for two-digit addition. It held up on sealed problems, +19.7 points. It worked by nudging the model's own arithmetic, so the next step was to do the arithmetic outright.</div></li>
+    <li><div><b>Hand-wired circuit</b>For multiplication we wrote the rule tables by hand and fed them the model's own digit reads. The first version scored 83.5% on sealed held-out problems, up from 21.3%. A second version with better switches scored 83.1%, and its worst change on other math was −0.75 points.</div></li>
+    <li><div><b>Rules found by a program</b>A rule-finding program got 340 solved problems as digits and answers. For each answer digit, it looked for the smallest set of inputs that decides it. It found the carry for addition, the borrow for subtraction and the carry chain for multiplication on its own. It also found that the tens digit is the units rule reused on the tens digits, plus a carry step: one rule serving several digits, which is the idea this started from. Its multiplication circuit scored 82.7% held-out, within half a point of the hand-wired one.</div></li>
+    <li><div><b>Same pipeline, new skills</b>Subtraction and two-digit addition went through the same script, with settings copied from multiplication and no tuning. Three-digit addition took three fixes, each tested before its held-out set was opened: the read joined from three layers, a second switch, and a push strength set for each digit place.</div></li>
+  </ol>
+</section>
+
+<section id="results" class="wide">
+  <p class="label">Results</p>
+  <h2>Five skills, on problems nobody tuned on</h2>
+  <p>Each skill's held-out problems were set aside before any building, and nothing was tuned on them. Every score is two seeds and four runs per problem, with the same sampling settings for the model alone and with the graft. The multiplication set was opened once for the first hand-wired version, then once more for the final two.</p>
+
+  <figure class="chart">
+    <figcaption>Held-out accuracy, SmolLM2-135M</figcaption>
+    <p class="sub">Share of problems answered exactly right. 140 problems for multiplication, 500 for the rest.</p>
+    <ul class="key">
+      <li><span class="k k-alone" aria-hidden="true"></span>SmolLM2 alone</li>
+      <li><span class="k k-graft" aria-hidden="true"></span>With the graft</li>
+      <li><span class="k k-scr" aria-hidden="true"></span>Same graft, wiring scrambled</li>
+    </ul>
+    <div class="dumb">
+      <div class="d-row">
+        <div class="d-label"><b>Multiplication</b><span>7 × 48, rules wired by hand</span></div>
+        <div class="d-track" aria-hidden="true" style="--a:21.3;--b:83.1;--s:2.4"><i class="d-line"></i><i class="d-s"></i><i class="d-a"></i><i class="d-b"></i></div>
+        <div class="d-val"><b>21.3% → 83.1%</b><span>+61.8</span></div>
+      </div>
+      <div class="d-row">
+        <div class="d-label"><b>Multiplication</b><span>7 × 48, rules found by a program</span></div>
+        <div class="d-track" aria-hidden="true" style="--a:21.3;--b:82.7;--s:6.3"><i class="d-line"></i><i class="d-s"></i><i class="d-a"></i><i class="d-b"></i></div>
+        <div class="d-val"><b>21.3% → 82.7%</b><span>+61.3</span></div>
+      </div>
+      <div class="d-row">
+        <div class="d-label"><b>Subtraction, two digits</b><span>83 − 27, rules found by a program</span></div>
+        <div class="d-track" aria-hidden="true" style="--a:11.3;--b:68.3;--s:7.8"><i class="d-line"></i><i class="d-s"></i><i class="d-a"></i><i class="d-b"></i></div>
+        <div class="d-val"><b>11.3% → 68.3%</b><span>+57.1</span></div>
+      </div>
+      <div class="d-row">
+        <div class="d-label"><b>Addition, two digits</b><span>38 + 47, rules found by a program</span></div>
+        <div class="d-track" aria-hidden="true" style="--a:49.7;--b:86.5;--s:16.7"><i class="d-line"></i><i class="d-s"></i><i class="d-a"></i><i class="d-b"></i></div>
+        <div class="d-val"><b>49.7% → 86.5%</b><span>+36.8</span></div>
+      </div>
+      <div class="d-row">
+        <div class="d-label"><b>Addition, three digits</b><span>347 + 285, rules found by a program</span></div>
+        <div class="d-track" aria-hidden="true" style="--a:26.1;--b:83.7;--s:21.4"><i class="d-line"></i><i class="d-s"></i><i class="d-a"></i><i class="d-b"></i></div>
+        <div class="d-val"><b>26.1% → 83.7%</b><span>+57.6</span></div>
+      </div>
+      <div class="d-axis" aria-hidden="true"><span></span><div class="d-ticks"><span style="left:0">0%</span><span style="left:25%">25%</span><span style="left:50%">50%</span><span style="left:75%">75%</span><span style="left:100%">100%</span></div><span></span></div>
+    </div>
+  </figure>
+
+  <div class="table-wrap" tabindex="0" role="region" aria-labelledby="t-results">
+    <table>
+      <caption id="t-results">The same results as a table</caption>
+      <thead>
+        <tr><th scope="col">Skill</th><th scope="col">Problems</th><th scope="col">SmolLM2 alone</th><th scope="col">With the graft</th><th scope="col">Gain, points (95% lower bound)</th><th scope="col">Scrambled wiring</th><th scope="col">Added weights</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Multiplication, rules wired by hand<small>7 × 48</small></td><td>140</td><td>21.3%</td><td class="hi">83.1%</td><td>+61.8 (+56.1)</td><td>2.4%</td><td>25,270<small>0.019%</small></td></tr>
+        <tr><td>Multiplication, rules found by a program<small>7 × 48</small></td><td>140</td><td>21.3%</td><td class="hi">82.7%</td><td>+61.3 (+55.5)</td><td>6.3%</td><td>32,519<small>0.024%</small></td></tr>
+        <tr><td>Subtraction, two digits<small>83 − 27</small></td><td>500</td><td>11.3%</td><td class="hi">68.3%</td><td>+57.1 (+54.0)</td><td>7.8%</td><td>32,446<small>0.024%</small></td></tr>
+        <tr><td>Addition, two digits<small>38 + 47</small></td><td>500</td><td>49.7%</td><td class="hi">86.5%</td><td>+36.8 (+33.8)</td><td>16.7%</td><td>32,476<small>0.024%</small></td></tr>
+        <tr><td>Addition, three digits<small>347 + 285</small></td><td>500</td><td>26.1%</td><td class="hi">83.7%</td><td>+57.6 (+54.6)</td><td>21.4%</td><td>121,198<small>0.090%</small></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <ul>
+    <li>No original weight changed, and there was no gradient training. Each graft adds 25,270 to 121,198 weights, 0.019% to 0.090% of the model. The cap we set ourselves was 0.1%.</li>
+    <li>The scrambled control is the same graft with its wiring shuffled. It scored at or below the model alone on every skill, 2.4% to 21.4%, so the extra weights do nothing without the right rules.</li>
+    <li>The three two-digit grafts (multiplication, subtraction and addition) also run together in one model, 92,496 weights in all. Each kept its gain on dev problems. The worst change on other math was −0.25 points, and 200 of 200 unrelated prompts gave the same answer as before.</li>
+  </ul>
+  <p class="note">Gains are paired by problem, with a one-sided 95% bootstrap lower bound. The side-effect check covers eight other arithmetic and word-problem sets, plus GSM8K and code. Unrelated prompts are 200 IFEval prompts, answered greedily. The rules and predictions for every run were written down before its result.</p>
+</section>
+
+<section id="gradient" class="wide">
+  <p class="label">Against gradient training</p>
+  <h2>Three head-to-heads</h2>
+  <p>Gradient training is the standard way to add a skill, so we ran it as the competitor. Each gradient graft was tuned over a grid of settings before its test.</p>
+
+  <figure class="chart">
+    <figcaption>Multiplication, sealed held-out</figcaption>
+    <p class="sub">140 problems, 2 seeds, 4 runs each. The first hand-wired circuit against two tuned gradient-trained grafts.</p>
+    <div class="bars">
+      <div class="b-row base"><div class="b-label">SmolLM2 alone</div><div class="b-track" aria-hidden="true"><i style="--v:21.3"></i></div><div class="b-val">21.3%</div></div>
+      <div class="b-row"><div class="b-label">Gradient graft, same size<small>14 neurons</small></div><div class="b-track" aria-hidden="true"><i style="--v:25.6"></i></div><div class="b-val">25.6%</div></div>
+      <div class="b-row"><div class="b-label">Gradient graft at the 0.1% cap<small>77 neurons</small></div><div class="b-track" aria-hidden="true"><i style="--v:23.7"></i></div><div class="b-val">23.7%</div></div>
+      <div class="b-row win"><div class="b-label">Circuit graft<small>25,270 weights, no gradient</small></div><div class="b-track" aria-hidden="true"><i style="--v:83.5"></i></div><div class="b-val">83.5%</div></div>
+      <div class="b-scale" aria-hidden="true"><span>0%</span><span>50%</span><span>100%</span></div>
+    </div>
+    <p class="verdict">The circuit was ahead by 57.9 and 59.8 points.</p>
+  </figure>
+
+  <figure class="chart">
+    <figcaption>Multiplication against LoRA fine-tuning</figcaption>
+    <p class="sub">140 dev problems, 2 seeds, 4 runs each. LoRA used the best setting from a grid search.</p>
+    <div class="bars">
+      <div class="b-row base"><div class="b-label">SmolLM2 alone</div><div class="b-track" aria-hidden="true"><i style="--v:28.5"></i></div><div class="b-val">28.5%</div></div>
+      <div class="b-row"><div class="b-label">LoRA fine-tune<small>115,200 trained weights</small></div><div class="b-track" aria-hidden="true"><i style="--v:39.4"></i></div><div class="b-val">39.4%</div></div>
+      <div class="b-row win"><div class="b-label">Circuit graft<small>25,270 weights, no gradient</small></div><div class="b-track" aria-hidden="true"><i style="--v:88.7"></i></div><div class="b-val">88.7%</div></div>
+      <div class="b-scale" aria-hidden="true"><span>0%</span><span>50%</span><span>100%</span></div>
+    </div>
+    <p class="verdict">49.3 points ahead, with a 95% lower bound of +42.8, using under a quarter of the weights.</p>
+  </figure>
+
+  <figure class="chart">
+    <figcaption>Two-digit subtraction</figcaption>
+    <p class="sub">500 dev problems, 2 seeds, 4 runs each. The circuit's settings were copied from multiplication, untuned.</p>
+    <div class="bars">
+      <div class="b-row base"><div class="b-label">SmolLM2 alone</div><div class="b-track" aria-hidden="true"><i style="--v:11.35"></i></div><div class="b-val">11.35%</div></div>
+      <div class="b-row"><div class="b-label">Gradient graft, 14 neurons</div><div class="b-track" aria-hidden="true"><i style="--v:48.15"></i></div><div class="b-val">48.15%</div></div>
+      <div class="b-row"><div class="b-label">Gradient graft, 77 neurons<small>133,056 weights, tuned</small></div><div class="b-track" aria-hidden="true"><i style="--v:65.0"></i></div><div class="b-val">65.0%</div></div>
+      <div class="b-row win"><div class="b-label">Circuit graft<small>32,446 weights, no tuning</small></div><div class="b-track" aria-hidden="true"><i style="--v:64.98"></i></div><div class="b-val">64.98%</div></div>
+      <div class="b-scale" aria-hidden="true"><span>0%</span><span>50%</span><span>100%</span></div>
+    </div>
+    <p class="verdict">A tie with a gradient graft four times its size, and about 17 points ahead of the 14-neuron one.</p>
+  </figure>
+  <p>The circuit's subtraction rules came from 340 problems. The gradient grafts trained on 1,500, the same 1,500 the circuit's digit reads were fit on.</p>
+</section>
+
+<section id="transplants">
+  <p class="label">Still in progress</p>
+  <h2>Transplants from bigger models</h2>
+  <p>We're also trying to move skills over from larger models. Qwen3.5-4B got 300 of 300 of these multiplication problems right in our check, so we tried translating a set of its neurons into SmolLM2. Separately, we mapped a correction signal from Qwen3.5-4B into Qwen3.5-0.8B on grade-school word problems. Neither has worked yet, and both are still open. So far the bigger model has been most useful as a guide to where the small one breaks.</p>
+</section>
+
+<section id="scope">
+  <p class="label">What a graft is</p>
+  <h2>A calculator fed by the model's own reading</h2>
+  <p>The graft does the arithmetic itself, from numbers the model already holds. SmolLM2 doesn't learn to multiply. It works on the plain form of the question ("What is 347 + 285?"), and the switches keep it off on word problems on purpose. All of this is one model so far.</p>
+  <p>The method carries over to new skills. Rules are found by a program from 340 examples, compiled into tables, and placed with the same settings for each skill. Next is the learning side: getting SmolLM2 to use a fact it's handed in the prompt.</p>
+</section>
+
+<div class="next">
+  <span class="label">AI Research, write-up 01</span>
+  <a href="https://lf.wtf/research/">All research</a>
+</div>
+</article>
+</main>
+
+<footer class="wrap"><span>© Levi Foster</span><span>Fort Worth, Texas</span></footer>
+<div id="language"></div>
+
+<nav class="i18n" aria-label="Language">
+  <span aria-current="true" lang="en">English</span>
+  <a href="/de/research/circuit-grafts/" hreflang="de" lang="de">Deutsch</a>
+  <a href="/es/research/circuit-grafts/" hreflang="es" lang="es">Español</a>
+  <a href="/es-mx/research/circuit-grafts/" hreflang="es-MX" lang="es-MX">Español (MX)</a>
+  <a href="/fr/research/circuit-grafts/" hreflang="fr" lang="fr">Français</a>
+  <a href="/it/research/circuit-grafts/" hreflang="it" lang="it">Italiano</a>
+  <a href="/ja/research/circuit-grafts/" hreflang="ja" lang="ja">日本語</a>
+  <a href="/ko/research/circuit-grafts/" hreflang="ko" lang="ko">한국어</a>
+  <a href="/nl/research/circuit-grafts/" hreflang="nl" lang="nl">Nederlands</a>
+  <a href="/pt-br/research/circuit-grafts/" hreflang="pt-BR" lang="pt-BR">Português (BR)</a>
+  <a href="/zh-hans/research/circuit-grafts/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+</nav>
+</body>
+</html>

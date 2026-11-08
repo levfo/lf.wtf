@@ -1551,6 +1551,122 @@ Instagram: @mergewiththemachine · mergewiththemachine.com · X: @cybermynd
 System Memory is a short film by Levi Foster for Merge With The Machine, made in collaboration with Claude in Claude Code and the Krea MCP. Levi is part of the Krea Creator Program and is not paid for this film. Claude is a trademark of Anthropic.
 
 
+---
+
+# Circuit Grafts: SmolLM2-135M Multiplication from 21.3% to 83.1% Without Gradient Training
+Source: https://lf.wtf/research/circuit-grafts/
+Part of: AI Research, https://lf.wtf/research/
+By Levi Foster, November 7, 2026
+
+Lab write-up 01
+AI Research · SmolLM2-135M
+# Circuit grafts
+We wired small rule circuits into SmolLM2-135M, a 135-million-parameter language model. On sealed held-out problems, its multiplication score went from 21.3% to 83.1%. No original weight changed, and nothing was trained by gradient descent.
+Multiplication, held-out
+21.3% → 83.1%
+Original weights changed
+0
+Largest graft, share of the model
+0.09%
+Points ahead of a same-size gradient graft
++57.9
+Where this started
+## One rule can serve many facts
+I want to find out how far a small open model can be pushed toward frontier level by editing its weights directly and grafting in new parts, without a heavy training run. Training is the usual route. You push billions of questions and answers through a model and gradient descent works out the rules on its own. But we can also open a model up, read what it holds partway through a problem, and change it. So can some of those rules be written in by hand?
+My working theory is that a lot of reasoning runs on rule sets, where one rule serves many facts. Carrying the one is the simplest case. Nobody memorizes every sum, because one carry rule covers all of them, at every digit place. In my notes I put it this way:
+Maybe a rule from one fact would coincide with the rule for another.
+Facts are expensive for a small model to store, and rules are cheap. The first multiplication circuit in this write-up is built for every problem from 2 × 10 up to 9 × 99, and it's 25,270 weights.
+The same conversations turned up a second idea that pairs with the first: a learning ruleset for picking up something new, alongside logic rules for applying what you already know. This write-up is about the logic side.
+What the model already has
+## The digits are in there
+Before building anything, we looked at what SmolLM2 holds at the moment it starts writing an answer. A linear read of its hidden state at the answer position, fit by least squares, pulls out the digits of both numbers almost perfectly. For three-digit addition one layer wasn't enough, but joining layers 14, 20 and 21 reads every digit at 99% on fresh problems.
+So the model has read the question. What it can't do reliably is combine the digits: the carry, the borrow, the times table. That combining step is the part we supply.
+How a graft works
+## Four parts, none trained by gradient descent
+Read: A linear read for each digit of the two numbers, taken from the model's own hidden state.
+Rules: A small lookup table for each digit of the answer. The units digit comes from the two units digits; the tens digit comes from the tens digits plus the carry, and so on up.
+Write: A push toward the right digit token at the model's last layer. The model still writes its own reply. The graft only tips which digit comes next.
+Switches: Two fitted switches decide when the graft is on. They are fit to fire only while the model writes the answer to this kind of problem, and to stay off on other math, word problems, code and ordinary text.
+The reads and switches are fit by closed-form least squares, and the rule tables are written out by a program (by hand, for the first multiplication graft). The base model file is never touched. Each graft is added alongside it.
+How it grew
+## From one graft to a pipeline
+Neuron graft: The first try added 24 new neurons to the last layer to supply the carry for two-digit addition. It held up on sealed problems, +19.7 points. It worked by nudging the model's own arithmetic, so the next step was to do the arithmetic outright.
+Hand-wired circuit: For multiplication we wrote the rule tables by hand and fed them the model's own digit reads. The first version scored 83.5% on sealed held-out problems, up from 21.3%. A second version with better switches scored 83.1%, and its worst change on other math was −0.75 points.
+Rules found by a program: A rule-finding program got 340 solved problems as digits and answers. For each answer digit, it looked for the smallest set of inputs that decides it. It found the carry for addition, the borrow for subtraction and the carry chain for multiplication on its own. It also found that the tens digit is the units rule reused on the tens digits, plus a carry step: one rule serving several digits, which is the idea this started from. Its multiplication circuit scored 82.7% held-out, within half a point of the hand-wired one.
+Same pipeline, new skills: Subtraction and two-digit addition went through the same script, with settings copied from multiplication and no tuning. Three-digit addition took three fixes, each tested before its held-out set was opened: the read joined from three layers, a second switch, and a push strength set for each digit place.
+Results
+## Five skills, on problems nobody tuned on
+Each skill's held-out problems were set aside before any building, and nothing was tuned on them. Every score is two seeds and four runs per problem, with the same sampling settings for the model alone and with the graft. The multiplication set was opened once for the first hand-wired version, then once more for the final two.
+### Held-out accuracy, SmolLM2-135M
+Share of problems answered exactly right. 140 problems for multiplication, 500 for the rest.
+SmolLM2 alone
+With the graft
+Same graft, wiring scrambled
+Multiplication, 7 × 48, rules wired by hand
+21.3% → 83.1% (+61.8 points)
+Multiplication, 7 × 48, rules found by a program
+21.3% → 82.7% (+61.3 points)
+Subtraction, two digits, 83 − 27, rules found by a program
+11.3% → 68.3% (+57.1 points)
+Addition, two digits, 38 + 47, rules found by a program
+49.7% → 86.5% (+36.8 points)
+Addition, three digits, 347 + 285, rules found by a program
+26.1% → 83.7% (+57.6 points)
+### The same results as a table
+Skill | Problems | SmolLM2 alone | With the graft | Gain, points (95% lower bound) | Scrambled wiring | Added weights
+Multiplication, rules wired by hand (7 × 48) | 140 | 21.3% | 83.1% | +61.8 (+56.1) | 2.4% | 25,270 (0.019%)
+Multiplication, rules found by a program (7 × 48) | 140 | 21.3% | 82.7% | +61.3 (+55.5) | 6.3% | 32,519 (0.024%)
+Subtraction, two digits (83 − 27) | 500 | 11.3% | 68.3% | +57.1 (+54.0) | 7.8% | 32,446 (0.024%)
+Addition, two digits (38 + 47) | 500 | 49.7% | 86.5% | +36.8 (+33.8) | 16.7% | 32,476 (0.024%)
+Addition, three digits (347 + 285) | 500 | 26.1% | 83.7% | +57.6 (+54.6) | 21.4% | 121,198 (0.090%)
+No original weight changed, and there was no gradient training. Each graft adds 25,270 to 121,198 weights, 0.019% to 0.090% of the model. The cap we set ourselves was 0.1%.
+The scrambled control is the same graft with its wiring shuffled. It scored at or below the model alone on every skill, 2.4% to 21.4%, so the extra weights do nothing without the right rules.
+The three two-digit grafts (multiplication, subtraction and addition) also run together in one model, 92,496 weights in all. Each kept its gain on dev problems. The worst change on other math was −0.25 points, and 200 of 200 unrelated prompts gave the same answer as before.
+Gains are paired by problem, with a one-sided 95% bootstrap lower bound. The side-effect check covers eight other arithmetic and word-problem sets, plus GSM8K and code. Unrelated prompts are 200 IFEval prompts, answered greedily. The rules and predictions for every run were written down before its result.
+Against gradient training
+## Three head-to-heads
+Gradient training is the standard way to add a skill, so we ran it as the competitor. Each gradient graft was tuned over a grid of settings before its test.
+### Multiplication, sealed held-out
+140 problems, 2 seeds, 4 runs each. The first hand-wired circuit against two tuned gradient-trained grafts.
+SmolLM2 alone
+21.3%
+Gradient graft, same size (14 neurons)
+25.6%
+Gradient graft at the 0.1% cap (77 neurons)
+23.7%
+Circuit graft (25,270 weights, no gradient)
+83.5%
+The circuit was ahead by 57.9 and 59.8 points.
+### Multiplication against LoRA fine-tuning
+140 dev problems, 2 seeds, 4 runs each. LoRA used the best setting from a grid search.
+SmolLM2 alone
+28.5%
+LoRA fine-tune (115,200 trained weights)
+39.4%
+Circuit graft (25,270 weights, no gradient)
+88.7%
+49.3 points ahead, with a 95% lower bound of +42.8, using under a quarter of the weights.
+### Two-digit subtraction
+500 dev problems, 2 seeds, 4 runs each. The circuit's settings were copied from multiplication, untuned.
+SmolLM2 alone
+11.35%
+Gradient graft, 14 neurons
+48.15%
+Gradient graft, 77 neurons (133,056 weights, tuned)
+65.0%
+Circuit graft (32,446 weights, no tuning)
+64.98%
+A tie with a gradient graft four times its size, and about 17 points ahead of the 14-neuron one.
+The circuit's subtraction rules came from 340 problems. The gradient grafts trained on 1,500, the same 1,500 the circuit's digit reads were fit on.
+Still in progress
+## Transplants from bigger models
+We're also trying to move skills over from larger models. Qwen3.5-4B got 300 of 300 of these multiplication problems right in our check, so we tried translating a set of its neurons into SmolLM2. Separately, we mapped a correction signal from Qwen3.5-4B into Qwen3.5-0.8B on grade-school word problems. Neither has worked yet, and both are still open. So far the bigger model has been most useful as a guide to where the small one breaks.
+What a graft is
+## A calculator fed by the model's own reading
+The graft does the arithmetic itself, from numbers the model already holds. SmolLM2 doesn't learn to multiply. It works on the plain form of the question ("What is 347 + 285?"), and the switches keep it off on word problems on purpose. All of this is one model so far.
+The method carries over to new skills. Rules are found by a program from 340 examples, compiled into tables, and placed with the same settings for each skill. Next is the learning side: getting SmolLM2 to use a fact it's handed in the prompt.
+
+
 ## Teleframe
 
 [Teleframe](https://lf.wtf/teleframe/): A screen recorder for 64-bit Windows 10 (version 2004 or newer) and Windows 11, with a free 7-day trial, then 9.99 USD as a one-time purchase (shown in local currency, for example 9.99 EUR, 8.99 GBP, 1,500 JPY), with no subscription and no account. The user drags a frame over any part of the screen and records only what is inside it; ratios 16:9, 9:16, 1:1, 4:3, 4:5, 21:9, free shape and full screen. The frame can move while recording. Each record-to-pause stretch is a clip; delete-last-clip removes a bad take, and stop/save joins the clips into one H.264 MP4 without re-encoding. All of the recorder's own windows are excluded from capture, so its controls never appear in the video. Optional system sound, microphone or both (AAC 192 kbps). Quality presets LOW to MAX at 30 or 60 fps with file-size estimates, GPU encoding when available, global hotkeys (Ctrl+Alt+R record, P pause, D delete last clip, S save, H hide), no watermark. English interface. Checkout by Stripe; a license key (TELE-XXXXX-XXXXX-XXXXX-XXXXX) appears after payment and is emailed. One key activates up to 3 PCs; activation needs the internet once, then the app works offline. Buyers agree to the purchase terms, which include occasional emails about related new products (unsubscribe any time). Built by Levi Foster.

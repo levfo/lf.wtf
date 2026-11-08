@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-66ZSZNSB3X"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-66ZSZNSB3X');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Schaltkreis-Implantate: Multiplikation bei SmolLM2-135M von 21.3% auf 83.1%, ohne Gradiententraining</title>
+<meta name="description" content="In SmolLM2-135M eingesetzte kleine Regelschaltkreise hoben fünf Mathetests auf zurückgehaltenen Aufgaben um 37 bis 62 Punkte. Kein ursprüngliches Gewicht verändert, kein Gradiententraining, höchstens 0.09% zusätzliche Gewichte. Ein Laborbericht von Levi Foster.">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#F3F2EE">
+<meta name="author" content="Levi Foster">
+<link rel="alternate" hreflang="en" href="https://lf.wtf/research/circuit-grafts/">
+<link rel="alternate" hreflang="de" href="https://lf.wtf/de/research/circuit-grafts/">
+<link rel="alternate" hreflang="es" href="https://lf.wtf/es/research/circuit-grafts/">
+<link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/research/circuit-grafts/">
+<link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/research/circuit-grafts/">
+<link rel="alternate" hreflang="it" href="https://lf.wtf/it/research/circuit-grafts/">
+<link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/research/circuit-grafts/">
+<link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/research/circuit-grafts/">
+<link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/research/circuit-grafts/">
+<link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/research/circuit-grafts/">
+<link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/research/circuit-grafts/">
+<link rel="alternate" hreflang="x-default" href="https://lf.wtf/research/circuit-grafts/">
+<link rel="canonical" href="https://lf.wtf/de/research/circuit-grafts/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/dm-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+
+<meta property="og:title" content="Schaltkreis-Implantate: SmolLM2-135M bei zurückgehaltenen Multiplikationsaufgaben von 21.3% auf 83.1%">
+<meta property="og:description" content="Kleine Regelschaltkreise, eingesetzt in ein 135M-Sprachmodell. Kein ursprüngliches Gewicht verändert, kein Gradiententraining, höchstens 0.09% zusätzliche Gewichte.">
+<meta property="og:url" content="https://lf.wtf/de/research/circuit-grafts/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Levi Foster">
+<meta property="og:locale" content="de_DE">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="es_MX">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:image" content="https://lf.wtf/research/assets/og-circuit-grafts-1.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Schaltkreis-Implantate in SmolLM2-135M: fünf Mathetests auf zurückgehaltenen Aufgaben, vorher und nachher">
+<meta property="article:published_time" content="2026-11-07">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@cybermynd">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://lf.wtf/research/circuit-grafts/#webpage",
+      "url": "https://lf.wtf/research/circuit-grafts/",
+      "name": "Schaltkreis-Implantate in SmolLM2-135M",
+      "isPartOf": {
+        "@id": "https://lf.wtf/#website"
+      },
+      "mainEntity": {
+        "@id": "https://lf.wtf/research/circuit-grafts/#post"
+      },
+      "breadcrumb": {
+        "@id": "https://lf.wtf/research/circuit-grafts/#breadcrumb"
+      },
+      "primaryImageOfPage": "https://lf.wtf/research/assets/og-circuit-grafts-1.png",
+      "inLanguage": "de"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://lf.wtf/research/circuit-grafts/#post",
+      "url": "https://lf.wtf/research/circuit-grafts/",
+      "headline": "Schaltkreis-Implantate: SmolLM2-135M bei zurückgehaltenen Multiplikationsaufgaben von 21.3% auf 83.1%, ohne Gradiententraining",
+      "description": "In SmolLM2-135M eingesetzte kleine Regelschaltkreise hoben fünf Mathetests auf zurückgehaltenen Aufgaben um 37 bis 62 Punkte. Kein ursprüngliches Gewicht verändert, kein Gradiententraining, höchstens 0.09% zusätzliche Gewichte.",
+      "image": "https://lf.wtf/research/assets/og-circuit-grafts-1.png",
+      "datePublished": "2026-11-07",
+      "dateModified": "2026-11-07",
+      "author": {
+        "@id": "https://lf.wtf/#levifoster"
+      },
+      "publisher": {
+        "@id": "https://lf.wtf/#levifoster"
+      },
+      "isPartOf": {
+        "@id": "https://lf.wtf/research/#blog"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Gewichtsbearbeitung in Sprachmodellen"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "SmolLM2-135M",
+          "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct",
+          "inLanguage": "de"
+        }
+      ],
+      "inLanguage": "de"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://lf.wtf/research/circuit-grafts/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Levi Foster",
+          "item": "https://lf.wtf/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "KI-Forschung",
+          "item": "https://lf.wtf/research/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Schaltkreis-Implantate",
+          "item": "https://lf.wtf/research/circuit-grafts/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+@font-face{font-family:"Schibsted Grotesk";src:url(/assets/fonts/schibsted-grotesk.woff2) format("woff2");font-weight:400 900;font-display:swap}
+@font-face{font-family:"DM Mono";src:url(/assets/fonts/dm-mono-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"DM Mono";src:url(/assets/fonts/dm-mono-500.woff2) format("woff2");font-weight:500;font-display:swap}
+:root{--paper:#F3F2EE;--ink:#111;--white:#fff;--blue:#2F3BFF;--blue-lit:#8C95FF;--grey:#CFCDC6;--lab:#D9DCFF;--muted:#5B5953;
+--alone:#6F6C64;--other:#B3B0A7;
+--sans:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"DM Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;--w:1180px;--text:720px}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:14px/1.6 var(--mono)}
+a{color:inherit}
+a:hover{color:var(--blue)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 32px}
+
+/* bar */
+.bar{border-bottom:2px solid var(--ink)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:56px}
+.brand{font:800 20px/1 var(--sans);text-decoration:none;letter-spacing:-.01em}
+.bar nav{display:flex;gap:22px}
+.bar nav a{font-size:11px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:14px 0}
+
+.crumbs{padding-top:18px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.crumbs a{text-decoration:none;border-bottom:1px solid var(--grey)}
+.crumbs span[aria-current]{color:var(--ink)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:200px minmax(0,1fr);gap:40px;align-items:end;padding-top:28px;padding-bottom:32px}
+.h-tile{container-type:inline-size;aspect-ratio:1;border:4px solid var(--ink);background:var(--lab);padding:9%;display:flex;flex-direction:column;justify-content:space-between}
+.ht-top{display:flex;justify-content:space-between;font-size:max(11px,8cqi);line-height:1}
+.ht-sym{margin:0;font:800 46cqi/.85 var(--sans);letter-spacing:-.03em}
+.ht-name{font-size:max(9px,7.4cqi);letter-spacing:.06em;text-transform:uppercase;line-height:1.25}
+.kicker{margin:0 0 14px;font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+h1{margin:0;font:800 clamp(48px,8vw,104px)/.9 var(--sans);letter-spacing:-.035em;text-transform:uppercase}
+.dek{margin:18px 0 0;max-width:680px;font:400 clamp(18px,1.9vw,22px)/1.4 var(--sans)}
+.byline{margin:18px 0 0;display:flex;flex-wrap:wrap;gap:4px 18px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.byline a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--ink)}
+
+/* stat strip */
+.stats{margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;border-top:4px solid var(--ink);border-bottom:2px solid var(--ink);padding:0}
+.stats div{padding:18px 18px 18px 0;display:flex;flex-direction:column;gap:6px;min-width:0}
+.stats div+div{padding-left:18px;border-left:1px solid var(--ink)}
+.stats dd{order:-1;margin:0;font:800 clamp(28px,3.4vw,44px)/1 var(--sans);letter-spacing:-.02em;white-space:nowrap}
+.stats dd.hi{color:var(--blue)}
+.stats dt{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);line-height:1.45}
+
+/* article */
+.post{padding-top:40px;padding-bottom:24px}
+.post section{max-width:var(--text);margin:0 0 48px;scroll-margin-top:16px}
+.post section.wide{max-width:none}
+.post section.wide>h2,.post section.wide>p,.post section.wide>ol,.post section.wide>ul,.post section.wide>.label{max-width:var(--text)}
+.label{margin:0 0 8px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.post h2{margin:0 0 16px;font:800 clamp(28px,3.6vw,40px)/1.02 var(--sans);letter-spacing:-.02em}
+.post h3{margin:28px 0 10px;font:700 20px/1.2 var(--sans);letter-spacing:-.01em}
+.post p,.post li{font:400 18px/1.62 var(--sans)}
+.post p{margin:0 0 16px}
+.post ol,.post ul{margin:0 0 16px;padding-left:22px}
+.post li{margin:0 0 10px;padding-left:4px}
+.post li::marker{font:500 13px var(--mono)}
+.quote{margin:8px 0 20px;padding:4px 0 4px 18px;border-left:4px solid var(--blue);font:500 20px/1.45 var(--sans)}
+.steps{list-style:none;padding:0!important;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:48px minmax(0,1fr);gap:14px;padding:14px 0 14px;margin:0;border-top:1px solid var(--ink)}
+.steps li:last-child{border-bottom:1px solid var(--ink)}
+.steps li::before{content:counter(s,decimal-leading-zero);font:500 13px/1.9 var(--mono);color:var(--muted)}
+.steps b{display:block;font:700 19px/1.3 var(--sans);margin-bottom:4px}
+.note{font:400 13px/1.6 var(--mono)!important;color:var(--muted)}
+.post .label{font:400 11px/1.6 var(--mono);letter-spacing:.16em}
+.post .chart .sub{font:400 12px/1.5 var(--mono);margin:0 0 16px}
+.post .chart .verdict{font:500 13px/1.5 var(--mono);margin:14px 0 0}
+.post .key li{font:400 11px/1.4 var(--mono);margin:0;padding:0}
+
+/* charts */
+.chart{margin:24px 0 20px;border:4px solid var(--ink);background:var(--white);padding:22px 24px 18px}
+.chart figcaption{margin:0 0 4px;font:800 22px/1.15 var(--sans);letter-spacing:-.01em}
+.chart .sub{margin:0 0 16px;font-size:12px;color:var(--muted)}
+.key{display:flex;flex-wrap:wrap;gap:6px 22px;margin:0 0 14px;padding:0;list-style:none;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.key li{display:flex;align-items:center;gap:8px}
+.k{display:inline-block;width:12px;height:12px;border-radius:50%}
+.k-alone{background:var(--alone)}.k-graft{background:var(--blue)}.k-scr{border:2px solid var(--ink);background:var(--white)}
+
+.dumb{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr) 150px;column-gap:20px}
+.d-row{display:contents}
+.d-label,.d-track,.d-val{border-top:1px solid var(--grey);padding:12px 0;min-width:0}
+.d-label b{display:block;font:700 16px/1.25 var(--sans)}
+.d-label span{font-size:12px;color:var(--muted)}
+.d-track{position:relative;min-height:56px;background:linear-gradient(90deg,var(--grey) 1px,transparent 1px) 0 0/25% 100% repeat-x;background-position:-.5px 0}
+.d-track::after{content:"";position:absolute;right:0;top:12px;bottom:12px;width:1px;background:var(--grey)}
+.d-track i{position:absolute;top:50%;display:block}
+.d-line{left:calc(var(--a)*1%);width:calc((var(--b) - var(--a))*1%);height:3px;margin-top:-1.5px;background:var(--blue);opacity:.35}
+.d-a,.d-b,.d-s{width:16px;height:16px;margin:-8px 0 0 -8px;border-radius:50%;box-shadow:0 0 0 2px var(--white)}
+.d-a{left:calc(var(--a)*1%);background:var(--alone)}
+.d-b{left:calc(var(--b)*1%);background:var(--blue);width:18px;height:18px;margin:-9px 0 0 -9px}
+.d-s{left:calc(var(--s)*1%);width:12px;height:12px;margin:-6px 0 0 -6px;border:2px solid var(--ink);background:var(--white);box-shadow:none}
+.d-val{text-align:right;font-size:13px;line-height:1.45}
+.d-val b{display:block;font:700 17px/1.3 var(--mono);color:var(--blue)}
+.d-val span{color:var(--muted);font-size:12px}
+.d-axis{display:contents}
+.d-axis>span:first-child,.d-axis>span:last-child{border-top:1px solid var(--ink)}
+.d-ticks{position:relative;height:24px;border-top:1px solid var(--ink);font-size:11px;color:var(--muted)}
+.d-ticks span{position:absolute;top:4px;transform:translateX(-50%)}
+.d-ticks span:first-child{transform:none}.d-ticks span:last-child{transform:translateX(-100%)}
+
+.bars{display:grid;grid-template-columns:minmax(0,250px) minmax(0,1fr) 64px;column-gap:16px;row-gap:0}
+.b-row{display:contents}
+.b-label,.b-track,.b-val{padding:9px 0;border-top:1px solid var(--grey);min-width:0}
+.b-label{font-size:13px;line-height:1.35}
+.b-label small{display:block;font-size:11px;color:var(--muted)}
+.b-track{position:relative;background:linear-gradient(90deg,var(--grey) 1px,transparent 1px) 0 0/25% 100% repeat-x}
+.b-track i{position:absolute;left:0;top:50%;height:20px;margin-top:-10px;width:calc(var(--v)*1%);background:var(--other)}
+.b-row.base i{background:var(--alone)}
+.b-row.win i{background:var(--blue)}
+.b-row.win .b-label{font-weight:500}
+.b-val{text-align:right;font:500 14px/1.6 var(--mono)}
+.b-row.win .b-val{color:var(--blue)}
+.b-scale{grid-column:2;display:flex;justify-content:space-between;border-top:1px solid var(--ink);padding-top:4px;font-size:11px;color:var(--muted)}
+.chart .verdict{margin:14px 0 0;font:500 13px/1.5 var(--mono)}
+
+.table-wrap{margin:8px 0 20px;overflow-x:auto;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:13px}
+caption{text-align:left;padding:12px 0 8px;font:700 16px/1.3 var(--sans)}
+th,td{padding:10px 12px 10px 0;text-align:right;vertical-align:top;border-top:1px solid var(--grey)}
+th:first-child,td:first-child{text-align:left}
+thead th{font-weight:400;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);border-top:0;vertical-align:bottom}
+td small{display:block;color:var(--muted);font-size:11px}
+td.hi{color:var(--blue);font-weight:500}
+
+.next{border-top:4px solid var(--ink);padding-top:22px;margin-top:8px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.next a{display:inline-flex;align-items:center;min-height:48px;padding:0 20px;background:var(--ink);color:var(--paper);text-decoration:none;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.next a:hover{background:var(--blue);color:#fff}
+footer.wrap{margin-top:40px;padding-top:20px;padding-bottom:8px;border-top:2px solid var(--ink);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* Kana, hangul and hanzi run wider and taller than the Latin caps this was tuned on. */
+html[lang="ja"] h1,html[lang="ko"] h1,html[lang="zh-Hans"] h1{font-size:clamp(40px,6.4vw,84px);line-height:1.08;letter-spacing:0}
+@media (max-width:860px){
+.dumb{grid-template-columns:minmax(0,1fr) auto;grid-auto-flow:row dense}
+.d-label{grid-column:1;padding-bottom:4px}
+.d-val{grid-column:2;padding-bottom:4px}
+.d-track{grid-column:1/3;border-top:0;padding-top:0;min-height:40px}
+.d-axis>span:first-child,.d-axis>span:last-child{display:none}
+.d-ticks{grid-column:1/3}
+.bars{grid-template-columns:minmax(0,1fr) 60px}
+.b-label{grid-column:1/3;padding-bottom:2px}
+.b-track{grid-column:1;border-top:0;min-height:30px;padding:0}
+.b-val{grid-column:2;border-top:0;padding-top:2px}
+.b-scale{grid-column:1}
+}
+@media (max-width:760px){
+.wrap{padding-left:16px;padding-right:16px}
+.bar nav a:not(.to-lang){display:none}
+.hero{grid-template-columns:96px minmax(0,1fr);gap:18px;align-items:start;padding-top:18px}
+.h-tile{border-width:3px}
+.hero .h-text{display:contents}
+.kicker{grid-column:2;align-self:end;margin:0}
+h1{grid-column:1/3;font-size:clamp(40px,13vw,64px)}
+.dek,.byline{grid-column:1/3;margin-top:0}
+.stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+.stats div{padding:14px 12px 14px 0!important;border-left:0!important}
+.stats div:first-child,.stats div:nth-child(4){grid-column:1/3}
+.stats div+div{border-top:1px solid var(--ink)}
+.stats div:nth-child(3){padding-left:12px!important;border-left:1px solid var(--ink)!important}
+.post{padding-top:28px}
+.post p,.post li{font-size:17px}
+.chart{padding:16px 14px 14px;border-width:3px;margin-left:-4px;margin-right:-4px}
+.steps li{grid-template-columns:34px minmax(0,1fr)}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* i18n:start */
+.i18n{max-width:var(--w,initial);margin:0 auto;padding:26px 22px 40px;display:flex;flex-wrap:wrap;
+gap:6px 14px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.55;
+justify-content:center}
+.i18n a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+.i18n a:hover{border-bottom-color:currentColor}
+.i18n span[aria-current]{opacity:.5;cursor:default}
+/* i18n:end */
+
+html[lang="de"] h1, html[lang="de"] h2, html[lang="de"] .sub { text-transform: none !important; }
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="https://lf.wtf/de/">lf.wtf</a>
+    <nav aria-label="Abschnitte">
+      <a href="https://lf.wtf/de/research/">KI-Forschung</a>
+      <a href="#results">Ergebnisse</a>
+      <a href="#gradient">Gegen Gradiententraining</a>
+      <a class="to-lang" href="#language">Sprache</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<nav class="crumbs wrap" aria-label="Brotkrümelnavigation"><a href="https://lf.wtf/de/">Levi Foster</a> / <a href="https://lf.wtf/de/research/">KI-Forschung</a> / <span aria-current="page">Schaltkreis-Implantate</span></nav>
+
+<header class="hero wrap">
+  <div class="h-tile">
+    <span class="ht-top" aria-hidden="true"><span>16.01</span><span>lab</span></span>
+    <span class="ht-sym" aria-hidden="true">Cg</span>
+    <span class="ht-name">Laborbericht 01</span>
+  </div>
+  <div class="h-text">
+    <p class="kicker">KI-Forschung · SmolLM2-135M</p>
+    <h1>Schaltkreis-Implantate</h1>
+    <p class="dek">Wir haben kleine Regelschaltkreise in SmolLM2-135M verdrahtet, ein Sprachmodell mit 135 Millionen Parametern. Auf versiegelten, zurückgehaltenen Aufgaben stieg sein Ergebnis bei der Multiplikation von 21.3% auf 83.1%. Kein ursprüngliches Gewicht wurde verändert, und nichts wurde per Gradientenabstieg trainiert.</p>
+    <p class="byline"><a rel="author" href="https://lf.wtf/de/">Levi Foster</a><time datetime="2026-11-07">7. November 2026</time></p>
+  </div>
+</header>
+
+<div class="wrap">
+<dl class="stats">
+  <div><dt>Multiplikation, zurückgehalten</dt><dd class="hi">21.3% → 83.1%</dd></div>
+  <div><dt>Veränderte Originalgewichte</dt><dd>0</dd></div>
+  <div><dt>Größtes Implantat, Anteil am Modell</dt><dd>0.09%</dd></div>
+  <div><dt>Punkte Vorsprung vor einem gleich großen Gradienten-Implantat</dt><dd>+57.9</dd></div>
+</dl>
+</div>
+
+<article class="post wrap">
+
+<section id="theory">
+  <p class="label">Wie es anfing</p>
+  <h2>Eine Regel kann vielen Fakten dienen</h2>
+  <p>Ich will herausfinden, wie weit sich ein kleines offenes Modell in Richtung des Niveaus der Spitzenmodelle bringen lässt, indem man seine Gewichte direkt bearbeitet und neue Teile einsetzt, ohne einen aufwendigen Trainingslauf. Training ist der übliche Weg. Man schickt Milliarden von Fragen und Antworten durch ein Modell, und der Gradientenabstieg findet die Regeln von selbst heraus. Wir können ein Modell aber auch öffnen, mitten in einer Aufgabe auslesen, was es enthält, und das verändern. Lassen sich also manche dieser Regeln von Hand hineinschreiben?</p>
+  <p>Meine Arbeitstheorie ist, dass viel Denken auf Regelsätzen beruht, bei denen eine Regel vielen Fakten dient. Das Übertragen der Eins ist der einfachste Fall. Niemand lernt jede Summe auswendig, weil eine einzige Übertragsregel alle abdeckt, an jeder Ziffernstelle. In meinen Notizen habe ich es so formuliert:</p>
+  <p class="quote">Vielleicht würde eine Regel aus einem Fakt mit der Regel für einen anderen zusammenfallen.</p>
+  <p>Fakten sind für ein kleines Modell teuer zu speichern, Regeln sind billig. Der erste Multiplikationsschaltkreis in diesem Bericht ist für jede Aufgabe von 2 × 10 bis 9 × 99 gebaut und hat 25,270 Gewichte.</p>
+  <p>Dieselben Gespräche brachten eine zweite Idee hervor, die zur ersten passt: ein Lern-Regelsatz, um sich etwas Neues anzueignen, neben Logikregeln, um anzuwenden, was man schon weiß. In diesem Bericht geht es um die Logikseite.</p>
+</section>
+
+<section id="digits">
+  <p class="label">Was das Modell schon hat</p>
+  <h2>Die Ziffern sind schon da</h2>
+  <p>Bevor wir irgendetwas gebaut haben, haben wir uns angesehen, was SmolLM2 in dem Moment enthält, in dem es anfängt, eine Antwort zu schreiben. Eine lineare Auslesung seines verborgenen Zustands an der Antwortposition, angepasst mit der Methode der kleinsten Quadrate, holt die Ziffern beider Zahlen fast perfekt heraus. Für dreistellige Addition reichte eine Schicht nicht, aber wenn man die Schichten 14, 20 und 21 verbindet, wird auf neuen Aufgaben jede Ziffer zu 99% richtig ausgelesen.</p>
+  <p>Das Modell hat die Frage also gelesen. Was es nicht zuverlässig kann, ist, die Ziffern zu verknüpfen: der Übertrag, das Borgen, das Einmaleins. Diesen Schritt des Verknüpfens liefern wir.</p>
+</section>
+
+<section id="how">
+  <p class="label">Wie ein Implantat funktioniert</p>
+  <h2>Vier Teile, keiner per Gradientenabstieg trainiert</h2>
+  <ol class="steps">
+    <li><div><b>Auslesen</b>Eine lineare Auslesung für jede Ziffer der beiden Zahlen, aus dem eigenen verborgenen Zustand des Modells.</div></li>
+    <li><div><b>Regeln</b>Eine kleine Nachschlagetabelle für jede Ziffer der Antwort. Die Einerziffer ergibt sich aus den beiden Einerziffern, die Zehnerziffer aus den Zehnerziffern plus dem Übertrag, und so weiter nach oben.</div></li>
+    <li><div><b>Schreiben</b>Ein Anstoß in Richtung des richtigen Ziffern-Tokens in der letzten Schicht des Modells. Das Modell schreibt seine Antwort weiterhin selbst. Das Implantat gibt nur den Ausschlag, welche Ziffer als Nächstes kommt.</div></li>
+    <li><div><b>Schalter</b>Zwei angepasste Schalter entscheiden, wann das Implantat aktiv ist. Sie sind so angepasst, dass sie nur auslösen, während das Modell die Antwort auf diese Art von Aufgabe schreibt, und bei anderer Mathematik, Textaufgaben, Code und normalem Text aus bleiben.</div></li>
+  </ol>
+  <p>Die Auslesungen und Schalter werden mit kleinsten Quadraten in geschlossener Form angepasst, und die Regeltabellen schreibt ein Programm aus (beim ersten Multiplikationsimplantat geschah das von Hand). Die Datei des Basismodells wird nie angefasst. Jedes Implantat kommt daneben hinzu.</p>
+</section>
+
+<section id="evolution">
+  <p class="label">Wie es gewachsen ist</p>
+  <h2>Von einem Implantat zur Pipeline</h2>
+  <ol class="steps">
+    <li><div><b>Neuronen-Implantat</b>Der erste Versuch fügte der letzten Schicht 24 neue Neuronen hinzu, die den Übertrag für zweistellige Addition liefern sollten. Auf versiegelten Aufgaben hielt das stand, +19.7 Punkte. Es funktionierte, indem es die eigene Arithmetik des Modells anstupste, also war der nächste Schritt, das Rechnen gleich selbst zu übernehmen.</div></li>
+    <li><div><b>Von Hand verdrahteter Schaltkreis</b>Für die Multiplikation haben wir die Regeltabellen von Hand geschrieben und sie mit den Ziffernauslesungen des Modells selbst gefüttert. Die erste Version erreichte auf versiegelten, zurückgehaltenen Aufgaben 83.5%, gegenüber 21.3% vorher. Eine zweite Version mit besseren Schaltern erreichte 83.1%, und ihre schlechteste Veränderung bei anderer Mathematik lag bei −0.75 Punkten.</div></li>
+    <li><div><b>Regeln, von einem Programm gefunden</b>Ein Programm zum Finden von Regeln bekam 340 gelöste Aufgaben als Ziffern und Antworten. Für jede Ziffer der Antwort suchte es die kleinste Menge an Eingaben, die sie bestimmt. Es fand selbstständig den Übertrag bei der Addition, das Borgen bei der Subtraktion und die Übertragskette bei der Multiplikation. Außerdem fand es heraus, dass die Zehnerziffer die Einerregel ist, angewendet auf die Zehnerziffern, plus ein Übertragsschritt: eine Regel, die mehreren Ziffern dient, also die Idee, mit der das hier anfing. Sein Multiplikationsschaltkreis erreichte auf zurückgehaltenen Aufgaben 82.7%, bis auf einen halben Punkt am von Hand verdrahteten dran.</div></li>
+    <li><div><b>Gleiche Pipeline, neue Fertigkeiten</b>Subtraktion und zweistellige Addition liefen durch dasselbe Skript, mit Einstellungen, die von der Multiplikation übernommen wurden, und ohne Abstimmung. Dreistellige Addition brauchte drei Korrekturen, jede davon getestet, bevor ihr zurückgehaltener Satz geöffnet wurde: die Auslesung aus drei verbundenen Schichten, ein zweiter Schalter und eine eigene Stärke des Anstoßes für jede Ziffernstelle.</div></li>
+  </ol>
+</section>
+
+<section id="results" class="wide">
+  <p class="label">Ergebnisse</p>
+  <h2>Fünf Fertigkeiten, auf Aufgaben, an denen nichts abgestimmt wurde</h2>
+  <p>Die zurückgehaltenen Aufgaben jeder Fertigkeit wurden beiseitegelegt, bevor irgendetwas gebaut wurde, und an ihnen wurde nichts abgestimmt. Jedes Ergebnis beruht auf zwei Seeds und vier Durchläufen pro Aufgabe, mit denselben Sampling-Einstellungen für das Modell allein und mit Implantat. Der Multiplikationssatz wurde einmal für die erste von Hand verdrahtete Version geöffnet, dann noch einmal für die letzten beiden.</p>
+
+  <figure class="chart">
+    <figcaption>Genauigkeit auf zurückgehaltenen Aufgaben, SmolLM2-135M</figcaption>
+    <p class="sub">Anteil der Aufgaben, die exakt richtig beantwortet wurden. 140 Aufgaben für die Multiplikation, 500 für die übrigen.</p>
+    <ul class="key">
+      <li><span class="k k-alone" aria-hidden="true"></span>SmolLM2 allein</li>
+      <li><span class="k k-graft" aria-hidden="true"></span>Mit Implantat</li>
+      <li><span class="k k-scr" aria-hidden="true"></span>Gleiches Implantat, Verdrahtung verwürfelt</li>
+    </ul>
+    <div class="dumb">
+      <div class="d-row">
+        <div class="d-label"><b>Multiplikation</b><span>7 × 48, Regeln von Hand verdrahtet</span></div>
+        <div class="d-track" aria-hidden="true" style="--a:21.3;--b:83.1;--s:2.4"><i class="d-line"></i><i class="d-s"></i><i class="d-a"></i><i class="d-b"></i></div>
+        <div class="d-val"><b>21.3% → 83.1%</b><span>+61.8</span></div>
+      </div>
+      <div class="d-row">
+        <div class="d-label"><b>Multiplikation</b><span>7 × 48, Regeln von einem Programm gefunden</span></div>
+        <div class="d-track" aria-hidden="true" style="--a:21.3;--b:82.7;--s:6.3"><i class="d-line"></i><i class="d-s"></i><i class="d-a"></i><i class="d-b"></i></div>
+        <div class="d-val"><b>21.3% → 82.7%</b><span>+61.3</span></div>
+      </div>
+      <div class="d-row">
+        <div class="d-label"><b>Subtraktion, zweistellig</b><span>83 − 27, Regeln von einem Programm gefunden</span></div>
+        <div class="d-track" aria-hidden="true" style="--a:11.3;--b:68.3;--s:7.8"><i class="d-line"></i><i class="d-s"></i><i class="d-a"></i><i class="d-b"></i></div>
+        <div class="d-val"><b>11.3% → 68.3%</b><span>+57.1</span></div>
+      </div>
+      <div class="d-row">
+        <div class="d-label"><b>Addition, zweistellig</b><span>38 + 47, Regeln von einem Programm gefunden</span></div>
+        <div class="d-track" aria-hidden="true" style="--a:49.7;--b:86.5;--s:16.7"><i class="d-line"></i><i class="d-s"></i><i class="d-a"></i><i class="d-b"></i></div>
+        <div class="d-val"><b>49.7% → 86.5%</b><span>+36.8</span></div>
+      </div>
+      <div class="d-row">
+        <div class="d-label"><b>Addition, dreistellig</b><span>347 + 285, Regeln von einem Programm gefunden</span></div>
+        <div class="d-track" aria-hidden="true" style="--a:26.1;--b:83.7;--s:21.4"><i class="d-line"></i><i class="d-s"></i><i class="d-a"></i><i class="d-b"></i></div>
+        <div class="d-val"><b>26.1% → 83.7%</b><span>+57.6</span></div>
+      </div>
+      <div class="d-axis" aria-hidden="true"><span></span><div class="d-ticks"><span style="left:0">0%</span><span style="left:25%">25%</span><span style="left:50%">50%</span><span style="left:75%">75%</span><span style="left:100%">100%</span></div><span></span></div>
+    </div>
+  </figure>
+
+  <div class="table-wrap" tabindex="0" role="region" aria-labelledby="t-results">
+    <table>
+      <caption id="t-results">Dieselben Ergebnisse als Tabelle</caption>
+      <thead>
+        <tr><th scope="col">Fertigkeit</th><th scope="col">Aufgaben</th><th scope="col">SmolLM2 allein</th><th scope="col">Mit Implantat</th><th scope="col">Zuwachs, Punkte (95%-Untergrenze)</th><th scope="col">Verwürfelte Verdrahtung</th><th scope="col">Zusätzliche Gewichte</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Multiplikation, Regeln von Hand verdrahtet<small>7 × 48</small></td><td>140</td><td>21.3%</td><td class="hi">83.1%</td><td>+61.8 (+56.1)</td><td>2.4%</td><td>25,270<small>0.019%</small></td></tr>
+        <tr><td>Multiplikation, Regeln von einem Programm gefunden<small>7 × 48</small></td><td>140</td><td>21.3%</td><td class="hi">82.7%</td><td>+61.3 (+55.5)</td><td>6.3%</td><td>32,519<small>0.024%</small></td></tr>
+        <tr><td>Subtraktion, zweistellig<small>83 − 27</small></td><td>500</td><td>11.3%</td><td class="hi">68.3%</td><td>+57.1 (+54.0)</td><td>7.8%</td><td>32,446<small>0.024%</small></td></tr>
+        <tr><td>Addition, zweistellig<small>38 + 47</small></td><td>500</td><td>49.7%</td><td class="hi">86.5%</td><td>+36.8 (+33.8)</td><td>16.7%</td><td>32,476<small>0.024%</small></td></tr>
+        <tr><td>Addition, dreistellig<small>347 + 285</small></td><td>500</td><td>26.1%</td><td class="hi">83.7%</td><td>+57.6 (+54.6)</td><td>21.4%</td><td>121,198<small>0.090%</small></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <ul>
+    <li>Kein ursprüngliches Gewicht wurde verändert, und es gab kein Gradiententraining. Jedes Implantat fügt 25,270 bis 121,198 Gewichte hinzu, 0.019% bis 0.090% des Modells. Die Obergrenze, die wir uns selbst gesetzt hatten, lag bei 0.1%.</li>
+    <li>Die verwürfelte Kontrolle ist dasselbe Implantat mit durchgemischter Verdrahtung. Sie lag bei jeder Fertigkeit gleichauf mit dem Modell allein oder darunter, bei 2.4% bis 21.4%. Die zusätzlichen Gewichte bewirken ohne die richtigen Regeln also nichts.</li>
+    <li>Die drei zweistelligen Implantate (Multiplikation, Subtraktion und Addition) laufen auch zusammen in einem Modell, insgesamt 92,496 Gewichte. Jedes behielt seinen Zuwachs auf den Dev-Aufgaben. Die schlechteste Veränderung bei anderer Mathematik lag bei −0.25 Punkten, und 200 von 200 themenfremden Prompts lieferten dieselbe Antwort wie vorher.</li>
+  </ul>
+  <p class="note">Die Zuwächse sind pro Aufgabe gepaart, mit einer einseitigen 95%-Bootstrap-Untergrenze. Die Prüfung auf Nebenwirkungen umfasst acht weitere Sätze mit Rechen- und Textaufgaben, dazu GSM8K und Code. Die themenfremden Prompts sind 200 IFEval-Prompts, greedy beantwortet. Die Regeln und Vorhersagen für jeden Lauf wurden aufgeschrieben, bevor sein Ergebnis vorlag.</p>
+</section>
+
+<section id="gradient" class="wide">
+  <p class="label">Gegen Gradiententraining</p>
+  <h2>Drei direkte Vergleiche</h2>
+  <p>Gradiententraining ist der Standardweg, eine Fertigkeit hinzuzufügen, also haben wir es als Konkurrenten antreten lassen. Jedes Gradienten-Implantat wurde vor seinem Test über ein Raster von Einstellungen abgestimmt.</p>
+
+  <figure class="chart">
+    <figcaption>Multiplikation, versiegelt zurückgehalten</figcaption>
+    <p class="sub">140 Aufgaben, 2 Seeds, je 4 Durchläufe. Der erste von Hand verdrahtete Schaltkreis gegen zwei abgestimmte, per Gradient trainierte Implantate.</p>
+    <div class="bars">
+      <div class="b-row base"><div class="b-label">SmolLM2 allein</div><div class="b-track" aria-hidden="true"><i style="--v:21.3"></i></div><div class="b-val">21.3%</div></div>
+      <div class="b-row"><div class="b-label">Gradienten-Implantat, gleich groß<small>14 Neuronen</small></div><div class="b-track" aria-hidden="true"><i style="--v:25.6"></i></div><div class="b-val">25.6%</div></div>
+      <div class="b-row"><div class="b-label">Gradienten-Implantat an der 0.1%-Grenze<small>77 Neuronen</small></div><div class="b-track" aria-hidden="true"><i style="--v:23.7"></i></div><div class="b-val">23.7%</div></div>
+      <div class="b-row win"><div class="b-label">Schaltkreis-Implantat<small>25,270 Gewichte, kein Gradient</small></div><div class="b-track" aria-hidden="true"><i style="--v:83.5"></i></div><div class="b-val">83.5%</div></div>
+      <div class="b-scale" aria-hidden="true"><span>0%</span><span>50%</span><span>100%</span></div>
+    </div>
+    <p class="verdict">Der Schaltkreis lag 57.9 und 59.8 Punkte vorn.</p>
+  </figure>
+
+  <figure class="chart">
+    <figcaption>Multiplikation gegen LoRA-Feintuning</figcaption>
+    <p class="sub">140 Dev-Aufgaben, 2 Seeds, je 4 Durchläufe. LoRA nutzte die beste Einstellung aus einer Rastersuche.</p>
+    <div class="bars">
+      <div class="b-row base"><div class="b-label">SmolLM2 allein</div><div class="b-track" aria-hidden="true"><i style="--v:28.5"></i></div><div class="b-val">28.5%</div></div>
+      <div class="b-row"><div class="b-label">LoRA-Feintuning<small>115,200 trainierte Gewichte</small></div><div class="b-track" aria-hidden="true"><i style="--v:39.4"></i></div><div class="b-val">39.4%</div></div>
+      <div class="b-row win"><div class="b-label">Schaltkreis-Implantat<small>25,270 Gewichte, kein Gradient</small></div><div class="b-track" aria-hidden="true"><i style="--v:88.7"></i></div><div class="b-val">88.7%</div></div>
+      <div class="b-scale" aria-hidden="true"><span>0%</span><span>50%</span><span>100%</span></div>
+    </div>
+    <p class="verdict">49.3 Punkte vorn, mit einer 95%-Untergrenze von +42.8, bei weniger als einem Viertel der Gewichte.</p>
+  </figure>
+
+  <figure class="chart">
+    <figcaption>Zweistellige Subtraktion</figcaption>
+    <p class="sub">500 Dev-Aufgaben, 2 Seeds, je 4 Durchläufe. Die Einstellungen des Schaltkreises wurden von der Multiplikation übernommen, ohne Abstimmung.</p>
+    <div class="bars">
+      <div class="b-row base"><div class="b-label">SmolLM2 allein</div><div class="b-track" aria-hidden="true"><i style="--v:11.35"></i></div><div class="b-val">11.35%</div></div>
+      <div class="b-row"><div class="b-label">Gradienten-Implantat, 14 Neuronen</div><div class="b-track" aria-hidden="true"><i style="--v:48.15"></i></div><div class="b-val">48.15%</div></div>
+      <div class="b-row"><div class="b-label">Gradienten-Implantat, 77 Neuronen<small>133,056 Gewichte, abgestimmt</small></div><div class="b-track" aria-hidden="true"><i style="--v:65.0"></i></div><div class="b-val">65.0%</div></div>
+      <div class="b-row win"><div class="b-label">Schaltkreis-Implantat<small>32,446 Gewichte, ohne Abstimmung</small></div><div class="b-track" aria-hidden="true"><i style="--v:64.98"></i></div><div class="b-val">64.98%</div></div>
+      <div class="b-scale" aria-hidden="true"><span>0%</span><span>50%</span><span>100%</span></div>
+    </div>
+    <p class="verdict">Gleichstand mit einem Gradienten-Implantat, das viermal so groß ist, und etwa 17 Punkte vor dem mit 14 Neuronen.</p>
+  </figure>
+  <p>Die Subtraktionsregeln des Schaltkreises stammen aus 340 Aufgaben. Die Gradienten-Implantate trainierten auf 1,500, denselben 1,500, auf denen die Ziffernauslesungen des Schaltkreises angepasst wurden.</p>
+</section>
+
+<section id="transplants">
+  <p class="label">Noch in Arbeit</p>
+  <h2>Transplantationen aus größeren Modellen</h2>
+  <p>Wir versuchen auch, Fertigkeiten aus größeren Modellen herüberzuholen. Qwen3.5-4B hat in unserer Prüfung 300 von 300 dieser Multiplikationsaufgaben richtig gelöst, also haben wir versucht, eine Gruppe seiner Neuronen in SmolLM2 zu übersetzen. Unabhängig davon haben wir bei Textaufgaben auf Grundschulniveau ein Korrektursignal von Qwen3.5-4B auf Qwen3.5-0.8B abgebildet. Beides hat bisher nicht funktioniert, und beides ist noch offen. Bisher war das größere Modell vor allem als Wegweiser nützlich, um zu sehen, wo das kleine scheitert.</p>
+</section>
+
+<section id="scope">
+  <p class="label">Was ein Implantat ist</p>
+  <h2>Ein Rechner, gespeist von dem, was das Modell selbst ausliest</h2>
+  <p>Das Implantat rechnet selbst, mit Zahlen, die das Modell schon enthält. SmolLM2 lernt nicht multiplizieren. Das Implantat funktioniert bei der schlichten Form der Frage („Was ist 347 + 285?“), und die Schalter halten es bei Textaufgaben absichtlich aus. Das alles bezieht sich bisher auf ein einziges Modell.</p>
+  <p>Die Methode lässt sich auf neue Fertigkeiten übertragen. Die Regeln findet ein Programm aus 340 Beispielen, sie werden zu Tabellen kompiliert und für jede Fertigkeit mit denselben Einstellungen eingesetzt. Als Nächstes kommt die Lernseite: SmolLM2 dazu bringen, einen Fakt zu nutzen, den es im Prompt bekommt.</p>
+</section>
+
+<div class="next">
+  <span class="label">KI-Forschung, Bericht 01</span>
+  <a href="https://lf.wtf/de/research/">Alle Forschungsarbeiten</a>
+</div>
+</article>
+</main>
+
+<footer class="wrap"><span>© Levi Foster</span><span>Fort Worth, Texas</span></footer>
+<div id="language"></div>
+
+<nav class="i18n" aria-label="Language">
+  <a href="/research/circuit-grafts/" hreflang="en" lang="en">English</a>
+  <span aria-current="true" lang="de">Deutsch</span>
+  <a href="/es/research/circuit-grafts/" hreflang="es" lang="es">Español</a>
+  <a href="/es-mx/research/circuit-grafts/" hreflang="es-MX" lang="es-MX">Español (MX)</a>
+  <a href="/fr/research/circuit-grafts/" hreflang="fr" lang="fr">Français</a>
+  <a href="/it/research/circuit-grafts/" hreflang="it" lang="it">Italiano</a>
+  <a href="/ja/research/circuit-grafts/" hreflang="ja" lang="ja">日本語</a>
+  <a href="/ko/research/circuit-grafts/" hreflang="ko" lang="ko">한국어</a>
+  <a href="/nl/research/circuit-grafts/" hreflang="nl" lang="nl">Nederlands</a>
+  <a href="/pt-br/research/circuit-grafts/" hreflang="pt-BR" lang="pt-BR">Português (BR)</a>
+  <a href="/zh-hans/research/circuit-grafts/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+</nav>
+</body>
+</html>

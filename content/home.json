@@ -181,18 +181,18 @@
     "pt-BR": "Elétrons",
     "zh-Hans": "电子"
   },
-  "15, one per work": {
+  "16, one per work": {
     "kind": "text:dd",
-    "de": "15, eins pro Werk",
-    "es": "15, uno por obra",
-    "es-MX": "15, uno por obra",
-    "fr": "15, un par œuvre",
-    "it": "15, uno per opera",
-    "ja": "15、作品ごとに 1 つ",
-    "ko": "15, 작품마다 하나",
-    "nl": "15, één per werk",
-    "pt-BR": "15, um por obra",
-    "zh-Hans": "15，每件作品一个"
+    "de": "16, eins pro Werk",
+    "es": "16, uno por obra",
+    "es-MX": "16, uno por obra",
+    "fr": "16, un par œuvre",
+    "it": "16, uno per opera",
+    "ja": "16、作品ごとに 1 つ",
+    "ko": "16, 작품마다 하나",
+    "nl": "16, één per werk",
+    "pt-BR": "16, um por obra",
+    "zh-Hans": "16，每件作品一个"
   },
   "Shells": {
     "kind": "text:dt",
@@ -363,18 +363,18 @@
     "pt-BR": "Discord",
     "zh-Hans": "Discord"
   },
-  "15 elements": {
+  "16 elements": {
     "kind": "text:span",
-    "de": "15 Elemente",
-    "es": "15 elementos",
-    "es-MX": "15 elementos",
-    "fr": "15 éléments",
-    "it": "15 elementi",
-    "ja": "15 の元素",
-    "ko": "원소 15개",
-    "nl": "15 elementen",
-    "pt-BR": "15 elementos",
-    "zh-Hans": "15 种元素"
+    "de": "16 Elemente",
+    "es": "16 elementos",
+    "es-MX": "16 elementos",
+    "fr": "16 éléments",
+    "it": "16 elementi",
+    "ja": "16 の元素",
+    "ko": "원소 16개",
+    "nl": "16 elementen",
+    "pt-BR": "16 elementos",
+    "zh-Hans": "16 种元素"
   },
   "No. · shell": {
     "kind": "text:span",
@@ -453,6 +453,19 @@
     "nl": "Kunst",
     "pt-BR": "Arte",
     "zh-Hans": "艺术"
+  },
+  "Research": {
+    "kind": "text:li",
+    "de": "Forschung",
+    "es": "Investigación",
+    "es-MX": "Investigación",
+    "fr": "Recherche",
+    "it": "Ricerca",
+    "ja": "リサーチ",
+    "ko": "연구",
+    "nl": "Onderzoek",
+    "pt-BR": "Pesquisa",
+    "zh-Hans": "研究"
   },
   "Red Arrow Marketing": {
     "kind": "text:span",
@@ -649,6 +662,19 @@
     "pt-BR": "Teleframe",
     "zh-Hans": "Teleframe"
   },
+  "AI Research": {
+    "kind": "text:span",
+    "de": "KI-Forschung",
+    "es": "Investigación en IA",
+    "es-MX": "Investigación en IA",
+    "fr": "Recherche en IA",
+    "it": "Ricerca IA",
+    "ja": "AI研究",
+    "ko": "AI 연구",
+    "nl": "AI-onderzoek",
+    "pt-BR": "Pesquisa em IA",
+    "zh-Hans": "AI 研究"
+  },
   "Selected element": {
     "kind": "attr:aria-label",
     "de": "Ausgewähltes Element",
@@ -753,18 +779,18 @@
     "pt-BR": "redarrowmarketing.com",
     "zh-Hans": "redarrowmarketing.com"
   },
-  "Every element in full: the companies, the apps and games, and the art.": {
+  "Every element in full: the companies, the apps and games, the art and the research.": {
     "kind": "text:p",
-    "de": "Jedes Element vollständig: die Firmen, die Apps und Spiele und die Kunst.",
-    "es": "Cada elemento completo: las empresas, las apps y los juegos, y el arte.",
-    "es-MX": "Cada elemento completo: las empresas, las apps y los juegos, y el arte.",
-    "fr": "Chaque élément en entier : les entreprises, les apps et les jeux, et l'art.",
-    "it": "Ogni elemento per intero: le aziende, le app e i giochi, e l'arte.",
-    "ja": "すべての元素を詳しく：会社、アプリとゲーム、そしてアート。",
-    "ko": "모든 원소를 자세히: 회사, 앱과 게임, 그리고 아트.",
-    "nl": "Elk element volledig: de bedrijven, de apps en games, en de kunst.",
-    "pt-BR": "Cada elemento por inteiro: as empresas, os apps e jogos, e a arte.",
-    "zh-Hans": "每个元素的完整说明：公司、应用与游戏，以及艺术。"
+    "de": "Jedes Element vollständig: die Firmen, die Apps und Spiele, die Kunst und die Forschung.",
+    "es": "Cada elemento completo: las empresas, las apps y los juegos, el arte y la investigación.",
+    "es-MX": "Cada elemento completo: las empresas, las apps y los juegos, el arte y la investigación.",
+    "fr": "Chaque élément en entier : les entreprises, les apps et les jeux, l'art et la recherche.",
+    "it": "Ogni elemento per intero: le aziende, le app e i giochi, l'arte e la ricerca.",
+    "ja": "すべての元素を詳しく：会社、アプリとゲーム、アート、そしてリサーチ。",
+    "ko": "모든 원소를 자세히: 회사, 앱과 게임, 아트, 그리고 연구.",
+    "nl": "Elk element volledig: de bedrijven, de apps en games, de kunst en het onderzoek.",
+    "pt-BR": "Cada elemento por inteiro: as empresas, os apps e jogos, a arte e a pesquisa.",
+    "zh-Hans": "每个元素的完整说明：公司、应用与游戏、艺术，以及研究。"
   },
   "No.": {
     "kind": "text:span",
@@ -1415,6 +1441,58 @@
     "nl": "lf.wtf/teleframe",
     "pt-BR": "lf.wtf/teleframe",
     "zh-Hans": "lf.wtf/teleframe"
+  },
+  "Researcher": {
+    "kind": "text:span",
+    "de": "Forscher",
+    "es": "Investigador",
+    "es-MX": "Investigador",
+    "fr": "Chercheur",
+    "it": "Ricercatore",
+    "ja": "研究者",
+    "ko": "연구자",
+    "nl": "Onderzoeker",
+    "pt-BR": "Pesquisador",
+    "zh-Hans": "研究者"
+  },
+  "Lab write-ups": {
+    "kind": "text:span",
+    "de": "Laborberichte",
+    "es": "Informes de laboratorio",
+    "es-MX": "Reportes de laboratorio",
+    "fr": "Comptes rendus de labo",
+    "it": "Resoconti di laboratorio",
+    "ja": "ラボレポート",
+    "ko": "연구 노트",
+    "nl": "Labverslagen",
+    "pt-BR": "Relatórios de laboratório",
+    "zh-Hans": "实验报告"
+  },
+  "Lab write-ups on editing language models directly. First up: circuit grafts that took SmolLM2-135M from 21.3% to 83.1% on held-out multiplication, with no gradient training.": {
+    "kind": "text:p",
+    "de": "Laborberichte über das direkte Bearbeiten von Sprachmodellen. Den Anfang machen Schaltkreis-Implantate, die SmolLM2-135M bei zurückgehaltenen Multiplikationsaufgaben ohne Gradiententraining von 21.3% auf 83.1% brachten.",
+    "es": "Informes de laboratorio sobre la edición directa de modelos de lenguaje. El primero: injertos de circuitos que llevaron a SmolLM2-135M del 21.3% al 83.1% en problemas reservados de multiplicación, sin entrenamiento por gradiente.",
+    "es-MX": "Reportes de laboratorio sobre la edición directa de modelos de lenguaje. El primero: injertos de circuitos que llevaron a SmolLM2-135M del 21.3% al 83.1% en problemas reservados de multiplicación, sin entrenamiento por gradiente.",
+    "fr": "Comptes rendus de labo sur la modification directe de modèles de langage. Pour commencer : des greffes de circuits qui ont fait passer SmolLM2-135M de 21.3% à 83.1% en multiplication sur problèmes réservés, sans entraînement par gradient.",
+    "it": "Resoconti di laboratorio sulla modifica diretta dei modelli linguistici. Il primo: innesti di circuiti che hanno portato SmolLM2-135M dal 21.3% all'83.1% nella moltiplicazione su problemi riservati, senza addestramento con gradiente.",
+    "ja": "言語モデルを直接編集するラボレポート。第1弾は、勾配学習なしでSmolLM2-135Mのホールドアウトの掛け算を21.3%から83.1%に上げた回路グラフトです。",
+    "ko": "언어 모델을 직접 편집하는 연구 노트예요. 첫 주제는 경사 학습 없이 SmolLM2-135M의 홀드아웃 곱셈을 21.3%에서 83.1%로 끌어올린 회로 이식이에요.",
+    "nl": "Labverslagen over het direct bewerken van taalmodellen. Als eerste: circuit-enten die SmolLM2-135M van 21.3% naar 83.1% brachten bij achtergehouden vermenigvuldiging, zonder gradiënttraining.",
+    "pt-BR": "Relatórios de laboratório sobre a edição direta de modelos de linguagem. O primeiro: enxertos de circuito que levaram o SmolLM2-135M de 21.3% para 83.1% na multiplicação com problemas reservados, sem treino por gradiente.",
+    "zh-Hans": "关于直接编辑语言模型的实验报告。第一篇：电路嫁接在没有梯度训练的情况下，把 SmolLM2-135M 在留出乘法题上的得分从 21.3% 提高到 83.1%。"
+  },
+  "lf.wtf/research": {
+    "kind": "text:a",
+    "de": "lf.wtf/research",
+    "es": "lf.wtf/research",
+    "es-MX": "lf.wtf/research",
+    "fr": "lf.wtf/research",
+    "it": "lf.wtf/research",
+    "ja": "lf.wtf/research",
+    "ko": "lf.wtf/research",
+    "nl": "lf.wtf/research",
+    "pt-BR": "lf.wtf/research",
+    "zh-Hans": "lf.wtf/research"
   },
   "Sub-projects": {
     "kind": "text:h2",

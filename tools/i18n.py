@@ -76,6 +76,9 @@ PAGES = {
     "teleframe/thanks/index.html": "teleframe/thanks/",
     #: System Memory, a sub-project: an AI short film made with Claude Code and the Krea MCP. The film itself is on YouTube.
     "system-memory/index.html": "system-memory/",
+    #: AI Research, the lab write-ups division (element 16 on the home page). Index plus one page per post.
+    "research/index.html": "research/",
+    "research/circuit-grafts/index.html": "research/circuit-grafts/",
 }
 
 ATTRS = {"content", "alt", "title", "aria-label", "placeholder"}
@@ -272,7 +275,7 @@ def _apply_text(source, pairs):
 
 #: Nodes that describe something a reader consumes, and so have a language.
 LD_LANGUAGE_TYPES = {"WebPage", "ProfilePage", "WebSite", "MobileApplication", "SoftwareApplication",
-                     "CollectionPage", "AboutPage", "Article", "FAQPage"}
+                     "CollectionPage", "AboutPage", "Article", "FAQPage", "Blog", "BlogPosting"}
 
 
 def _apply_ld(source, table, hreflang):
@@ -405,6 +408,14 @@ def build_page(source, locale, page_url, table):
         # remains available, and visits to the bare game URL still autodetect.
         out = re.sub(r'href="https://riposte\.lf\.wtf/(?:\?lang=[^"&]+)?"',
                      f'href="https://riposte.lf.wtf/?lang={locale}"', out)
+
+    if locale != "en" and (page_url == "" or page_url.startswith("research/")):
+        # Home -> research index -> post and back stay in the visitor's language. Longest URL first.
+        for path in ("research/circuit-grafts/", "research/"):
+            out = out.replace(f'href="https://lf.wtf/{path}"', f'href="{_canonical(locale, path)}"')
+        if page_url.startswith("research/"):
+            out = out.replace('href="https://lf.wtf/"', f'href="{_canonical(locale, "")}"')
+            out = out.replace('href="https://lf.wtf/#works"', f'href="{_canonical(locale, "")}#works"')
 
     if page_url.startswith("teleframe/") and locale != "en":
         # The store pages link to each other with root-relative paths; keep buyers in their language.

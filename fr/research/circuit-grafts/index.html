@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-66ZSZNSB3X"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-66ZSZNSB3X');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Greffes de circuits : multiplication de SmolLM2-135M de 21.3% à 83.1% sans entraînement par gradient</title>
+<meta name="description" content="De petits circuits de règles greffés sur SmolLM2-135M ont fait monter cinq tests de maths sur problèmes réservés de 37 à 62 points. Aucun poids d'origine modifié, aucun entraînement par gradient, au plus 0.09% de poids ajoutés. Un compte rendu de labo de Levi Foster.">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#F3F2EE">
+<meta name="author" content="Levi Foster">
+<link rel="alternate" hreflang="en" href="https://lf.wtf/research/circuit-grafts/">
+<link rel="alternate" hreflang="de" href="https://lf.wtf/de/research/circuit-grafts/">
+<link rel="alternate" hreflang="es" href="https://lf.wtf/es/research/circuit-grafts/">
+<link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/research/circuit-grafts/">
+<link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/research/circuit-grafts/">
+<link rel="alternate" hreflang="it" href="https://lf.wtf/it/research/circuit-grafts/">
+<link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/research/circuit-grafts/">
+<link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/research/circuit-grafts/">
+<link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/research/circuit-grafts/">
+<link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/research/circuit-grafts/">
+<link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/research/circuit-grafts/">
+<link rel="alternate" hreflang="x-default" href="https://lf.wtf/research/circuit-grafts/">
+<link rel="canonical" href="https://lf.wtf/fr/research/circuit-grafts/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/dm-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+
+<meta property="og:title" content="Greffes de circuits : SmolLM2-135M de 21.3% à 83.1% en multiplication sur problèmes réservés">
+<meta property="og:description" content="De petits circuits de règles greffés sur un modèle de langage de 135M. Aucun poids d'origine modifié, aucun entraînement par gradient, au plus 0.09% de poids ajoutés.">
+<meta property="og:url" content="https://lf.wtf/fr/research/circuit-grafts/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Levi Foster">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="es_MX">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:image" content="https://lf.wtf/research/assets/og-circuit-grafts-1.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Greffes de circuits sur SmolLM2-135M : cinq tests de maths sur problèmes réservés, avant et après">
+<meta property="article:published_time" content="2026-11-07">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@cybermynd">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://lf.wtf/research/circuit-grafts/#webpage",
+      "url": "https://lf.wtf/research/circuit-grafts/",
+      "name": "Greffes de circuits sur SmolLM2-135M",
+      "isPartOf": {
+        "@id": "https://lf.wtf/#website"
+      },
+      "mainEntity": {
+        "@id": "https://lf.wtf/research/circuit-grafts/#post"
+      },
+      "breadcrumb": {
+        "@id": "https://lf.wtf/research/circuit-grafts/#breadcrumb"
+      },
+      "primaryImageOfPage": "https://lf.wtf/research/assets/og-circuit-grafts-1.png",
+      "inLanguage": "fr"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://lf.wtf/research/circuit-grafts/#post",
+      "url": "https://lf.wtf/research/circuit-grafts/",
+      "headline": "Greffes de circuits : SmolLM2-135M de 21.3% à 83.1% en multiplication sur problèmes réservés, sans entraînement par gradient",
+      "description": "De petits circuits de règles greffés sur SmolLM2-135M ont fait monter cinq tests de maths sur problèmes réservés de 37 à 62 points. Aucun poids d'origine modifié, aucun entraînement par gradient, au plus 0.09% de poids ajoutés.",
+      "image": "https://lf.wtf/research/assets/og-circuit-grafts-1.png",
+      "datePublished": "2026-11-07",
+      "dateModified": "2026-11-07",
+      "author": {
+        "@id": "https://lf.wtf/#levifoster"
+      },
+      "publisher": {
+        "@id": "https://lf.wtf/#levifoster"
+      },
+      "isPartOf": {
+        "@id": "https://lf.wtf/research/#blog"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Modification des poids dans les modèles de langage"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "SmolLM2-135M",
+          "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct",
+          "inLanguage": "fr"
+        }
+      ],
+      "inLanguage": "fr"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://lf.wtf/research/circuit-grafts/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Levi Foster",
+          "item": "https://lf.wtf/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Recherche en IA",
+          "item": "https://lf.wtf/research/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Greffes de circuits",
+          "item": "https://lf.wtf/research/circuit-grafts/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+@font-face{font-family:"Schibsted Grotesk";src:url(/assets/fonts/schibsted-grotesk.woff2) format("woff2");font-weight:400 900;font-display:swap}
+@font-face{font-family:"DM Mono";src:url(/assets/fonts/dm-mono-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"DM Mono";src:url(/assets/fonts/dm-mono-500.woff2) format("woff2");font-weight:500;font-display:swap}
+:root{--paper:#F3F2EE;--ink:#111;--white:#fff;--blue:#2F3BFF;--blue-lit:#8C95FF;--grey:#CFCDC6;--lab:#D9DCFF;--muted:#5B5953;
+--alone:#6F6C64;--other:#B3B0A7;
+--sans:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"DM Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;--w:1180px;--text:720px}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:14px/1.6 var(--mono)}
+a{color:inherit}
+a:hover{color:var(--blue)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 32px}
+
+/* bar */
+.bar{border-bottom:2px solid var(--ink)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:56px}
+.brand{font:800 20px/1 var(--sans);text-decoration:none;letter-spacing:-.01em}
+.bar nav{display:flex;gap:22px}
+.bar nav a{font-size:11px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:14px 0}
+
+.crumbs{padding-top:18px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.crumbs a{text-decoration:none;border-bottom:1px solid var(--grey)}
+.crumbs span[aria-current]{color:var(--ink)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:200px minmax(0,1fr);gap:40px;align-items:end;padding-top:28px;padding-bottom:32px}
+.h-tile{container-type:inline-size;aspect-ratio:1;border:4px solid var(--ink);background:var(--lab);padding:9%;display:flex;flex-direction:column;justify-content:space-between}
+.ht-top{display:flex;justify-content:space-between;font-size:max(11px,8cqi);line-height:1}
+.ht-sym{margin:0;font:800 46cqi/.85 var(--sans);letter-spacing:-.03em}
+.ht-name{font-size:max(9px,7.4cqi);letter-spacing:.06em;text-transform:uppercase;line-height:1.25}
+.kicker{margin:0 0 14px;font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+h1{margin:0;font:800 clamp(48px,8vw,104px)/.9 var(--sans);letter-spacing:-.035em;text-transform:uppercase}
+.dek{margin:18px 0 0;max-width:680px;font:400 clamp(18px,1.9vw,22px)/1.4 var(--sans)}
+.byline{margin:18px 0 0;display:flex;flex-wrap:wrap;gap:4px 18px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.byline a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--ink)}
+
+/* stat strip */
+.stats{margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;border-top:4px solid var(--ink);border-bottom:2px solid var(--ink);padding:0}
+.stats div{padding:18px 18px 18px 0;display:flex;flex-direction:column;gap:6px;min-width:0}
+.stats div+div{padding-left:18px;border-left:1px solid var(--ink)}
+.stats dd{order:-1;margin:0;font:800 clamp(28px,3.4vw,44px)/1 var(--sans);letter-spacing:-.02em;white-space:nowrap}
+.stats dd.hi{color:var(--blue)}
+.stats dt{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);line-height:1.45}
+
+/* article */
+.post{padding-top:40px;padding-bottom:24px}
+.post section{max-width:var(--text);margin:0 0 48px;scroll-margin-top:16px}
+.post section.wide{max-width:none}
+.post section.wide>h2,.post section.wide>p,.post section.wide>ol,.post section.wide>ul,.post section.wide>.label{max-width:var(--text)}
+.label{margin:0 0 8px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.post h2{margin:0 0 16px;font:800 clamp(28px,3.6vw,40px)/1.02 var(--sans);letter-spacing:-.02em}
+.post h3{margin:28px 0 10px;font:700 20px/1.2 var(--sans);letter-spacing:-.01em}
+.post p,.post li{font:400 18px/1.62 var(--sans)}
+.post p{margin:0 0 16px}
+.post ol,.post ul{margin:0 0 16px;padding-left:22px}
+.post li{margin:0 0 10px;padding-left:4px}
+.post li::marker{font:500 13px var(--mono)}
+.quote{margin:8px 0 20px;padding:4px 0 4px 18px;border-left:4px solid var(--blue);font:500 20px/1.45 var(--sans)}
+.steps{list-style:none;padding:0!important;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:48px minmax(0,1fr);gap:14px;padding:14px 0 14px;margin:0;border-top:1px solid var(--ink)}
+.steps li:last-child{border-bottom:1px solid var(--ink)}
+.steps li::before{content:counter(s,decimal-leading-zero);font:500 13px/1.9 var(--mono);color:var(--muted)}
+.steps b{display:block;font:700 19px/1.3 var(--sans);margin-bottom:4px}
+.note{font:400 13px/1.6 var(--mono)!important;color:var(--muted)}
+.post .label{font:400 11px/1.6 var(--mono);letter-spacing:.16em}
+.post .chart .sub{font:400 12px/1.5 var(--mono);margin:0 0 16px}
+.post .chart .verdict{font:500 13px/1.5 var(--mono);margin:14px 0 0}
+.post .key li{font:400 11px/1.4 var(--mono);margin:0;padding:0}
+
+/* charts */
+.chart{margin:24px 0 20px;border:4px solid var(--ink);background:var(--white);padding:22px 24px 18px}
+.chart figcaption{margin:0 0 4px;font:800 22px/1.15 var(--sans);letter-spacing:-.01em}
+.chart .sub{margin:0 0 16px;font-size:12px;color:var(--muted)}
+.key{display:flex;flex-wrap:wrap;gap:6px 22px;margin:0 0 14px;padding:0;list-style:none;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.key li{display:flex;align-items:center;gap:8px}
+.k{display:inline-block;width:12px;height:12px;border-radius:50%}
+.k-alone{background:var(--alone)}.k-graft{background:var(--blue)}.k-scr{border:2px solid var(--ink);background:var(--white)}
+
+.dumb{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr) 150px;column-gap:20px}
+.d-row{display:contents}
+.d-label,.d-track,.d-val{border-top:1px solid var(--grey);padding:12px 0;min-width:0}
+.d-label b{display:block;font:700 16px/1.25 var(--sans)}
+.d-label span{font-size:12px;color:var(--muted)}
+.d-track{position:relative;min-height:56px;background:linear-gradient(90deg,var(--grey) 1px,transparent 1px) 0 0/25% 100% repeat-x;background-position:-.5px 0}
+.d-track::after{content:"";position:absolute;right:0;top:12px;bottom:12px;width:1px;background:var(--grey)}
+.d-track i{position:absolute;top:50%;display:block}
+.d-line{left:calc(var(--a)*1%);width:calc((var(--b) - var(--a))*1%);height:3px;margin-top:-1.5px;background:var(--blue);opacity:.35}
+.d-a,.d-b,.d-s{width:16px;height:16px;margin:-8px 0 0 -8px;border-radius:50%;box-shadow:0 0 0 2px var(--white)}
+.d-a{left:calc(var(--a)*1%);background:var(--alone)}
+.d-b{left:calc(var(--b)*1%);background:var(--blue);width:18px;height:18px;margin:-9px 0 0 -9px}
+.d-s{left:calc(var(--s)*1%);width:12px;height:12px;margin:-6px 0 0 -6px;border:2px solid var(--ink);background:var(--white);box-shadow:none}
+.d-val{text-align:right;font-size:13px;line-height:1.45}
+.d-val b{display:block;font:700 17px/1.3 var(--mono);color:var(--blue)}
+.d-val span{color:var(--muted);font-size:12px}
+.d-axis{display:contents}
+.d-axis>span:first-child,.d-axis>span:last-child{border-top:1px solid var(--ink)}
+.d-ticks{position:relative;height:24px;border-top:1px solid var(--ink);font-size:11px;color:var(--muted)}
+.d-ticks span{position:absolute;top:4px;transform:translateX(-50%)}
+.d-ticks span:first-child{transform:none}.d-ticks span:last-child{transform:translateX(-100%)}
+
+.bars{display:grid;grid-template-columns:minmax(0,250px) minmax(0,1fr) 64px;column-gap:16px;row-gap:0}
+.b-row{display:contents}
+.b-label,.b-track,.b-val{padding:9px 0;border-top:1px solid var(--grey);min-width:0}
+.b-label{font-size:13px;line-height:1.35}
+.b-label small{display:block;font-size:11px;color:var(--muted)}
+.b-track{position:relative;background:linear-gradient(90deg,var(--grey) 1px,transparent 1px) 0 0/25% 100% repeat-x}
+.b-track i{position:absolute;left:0;top:50%;height:20px;margin-top:-10px;width:calc(var(--v)*1%);background:var(--other)}
+.b-row.base i{background:var(--alone)}
+.b-row.win i{background:var(--blue)}
+.b-row.win .b-label{font-weight:500}
+.b-val{text-align:right;font:500 14px/1.6 var(--mono)}
+.b-row.win .b-val{color:var(--blue)}
+.b-scale{grid-column:2;display:flex;justify-content:space-between;border-top:1px solid var(--ink);padding-top:4px;font-size:11px;color:var(--muted)}
+.chart .verdict{margin:14px 0 0;font:500 13px/1.5 var(--mono)}
+
+.table-wrap{margin:8px 0 20px;overflow-x:auto;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:13px}
+caption{text-align:left;padding:12px 0 8px;font:700 16px/1.3 var(--sans)}
+th,td{padding:10px 12px 10px 0;text-align:right;vertical-align:top;border-top:1px solid var(--grey)}
+th:first-child,td:first-child{text-align:left}
+thead th{font-weight:400;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);border-top:0;vertical-align:bottom}
+td small{display:block;color:var(--muted);font-size:11px}
+td.hi{color:var(--blue);font-weight:500}
+
+.next{border-top:4px solid var(--ink);padding-top:22px;margin-top:8px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.next a{display:inline-flex;align-items:center;min-height:48px;padding:0 20px;background:var(--ink);color:var(--paper);text-decoration:none;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.next a:hover{background:var(--blue);color:#fff}
+footer.wrap{margin-top:40px;padding-top:20px;padding-bottom:8px;border-top:2px solid var(--ink);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* Kana, hangul and hanzi run wider and taller than the Latin caps this was tuned on. */
+html[lang="ja"] h1,html[lang="ko"] h1,html[lang="zh-Hans"] h1{font-size:clamp(40px,6.4vw,84px);line-height:1.08;letter-spacing:0}
+@media (max-width:860px){
+.dumb{grid-template-columns:minmax(0,1fr) auto;grid-auto-flow:row dense}
+.d-label{grid-column:1;padding-bottom:4px}
+.d-val{grid-column:2;padding-bottom:4px}
+.d-track{grid-column:1/3;border-top:0;padding-top:0;min-height:40px}
+.d-axis>span:first-child,.d-axis>span:last-child{display:none}
+.d-ticks{grid-column:1/3}
+.bars{grid-template-columns:minmax(0,1fr) 60px}
+.b-label{grid-column:1/3;padding-bottom:2px}
+.b-track{grid-column:1;border-top:0;min-height:30px;padding:0}
+.b-val{grid-column:2;border-top:0;padding-top:2px}
+.b-scale{grid-column:1}
+}
+@media (max-width:760px){
+.wrap{padding-left:16px;padding-right:16px}
+.bar nav a:not(.to-lang){display:none}
+.hero{grid-template-columns:96px minmax(0,1fr);gap:18px;align-items:start;padding-top:18px}
+.h-tile{border-width:3px}
+.hero .h-text{display:contents}
+.kicker{grid-column:2;align-self:end;margin:0}
+h1{grid-column:1/3;font-size:clamp(40px,13vw,64px)}
+.dek,.byline{grid-column:1/3;margin-top:0}
+.stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+.stats div{padding:14px 12px 14px 0!important;border-left:0!important}
+.stats div:first-child,.stats div:nth-child(4){grid-column:1/3}
+.stats div+div{border-top:1px solid var(--ink)}
+.stats div:nth-child(3){padding-left:12px!important;border-left:1px solid var(--ink)!important}
+.post{padding-top:28px}
+.post p,.post li{font-size:17px}
+.chart{padding:16px 14px 14px;border-width:3px;margin-left:-4px;margin-right:-4px}
+.steps li{grid-template-columns:34px minmax(0,1fr)}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* i18n:start */
+.i18n{max-width:var(--w,initial);margin:0 auto;padding:26px 22px 40px;display:flex;flex-wrap:wrap;
+gap:6px 14px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.55;
+justify-content:center}
+.i18n a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+.i18n a:hover{border-bottom-color:currentColor}
+.i18n span[aria-current]{opacity:.5;cursor:default}
+/* i18n:end */
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="https://lf.wtf/fr/">lf.wtf</a>
+    <nav aria-label="Sections">
+      <a href="https://lf.wtf/fr/research/">Recherche en IA</a>
+      <a href="#results">Résultats</a>
+      <a href="#gradient">Face au gradient</a>
+      <a class="to-lang" href="#language">Langue</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<nav class="crumbs wrap" aria-label="Fil d'Ariane"><a href="https://lf.wtf/fr/">Levi Foster</a> / <a href="https://lf.wtf/fr/research/">Recherche en IA</a> / <span aria-current="page">Greffes de circuits</span></nav>
+
+<header class="hero wrap">
+  <div class="h-tile">
+    <span class="ht-top" aria-hidden="true"><span>16.01</span><span>lab</span></span>
+    <span class="ht-sym" aria-hidden="true">Cg</span>
+    <span class="ht-name">Compte rendu de labo 01</span>
+  </div>
+  <div class="h-text">
+    <p class="kicker">Recherche en IA · SmolLM2-135M</p>
+    <h1>Greffes de circuits</h1>
+    <p class="dek">Nous avons câblé de petits circuits de règles dans SmolLM2-135M, un modèle de langage de 135 millions de paramètres. Sur des problèmes réservés et scellés, son score en multiplication est passé de 21.3% à 83.1%. Aucun poids d'origine n'a été modifié, et rien n'a été entraîné par descente de gradient.</p>
+    <p class="byline"><a rel="author" href="https://lf.wtf/fr/">Levi Foster</a><time datetime="2026-11-07">7 novembre 2026</time></p>
+  </div>
+</header>
+
+<div class="wrap">
+<dl class="stats">
+  <div><dt>Multiplication, problèmes réservés</dt><dd class="hi">21.3% → 83.1%</dd></div>
+  <div><dt>Poids d'origine modifiés</dt><dd>0</dd></div>
+  <div><dt>Plus grande greffe, part du modèle</dt><dd>0.09%</dd></div>
+  <div><dt>Points d'avance sur une greffe par gradient de même taille</dt><dd>+57.9</dd></div>
+</dl>
+</div>
+
+<article class="post wrap">
+
+<section id="theory">
+  <p class="label">Le point de départ</p>
+  <h2>Une règle peut servir à de nombreux faits</h2>
+  <p>Je veux savoir jusqu'où on peut pousser un petit modèle ouvert vers le niveau des modèles de pointe en modifiant directement ses poids et en y greffant de nouveaux éléments, sans gros cycle d'entraînement. L'entraînement est la voie habituelle. On fait passer des milliards de questions et de réponses dans un modèle, et la descente de gradient trouve les règles toute seule. Mais on peut aussi ouvrir un modèle, lire ce qu'il contient au milieu d'un problème, et le modifier. Alors, peut-on écrire certaines de ces règles à la main ?</p>
+  <p>Mon hypothèse de travail, c'est qu'une grande partie du raisonnement repose sur des ensembles de règles, où une seule règle sert à de nombreux faits. Poser la retenue est le cas le plus simple. Personne n'apprend chaque somme par cœur, parce qu'une seule règle de retenue les couvre toutes, à chaque position de chiffre. Dans mes notes, je l'ai formulé ainsi :</p>
+  <p class="quote">Peut-être qu'une règle tirée d'un fait coïnciderait avec la règle d'un autre.</p>
+  <p>Pour un petit modèle, stocker des faits coûte cher, et les règles coûtent peu. Le premier circuit de multiplication de ce compte rendu est conçu pour tous les problèmes de 2 × 10 à 9 × 99, et il fait 25,270 poids.</p>
+  <p>Les mêmes conversations ont fait émerger une deuxième idée qui va avec la première : un ensemble de règles d'apprentissage pour acquérir quelque chose de nouveau, à côté de règles logiques pour appliquer ce que l'on sait déjà. Ce compte rendu porte sur le côté logique.</p>
+</section>
+
+<section id="digits">
+  <p class="label">Ce que le modèle a déjà</p>
+  <h2>Les chiffres sont là</h2>
+  <p>Avant de construire quoi que ce soit, nous avons regardé ce que SmolLM2 contient au moment où il commence à écrire une réponse. Une lecture linéaire de son état caché à la position de la réponse, ajustée par moindres carrés, extrait les chiffres des deux nombres presque parfaitement. Pour l'addition à trois chiffres, une seule couche ne suffisait pas, mais en combinant les couches 14, 20 et 21, on lit chaque chiffre à 99% sur des problèmes nouveaux.</p>
+  <p>Le modèle a donc bien lu la question. Ce qu'il ne sait pas faire de façon fiable, c'est combiner les chiffres : la retenue, l'emprunt, les tables de multiplication. C'est cette étape de combinaison que nous fournissons.</p>
+</section>
+
+<section id="how">
+  <p class="label">Comment fonctionne une greffe</p>
+  <h2>Quatre éléments, aucun entraîné par descente de gradient</h2>
+  <ol class="steps">
+    <li><div><b>Lecture</b>Une lecture linéaire pour chaque chiffre des deux nombres, tirée de l'état caché du modèle lui-même.</div></li>
+    <li><div><b>Règles</b>Une petite table de correspondance pour chaque chiffre de la réponse. Le chiffre des unités vient des deux chiffres des unités ; le chiffre des dizaines vient des chiffres des dizaines plus la retenue, et ainsi de suite.</div></li>
+    <li><div><b>Écriture</b>Une poussée vers le bon token de chiffre, dans la dernière couche du modèle. Le modèle écrit toujours sa propre réponse. La greffe fait seulement pencher la balance sur le chiffre qui vient ensuite.</div></li>
+    <li><div><b>Interrupteurs</b>Deux interrupteurs ajustés décident quand la greffe est active. Ils sont ajustés pour ne se déclencher que pendant que le modèle écrit la réponse à ce type de problème, et pour rester éteints sur les autres maths, les problèmes à énoncé, le code et le texte ordinaire.</div></li>
+  </ol>
+  <p>Les lectures et les interrupteurs sont ajustés par moindres carrés en forme fermée, et les tables de règles sont écrites par un programme (à la main pour la première greffe de multiplication). Le fichier du modèle de base n'est jamais touché. Chaque greffe est ajoutée à côté.</p>
+</section>
+
+<section id="evolution">
+  <p class="label">Comment ça a évolué</p>
+  <h2>D'une greffe à un pipeline</h2>
+  <ol class="steps">
+    <li><div><b>Greffe de neurones</b>Le premier essai a ajouté 24 nouveaux neurones à la dernière couche pour fournir la retenue de l'addition à deux chiffres. Il a tenu sur des problèmes scellés, +19.7 points. Il fonctionnait en infléchissant légèrement l'arithmétique du modèle lui-même, donc l'étape suivante était de faire le calcul directement.</div></li>
+    <li><div><b>Circuit câblé à la main</b>Pour la multiplication, nous avons écrit les tables de règles à la main et nous leur avons fourni les lectures de chiffres du modèle lui-même. La première version a obtenu 83.5% sur des problèmes réservés et scellés, contre 21.3% avant. Une deuxième version, avec de meilleurs interrupteurs, a obtenu 83.1%, et sa pire variation sur les autres maths était de −0.75 points.</div></li>
+    <li><div><b>Règles trouvées par un programme</b>Un programme chargé de trouver des règles a reçu 340 problèmes résolus, sous forme de chiffres et de réponses. Pour chaque chiffre de la réponse, il a cherché le plus petit ensemble d'entrées qui le détermine. Il a trouvé seul la retenue de l'addition, l'emprunt de la soustraction et la chaîne de retenues de la multiplication. Il a aussi trouvé que le chiffre des dizaines suit la règle des unités, réutilisée sur les chiffres des dizaines, plus une étape de retenue : une seule règle qui sert à plusieurs chiffres, c'est-à-dire l'idée de départ. Son circuit de multiplication a obtenu 82.7% sur problèmes réservés, à moins d'un demi-point de celui câblé à la main.</div></li>
+    <li><div><b>Même pipeline, nouvelles compétences</b>La soustraction et l'addition à deux chiffres sont passées par le même script, avec des réglages copiés de la multiplication et sans ajustement. L'addition à trois chiffres a demandé trois correctifs, chacun testé avant l'ouverture de son jeu réservé : la lecture combinée sur trois couches, un deuxième interrupteur, et une intensité de poussée fixée pour chaque position de chiffre.</div></li>
+  </ol>
+</section>
+
+<section id="results" class="wide">
+  <p class="label">Résultats</p>
+  <h2>Cinq compétences, sur des problèmes jamais utilisés pour ajuster</h2>
+  <p>Les problèmes réservés de chaque compétence ont été mis de côté avant toute construction, et rien n'a été ajusté dessus. Chaque score repose sur deux graines et quatre exécutions par problème, avec les mêmes réglages d'échantillonnage pour le modèle seul et avec la greffe. Le jeu de multiplication a été ouvert une fois pour la première version câblée à la main, puis une fois de plus pour les deux versions finales.</p>
+
+  <figure class="chart">
+    <figcaption>Exactitude sur problèmes réservés, SmolLM2-135M</figcaption>
+    <p class="sub">Part des problèmes avec une réponse exactement juste. 140 problèmes pour la multiplication, 500 pour les autres.</p>
+    <ul class="key">
+      <li><span class="k k-alone" aria-hidden="true"></span>SmolLM2 seul</li>
+      <li><span class="k k-graft" aria-hidden="true"></span>Avec la greffe</li>
+      <li><span class="k k-scr" aria-hidden="true"></span>Même greffe, câblage mélangé</li>
+    </ul>
+    <div class="dumb">
+      <div class="d-row">
+        <div class="d-label"><b>Multiplication</b><span>7 × 48, règles câblées à la main</span></div>
+        <div class="d-track" aria-hidden="true" style="--a:21.3;--b:83.1;--s:2.4"><i class="d-line"></i><i class="d-s"></i><i class="d-a"></i><i class="d-b"></i></div>
+        <div class="d-val"><b>21.3% → 83.1%</b><span>+61.8</span></div>
+      </div>
+      <div class="d-row">
+        <div class="d-label"><b>Multiplication</b><span>7 × 48, règles trouvées par un programme</span></div>
+        <div class="d-track" aria-hidden="true" style="--a:21.3;--b:82.7;--s:6.3"><i class="d-line"></i><i class="d-s"></i><i class="d-a"></i><i class="d-b"></i></div>
+        <div class="d-val"><b>21.3% → 82.7%</b><span>+61.3</span></div>
+      </div>
+      <div class="d-row">
+        <div class="d-label"><b>Soustraction, deux chiffres</b><span>83 − 27, règles trouvées par un programme</span></div>
+        <div class="d-track" aria-hidden="true" style="--a:11.3;--b:68.3;--s:7.8"><i class="d-line"></i><i class="d-s"></i><i class="d-a"></i><i class="d-b"></i></div>
+        <div class="d-val"><b>11.3% → 68.3%</b><span>+57.1</span></div>
+      </div>
+      <div class="d-row">
+        <div class="d-label"><b>Addition, deux chiffres</b><span>38 + 47, règles trouvées par un programme</span></div>
+        <div class="d-track" aria-hidden="true" style="--a:49.7;--b:86.5;--s:16.7"><i class="d-line"></i><i class="d-s"></i><i class="d-a"></i><i class="d-b"></i></div>
+        <div class="d-val"><b>49.7% → 86.5%</b><span>+36.8</span></div>
+      </div>
+      <div class="d-row">
+        <div class="d-label"><b>Addition, trois chiffres</b><span>347 + 285, règles trouvées par un programme</span></div>
+        <div class="d-track" aria-hidden="true" style="--a:26.1;--b:83.7;--s:21.4"><i class="d-line"></i><i class="d-s"></i><i class="d-a"></i><i class="d-b"></i></div>
+        <div class="d-val"><b>26.1% → 83.7%</b><span>+57.6</span></div>
+      </div>
+      <div class="d-axis" aria-hidden="true"><span></span><div class="d-ticks"><span style="left:0">0%</span><span style="left:25%">25%</span><span style="left:50%">50%</span><span style="left:75%">75%</span><span style="left:100%">100%</span></div><span></span></div>
+    </div>
+  </figure>
+
+  <div class="table-wrap" tabindex="0" role="region" aria-labelledby="t-results">
+    <table>
+      <caption id="t-results">Les mêmes résultats sous forme de tableau</caption>
+      <thead>
+        <tr><th scope="col">Compétence</th><th scope="col">Problèmes</th><th scope="col">SmolLM2 seul</th><th scope="col">Avec la greffe</th><th scope="col">Gain, points (borne inférieure à 95%)</th><th scope="col">Câblage mélangé</th><th scope="col">Poids ajoutés</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Multiplication, règles câblées à la main<small>7 × 48</small></td><td>140</td><td>21.3%</td><td class="hi">83.1%</td><td>+61.8 (+56.1)</td><td>2.4%</td><td>25,270<small>0.019%</small></td></tr>
+        <tr><td>Multiplication, règles trouvées par un programme<small>7 × 48</small></td><td>140</td><td>21.3%</td><td class="hi">82.7%</td><td>+61.3 (+55.5)</td><td>6.3%</td><td>32,519<small>0.024%</small></td></tr>
+        <tr><td>Soustraction, deux chiffres<small>83 − 27</small></td><td>500</td><td>11.3%</td><td class="hi">68.3%</td><td>+57.1 (+54.0)</td><td>7.8%</td><td>32,446<small>0.024%</small></td></tr>
+        <tr><td>Addition, deux chiffres<small>38 + 47</small></td><td>500</td><td>49.7%</td><td class="hi">86.5%</td><td>+36.8 (+33.8)</td><td>16.7%</td><td>32,476<small>0.024%</small></td></tr>
+        <tr><td>Addition, trois chiffres<small>347 + 285</small></td><td>500</td><td>26.1%</td><td class="hi">83.7%</td><td>+57.6 (+54.6)</td><td>21.4%</td><td>121,198<small>0.090%</small></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <ul>
+    <li>Aucun poids d'origine n'a été modifié, et il n'y a eu aucun entraînement par gradient. Chaque greffe ajoute de 25,270 à 121,198 poids, soit 0.019% à 0.090% du modèle. Le plafond que nous nous étions fixé était de 0.1%.</li>
+    <li>Le contrôle mélangé est la même greffe avec son câblage brassé au hasard. Sur chaque compétence, il a obtenu un score égal ou inférieur à celui du modèle seul, de 2.4% à 21.4%, donc les poids en plus ne font rien sans les bonnes règles.</li>
+    <li>Les trois greffes à deux chiffres (multiplication, soustraction et addition) fonctionnent aussi ensemble dans un seul modèle, 92,496 poids au total. Chacune a conservé son gain sur les problèmes de développement. La pire variation sur les autres maths était de −0.25 points, et 200 prompts sans rapport sur 200 ont donné la même réponse qu'avant.</li>
+  </ul>
+  <p class="note">Les gains sont appariés par problème, avec une borne inférieure bootstrap unilatérale à 95%. Le contrôle des effets secondaires couvre huit autres jeux d'arithmétique et de problèmes à énoncé, plus GSM8K et du code. Les prompts sans rapport sont 200 prompts IFEval, avec des réponses en décodage glouton. Les règles et les prédictions de chaque exécution ont été notées avant son résultat.</p>
+</section>
+
+<section id="gradient" class="wide">
+  <p class="label">Face à l'entraînement par gradient</p>
+  <h2>Trois face-à-face</h2>
+  <p>L'entraînement par gradient est la méthode standard pour ajouter une compétence, nous l'avons donc pris comme concurrent. Chaque greffe par gradient a été ajustée sur une grille de réglages avant son test.</p>
+
+  <figure class="chart">
+    <figcaption>Multiplication, problèmes réservés scellés</figcaption>
+    <p class="sub">140 problèmes, 2 graines, 4 exécutions chacun. Le premier circuit câblé à la main face à deux greffes entraînées par gradient et ajustées.</p>
+    <div class="bars">
+      <div class="b-row base"><div class="b-label">SmolLM2 seul</div><div class="b-track" aria-hidden="true"><i style="--v:21.3"></i></div><div class="b-val">21.3%</div></div>
+      <div class="b-row"><div class="b-label">Greffe par gradient, même taille<small>14 neurones</small></div><div class="b-track" aria-hidden="true"><i style="--v:25.6"></i></div><div class="b-val">25.6%</div></div>
+      <div class="b-row"><div class="b-label">Greffe par gradient au plafond de 0.1%<small>77 neurones</small></div><div class="b-track" aria-hidden="true"><i style="--v:23.7"></i></div><div class="b-val">23.7%</div></div>
+      <div class="b-row win"><div class="b-label">Greffe de circuit<small>25,270 poids, sans gradient</small></div><div class="b-track" aria-hidden="true"><i style="--v:83.5"></i></div><div class="b-val">83.5%</div></div>
+      <div class="b-scale" aria-hidden="true"><span>0%</span><span>50%</span><span>100%</span></div>
+    </div>
+    <p class="verdict">Le circuit avait 57.9 et 59.8 points d'avance.</p>
+  </figure>
+
+  <figure class="chart">
+    <figcaption>Multiplication face au fine-tuning LoRA</figcaption>
+    <p class="sub">140 problèmes de développement, 2 graines, 4 exécutions chacun. LoRA a utilisé le meilleur réglage issu d'une recherche par grille.</p>
+    <div class="bars">
+      <div class="b-row base"><div class="b-label">SmolLM2 seul</div><div class="b-track" aria-hidden="true"><i style="--v:28.5"></i></div><div class="b-val">28.5%</div></div>
+      <div class="b-row"><div class="b-label">Fine-tuning LoRA<small>115,200 poids entraînés</small></div><div class="b-track" aria-hidden="true"><i style="--v:39.4"></i></div><div class="b-val">39.4%</div></div>
+      <div class="b-row win"><div class="b-label">Greffe de circuit<small>25,270 poids, sans gradient</small></div><div class="b-track" aria-hidden="true"><i style="--v:88.7"></i></div><div class="b-val">88.7%</div></div>
+      <div class="b-scale" aria-hidden="true"><span>0%</span><span>50%</span><span>100%</span></div>
+    </div>
+    <p class="verdict">49.3 points d'avance, avec une borne inférieure à 95% de +42.8, en utilisant moins d'un quart des poids.</p>
+  </figure>
+
+  <figure class="chart">
+    <figcaption>Soustraction à deux chiffres</figcaption>
+    <p class="sub">500 problèmes de développement, 2 graines, 4 exécutions chacun. Les réglages du circuit ont été copiés de la multiplication, sans ajustement.</p>
+    <div class="bars">
+      <div class="b-row base"><div class="b-label">SmolLM2 seul</div><div class="b-track" aria-hidden="true"><i style="--v:11.35"></i></div><div class="b-val">11.35%</div></div>
+      <div class="b-row"><div class="b-label">Greffe par gradient, 14 neurones</div><div class="b-track" aria-hidden="true"><i style="--v:48.15"></i></div><div class="b-val">48.15%</div></div>
+      <div class="b-row"><div class="b-label">Greffe par gradient, 77 neurones<small>133,056 poids, avec ajustement</small></div><div class="b-track" aria-hidden="true"><i style="--v:65.0"></i></div><div class="b-val">65.0%</div></div>
+      <div class="b-row win"><div class="b-label">Greffe de circuit<small>32,446 poids, sans ajustement</small></div><div class="b-track" aria-hidden="true"><i style="--v:64.98"></i></div><div class="b-val">64.98%</div></div>
+      <div class="b-scale" aria-hidden="true"><span>0%</span><span>50%</span><span>100%</span></div>
+    </div>
+    <p class="verdict">Égalité avec une greffe par gradient quatre fois plus grande, et environ 17 points d'avance sur celle à 14 neurones.</p>
+  </figure>
+  <p>Les règles de soustraction du circuit viennent de 340 problèmes. Les greffes par gradient se sont entraînées sur 1,500, les mêmes 1,500 sur lesquels les lectures de chiffres du circuit ont été ajustées.</p>
+</section>
+
+<section id="transplants">
+  <p class="label">Encore en cours</p>
+  <h2>Transplantations depuis des modèles plus grands</h2>
+  <p>Nous essayons aussi de transférer des compétences depuis des modèles plus grands. Qwen3.5-4B a réussi 300 de ces problèmes de multiplication sur 300 lors de notre vérification, alors nous avons essayé de traduire un ensemble de ses neurones dans SmolLM2. Par ailleurs, nous avons transposé un signal de correction de Qwen3.5-4B vers Qwen3.5-0.8B sur des problèmes à énoncé de niveau école primaire. Aucun des deux n'a encore fonctionné, et les deux pistes restent ouvertes. Jusqu'ici, le grand modèle a surtout servi de guide pour voir où le petit lâche.</p>
+</section>
+
+<section id="scope">
+  <p class="label">Ce qu'est une greffe</p>
+  <h2>Une calculatrice alimentée par la lecture du modèle lui-même</h2>
+  <p>La greffe fait le calcul elle-même, à partir de nombres que le modèle contient déjà. SmolLM2 n'apprend pas à multiplier. La greffe fonctionne sur la forme simple de la question (« Combien font 347 + 285 ? »), et les interrupteurs la gardent éteinte sur les problèmes à énoncé, volontairement. Tout cela ne porte que sur un seul modèle pour l'instant.</p>
+  <p>La méthode se transpose à de nouvelles compétences. Les règles sont trouvées par un programme à partir de 340 exemples, compilées en tables, puis mises en place avec les mêmes réglages pour chaque compétence. Prochaine étape, le côté apprentissage : amener SmolLM2 à utiliser un fait qu'on lui donne dans le prompt.</p>
+</section>
+
+<div class="next">
+  <span class="label">Recherche en IA, compte rendu 01</span>
+  <a href="https://lf.wtf/fr/research/">Toute la recherche</a>
+</div>
+</article>
+</main>
+
+<footer class="wrap"><span>© Levi Foster</span><span>Fort Worth, Texas</span></footer>
+<div id="language"></div>
+
+<nav class="i18n" aria-label="Language">
+  <a href="/research/circuit-grafts/" hreflang="en" lang="en">English</a>
+  <a href="/de/research/circuit-grafts/" hreflang="de" lang="de">Deutsch</a>
+  <a href="/es/research/circuit-grafts/" hreflang="es" lang="es">Español</a>
+  <a href="/es-mx/research/circuit-grafts/" hreflang="es-MX" lang="es-MX">Español (MX)</a>
+  <span aria-current="true" lang="fr">Français</span>
+  <a href="/it/research/circuit-grafts/" hreflang="it" lang="it">Italiano</a>
+  <a href="/ja/research/circuit-grafts/" hreflang="ja" lang="ja">日本語</a>
+  <a href="/ko/research/circuit-grafts/" hreflang="ko" lang="ko">한국어</a>
+  <a href="/nl/research/circuit-grafts/" hreflang="nl" lang="nl">Nederlands</a>
+  <a href="/pt-br/research/circuit-grafts/" hreflang="pt-BR" lang="pt-BR">Português (BR)</a>
+  <a href="/zh-hans/research/circuit-grafts/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "AI Research: Lab Write-ups on Editing Language Models by Levi Foster": "KI-Forschung: Laborberichte von Levi Foster zum Bearbeiten von Sprachmodellen",
+  "Lab write-ups by Levi Foster on editing language models directly: reading what a small model already holds, and grafting in parts that use it. First up: circuit grafts on SmolLM2-135M.": "Laborberichte von Levi Foster über das direkte Bearbeiten von Sprachmodellen: auslesen, was ein kleines Modell schon enthält, und Teile einsetzen, die das nutzen. Den Anfang machen Schaltkreis-Implantate in SmolLM2-135M.",
+  "AI Research by Levi Foster": "KI-Forschung von Levi Foster",
+  "Lab write-ups on editing language models directly. First up: circuit grafts on SmolLM2-135M.": "Laborberichte über das direkte Bearbeiten von Sprachmodellen. Den Anfang machen Schaltkreis-Implantate in SmolLM2-135M.",
+  "Circuit grafts on SmolLM2-135M: five held-out math tests, before and after": "Schaltkreis-Implantate in SmolLM2-135M: fünf Mathetests auf zurückgehaltenen Aufgaben, vorher und nachher",
+  "Sections": "Abschnitte",
+  "Table of works": "Werktabelle",
+  "Write-ups": "Berichte",
+  "Language": "Sprache",
+  "AI Research": "KI-Forschung",
+  "Lab write-ups from my work on editing language models directly: reading what a small model already holds, then grafting in parts that use it. Results are on problems that were sealed before any building started.": "Laborberichte aus meiner Arbeit am direkten Bearbeiten von Sprachmodellen: auslesen, was ein kleines Modell schon enthält, und dann Teile einsetzen, die das nutzen. Die Ergebnisse stammen von Aufgaben, die versiegelt wurden, bevor irgendetwas gebaut wurde.",
+  "Circuit grafts": "Schaltkreis-Implantate",
+  "Small rule circuits took SmolLM2-135M from 21.3% to 83.1% on held-out multiplication. Five math skills went up by 37 to 62 points, with no original weight changed and no gradient training.": "Kleine Regelschaltkreise brachten SmolLM2-135M bei zurückgehaltenen Multiplikationsaufgaben von 21.3% auf 83.1%. Fünf Rechenfertigkeiten stiegen um 37 bis 62 Punkte, ohne dass ein ursprüngliches Gewicht verändert wurde und ohne Gradiententraining.",
+  "November 7, 2026": "7. November 2026",
+  "Read the write-up": "Bericht lesen",
+  "Fort Worth, Texas": "Fort Worth, Texas",
+  "Circuit grafts: SmolLM2-135M from 21.3% to 83.1% on held-out multiplication without gradient training": "Schaltkreis-Implantate: SmolLM2-135M bei zurückgehaltenen Multiplikationsaufgaben von 21.3% auf 83.1%, ohne Gradiententraining",
+  "Lab write-ups on editing language models directly. First up: circuit grafts that took SmolLM2-135M from 21.3% to 83.1% on held-out multiplication, with no gradient training.": "Laborberichte über das direkte Bearbeiten von Sprachmodellen. Den Anfang machen Schaltkreis-Implantate, die SmolLM2-135M bei zurückgehaltenen Multiplikationsaufgaben ohne Gradiententraining von 21.3% auf 83.1% brachten."
+}

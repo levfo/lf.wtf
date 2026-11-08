@@ -24,7 +24,8 @@ WEIGHT = {"": ("weekly", "1.0"), "frmt/": ("monthly", "0.9"), "modul8/": ("month
           "dollop/": ("monthly", "0.9"), "kippu/": ("monthly", "0.9"),
           "grnge/": ("monthly", "0.9"), "carmeet/": ("monthly", "0.9"),
           "riposte/": ("weekly", "0.9"), "hive/": ("monthly", "0.9"), "hearthvale/": ("monthly", "0.8"),
-          "system-memory/": ("monthly", "0.8"), "teleframe/": ("weekly", "0.9")}
+          "system-memory/": ("monthly", "0.8"), "teleframe/": ("weekly", "0.9"),
+          "research/": ("weekly", "0.8"), "research/circuit-grafts/": ("monthly", "0.8")}
 
 #: Translated, but noindex: the page Stripe returns buyers to.
 NOINDEX = {"teleframe/thanks/"}

@@ -1,0 +1,40 @@
+<!doctype html>
+<!-- Source of research/assets/og-circuit-grafts-*.png. Render: msedge --headless --screenshot=out.png --window-size=1200,630 tools/og/og-research.html
+     A new image needs a new file name (immutable /research/assets/ header). -->
+<html><head><meta charset="utf-8"><style>
+@font-face{font-family:SG;src:url(../../assets/fonts/schibsted-grotesk.woff2) format("woff2");font-weight:400 900}
+@font-face{font-family:DM;src:url(../../assets/fonts/dm-mono-400.woff2) format("woff2")}
+*{box-sizing:border-box;margin:0}
+html,body{width:1200px;height:630px;overflow:hidden;background:#F3F2EE;color:#111}
+.tile{position:absolute;left:60px;top:66px;width:250px;height:250px;border:5px solid #111;background:#D9DCFF;padding:22px;display:flex;flex-direction:column;justify-content:space-between}
+.top{display:flex;justify-content:space-between;font:400 22px/1 DM}
+.sym{font:800 128px/.85 SG;letter-spacing:-.03em}
+.nm{font:400 15px/1.2 DM;letter-spacing:.08em;text-transform:uppercase}
+.title{position:absolute;left:60px;top:352px;width:500px}
+.k{font:400 16px/1.4 DM;letter-spacing:.16em;text-transform:uppercase}
+h1{margin-top:10px;font:800 72px/.9 SG;letter-spacing:-.035em;text-transform:uppercase}
+.d{margin-top:16px;font:400 19px/1.35 SG}
+.chart{position:absolute;left:600px;top:66px;width:540px;height:498px;border:5px solid #111;background:#fff;padding:26px 30px}
+.ct{font:800 26px/1.1 SG;letter-spacing:-.01em}
+.cs{margin-top:6px;font:400 14px/1.3 DM;color:#5B5953}
+.row{position:relative;height:66px;border-top:1px solid #CFCDC6;margin-top:0}
+.row:first-of-type{margin-top:18px}
+.lb{position:absolute;left:0;top:8px;font:700 16px/1.2 SG}
+.v{position:absolute;right:0;top:8px;font:400 16px/1.2 DM;color:#2F3BFF}
+.tr{position:absolute;left:0;right:0;top:42px;height:2px}
+.ln{position:absolute;top:-1px;height:4px;background:#2F3BFF;opacity:.35}
+.a,.b{position:absolute;top:-8px;width:18px;height:18px;margin-left:-9px;border-radius:50%}
+.a{background:#6F6C64}.b{background:#2F3BFF;width:20px;height:20px;top:-9px;margin-left:-10px}
+.ax{position:absolute;left:30px;right:30px;bottom:22px;display:flex;justify-content:space-between;font:400 13px DM;color:#5B5953;border-top:1px solid #111;padding-top:5px}
+</style></head><body>
+<div class="tile"><div class="top"><span>16</span><span>lab</span></div><div class="sym">Ai</div><div class="nm">AI Research</div></div>
+<div class="title"><div class="k">Lab write-up 01 · SmolLM2-135M</div><h1>Circuit grafts</h1><p class="d">No original weight changed and no gradient training, with at most 0.09% added weights.</p></div>
+<div class="chart"><div class="ct">Held-out accuracy</div><div class="cs">SmolLM2 alone → with the graft</div>
+<div id="rows"></div>
+<div class="ax"><span>0%</span><span>50%</span><span>100%</span></div></div>
+<script>
+var R=[["Multiplication, by hand",21.3,83.1],["Multiplication, by program",21.3,82.7],["Subtraction, 2 digits",11.3,68.3],["Addition, 2 digits",49.7,86.5],["Addition, 3 digits",26.1,83.7]];
+var h="";R.forEach(function(r){h+='<div class="row"><span class="lb">'+r[0]+'</span><span class="v">'+r[1]+'% → '+r[2]+'%</span><div class="tr"><i class="ln" style="left:'+r[1]+'%;width:'+(r[2]-r[1])+'%"></i><i class="a" style="left:'+r[1]+'%"></i><i class="b" style="left:'+r[2]+'%"></i></div></div>'});
+document.getElementById("rows").innerHTML=h;
+</script>
+</body></html>

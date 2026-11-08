@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-66ZSZNSB3X"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-66ZSZNSB3X');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>회로 이식: 경사 학습 없이 SmolLM2-135M 곱셈을 21.3%에서 83.1%로</title>
+<meta name="description" content="작은 규칙 회로를 SmolLM2-135M에 이식해 홀드아웃 수학 테스트 5개를 37에서 62포인트 끌어올렸어요. 원래 가중치 변경 없음, 경사 학습 없음, 추가 가중치는 최대 0.09%. Levi Foster의 연구 노트예요.">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#F3F2EE">
+<meta name="author" content="Levi Foster">
+<link rel="alternate" hreflang="en" href="https://lf.wtf/research/circuit-grafts/">
+<link rel="alternate" hreflang="de" href="https://lf.wtf/de/research/circuit-grafts/">
+<link rel="alternate" hreflang="es" href="https://lf.wtf/es/research/circuit-grafts/">
+<link rel="alternate" hreflang="es-MX" href="https://lf.wtf/es-mx/research/circuit-grafts/">
+<link rel="alternate" hreflang="fr" href="https://lf.wtf/fr/research/circuit-grafts/">
+<link rel="alternate" hreflang="it" href="https://lf.wtf/it/research/circuit-grafts/">
+<link rel="alternate" hreflang="ja" href="https://lf.wtf/ja/research/circuit-grafts/">
+<link rel="alternate" hreflang="ko" href="https://lf.wtf/ko/research/circuit-grafts/">
+<link rel="alternate" hreflang="nl" href="https://lf.wtf/nl/research/circuit-grafts/">
+<link rel="alternate" hreflang="pt-BR" href="https://lf.wtf/pt-br/research/circuit-grafts/">
+<link rel="alternate" hreflang="zh-Hans" href="https://lf.wtf/zh-hans/research/circuit-grafts/">
+<link rel="alternate" hreflang="x-default" href="https://lf.wtf/research/circuit-grafts/">
+<link rel="canonical" href="https://lf.wtf/ko/research/circuit-grafts/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/dm-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+
+<meta property="og:title" content="회로 이식: SmolLM2-135M 홀드아웃 곱셈 21.3%에서 83.1%로">
+<meta property="og:description" content="135M 언어 모델에 이식한 작은 규칙 회로. 원래 가중치 변경 없음, 경사 학습 없음, 추가 가중치는 최대 0.09%.">
+<meta property="og:url" content="https://lf.wtf/ko/research/circuit-grafts/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Levi Foster">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="es_MX">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:image" content="https://lf.wtf/research/assets/og-circuit-grafts-1.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SmolLM2-135M 회로 이식: 홀드아웃 수학 테스트 5개, 이식 전과 후">
+<meta property="article:published_time" content="2026-11-07">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@cybermynd">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://lf.wtf/research/circuit-grafts/#webpage",
+      "url": "https://lf.wtf/research/circuit-grafts/",
+      "name": "SmolLM2-135M 회로 이식",
+      "isPartOf": {
+        "@id": "https://lf.wtf/#website"
+      },
+      "mainEntity": {
+        "@id": "https://lf.wtf/research/circuit-grafts/#post"
+      },
+      "breadcrumb": {
+        "@id": "https://lf.wtf/research/circuit-grafts/#breadcrumb"
+      },
+      "primaryImageOfPage": "https://lf.wtf/research/assets/og-circuit-grafts-1.png",
+      "inLanguage": "ko"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://lf.wtf/research/circuit-grafts/#post",
+      "url": "https://lf.wtf/research/circuit-grafts/",
+      "headline": "회로 이식: 경사 학습 없이 SmolLM2-135M의 홀드아웃 곱셈을 21.3%에서 83.1%로",
+      "description": "작은 규칙 회로를 SmolLM2-135M에 이식해 홀드아웃 수학 테스트 5개를 37에서 62포인트 끌어올렸어요. 원래 가중치 변경 없음, 경사 학습 없음, 추가 가중치는 최대 0.09%.",
+      "image": "https://lf.wtf/research/assets/og-circuit-grafts-1.png",
+      "datePublished": "2026-11-07",
+      "dateModified": "2026-11-07",
+      "author": {
+        "@id": "https://lf.wtf/#levifoster"
+      },
+      "publisher": {
+        "@id": "https://lf.wtf/#levifoster"
+      },
+      "isPartOf": {
+        "@id": "https://lf.wtf/research/#blog"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "언어 모델의 가중치 편집"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "SmolLM2-135M",
+          "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct",
+          "inLanguage": "ko"
+        }
+      ],
+      "inLanguage": "ko"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://lf.wtf/research/circuit-grafts/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Levi Foster",
+          "item": "https://lf.wtf/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AI 연구",
+          "item": "https://lf.wtf/research/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "회로 이식",
+          "item": "https://lf.wtf/research/circuit-grafts/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+@font-face{font-family:"Schibsted Grotesk";src:url(/assets/fonts/schibsted-grotesk.woff2) format("woff2");font-weight:400 900;font-display:swap}
+@font-face{font-family:"DM Mono";src:url(/assets/fonts/dm-mono-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"DM Mono";src:url(/assets/fonts/dm-mono-500.woff2) format("woff2");font-weight:500;font-display:swap}
+:root{--paper:#F3F2EE;--ink:#111;--white:#fff;--blue:#2F3BFF;--blue-lit:#8C95FF;--grey:#CFCDC6;--lab:#D9DCFF;--muted:#5B5953;
+--alone:#6F6C64;--other:#B3B0A7;
+--sans:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"DM Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;--w:1180px;--text:720px}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:14px/1.6 var(--mono)}
+a{color:inherit}
+a:hover{color:var(--blue)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 32px}
+
+/* bar */
+.bar{border-bottom:2px solid var(--ink)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:56px}
+.brand{font:800 20px/1 var(--sans);text-decoration:none;letter-spacing:-.01em}
+.bar nav{display:flex;gap:22px}
+.bar nav a{font-size:11px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:14px 0}
+
+.crumbs{padding-top:18px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.crumbs a{text-decoration:none;border-bottom:1px solid var(--grey)}
+.crumbs span[aria-current]{color:var(--ink)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:200px minmax(0,1fr);gap:40px;align-items:end;padding-top:28px;padding-bottom:32px}
+.h-tile{container-type:inline-size;aspect-ratio:1;border:4px solid var(--ink);background:var(--lab);padding:9%;display:flex;flex-direction:column;justify-content:space-between}
+.ht-top{display:flex;justify-content:space-between;font-size:max(11px,8cqi);line-height:1}
+.ht-sym{margin:0;font:800 46cqi/.85 var(--sans);letter-spacing:-.03em}
+.ht-name{font-size:max(9px,7.4cqi);letter-spacing:.06em;text-transform:uppercase;line-height:1.25}
+.kicker{margin:0 0 14px;font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+h1{margin:0;font:800 clamp(48px,8vw,104px)/.9 var(--sans);letter-spacing:-.035em;text-transform:uppercase}
+.dek{margin:18px 0 0;max-width:680px;font:400 clamp(18px,1.9vw,22px)/1.4 var(--sans)}
+.byline{margin:18px 0 0;display:flex;flex-wrap:wrap;gap:4px 18px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.byline a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--ink)}
+
+/* stat strip */
+.stats{margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;border-top:4px solid var(--ink);border-bottom:2px solid var(--ink);padding:0}
+.stats div{padding:18px 18px 18px 0;display:flex;flex-direction:column;gap:6px;min-width:0}
+.stats div+div{padding-left:18px;border-left:1px solid var(--ink)}
+.stats dd{order:-1;margin:0;font:800 clamp(28px,3.4vw,44px)/1 var(--sans);letter-spacing:-.02em;white-space:nowrap}
+.stats dd.hi{color:var(--blue)}
+.stats dt{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);line-height:1.45}
+
+/* article */
+.post{padding-top:40px;padding-bottom:24px}
+.post section{max-width:var(--text);margin:0 0 48px;scroll-margin-top:16px}
+.post section.wide{max-width:none}
+.post section.wide>h2,.post section.wide>p,.post section.wide>ol,.post section.wide>ul,.post section.wide>.label{max-width:var(--text)}
+.label{margin:0 0 8px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.post h2{margin:0 0 16px;font:800 clamp(28px,3.6vw,40px)/1.02 var(--sans);letter-spacing:-.02em}
+.post h3{margin:28px 0 10px;font:700 20px/1.2 var(--sans);letter-spacing:-.01em}
+.post p,.post li{font:400 18px/1.62 var(--sans)}
+.post p{margin:0 0 16px}
+.post ol,.post ul{margin:0 0 16px;padding-left:22px}
+.post li{margin:0 0 10px;padding-left:4px}
+.post li::marker{font:500 13px var(--mono)}
+.quote{margin:8px 0 20px;padding:4px 0 4px 18px;border-left:4px solid var(--blue);font:500 20px/1.45 var(--sans)}
+.steps{list-style:none;padding:0!important;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:48px minmax(0,1fr);gap:14px;padding:14px 0 14px;margin:0;border-top:1px solid var(--ink)}
+.steps li:last-child{border-bottom:1px solid var(--ink)}
+.steps li::before{content:counter(s,decimal-leading-zero);font:500 13px/1.9 var(--mono);color:var(--muted)}
+.steps b{display:block;font:700 19px/1.3 var(--sans);margin-bottom:4px}
+.note{font:400 13px/1.6 var(--mono)!important;color:var(--muted)}
+.post .label{font:400 11px/1.6 var(--mono);letter-spacing:.16em}
+.post .chart .sub{font:400 12px/1.5 var(--mono);margin:0 0 16px}
+.post .chart .verdict{font:500 13px/1.5 var(--mono);margin:14px 0 0}
+.post .key li{font:400 11px/1.4 var(--mono);margin:0;padding:0}
+
+/* charts */
+.chart{margin:24px 0 20px;border:4px solid var(--ink);background:var(--white);padding:22px 24px 18px}
+.chart figcaption{margin:0 0 4px;font:800 22px/1.15 var(--sans);letter-spacing:-.01em}
+.chart .sub{margin:0 0 16px;font-size:12px;color:var(--muted)}
+.key{display:flex;flex-wrap:wrap;gap:6px 22px;margin:0 0 14px;padding:0;list-style:none;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.key li{display:flex;align-items:center;gap:8px}
+.k{display:inline-block;width:12px;height:12px;border-radius:50%}
+.k-alone{background:var(--alone)}.k-graft{background:var(--blue)}.k-scr{border:2px solid var(--ink);background:var(--white)}
+
+.dumb{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr) 150px;column-gap:20px}
+.d-row{display:contents}
+.d-label,.d-track,.d-val{border-top:1px solid var(--grey);padding:12px 0;min-width:0}
+.d-label b{display:block;font:700 16px/1.25 var(--sans)}
+.d-label span{font-size:12px;color:var(--muted)}
+.d-track{position:relative;min-height:56px;background:linear-gradient(90deg,var(--grey) 1px,transparent 1px) 0 0/25% 100% repeat-x;background-position:-.5px 0}
+.d-track::after{content:"";position:absolute;right:0;top:12px;bottom:12px;width:1px;background:var(--grey)}
+.d-track i{position:absolute;top:50%;display:block}
+.d-line{left:calc(var(--a)*1%);width:calc((var(--b) - var(--a))*1%);height:3px;margin-top:-1.5px;background:var(--blue);opacity:.35}
+.d-a,.d-b,.d-s{width:16px;height:16px;margin:-8px 0 0 -8px;border-radius:50%;box-shadow:0 0 0 2px var(--white)}
+.d-a{left:calc(var(--a)*1%);background:var(--alone)}
+.d-b{left:calc(var(--b)*1%);background:var(--blue);width:18px;height:18px;margin:-9px 0 0 -9px}
+.d-s{left:calc(var(--s)*1%);width:12px;height:12px;margin:-6px 0 0 -6px;border:2px solid var(--ink);background:var(--white);box-shadow:none}
+.d-val{text-align:right;font-size:13px;line-height:1.45}
+.d-val b{display:block;font:700 17px/1.3 var(--mono);color:var(--blue)}
+.d-val span{color:var(--muted);font-size:12px}
+.d-axis{display:contents}
+.d-axis>span:first-child,.d-axis>span:last-child{border-top:1px solid var(--ink)}
+.d-ticks{position:relative;height:24px;border-top:1px solid var(--ink);font-size:11px;color:var(--muted)}
+.d-ticks span{position:absolute;top:4px;transform:translateX(-50%)}
+.d-ticks span:first-child{transform:none}.d-ticks span:last-child{transform:translateX(-100%)}
+
+.bars{display:grid;grid-template-columns:minmax(0,250px) minmax(0,1fr) 64px;column-gap:16px;row-gap:0}
+.b-row{display:contents}
+.b-label,.b-track,.b-val{padding:9px 0;border-top:1px solid var(--grey);min-width:0}
+.b-label{font-size:13px;line-height:1.35}
+.b-label small{display:block;font-size:11px;color:var(--muted)}
+.b-track{position:relative;background:linear-gradient(90deg,var(--grey) 1px,transparent 1px) 0 0/25% 100% repeat-x}
+.b-track i{position:absolute;left:0;top:50%;height:20px;margin-top:-10px;width:calc(var(--v)*1%);background:var(--other)}
+.b-row.base i{background:var(--alone)}
+.b-row.win i{background:var(--blue)}
+.b-row.win .b-label{font-weight:500}
+.b-val{text-align:right;font:500 14px/1.6 var(--mono)}
+.b-row.win .b-val{color:var(--blue)}
+.b-scale{grid-column:2;display:flex;justify-content:space-between;border-top:1px solid var(--ink);padding-top:4px;font-size:11px;color:var(--muted)}
+.chart .verdict{margin:14px 0 0;font:500 13px/1.5 var(--mono)}
+
+.table-wrap{margin:8px 0 20px;overflow-x:auto;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:13px}
+caption{text-align:left;padding:12px 0 8px;font:700 16px/1.3 var(--sans)}
+th,td{padding:10px 12px 10px 0;text-align:right;vertical-align:top;border-top:1px solid var(--grey)}
+th:first-child,td:first-child{text-align:left}
+thead th{font-weight:400;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);border-top:0;vertical-align:bottom}
+td small{display:block;color:var(--muted);font-size:11px}
+td.hi{color:var(--blue);font-weight:500}
+
+.next{border-top:4px solid var(--ink);padding-top:22px;margin-top:8px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.next a{display:inline-flex;align-items:center;min-height:48px;padding:0 20px;background:var(--ink);color:var(--paper);text-decoration:none;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.next a:hover{background:var(--blue);color:#fff}
+footer.wrap{margin-top:40px;padding-top:20px;padding-bottom:8px;border-top:2px solid var(--ink);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* Kana, hangul and hanzi run wider and taller than the Latin caps this was tuned on. */
+html[lang="ja"] h1,html[lang="ko"] h1,html[lang="zh-Hans"] h1{font-size:clamp(40px,6.4vw,84px);line-height:1.08;letter-spacing:0}
+@media (max-width:860px){
+.dumb{grid-template-columns:minmax(0,1fr) auto;grid-auto-flow:row dense}
+.d-label{grid-column:1;padding-bottom:4px}
+.d-val{grid-column:2;padding-bottom:4px}
+.d-track{grid-column:1/3;border-top:0;padding-top:0;min-height:40px}
+.d-axis>span:first-child,.d-axis>span:last-child{display:none}
+.d-ticks{grid-column:1/3}
+.bars{grid-template-columns:minmax(0,1fr) 60px}
+.b-label{grid-column:1/3;padding-bottom:2px}
+.b-track{grid-column:1;border-top:0;min-height:30px;padding:0}
+.b-val{grid-column:2;border-top:0;padding-top:2px}
+.b-scale{grid-column:1}
+}
+@media (max-width:760px){
+.wrap{padding-left:16px;padding-right:16px}
+.bar nav a:not(.to-lang){display:none}
+.hero{grid-template-columns:96px minmax(0,1fr);gap:18px;align-items:start;padding-top:18px}
+.h-tile{border-width:3px}
+.hero .h-text{display:contents}
+.kicker{grid-column:2;align-self:end;margin:0}
+h1{grid-column:1/3;font-size:clamp(40px,13vw,64px)}
+.dek,.byline{grid-column:1/3;margin-top:0}
+.stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+.stats div{padding:14px 12px 14px 0!important;border-left:0!important}
+.stats div:first-child,.stats div:nth-child(4){grid-column:1/3}
+.stats div+div{border-top:1px solid var(--ink)}
+.stats div:nth-child(3){padding-left:12px!important;border-left:1px solid var(--ink)!important}
+.post{padding-top:28px}
+.post p,.post li{font-size:17px}
+.chart{padding:16px 14px 14px;border-width:3px;margin-left:-4px;margin-right:-4px}
+.steps li{grid-template-columns:34px minmax(0,1fr)}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* i18n:start */
+.i18n{max-width:var(--w,initial);margin:0 auto;padding:26px 22px 40px;display:flex;flex-wrap:wrap;
+gap:6px 14px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.55;
+justify-content:center}
+.i18n a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+.i18n a:hover{border-bottom-color:currentColor}
+.i18n span[aria-current]{opacity:.5;cursor:default}
+/* i18n:end */
+
+html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: normal !important; }
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="https://lf.wtf/ko/">lf.wtf</a>
+    <nav aria-label="섹션">
+      <a href="https://lf.wtf/ko/research/">AI 연구</a>
+      <a href="#results">결과</a>
+      <a href="#gradient">경사 학습과 비교</a>
+      <a class="to-lang" href="#language">언어</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<nav class="crumbs wrap" aria-label="이동 경로"><a href="https://lf.wtf/ko/">Levi Foster</a> / <a href="https://lf.wtf/ko/research/">AI 연구</a> / <span aria-current="page">회로 이식</span></nav>
+
+<header class="hero wrap">
+  <div class="h-tile">
+    <span class="ht-top" aria-hidden="true"><span>16.01</span><span>lab</span></span>
+    <span class="ht-sym" aria-hidden="true">Cg</span>
+    <span class="ht-name">연구 노트 01</span>
+  </div>
+  <div class="h-text">
+    <p class="kicker">AI 연구 · SmolLM2-135M</p>
+    <h1>회로 이식</h1>
+    <p class="dek">1억 3,500만 파라미터 언어 모델인 SmolLM2-135M에 작은 규칙 회로를 연결했어요. 봉인해 둔 홀드아웃 문제에서 곱셈 점수가 21.3%에서 83.1%로 올랐어요. 원래 가중치는 하나도 바뀌지 않았고, 경사 하강법으로 학습시킨 것도 없어요.</p>
+    <p class="byline"><a rel="author" href="https://lf.wtf/ko/">Levi Foster</a><time datetime="2026-11-07">2026년 11월 7일</time></p>
+  </div>
+</header>
+
+<div class="wrap">
+<dl class="stats">
+  <div><dt>곱셈, 홀드아웃</dt><dd class="hi">21.3% → 83.1%</dd></div>
+  <div><dt>바뀐 원래 가중치</dt><dd>0</dd></div>
+  <div><dt>가장 큰 이식의 모델 대비 비율</dt><dd>0.09%</dd></div>
+  <div><dt>같은 크기 경사 학습 이식 대비 앞선 포인트</dt><dd>+57.9</dd></div>
+</dl>
+</div>
+
+<article class="post wrap">
+
+<section id="theory">
+  <p class="label">출발점</p>
+  <h2>규칙 하나가 많은 사실에 쓰일 수 있다</h2>
+  <p>작은 오픈 모델을 무거운 학습 없이, 가중치를 직접 편집하고 새 부품을 이식하는 것만으로 프런티어 수준에 얼마나 가깝게 끌어올릴 수 있는지 알아보고 싶어요. 보통은 학습을 해요. 수십억 개의 질문과 답을 모델에 통과시키면 경사 하강법이 스스로 규칙을 찾아내요. 그런데 모델을 열어서 문제를 푸는 도중에 무엇을 갖고 있는지 읽고, 그걸 바꿀 수도 있어요. 그렇다면 그 규칙 중 일부를 손으로 써 넣을 수 있을까요?</p>
+  <p>제 작업 가설은 추론의 상당 부분이 규칙 세트로 돌아가고, 규칙 하나가 많은 사실에 쓰인다는 거예요. 가장 단순한 예가 1을 받아올리는 거예요. 모든 덧셈을 외우는 사람은 없어요. 받아올림 규칙 하나가 모든 자리에서 모든 덧셈을 처리하니까요. 메모에는 이렇게 적었어요.</p>
+  <p class="quote">어쩌면 한 사실의 규칙이 다른 사실의 규칙과 일치할지도 모른다.</p>
+  <p>작은 모델에게 사실은 저장하기에 비싸고, 규칙은 싸요. 이 노트의 첫 번째 곱셈 회로는 2 × 10부터 9 × 99까지 모든 문제를 위해 만들었고, 가중치는 25,270개예요.</p>
+  <p>같은 대화에서 첫 번째 생각과 짝을 이루는 두 번째 아이디어도 나왔어요. 이미 아는 걸 적용하는 논리 규칙과 함께, 새로운 걸 익히기 위한 학습 규칙 세트가 있다는 거예요. 이 노트는 논리 쪽을 다뤄요.</p>
+</section>
+
+<section id="digits">
+  <p class="label">모델이 이미 가진 것</p>
+  <h2>숫자는 이미 안에 있다</h2>
+  <p>무언가를 만들기 전에, SmolLM2가 답을 쓰기 시작하는 순간 무엇을 갖고 있는지 살펴봤어요. 답 위치의 은닉 상태를 최소제곱법으로 맞춘 선형 읽기로 읽으면, 두 수의 각 자릿수가 거의 완벽하게 나와요. 세 자리 덧셈은 한 층으로는 부족했지만, 14, 20, 21층을 합치면 새 문제에서 모든 자릿수를 99%로 읽어 내요.</p>
+  <p>즉, 모델은 문제를 읽었어요. 모델이 안정적으로 못 하는 건 자릿수를 결합하는 일이에요. 받아올림, 받아내림, 구구단 같은 거요. 그 결합 단계를 저희가 채워 넣어요.</p>
+</section>
+
+<section id="how">
+  <p class="label">이식의 작동 방식</p>
+  <h2>네 가지 부품, 어느 것도 경사 하강법으로 학습하지 않았다</h2>
+  <ol class="steps">
+    <li><div><b>읽기</b>두 수의 각 자릿수마다, 모델 자신의 은닉 상태에서 가져오는 선형 읽기예요.</div></li>
+    <li><div><b>규칙</b>답의 자릿수마다 있는 작은 조회 표예요. 일의 자리는 두 수의 일의 자리에서 나오고, 십의 자리는 두 수의 십의 자리와 받아올림에서 나오는 식으로 위로 올라가요.</div></li>
+    <li><div><b>쓰기</b>모델의 마지막 층에서 맞는 숫자 토큰 쪽으로 밀어 줘요. 답은 여전히 모델이 직접 써요. 이식은 다음에 어떤 숫자가 올지만 살짝 기울여요.</div></li>
+    <li><div><b>스위치</b>맞춰 둔 스위치 두 개가 이식을 언제 켤지 정해요. 이런 종류의 문제에 답을 쓰는 동안에만 켜지고, 다른 수학, 문장제, 코드, 일반 텍스트에서는 꺼져 있도록 맞췄어요.</div></li>
+  </ol>
+  <p>읽기와 스위치는 닫힌 형식의 최소제곱법으로 맞추고, 규칙 표는 프로그램이 써 내요(첫 번째 곱셈 이식은 손으로 썼어요). 기본 모델 파일은 전혀 건드리지 않아요. 각 이식은 그 옆에 덧붙여요.</p>
+</section>
+
+<section id="evolution">
+  <p class="label">어떻게 커졌나</p>
+  <h2>이식 하나에서 파이프라인으로</h2>
+  <ol class="steps">
+    <li><div><b>뉴런 이식</b>첫 시도에서는 두 자리 덧셈의 받아올림을 채우려고 마지막 층에 새 뉴런 24개를 추가했어요. 봉인된 문제에서도 효과가 유지됐고, +19.7포인트였어요. 이건 모델 자체의 계산을 살짝 거드는 방식이었기 때문에, 다음 단계는 계산을 아예 직접 하는 거였어요.</div></li>
+    <li><div><b>손으로 연결한 회로</b>곱셈에서는 규칙 표를 손으로 쓰고, 모델 자신의 자릿수 읽기를 입력으로 넣었어요. 첫 버전은 봉인된 홀드아웃 문제에서 83.5%를 기록했어요. 원래는 21.3%였어요. 스위치를 개선한 두 번째 버전은 83.1%였고, 다른 수학에서 가장 크게 나빠진 폭은 −0.75포인트였어요.</div></li>
+    <li><div><b>프로그램이 찾은 규칙</b>규칙을 찾는 프로그램에 풀이가 있는 문제 340개를 자릿수와 답의 형태로 줬어요. 프로그램은 답의 각 자릿수마다 그 자릿수를 결정하는 가장 작은 입력 집합을 찾았어요. 덧셈의 받아올림, 뺄셈의 받아내림, 곱셈의 받아올림 연쇄를 스스로 찾아냈어요. 십의 자리가 일의 자리 규칙을 십의 자리 숫자에 다시 쓴 것에 받아올림 단계를 더한 것이라는 것도 찾았어요. 규칙 하나가 여러 자릿수에 쓰이는 거죠. 이 작업의 출발점이 된 바로 그 생각이에요. 이 프로그램의 곱셈 회로는 홀드아웃에서 82.7%를 기록해, 손으로 연결한 회로와 0.5포인트 이내였어요.</div></li>
+    <li><div><b>같은 파이프라인, 새로운 능력</b>뺄셈과 두 자리 덧셈은 곱셈의 설정을 그대로 복사해, 조정 없이 같은 스크립트에 넣었어요. 세 자리 덧셈은 세 가지를 고쳐야 했고, 각각 홀드아웃 세트를 열기 전에 테스트했어요. 세 층을 합친 읽기, 두 번째 스위치, 자리마다 따로 정한 밀어 주기 강도예요.</div></li>
+  </ol>
+</section>
+
+<section id="results" class="wide">
+  <p class="label">결과</p>
+  <h2>아무도 조정에 쓰지 않은 문제에서 다섯 가지 능력</h2>
+  <p>각 능력의 홀드아웃 문제는 무언가를 만들기 전에 따로 떼어 두었고, 그 문제로는 아무것도 조정하지 않았어요. 모든 점수는 시드 두 개, 문제당 네 번 실행한 결과이고, 모델 단독일 때와 이식했을 때 같은 샘플링 설정을 썼어요. 곱셈 세트는 첫 번째 손으로 연결한 버전 때 한 번, 마지막 두 버전 때 한 번 더 열었어요.</p>
+
+  <figure class="chart">
+    <figcaption>홀드아웃 정확도, SmolLM2-135M</figcaption>
+    <p class="sub">정확히 맞힌 문제의 비율. 곱셈은 140문제, 나머지는 500문제.</p>
+    <ul class="key">
+      <li><span class="k k-alone" aria-hidden="true"></span>SmolLM2 단독</li>
+      <li><span class="k k-graft" aria-hidden="true"></span>이식 적용</li>
+      <li><span class="k k-scr" aria-hidden="true"></span>같은 이식, 배선 섞음</li>
+    </ul>
+    <div class="dumb">
+      <div class="d-row">
+        <div class="d-label"><b>곱셈</b><span>7 × 48, 규칙은 손으로 연결</span></div>
+        <div class="d-track" aria-hidden="true" style="--a:21.3;--b:83.1;--s:2.4"><i class="d-line"></i><i class="d-s"></i><i class="d-a"></i><i class="d-b"></i></div>
+        <div class="d-val"><b>21.3% → 83.1%</b><span>+61.8</span></div>
+      </div>
+      <div class="d-row">
+        <div class="d-label"><b>곱셈</b><span>7 × 48, 규칙은 프로그램이 찾음</span></div>
+        <div class="d-track" aria-hidden="true" style="--a:21.3;--b:82.7;--s:6.3"><i class="d-line"></i><i class="d-s"></i><i class="d-a"></i><i class="d-b"></i></div>
+        <div class="d-val"><b>21.3% → 82.7%</b><span>+61.3</span></div>
+      </div>
+      <div class="d-row">
+        <div class="d-label"><b>뺄셈, 두 자리</b><span>83 − 27, 규칙은 프로그램이 찾음</span></div>
+        <div class="d-track" aria-hidden="true" style="--a:11.3;--b:68.3;--s:7.8"><i class="d-line"></i><i class="d-s"></i><i class="d-a"></i><i class="d-b"></i></div>
+        <div class="d-val"><b>11.3% → 68.3%</b><span>+57.1</span></div>
+      </div>
+      <div class="d-row">
+        <div class="d-label"><b>덧셈, 두 자리</b><span>38 + 47, 규칙은 프로그램이 찾음</span></div>
+        <div class="d-track" aria-hidden="true" style="--a:49.7;--b:86.5;--s:16.7"><i class="d-line"></i><i class="d-s"></i><i class="d-a"></i><i class="d-b"></i></div>
+        <div class="d-val"><b>49.7% → 86.5%</b><span>+36.8</span></div>
+      </div>
+      <div class="d-row">
+        <div class="d-label"><b>덧셈, 세 자리</b><span>347 + 285, 규칙은 프로그램이 찾음</span></div>
+        <div class="d-track" aria-hidden="true" style="--a:26.1;--b:83.7;--s:21.4"><i class="d-line"></i><i class="d-s"></i><i class="d-a"></i><i class="d-b"></i></div>
+        <div class="d-val"><b>26.1% → 83.7%</b><span>+57.6</span></div>
+      </div>
+      <div class="d-axis" aria-hidden="true"><span></span><div class="d-ticks"><span style="left:0">0%</span><span style="left:25%">25%</span><span style="left:50%">50%</span><span style="left:75%">75%</span><span style="left:100%">100%</span></div><span></span></div>
+    </div>
+  </figure>
+
+  <div class="table-wrap" tabindex="0" role="region" aria-labelledby="t-results">
+    <table>
+      <caption id="t-results">같은 결과를 표로</caption>
+      <thead>
+        <tr><th scope="col">능력</th><th scope="col">문제 수</th><th scope="col">SmolLM2 단독</th><th scope="col">이식 적용</th><th scope="col">향상, 포인트(95% 하한)</th><th scope="col">배선 섞음</th><th scope="col">추가 가중치</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>곱셈, 규칙은 손으로 연결<small>7 × 48</small></td><td>140</td><td>21.3%</td><td class="hi">83.1%</td><td>+61.8 (+56.1)</td><td>2.4%</td><td>25,270<small>0.019%</small></td></tr>
+        <tr><td>곱셈, 규칙은 프로그램이 찾음<small>7 × 48</small></td><td>140</td><td>21.3%</td><td class="hi">82.7%</td><td>+61.3 (+55.5)</td><td>6.3%</td><td>32,519<small>0.024%</small></td></tr>
+        <tr><td>뺄셈, 두 자리<small>83 − 27</small></td><td>500</td><td>11.3%</td><td class="hi">68.3%</td><td>+57.1 (+54.0)</td><td>7.8%</td><td>32,446<small>0.024%</small></td></tr>
+        <tr><td>덧셈, 두 자리<small>38 + 47</small></td><td>500</td><td>49.7%</td><td class="hi">86.5%</td><td>+36.8 (+33.8)</td><td>16.7%</td><td>32,476<small>0.024%</small></td></tr>
+        <tr><td>덧셈, 세 자리<small>347 + 285</small></td><td>500</td><td>26.1%</td><td class="hi">83.7%</td><td>+57.6 (+54.6)</td><td>21.4%</td><td>121,198<small>0.090%</small></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <ul>
+    <li>원래 가중치는 하나도 바뀌지 않았고, 경사 학습도 없었어요. 각 이식은 가중치를 25,270개에서 121,198개 더하고, 이는 모델의 0.019%에서 0.090%예요. 스스로 정한 상한은 0.1%였어요.</li>
+    <li>배선 섞음 대조군은 같은 이식에서 배선만 뒤섞은 거예요. 모든 능력에서 모델 단독과 같거나 그보다 낮은 2.4%에서 21.4%를 기록했으니, 맞는 규칙이 없으면 추가 가중치는 아무 역할도 못 해요.</li>
+    <li>두 자리 이식 세 개(곱셈, 뺄셈, 덧셈)는 한 모델에서 함께 돌릴 수도 있고, 가중치는 모두 92,496개예요. 각각 개발용 문제에서 향상을 유지했어요. 다른 수학에서 가장 크게 나빠진 폭은 −0.25포인트였고, 관련 없는 프롬프트 200개 중 200개가 이전과 같은 답을 냈어요.</li>
+  </ul>
+  <p class="note">향상은 문제별로 짝지어 계산했고, 단측 95% 부트스트랩 하한을 썼어요. 부작용 점검은 다른 산수와 문장제 세트 8개에 GSM8K와 코드를 더한 거예요. 관련 없는 프롬프트는 IFEval 프롬프트 200개이고, 탐욕적 디코딩으로 답하게 했어요. 모든 실행의 규칙과 예측은 결과가 나오기 전에 적어 뒀어요.</p>
+</section>
+
+<section id="gradient" class="wide">
+  <p class="label">경사 학습과 비교</p>
+  <h2>세 번의 맞대결</h2>
+  <p>능력을 추가하는 표준 방법은 경사 학습이라서, 그걸 경쟁자로 돌렸어요. 각 경사 학습 이식은 테스트 전에 설정 그리드에서 조정했어요.</p>
+
+  <figure class="chart">
+    <figcaption>곱셈, 봉인된 홀드아웃</figcaption>
+    <p class="sub">140문제, 시드 2개, 각 4회 실행. 첫 번째 손으로 연결한 회로와 조정을 마친 경사 학습 이식 두 개의 비교.</p>
+    <div class="bars">
+      <div class="b-row base"><div class="b-label">SmolLM2 단독</div><div class="b-track" aria-hidden="true"><i style="--v:21.3"></i></div><div class="b-val">21.3%</div></div>
+      <div class="b-row"><div class="b-label">경사 학습 이식, 같은 크기<small>뉴런 14개</small></div><div class="b-track" aria-hidden="true"><i style="--v:25.6"></i></div><div class="b-val">25.6%</div></div>
+      <div class="b-row"><div class="b-label">경사 학습 이식, 0.1% 상한<small>뉴런 77개</small></div><div class="b-track" aria-hidden="true"><i style="--v:23.7"></i></div><div class="b-val">23.7%</div></div>
+      <div class="b-row win"><div class="b-label">회로 이식<small>가중치 25,270개, 경사 학습 없음</small></div><div class="b-track" aria-hidden="true"><i style="--v:83.5"></i></div><div class="b-val">83.5%</div></div>
+      <div class="b-scale" aria-hidden="true"><span>0%</span><span>50%</span><span>100%</span></div>
+    </div>
+    <p class="verdict">회로가 57.9포인트와 59.8포인트 앞섰어요.</p>
+  </figure>
+
+  <figure class="chart">
+    <figcaption>곱셈, LoRA 파인튜닝과 비교</figcaption>
+    <p class="sub">개발용 문제 140개, 시드 2개, 각 4회 실행. LoRA는 그리드 탐색에서 가장 좋았던 설정을 사용.</p>
+    <div class="bars">
+      <div class="b-row base"><div class="b-label">SmolLM2 단독</div><div class="b-track" aria-hidden="true"><i style="--v:28.5"></i></div><div class="b-val">28.5%</div></div>
+      <div class="b-row"><div class="b-label">LoRA 파인튜닝<small>학습한 가중치 115,200개</small></div><div class="b-track" aria-hidden="true"><i style="--v:39.4"></i></div><div class="b-val">39.4%</div></div>
+      <div class="b-row win"><div class="b-label">회로 이식<small>가중치 25,270개, 경사 학습 없음</small></div><div class="b-track" aria-hidden="true"><i style="--v:88.7"></i></div><div class="b-val">88.7%</div></div>
+      <div class="b-scale" aria-hidden="true"><span>0%</span><span>50%</span><span>100%</span></div>
+    </div>
+    <p class="verdict">49.3포인트 앞섰고, 95% 하한은 +42.8이에요. 가중치는 4분의 1도 안 썼어요.</p>
+  </figure>
+
+  <figure class="chart">
+    <figcaption>두 자리 뺄셈</figcaption>
+    <p class="sub">개발용 문제 500개, 시드 2개, 각 4회 실행. 회로의 설정은 곱셈에서 그대로 가져왔고 조정하지 않았어요.</p>
+    <div class="bars">
+      <div class="b-row base"><div class="b-label">SmolLM2 단독</div><div class="b-track" aria-hidden="true"><i style="--v:11.35"></i></div><div class="b-val">11.35%</div></div>
+      <div class="b-row"><div class="b-label">경사 학습 이식, 뉴런 14개</div><div class="b-track" aria-hidden="true"><i style="--v:48.15"></i></div><div class="b-val">48.15%</div></div>
+      <div class="b-row"><div class="b-label">경사 학습 이식, 뉴런 77개<small>가중치 133,056개, 조정함</small></div><div class="b-track" aria-hidden="true"><i style="--v:65.0"></i></div><div class="b-val">65.0%</div></div>
+      <div class="b-row win"><div class="b-label">회로 이식<small>가중치 32,446개, 조정 없음</small></div><div class="b-track" aria-hidden="true"><i style="--v:64.98"></i></div><div class="b-val">64.98%</div></div>
+      <div class="b-scale" aria-hidden="true"><span>0%</span><span>50%</span><span>100%</span></div>
+    </div>
+    <p class="verdict">네 배 크기의 경사 학습 이식과는 동점이고, 뉴런 14개짜리보다는 약 17포인트 앞섰어요.</p>
+  </figure>
+  <p>회로의 뺄셈 규칙은 340문제에서 나왔어요. 경사 학습 이식은 1,500문제로 학습했는데, 회로의 자릿수 읽기를 맞출 때 쓴 것과 같은 1,500문제예요.</p>
+</section>
+
+<section id="transplants">
+  <p class="label">진행 중</p>
+  <h2>더 큰 모델에서 옮겨 오기</h2>
+  <p>더 큰 모델에서 능력을 옮겨 오는 것도 시도하고 있어요. Qwen3.5-4B는 저희 확인에서 이 곱셈 문제를 300개 중 300개 맞혔기 때문에, 그 뉴런 일부를 SmolLM2로 변환해 옮겨 보려고 했어요. 이와 별도로, 초등학교 수준 문장제에서 Qwen3.5-4B의 보정 신호를 Qwen3.5-0.8B로 매핑했어요. 둘 다 아직 성공하지 못했고, 둘 다 아직 진행 중이에요. 지금까지는 큰 모델이 작은 모델이 어디서 무너지는지 알려 주는 길잡이로 가장 쓸모가 있었어요.</p>
+</section>
+
+<section id="scope">
+  <p class="label">이식이란</p>
+  <h2>모델 자신의 읽기를 입력으로 쓰는 계산기</h2>
+  <p>계산은 모델이 이미 갖고 있는 숫자를 가지고 이식이 직접 해요. SmolLM2가 곱셈을 배우는 건 아니에요. 이식은 문제의 단순한 형태("347 + 285는 얼마인가요?")에서 작동하고, 문장제에서는 스위치가 일부러 꺼 둬요. 지금까지는 모두 한 모델에서의 결과예요.</p>
+  <p>이 방법은 새로운 능력에도 그대로 이어져요. 규칙은 예시 340개에서 프로그램이 찾고, 표로 컴파일한 뒤, 능력마다 같은 설정으로 배치해요. 다음은 학습 쪽이에요. 프롬프트로 건네받은 사실을 SmolLM2가 활용하게 만드는 거예요.</p>
+</section>
+
+<div class="next">
+  <span class="label">AI 연구, 연구 노트 01</span>
+  <a href="https://lf.wtf/ko/research/">모든 연구</a>
+</div>
+</article>
+</main>
+
+<footer class="wrap"><span>© Levi Foster</span><span>텍사스주 포트워스</span></footer>
+<div id="language"></div>
+
+<nav class="i18n" aria-label="Language">
+  <a href="/research/circuit-grafts/" hreflang="en" lang="en">English</a>
+  <a href="/de/research/circuit-grafts/" hreflang="de" lang="de">Deutsch</a>
+  <a href="/es/research/circuit-grafts/" hreflang="es" lang="es">Español</a>
+  <a href="/es-mx/research/circuit-grafts/" hreflang="es-MX" lang="es-MX">Español (MX)</a>
+  <a href="/fr/research/circuit-grafts/" hreflang="fr" lang="fr">Français</a>
+  <a href="/it/research/circuit-grafts/" hreflang="it" lang="it">Italiano</a>
+  <a href="/ja/research/circuit-grafts/" hreflang="ja" lang="ja">日本語</a>
+  <span aria-current="true" lang="ko">한국어</span>
+  <a href="/nl/research/circuit-grafts/" hreflang="nl" lang="nl">Nederlands</a>
+  <a href="/pt-br/research/circuit-grafts/" hreflang="pt-BR" lang="pt-BR">Português (BR)</a>
+  <a href="/zh-hans/research/circuit-grafts/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+</nav>
+</body>
+</html>
