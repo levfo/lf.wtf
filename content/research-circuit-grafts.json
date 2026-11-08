@@ -207,6 +207,19 @@
     "pt-BR": "Pesquisa em IA · SmolLM2-135M",
     "zh-Hans": "AI 研究 · SmolLM2-135M"
   },
+  "Written and produced in collaboration with Claude Opus 5.5": {
+    "kind": "text:p",
+    "de": "Geschrieben und produziert in Zusammenarbeit mit Claude Opus 5.5",
+    "es": "Escrito y producido en colaboración con Claude Opus 5.5",
+    "es-MX": "Escrito y producido en colaboración con Claude Opus 5.5",
+    "fr": "Écrit et produit en collaboration avec Claude Opus 5.5",
+    "it": "Scritto e prodotto in collaborazione con Claude Opus 5.5",
+    "ja": "Claude Opus 5.5 との共同で執筆・制作",
+    "ko": "Claude Opus 5.5와 함께 쓰고 만들었어요",
+    "nl": "Geschreven en gemaakt in samenwerking met Claude Opus 5.5",
+    "pt-BR": "Escrito e produzido em colaboração com o Claude Opus 5.5",
+    "zh-Hans": "与 Claude Opus 5.5 合作撰写和制作"
+  },
   "We wired small rule circuits into SmolLM2-135M, a 135-million-parameter language model. On sealed held-out problems, its multiplication score went from 21.3% to 83.1%. No original weight changed, and nothing was trained by gradient descent.": {
     "kind": "text:p",
     "de": "Wir haben kleine Regelschaltkreise in SmolLM2-135M verdrahtet, ein Sprachmodell mit 135 Millionen Parametern. Auf versiegelten, zurückgehaltenen Aufgaben stieg sein Ergebnis bei der Multiplikation von 21.3% auf 83.1%. Kein ursprüngliches Gewicht wurde verändert, und nichts wurde per Gradientenabstieg trainiert.",

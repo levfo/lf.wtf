@@ -117,5 +117,6 @@
   "Circuit grafts on SmolLM2-135M": "Injertos de circuitos en SmolLM2-135M",
   "Weight editing in language models": "Edición de pesos en modelos de lenguaje",
   "Small rule circuits grafted into SmolLM2-135M raised five held-out math tests by 37 to 62 points. No original weight changed, no gradient training, at most 0.09% added weights.": "Pequeños circuitos de reglas injertados en SmolLM2-135M subieron entre 37 y 62 puntos cinco pruebas de matemáticas con problemas reservados. Ningún peso original cambiado, sin entrenamiento por gradiente y como mucho un 0.09% de pesos añadidos.",
-  "Circuit grafts: SmolLM2-135M from 21.3% to 83.1% on held-out multiplication without gradient training": "Injertos de circuitos: SmolLM2-135M pasa del 21.3% al 83.1% en problemas reservados de multiplicación sin entrenamiento por gradiente"
+  "Circuit grafts: SmolLM2-135M from 21.3% to 83.1% on held-out multiplication without gradient training": "Injertos de circuitos: SmolLM2-135M pasa del 21.3% al 83.1% en problemas reservados de multiplicación sin entrenamiento por gradiente",
+  "Written and produced in collaboration with Claude Opus 5.5": "Escrito y producido en colaboración con Claude Opus 5.5"
 }

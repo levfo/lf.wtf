@@ -169,6 +169,7 @@ a:hover{color:var(--blue)}
 .kicker{margin:0 0 14px;font-size:11px;letter-spacing:.16em;text-transform:uppercase}
 h1{margin:0;font:800 clamp(48px,8vw,104px)/.9 var(--sans);letter-spacing:-.035em;text-transform:uppercase}
 .dek{margin:18px 0 0;max-width:680px;font:400 clamp(18px,1.9vw,22px)/1.4 var(--sans)}
+.credit{margin:12px 0 0;font-size:13px;line-height:1.5;letter-spacing:.01em;color:var(--muted)}
 .byline{margin:18px 0 0;display:flex;flex-wrap:wrap;gap:4px 18px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .byline a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--ink)}
 
@@ -288,7 +289,7 @@ html[lang="ja"] h1,html[lang="ko"] h1,html[lang="zh-Hans"] h1{font-size:clamp(40
 .hero .h-text{display:contents}
 .kicker{grid-column:2;align-self:end;margin:0}
 h1{grid-column:1/3;font-size:clamp(40px,13vw,64px)}
-.dek,.byline{grid-column:1/3;margin-top:0}
+.dek,.byline,.credit{grid-column:1/3;margin-top:0}
 .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
 .stats div{padding:14px 12px 14px 0!important;border-left:0!important}
 .stats div:first-child,.stats div:nth-child(4){grid-column:1/3}
@@ -337,6 +338,7 @@ justify-content:center}
   <div class="h-text">
     <p class="kicker">Investigación en IA · SmolLM2-135M</p>
     <h1>Injertos de circuitos</h1>
+    <p class="credit">Escrito y producido en colaboración con Claude Opus 5.5</p>
     <p class="dek">Conectamos pequeños circuitos de reglas a SmolLM2-135M, un modelo de lenguaje de 135 millones de parámetros. En problemas reservados y sellados, su puntaje en multiplicación pasó del 21.3% al 83.1%. No cambió ningún peso original y no se entrenó nada por descenso de gradiente.</p>
     <p class="byline"><a rel="author" href="https://lf.wtf/es-mx/">Levi Foster</a><time datetime="2026-11-07">7 de noviembre de 2026</time></p>
   </div>

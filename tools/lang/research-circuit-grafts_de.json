@@ -117,5 +117,6 @@
   "Circuit grafts on SmolLM2-135M": "Schaltkreis-Implantate in SmolLM2-135M",
   "Weight editing in language models": "Gewichtsbearbeitung in Sprachmodellen",
   "Small rule circuits grafted into SmolLM2-135M raised five held-out math tests by 37 to 62 points. No original weight changed, no gradient training, at most 0.09% added weights.": "In SmolLM2-135M eingesetzte kleine Regelschaltkreise hoben fünf Mathetests auf zurückgehaltenen Aufgaben um 37 bis 62 Punkte. Kein ursprüngliches Gewicht verändert, kein Gradiententraining, höchstens 0.09% zusätzliche Gewichte.",
-  "Circuit grafts: SmolLM2-135M from 21.3% to 83.1% on held-out multiplication without gradient training": "Schaltkreis-Implantate: SmolLM2-135M bei zurückgehaltenen Multiplikationsaufgaben von 21.3% auf 83.1%, ohne Gradiententraining"
+  "Circuit grafts: SmolLM2-135M from 21.3% to 83.1% on held-out multiplication without gradient training": "Schaltkreis-Implantate: SmolLM2-135M bei zurückgehaltenen Multiplikationsaufgaben von 21.3% auf 83.1%, ohne Gradiententraining",
+  "Written and produced in collaboration with Claude Opus 5.5": "Geschrieben und produziert in Zusammenarbeit mit Claude Opus 5.5"
 }

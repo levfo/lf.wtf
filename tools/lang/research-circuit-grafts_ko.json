@@ -117,5 +117,6 @@
   "Circuit grafts on SmolLM2-135M": "SmolLM2-135M 회로 이식",
   "Weight editing in language models": "언어 모델의 가중치 편집",
   "Small rule circuits grafted into SmolLM2-135M raised five held-out math tests by 37 to 62 points. No original weight changed, no gradient training, at most 0.09% added weights.": "작은 규칙 회로를 SmolLM2-135M에 이식해 홀드아웃 수학 테스트 5개를 37에서 62포인트 끌어올렸어요. 원래 가중치 변경 없음, 경사 학습 없음, 추가 가중치는 최대 0.09%.",
-  "Circuit grafts: SmolLM2-135M from 21.3% to 83.1% on held-out multiplication without gradient training": "회로 이식: 경사 학습 없이 SmolLM2-135M의 홀드아웃 곱셈을 21.3%에서 83.1%로"
+  "Circuit grafts: SmolLM2-135M from 21.3% to 83.1% on held-out multiplication without gradient training": "회로 이식: 경사 학습 없이 SmolLM2-135M의 홀드아웃 곱셈을 21.3%에서 83.1%로",
+  "Written and produced in collaboration with Claude Opus 5.5": "Claude Opus 5.5와 함께 쓰고 만들었어요"
 }

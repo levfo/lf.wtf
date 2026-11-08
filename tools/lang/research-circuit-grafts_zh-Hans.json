@@ -117,5 +117,6 @@
   "Circuit grafts on SmolLM2-135M": "SmolLM2-135M 上的电路嫁接",
   "Weight editing in language models": "语言模型的权重编辑",
   "Small rule circuits grafted into SmolLM2-135M raised five held-out math tests by 37 to 62 points. No original weight changed, no gradient training, at most 0.09% added weights.": "把小型规则电路嫁接到 SmolLM2-135M 上，五项留出数学测试提高了 37 到 62 个百分点。没有改动任何原始权重，没有梯度训练，新增权重最多 0.09%。",
-  "Circuit grafts: SmolLM2-135M from 21.3% to 83.1% on held-out multiplication without gradient training": "电路嫁接：不用梯度训练，SmolLM2-135M 留出乘法题得分从 21.3% 提升到 83.1%"
+  "Circuit grafts: SmolLM2-135M from 21.3% to 83.1% on held-out multiplication without gradient training": "电路嫁接：不用梯度训练，SmolLM2-135M 留出乘法题得分从 21.3% 提升到 83.1%",
+  "Written and produced in collaboration with Claude Opus 5.5": "与 Claude Opus 5.5 合作撰写和制作"
 }

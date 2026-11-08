@@ -169,6 +169,7 @@ a:hover{color:var(--blue)}
 .kicker{margin:0 0 14px;font-size:11px;letter-spacing:.16em;text-transform:uppercase}
 h1{margin:0;font:800 clamp(48px,8vw,104px)/.9 var(--sans);letter-spacing:-.035em;text-transform:uppercase}
 .dek{margin:18px 0 0;max-width:680px;font:400 clamp(18px,1.9vw,22px)/1.4 var(--sans)}
+.credit{margin:12px 0 0;font-size:13px;line-height:1.5;letter-spacing:.01em;color:var(--muted)}
 .byline{margin:18px 0 0;display:flex;flex-wrap:wrap;gap:4px 18px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .byline a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--ink)}
 
@@ -288,7 +289,7 @@ html[lang="ja"] h1,html[lang="ko"] h1,html[lang="zh-Hans"] h1{font-size:clamp(40
 .hero .h-text{display:contents}
 .kicker{grid-column:2;align-self:end;margin:0}
 h1{grid-column:1/3;font-size:clamp(40px,13vw,64px)}
-.dek,.byline{grid-column:1/3;margin-top:0}
+.dek,.byline,.credit{grid-column:1/3;margin-top:0}
 .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
 .stats div{padding:14px 12px 14px 0!important;border-left:0!important}
 .stats div:first-child,.stats div:nth-child(4){grid-column:1/3}
@@ -339,6 +340,7 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
   <div class="h-text">
     <p class="kicker">AI研究 · SmolLM2-135M</p>
     <h1>回路グラフト</h1>
+    <p class="credit">Claude Opus 5.5 との共同で執筆・制作</p>
     <p class="dek">1億3500万パラメータの言語モデルSmolLM2-135Mに、小さなルール回路を組み込みました。封印したホールドアウト問題で、掛け算のスコアは21.3%から83.1%になりました。元の重みは一つも変えておらず、勾配降下法で学習させたものもありません。</p>
     <p class="byline"><a rel="author" href="https://lf.wtf/ja/">Levi Foster</a><time datetime="2026-11-07">2026年11月7日</time></p>
   </div>
