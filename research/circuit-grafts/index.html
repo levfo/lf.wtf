@@ -488,6 +488,20 @@ justify-content:center}
   <!-- dg:finder:end -->
 </section>
 
+<section id="why-rules">
+  <p class="label">Why it worked</p>
+  <h2>Why the program could find the rules</h2>
+  <p>The rules didn't come from the model. A separate program found them, outside the model, from 340 solved examples. The model's part is supplying the numbers, which the graft reads from its hidden state. Four things made it possible.</p>
+  <ol class="steps">
+    <li><div><b>Splitting problems into digits</b>As whole numbers, 7 × 48 = 336 is one fact among 720 possible problems. Split into digits, a pattern shows up: the last digit of the answer depends only on the 7 and the 8. This was the most important choice we made, and it suits SmolLM2, which stores each digit as its own token.</div></li>
+    <li><div><b>Asking for the simplest explanation</b>For each answer digit, the program searches for the smallest set of input digits that always decides it, and keeps a rule only if it holds on every example. A rule keyed on two digits has about 100 possible entries, and 340 examples fill nearly all of them, so it works on new problems that reuse the same pairs. Memorizing would mean keying on every input digit, with far more combinations than 340 examples can cover.</div></li>
+    <li><div><b>Reusing what it already found</b>For the next digit up, it tries the units rule again and checks whether one extra signal explains what's left over. That signal turned out to be the carry. Nobody told the program the word; it found the variable because the data needed one. Repeating the step for the hundreds digit gives the carry chain.</div></li>
+    <li><div><b>Checking on unseen problems</b>The rules were tested on problems they hadn't seen, then compiled into lookup tables inside the graft.</div></li>
+  </ol>
+  <p>Gradient training has no built-in pull toward the simplest explanation, and with few examples it memorized. On multiplication, the same-size gradient graft scored 72.7% on its own training problems and 25.1% on the 140 dev problems. The circuit scored 94.7% on the problems it was built from and 88.7% on the same dev problems.</p>
+  <p>We set the digit framing, and the program finds rules within it. The next step toward skills beyond arithmetic is a program that also finds the right way to break a problem down.</p>
+</section>
+
 <section id="results" class="wide">
   <p class="label">Results</p>
   <h2>Five skills, on problems nobody tuned on</h2>

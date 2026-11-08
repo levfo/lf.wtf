@@ -488,6 +488,20 @@ justify-content:center}
   <!-- dg:finder:end -->
 </section>
 
+<section id="why-rules">
+  <p class="label">Pourquoi ça a marché</p>
+  <h2>Pourquoi le programme a pu trouver les règles</h2>
+  <p>Les règles ne viennent pas du modèle. Un programme séparé les a trouvées, en dehors du modèle, à partir de 340 exemples résolus. Le rôle du modèle est de fournir les nombres, que la greffe lit dans son état caché. Quatre choses l'ont rendu possible.</p>
+  <ol class="steps">
+    <li><div><b>Découper les problèmes en chiffres</b>En nombres entiers, 7 × 48 = 336 est un fait parmi 720 problèmes possibles. Découpé en chiffres, un motif apparaît : le dernier chiffre de la réponse ne dépend que du 7 et du 8. C'est le choix le plus important que nous ayons fait, et il convient à SmolLM2, qui stocke chaque chiffre comme un token à part.</div></li>
+    <li><div><b>Chercher l'explication la plus simple</b>Pour chaque chiffre de la réponse, le programme cherche le plus petit ensemble de chiffres d'entrée qui le détermine toujours, et ne garde une règle que si elle tient sur chaque exemple. Une règle fondée sur deux chiffres compte environ 100 entrées possibles, et 340 exemples les remplissent presque toutes, donc elle marche sur de nouveaux problèmes qui reprennent les mêmes paires. Mémoriser reviendrait à se fonder sur tous les chiffres d'entrée, avec bien plus de combinaisons que 340 exemples ne peuvent en couvrir.</div></li>
+    <li><div><b>Réutiliser ce qu'il avait trouvé</b>Pour le chiffre suivant, il réessaie la règle des unités et vérifie si un signal supplémentaire explique ce qui reste. Ce signal s'est révélé être la retenue. Personne n'a donné le mot au programme ; il a trouvé la variable parce que les données en avaient besoin. Refaire la même étape pour le chiffre des centaines donne la chaîne de retenues.</div></li>
+    <li><div><b>Vérifier sur des problèmes inédits</b>Les règles ont été testées sur des problèmes qu'elles n'avaient pas vus, puis compilées en tables de correspondance dans la greffe.</div></li>
+  </ol>
+  <p>L'entraînement par gradient n'a aucune attirance intégrée vers l'explication la plus simple, et avec peu d'exemples il a mémorisé. En multiplication, la greffe par gradient de même taille a obtenu 72.7% sur ses propres problèmes d'entraînement et 25.1% sur les 140 problèmes de développement. Le circuit a obtenu 94.7% sur les problèmes qui ont servi à le construire et 88.7% sur ces mêmes problèmes de développement.</p>
+  <p>Nous avons fixé le découpage en chiffres, et le programme trouve des règles à l'intérieur. La prochaine étape vers des compétences au-delà de l'arithmétique est un programme qui trouve aussi la bonne façon de découper un problème.</p>
+</section>
+
 <section id="results" class="wide">
   <p class="label">Résultats</p>
   <h2>Cinq compétences, sur des problèmes jamais utilisés pour ajuster</h2>

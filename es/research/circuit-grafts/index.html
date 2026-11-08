@@ -488,6 +488,20 @@ justify-content:center}
   <!-- dg:finder:end -->
 </section>
 
+<section id="why-rules">
+  <p class="label">Por qué funcionó</p>
+  <h2>Por qué el programa pudo encontrar las reglas</h2>
+  <p>Las reglas no salieron del modelo. Las encontró un programa aparte, fuera del modelo, a partir de 340 ejemplos resueltos. Lo que aporta el modelo son los números, que el injerto lee de su estado oculto. Cuatro cosas lo hicieron posible.</p>
+  <ol class="steps">
+    <li><div><b>Partir los problemas en dígitos</b>Como números enteros, 7 × 48 = 336 es un dato más entre 720 problemas posibles. Partido en dígitos, aparece un patrón: el último dígito de la respuesta depende solo del 7 y del 8. Fue la decisión más importante que tomamos, y encaja con SmolLM2, que guarda cada dígito como su propio token.</div></li>
+    <li><div><b>Pedir la explicación más simple</b>Para cada dígito de la respuesta, el programa busca el conjunto más pequeño de dígitos de entrada que siempre lo decide, y solo se queda con una regla si se cumple en todos los ejemplos. Una regla basada en dos dígitos tiene unas 100 entradas posibles, y 340 ejemplos llenan casi todas, así que funciona en problemas nuevos que repiten los mismos pares. Memorizar supondría basarse en todos los dígitos de entrada, con muchas más combinaciones de las que 340 ejemplos pueden cubrir.</div></li>
+    <li><div><b>Reutilizar lo que ya encontró</b>Para el siguiente dígito, vuelve a probar la regla de las unidades y comprueba si una señal extra explica lo que sobra. Esa señal resultó ser el acarreo. Nadie le dio la palabra al programa; encontró la variable porque los datos necesitaban una. Repetir el paso para el dígito de las centenas da la cadena de acarreo.</div></li>
+    <li><div><b>Comprobar con problemas nuevos</b>Las reglas se probaron en problemas que no habían visto y luego se compilaron en tablas de consulta dentro del injerto.</div></li>
+  </ol>
+  <p>El entrenamiento por gradiente no tiende por sí solo a la explicación más simple, y con pocos ejemplos memorizó. En multiplicación, el injerto por gradiente del mismo tamaño sacó un 72.7% en sus propios problemas de entrenamiento y un 25.1% en los 140 problemas de desarrollo. El circuito sacó un 94.7% en los problemas con los que se construyó y un 88.7% en esos mismos problemas de desarrollo.</p>
+  <p>Nosotros fijamos la división en dígitos, y el programa encuentra reglas dentro de ella. El siguiente paso hacia habilidades más allá de la aritmética es un programa que también encuentre la forma correcta de descomponer un problema.</p>
+</section>
+
 <section id="results" class="wide">
   <p class="label">Resultados</p>
   <h2>Cinco habilidades, medidas en problemas que nadie usó para afinar</h2>

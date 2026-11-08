@@ -488,6 +488,20 @@ justify-content:center}
   <!-- dg:finder:end -->
 </section>
 
+<section id="why-rules">
+  <p class="label">Por que funcionou</p>
+  <h2>Por que o programa conseguiu encontrar as regras</h2>
+  <p>As regras não vieram do modelo. Um programa separado as encontrou, fora do modelo, a partir de 340 exemplos resolvidos. A parte do modelo é fornecer os números, que o enxerto lê do seu estado oculto. Quatro coisas tornaram isso possível.</p>
+  <ol class="steps">
+    <li><div><b>Quebrar os problemas em algarismos</b>Como números inteiros, 7 × 48 = 336 é um fato entre 720 problemas possíveis. Quebrado em algarismos, aparece um padrão: o último algarismo da resposta depende só do 7 e do 8. Essa foi a escolha mais importante que fizemos, e combina com o SmolLM2, que guarda cada algarismo como um token próprio.</div></li>
+    <li><div><b>Pedir a explicação mais simples</b>Para cada algarismo da resposta, o programa procura o menor conjunto de algarismos de entrada que sempre o decide, e só mantém uma regra se ela vale em todos os exemplos. Uma regra baseada em dois algarismos tem cerca de 100 entradas possíveis, e 340 exemplos preenchem quase todas, então ela funciona em problemas novos que repetem os mesmos pares. Decorar significaria usar todos os algarismos de entrada, com muito mais combinações do que 340 exemplos conseguem cobrir.</div></li>
+    <li><div><b>Reaproveitar o que já tinha achado</b>Para o algarismo seguinte, ele tenta a regra das unidades de novo e verifica se um sinal extra explica o que sobra. Esse sinal acabou sendo o vai-um. Ninguém disse a palavra ao programa; ele encontrou a variável porque os dados precisavam de uma. Repetir o passo para o algarismo das centenas dá a cadeia de vai-um.</div></li>
+    <li><div><b>Conferir em problemas inéditos</b>As regras foram testadas em problemas que não tinham visto e depois compiladas em tabelas de consulta dentro do enxerto.</div></li>
+  </ol>
+  <p>O treino por gradiente não tem uma atração embutida pela explicação mais simples, e com poucos exemplos ele decorou. Na multiplicação, o enxerto por gradiente do mesmo tamanho fez 72.7% nos próprios problemas de treino e 25.1% nos 140 problemas de desenvolvimento. O circuito fez 94.7% nos problemas a partir dos quais foi construído e 88.7% nos mesmos problemas de desenvolvimento.</p>
+  <p>Nós definimos a divisão em algarismos, e o programa encontra regras dentro dela. O próximo passo rumo a habilidades além da aritmética é um programa que também encontre o jeito certo de dividir um problema.</p>
+</section>
+
 <section id="results" class="wide">
   <p class="label">Resultados</p>
   <h2>Cinco habilidades, em problemas que ninguém usou para ajustar</h2>

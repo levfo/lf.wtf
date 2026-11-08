@@ -488,6 +488,20 @@ justify-content:center}
   <!-- dg:finder:end -->
 </section>
 
+<section id="why-rules">
+  <p class="label">Waarom het werkte</p>
+  <h2>Waarom het programma de regels kon vinden</h2>
+  <p>De regels kwamen niet van het model. Een apart programma vond ze, buiten het model, uit 340 opgeloste voorbeelden. Het model levert de getallen, die de ent uit zijn verborgen toestand leest. Vier dingen maakten het mogelijk.</p>
+  <ol class="steps">
+    <li><div><b>Problemen opsplitsen in cijfers</b>Als hele getallen is 7 × 48 = 336 één feit tussen 720 mogelijke problemen. Opgesplitst in cijfers verschijnt er een patroon: het laatste cijfer van het antwoord hangt alleen af van de 7 en de 8. Dit was de belangrijkste keuze die we maakten, en het past bij SmolLM2, dat elk cijfer als een eigen token opslaat.</div></li>
+    <li><div><b>Vragen om de eenvoudigste verklaring</b>Voor elk cijfer van het antwoord zoekt het programma de kleinste set invoercijfers die het altijd bepaalt, en het houdt een regel alleen als die op elk voorbeeld klopt. Een regel op basis van twee cijfers heeft ongeveer 100 mogelijke vakjes, en 340 voorbeelden vullen er bijna allemaal, dus hij werkt op nieuwe problemen die dezelfde paren gebruiken. Uit je hoofd leren zou betekenen dat je op elk invoercijfer let, met veel meer combinaties dan 340 voorbeelden kunnen dekken.</div></li>
+    <li><div><b>Hergebruiken wat het al vond</b>Voor het volgende cijfer probeert het de eenhedenregel opnieuw en kijkt het of één extra signaal verklaart wat overblijft. Dat signaal bleek de overdracht te zijn. Niemand gaf het programma dat woord; het vond de variabele omdat de data er een nodig had. Dezelfde stap voor het honderdtal geeft de overdrachtsketen.</div></li>
+    <li><div><b>Controleren op ongeziene problemen</b>De regels werden getest op problemen die ze nog niet hadden gezien, en daarna omgezet in opzoektabellen in de ent.</div></li>
+  </ol>
+  <p>Gradiënttraining heeft geen ingebouwde trek naar de eenvoudigste verklaring, en met weinig voorbeelden leerde het uit het hoofd. Bij vermenigvuldigen haalde de even grote gradiënt-ent 72.7% op zijn eigen trainingsproblemen en 25.1% op de 140 ontwikkelproblemen. Het circuit haalde 94.7% op de problemen waaruit het gebouwd is en 88.7% op dezelfde ontwikkelproblemen.</p>
+  <p>Wij legden de opsplitsing in cijfers vast, en het programma vindt daarbinnen de regels. De volgende stap naar vaardigheden voorbij rekenen is een programma dat ook zelf de juiste manier vindt om een probleem op te splitsen.</p>
+</section>
+
 <section id="results" class="wide">
   <p class="label">Resultaten</p>
   <h2>Vijf vaardigheden, op problemen waar niemand op heeft afgestemd</h2>

@@ -490,6 +490,20 @@ html[lang="de"] h1, html[lang="de"] h2, html[lang="de"] .sub { text-transform: n
   <!-- dg:finder:end -->
 </section>
 
+<section id="why-rules">
+  <p class="label">Warum es klappte</p>
+  <h2>Warum das Programm die Regeln finden konnte</h2>
+  <p>Die Regeln kamen nicht vom Modell. Ein separates Programm hat sie gefunden, außerhalb des Modells, aus 340 gelösten Beispielen. Das Modell liefert die Zahlen, die das Implantat aus seinem verborgenen Zustand ausliest. Vier Dinge haben das möglich gemacht.</p>
+  <ol class="steps">
+    <li><div><b>Aufgaben in Ziffern zerlegen</b>Als ganze Zahlen ist 7 × 48 = 336 eine Tatsache unter 720 möglichen Aufgaben. In Ziffern zerlegt zeigt sich ein Muster: Die letzte Ziffer der Antwort hängt nur von der 7 und der 8 ab. Das war die wichtigste Entscheidung, und sie passt zu SmolLM2, das jede Ziffer als eigenes Token speichert.</div></li>
+    <li><div><b>Nach der einfachsten Erklärung fragen</b>Für jede Antwortziffer sucht das Programm die kleinste Menge von Eingabeziffern, die sie immer festlegt, und behält eine Regel nur, wenn sie für jedes Beispiel gilt. Eine Regel, die an zwei Ziffern hängt, hat etwa 100 mögliche Einträge, und 340 Beispiele füllen fast alle davon. Darum funktioniert sie bei neuen Aufgaben, die dieselben Paare wiederverwenden. Auswendiglernen hieße, an jeder Eingabeziffer anzusetzen, mit weit mehr Kombinationen, als 340 Beispiele abdecken können.</div></li>
+    <li><div><b>Schon Gefundenes wiederverwenden</b>Für die nächsthöhere Ziffer probiert es die Einer-Regel noch einmal und prüft, ob ein zusätzliches Signal den Rest erklärt. Dieses Signal stellte sich als der Übertrag heraus. Niemand hat dem Programm das Wort genannt; es fand die Variable, weil die Daten eine brauchten. Derselbe Schritt für die Hunderterziffer ergibt die Übertragskette.</div></li>
+    <li><div><b>An ungesehenen Aufgaben prüfen</b>Die Regeln wurden an Aufgaben getestet, die sie noch nicht kannten, und dann in Nachschlagetabellen im Implantat übersetzt.</div></li>
+  </ol>
+  <p>Gradiententraining hat keinen eingebauten Zug zur einfachsten Erklärung, und mit wenigen Beispielen hat es auswendig gelernt. Bei der Multiplikation erreichte das gleich große Gradienten-Implantat 72.7% auf seinen eigenen Trainingsaufgaben und 25.1% auf den 140 Dev-Aufgaben. Der Schaltkreis erreichte 94.7% auf den Aufgaben, aus denen er gebaut wurde, und 88.7% auf denselben Dev-Aufgaben.</p>
+  <p>Die Zerlegung in Ziffern haben wir vorgegeben, und das Programm findet Regeln darin. Der nächste Schritt zu Fähigkeiten jenseits der Arithmetik ist ein Programm, das auch selbst die richtige Art findet, eine Aufgabe zu zerlegen.</p>
+</section>
+
 <section id="results" class="wide">
   <p class="label">Ergebnisse</p>
   <h2>Fünf Fertigkeiten, auf Aufgaben, an denen nichts abgestimmt wurde</h2>

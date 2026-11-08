@@ -488,6 +488,20 @@ justify-content:center}
   <!-- dg:finder:end -->
 </section>
 
+<section id="why-rules">
+  <p class="label">Perché ha funzionato</p>
+  <h2>Perché il programma ha potuto trovare le regole</h2>
+  <p>Le regole non sono venute dal modello. Le ha trovate un programma separato, fuori dal modello, da 340 esempi risolti. Il compito del modello è fornire i numeri, che l'innesto legge dal suo stato nascosto. Quattro cose l'hanno reso possibile.</p>
+  <ol class="steps">
+    <li><div><b>Spezzare i problemi in cifre</b>Come numeri interi, 7 × 48 = 336 è un fatto tra 720 problemi possibili. Spezzato in cifre, emerge uno schema: l'ultima cifra della risposta dipende solo dal 7 e dall'8. È stata la scelta più importante, e si adatta a SmolLM2, che memorizza ogni cifra come un token a sé.</div></li>
+    <li><div><b>Cercare la spiegazione più semplice</b>Per ogni cifra della risposta, il programma cerca il più piccolo insieme di cifre in ingresso che la determina sempre, e tiene una regola solo se vale su ogni esempio. Una regola basata su due cifre ha circa 100 voci possibili, e 340 esempi le riempiono quasi tutte, quindi funziona su problemi nuovi che riusano le stesse coppie. Memorizzare vorrebbe dire basarsi su ogni cifra in ingresso, con molte più combinazioni di quante 340 esempi possano coprire.</div></li>
+    <li><div><b>Riusare ciò che aveva già trovato</b>Per la cifra successiva, riprova la regola delle unità e controlla se un segnale in più spiega ciò che resta. Quel segnale si è rivelato il riporto. Nessuno ha dato la parola al programma; ha trovato la variabile perché i dati ne avevano bisogno. Ripetere il passo per la cifra delle centinaia dà la catena dei riporti.</div></li>
+    <li><div><b>Verificare su problemi mai visti</b>Le regole sono state provate su problemi che non avevano visto, poi compilate in tabelle di consultazione dentro l'innesto.</div></li>
+  </ol>
+  <p>L'addestramento con gradiente non ha una spinta incorporata verso la spiegazione più semplice, e con pochi esempi ha memorizzato. Nella moltiplicazione, l'innesto a gradiente della stessa dimensione ha ottenuto il 72.7% sui propri problemi di addestramento e il 25.1% sui 140 problemi di sviluppo. Il circuito ha ottenuto il 94.7% sui problemi da cui è stato costruito e l'88.7% sugli stessi problemi di sviluppo.</p>
+  <p>La scomposizione in cifre l'abbiamo decisa noi, e il programma trova le regole al suo interno. Il prossimo passo verso abilità oltre l'aritmetica è un programma che trovi anche il modo giusto di scomporre un problema.</p>
+</section>
+
 <section id="results" class="wide">
   <p class="label">Risultati</p>
   <h2>Cinque abilità, su problemi su cui nessuno ha fatto regolazioni</h2>
