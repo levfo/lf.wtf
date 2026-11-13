@@ -2007,3 +2007,227 @@ T.update({
         "“跟随声音”，效果会随着节拍跳动。也可以把一张静态图做成三秒循环动画，让任意参数在其中"
         "漂移、跳变或扫动。视频和循环动画随 Premium 提供。"),
 })
+
+
+# ---------------------------------------------------------------- 2.2
+#
+# The clean preview, the For This Photo row, effects as switches, Shuffle. The interface section
+# was still showing the light interface from before 2.0; its three pictures are now 2.2 screens.
+# Button and row names are the app's own in each language (Für dieses Foto, Zufall, Einstellen,
+# この写真に, シャッフル, and so on), from `GlitchArt/Localizable.xcstrings`, and the sentences
+# follow the 2.2 release notes on the App Store where they say the same thing.
+T.update({
+    "The picture on screen is the picture you save.": (
+        "Das Bild auf dem Bildschirm ist das Bild, das du sicherst.",
+        "La imagen en pantalla es la imagen que guardas.",
+        "La imagen en pantalla es la imagen que guardas.",
+        "L'image à l'écran est celle que vous enregistrez.",
+        "L'immagine sullo schermo è quella che salvi.",
+        "画面に見えている絵が、そのまま保存される絵です。",
+        "화면에 보이는 그림이 곧 저장되는 그림입니다.",
+        "Het beeld op het scherm is het beeld dat je bewaart.",
+        "A imagem na tela é a imagem que você salva.",
+        "屏幕上看到的画面，就是存储下来的画面。"),
+    "Nothing is drawn over it: no labels, no buttons, no scan lines of the app's own. Everything "
+    "renders on the GPU, so the preview is sharp and it updates while you drag.": (
+        "Nichts liegt darüber: keine Beschriftungen, keine Tasten, keine Bildzeilen, die von der "
+        "App stammen. Alles wird auf der GPU gerechnet, deshalb ist die Vorschau scharf und "
+        "aktualisiert sich, während du ziehst.",
+        "No hay nada dibujado encima: ni etiquetas, ni botones, ni líneas de barrido puestas por "
+        "la app. Todo se procesa en la GPU, así que la vista previa es nítida y se actualiza "
+        "mientras arrastras.",
+        "No hay nada dibujado encima: ni etiquetas, ni botones, ni líneas de barrido puestas por "
+        "la app. Todo se procesa en la GPU, así que la vista previa es nítida y se actualiza "
+        "mientras arrastras.",
+        "Rien n'est dessiné par-dessus : ni libellés, ni boutons, ni lignes de balayage ajoutées "
+        "par l'app. Tout est calculé sur le GPU, donc l'aperçu est net et se met à jour pendant "
+        "que vous faites glisser.",
+        "Sopra non c'è disegnato niente: né etichette, né pulsanti, né righe di scansione messe "
+        "dall'app. Tutto viene elaborato sulla GPU, quindi l'anteprima è nitida e si aggiorna "
+        "mentre trascini.",
+        "絵の上には何も重なりません。ラベルも、ボタンも、アプリが勝手に足す走査線もありません。"
+        "描画はすべて GPU で行うので、プレビューはシャープで、ドラッグしているあいだにも更新されます。",
+        "그림 위에는 아무것도 겹치지 않습니다. 라벨도, 버튼도, 앱이 따로 얹는 주사선도 없습니다. "
+        "모든 렌더링을 GPU에서 하기 때문에 미리보기는 선명하고 끄는 동안에도 갱신됩니다.",
+        "Er ligt niets overheen: geen labels, geen knoppen, geen beeldlijnen van de app zelf. "
+        "Alles wordt op de GPU gerenderd, dus de preview is scherp en werkt bij terwijl je sleept.",
+        "Nada é desenhado por cima: nem rótulos, nem botões, nem linhas de varredura colocadas "
+        "pelo app. Tudo é renderizado na GPU, então a prévia é nítida e se atualiza enquanto você "
+        "arrasta.",
+        "画面上不叠加任何东西：没有标签，没有按钮，也没有应用自己加上的扫描线。"
+        "所有渲染都在 GPU 上完成，所以预览清晰，拖动时就会随之更新。"),
+    "Open a photo and the first row is For This Photo, the presets that show up well on that "
+    "picture. Nothing is applied until you tap one. Every effect is a switch, the layer stack "
+    "shows what is running and in what order, and every setting has its own level meter.": (
+        "Öffne ein Foto, und die erste Reihe heißt „Für dieses Foto“: die Presets, die auf diesem "
+        "Bild gut zur Geltung kommen. Nichts wird angewendet, bevor du tippst. Jeder Effekt ist "
+        "ein Schalter, der Ebenenstapel zeigt, was läuft und in welcher Reihenfolge, und jeder "
+        "Regler hat seine eigene Pegelanzeige.",
+        "Abre una foto y la primera fila es «Para esta foto»: los preajustes que se notan bien en "
+        "esa imagen. No se aplica nada hasta que tocas uno. Cada efecto es un interruptor, la pila "
+        "de capas muestra qué se está ejecutando y en qué orden, y cada control tiene su propio "
+        "medidor de nivel.",
+        "Abre una foto y la primera fila es “Para esta foto”: los preajustes que se notan bien en "
+        "esa imagen. No se aplica nada hasta que tocas uno. Cada efecto es un interruptor, la pila "
+        "de capas muestra qué se está ejecutando y en qué orden, y cada control tiene su propio "
+        "medidor de nivel.",
+        "Ouvrez une photo et la première rangée s'appelle « Pour cette photo » : les préréglages "
+        "qui ressortent bien sur cette image. Rien n'est appliqué tant que vous n'avez pas touché. "
+        "Chaque effet est un interrupteur, la pile de calques montre ce qui tourne et dans quel "
+        "ordre, et chaque réglage a son propre vumètre.",
+        "Apri una foto e la prima fila è «Per questa foto»: i preset che su quell'immagine si "
+        "vedono bene. Non viene applicato nulla finché non tocchi. Ogni effetto è un interruttore, "
+        "la pila dei livelli mostra cosa sta girando e in che ordine, e ogni controllo ha il suo "
+        "indicatore di livello.",
+        "写真を開くと、最初の列は「この写真に」。その写真で効果がよく出るプリセットが並びます。"
+        "タップするまで何も適用されません。エフェクトはどれもスイッチで、レイヤーの重なりには"
+        "何がどの順番で動いているかが表示され、パラメータごとにレベルメーターが付いています。",
+        "사진을 열면 첫 줄은 ‘이 사진에’입니다. 그 사진에서 효과가 잘 드러나는 프리셋이 놓입니다. "
+        "탭하기 전에는 아무것도 적용되지 않습니다. 효과는 모두 스위치이고, 레이어 스택은 무엇이 "
+        "어떤 순서로 돌고 있는지 보여 주며, 설정마다 레벨 미터가 따로 있습니다.",
+        "Open een foto en de eerste rij is ‘Voor deze foto’: de presets die op dat beeld goed "
+        "uitkomen. Er wordt niets toegepast tot je tikt. Elk effect is een schakelaar, de "
+        "lagenstapel laat zien wat er draait en in welke volgorde, en elke regelaar heeft zijn "
+        "eigen niveaumeter.",
+        "Abra uma foto e a primeira fileira é “Para esta foto”: os presets que aparecem bem "
+        "naquela imagem. Nada é aplicado até você tocar. Cada efeito é um interruptor, a pilha de "
+        "camadas mostra o que está rodando e em que ordem, e cada controle tem seu próprio medidor "
+        "de nível.",
+        "打开一张照片，第一排就是“适合这张照片”：在这张照片上效果明显的预设。轻点之前不会应用任何效果。"
+        "每个效果都是一个开关，图层栈显示正在运行什么、按什么顺序，每个参数都有自己的电平表。"),
+    "MODUL8 on iPhone: a city skyline behind yellow flowers with the VHS preset on, and under it "
+    "the For This Photo row with four presets shown on the same photo.": (
+        "MODUL8 auf dem iPhone: eine Skyline hinter gelben Blumen mit dem Preset VHS, darunter die "
+        "Reihe „Für dieses Foto“ mit vier Presets, gezeigt am selben Foto.",
+        "MODUL8 en iPhone: el perfil de una ciudad tras unas flores amarillas con el preajuste VHS "
+        "puesto, y debajo la fila «Para esta foto» con cuatro preajustes mostrados sobre la misma "
+        "foto.",
+        "MODUL8 en iPhone: el perfil de una ciudad tras unas flores amarillas con el preajuste VHS "
+        "puesto, y debajo la fila “Para esta foto” con cuatro preajustes mostrados sobre la misma "
+        "foto.",
+        "MODUL8 sur iPhone : une ville à l'horizon derrière des fleurs jaunes, avec le préréglage "
+        "VHS activé, et dessous la rangée « Pour cette photo » avec quatre préréglages montrés sur "
+        "la même photo.",
+        "MODUL8 su iPhone: lo skyline di una città dietro fiori gialli con il preset VHS attivo, e "
+        "sotto la fila «Per questa foto» con quattro preset mostrati sulla stessa foto.",
+        "iPhone で動く MODUL8。黄色い花の向こうに街並みが見える写真に VHS プリセットがかかり、"
+        "その下に、同じ写真で見せる四つのプリセットが並ぶ「この写真に」の列。",
+        "iPhone에서 실행 중인 MODUL8. 노란 꽃 너머로 도시 스카이라인이 보이는 사진에 VHS 프리셋이 "
+        "걸려 있고, 그 아래에는 같은 사진으로 보여 주는 프리셋 네 개가 놓인 ‘이 사진에’ 줄.",
+        "MODUL8 op iPhone: een skyline achter gele bloemen met de preset VHS aan, en daaronder de "
+        "rij ‘Voor deze foto’ met vier presets, getoond op dezelfde foto.",
+        "MODUL8 no iPhone: o horizonte de uma cidade atrás de flores amarelas com o preset VHS "
+        "ligado, e abaixo a fileira “Para esta foto” com quatro presets mostrados na mesma foto.",
+        "在 iPhone 上运行的 MODUL8：一张黄花后面是城市天际线的照片，套用了 VHS 预设，"
+        "下方是“适合这张照片”一排，四个预设都用同一张照片展示。"),
+    "The Effects tab with Satellite switched on: Tune and Off buttons, then rows of effect tiles, "
+    "each one showing the effect on the open photo.": (
+        "Der Tab „Effekte“ mit eingeschaltetem Satellit: die Tasten „Einstellen“ und „Aus“, "
+        "darunter Reihen von Effektkacheln, jede zeigt den Effekt am geöffneten Foto.",
+        "La pestaña Efectos con Satélite activado: los botones «Ajustar» y «Off», y debajo filas "
+        "de mosaicos de efectos, cada uno con el efecto sobre la foto abierta.",
+        "La pestaña Efectos con Satélite activado: los botones “Ajustar” y “Off”, y debajo filas "
+        "de mosaicos de efectos, cada uno con el efecto sobre la foto abierta.",
+        "L'onglet Effets avec Satellite activé : les boutons « Régler » et « Off », puis des "
+        "rangées de vignettes d'effets, chacune montrant l'effet sur la photo ouverte.",
+        "La scheda Effetti con Satellite attivo: i pulsanti «Regola» e «Off», poi file di riquadri "
+        "degli effetti, ognuno con l'effetto sulla foto aperta.",
+        "「エフェクト」タブで衛星放送をオンにしたところ。「調整」と「オフ」のボタンがあり、"
+        "その下にエフェクトのタイルが並び、どれも開いている写真にかけた様子を見せています。",
+        "위성 방송을 켠 ‘효과’ 탭. ‘조정’과 ‘끔’ 버튼이 있고, 그 아래로 효과 타일이 줄지어 있으며 "
+        "타일마다 열려 있는 사진에 건 모습을 보여 줍니다.",
+        "Het tabblad Effecten met Satelliet aan: de knoppen ‘Bijstellen’ en ‘Uit’, daaronder rijen "
+        "effecttegels die elk het effect op de geopende foto laten zien.",
+        "A aba Efeitos com Satélite ligado: os botões “Ajustar” e “Desligado”, e abaixo fileiras "
+        "de blocos de efeitos, cada um mostrando o efeito na foto aberta.",
+        "“效果”标签页，卫星已打开：有“调节”和“关”两个按钮，下面是一排排效果方块，"
+        "每个都展示该效果用在当前照片上的样子。"),
+    "The Layers tab: Noise, Distortion and RGB Split listed in the order they run, each with its "
+    "level.": (
+        "Der Tab „Ebenen“: Rauschen, Verzerrung und RGB in der Reihenfolge, in der sie laufen, "
+        "jeweils mit ihrem Pegel.",
+        "La pestaña Capas: Ruido, Distorsión y RGB en el orden en que se ejecutan, cada uno con su "
+        "nivel.",
+        "La pestaña Capas: Ruido, Distorsión y RGB en el orden en que se ejecutan, cada uno con su "
+        "nivel.",
+        "L'onglet Calques : Bruit, Distorsion et RVB dans l'ordre où ils s'exécutent, chacun avec "
+        "son niveau.",
+        "La scheda Livelli: Rumore, Distorsione e RGB nell'ordine in cui vengono eseguiti, ognuno "
+        "con il suo livello.",
+        "「レイヤー」タブ。ノイズ、歪み、RGB分離が動く順に並び、それぞれにレベルが表示されています。",
+        "‘레이어’ 탭. 노이즈, 왜곡, RGB 분리가 실행되는 순서대로 놓이고 각각 레벨이 표시됩니다.",
+        "Het tabblad Lagen: Ruis, Vervorming en RGB in de volgorde waarin ze draaien, elk met zijn "
+        "niveau.",
+        "A aba Camadas: Ruído, Distorção e RGB na ordem em que rodam, cada um com seu nível.",
+        "“图层”标签页：噪点、畸变和 RGB 分离按运行顺序排列，各自带有强度数值。"),
+    "Start from a preset. The ones that show up well on your photo come first. Nine are built in, "
+    "and Premium adds two packs, Dead Air and Y2K.": (
+        "Fang mit einem Preset an. Die, die auf deinem Foto gut zur Geltung kommen, stehen vorn. "
+        "Neun sind eingebaut, und Premium bringt zwei Pakete dazu, Sendepause und Y2K.",
+        "Empieza por un preajuste. Los que se notan bien en tu foto van primero. Nueve vienen "
+        "incluidos, y Premium añade dos paquetes, Fin de emisión e Y2K.",
+        "Empieza con un preajuste. Los que se notan bien en tu foto van primero. Nueve vienen "
+        "incluidos, y Premium agrega dos paquetes, Fuera del aire y Y2K.",
+        "Partez d'un préréglage. Ceux qui ressortent bien sur votre photo viennent en premier. "
+        "Neuf sont intégrés, et Premium ajoute deux packs, Blanc d'antenne et Y2K.",
+        "Parti da un preset. Quelli che sulla tua foto si vedono bene vengono per primi. Nove sono "
+        "inclusi, e Premium aggiunge due pack, Fuori onda e Y2K.",
+        "プリセットから始めます。開いた写真で効果がよく出るものが先頭に並びます。9 種類を収録し、"
+        "Premium ではプリセットパック「放送事故」と「Y2K」が加わります。",
+        "프리셋에서 시작합니다. 연 사진에서 효과가 잘 드러나는 프리셋이 먼저 나옵니다. 기본 9종이 "
+        "들어 있고, Premium에는 방송 사고와 Y2K, 두 가지 팩이 더해집니다.",
+        "Begin bij een preset. De presets die op jouw foto goed uitkomen staan vooraan. Negen "
+        "zitten erin, en Premium voegt twee pakketten toe, Storing en Y2K.",
+        "Comece por um preset. Os que aparecem bem na sua foto vêm primeiro. Nove vêm prontos, e o "
+        "Premium acrescenta dois pacotes, Fora do ar e Y2K.",
+        "从一个预设开始。在你的照片上效果明显的排在最前面。内置九个，Premium 再加两套合集：“停播”和“千禧”。"),
+    "Tap an effect to switch it on, and again to switch it off. Open it to move its settings, or "
+    "hit Shuffle. Any setting can drift, step or sweep on its own.": (
+        "Tippe auf einen Effekt, um ihn einzuschalten, und noch einmal, um ihn auszuschalten. "
+        "Öffne ihn, um seine Regler zu bewegen, oder tippe auf „Zufall“. Jeder Regler kann von "
+        "selbst driften, springen oder schwingen.",
+        "Toca un efecto para ponerlo y tócalo otra vez para quitarlo. Ábrelo para mover sus "
+        "controles, o toca «Aleatorio». Cualquier control puede derivar, saltar o barrer por sí "
+        "solo.",
+        "Toca un efecto para ponerlo y tócalo otra vez para quitarlo. Ábrelo para mover sus "
+        "controles, o toca “Aleatorio”. Cualquier control puede derivar, saltar o barrer por sí "
+        "solo.",
+        "Touchez un effet pour l'activer, touchez-le encore pour le retirer. Ouvrez-le pour "
+        "déplacer ses réglages, ou touchez « Aléatoire ». Chaque réglage peut dériver, sauter ou "
+        "balayer tout seul.",
+        "Tocca un effetto per attivarlo, toccalo di nuovo per toglierlo. Aprilo per muovere i suoi "
+        "controlli, oppure tocca «Casuale». Ogni controllo può oscillare, andare a scatti o "
+        "spazzare da solo.",
+        "エフェクトをタップでオン、もう一度タップでオフ。開いてパラメータを動かすか、"
+        "「シャッフル」をタップします。どのパラメータも、ゆらぎ、ステップ、スイープでひとりでに動かせます。",
+        "효과를 탭하면 켜지고, 다시 탭하면 꺼집니다. 효과를 열어 설정을 움직이거나 ‘셔플’을 탭합니다. "
+        "어느 설정이든 스스로 흔들리고, 계단처럼 바뀌고, 쓸고 지나가게 할 수 있습니다.",
+        "Tik op een effect om het aan te zetten en tik nog eens om het uit te zetten. Open het om "
+        "zijn regelaars te verschuiven, of tik op ‘Willekeurig’. Elke regelaar kan vanzelf zweven, "
+        "verspringen of zwaaien.",
+        "Toque em um efeito para ligar e toque de novo para tirar. Abra para mexer nos controles, "
+        "ou toque em “Aleatório”. Qualquer controle pode oscilar, pular ou varrer sozinho.",
+        "轻点一个效果把它打开，再点一次关闭。打开它调参数，或者点“随机”。每个参数都能自己漂移、跳变或扫动。"),
+    "A clean preview: the picture on screen is the picture you save": (
+        "Saubere Vorschau: Das Bild auf dem Bildschirm ist das Bild, das du sicherst",
+        "Vista previa limpia: la imagen en pantalla es la imagen que guardas",
+        "Vista previa limpia: la imagen en pantalla es la imagen que guardas",
+        "Un aperçu sans rien par-dessus : l'image à l'écran est celle que vous enregistrez",
+        "Anteprima pulita: l'immagine sullo schermo è quella che salvi",
+        "何も重ならないプレビュー：画面に見えている絵がそのまま保存されます",
+        "아무것도 겹치지 않는 미리보기: 화면에 보이는 그림이 곧 저장되는 그림",
+        "Schone preview: het beeld op het scherm is het beeld dat je bewaart",
+        "Prévia limpa: a imagem na tela é a imagem que você salva",
+        "干净的预览：屏幕上看到的画面，就是存储下来的画面"),
+    "For This Photo: the presets that show up well on the photo you opened": (
+        "„Für dieses Foto“: die Presets, die auf dem geöffneten Foto gut zur Geltung kommen",
+        "«Para esta foto»: los preajustes que se notan bien en la foto que abriste",
+        "“Para esta foto”: los preajustes que se notan bien en la foto que abriste",
+        "« Pour cette photo » : les préréglages qui ressortent bien sur la photo ouverte",
+        "«Per questa foto»: i preset che si vedono bene sulla foto aperta",
+        "「この写真に」：開いた写真で効果がよく出るプリセット",
+        "‘이 사진에’: 연 사진에서 효과가 잘 드러나는 프리셋",
+        "‘Voor deze foto’: de presets die goed uitkomen op de foto die je hebt geopend",
+        "“Para esta foto”: os presets que aparecem bem na foto que você abriu",
+        "“适合这张照片”：在你打开的照片上效果明显的预设"),
+})

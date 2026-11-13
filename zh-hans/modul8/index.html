@@ -60,7 +60,7 @@
       "applicationCategory": "PhotoApplication",
       "applicationSubCategory": "Photo Editor",
       "operatingSystem": "iOS 17.0 or later",
-      "softwareVersion": "2.0",
+      "softwareVersion": "2.2",
       "installUrl": "https://apps.apple.com/app/id6755617539",
       "downloadUrl": "https://apps.apple.com/app/id6755617539",
       "sameAs": [
@@ -73,6 +73,8 @@
       "featureList": [
         "29 种可叠加的故障效果：19 种经典效果免费，另有 10 种随 Premium 提供",
         "可重新排序的效果图层",
+        "干净的预览：屏幕上看到的画面，就是存储下来的画面",
+        "“适合这张照片”：在你打开的照片上效果明显的预设",
         "任意长度的视频，连同声音以 1080p 保存；4K 片段还能以 4K 保存",
         "“跟随声音”：随片段声音的节拍跳动的效果",
         "能自己漂移、跳变或扫动的参数",
@@ -566,21 +568,24 @@ html[lang="ja"] *, html[lang="ko"] *, html[lang="zh-Hans"] * { letter-spacing: n
 <section>
   <div class="wrap">
     <p class="label">界面</p>
-    <h2>为 2.0 重做。所有渲染都在 GPU 上完成。</h2>
+    <h2>屏幕上看到的画面，就是存储下来的画面。</h2>
     <p class="lede">
-      预览清晰，拖动时就会随之更新，一张 4K 静态图以前要半分钟，现在转眼就好。图层栈清楚显示正在运行什么、按什么顺序，每个参数都有自己的电平表。没有什么是一根滑杆了事的。
+      画面上不叠加任何东西：没有标签，没有按钮，也没有应用自己加上的扫描线。所有渲染都在 GPU 上完成，所以预览清晰，拖动时就会随之更新。
+    </p>
+    <p class="lede">
+      打开一张照片，第一排就是“适合这张照片”：在这张照片上效果明显的预设。轻点之前不会应用任何效果。每个效果都是一个开关，图层栈显示正在运行什么、按什么顺序，每个参数都有自己的电平表。
     </p>
 
     <div class="screens">
-      <img src="/modul8/assets/ui-vhs.jpg" alt="在 iPhone 上运行的 MODUL8：上方是带故障效果的画布，一排预设按钮，以及列出噪点、畸变和 RGB 分离的图层列表。">
-      <img src="/modul8/assets/ui-stack.jpg" alt="图层堆栈中列出三种效果，每一项都带有拖动手柄，下方是横向排列的效果架。">
-      <img src="/modul8/assets/ui-sort.jpg" alt="画布上是被像素排序融化的路口，下面叠着四种效果。">
+      <img src="/modul8/assets/ui-22-presets.jpg" alt="在 iPhone 上运行的 MODUL8：一张黄花后面是城市天际线的照片，套用了 VHS 预设，下方是“适合这张照片”一排，四个预设都用同一张照片展示。">
+      <img src="/modul8/assets/ui-22-effects.jpg" alt="“效果”标签页，卫星已打开：有“调节”和“关”两个按钮，下面是一排排效果方块，每个都展示该效果用在当前照片上的样子。">
+      <img src="/modul8/assets/ui-22-layers.jpg" alt="“图层”标签页：噪点、畸变和 RGB 分离按运行顺序排列，各自带有强度数值。">
     </div>
 
     <div class="steps">
       <div class="step"><p>从图库里打开一张照片，或一段视频。</p></div>
-      <div class="step"><p>从一个预设开始。内置九个，Premium 再加两套合集：“停播”和“千禧”。</p></div>
-      <div class="step"><p>打开任意一个效果，调它的参数。每个参数都能自己漂移、跳变或扫动。</p></div>
+      <div class="step"><p>从一个预设开始。在你的照片上效果明显的排在最前面。内置九个，Premium 再加两套合集：“停播”和“千禧”。</p></div>
+      <div class="step"><p>轻点一个效果把它打开，再点一次关闭。打开它调参数，或者点“随机”。每个参数都能自己漂移、跳变或扫动。</p></div>
       <div class="step"><p>把图层换个顺序，看着画面跟着变。</p></div>
       <div class="step"><p>烙上摄像机、数码相机、录像机或监控摄像头风格的日期，或者给主体加上蒙版，让背景碎掉而主体保持干净，也可以反过来。</p></div>
       <div class="step"><p>存进相机胶卷，或者把整组叠加保存下来，下次再用。</p></div>

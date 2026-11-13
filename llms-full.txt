@@ -261,11 +261,12 @@ Same photo, different damage
 Five renders from two source frames, changed only by which effects were switched on and what order they ran in. Order matters: sorting a photo and then splitting the channels is not the same picture as splitting the channels first and sorting after.
 The interface
 
-### Rebuilt for 2.0. Everything renders on the GPU.
-The preview is sharp and it updates while you drag, and a 4K still takes a moment instead of half a minute. The layer stack shows exactly what is running and in what order, and every setting has its own level meter. Nothing is a single slider.
+### The picture on screen is the picture you save.
+Nothing is drawn over it: no labels, no buttons, no scan lines of the app's own. Everything renders on the GPU, so the preview is sharp and it updates while you drag.
+Open a photo and the first row is For This Photo, the presets that show up well on that picture. Nothing is applied until you tap one. Every effect is a switch, the layer stack shows what is running and in what order, and every setting has its own level meter.
 Open a photo, or a video clip, from your library.
-Start from a preset. Nine are built in, and Premium adds two packs, Dead Air and Y2K.
-Open any effect and move its settings. Any of them can drift, step or sweep on its own.
+Start from a preset. The ones that show up well on your photo come first. Nine are built in, and Premium adds two packs, Dead Air and Y2K.
+Tap an effect to switch it on, and again to switch it off. Open it to move its settings, or hit Shuffle. Any setting can drift, step or sweep on its own.
 Put the layers in a different order and watch the picture change.
 Burn in a camcorder, digicam, VCR or CCTV date, or mask the subject so it stays clean while the background breaks, or the other way round.
 Save to your camera roll, or save the whole stack to use again.
