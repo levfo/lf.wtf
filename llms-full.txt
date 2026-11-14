@@ -353,23 +353,33 @@ It also reads each photograph before printing it, the way a printer reads a nega
 
 The controls
 
-### Four dials, and every one of them is real.
+### Six dials, and every one of them is real.
 
 **Sun**
 
 How long the sheet was left out. Overexpose it and the shadows merge into one mass, the way they really do.
 
+**Bath**
+
+Tea, green tea, coffee, wine, tannin, washing soda, or a split bath. Each turns the Prussian blue into another pigment, which is why a toned print reads as a different process and not a recoloured one. Tea, coffee and tannin stain the paper too.
+
 **Paper**
 
-Cotton rag, rough watercolour, or buff. The base colour shows through everywhere, because in this process the paper is part of the picture.
+Cotton rag, rough watercolour, buff, linen or washi. Each has its own surface, and it shows through everywhere, because in this process the paper is part of the picture.
 
-**Toning**
+**Edge**
 
-Tea, tannin or red wine. These convert the Prussian blue into iron tannate rather than tinting it, which is why a toned print reads as another process instead of a recoloured one.
+Clean, brushed, or the whole sheet with the brush strokes running past the picture. Every sheet is brushed differently, so two prints of the same photograph are never quite the same.
 
-**Brushed edge**
+**Image**
 
-The uneven coating of a hand-brushed sheet, seeded per photograph, so two prints of the same picture are never quite the same.
+A positive, or a negative.
+
+**Formula**
+
+The classic 1842 sensitiser, or the modern one, which holds its shadows deeper.
+
+Then watch it develop: out in the sun, into the wash, into the bath.
 
 On your phone
 
@@ -391,7 +401,7 @@ No. A filter decides in advance what each colour becomes. CYANO works out how mu
 
 #### What does it cost?
 
-The app is free and completely usable: unlimited prints, full resolution, no watermark. One optional purchase of $4.99 unlocks the three toning baths, the other two papers and the second sensitiser formula. There is no subscription.
+The app is free and completely usable: unlimited prints, full resolution, no watermark. One optional purchase of $4.99 unlocks seven toning baths, four more papers, whole sheets, negatives and saving the developing video. All of it can be tried on your own photo first. There is no subscription.
 
 #### Does it collect anything?
 
@@ -734,7 +744,7 @@ Choosing a photograph does not need a permission at all. The picker is run by iO
 
 ### The in-app purchase
 
-CYANO is free, and one optional purchase unlocks the toning baths, the remaining papers and the second sensitiser formula. That purchase is handled entirely by Apple through the App Store. The app asks the system whether the purchase has been made and receives yes or no. It never sees your Apple Account, your name or any payment detail, and no payment information is stored in the app or sent anywhere by it.
+CYANO is free, and one optional purchase unlocks the toning baths, the remaining papers, whole sheets and negatives. That purchase is handled entirely by Apple through the App Store. The app asks the system whether the purchase has been made and receives yes or no. It never sees your Apple Account, your name or any payment detail, and no payment information is stored in the app or sent anywhere by it.
 
 Apple's own handling of that transaction is covered by Apple's privacy policy, not this one.
 
